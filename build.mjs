@@ -518,7 +518,11 @@ cardHashes.save();
 allAlarms.sort((a, b) => new Date(a.at) - new Date(b.at));
 writeFileSync('./out/alarm.ics', calendar({ name: 'K-POP 앨범 마감·팬싸 응모', events: allAlarms }), 'utf8');
 
-console.log(`\n완료 — 이번 빌드 ${index.length}개 · 인덱스 전체 ${catalog.length}개`);
+// index에는 gone(예판 종료)까지 섞여 있다. "이번에 수집한 것"과 구분해서 적는다 —
+// 안 그러면 13개를 긁고 15개를 긁었다고 보고하게 된다.
+console.log(
+  `\n완료 — 수집 ${index.length - gone.length}개${gone.length ? ` · 종료 ${gone.length}개` : ''} · 인덱스 전체 ${catalog.length}개`
+);
 console.log(
   SITE_URL
     ? `  sitemap.xml (${catalog.length + 1}개 URL) · robots.txt — ${SITE_URL}`

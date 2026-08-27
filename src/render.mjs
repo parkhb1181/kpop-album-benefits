@@ -54,33 +54,53 @@ align-items:center;justify-content:center;color:var(--mut);font-size:12px;text-a
 td.th{width:52px;padding:8px 4px 8px 8px}
 td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:5px;display:block}
 .back{font-size:13px;color:var(--mut);display:inline-block;margin-bottom:14px;border:0}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:16px}
-.card{border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;gap:12px;border-bottom:1px solid var(--line)}
-.card:hover{border-color:var(--mut)}
-.card .ar{font-size:12px;color:var(--mut);font-weight:600}
-.card .al{font-size:15px;font-weight:700;margin:3px 0 8px;line-height:1.35}
-.card .meta{font-size:12px;color:var(--mut)}
-/* 앨범 커버. 팬은 글자보다 커버를 먼저 알아본다.
-   width·height를 반드시 박는다 — 없으면 이미지가 늦게 와서 카드가 밀리고 CLS를 깎는다. */
-.cv{flex:0 0 62px;width:62px;height:62px;object-fit:cover;border-radius:6px;display:block;
-background:var(--card);border:1px solid var(--line)}
-.cb{min-width:0;flex:1}
+/* ── 인덱스 격자 ─────────────────────────────────────────────
+   근거는 docs/38-조사-배치원리.md.
 
-/* 마감 임박 가로 목록.
-   손가락 드래그는 브라우저가 알아서 한다(overflow-x). 마우스 드래그만 JS로 얹는다. */
-.rail{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 12px;margin-top:10px;
-scroll-snap-type:x proximity;cursor:grab;overscroll-behavior-x:contain}
-.rail.drag{cursor:grabbing;scroll-snap-type:none;user-select:none}
-.rail.drag a{pointer-events:none}
-.rc{flex:0 0 162px;scroll-snap-align:start;border:1px solid var(--line);border-radius:10px;
-padding:10px;display:block;border-bottom:1px solid var(--line)}
-.rc:hover{border-color:var(--mut)}
-.rc img,.rc .noimg{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;display:block;
-background:var(--card);border:1px solid var(--line);margin-bottom:8px}
-.rc .rar{font-size:11.5px;color:var(--mut);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rc .ral{font-size:13px;font-weight:700;line-height:1.3;margin:2px 0 6px;
+   ⓐ 테두리 상자가 없다. 게슈탈트의 공통 영역(테두리)은 이질적인 것을 한 덩어리로 묶어주지만,
+      **똑같은 상자가 격자로 늘어서면 그 상자들이 다시 표의 칸처럼 읽힌다.** 여백이 경계다.
+   ⓑ 그래서 간격이 이 배치의 전부다 — 카드 사이 46px / 카드 안 4~12px.
+      그룹 사이는 넓히고 그룹 안은 좁힌다. 이 차이가 좁으면 덩어리가 안 읽힌다.
+   ⓒ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:46px 24px;margin-top:22px}
+.card{position:relative;min-width:0;border:0;display:block}
+.card .go{position:absolute;inset:0;z-index:1}
+
+/* 초점 — 마감이 가장 급한 앨범 하나만 2×2로 병합한다.
+   격자는 지키고 딱 한 번 이유를 갖고 깬다. 크기가 곧 "가장 급함"이라는 정보다.
+   무작위로 흩는 건 깨는 게 아니라 격자가 없는 것이다 — NN/g 실측상 반무작위 훑기를 부른다. */
+.card.f{grid-column:span 2;grid-row:span 2}
+/* 열이 하나로 접히는 폭에서만 병합을 푼다(넘침 방지). 배치를 바꾸는 유일한 쿼리다. */
+@media(max-width:440px){.card.f{grid-column:span 1;grid-row:auto}}
+
+/* 커버 — 종횡비는 전부 1:1. 크기만 다르고 비율은 안 섞는다.
+   비율을 섞으면 행 정렬이 깨지는데, 행 정렬이 격자를 훑을 수 있게 만드는 바로 그것이다. */
+.cvw{position:relative;z-index:2;margin-bottom:14px;
+clip-path:polygon(0 0,100% 0,100% calc(100% - 13px),calc(100% - 13px) 100%,0 100%)}
+.strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+overscroll-behavior-x:contain;background:var(--card)}
+.strip::-webkit-scrollbar{display:none}
+.strip.multi{cursor:pointer}
+.strip img,.strip .ph{flex:0 0 100%;width:100%;aspect-ratio:1;object-fit:cover;display:block;
+scroll-snap-align:center;background:var(--card)}
+.vn{position:absolute;left:9px;bottom:9px;z-index:3;font-size:10.5px;font-weight:700;
+color:#fff;background:rgba(0,0,0,.58);border-radius:99px;padding:1px 8px;pointer-events:none}
+.dots{display:flex;gap:5px;margin:-6px 0 10px;position:relative;z-index:2}
+.dots button{width:6px;height:6px;padding:0;border:0;border-radius:99px;background:var(--line);cursor:pointer}
+.dots button.on{background:var(--fg)}
+/* 손가락이 있는 화면에선 스와이프가 더 빠르다. 점은 자리만 먹는다. */
+@media (hover:none){.dots{display:none;margin:0}}
+
+/* 위계 3단계 — ①앨범명 ②아티스트 ③메타. 크기·굵기·색 세 지렛대만 쓴다. */
+.card .ar{font-size:10.5px;letter-spacing:.09em;color:var(--mut);font-weight:700;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .al{font-size:15px;font-weight:700;line-height:1.28;margin:5px 0 8px;letter-spacing:-.01em;
 display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.rc .cdl{margin-top:0}
+.card .meta{font-size:11.5px;color:var(--mut);font-variant-numeric:tabular-nums}
+.card.f .ar{font-size:12px}
+.card.f .al{font-size:28px;line-height:1.16;margin:8px 0 12px;-webkit-line-clamp:3}
+.card.f .meta{font-size:13.5px}
+.card.f .cvw{margin-bottom:18px;clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%)}
 .badge{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:99px;padding:0 6px;margin-right:5px}
 .sold{color:var(--acc);font-weight:700}
 .soldb{font-size:11px;font-weight:700;color:var(--acc);border:1px solid currentColor;border-radius:99px;padding:1px 8px}
@@ -93,7 +113,11 @@ display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hi
 .cd.urgent{color:var(--acc)}
 .cd.over{color:var(--mut);font-weight:400}
 .alarm{font-size:12px;white-space:nowrap}
-.card .cdl{font-size:12px;color:var(--mut);margin-top:6px}
+.card .cdl{font-size:11.5px;color:var(--mut);margin-top:6px}
+/* 초점 카드에서는 카운트다운이 "왜 이게 큰가"에 답하는 숫자다. 텍스트 위로 올린다. */
+.card.f .cdl{order:-1;margin:0 0 10px;font-size:13px;color:var(--acc);font-weight:700}
+.card.f{display:flex;flex-direction:column}
+.card.f .cvw{order:-3}.card.f .dots{order:-2}
 .find{margin-top:14px;display:flex;gap:8px;align-items:center}
 .find input{flex:1;min-width:0;padding:10px 12px;font:inherit;font-size:14px;color:var(--fg);
 background:var(--card);border:1px solid var(--line);border-radius:8px}
@@ -159,7 +183,6 @@ const FIND_JS = `<script>
 var box=document.getElementById('q');if(!box)return;
 var wrap=box.parentElement,cnt=document.getElementById('qn'),empty=document.getElementById('qz');
 var cards=[].slice.call(document.querySelectorAll('.card'));
-var rail=document.getElementById('rail');
 wrap.style.display='flex';
 function run(){
 var v=box.value.toLowerCase().replace(/[^a-z0-9가-힣ㄱ-ㅎ]/g,'');
@@ -171,42 +194,44 @@ el.style.display=hit?'':'none';if(hit)n++;
 }
 cnt.textContent=v?n+'개':'';
 empty.style.display=v&&!n?'':'none';
-// 검색 중엔 마감 임박 목록을 접는다 — 걸러진 결과 위에 남아 있으면 결과처럼 읽힌다
-if(rail){rail.style.display=v?'none':''}
 }
 box.addEventListener('input',run);run();
 })();
 </script>`;
 
 /**
- * 마감 임박 목록의 마우스 드래그.
+ * 커버 넘기기 — 같은 앨범의 버전별 커버를 훑는다.
  *
- * **손가락은 건드리지 않는다.** 모바일은 overflow-x만으로 이미 관성까지 붙은 스크롤이 되고,
- * 그걸 JS로 흉내내면 반드시 더 나빠진다. 마우스로 잡아끄는 것만 없어서 그것만 얹는다.
+ * 장식이 아니라 정보다. 한 앨범이 6~18개 버전으로 갈리고 **버전마다 커버가 다르다** —
+ * 이 사이트의 존재 이유가 그거다. 넘겨보면 "이 앨범은 몇 종이고 각각 이렇게 생겼다"가 바로 읽힌다.
  *
- * 끌고 나서 손을 떼면 그 자리 카드로 이동해 버리는 문제가 있다.
- * 5px 넘게 움직였으면 클릭을 캡처 단계에서 삼킨다.
+ * **손가락은 건드리지 않는다.** scroll-snap만으로 이미 관성 스와이프가 되고,
+ * JS로 흉내내면 반드시 더 나빠진다. 마우스에만 클릭·점을 얹는다.
+ *
+ * 카드 전체가 링크(.go)라, 끌어서 넘긴 뒤 손을 떼면 앨범 페이지로 튀어버린다.
+ * 5px 넘게 움직였으면 클릭을 삼킨다.
  */
-const DRAG_JS = `<script>
+const COVER_JS = `<script>
 (function(){
-var r=document.querySelector('.rail');if(!r)return;
-var down=false,sx=0,sl=0,moved=0;
-r.addEventListener('pointerdown',function(e){
-if(e.pointerType==='touch')return;
-down=true;moved=0;sx=e.clientX;sl=r.scrollLeft;r.classList.add('drag');
-try{r.setPointerCapture(e.pointerId)}catch(_){}
+document.querySelectorAll('.cvw').forEach(function(w){
+var strip=w.querySelector('.strip'),tag=w.querySelector('.vn');
+var dw=w.parentElement.querySelector('.dots'),dots=dw?dw.querySelectorAll('button'):[];
+var imgs=strip.querySelectorAll('img'),n=imgs.length;
+if(n<2){if(dw)dw.style.display='none';return}
+function at(){return Math.round(strip.scrollLeft/strip.clientWidth)}
+function paint(){var i=at(),k;
+for(k=0;k<dots.length;k++){dots[k].className=k===i?'on':''}
+if(tag){tag.textContent=(i+1)+' / '+n+' · '+(imgs[i].getAttribute('data-v')||'')}}
+function go(i){strip.scrollTo({left:strip.clientWidth*((i+n)%n),behavior:'smooth'})}
+strip.addEventListener('scroll',paint,{passive:true});
+for(var k=0;k<dots.length;k++){(function(k){
+dots[k].addEventListener('click',function(e){e.preventDefault();go(k)})})(k)}
+var sx=0,moved=0;
+strip.addEventListener('pointerdown',function(e){sx=e.clientX;moved=0});
+strip.addEventListener('pointermove',function(e){if(e.buttons){var d=Math.abs(e.clientX-sx);if(d>moved)moved=d}});
+strip.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();if(moved<=5)go(at()+1)});
+paint();
 });
-r.addEventListener('pointermove',function(e){
-if(!down)return;
-var d=e.clientX-sx;if(Math.abs(d)>moved){moved=Math.abs(d)}
-r.scrollLeft=sl-d;
-});
-function up(e){
-if(!down)return;down=false;r.classList.remove('drag');
-try{r.releasePointerCapture(e.pointerId)}catch(_){}
-}
-r.addEventListener('pointerup',up);r.addEventListener('pointercancel',up);
-r.addEventListener('click',function(e){if(moved>5){e.preventDefault();e.stopPropagation()}},true);
 })();
 </script>`;
 
@@ -623,77 +648,82 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
 /**
  * 인덱스 카드의 앨범 커버.
  *
- * `a.cover`(판매처 썸네일)를 쓴다. `a.ogImage`가 아니다 —
+ * 판매처 썸네일을 쓴다. `a.ogImage`가 아니다 —
  * 그쪽은 특전 배너를 먼저 집어서 세로로 긴 그림이 온다(실측: 샤이니 1000×7849, NCT 127 1000×6140).
  *
- * width·height를 반드시 박는다. 없으면 이미지가 늦게 도착할 때 카드가 밀려 레이아웃이 튀고,
- * 그게 Core Web Vitals의 CLS다 — 검색 유입이 1순위 채널인 사이트에서 그건 손해다.
- * 커버가 없으면 빈 상자를 같은 크기로 둔다. 깨진 이미지 아이콘보다 낫다.
+ * 종횡비는 CSS에서 1:1로 고정한다. 비율을 섞으면 행 정렬이 깨지고,
+ * 행 정렬이 격자를 훑을 수 있게 만드는 바로 그것이다(docs/38-조사-배치원리.md).
+ * 이미지가 늦게 와도 자리가 미리 잡혀 있어 CLS가 안 생긴다.
  *
  * `eager`는 첫 화면에 들어오는 것에만 준다. **LCP 이미지를 lazy로 걸면 손해다** —
  * 브라우저가 나중에 받으라고 알아듣고 가장 큰 그림이 가장 늦게 온다.
+ *
+ * `a.covers`(버전별 커버 배열)가 있으면 넘길 수 있는 스트립으로, 없으면 `a.cover` 한 장으로 낸다.
+ * 스트립은 CSS scroll-snap이라 손가락 스와이프는 JS 없이 된다(COVER_JS는 마우스만 다룬다).
  */
-const coverImg = (a, size, eager = false) =>
-  a.cover
-    ? `<img class="cv" src="${esc(a.cover)}" alt="" width="${size}" height="${size}" ${
-        eager ? 'fetchpriority="high"' : 'loading="lazy"'
-      } decoding="async">`
-    : `<div class="cv"></div>`;
+function coverStrip(a, eager = false) {
+  const list = (a.covers?.length ? a.covers : a.cover ? [{ url: a.cover }] : []).slice(0, 8);
+  if (!list.length) return `<div class="cvw"><div class="strip"><div class="ph"></div></div></div>`;
+  const imgs = list
+    .map(
+      (c, i) =>
+        `<img src="${esc(c.url || c)}" alt=""${c.label ? ` data-v="${esc(c.label)}"` : ''} ${
+          eager && i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'
+        } decoding="async">`
+    )
+    .join('');
+  const dots =
+    list.length > 1
+      ? `<div class="dots">${list.map(() => '<button type="button" aria-label="버전"></button>').join('')}</div>`
+      : '';
+  return `<div class="cvw"><div class="strip${list.length > 1 ? ' multi' : ''}">${imgs}</div><span class="vn"></span></div>${dots}`;
+}
 
 export function renderIndex({ albums, stamp, siteUrl }) {
   /**
-   * 마감 임박.
+   * 초점 하나를 고른다 — **마감이 가장 급한 앨범**.
    *
-   * 특전은 "수량 소진시까지"라 남은 시간이 결정을 가른다. 훑으러 온 사람에게 답을 먼저 준다.
-   * **7일 이내**만, 최대 5개. 3개 미만이면 아예 안 낸다 — 한두 개짜리 가로 목록은 그냥 노이즈다.
-   * 기준이 없으면 마감이 3주 남은 것까지 "임박"이라고 우기게 된다.
+   * 격자를 깨는 건 이 한 장뿐이다. 격자에 맞춘 것과 깬 것의 대비는
+   * 격자가 먼저 분명히 서 있을 때만 인지되기 때문이다(docs/38-조사-배치원리.md).
+   * 그리고 깨는 데는 이유가 있어야 한다 — 여기서는 **크기가 곧 "가장 급함"이라는 정보**다.
+   *
+   * 목록 순서도 같은 축(마감 급한 순)으로 맞춘다. 크기와 순서가 다른 축을 가리키면
+   * "왜 저게 큰가"에 답이 없어진다.
    */
   const now = Date.now();
-  const soon = albums
-    .filter((a) => !a.expired && a.nextDeadline?.at)
-    .map((a) => ({ a, t: new Date(a.nextDeadline.at).getTime() }))
-    .filter((x) => Number.isFinite(x.t) && x.t > now && x.t - now < 7 * 864e5)
-    .sort((x, y) => x.t - y.t)
-    .slice(0, 5)
-    .map((x) => x.a);
-
-  const rail =
-    soon.length >= 3
-      ? `<div id="rail"><h2>마감 임박 <span class="one">${soon.length}</span></h2>
-<div class="rail">${soon
-          .map(
-            (a, i) => `<a class="rc" href="album/${esc(a.slug)}.html">
-${coverImg(a, 162, i < 2)}
-<div class="rar">${esc(a.artistDisplay || a.artist)}</div>
-<div class="ral">${esc(a.album)}</div>
-<div class="cdl">${esc(a.nextDeadline.label)} <span class="cd" data-until="${esc(a.nextDeadline.at)}">${esc(
-              a.nextDeadline.rough || ''
-            )}</span></div>
-</a>`
-          )
-          .join('')}</div></div>`
-      : '';
+  const at = (a) => (a.nextDeadline?.at ? new Date(a.nextDeadline.at).getTime() : Infinity);
+  const ordered = [...albums].sort(
+    (x, y) => Number(!!x.expired) - Number(!!y.expired) || at(x) - at(y)
+  );
+  // 마감이 이미 지났거나 없는 앨범을 크게 세우면 근거가 없다. 그럴 땐 초점을 안 만든다.
+  const head = ordered[0];
+  const feature = head && !head.expired && Number.isFinite(at(head)) && at(head) > now ? head : null;
 
   // 검색 대상 문자열을 빌드 때 미리 만들어 카드에 박는다 (브라우저는 비교만 한다)
   const hayOf = (a) => [a.artistDisplay, a.artist, a.artistKo, a.album].filter(Boolean).join(' ');
-  const cards = albums
-    .map(
-      (a, i) => `<a class="card" href="album/${esc(a.slug)}.html" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
+  /**
+   * 카드는 링크가 아니라 상자다. 커버 스트립 안에 점(button)이 들어가는데
+   * `<a>` 안에 `<button>`을 넣을 수 없어서다. 대신 `.go`가 카드 전체를 덮는다.
+   */
+  const cards = ordered
+    .map((a, i) => {
+      const f = a === feature;
+      return `<div class="card${f ? ' f' : ''}" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
         searchKey(choseong(hayOf(a)))
       )}">
-${coverImg(a, 62, !rail && i < 4)}
-<div class="cb">
-<div class="ar">${esc(a.artistDisplay || a.artist)}</div>
+<a class="go" href="album/${esc(a.slug)}.html" aria-label="${esc(`${a.artistDisplay || a.artist} ${a.album}`)}"></a>
+${coverStrip(a, i < 3)}
+${
+  a.nextDeadline
+    ? `<div class="cdl">${esc(a.nextDeadline.label)} <span class="cd" data-until="${esc(a.nextDeadline.at)}">${esc(
+        a.nextDeadline.rough || ''
+      )}</span></div>`
+    : ''
+}<div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
-<div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>${
-        a.nextDeadline
-          ? `<div class="cdl">${esc(a.nextDeadline.label)} <span class="cd" data-until="${esc(a.nextDeadline.at)}">${esc(
-              a.nextDeadline.rough || ''
-            )}</span></div>`
-          : ''
-      }
-</div></a>`
-    )
+<div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · 판매처 ${a.retailers}${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
+</div>`;
+    })
     .join('');
   const names = albums
     .slice(0, 6)
@@ -722,9 +752,10 @@ ${
 <p class="none-hit" id="qz" style="display:none">찾는 앨범이 없습니다. 예약판매 중인 것만 올라옵니다.</p>`
         : ''
     }
-${rail}
 <div class="cards">${cards}</div>
-${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS : ''}${rail ? DRAG_JS : ''}`,
+${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS : ''}${
+      albums.some((a) => a.covers?.length > 1) ? COVER_JS : ''
+    }`,
     {
       description: (
         `예약판매 중인 K-POP 앨범 ${live}개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. ` +
