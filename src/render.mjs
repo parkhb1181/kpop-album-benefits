@@ -131,8 +131,15 @@ margin-bottom:clamp(28px,3.4vw,44px)}
 /* 400px 고정이었는데 첫 화면(1440×744)을 커버가 거의 다 먹었다 — 실측상 커버는 y290~713인데
    마감 스택은 y490에서 끝나 오른쪽 아래 420×220이 비었고, 정작 이 페이지의 값인
    버전별 비교는 h2만 걸쳤다. 인덱스에서 이미 본 그림이라 그만한 자리를 줄 이유가 없다. */
-.hcv{width:clamp(240px,30vw,340px);aspect-ratio:1;object-fit:cover;display:block;background:var(--card);flex:0 0 auto}
+/* height:auto가 없으면 안 된다 — img의 height="400" 속성이 높이를 지정해버려서
+   aspect-ratio가 무시된다(aspect-ratio는 높이가 auto일 때만 먹는다).
+   실제로 상자가 340×400 / 모바일 161×400으로 찌그러져 있었다.
+   속성은 CSS가 오기 전 자리를 잡아주므로 남기고, 높이만 auto로 풀어준다. */
+.hcv{width:clamp(240px,30vw,340px);height:auto;aspect-ratio:1;object-fit:cover;display:block;background:var(--card);flex:0 0 auto}
 .dls{display:flex;flex-direction:column;gap:16px}
+/* 상단 머리글의 라벨. h2가 아니다 — h2로 두면 이 블록이 1번 섹션을 먹어서
+   팬사인회부터 시작하는 문단 번호가 하나씩 밀린다. */
+.dlh{margin:0;font-size:0.75rem;color:var(--mut);font-weight:600;display:flex;align-items:center;gap:8px}
 /* 조합 내역은 서로 견주는 항목이라 가로로 늘어놓는다. 세로로 쌓으면 한 줄에 하나씩
    읽히면서 "어디서 몇 종"이 서로 멀어진다. */
 .bds{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(12px,1.6vw,20px)}
@@ -143,7 +150,9 @@ margin-bottom:clamp(28px,3.4vw,44px)}
 .dlm{font-size:0.75rem;color:var(--mut)}
 .dlm a{border:0}
 .dlb{font-size:0.875rem;line-height:1.7;margin-top:8px}
-.dls .dl:first-child{border-top:0;padding-top:0}
+/* 라벨(.dlh)이 첫 자식이라 .dl:first-child는 이제 안 맞는다.
+   라벨 바로 다음 항목만 윗선을 지운다 — 라벨과 첫 마감 사이에 선이 둘이 되지 않게. */
+.dls .dlh+.dl{border-top:0;padding-top:0}
 /* 모바일에서 100%면 351px 정사각형이라 헤더·제목까지 더해 첫 화면이 커버 하나로 끝난다.
    절반만 준다 — 옆에 마감이 같이 서고, 아래 비교표가 첫 화면에 걸린다. */
 @media(max-width:760px){.hcv{width:min(46%,200px)}}
@@ -1191,10 +1200,19 @@ function countdownHtml(deadlines, slug, siteUrl, subject, cover) {
     })
     .join('');
 
-  return `<h2>남은 시간 <span class="one">실시간</span></h2>
-<div class="hero">${
+  /**
+   * **제목(h2)을 달지 않는다.** 달면 이 블록이 1번 섹션이 되는데, 여기는 읽을 문단이 아니라
+   * 앨범의 머리글(커버 + 남은 시간)이다. 팬이 실제로 훑는 문단은 팬사인회부터 시작한다 —
+   * 1 팬사인회 · 2 사진 · 3 버전별 판매처 · 4 최저가.
+   *
+   * 목차(wikiIndex)도 h2를 세어 만들므로, 제목을 빼면 여기가 목차에서도 빠진다.
+   * 화면 맨 위에 이미 보이는 것을 목차로 또 가리킬 이유가 없다.
+   *
+   * 타이머는 커버 오른쪽에 세로로 쌓는다(.hero + .dls).
+   */
+  return `<div class="hero">${
     cover ? `<img class="hcv" src="${esc(cover)}" alt="${esc(subject)}" width="400" height="400" fetchpriority="high" decoding="async">` : ''
-  }<div class="dls">${cards}</div></div>
+  }<div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p>${cards}</div></div>
 ${CD_JS}`;
 }
 
