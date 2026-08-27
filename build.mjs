@@ -157,10 +157,20 @@ async function collectAlbum(t) {
     errors.push(`위버스샵: ${e.message}`);
   }
 
-  // 팬사인회·영상통화 — 메이크스타에만 있다 (헤드리스 필요)
+  // 팬사인회·영상통화 — 메이크스타에만 있다.
+  //
+  // 검색하지 않는다. 진행 중 이벤트 **전량**을 한 번 받아두고(빌드당 1회) 로컬에서 고른다.
+  // 검색을 쓰던 때는 아티스트명 표기가 조금만 달라도 0건이 나왔고, 그래서
+  // "이벤트가 없다"와 "검색이 못 찾았다"를 구분할 수 없었다.
   let events = [];
   try {
-    events = await mks.events(nameVariants(t.artistEn)[0] || t.artistEn);
+    const matched = await mks.eventsFor({
+      artists: nameVariants(t.artistEn),
+      album: t.album,
+      token,
+      deliveryDate: t.deliveryDate,
+    });
+    events = await mks.withOptions(matched); // 어떤 버전을 얼마에 사야 응모되는지
   } catch (e) {
     errors.push(`메이크스타: ${e.message}`);
   }
@@ -175,7 +185,16 @@ const disc = await discoverPreorders({ concurrency: 8 });
 let targets = disc.albums.map((a) => ({ ...a, artist: a.artistEn }));
 if (ONLY) targets = targets.filter((t) => new RegExp(ONLY, 'i').test(t.album) || new RegExp(ONLY, 'i').test(t.artist));
 if (MAX) targets = targets.slice(0, MAX);
-console.log(`예판 앨범 ${disc.albums.length}개 중 ${targets.length}개 빌드\n`);
+console.log(`예판 앨범 ${disc.albums.length}개 중 ${targets.length}개 빌드`);
+
+// 이벤트는 앨범별로 검색하지 않고 전량을 한 번 받는다. 여기서 실패하면 이벤트만 빠진다.
+let eventTotal = 0;
+try {
+  eventTotal = (await mks.allEvents()).length;
+  console.log(`메이크스타 진행 중 이벤트 ${eventTotal}건 확보\n`);
+} catch (e) {
+  console.log(`⚠ 메이크스타 이벤트 목록 실패: ${e.message}\n`);
+}
 
 mkdirSync('./out/album', { recursive: true });
 const index = [];
@@ -201,7 +220,7 @@ for (const t of targets) {
 
   writeFileSync(
     `./out/album/${slug}.html`,
-    renderAlbum({ target: t, rows, errors, events, stamp, siteUrl: SITE_URL, slug, artistKo }),
+    renderAlbum({ target: t, rows, errors, events, eventTotal, stamp, siteUrl: SITE_URL, slug, artistKo }),
     'utf8'
   );
   index.push({
@@ -211,6 +230,8 @@ for (const t of targets) {
     retailers,
     benefitCount,
     soldCount,
+    eventCount: events.length,
+    fansignCount: events.filter((e) => e.fansign).length,
     rowCount: rows.length,
     artistKo,
     artistDisplay: displayArtist(t.artist, artistKo),

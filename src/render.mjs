@@ -113,8 +113,22 @@ const limitCell = (i) => (i.maxOrder ? `<b>${i.maxOrder}</b>장` : '<span class=
  * 팬사인회·영상통화 이벤트 — 메이크스타에서만 나온다.
  * 앨범값(1~2만원)보다 훨씬 큰 돈이 걸리는 결정이라 특전보다 위에 놓는다.
  */
-function eventsHtml(events) {
-  if (!events?.length) return '';
+function eventsHtml(events, eventTotal) {
+  // 진행 중 이벤트 **전량**과 대조하므로, 없다는 것도 이제는 정보다.
+  // (예전엔 아티스트명으로 검색했던 탓에 "없음"과 "못 찾음"이 구분되지 않았다)
+  const scope = eventTotal
+    ? `메이크스타 진행 중 이벤트 ${eventTotal}건을 전부 대조합니다.`
+    : '메이크스타 진행 중 이벤트 전량과 대조합니다.';
+  const limits = `<div class="pol">${scope}
+Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 못합니다.
+알라딘·사운드웨이브·위드뮤는 팬싸 정보를 아예 제공하지 않습니다.</div>`;
+
+  if (!events?.length) {
+    return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
+<p class="mut" style="font-size:13.5px">진행 중인 메이크스타 이벤트에 <b>이 앨범 건은 없습니다.</b></p>
+${limits}`;
+  }
+
   const rows = events
     .map((e) => {
       const when = e.closing
@@ -122,19 +136,26 @@ function eventsHtml(events) {
         : e.dday != null
           ? `<b>D-${e.dday}</b>`
           : '<span class="mut">진행중</span>';
-      return `<tr><td class="rt">${esc(e.label)}</td><td class="num">${when}</td>
-<td class="mut">${esc(e.from)} ~ ${esc(e.to)}</td>
-<td>${esc(e.title)}</td></tr>`;
+      // 어떤 버전을 얼마에 사야 응모되는지 — 이게 없으면 아래 특전표와 이어지지 않는다
+      const opts = (e.options || [])
+        .map((o) => `${esc(o.name)} ${o.krw != null ? `<b>${won(o.krw)}</b>` : ''}`)
+        .join(' · ');
+      const title = e.url ? `<a href="${esc(e.url)}" rel="nofollow">${esc(e.title)}</a>` : esc(e.title);
+      return `<tr><td class="rt">${esc(e.label)}${e.fansign ? ' <span class="flag">팬싸</span>' : ''}</td>
+<td class="num">${when}</td>
+<td class="mut">${esc(e.from)} ~ ${esc(e.to)}${e.winnerAt ? `<br>발표 ${esc(e.winnerAt)}` : ''}</td>
+<td>${title}${opts ? `<div class="mut">응모 가능: ${opts}</div>` : ''}</td></tr>`;
     })
     .join('');
+
   return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<div class="warn">앨범을 <b>어디서 사느냐가 응모 자격을 가릅니다.</b> 지정된 판매처에서 사야 응모권이 나옵니다.</div>
-<div class="wrap"><table><thead><tr><th>종류</th><th>남은 기간</th><th>기간</th><th>이벤트</th></tr></thead><tbody>${rows}</tbody></table></div>
-<div class="pol">메이크스타 검색 기준. <b>여기 없다고 팬싸가 없는 건 아닙니다</b> — 다른 판매처가 여는 팬싸는 잡지 못합니다.
-위버스샵·알라딘·Ktown4u·사운드웨이브는 팬싸 정보를 아예 제공하지 않습니다.</div>`;
+<div class="warn">이 이벤트들은 <b>메이크스타에서 그 앨범을 사야 응모됩니다.</b>
+다른 판매처에서 산 앨범으로는 응모할 수 없고, 응모 마감 뒤에는 취소·환불이 안 됩니다.</div>
+<div class="wrap"><table><thead><tr><th>종류</th><th>남은 기간</th><th>응모 기간</th><th>이벤트</th></tr></thead><tbody>${rows}</tbody></table></div>
+${limits}`;
 }
 
-export function renderAlbum({ target, rows, errors, stamp, events, siteUrl, slug, artistKo }) {
+export function renderAlbum({ target, rows, errors, stamp, events, eventTotal, siteUrl, slug, artistKo }) {
   const byKey = new Map();
   for (const r of rows) {
     if (!byKey.has(r.key)) byKey.set(r.key, []);
@@ -254,7 +275,7 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
 <div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능${
       soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
     }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
-${eventsHtml(events)}
+${eventsHtml(events, eventTotal)}
 ${optHtml}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
 ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`,
@@ -273,7 +294,7 @@ export function renderIndex({ albums, stamp, siteUrl }) {
       (a) => `<a class="card" href="album/${esc(a.slug)}.html">
 <div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
-<div class="meta">${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
+<div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
 </a>`
     )
     .join('');
