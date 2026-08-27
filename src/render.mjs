@@ -878,6 +878,9 @@ const footnoteList = (html) => {
  */
 const VIEW_JS = `<script>
 (function(){
+/* 사진 ↔ 탭 동기화. 갤러리가 탭보다 먼저 그려지므로 서로를 여기에 걸어둔다.
+   sync 플래그는 한쪽이 다른 쪽을 부를 때 되돌아오는 것을 막는다. */
+var showTab=null,goToVer=null,sync=false;
 /* 버전 탭 — 첫 패널만 남기고 접는다. 패널은 DOM에 그대로 있어서 크롤러는 전부 읽는다. */
 var tabs=document.querySelector('.vtabs');
 if(tabs){
@@ -895,15 +898,18 @@ b.setAttribute('aria-selected',i===n?'true':'false');
 b.setAttribute('tabindex',i===n?'0':'-1');
 });
 }
+showTab=show;
+/* 탭을 누르면 그 버전의 첫 사진으로 갤러리를 옮긴다. */
+function pick(i){show(i);if(goToVer&&!sync){sync=true;goToVer(i);sync=false}}
 bs.forEach(function(b,i){
-b.addEventListener('click',function(){show(i)});
+b.addEventListener('click',function(){pick(i)});
 /* 화살표키 이동 — role=tab을 붙인 이상 이게 없으면 키보드로는 첫 탭에 갇힌다. */
 b.addEventListener('keydown',function(e){
 var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
 if(!d)return;
 e.preventDefault();
 var t=(i+d+bs.length)%bs.length;
-show(t);bs[t].focus();
+pick(t);bs[t].focus();
 });
 });
 show(0);
@@ -928,12 +934,28 @@ addEventListener('load',scrollHints);addEventListener('resize',scrollHints);scro
    빈 버튼이 마크업에 남지 않는다. */
 document.querySelectorAll('.pgal[data-gal]').forEach(function(w){
 var m=w.querySelector('.pgm');if(!m)return;
+var lastP=-1;
 function tb(){return [].slice.call(w.querySelectorAll('.pgt button'))}
-function at(){return Math.round(m.scrollLeft/(m.clientWidth||1))}
-function go(n){var t=tb();m.scrollTo({left:m.clientWidth*Math.max(0,Math.min(t.length-1,n)),behavior:'smooth'})}
+/* 이동 중에는 목표 번호를 쓴다. CSS smooth가 scrollLeft를 애니메이션하는 동안
+   그 값을 읽으면 지나가는 사진마다 탭이 깜빡인다(실측: 탭3 → 탭0으로 되돌아옴). */
+var idx=0,moving=0,mv;
+function at(){return moving?idx:Math.round(m.scrollLeft/(m.clientWidth||1))}
+/* 이 브라우저는 **부드러운 스크롤 자체가 없다.** scrollTo({behavior:'smooth'})도,
+   CSS scroll-behavior:smooth를 켠 뒤의 scrollLeft 대입도 전부 무시된다(실측 600ms 뒤에도 0).
+   둘 다 켜면 갤러리가 통째로 안 움직인다. 즉시 이동으로 간다 — 안 움직이는 것보다 낫다. */
+function go(n){
+var t=tb();idx=Math.max(0,Math.min(t.length-1,n));moving=1;
+m.scrollLeft=m.clientWidth*idx;
+clearTimeout(mv);mv=setTimeout(function(){moving=0;mark()},500);
+mark();
+}
 function mark(){
 var n=at(),t=tb();
 t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
+/* 사진을 넘기면 그 사진이 속한 버전 탭이 눌린다. 사진을 보고 버전을 고르는
+   순서라, 고른 결과가 아래 표에 바로 반영돼야 한다. */
+var f=m.querySelectorAll('figure')[n],p=f?parseInt(f.getAttribute('data-p'),10):-1;
+if(p>=0&&p!==lastP&&showTab&&!sync){lastP=p;sync=true;showTab(p);sync=false}
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
 w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
@@ -944,6 +966,10 @@ b.addEventListener('click',function(){go(at()+dir)});
 w.appendChild(b);
 }
 mk('p','\\u2039',-1);mk('n','\\u203a',1);
+goToVer=function(p){
+var figs=[].slice.call(m.querySelectorAll('figure'));
+for(var i=0;i<figs.length;i++)if(parseInt(figs[i].getAttribute('data-p'),10)===p){lastP=p;go(i);return}
+};
 /* 화살표는 사진 세로 가운데에 — 캡션·썸네일 높이를 빼야 사진 밖으로 안 나간다. */
 var first=m.querySelector('img');
 function place(){
@@ -1605,6 +1631,39 @@ ${compHtml}${cards}`,
     packs: ps,
   }));
 
+  /**
+   * 메인 사진 한 장 + 썸네일 줄. 썸네일로 전 버전이 한눈에 들어오고, 눌러서 넘긴다.
+   * JS가 없어도 가로 스크롤로 전부 볼 수 있다 — 화살표는 JS가 있을 때만 붙는다.
+   */
+  /**
+   * 같은 에디션의 낱개·세트는 같은 사진을 밀어넣는다(PHOTO BOOK 낱개/세트 → 위버스샵 특전 2장).
+   * 갤러리에서는 같은 파일이 두 번 나오면 그냥 고장으로 읽히므로 URL로 한 번 거른다.
+   */
+  const galShots = allShots
+    .filter((g, n) => allShots.findIndex((x) => x.url === g.url) === n)
+    // 사진 → 탭 번호. 탭 라벨과 shots의 ver는 같은 값(에디션명)에서 나온다.
+    .map((g) => ({ ...g, p: tabs.findIndex((t) => t.label === g.ver) }));
+  const pageGal = galShots.length
+    ? `<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
+<div class="pgm">${galShots
+        .map(
+          (g, n) => `<figure data-p="${g.p}">
+<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
+<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
+        )
+        .join('')}</div>
+${
+        galShots.length > 1
+          ? `<div class="pgt">${galShots
+              .map(
+                (g, n) =>
+                  `<button type="button" data-i="${n}" data-p="${g.p}" aria-label="${esc(g.ver)} ${esc(g.cap)}"><img src="${esc(g.url)}" alt="" loading="lazy"></button>`
+              )
+              .join('')}</div>`
+          : ''
+      }</div>`
+    : '';
+
   const sections = tabs.length
     ? /**
        * **ARIA를 반만 쓰면 안 쓴 것보다 나쁘다.**
@@ -1613,7 +1672,14 @@ ${compHtml}${cards}`,
        * 연결된 패널도 알려주지 않으니, 그냥 버튼 목록이라고 말해주느니만 못했다.
        * 상태는 VIEW_JS가 탭을 바꿀 때마다 같이 갱신한다.
        */
+      /**
+       * **사진과 탭은 한 덩어리다.** 사진을 보고 버전을 고르고, 그 버전의 판매처를 본다.
+       * 둘을 따로 섹션으로 세우면 사이에 뭘 끼워도 어색하다 — 실제로 팬사인회를
+       * 사이에 끼워봤는데 커버·포스터·갤러리가 줄줄이 이어져 더 나빴다.
+       * 그래서 갤러리를 이 섹션 안에 넣고 탭과 맞물린다(VIEW_JS에서 양방향 동기화).
+       */
       `<h2>버전별 판매처 비교 <span class="one">${tabs.length}종</span></h2>
+${pageGal}
 <div class="vtabs" role="tablist" aria-label="버전 선택">${tabs
         .map(
           (t, i) =>
@@ -1776,36 +1842,6 @@ ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
    * 상점이 아니라 자료의 형식이다. 우리 데이터는 88%가 불확실한데(FOOTNOTES 주석 참고),
    * 상점 형식은 확정을 전제하므로 그 위에 얹으면 고장난 상점처럼 보인다.
    */
-  /**
-   * 메인 사진 한 장 + 썸네일 줄. 썸네일로 전 버전이 한눈에 들어오고, 눌러서 넘긴다.
-   * JS가 없어도 가로 스크롤로 전부 볼 수 있다 — 화살표는 JS가 있을 때만 붙는다.
-   */
-  /**
-   * 같은 에디션의 낱개·세트는 같은 사진을 밀어넣는다(PHOTO BOOK 낱개/세트 → 위버스샵 특전 2장).
-   * 갤러리에서는 같은 파일이 두 번 나오면 그냥 고장으로 읽히므로 URL로 한 번 거른다.
-   */
-  const galShots = allShots.filter((g, n) => allShots.findIndex((x) => x.url === g.url) === n);
-  const pageGal = galShots.length
-    ? `<h2>사진 <span class="one">${galShots.length}장</span></h2>
-<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
-<div class="pgm">${galShots
-        .map(
-          (g, n) => `<figure>
-<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
-<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
-        )
-        .join('')}</div>
-${
-        galShots.length > 1
-          ? `<div class="pgt">${galShots
-              .map(
-                (g, n) =>
-                  `<button type="button" data-i="${n}" aria-label="${esc(g.ver)} ${esc(g.cap)}"><img src="${esc(g.url)}" alt="" loading="lazy"></button>`
-              )
-              .join('')}</div>`
-          : ''
-      }</div>`
-    : '';
 
   /**
    * 본문 순서는 **팬이 실제로 결정하는 순서**를 따른다.
@@ -1823,19 +1859,17 @@ ${
    */
   const faq = faqData({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length });
   const body = `${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`, rows.find((r) => r.thumb)?.thumb)}
-${eventsHtml(events, eventTotal)}
-${pageGal}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
 ${optHtml}
+${eventsHtml(events, eventTotal)}
 ${faqHtml(faq)}`;
 
   /**
-   * 목차 — `wikiIndex`는 **만들어놓고 한 번도 부르지 않던 죽은 코드였다.**
-   * 주석에는 "표가 10개 넘게 쌓여서 목차가 유일한 항해 수단"이라 적혀 있는데
-   * 정작 페이지엔 목차도 `<nav>`도 없었다(실측 nav 0개, 문서 높이 3,472px).
-   * h2에 번호·앵커를 달고 목차를 세운다 — 시맨틱 `<nav>`도 이걸로 같이 생긴다.
+   * 목차는 걷어냈다. 갤러리를 `버전별 판매처 비교` 안으로 넣으면서 섹션이 넷으로 줄었고,
+   * 넷짜리 문서에 목차를 다는 건 항해가 아니라 장식이다. 번호도 같이 뗀다 —
+   * 목차가 없으면 "3."이 무엇의 3번인지 가리킬 데가 없다.
+   * `wikiIndex`는 남겨둔다. 섹션이 다시 늘면 그때 부르면 된다.
    */
-  const { body: numbered, toc } = wikiIndex(body);
 
   return shell(
     `${artistName} ${target.album} 판매처별 특전 | 버전·구성·가격`,
@@ -1844,8 +1878,7 @@ ${expiredBanner(expired, target)}
 <a class="back" href="../index.html">← 전체 컴백</a>
 <h1>${esc(artistName)} <span class="alb">${esc(target.album)}</span></h1>
 ${reportJs(slug)}
-<main>${toc}
-${numbered}</main>
+<main>${body}</main>
 ${/class="vtabs"/.test(body) ? VIEW_JS : ""}
 ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}
 <p class="stamp">최근 수집 <b>${esc(stamp)}</b></p>`,
