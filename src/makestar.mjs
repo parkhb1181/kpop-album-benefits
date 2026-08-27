@@ -120,6 +120,17 @@ function normalize(e) {
     closing: dday != null && dday >= 0 && dday <= 2,
     winnerAt: (e.eventInfo?.winnerAnnounceAt || '').slice(0, 10).replace(/-/g, '.') || null,
     productId: e.product?.id ?? null,
+    // 이벤트 포스터. 팬싸는 앨범값보다 훨씬 큰 결정인데 지금까지 글자만 있었다.
+    //
+    // HTML 페이지(makestar.co/event/{id})의 og:image를 긁을 필요가 없다 — 커머스 API가
+    // 이미 들고 있고, 그 페이지는 어차피 429로 막힌다. 실측 21건 전부 image가 채워져 있다.
+    //
+    // 표에 붙일 것이므로 thumbUrl(약 64KB jpeg)을 함께 준다. originUrl은 1.7MB짜리 원본이라
+    // 목록에 그대로 걸면 페이지가 무거워진다.
+    // 없으면 키 자체를 넣지 않는다 — 렌더가 존재 여부로 분기한다.
+    ...(e.image?.originUrl
+      ? { image: { url: e.image.originUrl, thumb: e.image.thumbUrl || e.image.thumbCroppedUrl || e.image.originUrl } }
+      : {}),
   };
 }
 
