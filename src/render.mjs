@@ -15,21 +15,29 @@ export const slugify = (s) =>
     .slice(0, 60);
 
 const CSS = `
-:root{--bg:#fff;--fg:#16151a;--mut:#6b6975;--line:#e6e4ea;--acc:#c2410c;--ok:#15803d;--card:#faf9fb}
-@media(prefers-color-scheme:dark){:root{--bg:#131217;--fg:#eceaf2;--mut:#a3a0ad;--line:#2c2a33;--acc:#fb923c;--ok:#4ade80;--card:#1a191f}}
+/* 모티브 — **무채 뼈대 + 커버가 색.**  근거: docs/38-조사-29cm.md
+   화면의 절반이 앨범 커버다. 뼈대를 무채로 눌러두면 채도를 가진 건 커버뿐이고,
+   컴백마다 사이트 인상이 통째로 바뀐다. 우리가 색을 고를 필요가 없어진다.
+
+   액센트는 하나뿐이고 **경고에만** 쓴다(품절·마감). 긍정 상태는 색이 아니라 굵기로 낸다 —
+   그래서 --ok는 초록이 아니라 먹이다. 액센트가 둘이면 어느 쪽도 안 급해 보인다. */
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
+@media(prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ededf0;--mut:#9a9aa2;--dim:#6f6f78;--line:#2a2a30;--acc:#fb923c;--ok:#ededf0;--card:#1c1c21}}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:28px 16px 72px;max-width:1080px;background:var(--bg);color:var(--fg);
 font:15px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
-h1{font-size:23px;margin:0 0 6px;letter-spacing:-.01em}
 h2{font-size:15px;margin:34px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:13px;color:var(--mut);margin:20px 0 8px;font-weight:600}
 .pk{font-weight:500;color:var(--mut);font-size:13px}
 .ok{font-size:11px;font-weight:600;color:var(--ok);border:1px solid currentColor;border-radius:99px;padding:1px 8px}
 .one{font-size:11px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:1px 8px}
 .stamp{color:var(--mut);font-size:13px;margin-bottom:6px}
-.sum{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:14px}
-.sum2{background:var(--card);border:1px solid var(--ok);border-radius:8px;padding:12px 14px;font-size:14px;margin-bottom:12px}
-.warn{background:var(--card);border:1px solid var(--acc);border-radius:8px;padding:11px 13px;font-size:13.5px;margin-bottom:10px}
+.sum{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px;font-size:13.5px;margin-top:14px}
+/* 최저 조합 — 강조는 테두리가 아니라 왼쪽 굵은 선과 글자 굵기로 낸다.
+   --ok가 먹이 된 뒤로 여기 테두리가 검은 상자가 돼서 과했다. */
+.sum2{background:var(--card);border:0;border-left:3px solid var(--fg);border-radius:0;
+padding:12px 14px;font-size:14px;margin-bottom:12px}
+.warn{background:var(--card);border:1px solid var(--acc);border-radius:4px;padding:11px 13px;font-size:13.5px;margin-bottom:10px}
 .wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
 th{text-align:left;color:var(--mut);font-weight:600;font-size:11.5px;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -43,26 +51,45 @@ td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 a:hover{border-bottom-color:currentColor}
 .err{color:var(--acc);font-size:13px;margin-top:28px}
-.pol{margin-top:12px;font-size:12px;color:var(--mut);line-height:1.7;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.pol{margin-top:12px;font-size:12px;color:var(--mut);line-height:1.7;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 12px}
 .gal{display:flex;gap:14px;overflow-x:auto;padding:4px 0 12px}
 .gal figure{margin:0;flex:0 0 190px}
 .gal figcaption{font-size:12px;font-weight:700;margin-bottom:6px}
-.gal img{width:100%;border:1px solid var(--line);border-radius:8px;display:block;background:var(--card)}
-.gal .noimg{width:100%;aspect-ratio:72/152;border:1px dashed var(--line);border-radius:8px;display:flex;flex-direction:column;
+.gal img{width:100%;border:1px solid var(--line);border-radius:4px;display:block;background:var(--card)}
+.gal .noimg{width:100%;aspect-ratio:72/152;border:1px dashed var(--line);border-radius:4px;display:flex;flex-direction:column;
 align-items:center;justify-content:center;color:var(--mut);font-size:12px;text-align:center;line-height:1.5}
 .gal p{font-size:11.5px;color:var(--mut);margin:6px 0 0;line-height:1.5}
 td.th{width:52px;padding:8px 4px 8px 8px}
-td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:5px;display:block}
+td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
 .back{font-size:13px;color:var(--mut);display:inline-block;margin-bottom:14px;border:0}
+/* ── 상단 헤더 ───────────────────────────────────────────────
+   29CM 헤더 실측: 로고 높이 16px · 유틸 간격 16~18px · 라벨 10px · font-extralight.
+   **브랜드를 크게 안 외친다.** 얇은 한 줄이고 굵은 선으로 본문과 끊는다.
+
+   우리는 계정·장바구니·카테고리가 없어서 유틸 자리에 넣을 게 없다.
+   대신 그 자리에 **신선도(갱신 시각)와 출처(판매처)** 를 놓는다 — 이 사이트의 신뢰가 거기서 온다. */
+.hd{margin-bottom:24px}
+.hdrow{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+padding-bottom:10px;border-bottom:2px solid var(--fg)}
+.hd .bd{font-size:12px;font-weight:700;color:var(--fg);white-space:nowrap}
+.hd .hdm{font-size:10.5px;color:var(--dim);font-weight:400;text-align:right}
+h1{font-size:23px;margin:0 0 8px;letter-spacing:-.015em}
+.sub{font-size:13px;color:var(--mut);line-height:1.75;margin:0}
+.sub b{color:var(--fg);font-weight:600}
+
 /* ── 인덱스 격자 ─────────────────────────────────────────────
    근거는 docs/38-조사-배치원리.md.
 
    ⓐ 테두리 상자가 없다. 게슈탈트의 공통 영역(테두리)은 이질적인 것을 한 덩어리로 묶어주지만,
       **똑같은 상자가 격자로 늘어서면 그 상자들이 다시 표의 칸처럼 읽힌다.** 여백이 경계다.
-   ⓑ 그래서 간격이 이 배치의 전부다 — 카드 사이 46px / 카드 안 4~12px.
-      그룹 사이는 넓히고 그룹 안은 좁힌다. 이 차이가 좁으면 덩어리가 안 읽힌다.
-   ⓒ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:46px 24px;margin-top:22px}
+   ⓑ **가로는 좁게, 세로는 넓게.** 한때 가로를 0으로 붙여봤는데 과했다 —
+      커버가 흰 배경 상품 사진이라 옆 앨범과 경계가 사라져 어디까지가 한 장인지 모호해졌다.
+      29CM 실측 눈금(2·4·6·8·10·12·16·20·24·28·32·40·48·56·60)에서 **가로 16 / 세로 48**을 쓴다.
+      가로가 좁아 한 행이 여전히 띠로 읽히고, 세로가 넓어 행 구분은 분명하다.
+   ⓒ 칸 최소폭도 넓혔다. 29CM 상품 격자는 auto-fill minmax(261~292px)다 — 우리는 그보다 작은
+      정보 단위라 240px. 180px은 글자가 두 줄로 자주 접혀 위계가 무너졌다.
+   ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px}
 .card{position:relative;min-width:0;border:0;display:block}
 .card .go{position:absolute;inset:0;z-index:1}
 
@@ -74,9 +101,12 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 @media(max-width:440px){.card.f{grid-column:span 1;grid-row:auto}}
 
 /* 커버 — 종횡비는 전부 1:1. 크기만 다르고 비율은 안 섞는다.
-   비율을 섞으면 행 정렬이 깨지는데, 행 정렬이 격자를 훑을 수 있게 만드는 바로 그것이다. */
-.cvw{position:relative;z-index:2;margin-bottom:14px;
-clip-path:polygon(0 0,100% 0,100% calc(100% - 13px),calc(100% - 13px) 100%,0 100%)}
+   비율을 섞으면 행 정렬이 깨지는데, 행 정렬이 격자를 훑을 수 있게 만드는 바로 그것이다.
+
+   **모서리는 직각이다.** 붙여 놓은 이미지에 반경을 주면 맞닿는 자리마다 흰 틈이 생겨
+   "붙였다"가 무너진다. 잘린 모서리(clip-path)도 같은 이유로 뺐다 —
+   Lando Norris에서 가져왔던 형태인데, 띠를 끊어서 모티브와 부딪힌다. */
+.cvw{position:relative;z-index:2;margin-bottom:12px}
 .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;background:var(--card)}
 .strip::-webkit-scrollbar{display:none}
@@ -91,21 +121,31 @@ color:#fff;background:rgba(0,0,0,.58);border-radius:99px;padding:1px 8px;pointer
 /* 손가락이 있는 화면에선 스와이프가 더 빠르다. 점은 자리만 먹는다. */
 @media (hover:none){.dots{display:none;margin:0}}
 
-/* 위계 3단계 — ①앨범명 ②아티스트 ③메타. 크기·굵기·색 세 지렛대만 쓴다. */
-.card .ar{font-size:10.5px;letter-spacing:.09em;color:var(--mut);font-weight:700;
+/* 위계 3단계 — ①앨범명 ②아티스트 ③메타. 크기·굵기·색 세 지렛대만 쓴다.
+   **한글에는 자간을 주지 않는다.** 벌리면 단어 사이 공백이 죽어 "판매처별특 전 비교"로 붙어 읽힌다.
+   29CM도 --ruler-scale-letter-spacing: 0 이다. */
+.card .ar{font-size:11px;color:var(--mut);font-weight:600;
 white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card .al{font-size:15px;font-weight:700;line-height:1.28;margin:5px 0 8px;letter-spacing:-.01em;
 display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card .meta{font-size:11.5px;color:var(--mut);font-variant-numeric:tabular-nums}
+/* 메타는 한 줄, 한 크기. 알약을 쓰지 않는다 —
+   테두리 친 칩이 셋씩 붙으면 그게 다시 상자가 되고, 무엇이 급한지도 안 보인다.
+   **긍정은 굵기로(b), 경고는 액센트로(s).** 액센트가 한 곳뿐이라 품절이 바로 눈에 띈다. */
+.card .meta{font-size:11.5px;color:var(--mut);font-variant-numeric:tabular-nums;line-height:1.55}
+.card .meta b{color:var(--fg);font-weight:600}
+.card .meta s{color:var(--acc);font-weight:700;text-decoration:none}
 .card.f .ar{font-size:12px}
 .card.f .al{font-size:28px;line-height:1.16;margin:8px 0 12px;-webkit-line-clamp:3}
 .card.f .meta{font-size:13.5px}
-.card.f .cvw{margin-bottom:18px;clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%)}
-.badge{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:99px;padding:0 6px;margin-right:5px}
+.card.f .cvw{margin-bottom:16px}
+/* 앨범 상세의 칩. --ok가 먹이 된 뒤로 테두리가 너무 세서 배경 칩으로 바꿨다.
+   인덱스 카드는 이 클래스를 안 쓴다 — 거기선 굵기와 액센트로만 낸다(.card .meta). */
+.badge{display:inline-block;font-size:10.5px;font-weight:700;color:var(--fg);background:var(--card);
+border:0;border-radius:99px;padding:1px 7px;margin-right:5px}
 .sold{color:var(--acc);font-weight:700}
 .soldb{font-size:11px;font-weight:700;color:var(--acc);border:1px solid currentColor;border-radius:99px;padding:1px 8px}
 .chart{font-size:11px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:1px 8px}
-.comp{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--card)}
+.comp{margin-top:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px;background:var(--card)}
 .comp summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--mut)}
 .comp pre{margin:8px 0 0;font-size:12px;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:inherit;color:var(--fg)}
 .comp p{margin:8px 0 0}
@@ -120,7 +160,7 @@ display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hi
 .card.f .cvw{order:-3}.card.f .dots{order:-2}
 .find{margin-top:14px;display:flex;gap:8px;align-items:center}
 .find input{flex:1;min-width:0;padding:10px 12px;font:inherit;font-size:14px;color:var(--fg);
-background:var(--card);border:1px solid var(--line);border-radius:8px}
+background:var(--card);border:1px solid var(--line);border-radius:4px}
 .find input:focus{outline:none;border-color:var(--mut)}
 .find .n{font-size:12px;color:var(--mut);white-space:nowrap}
 .none-hit{font-size:13.5px;color:var(--mut);margin-top:16px}
@@ -134,7 +174,7 @@ background:var(--card);border:1px solid var(--line);border-radius:8px}
   table{min-width:0;display:block}
   thead{display:none}
   tbody,tr,td{display:block;width:auto}
-  tr{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:10px;background:var(--card)}
+  tr{border:1px solid var(--line);border-radius:4px;padding:10px 12px;margin-bottom:10px;background:var(--card)}
   td{border:0;padding:3px 0;display:flex;gap:10px;align-items:baseline}
   td.th{display:none}
   td::before{content:attr(data-label);flex:0 0 62px;color:var(--mut);font-size:11.5px;font-weight:600}
@@ -790,7 +830,17 @@ ${
     : ''
 }<div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
-<div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · 판매처 ${a.retailers}${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
+<div class="meta">${[
+  `${a.versions}종`,
+  `판매처 ${a.retailers}`,
+  a.benefitCount ? `<b>특전 ${a.benefitCount}곳</b>` : '',
+  a.fansignCount ? '<b>팬싸</b>' : '',
+  a.soldCount ? `<s>품절 ${a.soldCount}</s>` : '',
+  // 마감 카운트다운이 붙는 앨범은 시간 정보가 이미 있다. 없을 때만 발매일을 낸다.
+  !a.nextDeadline && a.deliveryDate ? `${esc(a.deliveryDate)} 발매` : '',
+]
+  .filter(Boolean)
+  .join(' · ')}</div>
 </div>`;
     })
     .join('');
@@ -801,17 +851,22 @@ ${
   const live = albums.filter((a) => !a.expired).length;
   return shell(
     'K-POP 앨범 정보 — 버전·구성·가격·판매처별 특전 비교',
-    `<h1>예약판매 중인 K-POP 앨범 — 버전·구성·특전</h1>
-<div class="stamp">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 자동 수집 · <b>${esc(stamp)} 기준</b></div>
-<div class="sum">앨범 <b>${live}</b>개가 예약판매 중입니다. 같은 앨범이라도 <b>버전마다 구성이 다르고, 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
+    `<header class="hd">
+<div class="hdrow">
+<span class="bd">K-POP 앨범 특전</span>
+<span class="hdm">${esc(shortDate(stamp))} 기준 · 위버스샵 알라딘 Ktown4u 사운드웨이브 위드뮤</span>
+</div>
+</header>
+<h1>예약판매 중인 K-POP 앨범 — 버전·구성·특전</h1>
+<p class="sub">앨범 <b>${live}</b>개가 예약판매 중입니다. 같은 앨범이라도 <b>버전마다 구성이 다르고, 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
       albums.some((a) => a.nextDeadline)
-        ? `<br>마감이 걸린 앨범은 남은 시간이 함께 표시됩니다. ${
+        ? ` 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br>${
             siteUrl
               ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>${pushHtml(vapidPublicKey)}`
               : `<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>${pushHtml(vapidPublicKey)}`
           }`
         : ''
-    }</div>
+    }</p>
 ${
       // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
       albums.length >= 8

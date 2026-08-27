@@ -168,8 +168,43 @@ export function parseTitle(rawTitle) {
   };
 }
 
-/** 상품명에서 앨범 제목을 판별 (다른 앨범 혼입 방지) */
+/**
+ * 상품명에서 앨범 제목을 판별 (다른 앨범 혼입 방지).
+ *
+ * 낱말 경계를 지킨다. 공백까지 지우고 포함만 보면 남의 앨범이 끌려온다 —
+ * 실측(536건)에서 이런 것들이 통과하고 있었다:
+ *   HEAT  → 원어스 [BLOOD MOON] (THEATRE ver.) · DREAM THEATER 15집 · 아이즈원 [ONEIRIC THEATER]
+ *   CLICK → ITZY (CAKE CLICKER KEYRING Ver.) · 도경수 (WAH CLICKER KEYCHAIN)
+ * 지수 CLICK 페이지에 ITZY 상품이 같이 놓여 있었다는 뜻이다.
+ */
 export function matchesAlbum(title, albumName) {
-  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
-  return norm(title).includes(norm(albumName));
+  const soft = (s) =>
+    String(s ?? '')
+      .toLowerCase()
+      .replace(/[^a-z0-9가-힣]+/g, ' ')
+      .trim();
+  const hay = soft(title);
+  const needle = soft(albumName);
+  if (!needle) return false;
+  for (let i = hay.indexOf(needle); i !== -1; i = hay.indexOf(needle, i + 1)) {
+    const okStart = i === 0 || hay[i - 1] === ' ';
+    const okEnd = i + needle.length === hay.length || hay[i + needle.length] === ' ';
+    if (okStart && okEnd) return true;
+  }
+  return false;
+}
+
+/**
+ * 기호·공백을 전부 지운 헐거운 비교.
+ *
+ * 판매처가 앨범명을 붙여 쓰거나(`PHOTOBOOK` vs `PHOTO BOOK`) 다르게 끊으면
+ * 엄격한 쪽이 통째로 0건을 내놓는다. **엄격한 쪽이 0건일 때만** 이걸로 되돌린다.
+ */
+export function matchesAlbumLoose(title, albumName) {
+  const norm = (s) =>
+    String(s ?? '')
+      .toLowerCase()
+      .replace(/[^a-z0-9가-힣]/g, '');
+  const n = norm(albumName);
+  return Boolean(n) && norm(title).includes(n);
 }

@@ -1,5 +1,5 @@
-import { writeFileSync, mkdirSync, rmSync, readFileSync, existsSync } from 'node:fs';
-import { matchesAlbum } from './src/fetchx.mjs';
+import { writeFileSync, mkdirSync, rmSync, readFileSync, existsSync, readdirSync } from 'node:fs';
+import { matchesAlbum, matchesAlbumLoose } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
 import { sitemap, robots, koreanArtistFrom, displayArtist, abs } from './src/seo.mjs';
@@ -77,8 +77,13 @@ function nameVariants(artistEn) {
 async function searchWide(fn, t, token, limit = 25) {
   for (const q of [...nameVariants(t.artistEn).map((n) => `${n} ${t.album}`), t.album]) {
     try {
-      const r = (await fn(q)).filter((x) => matchesAlbum(x.title, token));
+      const all = await fn(q);
+      // 낱말 경계를 지키는 쪽을 먼저 쓴다. 그게 0건일 때만 헐거운 비교로 되돌린다 —
+      // 판매처가 앨범명을 붙여 쓰면 엄격한 쪽이 통째로 0건을 내기 때문이다.
+      const r = all.filter((x) => matchesAlbum(x.title, token));
       if (r.length) return r.slice(0, limit);
+      const loose = all.filter((x) => matchesAlbumLoose(x.title, token));
+      if (loose.length) return loose.slice(0, limit);
     } catch {}
   }
 
@@ -529,6 +534,20 @@ cardHashes.save();
 
 // 전체 마감 캘린더. 이게 사실상의 "알림 서비스"다 —
 // 구독해두면 새 컴백의 마감도 리빌드 때마다 알아서 따라 들어온다.
+// 인덱스에서 사라진 앨범의 .ics는 지운다. 안 지우면 저장소에 계속 쌓이고,
+// 그 파일을 직접 받아간 사람에게는 영원히 갱신 안 되는 일정만 남는다.
+{
+  const live = new Set(catalog.map((a) => `${a.slug}.ics`));
+  let removed = 0;
+  for (const f of readdirSync('./out/alarm')) {
+    if (f.endsWith('.ics') && !live.has(f)) {
+      rmSync(`./out/alarm/${f}`, { force: true });
+      removed++;
+    }
+  }
+  if (removed) console.log(`  알람 파일 정리: ${removed}개 (인덱스에 없는 앨범)`);
+}
+
 allAlarms.sort((a, b) => new Date(a.at) - new Date(b.at));
 writeFileSync('./out/alarm.ics', calendar({ name: 'K-POP 앨범 마감·팬싸 응모', events: allAlarms }), 'utf8');
 
