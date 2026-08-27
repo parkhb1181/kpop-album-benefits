@@ -29,10 +29,18 @@ export const abs = (siteUrl, path) => (siteUrl ? `${siteUrl.replace(/\/$/, '')}/
  * 토큰은 비밀이 아니다 — HTML 에 그대로 나간다.
  * 다만 사이트마다 다르고 도메인을 옮기면 새로 받아야 해서 Variables 로 뺐다.
  */
+// 토큰을 코드에 둔다. 환경변수만 쓰면 변수 없는 빌드(로컬 등)가 태그를 조용히 빼고,
+// 그 결과가 커밋되면 소유확인이 풀린다 — 실제로 한 번 그렇게 날아갔다.
+// 값은 어차피 HTML 에 그대로 나가므로 비밀이 아니다. 환경변수는 덮어쓰기 용도로만 남긴다.
+const VERIFY = {
+  naver: '57715d7af3e8b922357db2854c0ae8e0fb2eba37',
+  google: '', // 구글은 메타태그가 아니라 확인 파일(out/googlef12562bf76a21100.html)로 통과했다
+};
+
 function verificationTags() {
   const out = [];
-  const naver = (process.env.NAVER_VERIFY || '').trim();
-  const google = (process.env.GOOGLE_VERIFY_META || '').trim();
+  const naver = (process.env.NAVER_VERIFY || VERIFY.naver || '').trim();
+  const google = (process.env.GOOGLE_VERIFY_META || VERIFY.google || '').trim();
   if (/^[A-Za-z0-9_-]{10,}$/.test(naver)) out.push(`<meta name="naver-site-verification" content="${esc(naver)}">`);
   if (/^[A-Za-z0-9_-]{10,}$/.test(google)) out.push(`<meta name="google-site-verification" content="${esc(google)}">`);
   return out;
