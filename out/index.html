@@ -4,9 +4,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Crect%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%224.6%22%20fill%3D%22%23c2410c%22%2F%3E%3Cg%20fill%3D%22%23fafafa%22%3E%3Crect%20x%3D%224.2%22%20y%3D%224.2%22%20width%3D%222.4%22%20height%3D%2211.6%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%224.2%22%20width%3D%2211.6%22%20height%3D%222.4%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%228.8%22%20width%3D%228.4%22%20height%3D%222.4%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%2213.4%22%20width%3D%2210.2%22%20height%3D%222.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&text=%ED%8A%B9%EC%A0%84%EB%85%B8%ED%8A%B8&display=swap">
 <meta name="naver-site-verification" content="57715d7af3e8b922357db2854c0ae8e0fb2eba37">
-<meta name="description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.27 기준.">
-<meta property="og:description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.27 기준.">
-<meta name="twitter:description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.27 기준.">
+<meta name="description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.28 기준.">
+<meta property="og:description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.28 기준.">
+<meta name="twitter:description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.28 기준.">
 <link rel="canonical" href="https://kpop-album.vercel.app/">
 <meta property="og:url" content="https://kpop-album.vercel.app/">
 <meta property="og:type" content="website">
@@ -67,9 +67,10 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .ben div{margin-bottom:4px}
 .flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
-.est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap}
+.est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap;margin-left:4px}
 /* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
 .num .est,.num .flag.sub{display:block;margin:2px 0 0}
+.bds .dl:first-child{border-top:2px solid var(--fg)}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 a:hover{border-bottom-color:currentColor}
 .err{color:var(--acc);font-size:14px;margin-top:24px}
@@ -114,6 +115,9 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 margin-bottom:clamp(28px,3.4vw,44px)}
 .hcv{width:400px;height:400px;object-fit:cover;display:block;background:var(--card);flex:0 0 auto}
 .dls{display:flex;flex-direction:column;gap:16px}
+/* 조합 내역은 서로 견주는 항목이라 가로로 늘어놓는다. 세로로 쌓으면 한 줄에 하나씩
+   읽히면서 "어디서 몇 종"이 서로 멀어진다. */
+.bds{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(12px,1.6vw,20px)}
 .hero .dls{flex:1 1 260px;min-width:0}
 .dl{border-top:2px solid var(--fg);padding-top:10px}
 .dlt{font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px}
@@ -170,6 +174,9 @@ color:var(--mut);background:var(--card);border-radius:2px}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
 .cmp .tags{margin:4px 0 0}
+.cmp .rt .tg{white-space:normal;word-break:keep-all}
+a.tg{border-bottom:0}
+a.tg:hover{color:var(--fg);background:var(--line)}
 .cmp td.ben{word-break:keep-all}
 .scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
 gap:clamp(12px,1.4vw,20px);margin-bottom:clamp(20px,2.4vw,32px)}
@@ -354,7 +361,7 @@ h1{font-size:20px}
 }
 .rl0{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAr8oBkMgTUMwFaMwCfMwEgsIAkcgFhcgAnMgDhscMX8oJYMoAwcsAn8gAvssAzM3JrOWpAAAADXRSTlP++/3+/AXQVZQnvInS7OTUAgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAbpJREFUeNptkzFLw0AUx98HMKUHIVuW1MlNz8mt9OjgfkhHQUIQndvg3gTsGoprFyH9AIVOfgBRs3TyxE9w/QaN771LagVv/OX3fy959wJ6NImFf7sqtNZX+QscJamGQzifvYDHcJ5fC3+4TDU+ZpgV8ISiUOoS1fnsDQA2SQrjqRC+UnKZjiav9hs8s8kgn5Io5clqPHuzFsBsEoivkQ3kWVTmrzWaxlSxgxLhyd17jaJnKgFUkcSo36l3lGZIXWQU9brb2lK8Iqj2Ys3NjRCgnHjcrRFynCGLpyjuGjOAA9HBEF/pV2zSJshh0LZuYRVkINvW+5I4kH/EApD9EQMaMqZZ3NkGZoWm7qdf9IXI6M2Hz1qD8VVoUbM8IeNfPKMJVQjbXcvEIMLbAkxZ59EofZzrqnDEdqAVI1ThkJEYoQoNYsZiTy6hOR6FWezJEuCbmKHDYiSlcp7hcCOeM/wgLQxbEaHnUTm6mUaUSsGnK4dnLyqI7w3VEyIuW1EwJE8k60Ujxrh1DsbZeI2MxIT3k8V09LBgES+ON5lE3OS1E1O38yJ4pJ1/KHGJ8LH7O1jEv2N9o/pJqn8AeyZDArEVLjMAAAAASUVORK5CYII=)}.rl1{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXsZqzShp3d3ef3mUfuOJf8rxj+/f5YdKbqK49Aa7Hvocf21uSEV6XERJzwXG6vfbjeOYJGAAAABHRSTlP8agH3AKHXjQAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAU5JREFUeNpt0bFqwzAQBuALGBPIErJkjt+gQ3ZDj2IIBErp3klDvAZMNg8aRF/ACBIw1C3BhtKlGdI1Qx8gb1D6HpV0suyoucHDh+7XjwzROEAzt492biKYWUP8bXUC49Zw2eI9uINdwEMfcW4VeuYCLhB/rqEN8HB5DamsjybAx2T0coGJ/uTp4bOP+QdHXOzz9AKfuNrOq3AOZ0wEbfNKYRind69wEhigUBM3aSBwsTqG77AbMZbWJdQHxliZiDo4DKGo64a5+SqhWXGQ33qzY5YOEeQOUfCRs2PAEYqtvlq0WgpVForNWSt/M1aZegrXVN3cTpWhyLbUPWdsRaZRmn18Vsgdbk7mZKjW9w6zHT2kqeiQQgVA0K1nVEq9ijXCtfdPNNp9D+U1pFIeUqkeavNCc0Jbyk4M0+xf6ABmBvuh8QSi6UZK2QuNB9EfylcORkCkhDIAAAAASUVORK5CYII=)}.rl2{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEX91dr609gWRkP/2uAMQT2VlZYlT03WvcHry8+4q62kn6HGs7Z9h4dre3s7XVxVbW3dBnHAAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABSElEQVR42mNgGPpAUICRkUGAQUCAUQAuxihswGxgDGQYMCMUCosvbQ+PKu/cujMSrpLR/Jpb6Z8zv/qvnj+zGSbKvM5Jbef90KvrDsetmQwVZLRKUVKbuTy0M3LjVrh2gTonJbcN3OXtO3d372yGigofUVK71WA7tebP37l/iyGCjBxPlFSZGW3Oxv658/IPTNAyReWjIQN7aOT07RGrYIJWSinBjYIMjY3CDIwSMIsYOzouJT23SEu6aOqWNhkuav5E5YWpk8pheSc3hONlnFQuA921OUjJrwEmWHVJSenqIyW1mCQlH0NYcCxzUvL7oqSkn6Kk8pwRJhikpPLyi5LKzRQlt8Uw3cKLlPw2flHR7U5SyUKEZpDbcYsvegstU3LhdjMIbF1uzLh0hgF71EZDpCgyFgTGhCADs4EASrwxMALFQXjIAwB9gWUtVuaT6gAAAABJRU5ErkJggg==)}.rl3{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAAAARGw0AAAAAAAAAAQBkq0X+/v5ptEg3RjBKfjNamz7p6emysrHMzMxnZ2ecnJwrT1cLAAAABHRSTlMD9F62FdF0GwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAT1JREFUeNpt079Kw0AcB/CzT6CYouDSwRcQfIG0N6SCSsFw0s3li4OOIZpNCPWGLkJBHQWl1Fl8AnHqnEfIExQnB3N/frnY3He6fLjL7y73C2Osc8Ab2e6xKp2A/0uodJ+vpV9N5K302EYbN9ur1fpDGkbP74s7PRowqj2cp2maPOj6jObNY5V0ph4I72OTLHAYJRbFi0OaGMe3Dt9qFDlhvbrKK+GRs/iGcMespJcyV0csNI4JH82UrtagiWemniAMt6oEa2ijN1Hj7zKfLleRPsLY4gmQF/gYJs0t7QEShLT5H2Ba48hgBOCbUMwMHkPHYGY/XdnEkcHwEwVgqyf2Ok5xVeJ6olHfhsIJLkpcakzPucUCqxJfCrMnc9yqGaTku5JHMghtY4SubVwG/gbztqK3ab3t7f8RPL/MH0ct9qM4BKMvAAAAAElFTkSuQmCC)}.rl4{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXtGyNMaXHkBBjtGyPzHCTuGiPsGiLvGyPsGiLxGyPtGiLqGiHlGSLtHCT9HSb3HSU3Q5U5AAAADXRSTlP8AAOi/IgpzlHpakERsG5xLgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYlJREFUeNp9kz1LA0EQhqcIWG2OXTAGtdmA9iJpJEgKCyN4IgGxEuNHYWcvGgRtLPQHGBQFwSoQsLFMkX4LG4slgqaIxSWFEFEUd3fmYi4R3+Ju7rmb3bl3ZoFbpXjiJJ++3TCBFdiL4Nu730HQGlpBaqGQm/EvMKq/7HFJUE74CrQRQCsjEIrEATCNgmZFOijv2yHT2lsQFoqxuV+m1dKVNFDuZHWP2LywXxZZL1S5ggQx/KQjik9xkFsqCtW7ADmL2QqoLtWRkGAYsyDIYuQdAi0JzXT+QtGiMNJ2UT3DeQ0LjpVg3b1WHzyVkkcYf8IZwxTjmRh1S6kGlC1UjwVrGf6HeoY1vFvHuKQHcGWqBsLyX/D0v3TMyFUdDDeikpbN7iLZJojFG2tN8Wi3gfib6uGa8+QlI0iGxDqrx0Xsi4GhdV4QUFMNHDDZwTvdJwMHGmchH4+2GGHfMCCMjg1BO2CD0I5iBL66oa350IO9Eo23vwhdvVXCg7AfdHUugI7M5M00aaYqfwCMlrmQEEXoZgAAAABJRU5ErkJggg==)}.rl5{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAy9X///8AyNIEzNb9///5/v5p4ObQ9fgo09xC2eCt7/Lo+/sXz9iQ6e1W3eOA5epcpnLSAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAUlEQVR42mNgGBzAgBlTjEnZSAFDUHN51SQMhR9dXOTRlDLrCa57JfjIAFlMSYldVknpYoGSEpK6jo6pnh0dUyI7OgwQekUEXVwEQdgRbgKzmqigoyAQiAgGJiEJuriIuLg4irigCIo4OoqGiISgqhR0dcTULtWT6DZdfroIiqCswuk96hK6oqjaF7UUnPbQDEQRdFw0cdHRzUwfUQQDLyUmNS46uRBVZVKWUXtTIqr2wE9Mh5U0Njqiqtx5bv+JbDR3CooEOoaKOCILagJDScRFEBhQjpMQYVcY4gIGruKIsGeaLSIIBo47kaJJ43o5GNQ2IUcSVAETavKAGs4wWAEAf3lOYK3zwV0AAAAASUVORK5CYII=)}</style></head><body><header class="hd"><div class="hdrow">
 <h1 class="brand"><svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect width="20" height="20" rx="4.6" fill="#c2410c"/><g fill="#fafafa"><rect x="4.2" y="4.2" width="2.4" height="11.6"/><rect x="4.2" y="4.2" width="11.6" height="2.4"/><rect x="4.2" y="8.8" width="8.4" height="2.4"/><rect x="4.2" y="13.4" width="10.2" height="2.4"/></g></svg><span class="bd">특전노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></h1>
-<span class="hdm">8월 27일 갱신</span>
+<span class="hdm">8월 28일 갱신</span>
 </div></header>
 <div class="find" style="display:none">
 <input id="q" type="search" placeholder="아티스트·앨범 검색 · 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
@@ -363,73 +370,73 @@ h1{font-size:20px}
 <div class="cards"><div class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
 <a class="go" href="album/tuide-tune-play.html" aria-label="튜이드(TUIDE) TUNE &amp; PLAY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">19시간 32분</span></div><div class="ar">튜이드(TUIDE)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">18시간 51분</span></div><div class="ar">튜이드(TUIDE)</div>
 <div class="al">TUNE &amp; PLAY</div>
-<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
+<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 2건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
 </div><div class="card" data-q="엔시티127nct127nct127엔시티127blingy" data-c="ㅇㅅㅌ127nct127nct127ㅇㅅㅌ127blingy">
 <a class="go" href="album/nct-127-blingy.html" aria-label="엔시티 127(NCT 127) BLINGY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">19시간 28분</span></div><div class="ar">엔시티 127(NCT 127)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">18시간 47분</span></div><div class="ar">엔시티 127(NCT 127)</div>
 <div class="al">BLINGY</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
 </div><div class="card" data-q="소연soyeonidle아이들소연soyeonwhatawonderfullife" data-c="ㅅㅇsoyeonidleㅇㅇㄷㅅㅇsoyeonwhatawonderfullife">
 <a class="go" href="album/i-dle-아이들-what-a-wonderful-life.html" aria-label="소연(SOYEON) What a Wonderful Life"></a>
 <div class="cvw"><div class="strip"><img src="https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">영상통화 팬사인회 응모 마감 <span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">2일 0시간</span></div><div class="ar">소연(SOYEON)</div>
+<div class="cdl">영상통화 팬사인회 응모 마감 <span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">1일 23시간</span></div><div class="ar">소연(SOYEON)</div>
 <div class="al">What a Wonderful Life</div>
 <div class="tags"><span class="tg">특전 2/2</span><span class="tg">팬사인회</span></div><div class="meta">8종 · 판매처 2 · 9월 7일 발매</div>
 </div><div class="card" data-q="태민taemintaemin태민phaseisoftviolence" data-c="ㅌㅁtaemintaeminㅌㅁphaseisoftviolence">
 <a class="go" href="album/taemin-phase-i-soft-violence.html" aria-label="태민(TAEMIN) PHASE I : Soft Violence"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/24/k68Dth.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">3일 0시간</span></div><div class="ar">태민(TAEMIN)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">2일 23시간</span></div><div class="ar">태민(TAEMIN)</div>
 <div class="al">PHASE I : Soft Violence</div>
 <div class="tags"><span class="tg">특전 3/7</span><span class="tg w">품절 1건</span></div><div class="meta">6종 · 판매처 7 · 8월 31일 발매</div>
 </div><div class="card" data-q="82메이저82major82major82메이저heat" data-c="82ㅁㅇㅈ82major82major82ㅁㅇㅈheat">
 <a class="go" href="album/82major-heat.html" aria-label="82메이저(82MAJOR) HEAT"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/19/rgR15V.png" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-31T23:59:59.999999+09:00">4일 0시간</span></div><div class="ar">82메이저(82MAJOR)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-31T23:59:59.999999+09:00">3일 23시간</span></div><div class="ar">82메이저(82MAJOR)</div>
 <div class="al">HEAT</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 1건</span></div><div class="meta">8종 · 판매처 7 · 9월 1일 발매</div>
 </div><div class="card" data-q="지수jisoojisoo지수click" data-c="ㅈㅅjisoojisooㅈㅅclick">
 <a class="go" href="album/jisoo-click.html" aria-label="지수(JISOO) CLICK"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T13:00:00+09:00">7일 13시간</span></div><div class="ar">지수(JISOO)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T13:00:00+09:00">7일 12시간</span></div><div class="ar">지수(JISOO)</div>
 <div class="al">CLICK</div>
 <div class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 1건</span></div><div class="meta">4종 · 판매처 7 · 9월 4일 발매</div>
 </div><div class="card" data-q="and2bleand2blesequence01curiosity" data-c="and2bleand2blesequence01curiosity">
 <a class="go" href="album/and2ble-sequence-01-curiosity.html" aria-label="AND2BLE Sequence 01: Curiosity"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 19시간</span></div><div class="ar">AND2BLE</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 18시간</span></div><div class="ar">AND2BLE</div>
 <div class="al">Sequence 01: Curiosity</div>
 <div class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 7건</span></div><div class="meta">14종 · 판매처 7 · 9월 4일 발매</div>
 </div><div class="card" data-q="민호minhoshinee민호minhomakeithot" data-c="ㅁㅎminhoshineeㅁㅎminhomakeithot">
 <a class="go" href="album/shinee-make-it-hot.html" aria-label="민호(MINHO) Make it hot"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/QzJWoi.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">10일 0시간</span></div><div class="ar">민호(MINHO)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 23시간</span></div><div class="ar">민호(MINHO)</div>
 <div class="al">Make it hot</div>
 <div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 1건</span></div><div class="meta">7종 · 판매처 6 · 9월 7일 발매</div>
 </div><div class="card" data-q="youngtak영탁youngtak영탁영탁gogo" data-c="youngtakㅇㅌyoungtakㅇㅌㅇㅌgogo">
 <a class="go" href="album/youngtak-영탁-gogo.html" aria-label="YOUNGTAK (영탁) GOGO"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-14T18:00:00+09:00">17일 18시간</span></div><div class="ar">YOUNGTAK (영탁)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-14T18:00:00+09:00">17일 17시간</span></div><div class="ar">YOUNGTAK (영탁)</div>
 <div class="al">GOGO</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 1건</span></div><div class="meta">4종 · 판매처 7 · 9월 14일 발매</div>
 </div><div class="card" data-q="코르티스cortiscortis코르티스greengreen" data-c="ㅋㄹㅌㅅcortiscortisㅋㄹㅌㅅgreengreen">
 <a class="go" href="album/cortis-greengreen.html" aria-label="코르티스(CORTIS) GREENGREEN"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/18/0O7cLx.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">24일 7시간</span></div><div class="ar">코르티스(CORTIS)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">24일 6시간</span></div><div class="ar">코르티스(CORTIS)</div>
 <div class="al">GREENGREEN</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 8건</span></div><div class="meta">18종 · 판매처 7 · 9월 21일 발매</div>
 </div><div class="card" data-q="vvupvvup1stminialbumvvon" data-c="vvupvvup1stminialbumvvon">
 <a class="go" href="album/vvup-1st-mini-album-vvon.html" aria-label="VVUP 1st Mini Album ‘VVON’"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-10-29T00:00:00+09:00">62일 0시간</span></div><div class="ar">VVUP</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-10-29T00:00:00+09:00">61일 23시간</span></div><div class="ar">VVUP</div>
 <div class="al">1st Mini Album ‘VVON’</div>
 <div class="tags"><span class="tg w">품절 1건</span></div><div class="meta">1종 · 판매처 3 · 10월 29일 발매</div>
 </div><div class="card" data-q="제니jenniejennie제니fallenangel" data-c="ㅈㄴjenniejennieㅈㄴfallenangel">
 <a class="go" href="album/jennie-fallen-angel.html" aria-label="제니(JENNIE) Fallen Angel"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-10-29T23:59:59.999999+09:00">63일 0시간</span></div><div class="ar">제니(JENNIE)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-10-29T23:59:59.999999+09:00">62일 23시간</span></div><div class="ar">제니(JENNIE)</div>
 <div class="al">Fallen Angel</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 1건</span></div><div class="meta">4종 · 판매처 7 · 10월 30일 발매</div>
 </div><div class="card" data-q="에반evanevan에반deathofmeweverseexclusive" data-c="ㅇㅂevanevanㅇㅂdeathofmeweverseexclusive">
