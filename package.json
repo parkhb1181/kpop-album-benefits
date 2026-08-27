@@ -1,0 +1,12 @@
+{
+  "name": "kpop-album-benefits",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "K-POP 앨범 판매처별 예약판매 특전 비교 — 자동 수집",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:one": "node build.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
