@@ -98,7 +98,7 @@ a:hover{border-bottom-color:currentColor}
 .pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
 .pgm{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
 .pgm::-webkit-scrollbar{display:none}
-.pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
+.pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0;position:relative}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 /* **세로를 묶으면 안 된다.** 예전엔 height:clamp(340px,58vh,540px) + object-fit:contain 이었는데,
    그러면 세로로 긴 이미지가 칸 높이에 맞춰지느라 **가로로 쪼그라든다.**
@@ -111,7 +111,20 @@ a:hover{border-bottom-color:currentColor}
    예전의 'figure.tall'(비율 2.4 초과에만 적용)은 걷어냈다 — 저 앨범 6장의 비율이
    2.12·1.39·2.12·1.25·1.25·1.25로 **하나도 2.4를 넘지 않아** 한 번도 발동하지 않았다.
    비율로 고르지 않고 전부 같은 방식으로 낸다. 넘치는지 여부는 JS가 실측해서 표시한다. */
-.pgm figure a{display:block;max-height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card);border-bottom:0}
+/* **칸 안에서 세로로 스크롤시키지 않는다.** 판매처 상세 이미지는 비율 중앙값이 3.93이고
+   가장 긴 건 1000×7849다(실측 37장). 817px 폭으로 그리면 세로 3,900px이 되는데,
+   540px 칸에 넣고 스크롤하면 한 번에 14%만 보이고 페이지 스크롤과도 싸운다.
+   잘라 보여주고 **펼치기**로 연다 — 폭은 줄이지 않는다. 원본이 720px 설계라
+   817px면 1.13배로 글씨가 제일 잘 읽힌다(좁히면 글씨가 같이 작아진다). */
+.pgm figure a{display:block;max-height:clamp(360px,62vh,620px);overflow:hidden;
+background:var(--card);border-bottom:0;position:relative}
+.pgm figure a.open{max-height:none}
+.pgm figure.clipped a:not(.open)::after{content:'';position:absolute;left:0;right:0;bottom:0;
+height:64px;background:linear-gradient(rgba(255,255,255,0),var(--bg));pointer-events:none}
+.pgx{display:block;width:100%;font:inherit;font-size:0.75rem;font-weight:600;color:var(--fg);
+background:var(--card);border:0;border-top:1px solid var(--line);padding:9px;cursor:pointer;
+min-height:36px}
+.pgx:hover{background:var(--line)}
 .pgm img{width:100%;height:auto;display:block;background:var(--card)}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
@@ -136,8 +149,11 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 /* 커버는 왼쪽 400px 고정, 마감은 오른쪽 세로 스택.
    가로 그리드로 늘어놓으면 2px 규칙이 첫 칸에만 빠져 좌우가 어긋난다(실제로 그렇게 보였다).
    세로로 쌓으면 그 규칙이 **구분선**으로 읽혀서 첫 항목만 없는 게 맞는 모양이 된다. */
+/* 머리글 밑에 선을 긋는다. 커버(1번 사진)와 갤러리 첫 장(2번 사진)이 둘 다 이미지라
+   선이 없으면 어디까지가 앨범 머리글인지 안 읽힌다. */
 .hero{display:flex;gap:clamp(20px,3vw,36px);align-items:flex-start;flex-wrap:wrap;
-margin-bottom:clamp(28px,3.4vw,44px)}
+padding-bottom:clamp(20px,2.6vw,28px);border-bottom:1px solid var(--line);
+margin-bottom:clamp(8px,1vw,12px)}
 /* 400px 고정이었는데 첫 화면(1440×744)을 커버가 거의 다 먹었다 — 실측상 커버는 y290~713인데
    마감 스택은 y490에서 끝나 오른쪽 아래 420×220이 비었고, 정작 이 페이지의 값인
    버전별 비교는 h2만 걸쳤다. 인덱스에서 이미 본 그림이라 그만한 자리를 줄 이유가 없다. */
@@ -292,6 +308,23 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 히어로 — 격자 위 별도 섹션. 크기로 외치는 대신 **왜 여기 있는지**를 한 줄로 적는다.
+   위계는 29CM 상단 실측을 우리 눈금(11/12/14/16/20)에 맞춘 것이다:
+   22px/700 제목 → 15px/400 부제 → 11px/700 브랜드  ⇒  20px 앨범명 → 12px 아티스트 → 11px 이유. */
+.feat{position:relative;display:flex;gap:clamp(16px,2.4vw,28px);align-items:center;
+padding-bottom:clamp(20px,2.6vw,28px);margin-bottom:clamp(20px,2.6vw,28px);
+border-bottom:2px solid var(--fg)}
+.fgo{position:absolute;inset:0;z-index:1;border:0}
+.fcv{width:clamp(132px,26vw,260px);height:auto;aspect-ratio:1;object-fit:cover;display:block;
+background:var(--card);flex:0 0 auto}
+.fm{flex:1 1 200px;min-width:0}
+.frs{font-size:0.6875rem;font-weight:700;color:var(--acc);margin:0 0 6px}
+.falb{font-size:1.25rem;font-weight:700;line-height:1.3;letter-spacing:-.01em;
+margin:0 0 4px;padding:0;border:0;color:var(--fg);display:block}
+.fart{font-size:0.75rem;font-weight:600;color:var(--mut);margin:0 0 10px}
+.ffc{font-size:0.75rem;color:var(--mut);margin:0;font-variant-numeric:tabular-nums}
+.ffd{font-size:0.75rem;color:var(--mut);margin:4px 0 0;font-variant-numeric:tabular-nums}
+.ffd b{color:var(--acc)}
 .card{position:relative;min-width:0;border:0;display:block}
 /* 카드가 li, 앨범명이 h2가 됐다. 브라우저 기본 여백·크기만 끄면 생김새는 그대로다. */
 .card>h2{border:0;padding:0;display:block}
@@ -460,28 +493,39 @@ h1{font-size:1.25rem}
 <span class="n" id="qn"></span></div>
 <p class="none-hit" id="qz" style="display:none">찾는 앨범이 없습니다. 예약판매 중인 것만 올라옵니다.</p>
 
+<section class="feat">
+<a class="fgo" href="album/taemin-phase-i-soft-violence.html" aria-label="태민(TAEMIN) PHASE I : Soft Violence"></a>
+<img class="fcv" src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/24/k68Dth.jpg" alt="" width="260" height="260" fetchpriority="high" decoding="async">
+<div class="fm">
+<p class="frs">특전 3곳 확인</p>
+<h2 class="falb">PHASE I : Soft Violence</h2>
+<p class="fart">태민(TAEMIN)</p>
+<p class="ffc">판매처 7곳 · 6종</p>
+<p class="ffd">예약 특전 포토카드 응모 마감 <b>D-3</b></p>
+</div>
+</section>
 <main><ul class="cards"><li class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
 <a class="go" href="album/tuide-tune-play.html" aria-label="튜이드(TUIDE) TUNE &amp; PLAY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">11시간 3분</span></div><div class="ar">튜이드(TUIDE)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">10시간 14분</span></div><div class="ar">튜이드(TUIDE)</div>
 <h2 class="al">TUNE &amp; PLAY</h2>
-<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 2건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
+<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
 </li><li class="card" data-q="엔시티127nct127nct127엔시티127blingy" data-c="ㅇㅅㅌ127nct127nct127ㅇㅅㅌ127blingy">
 <a class="go" href="album/nct-127-blingy.html" aria-label="엔시티 127(NCT 127) BLINGY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">10시간 59분</span></div><div class="ar">엔시티 127(NCT 127)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">10시간 10분</span></div><div class="ar">엔시티 127(NCT 127)</div>
 <h2 class="al">BLINGY</h2>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
 </li><li class="card" data-q="소연soyeonidle아이들소연soyeonwhatawonderfullife" data-c="ㅅㅇsoyeonidleㅇㅇㄷㅅㅇsoyeonwhatawonderfullife">
 <a class="go" href="album/i-dle-아이들-what-a-wonderful-life.html" aria-label="소연(SOYEON) What a Wonderful Life"></a>
 <div class="cvw"><div class="strip"><img src="https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">영상통화 팬사인회 응모 마감 <span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">1일 16시간</span></div><div class="ar">소연(SOYEON)</div>
+<div class="cdl">영상통화 팬사인회 응모 마감 <span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">1일 15시간</span></div><div class="ar">소연(SOYEON)</div>
 <h2 class="al">What a Wonderful Life</h2>
 <div class="tags"><span class="tg">특전 2/2</span><span class="tg">팬사인회</span></div><div class="meta">8종 · 판매처 2 · 9월 7일 발매</div>
 </li><li class="card" data-q="태민taemintaemin태민phaseisoftviolence" data-c="ㅌㅁtaemintaeminㅌㅁphaseisoftviolence">
 <a class="go" href="album/taemin-phase-i-soft-violence.html" aria-label="태민(TAEMIN) PHASE I : Soft Violence"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/24/k68Dth.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">2일 16시간</span></div><div class="ar">태민(TAEMIN)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">2일 15시간</span></div><div class="ar">태민(TAEMIN)</div>
 <h2 class="al">PHASE I : Soft Violence</h2>
 <div class="tags"><span class="tg">특전 3/7</span><span class="tg w">품절 1건</span></div><div class="meta">6종 · 판매처 7 · 8월 31일 발매</div>
 </li><li class="card" data-q="82메이저82major82major82메이저heat" data-c="82ㅁㅇㅈ82major82major82ㅁㅇㅈheat">
@@ -499,13 +543,13 @@ h1{font-size:1.25rem}
 </li><li class="card" data-q="and2bleand2blesequence01curiosity" data-c="and2bleand2blesequence01curiosity">
 <a class="go" href="album/and2ble-sequence-01-curiosity.html" aria-label="AND2BLE Sequence 01: Curiosity"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 11시간</span></div><div class="ar">AND2BLE</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 10시간</span></div><div class="ar">AND2BLE</div>
 <h2 class="al">Sequence 01: Curiosity</h2>
 <div class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 7건</span></div><div class="meta">14종 · 판매처 7 · 9월 4일 발매</div>
 </li><li class="card" data-q="민호minhoshinee민호minhomakeithot" data-c="ㅁㅎminhoshineeㅁㅎminhomakeithot">
 <a class="go" href="album/shinee-make-it-hot.html" aria-label="민호(MINHO) Make it hot"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/QzJWoi.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 16시간</span></div><div class="ar">민호(MINHO)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 15시간</span></div><div class="ar">민호(MINHO)</div>
 <h2 class="al">Make it hot</h2>
 <div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 1건</span></div><div class="meta">6종 · 판매처 6 · 9월 7일 발매</div>
 </li><li class="card" data-q="youngtak영탁youngtak영탁영탁gogo" data-c="youngtakㅇㅌyoungtakㅇㅌㅇㅌgogo">
@@ -517,7 +561,7 @@ h1{font-size:1.25rem}
 </li><li class="card" data-q="코르티스cortiscortis코르티스greengreen" data-c="ㅋㄹㅌㅅcortiscortisㅋㄹㅌㅅgreengreen">
 <a class="go" href="album/cortis-greengreen.html" aria-label="코르티스(CORTIS) GREENGREEN"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/18/0O7cLx.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">23일 23시간</span></div><div class="ar">코르티스(CORTIS)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">23일 22시간</span></div><div class="ar">코르티스(CORTIS)</div>
 <h2 class="al">GREENGREEN</h2>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 8건</span></div><div class="meta">16종 · 판매처 7 · 9월 21일 발매</div>
 </li><li class="card" data-q="vvupvvup1stminialbumvvon" data-c="vvupvvup1stminialbumvvon">
