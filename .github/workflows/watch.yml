@@ -86,5 +86,14 @@ jobs:
           git add out
           git diff --staged --quiet || git commit -m "rebuild(watch): $REASON"
 
+      # rebuild.yml과 같은 이유 — 전체 빌드가 도는 동안 main이 움직였을 수 있다.
+      # state/와 out/ 둘 다 이번 실행이 만든 게 최신이므로 충돌 시 우리 것을 쓴다.
       - name: Push
-        run: git push
+        run: |
+          for i in 1 2 3; do
+            git push && exit 0
+            echo "push 거부됨 — main을 다시 받아 우리 것을 얹는다 ($i/3)"
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+          done
+          exit 1

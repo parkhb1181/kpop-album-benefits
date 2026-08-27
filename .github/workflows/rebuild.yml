@@ -44,10 +44,21 @@ jobs:
       - name: Build
         run: node build.mjs
 
+      # 빌드가 7분 걸리는 동안 main이 움직여 있으면 그냥 push는 거부당하고
+      # 방금 만든 결과가 통째로 버려진다 (실제로 한 번 날렸다).
+      # out/은 매 빌드에서 새로 만들어지므로 충돌 시 방금 만든 쪽이 항상 옳다.
+      # 리베이스에서 재적용되는 커밋(=우리 것)이 "theirs"다.
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add out
-          git diff --staged --quiet || git commit -m "rebuild: $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          if git diff --staged --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "rebuild: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git push && exit 0
+            echo "push 거부됨 — main을 다시 받아 out/을 우리 것으로 얹는다 ($i/3)"
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+          done
+          exit 1
