@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync, rmSync } from 'node:fs';
+import { writeFileSync, mkdirSync, rmSync, readFileSync } from 'node:fs';
 import { matchesAlbum } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
@@ -9,6 +9,8 @@ import * as wev from './src/weverse.mjs';
 import * as sw from './src/soundwave.mjs';
 import * as wm from './src/withmuu.mjs';
 import * as mks from './src/makestar.mjs';
+import { collectDeadlines, roughLeft } from './src/deadlines.mjs';
+import { calendar } from './src/ics.mjs';
 import { close as closeBrowser, isDisabled } from './src/browser.mjs';
 
 const ONLY = process.argv.slice(2).find((a) => !a.startsWith('-')); // 특정 앨범만 빌드
@@ -21,6 +23,17 @@ const MAX = Number((process.argv.find((a) => a.startsWith('--max=')) || '').spli
  * 배포:  Vercel 환경변수에 SITE_URL=https://도메인
  */
 const SITE_URL = (process.env.SITE_URL || '').trim().replace(/\/$/, '');
+
+/**
+ * "2026. 8. 27. 오전 10:06:57" → "2026-08-27".
+ * sitemap의 lastmod는 날짜 형식이어야 하고, 종료 배너에도 같은 값을 쓴다.
+ */
+function shortStamp(s) {
+  if (!s) return new Date().toISOString().slice(0, 10);
+  const m = String(s).match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);
+  if (!m) return new Date().toISOString().slice(0, 10);
+  return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
+}
 
 // 앨범 제목에 흔히 붙는 말들. 이걸 매칭 토큰으로 쓰면 남의 앨범까지 통과한다.
 const STOPWORDS =
@@ -197,6 +210,27 @@ try {
 }
 
 mkdirSync('./out/album', { recursive: true });
+mkdirSync('./out/data', { recursive: true });
+mkdirSync('./out/alarm', { recursive: true });
+
+// 사이트 전체 마감을 모은 캘린더. 구독하면 리빌드마다 알아서 갱신된다.
+const allAlarms = [];
+
+/**
+ * 지난 빌드 결과. 예판이 끝나 discover에서 빠진 앨범을 찾는 데 쓴다.
+ *
+ * 그 페이지를 지우지 않는 이유 — 예판이 끝나도 검색에는 계속 걸린다.
+ * (`태민 판매처별 특전` 구글 1페이지에 2017년 네이버 블로그 글이 있다.)
+ * 대신 "예약판매 종료"를 맨 위에 박아 낡은 정보를 현재처럼 보이지 않게 한다.
+ */
+const prev = (() => {
+  try {
+    return JSON.parse(readFileSync('./out/index.json', 'utf8'));
+  } catch {
+    return { stamp: null, albums: [] };
+  }
+})();
+
 const index = [];
 
 for (const t of targets) {
@@ -218,11 +252,29 @@ for (const t of targets) {
   );
   const ogImage = rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
 
+  // 마감 카운트다운 + 캘린더 알람
+  const deadlines = collectDeadlines({ rows, events });
+  const artistName = displayArtist(t.artist, artistKo);
+  const alarms = deadlines.map((d) => ({
+    // UID를 고정해야 구독 캘린더가 일정을 **갱신**한다. 매번 새로 만들면 중복이 쌓인다.
+    uid: `${slug}-${d.id}@kpop-album-benefits`,
+    at: d.at,
+    title: `${artistName} ${t.album} — ${d.label}`,
+    desc: [d.note, d.url].filter(Boolean).join('\n'),
+    url: d.url || (SITE_URL ? `${SITE_URL}/album/${slug}.html` : undefined),
+  }));
+  if (alarms.length) {
+    writeFileSync(`./out/alarm/${slug}.ics`, calendar({ name: `${artistName} ${t.album} 마감`, events: alarms }), 'utf8');
+    allAlarms.push(...alarms);
+  }
+
   writeFileSync(
     `./out/album/${slug}.html`,
-    renderAlbum({ target: t, rows, errors, events, eventTotal, stamp, siteUrl: SITE_URL, slug, artistKo }),
+    renderAlbum({ target: t, rows, errors, events, eventTotal, deadlines, stamp, siteUrl: SITE_URL, slug, artistKo }),
     'utf8'
   );
+  // 예판이 끝난 뒤 페이지를 "종료" 상태로 다시 그리려면 원본이 필요하다
+  writeFileSync(`./out/data/${slug}.json`, JSON.stringify({ target: t, rows, events, artistKo, stamp }), 'utf8');
   index.push({
     ...t,
     slug,
@@ -232,6 +284,10 @@ for (const t of targets) {
     soldCount,
     eventCount: events.length,
     fansignCount: events.filter((e) => e.fansign).length,
+    // 인덱스 카드에도 가장 가까운 마감 하나를 실시간으로 띄운다
+    nextDeadline: deadlines[0]
+      ? { label: deadlines[0].label, at: deadlines[0].at, rough: roughLeft(deadlines[0].ms - Date.now()) }
+      : null,
     rowCount: rows.length,
     artistKo,
     artistDisplay: displayArtist(t.artist, artistKo),
@@ -240,7 +296,48 @@ for (const t of targets) {
   console.log(`${rows.length}건 / ${versions}종 / ${retailers}사${benefitCount ? ` / 특전 ${benefitCount}사` : ''}`);
 }
 
-index.sort((a, b) => b.benefitCount - a.benefitCount || b.retailers - a.retailers || b.versions - a.versions);
+// ── 예판이 끝난 앨범 ────────────────────────────────────────
+// 지난 인덱스에 있었는데 이번 discover에 없으면 예판이 끝난 것이다.
+// ONLY/MAX로 일부만 빌드한 경우는 "빠진 것"이 아니라 "안 돈 것"이라 건너뛴다.
+const live = new Set(index.map((a) => a.slug));
+const gone = ONLY || MAX ? [] : (prev.albums || []).filter((a) => !live.has(a.slug));
+console.log(`\n지난 인덱스 ${(prev.albums || []).length}개 · 이번 ${index.length}개 · 빠짐 ${gone.length}개`);
+for (const a of gone) {
+  try {
+    const d = JSON.parse(readFileSync(`./out/data/${a.slug}.json`, 'utf8'));
+    const expired = { lastSeen: shortStamp(a.expired?.lastSeen || d.stamp || prev.stamp) };
+    writeFileSync(
+      `./out/album/${a.slug}.html`,
+      renderAlbum({
+        target: d.target,
+        rows: d.rows,
+        errors: [],
+        events: d.events || [],
+        eventTotal: 0,
+        stamp,
+        siteUrl: SITE_URL,
+        slug: a.slug,
+        artistKo: d.artistKo,
+        expired,
+      }),
+      'utf8'
+    );
+    index.push({ ...a, expired });
+  } catch {
+    // 스냅샷이 없으면(이전 버전에서 만든 페이지) 그대로 둔다 — 지우는 것보다 낫다
+    index.push({ ...a, expired: a.expired || { lastSeen: shortStamp(prev.stamp) } });
+  }
+}
+if (gone.length) console.log(`\n예판 종료 ${gone.length}개 — "종료" 표시로 유지`);
+
+// 진행 중인 것을 위로, 그 안에서 특전 많은 순
+index.sort(
+  (a, b) =>
+    Number(!!a.expired) - Number(!!b.expired) ||
+    b.benefitCount - a.benefitCount ||
+    b.retailers - a.retailers ||
+    b.versions - a.versions
+);
 writeFileSync('./out/index.html', renderIndex({ albums: index, stamp, siteUrl: SITE_URL }), 'utf8');
 writeFileSync('./out/index.json', JSON.stringify({ stamp, albums: index }, null, 2), 'utf8');
 
@@ -253,7 +350,12 @@ if (SITE_URL) {
     './out/sitemap.xml',
     sitemap(SITE_URL, [
       { path: '', lastmod: today, changefreq: 'daily', priority: '1.0' },
-      ...index.map((a) => ({ path: `album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.8' })),
+      // 끝난 앨범도 넣는다 — 검색은 계속 걸린다. 다만 갱신 빈도·우선순위를 낮춘다
+      ...index.map((a) =>
+        a.expired
+          ? { path: `album/${a.slug}`, lastmod: a.expired.lastSeen || today, changefreq: 'monthly', priority: '0.3' }
+          : { path: `album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.8' }
+      ),
     ]),
     'utf8'
   );
@@ -261,6 +363,11 @@ if (SITE_URL) {
   rmSync('./out/sitemap.xml', { force: true });
 }
 writeFileSync('./out/robots.txt', robots(SITE_URL), 'utf8');
+
+// 전체 마감 캘린더. 이게 사실상의 "알림 서비스"다 —
+// 구독해두면 새 컴백의 마감도 리빌드 때마다 알아서 따라 들어온다.
+allAlarms.sort((a, b) => new Date(a.at) - new Date(b.at));
+writeFileSync('./out/alarm.ics', calendar({ name: 'K-POP 앨범 마감·팬싸 응모', events: allAlarms }), 'utf8');
 
 console.log(`\n완료 — 앨범 ${index.length}개 페이지 + 인덱스`);
 console.log(
@@ -270,5 +377,6 @@ console.log(
 );
 console.log(`  2개 이상 판매처: ${index.filter((a) => a.retailers >= 2).length}개`);
 console.log(`  특전 2곳 이상 비교 가능: ${index.filter((a) => a.benefitCount >= 2).length}개`);
+console.log(`  마감 알람: ${allAlarms.length}건 (앨범 ${index.filter((a) => a.nextDeadline).length}개) → alarm.ics`);
 
 await closeBrowser();

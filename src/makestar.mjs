@@ -82,6 +82,9 @@ function normalize(e) {
     releaseDate: (e.product?.releasedAt || '').slice(0, 10),
     from: ymd(e.salesData?.salesStartAt),
     to: ymd(e.salesData?.salesEndAt),
+    // 카운트다운용 원본. 마감은 초까지 정확하다 ("2026-08-27T17:59:59.999999+09:00")
+    startAt: e.salesData?.salesStartAt || null,
+    endAt: e.salesData?.salesEndAt || null,
     dday: dday != null && dday >= 0 ? dday : null,
     closing: dday != null && dday <= 2,
     winnerAt: (e.eventInfo?.winnerAnnounceAt || '').slice(0, 10).replace(/-/g, '.') || null,

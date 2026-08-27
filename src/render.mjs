@@ -1,5 +1,7 @@
 import { optimize } from './optimize.mjs';
 import { metaTags, abs, displayArtist } from './seo.mjs';
+import { googleUrl } from './ics.mjs';
+import { roughLeft } from './deadlines.mjs';
 
 export const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -65,13 +67,68 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 .comp summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--mut)}
 .comp pre{margin:8px 0 0;font-size:12px;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:inherit;color:var(--fg)}
 .comp p{margin:8px 0 0}
+.cd{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.cd.urgent{color:var(--acc)}
+.cd.over{color:var(--mut);font-weight:400}
+.alarm{font-size:12px;white-space:nowrap}
+.card .cdl{font-size:12px;color:var(--mut);margin-top:6px}
+
+/* 모바일 — 네이버 기준 이 카테고리 검색의 93%가 모바일이다 (코르티스 앨범: 모바일 4,730 / PC 360).
+   가로 스크롤 표는 그 화면에서 안 읽히므로 행을 카드로 접는다. */
+@media(max-width:700px){
+  body{padding:18px 12px 56px}
+  h1{font-size:20px}
+  .wrap{overflow-x:visible}
+  table{min-width:0;display:block}
+  thead{display:none}
+  tbody,tr,td{display:block;width:auto}
+  tr{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:10px;background:var(--card)}
+  td{border:0;padding:3px 0;display:flex;gap:10px;align-items:baseline}
+  td.th{display:none}
+  td::before{content:attr(data-label);flex:0 0 62px;color:var(--mut);font-size:11.5px;font-weight:600}
+  td:not([data-label])::before{content:none}
+  td.num{text-align:left;white-space:normal}
+  td.rt{font-size:15px;font-weight:700}
+  td.ben{flex-direction:column;gap:3px}
+  .gal figure{flex:0 0 150px}
+}
 `;
 
-const shell = (title, body, meta = {}) => `<!doctype html><html lang="ko"><head><meta charset="utf-8">
+/**
+ * 카운트다운은 브라우저에서 돈다.
+ * 페이지는 하루 두 번만 다시 만들어지지만 data-until이 절대 시각이라,
+ * 언제 열어도 맞는다. 서버도 갱신도 필요 없다.
+ */
+const CD_JS = `<script>
+(function(){
+function p(n){return n<10?'0'+n:''+n}
+function tick(){
+var now=Date.now(),els=document.querySelectorAll('.cd'),i,el,t,d,h,m,s;
+for(i=0;i<els.length;i++){
+el=els[i];t=new Date(el.getAttribute('data-until')).getTime()-now;
+if(isNaN(t)){continue}
+if(t<=0){el.textContent='마감';el.className='cd over';continue}
+d=Math.floor(t/864e5);h=Math.floor(t/36e5)%24;m=Math.floor(t/6e4)%60;s=Math.floor(t/1e3)%60;
+el.textContent=(d?d+'일 ':'')+p(h)+':'+p(m)+':'+p(s);
+el.className=t<864e5?'cd urgent':'cd';
+}
+}
+tick();setInterval(tick,1000);
+})();
+</script>`;
+
+const shell = (title, body, meta = {}) => {
+  const { jsonLd, ...rest } = meta;
+  // JSON-LD는 </script>만 escape하면 된다. 나머지는 JSON이 알아서 안전하다.
+  const ld = jsonLd
+    ? `\n<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`
+    : '';
+  return `<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
-${metaTags({ title, ...meta })}
+${metaTags({ title, ...rest })}${ld}
 <style>${CSS}</style></head><body>${body}</body></html>`;
+};
 
 const won = (n) => (n == null ? '?' : `${n.toLocaleString()}원`);
 
@@ -110,6 +167,145 @@ const stockCell = (i) =>
 const limitCell = (i) => (i.maxOrder ? `<b>${i.maxOrder}</b>장` : '<span class="mut">—</span>');
 
 /**
+ * 예판이 끝난 앨범.
+ *
+ * 지우지 않는다 — 검색에는 계속 걸리기 때문이다(`태민 판매처별 특전` 1페이지에 2017년 글이 있다).
+ * 다만 낡은 정보를 현재처럼 보여주면 신뢰가 깨지므로 맨 위에 상태를 박는다.
+ */
+const expiredBanner = (expired, target) =>
+  !expired
+    ? ''
+    : `<div class="warn"><b>예약판매가 끝난 앨범입니다.</b>
+아래 특전·재고·가격은 <b>${esc(expired.lastSeen)}</b>에 마지막으로 수집한 내용이고, 지금은 다를 수 있습니다.
+${target.deliveryDate ? `발매일 ${esc(target.deliveryDate)}.` : ''}</div>`;
+
+/**
+ * 구조화 데이터.
+ *
+ * 페이지가 "한 앨범의 여러 판매처 상품"이므로 ItemList가 맞다.
+ * Product 하나로 뭉치면 가격이 여러 개라 거짓이 된다.
+ */
+function albumJsonLd({ artistName, target, rows, groups, siteUrl, slug, expired }) {
+  const url = slug ? abs(siteUrl, `album/${slug}`) : null;
+  const priced = rows.filter((r) => r.price != null && r.currency !== 'USD');
+  const items = [...new Set(rows.map((r) => r.retailer))].slice(0, 20).map((rt, n) => {
+    const r = rows.find((x) => x.retailer === rt && x.price != null) || rows.find((x) => x.retailer === rt);
+    return {
+      '@type': 'ListItem',
+      position: n + 1,
+      name: `${rt} — ${artistName} ${target.album}`,
+      url: r?.url || undefined,
+    };
+  });
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${artistName} 앨범 ${target.album} 판매처별 특전 비교`,
+    description: `버전 ${groups.length}종, 판매처 ${new Set(rows.map((r) => r.retailer)).size}곳`,
+    url: url || undefined,
+    numberOfItems: items.length,
+    itemListElement: items,
+  };
+  if (priced.length && !expired) {
+    const prices = priced.map((r) => r.price);
+    data.offers = {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'KRW',
+      lowPrice: Math.min(...prices),
+      highPrice: Math.max(...prices),
+      offerCount: priced.length,
+    };
+  }
+  return data;
+}
+
+/**
+ * FAQ — `{아티스트} 앨범 어디서 사나요` 류 질문형 쿼리를 받는 자리.
+ * 실제로 Reddit r/cortis에 같은 질문이 올라오고 검색 1페이지에 뜬다.
+ */
+function faqHtml({ artistName, album, retailerNames, best, versions }) {
+  if (!retailerNames.length) return '';
+  const qa = [
+    [
+      `${artistName} 앨범은 어디서 사야 하나요?`,
+      `${retailerNames.join(' · ')}에서 팝니다. <b>상품 가격은 대체로 같고, 판매처마다 주는 특전(미공개 포토카드 등)이 다릅니다.</b> ` +
+        `그래서 "어디가 싼가"보다 <b>"어느 특전을 받고 싶은가"</b>로 고르는 게 맞습니다. 위 표에서 판매처별 특전을 비교하세요.`,
+    ],
+    [
+      `${album} 버전은 몇 종인가요?`,
+      `현재 <b>${versions}종</b>을 확인했습니다. 버전마다 구성품과 포토카드가 다르고, 판매처 특전은 그 위에 따로 붙습니다.`,
+    ],
+    best
+      ? [
+          `전 버전을 다 모으려면 얼마인가요?`,
+          `배송비·쿠폰까지 넣은 최저 조합이 <b>${won(best.sum)}</b>입니다. 한 곳에서 다 못 사는 경우가 많아 배송비가 몇 번 붙는지가 총액을 가릅니다.`,
+        ]
+      : null,
+    [
+      `특전은 언제까지 주나요?`,
+      `대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.`,
+    ],
+  ].filter(Boolean);
+  return `<h2>자주 묻는 것</h2>
+${qa.map(([q, a]) => `<details class="comp"><summary>${esc(q)}</summary><p>${a}</p></details>`).join('\n')}`;
+}
+
+/** 빌드는 GitHub Actions(UTC)에서 돈다. 시간대를 명시하지 않으면 9시간이 틀어진다. */
+const kst = (iso, opt = {}) =>
+  new Date(iso).toLocaleString('ko-KR', {
+    timeZone: 'Asia/Seoul',
+    month: 'numeric',
+    day: 'numeric',
+    weekday: 'short',
+    hour: '2-digit',
+    minute: '2-digit',
+    // 12시간제는 마감 표기에 위험하다. 00:59가 "AM 12:59"로 나와서 정오처럼 읽힌다.
+    hour12: false,
+    ...opt,
+  });
+
+/**
+ * 마감 카운트다운.
+ *
+ * **"오픈까지"가 아니라 "마감까지"다.** 오픈 시각은 어디서도 미리 못 얻는다 —
+ * 메이크스타는 열린 뒤에야(ON_SALE) 목록에 넣고, 위버스샵도 판매 중인 것만 준다.
+ * 반면 마감은 초 단위로 정확하고, 팬을 실제로 급하게 만드는 쪽도 마감이다.
+ */
+function countdownHtml(deadlines, slug, siteUrl, subject) {
+  if (!deadlines?.length) return '';
+  const now = Date.now();
+  const rows = deadlines
+    .map((d) => {
+      // 캘린더에 들어간 뒤에는 앨범명이 없으면 무슨 일정인지 알 수 없다.
+      // 부연(note)은 제목이 아니라 설명으로 보낸다.
+      const g = googleUrl({
+        at: d.at,
+        title: [subject, d.label].filter(Boolean).join(' — '),
+        desc: d.note,
+        url: d.url,
+      });
+      return `<tr><td class="rt">${esc(d.label)}${d.kind === 'fansign' ? ' <span class="flag">팬싸</span>' : ''}
+${d.note ? `<div class="mut">${esc(d.note).slice(0, 90)}</div>` : ''}</td>
+<td class="num" data-label="남은 시간"><span class="cd" data-until="${esc(d.at)}">${esc(roughLeft(d.ms - now))}</span></td>
+<td class="mut" data-label="시각">${esc(kst(d.at))}</td>
+<td class="alarm" data-label="알림"><a href="${esc(g)}" rel="nofollow noopener" target="_blank">구글 캘린더</a></td></tr>`;
+    })
+    .join('');
+
+  // webcal://은 절대주소여야 한다. SITE_URL이 없으면 구독 안내를 생략한다.
+  const feed = siteUrl
+    ? ` · <a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 구독</a>
+<span class="mut">(구독하면 하루 두 번 갱신됩니다)</span>`
+    : '';
+
+  return `<h2>마감까지 <span class="one">실시간</span></h2>
+<div class="wrap"><table><thead><tr><th>무엇</th><th>남은 시간</th><th>시각 (KST)</th><th>알림</th></tr></thead>
+<tbody>${rows}</tbody></table></div>
+<p class="mut" style="margin-top:8px"><a href="../alarm/${esc(slug)}.ics" download>이 앨범 마감을 캘린더에 넣기 (.ics)</a>${feed}</p>
+${CD_JS}`;
+}
+
+/**
  * 팬사인회·영상통화 이벤트 — 메이크스타에서만 나온다.
  * 앨범값(1~2만원)보다 훨씬 큰 돈이 걸리는 결정이라 특전보다 위에 놓는다.
  */
@@ -142,9 +338,9 @@ ${limits}`;
         .join(' · ');
       const title = e.url ? `<a href="${esc(e.url)}" rel="nofollow">${esc(e.title)}</a>` : esc(e.title);
       return `<tr><td class="rt">${esc(e.label)}${e.fansign ? ' <span class="flag">팬싸</span>' : ''}</td>
-<td class="num">${when}</td>
-<td class="mut">${esc(e.from)} ~ ${esc(e.to)}${e.winnerAt ? `<br>발표 ${esc(e.winnerAt)}` : ''}</td>
-<td>${title}${opts ? `<div class="mut">응모 가능: ${opts}</div>` : ''}</td></tr>`;
+<td class="num" data-label="남은 기간">${when}</td>
+<td class="mut" data-label="응모 기간">${esc(e.from)} ~ ${esc(e.to)}${e.winnerAt ? `<br>발표 ${esc(e.winnerAt)}` : ''}</td>
+<td data-label="이벤트">${title}${opts ? `<div class="mut">응모 가능: ${opts}</div>` : ''}</td></tr>`;
     })
     .join('');
 
@@ -155,7 +351,19 @@ ${limits}`;
 ${limits}`;
 }
 
-export function renderAlbum({ target, rows, errors, stamp, events, eventTotal, siteUrl, slug, artistKo }) {
+export function renderAlbum({
+  target,
+  rows,
+  errors,
+  stamp,
+  events,
+  eventTotal,
+  deadlines,
+  siteUrl,
+  slug,
+  artistKo,
+  expired,
+}) {
   const byKey = new Map();
   for (const r of rows) {
     if (!byKey.has(r.key)) byKey.set(r.key, []);
@@ -193,18 +401,19 @@ export function renderAlbum({ target, rows, errors, stamp, events, eventTotal, s
           }${(i.benefit || []).length ? `<p>${esc(i.benefit[0]).slice(0, 200)}</p>` : ''}</figure>`
         )
         .join('')}</div>`;
+      // data-label은 모바일 카드 레이아웃에서 열 이름으로 쓰인다 (트래픽의 93%가 모바일)
       const tr = items
         .map(
-          (i) => `<tr><td class="th">${i.thumb ? `<img src="${esc(i.thumb)}" alt="" loading="lazy">` : ''}</td>
-<td class="rt">${esc(i.retailer)}</td>
-<td><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>${
+          (i) => `<tr><td class="th">${i.thumb ? `<img src="${esc(i.thumb)}" alt="${esc(i.retailer)} ${esc(target.album)}" loading="lazy">` : ''}</td>
+<td class="rt" data-label="판매처">${esc(i.retailer)}</td>
+<td data-label="상품"><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>${
             (i.events || []).length ? `<div class="ev">${(i.events || []).map(esc).join(' · ')}</div>` : ''
           }</td>
-<td class="num">${money(i)}</td>
-<td class="num">${stockCell(i)}</td>
-<td class="num">${limitCell(i)}</td>
-<td class="ben">${benefitCell(i)}</td>
-<td class="num">${i.sales != null ? i.sales.toLocaleString() : '—'}</td></tr>`
+<td class="num" data-label="가격">${money(i)}</td>
+<td class="num" data-label="재고">${stockCell(i)}</td>
+<td class="num" data-label="1인 최대">${limitCell(i)}</td>
+<td class="ben" data-label="특전">${benefitCell(i)}</td>
+<td class="num" data-label="판매량">${i.sales != null ? i.sales.toLocaleString() : '—'}</td></tr>`
         )
         .join('');
 
@@ -216,9 +425,12 @@ export function renderAlbum({ target, rows, errors, stamp, events, eventTotal, s
         : '';
 
       const anySold = items.some((i) => i.soldOut === true);
+      // 판매처명을 h2에 노출한다 — `코르티스 알라딘 특전`처럼 판매처명이 붙은 쿼리가 실제로 있다(자동완성 확인)
+      const shops = [...retailers].join(' · ');
       return `<h2>${esc(ed === '기본' ? '기본반' : ed)} <span class="pk">${esc(pk)}</span> ${badge}${
         anySold ? ' <span class="soldb">일부 품절</span>' : ''
       }</h2>
+<h3>${esc(shops)} 특전 비교</h3>
 ${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody>${tr}</tbody></table></div>${compHtml}`;
     })
     .join('\n');
@@ -257,33 +469,39 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
   const soldCount = rows.filter((r) => r.soldOut === true).length;
   const chart = rows.some((r) => (r.chart || []).length > 0);
 
-  // 검색은 한글로 온다 — "코르티스 판매처별 특전". 영문명만 있으면 그 쿼리에 안 잡힌다.
+  // 검색은 한글로 오고, 볼륨은 "특전"이 아니라 "앨범"에 있다.
+  //   코르티스 앨범 5,090 / 세븐틴 앨범 1,820  vs  앨범 특전 30 / 판매처별 특전 20  (네이버, 최근 30일)
+  // 그래서 제목·본문 첫 줄이 "{아티스트} 앨범"으로 시작해야 한다. 특전은 그 안의 내용물이다.
   const artistName = displayArtist(target.artist, artistKo);
   const retailerNames = [...new Set(rows.map((r) => r.retailer))];
   const desc =
-    `${artistName} ${target.album} 예약판매 특전을 ${retailerNames.slice(0, 4).join('·')}` +
-    `${retailerNames.length > 4 ? ` 등 ${retailerNames.length}곳` : ''}에서 비교합니다. ` +
-    `버전 ${groups.length}종${soldCount ? ` · 품절 ${soldCount}건` : ''} · ${shortDate(stamp)} 기준.`;
+    `${artistName} 앨범 ${target.album} 버전 ${groups.length}종의 구성·가격·판매처별 특전을 ` +
+    `${retailerNames.slice(0, 4).join('·')}${retailerNames.length > 4 ? ` 등 ${retailerNames.length}곳` : ''}에서 비교합니다.` +
+    `${soldCount ? ` 품절 ${soldCount}건.` : ''} ${shortDate(stamp)} 기준.`;
   // 공유 카드 이미지 — 특전 이미지가 있으면 그게 가장 설명적이고, 없으면 앨범 썸네일
   const ogImage = rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
 
   return shell(
-    `${artistName} ${target.album} — 판매처별 특전 비교`,
+    `${artistName} 앨범 ${target.album} — 버전·구성·가격·특전 총정리`,
     `<a class="back" href="../index.html">← 전체 컴백</a>
-<h1>${esc(artistName)} — ${esc(target.album)}</h1>
-<div class="stamp">판매처별 예약판매 특전 · <b>${esc(stamp)} 기준</b></div>
+${expiredBanner(expired, target)}
+<h1>${esc(artistName)} 앨범 — ${esc(target.album)}</h1>
+<div class="stamp">버전별 구성 · 가격 · 판매처별 예약판매 특전 · <b>${esc(stamp)} 기준</b></div>
 <div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능${
       soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
     }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
+${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`)}
 ${eventsHtml(events, eventTotal)}
 ${optHtml}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
+${faqHtml({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length })}
 ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`,
     {
       description: desc.slice(0, 160),
       canonical: slug ? abs(siteUrl, `album/${slug}`) : null,
       image: ogImage,
       type: 'article',
+      jsonLd: albumJsonLd({ artistName, target, rows, groups, siteUrl, slug, expired }),
     }
   );
 }
@@ -294,7 +512,13 @@ export function renderIndex({ albums, stamp, siteUrl }) {
       (a) => `<a class="card" href="album/${esc(a.slug)}.html">
 <div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
-<div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
+<div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>${
+        a.nextDeadline
+          ? `<div class="cdl">${esc(a.nextDeadline.label)} <span class="cd" data-until="${esc(a.nextDeadline.at)}">${esc(
+              a.nextDeadline.rough || ''
+            )}</span></div>`
+          : ''
+      }
 </a>`
     )
     .join('');
@@ -302,19 +526,41 @@ export function renderIndex({ albums, stamp, siteUrl }) {
     .slice(0, 6)
     .map((a) => a.artistDisplay || a.artist)
     .join(', ');
+  const live = albums.filter((a) => !a.expired).length;
   return shell(
-    'K-POP 앨범 판매처별 특전 비교 — 예약판매 중인 컴백 전체',
-    `<h1>진행 중인 컴백 — 판매처별 특전</h1>
-<div class="stamp">위버스샵 · 알라딘 · Ktown4u 자동 수집 · <b>${esc(stamp)} 기준</b></div>
-<div class="sum">예약판매 중인 앨범 <b>${albums.length}</b>개. 같은 앨범이라도 <b>어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b></div>
-<div class="cards">${cards}</div>`,
+    'K-POP 앨범 정보 — 버전·구성·가격·판매처별 특전 비교',
+    `<h1>예약판매 중인 K-POP 앨범 — 버전·구성·특전</h1>
+<div class="stamp">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 자동 수집 · <b>${esc(stamp)} 기준</b></div>
+<div class="sum">앨범 <b>${live}</b>개가 예약판매 중입니다. 같은 앨범이라도 <b>버전마다 구성이 다르고, 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
+      albums.some((a) => a.nextDeadline)
+        ? `<br>마감이 걸린 앨범은 남은 시간이 함께 표시됩니다. ${
+            siteUrl
+              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>`
+              : '<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>'
+          }`
+        : ''
+    }</div>
+<div class="cards">${cards}</div>
+${albums.some((a) => a.nextDeadline) ? CD_JS : ''}`,
     {
       description: (
-        `예약판매 중인 K-POP 앨범 ${albums.length}개의 판매처별 특전을 자동 수집해 비교합니다. ` +
+        `예약판매 중인 K-POP 앨범 ${live}개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. ` +
         `${names ? `${names} 등. ` : ''}${shortDate(stamp)} 기준.`
       ).slice(0, 160),
       canonical: abs(siteUrl, ''),
       image: albums.find((a) => a.ogImage)?.ogImage || null,
+      jsonLd: {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'K-POP 앨범 판매처별 특전 비교',
+        numberOfItems: albums.length,
+        itemListElement: albums.slice(0, 50).map((a, n) => ({
+          '@type': 'ListItem',
+          position: n + 1,
+          name: `${a.artistDisplay || a.artist} 앨범 ${a.album}`,
+          url: abs(siteUrl, `album/${a.slug}`) || undefined,
+        })),
+      },
     }
   );
 }

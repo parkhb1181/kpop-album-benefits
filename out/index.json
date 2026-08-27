@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. AM 10:57:02",
+  "stamp": "2026. 8. 27. AM 11:11:13",
   "albums": [
     {
       "artistId": 10,
@@ -17,6 +17,11 @@
       "soldCount": 5,
       "eventCount": 1,
       "fansignCount": 1,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-27T19:00:00+09:00",
+        "rough": "7시간 48분"
+      },
       "rowCount": 44,
       "artistKo": "엔하이픈",
       "artistDisplay": "엔하이픈(ENHYPEN)",
@@ -38,6 +43,11 @@
       "soldCount": 1,
       "eventCount": 1,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-08-30T23:59:59.999999+09:00",
+        "rough": "3일 12시간"
+      },
       "rowCount": 30,
       "artistKo": "태민",
       "artistDisplay": "태민(TAEMIN)",
@@ -59,6 +69,11 @@
       "soldCount": 7,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-04T19:00:00+09:00",
+        "rough": "8일 7시간"
+      },
       "rowCount": 47,
       "artistKo": null,
       "artistDisplay": "AND2BLE",
@@ -80,6 +95,11 @@
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-08T07:00:00+09:00",
+        "rough": "11일 19시간"
+      },
       "rowCount": 29,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
@@ -101,6 +121,11 @@
       "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-27T19:00:00+09:00",
+        "rough": "7시간 48분"
+      },
       "rowCount": 41,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",
@@ -122,6 +147,11 @@
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-28T07:00:00+09:00",
+        "rough": "19시간 45분"
+      },
       "rowCount": 27,
       "artistKo": "연준",
       "artistDisplay": "연준(TOMORROW X TOGETHER)",
@@ -143,6 +173,11 @@
       "soldCount": 1,
       "eventCount": 1,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-06T23:59:59.999999+09:00",
+        "rough": "10일 12시간"
+      },
       "rowCount": 20,
       "artistKo": "민호",
       "artistDisplay": "민호(SHINee)",
@@ -164,6 +199,11 @@
       "soldCount": 0,
       "eventCount": 1,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-06T23:59:59.999999+09:00",
+        "rough": "10일 12시간"
+      },
       "rowCount": 9,
       "artistKo": "소연",
       "artistDisplay": "소연(i-dle (아이들))",
@@ -185,6 +225,11 @@
       "soldCount": 8,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-21T07:00:00+09:00",
+        "rough": "24일 19시간"
+      },
       "rowCount": 52,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
@@ -206,7 +251,12 @@
       "soldCount": 6,
       "eventCount": 1,
       "fansignCount": 0,
-      "rowCount": 37,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-28T19:00:00+09:00",
+        "rough": "1일 7시간"
+      },
+      "rowCount": 38,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png"
@@ -227,6 +277,11 @@
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-04T13:00:00+09:00",
+        "rough": "8일 1시간"
+      },
       "rowCount": 15,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
@@ -248,6 +303,11 @@
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-14T18:00:00+09:00",
+        "rough": "18일 6시간"
+      },
       "rowCount": 13,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
@@ -269,6 +329,11 @@
       "soldCount": 1,
       "eventCount": 1,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-29T23:59:59.999999+09:00",
+        "rough": "63일 12시간"
+      },
       "rowCount": 15,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
@@ -290,6 +355,11 @@
       "soldCount": 1,
       "eventCount": 1,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-08-31T23:59:59.999999+09:00",
+        "rough": "4일 12시간"
+      },
       "rowCount": 10,
       "artistKo": "82메이저",
       "artistDisplay": "82메이저(82MAJOR)",
@@ -311,6 +381,11 @@
       "soldCount": 1,
       "eventCount": 1,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-06T23:59:59.999999+09:00",
+        "rough": "10일 12시간"
+      },
       "rowCount": 18,
       "artistKo": "에반",
       "artistDisplay": "에반(EVAN)",
@@ -332,6 +407,11 @@
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-02T00:00:00+09:00",
+        "rough": "5일 12시간"
+      },
       "rowCount": 4,
       "artistKo": "비비업",
       "artistDisplay": "비비업(VVUP)",

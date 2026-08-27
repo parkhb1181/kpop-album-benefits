@@ -80,6 +80,8 @@ export async function search(artistId, keyword) {
       price: c.price?.salePrice ?? null,
       sales: null,
       releaseDate: c.deliveryDate ? c.deliveryDate.slice(0, 10) : null,
+      // 날짜만 자르면 카운트다운을 못 만든다. 원본은 초 단위다 ("2026-08-27T19:00:00+09:00")
+      deliveryStartAt: c.deliveryDate || null,
       url: `${BASE}/ko/shop/KRW/artists/${artistId}/sales/${c.saleId}`,
       benefit,
       images,
