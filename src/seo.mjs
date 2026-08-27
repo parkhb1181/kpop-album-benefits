@@ -18,8 +18,28 @@ export const abs = (siteUrl, path) => (siteUrl ? `${siteUrl.replace(/\/$/, '')}/
  * <head>에 들어갈 메타 태그.
  * canonical·og:url은 siteUrl이 있을 때만 낸다 — 틀린 절대주소는 없느니만 못하다.
  */
+/**
+ * 검색엔진 소유 확인 메타태그.
+ *
+ * 확인 파일(.html) 방식은 이 사이트에서 못 쓴다 —
+ * vercel.json 의 cleanUrls:true 가 /x.html 을 /x 로 308 시키는데,
+ * 서치콘솔·서치어드바이저는 그 경로에서 200 을 요구한다(실측으로 실패 확인).
+ * 그래서 메타태그로 간다.
+ *
+ * 토큰은 비밀이 아니다 — HTML 에 그대로 나간다.
+ * 다만 사이트마다 다르고 도메인을 옮기면 새로 받아야 해서 Variables 로 뺐다.
+ */
+function verificationTags() {
+  const out = [];
+  const naver = (process.env.NAVER_VERIFY || '').trim();
+  const google = (process.env.GOOGLE_VERIFY_META || '').trim();
+  if (/^[A-Za-z0-9_-]{10,}$/.test(naver)) out.push(`<meta name="naver-site-verification" content="${esc(naver)}">`);
+  if (/^[A-Za-z0-9_-]{10,}$/.test(google)) out.push(`<meta name="google-site-verification" content="${esc(google)}">`);
+  return out;
+}
+
 export function metaTags({ title, description, canonical, image, type = 'website' }) {
-  const t = [];
+  const t = verificationTags();
   if (description) {
     t.push(`<meta name="description" content="${esc(description)}">`);
     t.push(`<meta property="og:description" content="${esc(description)}">`);
