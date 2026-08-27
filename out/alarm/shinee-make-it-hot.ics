@@ -3,52 +3,51 @@ VERSION:2.0
 PRODID:-//kpop-album-benefits//KR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:민호(SHINee) Make it hot 마감
+X-WR-CALNAME:민호(MINHO) Make it hot 마감
 X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:shinee-make-it-hot-evt20023@kpop-album-benefits
-DTSTAMP:20260827T131029Z
+DTSTAMP:20260827T131949Z
 DTSTART:20260906T145959Z
 DTEND:20260906T152959Z
-SUMMARY:민호(SHINee) Make it hot — 예약 특전 포토카드 응모 
- 마감
+SUMMARY:민호(MINHO) Make it hot — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:민호 미니 2집 'Make it hot' 발매기념 특전 증정 이
  벤트\nhttps://makestar.co/event/20023
 URL:https://makestar.co/event/20023
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:민호(SHINee) Make it hot — 예약 특전 포토카드 응
- 모 마감 (하루 전)
+DESCRIPTION:민호(MINHO) Make it hot — 예약 특전 포토카드 응모
+  마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:민호(SHINee) Make it hot — 예약 특전 포토카드 응
- 모 마감 (1시간 전)
+DESCRIPTION:민호(MINHO) Make it hot — 예약 특전 포토카드 응모
+  마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shinee-make-it-hot-release@kpop-album-benefits
-DTSTAMP:20260827T131029Z
+DTSTAMP:20260827T131949Z
 DTSTART:20260907T090000Z
 DTEND:20260907T093000Z
-SUMMARY:민호(SHINee) Make it hot — 예약 배송 시작
+SUMMARY:민호(MINHO) Make it hot — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/shinee-make-it-hot.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:민호(SHINee) Make it hot — 예약 배송 시작 (하루 전
- )
+DESCRIPTION:민호(MINHO) Make it hot — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:민호(SHINee) Make it hot — 예약 배송 시작 (1시간 
- 전)
+DESCRIPTION:민호(MINHO) Make it hot — 예약 배송 시작 (1시간 전
+ )
 END:VALARM
 END:VEVENT
 END:VCALENDAR

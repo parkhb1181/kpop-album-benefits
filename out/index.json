@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. PM 10:07:34",
+  "stamp": "2026. 8. 27. PM 10:16:37",
   "albums": [
     {
       "artistId": 308,
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "20시간 51분"
+        "rough": "20시간 42분"
       },
       "rowCount": 45,
       "artistKo": "튜이드",
@@ -131,8 +131,8 @@
         "rough": "10일 1시간"
       },
       "rowCount": 30,
-      "artistKo": "민호",
-      "artistDisplay": "민호(SHINee)",
+      "artistKo": "민호(MINHO)",
+      "artistDisplay": "민호(MINHO)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/57d2f3971ed98abedffec9fd360a3335.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/QzJWoi.jpg"
     },
@@ -158,8 +158,8 @@
         "rough": "2일 1시간"
       },
       "rowCount": 9,
-      "artistKo": "소연",
-      "artistDisplay": "소연(i-dle (아이들))",
+      "artistKo": "소연(SOYEON)",
+      "artistDisplay": "소연(SOYEON)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png",
       "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg"
     },
@@ -209,13 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "20시간 47분"
+        "rough": "20시간 38분"
       },
       "rowCount": 56,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/NYZsXf.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg"
     },
     {
       "artistId": 248,
