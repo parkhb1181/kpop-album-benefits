@@ -1,5 +1,5 @@
 import { configured } from './_store.js';
-import { listPending, listApproved, decide } from './_reports.js';
+import { listPending, listApproved, decide, unapprove } from './_reports.js';
 
 /**
  * 제보 검수 화면. 운영자 한 명이 쓰는 곳이다.
@@ -25,7 +25,9 @@ export default async function handler(req, res) {
   // 승인·거절
   if (req.method === 'POST') {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body || {};
-    const r = await decide(String(body.id || ''), body.approve === true);
+    const id = String(body.id || '');
+    // 내리기는 되돌릴 수 없다 — 공개 목록에서 빼고 이미지까지 지운다
+    const r = body.remove === true ? await unapprove(id) : await decide(id, body.approve === true);
     return res.status(r.ok ? 200 : 404).json(r);
   }
 
@@ -45,6 +47,22 @@ ${r.note ? `<div class="note">${esc(r.note)}</div>` : ''}
         )
         .join('')
     : '<p class="empty">대기 중인 제보가 없습니다.</p>';
+
+
+  // 공개된 것도 같은 화면에 둔다. 내리는 일은 급할 때 생기는데,
+  // 그때 어디로 가야 하는지 찾게 만들면 안 된다.
+  const liveCards = approved.length
+    ? approved
+        .map(
+          (r) => `<figure data-id="${esc(r.id)}" class="live">
+<img src="${esc(r.url)}" alt="공개된 제보" loading="lazy">
+<figcaption>${esc(r.slug)}${r.versionKey ? ` · ${esc(r.versionKey)}` : ''}${r.retailer ? ` · ${esc(r.retailer)}` : ''}
+<div class="meta">공개 ${esc(r.approvedAt || r.at)}</div>
+<div class="btns"><button class="no" data-a="x">내리기</button></div>
+</figcaption></figure>`
+        )
+        .join('')
+    : '<p class="empty">공개된 제보가 없습니다.</p>';
 
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   // 검색엔진에 절대 들어가면 안 되는 화면이다
@@ -66,20 +84,28 @@ button{flex:1;padding:8px;border:1px solid currentColor;background:transparent;b
 .ok{color:var(--ok)}.no{color:var(--no)}
 button[disabled]{opacity:.4;cursor:default}
 .empty{color:var(--mut)}
+h2.sec{font-size:12px;color:var(--mut);font-weight:600;margin:26px 0 10px;letter-spacing:.04em}
+figure.live{opacity:.85}
 </style></head><body>
 <h1>제보 검수</h1>
 <div class="sub">대기 <b>${pending.length}</b> · 승인됨 <b>${approved.length}</b> — 승인해야 사이트에 나갑니다. 거절하면 이미지가 삭제됩니다.</div>
+<h2 class="sec">대기</h2>
 <div class="grid">${cards}</div>
+<h2 class="sec">공개 중</h2>
+<div class="grid">${liveCards}</div>
 <script>
 var K=new URLSearchParams(location.search).get('k');
 document.querySelectorAll('button').forEach(function(b){
   b.addEventListener('click',function(){
-    var fig=b.closest('figure'), id=fig.dataset.id, approve=b.dataset.a==='1';
+    var fig=b.closest('figure'), id=fig.dataset.id, act=b.dataset.a;
+    if(act==='x'&&!confirm('내리면 이미지까지 지워집니다. 되돌릴 수 없습니다.'))return;
+    var body={id:id};
+    if(act==='x')body.remove=true; else body.approve=(act==='1');
     fig.querySelectorAll('button').forEach(function(x){x.disabled=true});
     fetch(location.pathname+'?k='+encodeURIComponent(K),{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({id:id,approve:approve})})
+      body:JSON.stringify(body)})
       .then(function(r){return r.json()})
-      .then(function(d){ if(d.ok){fig.style.opacity=.25;fig.querySelector('.btns').textContent=approve?'승인됨':'거절됨'}
+      .then(function(d){ if(d.ok){fig.style.opacity=.25;fig.querySelector('.btns').textContent=act==='x'?'내렸습니다':act==='1'?'승인됨':'거절됨'}
         else{fig.querySelectorAll('button').forEach(function(x){x.disabled=false})} });
   });
 });

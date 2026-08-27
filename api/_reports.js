@@ -100,6 +100,23 @@ export async function decide(id, approve) {
   return { ok: true, approved: true };
 }
 
+/**
+ * 이미 공개된 것을 내린다.
+ *
+ * 승인은 되돌릴 수 있어야 한다. 잘못 눌렀을 수도 있고, 올린 팬이 내려달라고 할 수도 있고,
+ * 권리 문제가 뒤늦게 올 수도 있다. 이 경로가 없으면 그때 KV를 손으로 고치는 수밖에 없다.
+ * 대기열 거절과 똑같이 이미지도 실제로 지운다 — 목록에서만 빼는 건 내린 게 아니다.
+ */
+export async function unapprove(id) {
+  const a = await listApproved();
+  const i = a.findIndex((r) => r.id === id);
+  if (i < 0) return { ok: false, error: '공개 목록에 없습니다' };
+  const [r] = a.splice(i, 1);
+  await setJSON(APPROVED, a);
+  if (r.url) await delBlob(r.url);
+  return { ok: true, removed: true };
+}
+
 /** 같은 사람이 쏟아붓지 못하게 한다. 정교할 필요는 없고 폭주만 막으면 된다. */
 export async function rateLimited(ip) {
   if (!configured || !ip) return false;
