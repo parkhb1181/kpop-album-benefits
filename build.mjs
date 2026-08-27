@@ -9,6 +9,8 @@ import * as ala from './src/aladin.mjs';
 import * as wev from './src/weverse.mjs';
 import * as sw from './src/soundwave.mjs';
 import * as wm from './src/withmuu.mjs';
+import * as mp from './src/musicplant.mjs';
+import * as ap from './src/applemusic.mjs';
 import * as mks from './src/makestar.mjs';
 import { collectDeadlines, roughLeft } from './src/deadlines.mjs';
 import { calendar } from './src/ics.mjs';
@@ -162,6 +164,29 @@ async function collectAlbum(t) {
     rows.push(...list);
   } catch (e) {
     errors.push(`위드뮤: ${e.message}`);
+  }
+
+  // 뮤직플랜트 · 애플뮤직 (둘 다 정적, 상세에서 특전 문구를 가져온다)
+  for (const [label, mod] of [
+    ['뮤직플랜트', mp],
+    ['애플뮤직', ap],
+  ]) {
+    try {
+      const list = await searchWide(mod.search, t, token, 20);
+      for (const x of list) {
+        try {
+          const d = await mod.detail(x.id);
+          if (d.benefit.length) x.benefit = d.benefit;
+          x.benefitFlag = d.benefit.length > 0;
+          x.benefitStatus = d.status;
+        } catch {
+          x.benefitStatus = 'unknown';
+        }
+        rows.push(x);
+      }
+    } catch (e) {
+      errors.push(`${label}: ${e.message}`);
+    }
   }
 
   // 위버스샵
@@ -458,6 +483,21 @@ if (SITE_URL) {
   rmSync('./out/sitemap.xml', { force: true });
 }
 writeFileSync('./out/robots.txt', robots(SITE_URL), 'utf8');
+
+/**
+ * Google Search Console 소유 확인 파일.
+ *
+ * out/ 은 빌드마다 다시 만들어지므로 파일을 손으로 올려두면 언젠가 사라진다.
+ * 확인이 풀리면 색인 보고서도 같이 끊기므로 빌드가 매번 다시 쓴다.
+ * 저장소 Variables 의 GOOGLE_VERIFY 에 `google....html` 파일명을 넣으면 된다.
+ */
+const GOOGLE_VERIFY = (process.env.GOOGLE_VERIFY || '').trim();
+if (/^google[a-z0-9]+\.html$/.test(GOOGLE_VERIFY)) {
+  writeFileSync(`./out/${GOOGLE_VERIFY}`, `google-site-verification: ${GOOGLE_VERIFY}`, 'utf8');
+  console.log(`  ${GOOGLE_VERIFY} — Search Console 소유 확인`);
+} else if (GOOGLE_VERIFY) {
+  console.log(`  ⚠ GOOGLE_VERIFY 형식이 아닙니다: ${GOOGLE_VERIFY}`);
+}
 cardHashes.save();
 
 // 전체 마감 캘린더. 이게 사실상의 "알림 서비스"다 —

@@ -2,6 +2,7 @@ import { optimize } from './optimize.mjs';
 import { metaTags, abs, displayArtist } from './seo.mjs';
 import { googleUrl } from './ics.mjs';
 import { roughLeft } from './deadlines.mjs';
+import { choseong, searchKey } from './hangul.mjs';
 
 export const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -72,6 +73,12 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 .cd.over{color:var(--mut);font-weight:400}
 .alarm{font-size:12px;white-space:nowrap}
 .card .cdl{font-size:12px;color:var(--mut);margin-top:6px}
+.find{margin-top:14px;display:flex;gap:8px;align-items:center}
+.find input{flex:1;min-width:0;padding:10px 12px;font:inherit;font-size:14px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+.find input:focus{outline:none;border-color:var(--mut)}
+.find .n{font-size:12px;color:var(--mut);white-space:nowrap}
+.none-hit{font-size:13.5px;color:var(--mut);margin-top:16px}
 
 /* 모바일 — 네이버 기준 이 카테고리 검색의 93%가 모바일이다 (코르티스 앨범: 모바일 4,730 / PC 360).
    가로 스크롤 표는 그 화면에서 안 읽히므로 행을 카드로 접는다. */
@@ -114,6 +121,36 @@ el.className=t<864e5?'cd urgent':'cd';
 }
 }
 tick();setInterval(tick,1000);
+})();
+</script>`;
+
+/**
+ * 초성 검색.
+ *
+ * 초성 변환은 **빌드 때 끝내서** data-c에 박아뒀다. 그래서 여기서는 문자열 비교만 한다 —
+ * 라이브러리도, 자모 분해 코드도 브라우저로 안 내려간다.
+ *
+ * 질의가 초성만이면(ㅌㅁ) data-c를, 아니면 data-q를 본다.
+ * JS가 없으면 검색창을 아예 안 보여준다 — 안 되는 입력창을 두는 것보다 낫다.
+ */
+const FIND_JS = `<script>
+(function(){
+var box=document.getElementById('q');if(!box)return;
+var wrap=box.parentElement,cnt=document.getElementById('qn'),empty=document.getElementById('qz');
+var cards=[].slice.call(document.querySelectorAll('.card'));
+wrap.style.display='flex';
+function run(){
+var v=box.value.toLowerCase().replace(/[^a-z0-9가-힣ㄱ-ㅎ]/g,'');
+var jamo=/^[\\u3131-\\u314e]+$/.test(v),n=0,i,el,hit;
+for(i=0;i<cards.length;i++){
+el=cards[i];
+hit=!v||(el.getAttribute(jamo?'data-c':'data-q')||'').indexOf(v)>=0;
+el.style.display=hit?'':'none';if(hit)n++;
+}
+cnt.textContent=v?n+'개':'';
+empty.style.display=v&&!n?'':'none';
+}
+box.addEventListener('input',run);run();
 })();
 </script>`;
 
@@ -525,9 +562,13 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
 }
 
 export function renderIndex({ albums, stamp, siteUrl }) {
+  // 검색 대상 문자열을 빌드 때 미리 만들어 카드에 박는다 (브라우저는 비교만 한다)
+  const hayOf = (a) => [a.artistDisplay, a.artist, a.artistKo, a.album].filter(Boolean).join(' ');
   const cards = albums
     .map(
-      (a) => `<a class="card" href="album/${esc(a.slug)}.html">
+      (a) => `<a class="card" href="album/${esc(a.slug)}.html" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
+        searchKey(choseong(hayOf(a)))
+      )}">
 <div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
 <div class="meta">${a.fansignCount ? '<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">팬싸</span>' : a.eventCount ? '<span class="badge" style="color:var(--mut)">이벤트</span>' : ''}${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>${
@@ -558,8 +599,17 @@ export function renderIndex({ albums, stamp, siteUrl }) {
           }`
         : ''
     }</div>
+${
+      // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
+      albums.length >= 8
+        ? `<div class="find" style="display:none">
+<input id="q" type="search" placeholder="아티스트·앨범 검색 — 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
+<span class="n" id="qn"></span></div>
+<p class="none-hit" id="qz" style="display:none">찾는 앨범이 없습니다. 예약판매 중인 것만 올라옵니다.</p>`
+        : ''
+    }
 <div class="cards">${cards}</div>
-${albums.some((a) => a.nextDeadline) ? CD_JS : ''}`,
+${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS : ''}`,
     {
       description: (
         `예약판매 중인 K-POP 앨범 ${live}개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. ` +

@@ -20,6 +20,8 @@ jobs:
     env:
       # 저장소 Settings → Variables 에 SITE_URL 을 넣으면 canonical·og:url·sitemap이 절대주소로 나온다.
       SITE_URL: ${{ vars.SITE_URL }}
+      # Search Console 소유 확인 파일명 (google....html). 없으면 파일을 안 만든다.
+      GOOGLE_VERIFY: ${{ vars.GOOGLE_VERIFY }}
     steps:
       - uses: actions/checkout@v4
 

@@ -88,7 +88,10 @@ export function parseTitle(rawTitle) {
   //    [2종 세트](알라딘) · [2CD 세트상품](Ktown4u) · (Set)(위버스샵)이 같은 칸에 와야 한다.
   let packaging = '단품';
   const setN = t.match(/\[?\s*(\d+)\s*(?:CD\s*)?(?:종\s*)?(?:세트상품|세트|SET)\s*\]?/i);
-  const isSet = /\[SET\]|\(\s*Set\s*\)|종\s*세트|CD\s*SET|세트상품|CD\s*세트/i.test(t);
+  // 대괄호 안 어디에든 "세트"가 있으면 세트다. 뮤직플랜트·애플뮤직이 개수 없이
+  // [세트] · [세트/앨범2종] · [특전증정/세트]로만 적어서, 개수를 요구하던 규칙에 안 걸렸다.
+  // 세트가 낱개로 분류되면 서로 다른 상품이 같은 비교 행에 섞인다.
+  const isSet = /\[SET\]|\(\s*Set\s*\)|종\s*세트|CD\s*SET|세트상품|CD\s*세트|\[[^\][]{0,14}세트[^\][]{0,14}\]/i.test(t);
   // "2종 중 1종 랜덤"(사운드웨이브) · "[2종 중 랜덤발송]"(알라딘) · "(Random Ver.)"(위버스/Ktown4u)
   const isRandom = /랜덤\s*발송|중\s*\d*\s*종?\s*랜덤|\(\s*Random(?:\s*Ver\.?)?\s*\)|Random\s*Ver\.?/i.test(t);
   if (isSet) packaging = '세트';
@@ -98,6 +101,7 @@ export function parseTitle(rawTitle) {
   // 포장 관련 토큰 제거
   t = t
     .replace(/\[\s*SET\s*\]/gi, ' ')
+    .replace(/\[[^\][]{0,14}세트[^\][]{0,14}\]/gi, ' ')
     .replace(/\[?\s*\d+\s*(?:CD\s*)?종?\s*(?:중\s*)?(?:랜덤발송|랜덤\s*발송|세트상품|세트|SET)\s*\]?/gi, ' ')
     .replace(/\(\s*Random(?:\s*Ver\.?)?\s*\)/gi, ' ')
     .replace(/\(\s*Set\s*\)/gi, ' ')
