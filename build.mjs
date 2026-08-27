@@ -224,6 +224,45 @@ const cardDate = shortStamp(stamp).replace(/-0?/g, '.');
 // 사이트 전체 마감을 모은 캘린더. 구독하면 리빌드마다 알아서 갱신된다.
 const allAlarms = [];
 
+/** 특정 앨범만 빌드했는가 (`node build.mjs TAEMIN`, `--max=5`) */
+const PARTIAL = Boolean(ONLY || MAX);
+
+/**
+ * 마감 → 캘린더 일정.
+ * 새로 수집한 앨범과 스냅샷에서 되살린 앨범이 **같은 모양**을 내야 한다.
+ * UID가 어긋나면 구독 캘린더에 같은 일정이 두 개 생긴다.
+ */
+function alarmsFrom(slug, artistName, album, deadlines) {
+  return deadlines.map((d) => ({
+    // UID를 고정해야 구독 캘린더가 일정을 **갱신**한다. 매번 새로 만들면 중복이 쌓인다.
+    uid: `${slug}-${d.id}@kpop-album-benefits`,
+    at: d.at,
+    title: `${artistName} ${album} — ${d.label}`,
+    desc: [d.note, d.url].filter(Boolean).join('\n'),
+    url: d.url || (SITE_URL ? `${SITE_URL}/album/${slug}.html` : undefined),
+  }));
+}
+
+/** 이번에 안 돈 앨범의 알람을 out/data 스냅샷에서 되살린다 (부분 빌드용) */
+function alarmsFromSnapshot(a) {
+  try {
+    const d = JSON.parse(readFileSync(`./out/data/${a.slug}.json`, 'utf8'));
+    const dl = collectDeadlines({ rows: d.rows || [], events: mks.refresh(d.events || []) });
+    const name = displayArtist(d.target?.artist || a.artist, d.artistKo || a.artistKo);
+    return alarmsFrom(a.slug, name, d.target?.album || a.album, dl);
+  } catch {
+    return []; // 스냅샷이 없으면 그 앨범 알람만 빠진다
+  }
+}
+
+/** 지난 인덱스에서 들고 온 카드의 "남은 시간" 초기값을 지금 기준으로 다시 쓴다 */
+function refreshRough(a) {
+  if (!a.nextDeadline?.at) return a;
+  const ms = new Date(a.nextDeadline.at).getTime() - Date.now();
+  if (!Number.isFinite(ms) || ms <= 0) return { ...a, nextDeadline: null };
+  return { ...a, nextDeadline: { ...a.nextDeadline, rough: roughLeft(ms) } };
+}
+
 /**
  * 지난 빌드 결과. 예판이 끝나 discover에서 빠진 앨범을 찾는 데 쓴다.
  *
@@ -263,14 +302,7 @@ for (const t of targets) {
   // 마감 카운트다운 + 캘린더 알람
   const deadlines = collectDeadlines({ rows, events });
   const artistName = displayArtist(t.artist, artistKo);
-  const alarms = deadlines.map((d) => ({
-    // UID를 고정해야 구독 캘린더가 일정을 **갱신**한다. 매번 새로 만들면 중복이 쌓인다.
-    uid: `${slug}-${d.id}@kpop-album-benefits`,
-    at: d.at,
-    title: `${artistName} ${t.album} — ${d.label}`,
-    desc: [d.note, d.url].filter(Boolean).join('\n'),
-    url: d.url || (SITE_URL ? `${SITE_URL}/album/${slug}.html` : undefined),
-  }));
+  const alarms = alarmsFrom(slug, artistName, t.album, deadlines);
   if (alarms.length) {
     writeFileSync(`./out/alarm/${slug}.ics`, calendar({ name: `${artistName} ${t.album} 마감`, events: alarms }), 'utf8');
     allAlarms.push(...alarms);
@@ -370,16 +402,39 @@ for (const a of gone) {
 }
 if (gone.length) console.log(`\n예판 종료 ${gone.length}개 — "종료" 표시로 유지`);
 
+/**
+ * 인덱스·sitemap·alarm.ics에 실을 전체 목록.
+ *
+ * 부분 빌드(`node build.mjs TAEMIN`, `--max=`)에서는 index에 이번에 돈 앨범만 들어 있다.
+ * 그걸 그대로 쓰면 **인덱스가 앨범 한 개짜리로 덮어써지고** 나머지가 사이트에서 사라진다.
+ * out/은 저장소에 커밋되므로 그대로 배포된다. README가 부분 빌드를 정상 사용법으로
+ * 안내하고 있어서, 평범하게 쓰다가 배포물이 깨졌다.
+ *
+ * 그래서 부분 빌드일 때는 지난 인덱스에 slug 기준으로 머지한다.
+ * 전체 빌드는 지금까지처럼 전량 교체한다 (예판 종료 처리가 여기 얹혀 있다).
+ */
+const catalog = (() => {
+  if (!PARTIAL) return index;
+  const built = new Set(index.map((a) => a.slug));
+  const carried = (prev.albums || []).filter((a) => !built.has(a.slug)).map(refreshRough);
+  // 안 돈 앨범의 알람도 되살려야 alarm.ics가 이번 앨범 것만 남지 않는다.
+  // 예판이 끝난 앨범은 제외한다 — 전체 빌드에서는 targets에 없어 알람이 안 생기는데,
+  // 여기서만 되살리면 카드엔 카운트다운이 없는데 캘린더엔 일정이 있는 모순이 된다.
+  for (const a of carried) if (!a.expired) allAlarms.push(...alarmsFromSnapshot(a));
+  console.log(`부분 빌드 — 지난 인덱스에서 ${carried.length}개를 유지하고 ${index.length}개를 갱신합니다`);
+  return [...index, ...carried];
+})();
+
 // 진행 중인 것을 위로, 그 안에서 특전 많은 순
-index.sort(
+catalog.sort(
   (a, b) =>
     Number(!!a.expired) - Number(!!b.expired) ||
     b.benefitCount - a.benefitCount ||
     b.retailers - a.retailers ||
     b.versions - a.versions
 );
-writeFileSync('./out/index.html', renderIndex({ albums: index, stamp, siteUrl: SITE_URL }), 'utf8');
-writeFileSync('./out/index.json', JSON.stringify({ stamp, albums: index }, null, 2), 'utf8');
+writeFileSync('./out/index.html', renderIndex({ albums: catalog, stamp, siteUrl: SITE_URL }), 'utf8');
+writeFileSync('./out/index.json', JSON.stringify({ stamp, albums: catalog }, null, 2), 'utf8');
 
 // 검색 유입이 1순위 채널이다. sitemap이 없으면 앨범 페이지는 사실상 색인되지 않는다.
 const today = new Date().toISOString().slice(0, 10);
@@ -391,7 +446,7 @@ if (SITE_URL) {
     sitemap(SITE_URL, [
       { path: '', lastmod: today, changefreq: 'daily', priority: '1.0' },
       // 끝난 앨범도 넣는다 — 검색은 계속 걸린다. 다만 갱신 빈도·우선순위를 낮춘다
-      ...index.map((a) =>
+      ...catalog.map((a) =>
         a.expired
           ? { path: `album/${a.slug}`, lastmod: a.expired.lastSeen || today, changefreq: 'monthly', priority: '0.3' }
           : { path: `album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.8' }
@@ -410,15 +465,15 @@ cardHashes.save();
 allAlarms.sort((a, b) => new Date(a.at) - new Date(b.at));
 writeFileSync('./out/alarm.ics', calendar({ name: 'K-POP 앨범 마감·팬싸 응모', events: allAlarms }), 'utf8');
 
-console.log(`\n완료 — 앨범 ${index.length}개 페이지 + 인덱스`);
+console.log(`\n완료 — 이번 빌드 ${index.length}개 · 인덱스 전체 ${catalog.length}개`);
 console.log(
   SITE_URL
-    ? `  sitemap.xml (${index.length + 1}개 URL) · robots.txt — ${SITE_URL}`
+    ? `  sitemap.xml (${catalog.length + 1}개 URL) · robots.txt — ${SITE_URL}`
     : '  robots.txt — ⚠ SITE_URL 미설정: sitemap·canonical·og:url을 생략했습니다'
 );
-console.log(`  2개 이상 판매처: ${index.filter((a) => a.retailers >= 2).length}개`);
-console.log(`  특전 2곳 이상 비교 가능: ${index.filter((a) => a.benefitCount >= 2).length}개`);
-console.log(`  마감 알람: ${allAlarms.length}건 (앨범 ${index.filter((a) => a.nextDeadline).length}개) → alarm.ics`);
+console.log(`  2개 이상 판매처: ${catalog.filter((a) => a.retailers >= 2).length}개`);
+console.log(`  특전 2곳 이상 비교 가능: ${catalog.filter((a) => a.benefitCount >= 2).length}개`);
+console.log(`  마감 알람: ${allAlarms.length}건 (앨범 ${catalog.filter((a) => a.nextDeadline).length}개) → alarm.ics`);
 console.log(
   `  공유 카드: 새로 ${cardStat.written} · 그대로 ${cardStat.skipped}${cardStat.failed ? ` · 실패 ${cardStat.failed}` : ''}` +
     `${SITE_URL ? '' : ' — ⚠ SITE_URL 미설정이라 og:image에는 물리지 않았습니다'}`

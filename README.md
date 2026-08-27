@@ -9,6 +9,8 @@
 node build.mjs                 # 전체 (예판 중인 앨범 전부)
 node build.mjs TAEMIN          # 아티스트·앨범명으로 필터
 node build.mjs --max=5         # 개수 제한
+                               # ↑ 둘 다 부분 빌드다. 인덱스·sitemap·alarm.ics는
+                               #   지난 결과에 머지된다 (덮어쓰지 않는다)
 
 SITE_URL=https://도메인 node build.mjs   # 배포용 (canonical·og:url·sitemap 포함)
 ```
