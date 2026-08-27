@@ -58,9 +58,12 @@ export default async function handler(req, res) {
 
     const known = new Set(seen);
     const fresh = live.filter((a) => !known.has(a.slug));
-    await setJSON('seen-slugs', slugs);
 
-    if (!fresh.length) return res.status(200).json({ ok: true, new: 0 });
+    // 변한 게 없으면 쓰지도 않는다 (30분마다 도는데 매번 쓸 이유가 없다)
+    if (!fresh.length) {
+      if (slugs.length !== seen.length) await setJSON('seen-slugs', slugs);
+      return res.status(200).json({ ok: true, new: 0 });
+    }
 
     await setJSON('latest', {
       at: new Date().toISOString(),
@@ -71,21 +74,40 @@ export default async function handler(req, res) {
       })),
     });
 
-    // 발송. 죽은 구독(404·410)은 그 자리에서 지운다 — 안 그러면 실패가 매번 쌓인다.
+    /**
+     * 발송.
+     *
+     * 한 명씩 순서대로 보내면 구독자가 늘수록 함수 시간 제한에 걸린다.
+     * 그러면 아래의 seen-slugs 갱신에 도달하지 못해 **다음 회차에 다시 보낸다** —
+     * 중복은 눈에 보이니 고칠 수 있다. 반대로 갱신을 먼저 해두면 그 앨범 알림이
+     * 조용히 사라져서 아무도 모른다. 그래서 갱신은 발송 뒤에 한다.
+     *
+     * 그래도 시간 제한이 오기 전에 끝내는 게 낫다. 20명씩 동시에 보낸다.
+     */
     const subs = await allSubscriptions();
     let sent = 0;
     let gone = 0;
-    for (const s of subs) {
-      try {
-        const r = await sendPush(s, vapid);
-        if (r.gone) {
-          await removeSubscription(s.endpoint);
-          gone++;
-        } else if (r.ok) sent++;
-      } catch {
-        // 한 명이 실패해도 나머지는 계속 보낸다
-      }
+    const dead = [];
+    for (let i = 0; i < subs.length; i += 20) {
+      const batch = subs.slice(i, i + 20);
+      const results = await Promise.all(
+        batch.map((s) => sendPush(s, vapid).catch(() => ({ ok: false, gone: false })))
+      );
+      results.forEach((r, k) => {
+        if (r.gone) dead.push(batch[k].endpoint);
+        else if (r.ok) sent++;
+      });
     }
+    // 죽은 구독(404·410)은 지운다 — 안 그러면 실패가 매번 쌓인다
+    for (const endpoint of dead) {
+      try {
+        await removeSubscription(endpoint);
+        gone++;
+      } catch {}
+    }
+
+    // 여기까지 왔다는 건 발송이 끝났다는 뜻이다. 그때 비로소 "봤다"고 기록한다.
+    await setJSON('seen-slugs', slugs);
     return res.status(200).json({ ok: true, new: fresh.length, subscribers: subs.length, sent, gone });
   } catch (e) {
     return res.status(500).json({ error: e.message });

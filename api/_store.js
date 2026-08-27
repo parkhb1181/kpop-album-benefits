@@ -46,13 +46,36 @@ export async function removeSubscription(endpoint) {
   return id;
 }
 
+/**
+ * 구독자 전원.
+ *
+ * 한 명당 GET 한 번씩 돌면 구독자 수만큼 왕복이 생겨서, 1,000명이면 발송을 시작하기도
+ * 전에 함수 시간 제한이 끝난다. MGET으로 묶어 100명씩 한 번에 가져온다.
+ */
 export async function allSubscriptions() {
   const ids = (await cmd('SMEMBERS', 'subs')) || [];
   const out = [];
-  for (const id of ids) {
-    const raw = await cmd('GET', `sub:${id}`);
-    if (raw) out.push({ id, ...JSON.parse(raw) });
-    else await cmd('SREM', 'subs', id); // 목록에만 남은 유령 정리
+  const ghosts = [];
+
+  for (let i = 0; i < ids.length; i += 100) {
+    const chunk = ids.slice(i, i + 100);
+    const raws = (await cmd('MGET', ...chunk.map((id) => `sub:${id}`))) || [];
+    chunk.forEach((id, k) => {
+      const raw = raws[k];
+      if (!raw) return ghosts.push(id); // 목록에만 남은 유령
+      try {
+        out.push({ id, ...JSON.parse(raw) });
+      } catch {
+        ghosts.push(id); // 깨진 값도 유령으로 본다
+      }
+    });
+  }
+
+  // 유령 정리는 발송 경로를 막지 않도록 실패해도 넘어간다
+  for (const id of ghosts) {
+    try {
+      await cmd('SREM', 'subs', id);
+    } catch {}
   }
   return out;
 }

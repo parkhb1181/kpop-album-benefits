@@ -78,6 +78,8 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
 /* 브랜드 줄이 곧 h1이다. 별도 제목 줄을 두면 같은 말을 두 번 하게 된다 —
    "K-POP 앨범 특전 비교"와 "예약판매 중인 K-POP 앨범 …"이 정확히 그랬다.
    h1은 크기가 아니라 **존재**가 검색 신호라, 12px이어도 제 역할을 한다. */
+.brand{display:flex;align-items:center;gap:8px}
+.brand .lg{display:block;flex:0 0 auto}
 .hd .bd{font-size:12px;font-weight:700;color:var(--fg);white-space:nowrap;margin:0;letter-spacing:0}
 .hd .hdm{font-size:11px;color:var(--dim);font-weight:400;text-align:right}
 
@@ -368,6 +370,33 @@ const ANALYTICS = [
   `<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","${CLARITY_ID}");</script>`,
 ].join('\n');
 
+/**
+ * 로고 마크.
+ *
+ * 이름이 없는 사이트라 글자 로고는 만들 수 없다. 대신 **뜻을 형태로** 만든다 —
+ * 정사각형은 앨범, 그 위로 걸쳐 나오는 2:3 직사각형은 포토카드다.
+ * "앨범을 사면 포카가 나온다", 이 사이트가 존재하는 이유 그 자체다.
+ *
+ * 모티브를 그대로 따른다: 무채, 직각, 두 형태뿐. currentColor라 글자색을 따라간다.
+ * 18px에서도 두 도형이 구분돼야 해서 겹침을 크게 잡았다.
+ */
+const LOGO = `<svg class="lg" width="15" height="18" viewBox="0 0 15 18" aria-hidden="true" focusable="false">
+<rect width="13" height="13" fill="currentColor" opacity=".22"></rect>
+<rect x="7" y="6" width="8" height="12" fill="currentColor"></rect></svg>`;
+
+/**
+ * 파비콘 — 헤더 로고와 같은 마크.
+ *
+ * 헤더에만 두면 장식이고, 탭·북마크·홈화면까지 따라와야 사이트의 표식이 된다.
+ * SVG를 data URI로 인라인한다. 파일이 안 늘고 요청도 안 는다.
+ * currentColor는 파비콘에서 안 먹으므로 색을 박는다.
+ */
+const FAVICON = `<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18">' +
+    '<rect width="13" height="13" fill="#c9c9c9"/>' +
+    '<rect x="7" y="6" width="8" height="12" fill="#1a1a1a"/></svg>'
+)}">`;
+
 const shell = (title, body, meta = {}) => {
   const { jsonLd, siteUrl, ...rest } = meta;
   // JSON-LD는 </script>만 escape하면 된다. 나머지는 JSON이 알아서 안전하다.
@@ -378,6 +407,7 @@ const shell = (title, body, meta = {}) => {
   return `<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
+${FAVICON}
 ${metaTags({ title, ...rest })}${ld}${analytics}
 <style>${CSS}</style></head><body>${body}</body></html>`;
 };
@@ -918,7 +948,7 @@ ${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
     'K-POP 앨범 판매처별 특전 비교 | 버전·구성·가격 한눈에',
     `<header class="hd">
 <div class="hdrow">
-<h1 class="bd">K-POP 앨범 특전</h1>
+<span class="brand">${LOGO}<h1 class="bd">K-POP 앨범 특전</h1></span>
 <span class="hdm">${esc(shortDate(stamp).replace(/^\d+\./, '').replace('.', '월 '))}일 갱신</span>
 </div>
 </header>
