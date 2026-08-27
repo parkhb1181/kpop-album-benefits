@@ -8,7 +8,6 @@
   "trailingSlash": false,
   "headers": [
     {
-      "//": "보안 헤더. script-src에 'unsafe-inline'이 남는 건 이 사이트가 카운트다운·검색·탭·제보를 전부 인라인 <script>로 넣기 때문이다 — 의존성 0을 지키는 대가다. 그래도 base-uri·form-action·frame-ancestors는 실제로 막아준다. img-src를 호스트로 못 적는 건 판매처 CDN이 7곳이고 계속 늘기 때문이다(ktown4u·aladin·weverseshop·makestar·musicplant…). https: 로 두되 http는 막는다.",
       "source": "/(.*)",
       "headers": [
         {
@@ -19,9 +18,18 @@
           "key": "Strict-Transport-Security",
           "value": "max-age=31536000; includeSubDomains"
         },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "DENY" },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
@@ -29,12 +37,15 @@
       ]
     },
     {
-      "//": "API는 절대 캐시하지 않는다. /api/latest는 서비스워커가 알림을 받은 직후 읽는 것이라 캐시되면 '방금 뜬 예판'이 옛날 것으로 보인다.",
       "source": "/api/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "no-store" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
     },
     {
-      "//": "HTML — 브라우저는 매번 확인하되(max-age=0) CDN이 1시간 쥔다. 재빌드는 하루 두 번이고 새 배포가 Vercel 캐시를 무효화하므로 낡은 걸 보여줄 위험이 없다. stale-while-revalidate로 갱신 중에도 즉시 응답한다(상세 TTFB 362ms였다).",
       "source": "/",
       "headers": [
         {
@@ -53,18 +64,25 @@
       ]
     },
     {
-      "//": "공유 카드 이미지는 파일명이 내용에 묶여 있어 오래 쥐어도 안전하다.",
       "source": "/og/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, s-maxage=604800, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=604800, immutable"
+        }
       ]
     },
     {
-      "//": ".ics에 text/calendar를 붙이지 않으면 구독이 아니라 다운로드가 된다.",
       "source": "/(.*).ics",
       "headers": [
-        { "key": "Content-Type", "value": "text/calendar; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, must-revalidate" }
+        {
+          "key": "Content-Type",
+          "value": "text/calendar; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=3600, must-revalidate"
+        }
       ]
     }
   ]
