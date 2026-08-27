@@ -89,6 +89,11 @@ a:hover{border-bottom-color:currentColor}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 .pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+/* 판매처 상세 이미지는 세로로 아주 길다(위버스샵 1000×6140). 통째로 칸에 넣으면
+   폭이 88px이라 안 읽히고, 지우면 특전 자료의 81%가 날아간다. 칸 안에서 넘겨 본다. */
+.pgm figure.tall a{display:block;height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card)}
+.pgm figure.tall img{height:auto;object-fit:unset}
+.scr{font-size:11px;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
 .pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
@@ -161,7 +166,8 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
    실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
 .cmp.fx{table-layout:fixed}
 .cmp.fx .c1{width:170px}
-.cmp.fx .c2{width:132px}
+.cmp.fx .c2{width:112px}
+.cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
 .cmp .rt{font-weight:700}
@@ -173,6 +179,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp.fx td.rt{white-space:nowrap}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
+.evc{display:flex;gap:10px;align-items:flex-start}
+.evc>div{min-width:0}
+.evp{flex:0 0 auto;border-bottom:0}
+.evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
@@ -410,111 +420,137 @@ inp.click();
 <div class="vp" data-p="0"><div class="psw"><button type="button" class="pb on" data-k="0">세트</button><button type="button" class="pb" data-k="1">개별</button></div><div class="pp" data-k="0"><h3>기본반 <span class="pk">세트</span> <span class="ok">3개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="기본｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66091" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 15장</span></div></td>
+<td class="num" data-label="가격">41,400원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 (Set) 구매 시, 미공개 셀피 포토카드 2종 세트 + 미공개 셀피 포토액자 2종 세트가 제공됩니다.</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167964" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167964" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
 <td class="num" data-label="가격">41,600원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167970" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><span class="tg w">품절</span><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167970" target="_blank" rel="noopener" title="3CD 세트상품">3CD 세트상품</a></div></td>
 <td class="num" data-label="가격">52,900원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017002" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017002" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">52,900원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66091" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 15장</span></div></td>
-<td class="num" data-label="가격">41,400원</td>
-<td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 (Set) 구매 시, 미공개 셀피 포토카드 2종 세트 + 미공개 셀피 포토액자 2종 세트가 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
+<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="기본｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66090" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 20장</span></div></td>
+<td class="num" data-label="가격">20,700원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 (Random) 구매 시, 미공개 셀피 포토카드 1종 (2종 중 랜덤) + 미공개 셀피 포토액자 1종 (2종 중 랜덤)이 제공됩니다.</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167961" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
 <td class="num" data-label="가격">20,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017004" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017004" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">20,800원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66090" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 20장</span></div></td>
-<td class="num" data-label="가격">20,700원</td>
-<td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 (Random) 구매 시, 미공개 셀피 포토카드 1종 (2종 중 랜덤) + 미공개 셀피 포토액자 1종 (2종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
+<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="1"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>Weverse Albums ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66092" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 40장</span></div></td>
+<td class="num" data-label="가격">11,200원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 컨셉 포토 접지포스터 1종 (2종 중 랜덤)이 제공됩니다.</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167969" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
 <td class="num" data-label="가격">11,300원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017003" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017003" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">11,300원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66092" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 40장</span></div></td>
-<td class="num" data-label="가격">11,200원</td>
-<td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 컨셉 포토 접지포스터 1종 (2종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="one">1곳만</span></h3>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
+<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66093" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 15장</span></div></td>
 <td class="num" data-label="가격">52,600원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 (Set) 구매 시, 미공개 셀피 포토카드 2종 세트 + 미공개 셀피 포토액자 2종 세트 + 로고 폰탭 1종 (2종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="2"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>BANDANA Ver. <span class="pk">개별</span> <span class="ok">2개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="bandana｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167965" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
-<td class="num" data-label="가격">27,800원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66094" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 20장</span></div></td>
 <td class="num" data-label="가격">27,700원</td>
-<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>BANDANA Ver. <span class="pk">세트</span> <span class="ok">2개 판매처 비교</span></h3>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167965" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
+<td class="num" data-label="가격">27,800원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>BANDANA Ver. <span class="pk">세트</span> <span class="ok">2개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="bandana｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
-<td class="num" data-label="가격">55,600원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/300/sales/66095" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 15장</span></div></td>
 <td class="num" data-label="가격">55,400원</td>
-<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
+<td class="num" data-label="가격">55,600원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="3"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Natural Version <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="natural｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400644802" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400644802" target="_blank" rel="noopener" title="수입">수입</a></div></td>
 <td class="num" data-label="가격">62,600원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="4"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Explosion Version <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="explosion｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400644804" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400644804" target="_blank" rel="noopener" title="수입">수입</a></div></td>
 <td class="num" data-label="가격">62,600원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="5"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>BANDANA A Ver. / BANDANA B Ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="bandanaaverbandanab｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017001" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017001" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">27,800원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
-<h2>사진 <span class="one">4장</span></h2>
+<h2>사진 <span class="one">8장</span></h2>
 <div class="pgal" data-gal="1">
-<div class="pgm"><figure>
-<a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="기본반 구성품 (Ktown4u)" loading="eager"></a>
-<figcaption>기본반 · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<div class="pgm"><figure class="tall">
+<a href="https://cdn-contents.weverseshop.io/public/shop/6c052f90e8269bae8d247974c7df26a5.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/6c052f90e8269bae8d247974c7df26a5.png" alt="기본반 위버스샵 특전" loading="eager"></a>
+<figcaption>기본반 · 위버스샵 특전 <b class="scr">위아래로 넘겨 보기</b></figcaption></figure><figure>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="기본반 구성품 (Ktown4u)" loading="lazy"></a>
+<figcaption>기본반 · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure class="tall">
+<a href="https://cdn-contents.weverseshop.io/public/shop/db43c61755334dab542419f7061914a2.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/db43c61755334dab542419f7061914a2.png" alt="기본반 위버스샵 특전" loading="lazy"></a>
+<figcaption>기본반 · 위버스샵 특전 <b class="scr">위아래로 넘겨 보기</b></figcaption></figure><figure class="tall">
+<a href="https://cdn-contents.weverseshop.io/public/shop/1b4da6bd1a11476f14802eaf0ea80765.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/1b4da6bd1a11476f14802eaf0ea80765.png" alt="Weverse Albums ver. 위버스샵 특전" loading="lazy"></a>
+<figcaption>Weverse Albums ver. · 위버스샵 특전 <b class="scr">위아래로 넘겨 보기</b></figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" alt="Weverse Albums ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>Weverse Albums ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>Weverse Albums ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="BANDANA Ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>BANDANA Ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
-<a href="https://cdn-contents.weverseshop.io/public/shop/1e517f496257e374d29b0c5392921c13.jpg" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/1e517f496257e374d29b0c5392921c13.jpg" alt="Weverse Albums ver. 구성품 (위버스샵)" loading="lazy"></a>
-<figcaption>Weverse Albums ver. · 구성품 (위버스샵)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure></div>
-<div class="pgt"><button type="button" data-i="0" aria-label="기본반 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="" loading="lazy"></button><button type="button" data-i="1" aria-label="Weverse Albums ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" alt="" loading="lazy"></button><button type="button" data-i="2" aria-label="BANDANA Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="" loading="lazy"></button><button type="button" data-i="3" aria-label="Weverse Albums ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/1e517f496257e374d29b0c5392921c13.jpg" alt="" loading="lazy"></button></div></div>
+<figcaption>BANDANA Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure class="tall">
+<a href="https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png" alt="Weverse Albums ver. 위버스샵 특전" loading="lazy"></a>
+<figcaption>Weverse Albums ver. · 위버스샵 특전 <b class="scr">위아래로 넘겨 보기</b></figcaption></figure><figure class="tall">
+<a href="https://cdn-contents.weverseshop.io/public/shop/79382312e740445c6d681009b2c771af.jpg" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/79382312e740445c6d681009b2c771af.jpg" alt="Weverse Albums ver. 구성품 (위버스샵)" loading="lazy"></a>
+<figcaption>Weverse Albums ver. · 구성품 (위버스샵) <b class="scr">위아래로 넘겨 보기</b><span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div>
+<div class="pgt"><button type="button" data-i="0" aria-label="기본반 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/6c052f90e8269bae8d247974c7df26a5.png" alt="" loading="lazy"></button><button type="button" data-i="1" aria-label="기본반 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="" loading="lazy"></button><button type="button" data-i="2" aria-label="기본반 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/db43c61755334dab542419f7061914a2.png" alt="" loading="lazy"></button><button type="button" data-i="3" aria-label="Weverse Albums ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/1b4da6bd1a11476f14802eaf0ea80765.png" alt="" loading="lazy"></button><button type="button" data-i="4" aria-label="Weverse Albums ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" alt="" loading="lazy"></button><button type="button" data-i="5" aria-label="BANDANA Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="" loading="lazy"></button><button type="button" data-i="6" aria-label="Weverse Albums ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png" alt="" loading="lazy"></button><button type="button" data-i="7" aria-label="Weverse Albums ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/79382312e740445c6d681009b2c771af.jpg" alt="" loading="lazy"></button></div></div>
 <h2>최저가 조합 <span class="one">9종</span></h2>
 
 <div class="best"><span class="bl">최저가</span><b class="bv">365,000원</b><span class="flag">일부 미확인</span><span class="bm">상품 362,000원 · 배송 3,000원</span></div>
@@ -534,22 +570,22 @@ inp.click();
 <ol class="rks"><li class="rk part">
 <span class="rkn">1</span>
 <span class="rkb"><span class="rlg rl5" aria-hidden="true"></span><b>위버스샵</b>
-<span class="rkm">6/9종 · 배송 미확인 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">9종 중 6종 · 배송 미확인</span></span>
 <span class="rkv">209,000원<span class="est">추정</span></span>
 </li><li class="rk part">
 <span class="rkn">2</span>
 <span class="rkb"><span class="rlg rl0" aria-hidden="true"></span><b>Ktown4u</b>
-<span class="rkm">5/9종 · 배송 무료 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">9종 중 5종 · 배송 무료</span></span>
 <span class="rkv">157,100원</span>
 </li><li class="rk part">
 <span class="rkn">3</span>
 <span class="rkb"><span class="rlg mono" aria-hidden="true">위</span><b>위드뮤</b>
-<span class="rkm">4/9종 · 배송 3,000원 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">9종 중 4종 · 배송 3,000원</span></span>
 <span class="rkv">115,800원<span class="est">추정</span></span>
 </li><li class="rk part">
 <span class="rkn">4</span>
 <span class="rkb"><span class="rlg rl1" aria-hidden="true"></span><b>알라딘</b>
-<span class="rkm">2/9종 · 배송 무료 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">9종 중 2종 · 배송 무료</span></span>
 <span class="rkv">125,200원</span>
 </li></ol>
 
@@ -557,17 +593,16 @@ inp.click();
 <p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
 <div class="wrap"><table class="cmp"><thead><tr>
 <th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody><tr>
-<td class="evt" data-label="이벤트"><a href="https://makestar.co/event/19633" rel="nofollow">EVAN 1st Mini Album &#39;DEATH OF ME&#39; 발매기념 예약판매 특전 증정 이벤트</a>
-<div class="mut">예약 특전 포토카드</div></td>
+<td class="evt" data-label="이벤트"><div class="evc"><div><a href="https://makestar.co/event/19633" rel="nofollow">EVAN 1st Mini Album &#39;DEATH OF ME&#39; 발매기념 예약판매 특전 증정 이벤트</a><div class="mut">예약 특전 포토카드</div></div></div></td>
 <td class="num" data-label="마감"><b>D-10</b></td>
 <td class="num" data-label="기간">2026.08.10~2026.09.06</td>
 <td data-label="응모 조건">[EXPLOSION Ver. / NATURAL Ver.] (RANDOM) <b>20,800원</b> · [EXPLOSION Ver. / NATURAL Ver.] (SET) <b>41,600원</b> · [EXPLOSION Ver. / NATURAL Ver.] (SET) + (Weverse Albums ver.) (SET) <b>52,900원</b></td></tr></tbody></table></div>
 
 <h2>자주 묻는 질문</h2>
-<details class="comp"><summary>에반(EVAN) 앨범은 어디서 사야 하나요?</summary><p>Ktown4u · 알라딘 · 위드뮤 · 위버스샵에서 팝니다. <b>상품 가격은 대체로 같고, 판매처마다 주는 특전(미공개 포토카드 등)이 다릅니다.</b> 그래서 "어디가 싼가"보다 <b>"어느 특전을 받고 싶은가"</b>로 고르는 게 맞습니다. 위 표에서 판매처별 특전을 비교하세요.</p></details>
-<details class="comp"><summary>1st Mini Album &#39;DEATH OF ME&#39; 버전은 몇 종인가요?</summary><p>현재 <b>9종</b>을 확인했습니다. 버전마다 구성품과 포토카드가 다르고, 판매처 특전은 그 위에 따로 붙습니다.</p></details>
-<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비·쿠폰까지 넣은 최저 조합이 <b>365,000원</b>입니다. 한 곳에서 다 못 사는 경우가 많아 배송비가 몇 번 붙는지가 총액을 가릅니다.</p></details>
-<details class="comp"><summary>특전은 언제까지 주나요?</summary><p>대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.</p></details>
+<details class="comp"><summary>에반(EVAN) 앨범은 어디서 사야 하나요?</summary><p><b>Ktown4u · 알라딘 · 위드뮤 · 위버스샵</b> 4곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
+<details class="comp"><summary>1st Mini Album &#39;DEATH OF ME&#39; 버전은 몇 종인가요?</summary><p><b>9종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
+<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비와 쿠폰까지 넣어 <b>365,000원</b>입니다.</p></details>
+<details class="comp"><summary>특전은 언제까지 주나요?</summary><p><b>예약판매 기간 내 선착순</b>이 대부분이고 수량이 소진되면 끝납니다. 이 페이지는 하루 두 번 갱신됩니다.</p></details>
 <script>
 (function(){
 /* 버전 탭 — 첫 패널만 남기고 접는다. 패널은 DOM에 그대로 있어서 크롤러는 전부 읽는다. */
@@ -598,26 +633,6 @@ t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
 w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
-/* 판매처가 올린 **세로로 아주 긴 안내 배너**는 특전 사진이 아니라 공지문이다.
-   그걸 통째로 옮겨 붙이면 우리 사이트가 남의 공지를 재게시하는 꼴이고,
-   가로로 넓은 갤러리 칸에서는 가운데 도장처럼 찍혀 보기도 나쁘다.
-   비율로만 거른다 — 포토카드는 2:3이라 2.4를 넘지 않는다. */
-function drop(im){
-var f=im.closest('figure');if(!f)return;
-var i=[].slice.call(m.querySelectorAll('figure')).indexOf(f);
-var t=tb();if(t[i])t[i].remove();
-f.remove();
-var n=m.querySelectorAll('figure').length;
-/* 제목의 장수는 서버가 찍은 것이라, 여기서 빼면 숫자가 어긋난다. */
-var hd=w.previousElementSibling;
-if(hd&&hd.tagName==='H2'){var o=hd.querySelector('.one');if(o)o.textContent=n+'장'}
-if(n<2){w.removeAttribute('data-gal');var g=w.querySelector('.pgt');if(g)g.remove()}
-mark();
-}
-[].slice.call(m.querySelectorAll('img')).forEach(function(im){
-function chk(){if(im.naturalWidth&&im.naturalHeight/im.naturalWidth>2.4)drop(im)}
-if(im.complete)chk();else im.addEventListener('load',chk);
-});
 function mk(cls,txt,dir){
 var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
 b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
@@ -677,4 +692,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:07:58</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:39:48</b></p></body></html>

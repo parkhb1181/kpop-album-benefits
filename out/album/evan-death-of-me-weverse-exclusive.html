@@ -89,6 +89,11 @@ a:hover{border-bottom-color:currentColor}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 .pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+/* 판매처 상세 이미지는 세로로 아주 길다(위버스샵 1000×6140). 통째로 칸에 넣으면
+   폭이 88px이라 안 읽히고, 지우면 특전 자료의 81%가 날아간다. 칸 안에서 넘겨 본다. */
+.pgm figure.tall a{display:block;height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card)}
+.pgm figure.tall img{height:auto;object-fit:unset}
+.scr{font-size:11px;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
 .pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
@@ -161,7 +166,8 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
    실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
 .cmp.fx{table-layout:fixed}
 .cmp.fx .c1{width:170px}
-.cmp.fx .c2{width:132px}
+.cmp.fx .c2{width:112px}
+.cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
 .cmp .rt{font-weight:700}
@@ -173,6 +179,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp.fx td.rt{white-space:nowrap}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
+.evc{display:flex;gap:10px;align-items:flex-start}
+.evc>div{min-width:0}
+.evp{flex:0 0 auto;border-bottom:0}
+.evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
@@ -408,76 +418,88 @@ inp.click();
 <div class="vp" data-p="0"><div class="psw"><button type="button" class="pb on" data-k="0">세트</button><button type="button" class="pb" data-k="1">개별</button></div><div class="pp" data-k="0"><h3>기본반 <span class="pk">세트</span> <span class="ok">2개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="기본｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167964" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167964" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
 <td class="num" data-label="가격">41,600원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167970" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167970" target="_blank" rel="noopener" title="3CD 세트상품">3CD 세트상품</a></div></td>
-<td class="num" data-label="가격">52,900원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138435" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138435" target="_blank" rel="noopener" title="SET">SET</a></div></td>
 <td class="num" data-label="가격">41,600원</td>
-<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">개별</span> <span class="ok">2개 판매처 비교</span></h3>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
+<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167970" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167970" target="_blank" rel="noopener" title="3CD 세트상품">3CD 세트상품</a></div></td>
+<td class="num" data-label="가격">52,900원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">개별</span> <span class="ok">2개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="기본｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167961" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
-<td class="num" data-label="가격">20,800원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138186" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">20,800원</td>
-<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
+<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167961" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
+<td class="num" data-label="가격">20,800원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="1"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>BANDANA Ver. <span class="pk">개별</span> <span class="ok">2개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="bandana｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167965" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><span class="tg w">품절</span></div></td>
-<td class="num" data-label="가격">27,800원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138535" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">27,800원</td>
-<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>BANDANA Ver. <span class="pk">세트</span> <span class="ok">2개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
+<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167965" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><span class="tg w">품절</span></div></td>
+<td class="num" data-label="가격">27,800원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>BANDANA Ver. <span class="pk">세트</span> <span class="ok">2개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="bandana｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><span class="tg w">품절</span><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
 <td class="num" data-label="가격">55,600원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138609" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138609" target="_blank" rel="noopener" title="SET">SET</a></div></td>
 <td class="num" data-label="가격">55,600원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="2"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Weverse Albums ver. <span class="pk">개별</span> <span class="ok">2개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167969" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
-<td class="num" data-label="가격">11,300원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138733" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">11,300원</td>
-<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
+<td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167969" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
+<td class="num" data-label="가격">11,300원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="3"><div class="psw"><button type="button" class="pb on" data-k="0">세트</button></div><div class="pp" data-k="0"><h3>일반반 +Weverse Albums Ver. <span class="pk">세트</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="일반반weversealbums｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138992" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138992" target="_blank" rel="noopener" title="세트">세트</a></div></td>
 <td class="num" data-label="가격">52,900원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <h2>사진 <span class="one">3장</span></h2>
 <div class="pgal" data-gal="1">
 <div class="pgm"><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="기본반 구성품 (Ktown4u)" loading="eager"></a>
-<figcaption>기본반 · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>기본반 · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="BANDANA Ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>BANDANA Ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>BANDANA Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" alt="Weverse Albums ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>Weverse Albums ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure></div>
+<figcaption>Weverse Albums ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div>
 <div class="pgt"><button type="button" data-i="0" aria-label="기본반 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="" loading="lazy"></button><button type="button" data-i="1" aria-label="BANDANA Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="" loading="lazy"></button><button type="button" data-i="2" aria-label="Weverse Albums ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" alt="" loading="lazy"></button></div></div>
 <h2>최저가 조합 <span class="one">6종</span></h2>
 
@@ -485,27 +507,27 @@ inp.click();
 <div class="bds"><div class="dl">
 <div class="dlt"><span class="rlg rl1" aria-hidden="true"></span>알라딘 <span class="pk">6종</span></div>
 <div class="dlc">210,000원</div>
-<div class="dlm">배송 무료 · 쿠폰 -7,000원</div>
+<div class="dlm">배송 무료 · 쿠폰 −7,000원</div>
 </div></div>
 <ol class="rks"><li class="rk">
 <span class="rkn">1</span>
 <span class="rkb"><span class="rlg rl1" aria-hidden="true"></span><b>알라딘</b>
-<span class="rkm">6/6종 · 배송 무료 · 쿠폰 −7,000원</span></span>
+<span class="rkm">6종 전부 · 배송 무료 · 쿠폰 −7,000원</span></span>
 <span class="rkv">210,000원</span>
 </li><li class="rk part">
 <span class="rkn">2</span>
 <span class="rkb"><span class="rlg rl0" aria-hidden="true"></span><b>Ktown4u</b>
-<span class="rkm">3/6종 · 배송 무료 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">6종 중 3종 · 배송 무료</span></span>
 <span class="rkv">73,700원</span>
 </li></ol>
 
 <h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
 
 <h2>자주 묻는 질문</h2>
-<details class="comp"><summary>에반(EVAN) 앨범은 어디서 사야 하나요?</summary><p>Ktown4u · 알라딘에서 팝니다. <b>상품 가격은 대체로 같고, 판매처마다 주는 특전(미공개 포토카드 등)이 다릅니다.</b> 그래서 "어디가 싼가"보다 <b>"어느 특전을 받고 싶은가"</b>로 고르는 게 맞습니다. 위 표에서 판매처별 특전을 비교하세요.</p></details>
-<details class="comp"><summary>DEATH OF ME (Weverse Exclusive) 버전은 몇 종인가요?</summary><p>현재 <b>6종</b>을 확인했습니다. 버전마다 구성품과 포토카드가 다르고, 판매처 특전은 그 위에 따로 붙습니다.</p></details>
-<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비·쿠폰까지 넣은 최저 조합이 <b>210,000원</b>입니다. 한 곳에서 다 못 사는 경우가 많아 배송비가 몇 번 붙는지가 총액을 가릅니다.</p></details>
-<details class="comp"><summary>특전은 언제까지 주나요?</summary><p>대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.</p></details>
+<details class="comp"><summary>에반(EVAN) 앨범은 어디서 사야 하나요?</summary><p><b>Ktown4u · 알라딘</b> 2곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
+<details class="comp"><summary>DEATH OF ME (Weverse Exclusive) 버전은 몇 종인가요?</summary><p><b>6종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
+<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비와 쿠폰까지 넣어 <b>210,000원</b>입니다.</p></details>
+<details class="comp"><summary>특전은 언제까지 주나요?</summary><p><b>예약판매 기간 내 선착순</b>이 대부분이고 수량이 소진되면 끝납니다. 이 페이지는 하루 두 번 갱신됩니다.</p></details>
 <script>
 (function(){
 /* 버전 탭 — 첫 패널만 남기고 접는다. 패널은 DOM에 그대로 있어서 크롤러는 전부 읽는다. */
@@ -536,26 +558,6 @@ t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
 w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
-/* 판매처가 올린 **세로로 아주 긴 안내 배너**는 특전 사진이 아니라 공지문이다.
-   그걸 통째로 옮겨 붙이면 우리 사이트가 남의 공지를 재게시하는 꼴이고,
-   가로로 넓은 갤러리 칸에서는 가운데 도장처럼 찍혀 보기도 나쁘다.
-   비율로만 거른다 — 포토카드는 2:3이라 2.4를 넘지 않는다. */
-function drop(im){
-var f=im.closest('figure');if(!f)return;
-var i=[].slice.call(m.querySelectorAll('figure')).indexOf(f);
-var t=tb();if(t[i])t[i].remove();
-f.remove();
-var n=m.querySelectorAll('figure').length;
-/* 제목의 장수는 서버가 찍은 것이라, 여기서 빼면 숫자가 어긋난다. */
-var hd=w.previousElementSibling;
-if(hd&&hd.tagName==='H2'){var o=hd.querySelector('.one');if(o)o.textContent=n+'장'}
-if(n<2){w.removeAttribute('data-gal');var g=w.querySelector('.pgt');if(g)g.remove()}
-mark();
-}
-[].slice.call(m.querySelectorAll('img')).forEach(function(im){
-function chk(){if(im.naturalWidth&&im.naturalHeight/im.naturalWidth>2.4)drop(im)}
-if(im.complete)chk();else im.addEventListener('load',chk);
-});
 function mk(cls,txt,dir){
 var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
 b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
@@ -615,4 +617,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:07:58</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:39:48</b></p></body></html>

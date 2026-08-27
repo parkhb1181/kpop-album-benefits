@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. AM 12:07:58",
+  "stamp": "2026. 8. 28. AM 12:39:48",
   "albums": [
     {
       "artistId": 308,
@@ -95,13 +95,13 @@
       "versions": 7,
       "retailers": 6,
       "benefitCount": 2,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "18시간 51분"
+        "rough": "18시간 19분"
       },
       "rowCount": 44,
       "artistKo": "튜이드",
@@ -119,7 +119,7 @@
       "priceMin": 13900,
       "artist": "SHINee",
       "slug": "shinee-make-it-hot",
-      "versions": 7,
+      "versions": 6,
       "retailers": 6,
       "benefitCount": 2,
       "soldCount": 1,
@@ -173,7 +173,7 @@
       "priceMin": 12400,
       "artist": "CORTIS",
       "slug": "cortis-greengreen",
-      "versions": 18,
+      "versions": 16,
       "retailers": 7,
       "benefitCount": 1,
       "soldCount": 8,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "18시간 47분"
+        "rough": "18시간 15분"
       },
       "rowCount": 56,
       "artistKo": "엔시티 127",

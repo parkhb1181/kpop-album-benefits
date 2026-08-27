@@ -89,6 +89,11 @@ a:hover{border-bottom-color:currentColor}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 .pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+/* 판매처 상세 이미지는 세로로 아주 길다(위버스샵 1000×6140). 통째로 칸에 넣으면
+   폭이 88px이라 안 읽히고, 지우면 특전 자료의 81%가 날아간다. 칸 안에서 넘겨 본다. */
+.pgm figure.tall a{display:block;height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card)}
+.pgm figure.tall img{height:auto;object-fit:unset}
+.scr{font-size:11px;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
 .pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
@@ -161,7 +166,8 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
    실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
 .cmp.fx{table-layout:fixed}
 .cmp.fx .c1{width:170px}
-.cmp.fx .c2{width:132px}
+.cmp.fx .c2{width:112px}
+.cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
 .cmp .rt{font-weight:700}
@@ -173,6 +179,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp.fx td.rt{white-space:nowrap}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
+.evc{display:flex;gap:10px;align-items:flex-start}
+.evc>div{min-width:0}
+.evp{flex:0 0 auto;border-bottom:0}
+.evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
@@ -438,69 +448,78 @@ tick();setInterval(tick,1000);
 <div class="vp" data-p="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>HOME ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="home｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67106" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 6장</span></div></td>
 <td class="num" data-label="가격">19,300원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 미공개 셀피 포토카드 A 1종 (3종 중 랜덤)이 제공됩니다.</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67108" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 6장</span></div></td>
 <td class="num" data-label="가격">32,600원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 미공개 셀피 포토카드 A 1종 (3종 중 랜덤) + 미공개 셀피 포토카드 B 1종 (3종 중 랜덤) + 인스턴트 포토카드 1종 (3종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="1"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>삶 ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="삶｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400988333" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">53,500원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>알라딘 특전: ) 구매 시 포스터 · 기간 예약판매 시작일 ~ 수량 소진시까지</div></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="2"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>절 ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="절｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400988311" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">39,400원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>알라딘 특전: ) 구매 시 포스터 · 기간 예약판매 시작일 ~ 수량 소진시까지</div></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="3"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>집 ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="집｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400988253" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">19,300원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>알라딘 특전: ) 구매 시 포스터 · 기간 예약판매 시작일 ~ 수량 소진시까지</div></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="4"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>섬 ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="섬｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400988280" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">13,400원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>알라딘 특전: ) 구매 시 포스터 · 기간 예약판매 시작일 ~ 수량 소진시까지</div></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="5"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>ISLAND ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="island｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67107" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 6장</span></div></td>
 <td class="num" data-label="가격">13,300원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 미공개 셀피 포토카드 B 1종 (3종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="6"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>TEMPLE ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="temple｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67109" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 4장</span></div></td>
 <td class="num" data-label="가격">39,300원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="7"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>LIFE ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="life｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67110" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 4장</span></div></td>
 <td class="num" data-label="가격">53,400원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <h2>사진 <span class="one">6장</span></h2>
 <div class="pgal" data-gal="1">
@@ -510,13 +529,13 @@ tick();setInterval(tick,1000);
 <a href="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="HOME ver. 위버스샵 특전" loading="lazy"></a>
 <figcaption>HOME ver. · 위버스샵 특전</figcaption></figure><figure>
 <a href="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="HOME ver. 구성품 (위버스샵)" loading="lazy"></a>
-<figcaption>HOME ver. · 구성품 (위버스샵)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>HOME ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="ISLAND ver. 위버스샵 특전" loading="lazy"></a>
 <figcaption>ISLAND ver. · 위버스샵 특전</figcaption></figure><figure>
 <a href="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="TEMPLE ver. 구성품 (위버스샵)" loading="lazy"></a>
-<figcaption>TEMPLE ver. · 구성품 (위버스샵)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>TEMPLE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="LIFE ver. 구성품 (위버스샵)" loading="lazy"></a>
-<figcaption>LIFE ver. · 구성품 (위버스샵)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure></div>
+<figcaption>LIFE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div>
 <div class="pgt"><button type="button" data-i="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="" loading="lazy"></button><button type="button" data-i="1" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="" loading="lazy"></button><button type="button" data-i="2" aria-label="HOME ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="" loading="lazy"></button><button type="button" data-i="3" aria-label="ISLAND ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="" loading="lazy"></button><button type="button" data-i="4" aria-label="TEMPLE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="" loading="lazy"></button><button type="button" data-i="5" aria-label="LIFE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="" loading="lazy"></button></div></div>
 <h2>최저가 조합 <span class="one">8종</span></h2>
 
@@ -524,7 +543,7 @@ tick();setInterval(tick,1000);
 <div class="bds"><div class="dl">
 <div class="dlt"><span class="rlg rl1" aria-hidden="true"></span>알라딘 <span class="pk">4종</span></div>
 <div class="dlc">125,600원</div>
-<div class="dlm">배송 무료 · 쿠폰 -7,000원</div>
+<div class="dlm">배송 무료 · 쿠폰 −7,000원</div>
 </div><div class="dl">
 <div class="dlt"><span class="rlg rl5" aria-hidden="true"></span>위버스샵 <span class="pk">4종</span></div>
 <div class="dlc">125,300원</div>
@@ -533,12 +552,12 @@ tick();setInterval(tick,1000);
 <ol class="rks"><li class="rk part">
 <span class="rkn">1</span>
 <span class="rkb"><span class="rlg rl5" aria-hidden="true"></span><b>위버스샵</b>
-<span class="rkm">4/8종 · 배송 미확인 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">8종 중 4종 · 배송 미확인</span></span>
 <span class="rkv">125,300원<span class="est">추정</span></span>
 </li><li class="rk part">
 <span class="rkn">2</span>
 <span class="rkb"><span class="rlg rl1" aria-hidden="true"></span><b>알라딘</b>
-<span class="rkm">4/8종 · 배송 무료 · 쿠폰 −7,000원 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">8종 중 4종 · 배송 무료 · 쿠폰 −7,000원</span></span>
 <span class="rkv">125,600원</span>
 </li></ol>
 
@@ -546,22 +565,20 @@ tick();setInterval(tick,1000);
 <p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
 <div class="wrap"><table class="cmp"><thead><tr>
 <th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody><tr>
-<td class="evt" data-label="이벤트"><a href="https://makestar.co/event/20277" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER MEET&amp;CALL EVENT</a> <span class="tg">팬싸</span>
-<div class="mut">영상통화 팬사인회</div></td>
+<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353.png" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/20277" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER MEET&amp;CALL EVENT</a> <span class="tg">팬싸</span><div class="mut">영상통화 팬사인회</div></div></div></td>
 <td class="num" data-label="마감"><span class="sold">마감임박</span></td>
 <td class="num" data-label="기간">2026.08.27~2026.08.29<div class="mut">발표 2026.08.31</div></td>
 <td data-label="응모 조건">For. 대면 팬사인회 <b>13,400원</b> · For. 영상통화 <b>19,300원</b></td></tr><tr>
-<td class="evt" data-label="이벤트"><a href="https://makestar.co/event/20244" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER PHOTOCARD EVENT</a>
-<div class="mut">예약 특전 포토카드</div></td>
+<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364.png" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/20244" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER PHOTOCARD EVENT</a><div class="mut">예약 특전 포토카드</div></div></div></td>
 <td class="num" data-label="마감"><b>D-10</b></td>
 <td class="num" data-label="기간">2026.08.26~2026.09.06<div class="mut">발표 2026.09.07</div></td>
 <td data-label="응모 조건">For. 섬 ver. <b>13,400원</b> · For. 집 ver. <b>19,300원</b> · For. 섬 ver. + 집 ver.(SET) <b>32,700원</b></td></tr></tbody></table></div>
 
 <h2>자주 묻는 질문</h2>
-<details class="comp"><summary>소연(SOYEON) 앨범은 어디서 사야 하나요?</summary><p>알라딘 · 위버스샵에서 팝니다. <b>상품 가격은 대체로 같고, 판매처마다 주는 특전(미공개 포토카드 등)이 다릅니다.</b> 그래서 "어디가 싼가"보다 <b>"어느 특전을 받고 싶은가"</b>로 고르는 게 맞습니다. 위 표에서 판매처별 특전을 비교하세요.</p></details>
-<details class="comp"><summary>What a Wonderful Life 버전은 몇 종인가요?</summary><p>현재 <b>8종</b>을 확인했습니다. 버전마다 구성품과 포토카드가 다르고, 판매처 특전은 그 위에 따로 붙습니다.</p></details>
-<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비·쿠폰까지 넣은 최저 조합이 <b>250,900원</b>입니다. 한 곳에서 다 못 사는 경우가 많아 배송비가 몇 번 붙는지가 총액을 가릅니다.</p></details>
-<details class="comp"><summary>특전은 언제까지 주나요?</summary><p>대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.</p></details>
+<details class="comp"><summary>소연(SOYEON) 앨범은 어디서 사야 하나요?</summary><p><b>알라딘 · 위버스샵</b> 2곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
+<details class="comp"><summary>What a Wonderful Life 버전은 몇 종인가요?</summary><p><b>8종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
+<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비와 쿠폰까지 넣어 <b>250,900원</b>입니다.</p></details>
+<details class="comp"><summary>특전은 언제까지 주나요?</summary><p><b>예약판매 기간 내 선착순</b>이 대부분이고 수량이 소진되면 끝납니다. 이 페이지는 하루 두 번 갱신됩니다.</p></details>
 <script>
 (function(){
 /* 버전 탭 — 첫 패널만 남기고 접는다. 패널은 DOM에 그대로 있어서 크롤러는 전부 읽는다. */
@@ -592,26 +609,6 @@ t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
 w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
-/* 판매처가 올린 **세로로 아주 긴 안내 배너**는 특전 사진이 아니라 공지문이다.
-   그걸 통째로 옮겨 붙이면 우리 사이트가 남의 공지를 재게시하는 꼴이고,
-   가로로 넓은 갤러리 칸에서는 가운데 도장처럼 찍혀 보기도 나쁘다.
-   비율로만 거른다 — 포토카드는 2:3이라 2.4를 넘지 않는다. */
-function drop(im){
-var f=im.closest('figure');if(!f)return;
-var i=[].slice.call(m.querySelectorAll('figure')).indexOf(f);
-var t=tb();if(t[i])t[i].remove();
-f.remove();
-var n=m.querySelectorAll('figure').length;
-/* 제목의 장수는 서버가 찍은 것이라, 여기서 빼면 숫자가 어긋난다. */
-var hd=w.previousElementSibling;
-if(hd&&hd.tagName==='H2'){var o=hd.querySelector('.one');if(o)o.textContent=n+'장'}
-if(n<2){w.removeAttribute('data-gal');var g=w.querySelector('.pgt');if(g)g.remove()}
-mark();
-}
-[].slice.call(m.querySelectorAll('img')).forEach(function(im){
-function chk(){if(im.naturalWidth&&im.naturalHeight/im.naturalWidth>2.4)drop(im)}
-if(im.complete)chk();else im.addEventListener('load',chk);
-});
 function mk(cls,txt,dir){
 var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
 b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
@@ -671,4 +668,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:07:58</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:39:48</b></p></body></html>

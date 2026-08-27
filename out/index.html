@@ -89,6 +89,11 @@ a:hover{border-bottom-color:currentColor}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 .pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+/* 판매처 상세 이미지는 세로로 아주 길다(위버스샵 1000×6140). 통째로 칸에 넣으면
+   폭이 88px이라 안 읽히고, 지우면 특전 자료의 81%가 날아간다. 칸 안에서 넘겨 본다. */
+.pgm figure.tall a{display:block;height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card)}
+.pgm figure.tall img{height:auto;object-fit:unset}
+.scr{font-size:11px;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
 .pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
@@ -161,7 +166,8 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
    실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
 .cmp.fx{table-layout:fixed}
 .cmp.fx .c1{width:170px}
-.cmp.fx .c2{width:132px}
+.cmp.fx .c2{width:112px}
+.cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
 .cmp .rt{font-weight:700}
@@ -173,6 +179,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp.fx td.rt{white-space:nowrap}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
+.evc{display:flex;gap:10px;align-items:flex-start}
+.evc>div{min-width:0}
+.evp{flex:0 0 auto;border-bottom:0}
+.evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
@@ -370,13 +380,13 @@ h1{font-size:20px}
 <div class="cards"><div class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
 <a class="go" href="album/tuide-tune-play.html" aria-label="튜이드(TUIDE) TUNE &amp; PLAY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">18시간 51분</span></div><div class="ar">튜이드(TUIDE)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">18시간 19분</span></div><div class="ar">튜이드(TUIDE)</div>
 <div class="al">TUNE &amp; PLAY</div>
-<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 2건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
+<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
 </div><div class="card" data-q="엔시티127nct127nct127엔시티127blingy" data-c="ㅇㅅㅌ127nct127nct127ㅇㅅㅌ127blingy">
 <a class="go" href="album/nct-127-blingy.html" aria-label="엔시티 127(NCT 127) BLINGY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">18시간 47분</span></div><div class="ar">엔시티 127(NCT 127)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">18시간 15분</span></div><div class="ar">엔시티 127(NCT 127)</div>
 <div class="al">BLINGY</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
 </div><div class="card" data-q="소연soyeonidle아이들소연soyeonwhatawonderfullife" data-c="ㅅㅇsoyeonidleㅇㅇㄷㅅㅇsoyeonwhatawonderfullife">
@@ -414,7 +424,7 @@ h1{font-size:20px}
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/QzJWoi.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
 <div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 23시간</span></div><div class="ar">민호(MINHO)</div>
 <div class="al">Make it hot</div>
-<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 1건</span></div><div class="meta">7종 · 판매처 6 · 9월 7일 발매</div>
+<div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 1건</span></div><div class="meta">6종 · 판매처 6 · 9월 7일 발매</div>
 </div><div class="card" data-q="youngtak영탁youngtak영탁영탁gogo" data-c="youngtakㅇㅌyoungtakㅇㅌㅇㅌgogo">
 <a class="go" href="album/youngtak-영탁-gogo.html" aria-label="YOUNGTAK (영탁) GOGO"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
@@ -426,7 +436,7 @@ h1{font-size:20px}
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/18/0O7cLx.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
 <div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">24일 6시간</span></div><div class="ar">코르티스(CORTIS)</div>
 <div class="al">GREENGREEN</div>
-<div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 8건</span></div><div class="meta">18종 · 판매처 7 · 9월 21일 발매</div>
+<div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 8건</span></div><div class="meta">16종 · 판매처 7 · 9월 21일 발매</div>
 </div><div class="card" data-q="vvupvvup1stminialbumvvon" data-c="vvupvvup1stminialbumvvon">
 <a class="go" href="album/vvup-1st-mini-album-vvon.html" aria-label="VVUP 1st Mini Album ‘VVON’"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>

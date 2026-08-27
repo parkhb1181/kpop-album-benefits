@@ -89,6 +89,11 @@ a:hover{border-bottom-color:currentColor}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 .pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+/* 판매처 상세 이미지는 세로로 아주 길다(위버스샵 1000×6140). 통째로 칸에 넣으면
+   폭이 88px이라 안 읽히고, 지우면 특전 자료의 81%가 날아간다. 칸 안에서 넘겨 본다. */
+.pgm figure.tall a{display:block;height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card)}
+.pgm figure.tall img{height:auto;object-fit:unset}
+.scr{font-size:11px;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
 .pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
@@ -161,7 +166,8 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
    실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
 .cmp.fx{table-layout:fixed}
 .cmp.fx .c1{width:170px}
-.cmp.fx .c2{width:132px}
+.cmp.fx .c2{width:112px}
+.cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
 .cmp .rt{font-weight:700}
@@ -173,6 +179,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp.fx td.rt{white-space:nowrap}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
+.evc{display:flex;gap:10px;align-items:flex-start}
+.evc>div{min-width:0}
+.evp{flex:0 0 auto;border-bottom:0}
+.evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
@@ -434,159 +444,202 @@ tick();setInterval(tick,1000);
 <div class="vp" data-p="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>PHOTO BOOK Ver. <span class="pk">개별</span> <span class="ok">7개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="photobook｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167627" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167627" target="_blank" rel="noopener" title="케타포 Special Gift">케타포 Special Gift</a></div></td>
-<td class="num" data-label="가격">20,500원</td>
-<td class="ben" data-label="특전"><div>케타포 특전 : 미공개 포토카드 2종 중 1종 랜덤</div></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399911419" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>알라딘 특전: 미공개 포토카드(2종 중 1종 랜덤) · 기간 2026.8.5(수) 14:00 ~ 수량 소진시까지</div></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167627" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167627" target="_blank" rel="noopener" title="케타포 Special Gift">케타포 Special Gift</a></div></td>
+<td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><div>케타포 특전 : 미공개 포토카드 2종 중 1종 랜덤</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/태민-taemin-phase-i-soft-violence-photo-book-ver-2종-중-1종-랜덤/27439/category/42/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016956" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016956" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=5C09187EE77CE469048738AB63D2E16E" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=5C09187EE77CE469048738AB63D2E16E" target="_blank" rel="noopener" title="단독배송 · 9/5 이벤트">단독배송 · 9/5 이벤트</a></div></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=1DD52EB84A406AD9C8BCF27E8527464E" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=1DD52EB84A406AD9C8BCF27E8527464E" target="_blank" rel="noopener" title="특전증정/랜덤">특전증정/랜덤</a></div></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 상품명에만 표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403303" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a><div class="tags"><a class="tg" href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403303" target="_blank" rel="noopener" title="애플특전">애플특전</a></div></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 상품명에만 표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66220" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 15장</span><a class="tg" href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66220" target="_blank" rel="noopener" title="PHASE I : Soft Violence">PHASE I : Soft Violence</a></div></td>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66220" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 15장</span></div></td>
 <td class="num" data-label="가격">20,500원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 한정, Weverse Global 단독 특전! PHASE I : Soft Violence (PHOTO BOOK Ver.) 앨범 1장 구매 시, 미공개 포토카드 1종 (2종 중 1종 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[SWEET Ver. / BITTER Ver. 2종 중 랜덤1종][슬리브 케이스+포토북80p+CD&amp;봉투+접지포스터+시크릿 메시지 카드+엽서+스티커팩+포토카드]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>PHOTO BOOK Ver. <span class="pk">세트</span> <span class="ok">7개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="photobook｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167630" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167630" target="_blank" rel="noopener" title="케타포 Special Gift · 2CD 세트상품">케타포 Special Gift · 2CD 세트상품</a></div></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>케타포 특전 : 미공개 포토카드 2종 중 2종 랜덤</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399911449" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399911449" target="_blank" rel="noopener" title="SET">SET</a></div></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><div>알라딘 특전: 미공개 포토카드(2종 중 1종 랜덤) (각 앨범당) · 기간 2026.8.5(수) 14:00 ~ 수량 소진시까지</div></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/태민-taemin-phase-i-soft-violence-photo-book-ver-2종-세트/27440/category/42/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016955" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016955" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=97CC3D958A982EAAEED62D374A82CF7C" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=97CC3D958A982EAAEED62D374A82CF7C" target="_blank" rel="noopener" title="특전증정/세트">특전증정/세트</a></div></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 상품명에만 표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403304" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a><div class="tags"><a class="tg" href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403304" target="_blank" rel="noopener" title="애플특전 · 세트/앨범2종">애플특전 · 세트/앨범2종</a></div></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 상품명에만 표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66221" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 12장</span><a class="tg" href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66221" target="_blank" rel="noopener" title="PHASE I : Soft Violence">PHASE I : Soft Violence</a></div></td>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66221" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 12장</span></div></td>
 <td class="num" data-label="가격">41,000원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 한정, Weverse Global 단독 특전! PHASE I : Soft Violence (PHOTO BOOK Ver.) 앨범 1장 구매 시, 미공개 포토카드 1종 (2종 중 1종 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[SWEET Ver. + BITTER Ver. 2종][슬리브 케이스+포토북80p+CD&amp;봉투+접지포스터+시크릿 메시지 카드+엽서+스티커팩+포토카드]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="1"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>JEWEL Ver. <span class="pk">개별</span> <span class="ok">7개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="jewel｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167631" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
-<td class="num" data-label="가격">14,000원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399911233" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167631" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
+<td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/태민-taemin-phase-i-soft-violence-jewel-ver-2종-중-1종-랜덤/27437/category/42/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016954" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016954" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=E5D302495F45F777DDC1AC06650E24E8" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=E5D302495F45F777DDC1AC06650E24E8" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></td>
 <td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403307" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></td>
 <td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66218" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span><a class="tg" href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66218" target="_blank" rel="noopener" title="PHASE I : Soft Violence">PHASE I : Soft Violence</a></div></td>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66218" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span></div></td>
 <td class="num" data-label="가격">14,000원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[SILENT Ver. / BRUTAL Ver. 2종 중 랜덤1종][쥬얼케이스+CD+북클릿24p+스티커+포토카드]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>JEWEL Ver. <span class="pk">세트</span> <span class="ok">7개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="jewel｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167634" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167634" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
-<td class="num" data-label="가격">28,000원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399911248" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399911248" target="_blank" rel="noopener" title="SET">SET</a></div></td>
 <td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167634" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><a class="tg" href="https://kr.ktown4u.com/iteminfo?goods_no=167634" target="_blank" rel="noopener" title="2CD 세트상품">2CD 세트상품</a></div></td>
+<td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/태민-taemin-phase-i-soft-violence-jewel-ver-2종-세트/27438/category/42/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016953" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000016953" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=B0967784814C8679B43F657F61ED6DDB" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=B0967784814C8679B43F657F61ED6DDB" target="_blank" rel="noopener" title="세트">세트</a></div></td>
 <td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403308" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a><div class="tags"><a class="tg" href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403308" target="_blank" rel="noopener" title="세트/앨범2종">세트/앨범2종</a></div></td>
 <td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66219" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span><a class="tg" href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66219" target="_blank" rel="noopener" title="PHASE I : Soft Violence">PHASE I : Soft Violence</a></div></td>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66219" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span></div></td>
 <td class="num" data-label="가격">28,000원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[SILENT Ver. + BRUTAL Ver. 2종][쥬얼케이스+CD+북클릿24p+스티커+포토카드]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="2"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>NEMO Ver. <span class="pk">개별</span> <span class="ok">7개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="nemo｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=168045" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
-<td class="num" data-label="가격">13,800원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400264331" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=168045" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
+<td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/태민-taemin-phase-i-soft-violence-nemo-ver/27615/category/42/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017049" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017049" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=23DF17A321238D5F606C82F7DD37E927" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403505" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66543" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span><a class="tg" href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66543" target="_blank" rel="noopener" title="PHASE I : Soft Violence">PHASE I : Soft Violence</a></div></td>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66543" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span></div></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[아웃슬리브+에코젠 케이스+NFC카드+콘셉트 포토카드+셀피 포토카드+쉴드 페이퍼]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="3"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>KEYRING Ver. <span class="pk">개별</span> <span class="ok">7개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="keyring｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody><tr>
-<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=168046" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><span class="tg w">품절</span></div></td>
-<td class="num" data-label="가격">13,800원</td>
-<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400264340" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
+<td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=168046" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a><div class="tags"><span class="tg w">품절</span></div></td>
+<td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
+<td class="ben" data-label="특전"><span class="flag">특전 있음 · 구성 비공개</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/태민-taemin-phase-i-soft-violence-keyring-ver/27616/category/42/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017048" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017048" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=EA4028F5BD34D527202423E04B242C1F" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3403506" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송">3,000원</td>
 <td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
-<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66544" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span><a class="tg" href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66544" target="_blank" rel="noopener" title="PHASE I : Soft Violence">PHASE I : Soft Violence</a></div></td>
+<td class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/308/sales/66544" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 30장</span></div></td>
 <td class="num" data-label="가격">13,800원</td>
+<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[페트 케이스+미니 쥬얼케이스+커버+NFC 디스크+셀피 포토카드]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <h2>사진 <span class="one">6장</span></h2>
 <div class="pgal" data-gal="1">
@@ -594,15 +647,15 @@ tick();setInterval(tick,1000);
 <a href="https://cdn-contents.weverseshop.io/public/shop/dc32c2846af8bf4138ff2e47011eaae2.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/dc32c2846af8bf4138ff2e47011eaae2.png" alt="PHOTO BOOK Ver. 위버스샵 특전" loading="eager"></a>
 <figcaption>PHOTO BOOK Ver. · 위버스샵 특전</figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/24/yIgtb8.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/24/yIgtb8.jpg" alt="PHOTO BOOK Ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>PHOTO BOOK Ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>PHOTO BOOK Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png" alt="PHOTO BOOK Ver. 위버스샵 특전" loading="lazy"></a>
 <figcaption>PHOTO BOOK Ver. · 위버스샵 특전</figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/24/t5oYx2.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/24/t5oYx2.jpg" alt="JEWEL Ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>JEWEL Ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>JEWEL Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/12/F6repM.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/12/F6repM.jpg" alt="NEMO Ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>NEMO Ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure><figure>
+<figcaption>NEMO Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/24/EvRJn7.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/24/EvRJn7.jpg" alt="KEYRING Ver. 구성품 (Ktown4u)" loading="lazy"></a>
-<figcaption>KEYRING Ver. · 구성품 (Ktown4u)<span>특전이 아니라 앨범 구성품입니다</span></figcaption></figure></div>
+<figcaption>KEYRING Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div>
 <div class="pgt"><button type="button" data-i="0" aria-label="PHOTO BOOK Ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/dc32c2846af8bf4138ff2e47011eaae2.png" alt="" loading="lazy"></button><button type="button" data-i="1" aria-label="PHOTO BOOK Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/24/yIgtb8.jpg" alt="" loading="lazy"></button><button type="button" data-i="2" aria-label="PHOTO BOOK Ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png" alt="" loading="lazy"></button><button type="button" data-i="3" aria-label="JEWEL Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/24/t5oYx2.jpg" alt="" loading="lazy"></button><button type="button" data-i="4" aria-label="NEMO Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/12/F6repM.jpg" alt="" loading="lazy"></button><button type="button" data-i="5" aria-label="KEYRING Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/24/EvRJn7.jpg" alt="" loading="lazy"></button></div></div>
 <h2>최저가 조합 <span class="one">6종</span></h2>
 
@@ -610,42 +663,42 @@ tick();setInterval(tick,1000);
 <div class="bds"><div class="dl">
 <div class="dlt"><span class="rlg rl1" aria-hidden="true"></span>알라딘 <span class="pk">6종</span></div>
 <div class="dlc">131,100원</div>
-<div class="dlm">배송 무료 · 쿠폰 -7,000원</div>
+<div class="dlm">배송 무료 · 쿠폰 −7,000원</div>
 </div></div>
 <ol class="rks"><li class="rk">
 <span class="rkn">1</span>
 <span class="rkb"><span class="rlg rl1" aria-hidden="true"></span><b>알라딘</b>
-<span class="rkm">6/6종 · 배송 무료 · 쿠폰 −7,000원</span></span>
+<span class="rkm">6종 전부 · 배송 무료 · 쿠폰 −7,000원</span></span>
 <span class="rkv">131,100원</span>
 </li><li class="rk">
 <span class="rkn">2</span>
 <span class="rkb"><span class="rlg rl2" aria-hidden="true"></span><b>사운드웨이브</b>
-<span class="rkm">6/6종 · 배송 무료</span></span>
+<span class="rkm">6종 전부 · 배송 무료</span></span>
 <span class="rkv">131,100원</span>
 </li><li class="rk">
 <span class="rkn">3</span>
 <span class="rkb"><span class="rlg rl3" aria-hidden="true"></span><b>뮤직플랜트</b>
-<span class="rkm">6/6종 · 배송 무료</span></span>
+<span class="rkm">6종 전부 · 배송 무료</span></span>
 <span class="rkv">131,100원</span>
 </li><li class="rk">
 <span class="rkn">4</span>
 <span class="rkb"><span class="rlg rl4" aria-hidden="true"></span><b>애플뮤직</b>
-<span class="rkm">6/6종 · 배송 무료</span></span>
+<span class="rkm">6종 전부 · 배송 무료</span></span>
 <span class="rkv">131,100원</span>
 </li><li class="rk">
 <span class="rkn">5</span>
 <span class="rkb"><span class="rlg rl5" aria-hidden="true"></span><b>위버스샵</b>
-<span class="rkm">6/6종 · 배송 미확인</span></span>
+<span class="rkm">6종 전부 · 배송 미확인</span></span>
 <span class="rkv">131,100원<span class="est">추정</span></span>
 </li><li class="rk">
 <span class="rkn">6</span>
 <span class="rkb"><span class="rlg mono" aria-hidden="true">위</span><b>위드뮤</b>
-<span class="rkm">6/6종 · 배송 3,000원</span></span>
+<span class="rkm">6종 전부 · 배송 3,000원</span></span>
 <span class="rkv">134,100원<span class="est">추정</span></span>
 </li><li class="rk part">
 <span class="rkn">7</span>
 <span class="rkb"><span class="rlg rl0" aria-hidden="true"></span><b>Ktown4u</b>
-<span class="rkm">5/6종 · 배송 무료 <span class="flag">전 종 없음</span></span></span>
+<span class="rkm">6종 중 5종 · 배송 무료</span></span>
 <span class="rkv">117,300원</span>
 </li></ol>
 
@@ -653,17 +706,16 @@ tick();setInterval(tick,1000);
 <p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
 <div class="wrap"><table class="cmp"><thead><tr>
 <th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody><tr>
-<td class="evt" data-label="이벤트"><a href="https://makestar.co/event/19729" rel="nofollow">TAEMIN [PHASE I : Soft Violence] PRE-ORDER PHOTOCARD EVENT</a>
-<div class="mut">예약 특전 포토카드</div></td>
+<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_10972_TAEMIN_1_Banner_Sub.jpg_2026-08-04_191556754088.jpg" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_10972_TAEMIN_1_Banner_Sub.jpg_2026-08-04_191556754088_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/19729" rel="nofollow">TAEMIN [PHASE I : Soft Violence] PRE-ORDER PHOTOCARD EVENT</a><div class="mut">예약 특전 포토카드</div></div></div></td>
 <td class="num" data-label="마감"><b>D-3</b></td>
 <td class="num" data-label="기간">2026.08.05~2026.08.30</td>
 <td data-label="응모 조건">[RANDOM] PHOTO BOOK Ver. <b>20,500원</b> · [SET] PHOTO BOOK Ver. <b>41,000원</b></td></tr></tbody></table></div>
 
 <h2>자주 묻는 질문</h2>
-<details class="comp"><summary>태민(TAEMIN) 앨범은 어디서 사야 하나요?</summary><p>Ktown4u · 알라딘 · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직 · 위버스샵에서 팝니다. <b>상품 가격은 대체로 같고, 판매처마다 주는 특전(미공개 포토카드 등)이 다릅니다.</b> 그래서 "어디가 싼가"보다 <b>"어느 특전을 받고 싶은가"</b>로 고르는 게 맞습니다. 위 표에서 판매처별 특전을 비교하세요.</p></details>
-<details class="comp"><summary>PHASE I : Soft Violence 버전은 몇 종인가요?</summary><p>현재 <b>6종</b>을 확인했습니다. 버전마다 구성품과 포토카드가 다르고, 판매처 특전은 그 위에 따로 붙습니다.</p></details>
-<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비·쿠폰까지 넣은 최저 조합이 <b>131,100원</b>입니다. 한 곳에서 다 못 사는 경우가 많아 배송비가 몇 번 붙는지가 총액을 가릅니다.</p></details>
-<details class="comp"><summary>특전은 언제까지 주나요?</summary><p>대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.</p></details>
+<details class="comp"><summary>태민(TAEMIN) 앨범은 어디서 사야 하나요?</summary><p><b>Ktown4u · 알라딘 · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직 · 위버스샵</b> 7곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
+<details class="comp"><summary>PHASE I : Soft Violence 버전은 몇 종인가요?</summary><p><b>6종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
+<details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비와 쿠폰까지 넣어 <b>131,100원</b>입니다.</p></details>
+<details class="comp"><summary>특전은 언제까지 주나요?</summary><p><b>예약판매 기간 내 선착순</b>이 대부분이고 수량이 소진되면 끝납니다. 이 페이지는 하루 두 번 갱신됩니다.</p></details>
 <script>
 (function(){
 /* 버전 탭 — 첫 패널만 남기고 접는다. 패널은 DOM에 그대로 있어서 크롤러는 전부 읽는다. */
@@ -694,26 +746,6 @@ t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
 w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
-/* 판매처가 올린 **세로로 아주 긴 안내 배너**는 특전 사진이 아니라 공지문이다.
-   그걸 통째로 옮겨 붙이면 우리 사이트가 남의 공지를 재게시하는 꼴이고,
-   가로로 넓은 갤러리 칸에서는 가운데 도장처럼 찍혀 보기도 나쁘다.
-   비율로만 거른다 — 포토카드는 2:3이라 2.4를 넘지 않는다. */
-function drop(im){
-var f=im.closest('figure');if(!f)return;
-var i=[].slice.call(m.querySelectorAll('figure')).indexOf(f);
-var t=tb();if(t[i])t[i].remove();
-f.remove();
-var n=m.querySelectorAll('figure').length;
-/* 제목의 장수는 서버가 찍은 것이라, 여기서 빼면 숫자가 어긋난다. */
-var hd=w.previousElementSibling;
-if(hd&&hd.tagName==='H2'){var o=hd.querySelector('.one');if(o)o.textContent=n+'장'}
-if(n<2){w.removeAttribute('data-gal');var g=w.querySelector('.pgt');if(g)g.remove()}
-mark();
-}
-[].slice.call(m.querySelectorAll('img')).forEach(function(im){
-function chk(){if(im.naturalWidth&&im.naturalHeight/im.naturalWidth>2.4)drop(im)}
-if(im.complete)chk();else im.addEventListener('load',chk);
-});
 function mk(cls,txt,dir){
 var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
 b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
@@ -773,4 +805,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:07:58</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:39:48</b></p></body></html>
