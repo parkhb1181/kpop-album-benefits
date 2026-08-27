@@ -28,44 +28,44 @@ const CSS = `
 :root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
 html{color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0 auto;padding:28px 16px 72px;max-width:1080px;background:var(--bg);color:var(--fg);
-font:15px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
-h2{font-size:15px;margin:34px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-h3{font-size:13px;color:var(--mut);margin:20px 0 8px;font-weight:600}
-.pk{font-weight:500;color:var(--mut);font-size:13px}
+body{margin:0 auto;padding:24px 16px 72px;max-width:1080px;background:var(--bg);color:var(--fg);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
+h2{font-size:16px;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+h3{font-size:14px;color:var(--mut);margin:24px 0 8px;font-weight:600}
+.pk{font-weight:500;color:var(--mut);font-size:14px}
 .ok{font-size:11px;font-weight:600;color:var(--ok);border:1px solid currentColor;border-radius:99px;padding:1px 8px}
 .one{font-size:11px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:1px 8px}
-.stamp{color:var(--mut);font-size:13px;margin-bottom:6px}
-.sum{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px;font-size:13.5px;margin-top:14px}
+.stamp{color:var(--mut);font-size:14px;margin-bottom:8px}
+.sum{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 16px;font-size:14px;margin-top:16px}
 /* 최저 조합 — 강조는 테두리가 아니라 왼쪽 굵은 선과 글자 굵기로 낸다.
    --ok가 먹이 된 뒤로 여기 테두리가 검은 상자가 돼서 과했다. */
-.sum2{background:var(--card);border:0;border-left:3px solid var(--fg);border-radius:0;
-padding:12px 14px;font-size:14px;margin-bottom:12px}
-.warn{background:var(--card);border:1px solid var(--acc);border-radius:4px;padding:11px 13px;font-size:13.5px;margin-bottom:10px}
+.sum2{background:var(--card);border:0;border-left:2px solid var(--fg);border-radius:0;
+padding:12px 16px;font-size:14px;margin-bottom:12px}
+.warn{background:var(--card);border:1px solid var(--acc);border-radius:4px;padding:12px 13px;font-size:14px;margin-bottom:8px}
 .wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
-th{text-align:left;color:var(--mut);font-weight:600;font-size:11.5px;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
-td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+th{text-align:left;color:var(--mut);font-weight:600;font-size:12px;padding:8px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .rt{white-space:nowrap;font-weight:600}
 .num{white-space:nowrap;text-align:right}
-.ev{font-size:11.5px;color:var(--acc);margin-top:2px}
+.ev{font-size:12px;color:var(--acc);margin-top:2px}
 .ben div{margin-bottom:4px}
 .flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 a:hover{border-bottom-color:currentColor}
-.err{color:var(--acc);font-size:13px;margin-top:28px}
-.pol{margin-top:12px;font-size:12px;color:var(--mut);line-height:1.7;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 12px}
-.gal{display:flex;gap:14px;overflow-x:auto;padding:4px 0 12px}
+.err{color:var(--acc);font-size:14px;margin-top:24px}
+.pol{margin-top:12px;font-size:12px;color:var(--mut);line-height:1.7;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:8px 12px}
+.gal{display:flex;gap:16px;overflow-x:auto;padding:4px 0 12px}
 .gal figure{margin:0;flex:0 0 190px}
-.gal figcaption{font-size:12px;font-weight:700;margin-bottom:6px}
+.gal figcaption{font-size:12px;font-weight:700;margin-bottom:8px}
 .gal img{width:100%;border:1px solid var(--line);border-radius:4px;display:block;background:var(--card)}
 .gal .noimg{width:100%;aspect-ratio:72/152;border:1px dashed var(--line);border-radius:4px;display:flex;flex-direction:column;
 align-items:center;justify-content:center;color:var(--mut);font-size:12px;text-align:center;line-height:1.5}
-.gal p{font-size:11.5px;color:var(--mut);margin:6px 0 0;line-height:1.5}
+.gal p{font-size:12px;color:var(--mut);margin:8px 0 0;line-height:1.5}
 td.th{width:52px;padding:8px 4px 8px 8px}
 td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
-.back{font-size:13px;color:var(--mut);display:inline-block;margin-bottom:14px;border:0}
+.back{font-size:14px;color:var(--mut);display:inline-block;margin-bottom:16px;border:0}
 /* ── 상단 헤더 ───────────────────────────────────────────────
    29CM 헤더 실측: 로고 높이 16px · 유틸 간격 16~18px · 라벨 10px · font-extralight.
    **브랜드를 크게 안 외친다.** 얇은 한 줄이고 굵은 선으로 본문과 끊는다.
@@ -74,12 +74,12 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
    대신 그 자리에 **신선도(갱신 시각)와 출처(판매처)** 를 놓는다 — 이 사이트의 신뢰가 거기서 온다. */
 .hd{margin-bottom:24px}
 .hdrow{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
-padding-bottom:10px;border-bottom:2px solid var(--fg)}
+padding-bottom:8px;border-bottom:2px solid var(--fg)}
 /* 브랜드 줄이 곧 h1이다. 별도 제목 줄을 두면 같은 말을 두 번 하게 된다 —
    "K-POP 앨범 특전 비교"와 "예약판매 중인 K-POP 앨범 …"이 정확히 그랬다.
    h1은 크기가 아니라 **존재**가 검색 신호라, 12px이어도 제 역할을 한다. */
 .hd .bd{font-size:12px;font-weight:700;color:var(--fg);white-space:nowrap;margin:0;letter-spacing:0}
-.hd .hdm{font-size:10.5px;color:var(--dim);font-weight:400;text-align:right}
+.hd .hdm{font-size:11px;color:var(--dim);font-weight:400;text-align:right}
 
 /* ── 인덱스 격자 ─────────────────────────────────────────────
    근거는 docs/38-조사-배치원리.md.
@@ -111,9 +111,9 @@ overscroll-behavior-x:contain;background:var(--card)}
 .strip{cursor:pointer}
 .strip img,.strip .ph{flex:0 0 100%;width:100%;aspect-ratio:1;object-fit:cover;display:block;
 scroll-snap-align:center;background:var(--card)}
-.vn{position:absolute;left:9px;bottom:9px;z-index:3;font-size:10.5px;font-weight:700;
+.vn{position:absolute;left:9px;bottom:9px;z-index:3;font-size:11px;font-weight:700;
 color:#fff;background:rgba(0,0,0,.58);border-radius:99px;padding:1px 8px;pointer-events:none}
-.dots{display:flex;gap:5px;margin:-6px 0 10px;position:relative;z-index:2}
+.dots{display:flex;gap:4px;margin:-8px 0 8px;position:relative;z-index:2}
 .dots button{width:6px;height:6px;padding:0;border:0;border-radius:99px;background:var(--line);cursor:pointer}
 .dots button.on{background:var(--fg)}
 /* 손가락이 있는 화면에선 스와이프가 더 빠르다. 점은 자리만 먹는다. */
@@ -124,45 +124,45 @@ color:#fff;background:rgba(0,0,0,.58);border-radius:99px;padding:1px 8px;pointer
    29CM도 --ruler-scale-letter-spacing: 0 이다. */
 .card .ar{font-size:11px;color:var(--mut);font-weight:600;
 white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card .al{font-size:15px;font-weight:700;line-height:1.28;margin:5px 0 8px;letter-spacing:-.01em;
+.card .al{font-size:16px;font-weight:700;line-height:1.28;margin:4px 0 8px;letter-spacing:-.01em;
 display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* 태그 — 29CM 상품 카드 실측을 그대로 옮겼다.
      rounded-2 → 2px · px-4 py-2 → 2·4px · min-h-16 → 16px
      text-xxs-medium → 10px / weight 500 · bg-tertiary + text-secondary → 회색 배경에 회색 글자
    **테두리 알약이 아니다.** 배경으로 채우고 모서리는 거의 직각이다.
    경고(품절)만 액센트를 쓴다 — 나머지가 전부 무채라 그것만 튄다. */
-.tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px;position:relative;z-index:2}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;position:relative;z-index:2}
 .tg{display:inline-flex;align-items:center;min-height:16px;padding:2px 4px;border-radius:2px;
-font-size:10px;line-height:1.2;font-weight:500;color:var(--mut);background:var(--card);white-space:nowrap}
+font-size:11px;line-height:1.2;font-weight:500;color:var(--mut);background:var(--card);white-space:nowrap}
 .tg.w{color:var(--acc);font-weight:700}
-.card .meta{font-size:11.5px;color:var(--dim);font-variant-numeric:tabular-nums;line-height:1.55}
+.card .meta{font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums;line-height:1.55}
 /* 앨범 상세의 칩. --ok가 먹이 된 뒤로 테두리가 너무 세서 배경 칩으로 바꿨다.
    인덱스 카드는 이 클래스를 안 쓴다 — 거기선 굵기와 액센트로만 낸다(.card .meta). */
-.badge{display:inline-block;font-size:10.5px;font-weight:700;color:var(--fg);background:var(--card);
+.badge{display:inline-block;font-size:11px;font-weight:700;color:var(--fg);background:var(--card);
 border:0;border-radius:99px;padding:1px 7px;margin-right:5px}
 .sold{color:var(--acc);font-weight:700}
 .soldb{font-size:11px;font-weight:700;color:var(--acc);border:1px solid currentColor;border-radius:99px;padding:1px 8px}
 .chart{font-size:11px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:1px 8px}
-.comp{margin-top:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px;background:var(--card)}
-.comp summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--mut)}
+.comp{margin-top:8px;border:1px solid var(--line);border-radius:4px;padding:8px 12px;background:var(--card)}
+.comp summary{cursor:pointer;font-size:12px;font-weight:600;color:var(--mut)}
 .comp pre{margin:8px 0 0;font-size:12px;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:inherit;color:var(--fg)}
 .comp p{margin:8px 0 0}
 .cd{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .cd.urgent{color:var(--acc)}
 .cd.over{color:var(--mut);font-weight:400}
 .alarm{font-size:12px;white-space:nowrap}
-.card .cdl{font-size:11.5px;color:var(--mut);margin-top:6px}
+.card .cdl{font-size:12px;color:var(--mut);margin-top:8px}
 /* 검색 — 29CM 실측을 옮겼다. border-b-4 border-on-black · 36px semibold · placeholder #d4d4d4.
    **상자가 아니다.** 배경도 테두리도 없고 아래 굵은 선 하나뿐이다.
    저쪽은 전체화면 검색이라 36px이지만 우리는 목록 위 필터라 26px로 낮췄다 —
    그래도 이 화면에서 가장 큰 입력이고, 자기 아티스트를 찾는 게 이 페이지의 주 동작이라 그게 맞다. */
-.find{margin:26px 0 0;display:flex;gap:16px;align-items:baseline;border-bottom:3px solid var(--fg)}
-.find input{flex:1;min-width:0;padding:4px 0 8px;font:inherit;font-size:26px;font-weight:600;
+.find{margin:24px 0 0;display:flex;gap:16px;align-items:baseline;border-bottom:2px solid var(--fg)}
+.find input{flex:1;min-width:0;padding:4px 0 8px;font:inherit;font-size:20px;font-weight:600;
 letter-spacing:-.02em;color:var(--fg);background:none;border:0;border-radius:0}
 .find input::placeholder{color:#d4d4d4;font-weight:600}
 .find input:focus{outline:none}
 .find .n{font-size:12px;color:var(--dim);white-space:nowrap;font-variant-numeric:tabular-nums}
-.none-hit{font-size:13.5px;color:var(--mut);margin-top:20px}
+.none-hit{font-size:14px;color:var(--mut);margin-top:24px}
 
 /* 푸터 — 사이트 설명은 여기로 내렸다. 목록을 보러 온 사람에게 설명이 먼저 붙을 이유가 없다.
    접어두고, 궁금한 사람만 편다. */
@@ -171,25 +171,25 @@ letter-spacing:-.02em;color:var(--fg);background:none;border:0;border-radius:0}
 .ft summary::-webkit-details-marker{display:none}
 .ft summary::before{content:'+ ';color:var(--dim)}
 .ft[open] summary::before{content:'− '}
-.ft .body{font-size:13px;color:var(--mut);line-height:1.8;margin-top:12px;max-width:62ch}
+.ft .body{font-size:14px;color:var(--mut);line-height:1.8;margin-top:12px;max-width:62ch}
 .ft .body b{color:var(--fg);font-weight:600}
 
 /* 모바일 — 네이버 기준 이 카테고리 검색의 93%가 모바일이다 (코르티스 앨범: 모바일 4,730 / PC 360).
    가로 스크롤 표는 그 화면에서 안 읽히므로 행을 카드로 접는다. */
 @media(max-width:700px){
-  body{padding:18px 12px 56px}
+  body{padding:16px 12px 56px}
   h1{font-size:20px}
   .wrap{overflow-x:visible}
   table{min-width:0;display:block}
   thead{display:none}
   tbody,tr,td{display:block;width:auto}
-  tr{border:1px solid var(--line);border-radius:4px;padding:10px 12px;margin-bottom:10px;background:var(--card)}
-  td{border:0;padding:3px 0;display:flex;gap:10px;align-items:baseline}
+  tr{border:1px solid var(--line);border-radius:4px;padding:8px 12px;margin-bottom:8px;background:var(--card)}
+  td{border:0;padding:3px 0;display:flex;gap:8px;align-items:baseline}
   td.th{display:none}
-  td::before{content:attr(data-label);flex:0 0 62px;color:var(--mut);font-size:11.5px;font-weight:600}
+  td::before{content:attr(data-label);flex:0 0 62px;color:var(--mut);font-size:12px;font-weight:600}
   td:not([data-label])::before{content:none}
   td.num{text-align:left;white-space:normal}
-  td.rt{font-size:15px;font-weight:700}
+  td.rt{font-size:16px;font-weight:700}
   td.ben{flex-direction:column;gap:3px}
   .gal figure{flex:0 0 150px}
 }

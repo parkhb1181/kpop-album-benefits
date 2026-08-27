@@ -238,6 +238,14 @@ JS가 없으면 검색창을 숨긴다. 안 되는 입력창을 두는 것보다
 **iOS는 홈 화면에 추가해야 온다.** 사파리 탭에서는 버튼이 눌러도 아무 일도 안 나므로 안내를 대신 낸다.
 VAPID 공개키가 없으면 버튼 자체를 안 낸다 — 눌러도 안 되는 버튼을 두는 것보다 낫다.
 
+**이 저장소를 배포하는 Vercel 프로젝트가 둘이다** (`kpop-album`, `kpop-album-benefits`).
+크론은 `vercel.json`에 있으니 **양쪽에서 다 돈다** — 둘이 같은 KV를 보면 거의 동시에
+같은 "새 앨범"을 읽고 둘 다 발송해서 구독자에게 알림이 두 번 간다.
+
+한쪽의 KV 연결을 끊는 것으로는 못 막는다. 이미 떠 있는 배포에 변수가 구워져 있어서
+재배포 전까지 계속 돈다(실측). 그래서 `api/notify.js`가 `VERCEL_PROJECT_PRODUCTION_URL`로
+자기를 확인해 **`SITE_URL`이 가리키는 프로젝트에서만 발송한다.**
+
 설정에 필요한 것: Vercel에 Upstash Redis 연결(`KV_REST_API_*` 자동) ·
 `VAPID_PUBLIC_KEY`/`VAPID_PRIVATE_KEY`/`VAPID_SUBJECT` 환경변수 ·
 GitHub Variables에도 `VAPID_PUBLIC_KEY`(빌드가 버튼을 내려면 필요).

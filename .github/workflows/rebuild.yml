@@ -20,6 +20,9 @@ jobs:
     env:
       # 저장소 Settings → Variables 에 SITE_URL 을 넣으면 canonical·og:url·sitemap이 절대주소로 나온다.
       SITE_URL: ${{ vars.SITE_URL }}
+      # 알림 버튼은 빌드 때 이 값이 있어야 나온다. 없으면 버튼 자체를 안 낸다
+      # (눌러도 안 되는 버튼을 두는 것보다 낫다 — build.mjs 참고).
+      VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
       # Search Console 소유 확인 파일명 (google....html). 없으면 파일을 안 만든다.
       GOOGLE_VERIFY: ${{ vars.GOOGLE_VERIFY }}
       # 소유 확인 메타태그 토큰. 파일(.html) 방식은 cleanUrls 308 때문에 못 쓴다.

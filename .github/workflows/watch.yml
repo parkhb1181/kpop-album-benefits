@@ -34,6 +34,9 @@ jobs:
       contents: write
     env:
       SITE_URL: ${{ vars.SITE_URL }}
+      # 알림 버튼은 빌드 때 이 값이 있어야 나온다. 없으면 버튼 자체를 안 낸다
+      # (눌러도 안 되는 버튼을 두는 것보다 낫다 — build.mjs 참고).
+      VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
       # 위버스샵 스캔(요청 158건)은 이 간격으로만 한다. 나머지 회차는 메이크스타 1건뿐.
       #
       # 여기서 한계는 요금이 아니라 위버스샵이다. 1시간이면 하루 3,800건 — 동시 8개로
