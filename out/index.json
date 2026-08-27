@@ -1,33 +1,6 @@
 {
-  "stamp": "2026. 8. 27. PM 4:41:00",
+  "stamp": "2026. 8. 27. PM 5:44:33",
   "albums": [
-    {
-      "artistId": 10,
-      "artistEn": "ENHYPEN",
-      "album": "THE SIN : BLISS",
-      "skuCount": 8,
-      "benefit": true,
-      "deliveryDate": "2026-08-25",
-      "priceMin": 14200,
-      "artist": "ENHYPEN",
-      "slug": "enhypen-the-sin-bliss",
-      "versions": 13,
-      "retailers": 7,
-      "benefitCount": 3,
-      "soldCount": 4,
-      "eventCount": 1,
-      "fansignCount": 1,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-08-27T19:00:00+09:00",
-        "rough": "2시간 18분"
-      },
-      "rowCount": 60,
-      "artistKo": "엔하이픈",
-      "artistDisplay": "엔하이픈(ENHYPEN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9e7e12f0b17c882ddc27598723775391.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/13/QL0LvJ.jpg"
-    },
     {
       "artistId": 308,
       "artistEn": "TAEMIN",
@@ -47,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-30T23:59:59.999999+09:00",
-        "rough": "3일 7시간"
+        "rough": "3일 6시간"
       },
       "rowCount": 43,
       "artistKo": "태민",
@@ -74,67 +47,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T19:00:00+09:00",
-        "rough": "8일 2시간"
+        "rough": "8일 1시간"
       },
       "rowCount": 60,
       "artistKo": null,
       "artistDisplay": "AND2BLE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg"
-    },
-    {
-      "artistId": 3,
-      "artistEn": "TOMORROW X TOGETHER",
-      "album": "7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-09-08",
-      "priceMin": 13300,
-      "artist": "TOMORROW X TOGETHER",
-      "slug": "tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때",
-      "versions": 9,
-      "retailers": 7,
-      "benefitCount": 2,
-      "soldCount": 2,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-08T07:00:00+09:00",
-        "rough": "11일 14시간"
-      },
-      "rowCount": 46,
-      "artistKo": "투모로우바이투게더",
-      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/13/zXVZCw.png"
-    },
-    {
-      "artistId": 306,
-      "artistEn": "TUIDE",
-      "album": "TUNE & PLAY",
-      "skuCount": 12,
-      "benefit": true,
-      "deliveryDate": "2026-08-27",
-      "priceMin": 12100,
-      "artist": "TUIDE",
-      "slug": "tuide-tune-play",
-      "versions": 8,
-      "retailers": 7,
-      "benefitCount": 2,
-      "soldCount": 2,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-08-27T19:00:00+09:00",
-        "rough": "2시간 18분"
-      },
-      "rowCount": 54,
-      "artistKo": "튜이드",
-      "artistDisplay": "튜이드(TUIDE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/10fc46cd233c5ccf808b62bd033c2c4b.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
     },
     {
       "artistId": 215,
@@ -155,13 +74,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "7일 20시간"
+        "rough": "7일 19시간"
       },
       "rowCount": 21,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
+    },
+    {
+      "artistId": 306,
+      "artistEn": "TUIDE",
+      "album": "TUNE & PLAY",
+      "skuCount": 6,
+      "benefit": true,
+      "deliveryDate": "2026-08-27",
+      "priceMin": 12100,
+      "artist": "TUIDE",
+      "slug": "tuide-tune-play",
+      "versions": 7,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-27T19:00:00+09:00",
+        "rough": "1시간 14분"
+      },
+      "rowCount": 45,
+      "artistKo": "튜이드",
+      "artistDisplay": "튜이드(TUIDE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/db3a5e0875ca71044707658a99fb90a7.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
     },
     {
       "artistId": 130,
@@ -182,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "10일 7시간"
+        "rough": "10일 6시간"
       },
       "rowCount": 30,
       "artistKo": "민호",
@@ -209,7 +155,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-08-29T23:59:59.999999+09:00",
-        "rough": "2일 7시간"
+        "rough": "2일 6시간"
       },
       "rowCount": 9,
       "artistKo": "소연",
@@ -236,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-21T07:00:00+09:00",
-        "rough": "24일 14시간"
+        "rough": "24일 13시간"
       },
       "rowCount": 70,
       "artistKo": "코르티스",
@@ -263,13 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "1일 2시간"
+        "rough": "1일 1시간"
       },
       "rowCount": 56,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/NYZsXf.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg"
     },
     {
       "artistId": 248,
@@ -290,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-31T23:59:59.999999+09:00",
-        "rough": "4일 7시간"
+        "rough": "4일 6시간"
       },
       "rowCount": 20,
       "artistKo": "82메이저",
@@ -317,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "63일 7시간"
+        "rough": "63일 6시간"
       },
       "rowCount": 22,
       "artistKo": "제니",
@@ -344,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "18일 1시간"
+        "rough": "18일 0시간"
       },
       "rowCount": 19,
       "artistKo": "영탁",
@@ -371,13 +317,88 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-02T00:00:00+09:00",
-        "rough": "5일 7시간"
+        "rough": "5일 6시간"
       },
       "rowCount": 4,
       "artistKo": "비비업",
       "artistDisplay": "비비업(VVUP)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg"
+    },
+    {
+      "artistId": 300,
+      "artistEn": "EVAN",
+      "album": "DEATH OF ME (Weverse Exclusive)",
+      "skuCount": 2,
+      "benefit": false,
+      "deliveryDate": "2026-09-18",
+      "priceMin": 36703,
+      "artist": "EVAN",
+      "slug": "evan-death-of-me-weverse-exclusive",
+      "versions": 6,
+      "retailers": 2,
+      "benefitCount": 0,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 12,
+      "artistKo": "에반",
+      "artistDisplay": "에반(EVAN)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
+    },
+    {
+      "artistId": 10,
+      "artistEn": "ENHYPEN",
+      "album": "THE SIN : BLISS",
+      "skuCount": 8,
+      "benefit": true,
+      "deliveryDate": "2026-08-25",
+      "priceMin": 14200,
+      "artist": "ENHYPEN",
+      "slug": "enhypen-the-sin-bliss",
+      "versions": 13,
+      "retailers": 7,
+      "benefitCount": 3,
+      "soldCount": 4,
+      "eventCount": 1,
+      "fansignCount": 1,
+      "nextDeadline": null,
+      "rowCount": 60,
+      "artistKo": "엔하이픈",
+      "artistDisplay": "엔하이픈(ENHYPEN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9e7e12f0b17c882ddc27598723775391.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/13/QL0LvJ.jpg",
+      "expired": {
+        "lastSeen": "2026-08-27"
+      }
+    },
+    {
+      "artistId": 3,
+      "artistEn": "TOMORROW X TOGETHER",
+      "album": "7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-09-08",
+      "priceMin": 13300,
+      "artist": "TOMORROW X TOGETHER",
+      "slug": "tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때",
+      "versions": 9,
+      "retailers": 7,
+      "benefitCount": 2,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 46,
+      "artistKo": "투모로우바이투게더",
+      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/13/zXVZCw.png",
+      "expired": {
+        "lastSeen": "2026-08-27"
+      }
     },
     {
       "artistId": 300,
@@ -400,32 +421,6 @@
       "artistKo": "에반",
       "artistDisplay": "에반(EVAN)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
-      "expired": {
-        "lastSeen": "2026-08-27"
-      }
-    },
-    {
-      "artistId": 300,
-      "artistEn": "EVAN",
-      "album": "DEATH OF ME (Weverse Exclusive)",
-      "skuCount": 2,
-      "benefit": false,
-      "deliveryDate": "2026-09-18",
-      "priceMin": 36703,
-      "artist": "EVAN",
-      "slug": "evan-death-of-me-weverse-exclusive",
-      "versions": 6,
-      "retailers": 2,
-      "benefitCount": 0,
-      "soldCount": 0,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 12,
-      "artistKo": "에반",
-      "artistDisplay": "에반(EVAN)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
       "expired": {
         "lastSeen": "2026-08-27"
