@@ -1150,17 +1150,24 @@ export function renderAlbum({
        *                 적혀 있어 "이 버전 사면 뭐가 오나"에 답한다. 버전의 59%에 붙는다.
        */
       const urlOf = (x) => (typeof x === 'string' ? x : x && x.url) || null;
+      /**
+       * 판매처가 올린 **세로로 아주 긴 이미지는 특전 사진이 아니라 공지문**이다.
+       * 실측: 위버스샵 benefitImage가 1000×6140(비율 6.14)짜리 안내문이고, 같은 상품의
+       * 720×1080 사진은 뒤로 밀려 있다. 수집기가 첫 이미지를 집은 탓이다.
+       * 그걸 통째로 실으면 남의 공지를 재게시하는 꼴이라 뺀다.
+       * 포토카드는 2:3이라 2.4에 안 걸린다. 치수를 모르면 통과시킨다(브라우저가 뒤에서 다시 본다).
+       */
+      const dim = (i, u) => (i.images || []).find((x) => x && x.url === u) || null;
+      const banner = (d) => !!(d && d.w && d.h && d.h / d.w > 2.4);
       const shots = [];
       for (const i of items) {
-        if (i.benefitImage) shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '' });
+        if (i.benefitImage && !banner(dim(i, i.benefitImage)))
+          shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '' });
       }
       // 구성품은 버전당 한 장이면 된다 — 판매처가 달라도 같은 소속사 시트다
-      const compSrc =
-        items.find((i) => i.retailer === 'Ktown4u' && urlOf((i.images || [])[0])) ||
-        items.find((i) => urlOf((i.images || []).find((x) => urlOf(x) !== i.benefitImage)));
-      const compShot = compSrc
-        ? urlOf((compSrc.images || []).find((x) => urlOf(x) !== compSrc.benefitImage)) || urlOf((compSrc.images || [])[0])
-        : null;
+      const usable = (i) => (i.images || []).filter((x) => urlOf(x) && urlOf(x) !== i.benefitImage && !banner(x));
+      const compSrc = items.find((i) => i.retailer === 'Ktown4u' && usable(i).length) || items.find((i) => usable(i).length);
+      const compShot = compSrc ? urlOf(usable(compSrc)[0]) : null;
       const compFrom = compSrc ? compSrc.retailer : '';
       /**
        * **"판매처 공통"이라고 쓰면 안 된다.** 검증한 적이 없는 주장이다.
@@ -1547,8 +1554,11 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
 /**
  * 버전 라벨 정리.
  *
- * 키 정규화가 깨진 값이 섞여 들어온다 — `ohitx27shot`(작은따옴표가 `&#x27;`로 escape된 뒤 남은 x27),
- * `unnaturalvergazedverbreak`(여러 버전명이 뭉개짐) 같은 것들. 그걸 그대로 배지에 띄우면 안 된다.
+ * 키 정규화가 깨진 값이 섞여 들어온다 — `ohitx27shot`(작은따옴표가 `&#x27;`로 escape된 뒤 남은 x27)
+ * 같은 것들. 그걸 그대로 배지에 띄우면 안 된다.
+ *
+ * `unnaturalvergazedverbreak`는 **깨진 값이 아니다.** 실제로 3종 세트
+ * (`edition: "Unnatural+Gazed+Break ver."`)라 고치면 안 된다.
  * **고칠 곳은 여기가 아니라 수집 쪽(fetchx.mjs의 3축 정규화)이다.** 여기서는 못 읽을 값만 감춘다.
  */
 /** "2026-08-25" → "8월 25일". 목록에서 연도는 노이즈다 — 예판 중인 앨범은 전부 올해다. */
