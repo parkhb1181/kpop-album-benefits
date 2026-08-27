@@ -96,9 +96,21 @@ async function collectAlbum(t) {
   const errors = [];
   const token = matchToken(t.album);
 
+  // 판매처별 소요 시간. 어디서 멈추는지 안 보이면 45분 타임아웃까지 매달린 뒤에야
+  // "빌드가 느리다"만 알게 된다 (실제로 두 번 그랬다).
+  const timing = [];
+  const timed = async (label, fn) => {
+    const t0 = Date.now();
+    try {
+      return await fn();
+    } finally {
+      timing.push(`${label} ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+    }
+  };
+
   // Ktown4u
   try {
-    const r = await searchWide(kt.search, t, token);
+    const r = await timed('Ktown4u', () => searchWide(kt.search, t, token));
     for (const x of r) {
       try {
         const d = await kt.detail(x.id);
@@ -117,7 +129,7 @@ async function collectAlbum(t) {
 
   // 알라딘 — 검색결과엔 "증정 종료"만 있어 진행 중 특전은 상세를 봐야 한다
   try {
-    const list = await searchWide(ala.search, t, token, 20);
+    const list = await timed('알라딘', () => searchWide(ala.search, t, token, 20));
     for (const x of list) {
       try {
         const d = await ala.detail(x.id);
@@ -137,7 +149,7 @@ async function collectAlbum(t) {
 
   // 사운드웨이브 (카페24, 정적)
   try {
-    const list = await searchWide(sw.search, t, token, 20);
+    const list = await timed('사운드웨이브', () => searchWide(sw.search, t, token, 20));
     for (const x of list) {
       try {
         const d = await sw.detail(x.url);
@@ -160,7 +172,7 @@ async function collectAlbum(t) {
   try {
     // 아티스트명으로 한 번만 검색한다 — 브라우저 페이지를 앨범당 1회로 묶기 위해서다
     const nv = nameVariants(t.artistEn);
-    const list = (await wm.search(nv[0] || t.artistEn)).filter((x) => matchesAlbum(x.title, token)).slice(0, 20);
+    const list = (await timed('위드뮤', () => wm.search(nv[0] || t.artistEn))).filter((x) => matchesAlbum(x.title, token)).slice(0, 20);
     rows.push(...list);
   } catch (e) {
     errors.push(`위드뮤: ${e.message}`);
@@ -175,7 +187,7 @@ async function collectAlbum(t) {
     ['애플뮤직', ap],
   ]) {
     try {
-      rows.push(...(await searchWide(mod.search, t, token, 20)));
+      rows.push(...(await timed(label, () => searchWide(mod.search, t, token, 20))));
     } catch (e) {
       errors.push(`${label}: ${e.message}`);
     }
@@ -183,7 +195,7 @@ async function collectAlbum(t) {
 
   // 위버스샵
   try {
-    rows.push(...(await wev.search(t.artistId, t.album)).filter((x) => matchesAlbum(x.title, token)));
+    rows.push(...(await timed('위버스샵', () => wev.search(t.artistId, t.album))).filter((x) => matchesAlbum(x.title, token)));
   } catch (e) {
     errors.push(`위버스샵: ${e.message}`);
   }
@@ -206,7 +218,7 @@ async function collectAlbum(t) {
     errors.push(`메이크스타: ${e.message}`);
   }
 
-  return { rows, errors, events };
+  return { rows, errors, events, timing };
 }
 
 // ── 실행 ─────────────────────────────────────────────────────
@@ -300,7 +312,8 @@ const index = [];
 for (const t of targets) {
   const slug = slugify(`${t.artist}-${t.album}`);
   process.stdout.write(`  ${t.artist} — ${t.album} … `);
-  const { rows, errors, events } = await collectAlbum(t);
+  const albumT0 = Date.now();
+  const { rows, errors, events, timing } = await collectAlbum(t);
   if (rows.length === 0) {
     console.log('수집 0건, 건너뜀');
     continue;
@@ -378,7 +391,12 @@ for (const t of targets) {
     // ogImage는 특전 배너를 먼저 집어서 세로로 긴 그림이 온다 (실측: 샤이니 1000×7849).
     cover: rows.find((r) => r.thumb)?.thumb || null,
   });
-  console.log(`${rows.length}건 / ${versions}종 / ${retailers}사${benefitCount ? ` / 특전 ${benefitCount}사` : ''}`);
+  const albumSec = (Date.now() - albumT0) / 1000;
+  console.log(
+    `${rows.length}건 / ${versions}종 / ${retailers}사${benefitCount ? ` / 특전 ${benefitCount}사` : ''} · ${albumSec.toFixed(0)}s`
+  );
+  // 앨범 하나가 비정상적으로 오래 걸리면 어느 판매처 탓인지 바로 보여야 한다
+  if (albumSec > 60) console.log(`     ⏱ ${(timing || []).join(' · ')}`);
 }
 
 // ── 예판이 끝난 앨범 ────────────────────────────────────────

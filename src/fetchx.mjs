@@ -6,15 +6,41 @@ export const UA =
  * @param {{encoding?: string}} [opt] YES24 등 일부 국내몰은 EUC-KR이라 명시가 필요하다
  */
 export async function getText(url, opt = {}) {
+  /**
+   * 타임아웃이 없으면 응답을 안 주는 호스트 하나가 빌드 전체를 멈춘다.
+   *
+   * 로컬에서는 안 보였다 — 판매처들이 다 응답하니까. GitHub Actions의 클라우드 IP에서는
+   * 어딘가가 연결을 조용히 물고만 있었고, fetch가 무한히 기다리다 **45분 잡 타임아웃**에
+   * 걸려 빌드 결과를 통째로 날렸다 (run 33037116758·33037232369).
+   * 거절(4xx/5xx)은 처리했는데 무응답은 처리하지 않았던 것이다.
+   */
+  const timeout = opt.timeout ?? 15000;
+
   // 알라딘이 연속 요청에 503을 준다. 짧게 물러섰다 다시 시도한다.
-  let res;
+  let res = null;
+  let lastErr = null;
   for (let attempt = 0; attempt < 3; attempt++) {
-    res = await fetch(url, {
-      headers: { 'user-agent': UA, 'accept-language': 'ko-KR,ko;q=0.9,en;q=0.8' },
-      redirect: 'follow',
-    });
-    if (res.ok || ![429, 503, 502].includes(res.status)) break;
+    try {
+      res = await fetch(url, {
+        headers: { 'user-agent': UA, 'accept-language': 'ko-KR,ko;q=0.9,en;q=0.8' },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(timeout),
+      });
+      lastErr = null;
+    } catch (e) {
+      lastErr = e;
+      res = null;
+      // 무응답은 재시도해도 대개 또 무응답이다. 3회를 다 쓰면 요청 하나가 45초를
+      // 잡아먹는다 — 재시도는 429·503처럼 "지금은 바쁘다"는 신호에만 쓴다.
+      if (e.name === 'TimeoutError') break;
+    }
+    if (res && (res.ok || ![429, 503, 502].includes(res.status))) break;
     await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
+  }
+
+  if (lastErr) {
+    const why = lastErr.name === 'TimeoutError' ? `무응답 ${timeout}ms` : lastErr.message;
+    throw new Error(`${why} — ${url}`);
   }
   if (!res.ok) throw new Error(`${res.status} ${url}`);
 
