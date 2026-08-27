@@ -59,9 +59,10 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .ben div{margin-bottom:4px}
 .flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
-.est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap}
+.est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap;margin-left:4px}
 /* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
 .num .est,.num .flag.sub{display:block;margin:2px 0 0}
+.bds .dl:first-child{border-top:2px solid var(--fg)}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 a:hover{border-bottom-color:currentColor}
 .err{color:var(--acc);font-size:14px;margin-top:24px}
@@ -106,6 +107,9 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 margin-bottom:clamp(28px,3.4vw,44px)}
 .hcv{width:400px;height:400px;object-fit:cover;display:block;background:var(--card);flex:0 0 auto}
 .dls{display:flex;flex-direction:column;gap:16px}
+/* 조합 내역은 서로 견주는 항목이라 가로로 늘어놓는다. 세로로 쌓으면 한 줄에 하나씩
+   읽히면서 "어디서 몇 종"이 서로 멀어진다. */
+.bds{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(12px,1.6vw,20px)}
 .hero .dls{flex:1 1 260px;min-width:0}
 .dl{border-top:2px solid var(--fg);padding-top:10px}
 .dlt{font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px}
@@ -162,6 +166,9 @@ color:var(--mut);background:var(--card);border-radius:2px}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
 .cmp .tags{margin:4px 0 0}
+.cmp .rt .tg{white-space:normal;word-break:keep-all}
+a.tg{border-bottom:0}
+a.tg:hover{color:var(--fg);background:var(--line)}
 .cmp td.ben{word-break:keep-all}
 .scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
 gap:clamp(12px,1.4vw,20px);margin-bottom:clamp(20px,2.4vw,32px)}
@@ -776,15 +783,35 @@ show(0);
    빈 버튼이 마크업에 남지 않는다. */
 document.querySelectorAll('.pgal[data-gal]').forEach(function(w){
 var m=w.querySelector('.pgm');if(!m)return;
-var thumbs=[].slice.call(w.querySelectorAll('.pgt button'));
+function tb(){return [].slice.call(w.querySelectorAll('.pgt button'))}
 function at(){return Math.round(m.scrollLeft/(m.clientWidth||1))}
-function go(n){m.scrollTo({left:m.clientWidth*Math.max(0,Math.min(thumbs.length-1,n)),behavior:'smooth'})}
+function go(n){var t=tb();m.scrollTo({left:m.clientWidth*Math.max(0,Math.min(t.length-1,n)),behavior:'smooth'})}
 function mark(){
-var n=at();
-thumbs.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
+var n=at(),t=tb();
+t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
-w.querySelector('.gnav.n').style.visibility=n>=thumbs.length-1?'hidden':'';
+w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
+/* 판매처가 올린 **세로로 아주 긴 안내 배너**는 특전 사진이 아니라 공지문이다.
+   그걸 통째로 옮겨 붙이면 우리 사이트가 남의 공지를 재게시하는 꼴이고,
+   가로로 넓은 갤러리 칸에서는 가운데 도장처럼 찍혀 보기도 나쁘다.
+   비율로만 거른다 — 포토카드는 2:3이라 2.4를 넘지 않는다. */
+function drop(im){
+var f=im.closest('figure');if(!f)return;
+var i=[].slice.call(m.querySelectorAll('figure')).indexOf(f);
+var t=tb();if(t[i])t[i].remove();
+f.remove();
+var n=m.querySelectorAll('figure').length;
+/* 제목의 장수는 서버가 찍은 것이라, 여기서 빼면 숫자가 어긋난다. */
+var hd=w.previousElementSibling;
+if(hd&&hd.tagName==='H2'){var o=hd.querySelector('.one');if(o)o.textContent=n+'장'}
+if(n<2){w.removeAttribute('data-gal');var g=w.querySelector('.pgt');if(g)g.remove()}
+mark();
+}
+[].slice.call(m.querySelectorAll('img')).forEach(function(im){
+function chk(){if(im.naturalWidth&&im.naturalHeight/im.naturalWidth>2.4)drop(im)}
+if(im.complete)chk();else im.addEventListener('load',chk);
+});
 function mk(cls,txt,dir){
 var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
 b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
@@ -798,7 +825,11 @@ function place(){
 if(!first)return;
 w.querySelectorAll('.gnav').forEach(function(b){b.style.top=(first.getBoundingClientRect().height/2-17)+'px'});
 }
-thumbs.forEach(function(b,i){b.addEventListener('click',function(){go(i)})});
+/* 배너를 빼면 썸네일 순서가 바뀐다 — 클릭 시점에 위치를 다시 센다. */
+var pgt=w.querySelector('.pgt');
+if(pgt)pgt.addEventListener('click',function(ev){
+var b=ev.target.closest('button');if(b)go(tb().indexOf(b));
+});
 var tick;m.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(mark,90)});
 addEventListener('resize',place);
 if(first&&!first.complete)first.addEventListener('load',place);else place();
@@ -1198,20 +1229,64 @@ export function renderAlbum({
        * 가격·특전이 서로 멀어졌다. 같은 항목을 여러 대상에 대해 비교하는 건 표의 일이다.
        * 열은 셋만 둔다 — 재고·한도·이벤트는 판매처명 밑 태그로 접는다.
        */
+      /**
+       * **21줄이 같아 보였던 건 중복이 아니라 내가 구분을 지웠기 때문이다.**
+       *
+       * 표를 3열로 압축하면서 상품명 열을 뺐는데, NCT 127 JET Poster를 실측하면
+       * 애플뮤직 6줄은 `[쟈니][8/30 영상통화]`…`[해찬]`으로 **전부 다른 상품**이고
+       * 알라딘 7줄은 국내반 1 + `[수입]` 6이다. 이름을 지우니 복붙처럼 보인 것이다.
+       *
+       * 그래서 두 가지를 한다.
+       *   ㄱ. 상품명 앞 대괄호를 **변형 이름**으로 뽑아 판매처 밑에 태그로 단다.
+       *   ㄴ. 판매처·가격·특전·품절이 모두 같은 줄을 **한 줄로 합치고**, 변형만
+       *       태그로 늘어놓는다. 태그마다 제 상품 링크를 건다.
+       * 실측: jetposter｜개별 21줄 → 11줄. 정보는 하나도 안 버린다.
+       */
+      const variantLabel = (i) => {
+        const br = (i.title || '').match(/^(?:\s*\[[^\]]+\])+/);
+        if (br)
+          return (br[0].match(/\[([^\]]+)\]/g) || [])
+            .map((x) => x.slice(1, -1).trim())
+            .filter(Boolean)
+            .join(' · ');
+        return (i.events || []).join(' · ');
+      };
+      const rowGroups = new Map();
+      for (const i of items) {
+        const k = [i.retailer, i.price, i.soldOut === true, i.maxOrder || '', benefitCell(i)].join('§');
+        if (!rowGroups.has(k)) rowGroups.set(k, []);
+        rowGroups.get(k).push(i);
+      }
       const cards = `<div class="wrap"><table class="cmp fx">
 <colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody>${items
-        .map((i) => {
+<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody>${[...rowGroups.values()]
+        .map((g) => {
+          const i = g[0];
+          // 변형 태그 — 한 줄로 합친 상품들이 서로 무엇이 다른지가 여기 남는다.
+          // 한 줄 안에서 이미 나온 낱말은 다시 쓰지 않는다 — 애플뮤직 6종은
+          // `쟈니 · 8/30 영상통화`, `태용 · 8/30 영상통화`…로 뒷말이 매번 반복된다.
+          const seen = new Set();
+          const said = new Set();
+          const vars = [];
+          for (const x of g) {
+            const full = variantLabel(x) || (g.length > 1 ? '기본' : '');
+            if (!full || seen.has(full)) continue;
+            seen.add(full);
+            const segs = full.split(' · ');
+            const short = segs.filter((seg) => !said.has(seg)).join(' · ');
+            segs.forEach((seg) => said.add(seg));
+            vars.push(
+              `<a class="tg" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(full)}">${esc(short || full)}</a>`
+            );
+          }
           const flags = [
             i.soldOut === true ? '<span class="tg w">품절</span>' : '',
             i.maxOrder ? `<span class="tg">1인 ${i.maxOrder}장</span>` : '',
-            (i.events || []).length ? `<span class="tg">${esc(i.events[0])}</span>` : '',
-          ]
-            .filter(Boolean)
-            .join('');
+            ...vars,
+          ].filter(Boolean);
           return `<tr>
 <td class="rt" data-label="판매처"><a href="${esc(i.url)}" target="_blank" rel="noopener">${retailerMark(i.retailer)}${esc(i.retailer)}</a>${
-            flags ? `<div class="tags">${flags}</div>` : ''
+            flags.length ? `<div class="tags">${flags.join('')}</div>` : ''
           }</td>
 <td class="num" data-label="가격">${money(i)}</td>
 <td class="ben" data-label="특전">${benefitCell(i)}</td></tr>`;
@@ -1356,7 +1431,7 @@ ${esc(opt.unbuyable.map((u) => u.edition || u.key.split('｜')[0]).join(', ')).s
     }<span class="bm">상품 ${won(opt.best.goods)} · 배송 ${
       opt.best.ship ? won(opt.best.ship) : '무료'
     }${opt.best.coupon ? ` · 쿠폰 −${won(opt.best.coupon)}` : ''}</span></div>
-<div class="dls">${bd}</div>
+<div class="bds">${bd}</div>
 ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
 `;
   }
