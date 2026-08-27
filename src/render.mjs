@@ -290,16 +290,30 @@ btn.addEventListener('click',function(ev){
 })();
 </script>`;
 
+/**
+ * Vercel Web Analytics.
+ *
+ * GA4·Clarity 대신 이걸 쓴다 — Pro 요금제에 포함이고, 쿠키가 없어 동의 배너가 필요 없고,
+ * 스크립트가 훨씬 가볍다. 지금 페이지가 28KB인데 GA4(~50KB)+Clarity(~40KB)를 붙이면 3배가 된다.
+ *
+ * 지금 알아야 할 건 "검색으로 사람이 오는가" 하나뿐이고 그건 방문수로 충분하다.
+ * 세션 리플레이·히트맵(Clarity)은 볼 트래픽이 생긴 뒤에 붙이는 게 맞다.
+ *
+ * SITE_URL 이 없는 로컬 빌드에는 넣지 않는다 — 로컬에서 연 페이지가 통계를 오염시킨다.
+ */
+const ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>';
+
 const shell = (title, body, meta = {}) => {
-  const { jsonLd, ...rest } = meta;
+  const { jsonLd, siteUrl, ...rest } = meta;
   // JSON-LD는 </script>만 escape하면 된다. 나머지는 JSON이 알아서 안전하다.
   const ld = jsonLd
     ? `\n<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`
     : '';
+  const analytics = process.env.SITE_URL ? `\n${ANALYTICS}` : '';
   return `<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
-${metaTags({ title, ...rest })}${ld}
+${metaTags({ title, ...rest })}${ld}${analytics}
 <style>${CSS}</style></head><body>${body}</body></html>`;
 };
 
