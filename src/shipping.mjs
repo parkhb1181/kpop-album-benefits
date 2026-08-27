@@ -58,13 +58,24 @@ export const POLICY = {
     src: 'https://www.withmuu.com/',
   },
   위버스샵: {
-    baseFee: 3000,
+    // 고정 금액이 없다. 추정치 3,000원을 적어두고 있었는데 근거가 없는 숫자였다.
+    //
+    // 로그인 후 장바구니까지 직접 확인했다 (2026-08-27):
+    //   주문 금액   상품 82,800원
+    //   예상 배송비  ⓘ 배송 주소 등록 필요
+    //   → "예상 배송비 확인을 위해 배송 주소를 등록해 주세요."
+    // 판매자가 'Weverse Global'이라 배송지에 따라 요금이 달라진다.
+    //
+    // 그래서 null로 둔다. 모르는 걸 숫자로 적으면 최저 조합 계산이 조용히 틀린다 —
+    // 지금은 optimize()가 unknown으로 표시하고 사용자도 그걸 본다.
+    baseFee: null,
     freeOver: null,
+    feeUnknownWhy: '배송지에 따라 다름',
     combine: true, // shippingGroupId 31로 태민·엔하이픈 모두 동일 → 합배송 그룹은 확인됨
     verified: false,
-    checkedAt: '2026-08-26',
-    note: '배송비 미확인 — 상품 페이지가 "로그인 후 배송 가능 여부를 확인"으로 막힘. 3,000원은 추정치',
-    src: 'https://shop.weverse.io/',
+    checkedAt: '2026-08-27',
+    note: '배송지에 따라 다름 — 주소를 등록해야 계산된다 (장바구니에서 직접 확인). 고정 금액이 없다',
+    src: 'https://shop.weverse.io/ko/cart',
   },
 };
 
@@ -74,6 +85,8 @@ export function feeFor(retailer, subtotal, anyFreeShipping) {
   if (anyFreeShipping) return { fee: 0, unknown: false, why: '무료배송 상품' };
   if (p.freeOver != null && subtotal >= p.freeOver)
     return { fee: 0, unknown: !p.verified, why: p.freeOver === 0 ? '무료배송' : `${p.freeOver.toLocaleString()}원 이상` };
-  if (p.baseFee == null) return { fee: null, unknown: true, why: '무게 기반' };
+  // 금액을 모르는 이유는 판매처마다 다르다. 뭉뚱그려 "무게 기반"이라고 적으면
+  // 위버스샵처럼 **배송지에 따라 달라지는** 경우를 잘못 설명하게 된다.
+  if (p.baseFee == null) return { fee: null, unknown: true, why: p.feeUnknownWhy || '금액 미확인' };
   return { fee: p.baseFee, unknown: !p.verified };
 }

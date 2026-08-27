@@ -128,12 +128,16 @@ color:#fff;background:rgba(0,0,0,.58);border-radius:99px;padding:1px 8px;pointer
 white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card .al{font-size:15px;font-weight:700;line-height:1.28;margin:5px 0 8px;letter-spacing:-.01em;
 display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-/* 메타는 한 줄, 한 크기. 알약을 쓰지 않는다 —
-   테두리 친 칩이 셋씩 붙으면 그게 다시 상자가 되고, 무엇이 급한지도 안 보인다.
-   **긍정은 굵기로(b), 경고는 액센트로(s).** 액센트가 한 곳뿐이라 품절이 바로 눈에 띈다. */
-.card .meta{font-size:11.5px;color:var(--mut);font-variant-numeric:tabular-nums;line-height:1.55}
-.card .meta b{color:var(--fg);font-weight:600}
-.card .meta s{color:var(--acc);font-weight:700;text-decoration:none}
+/* 태그 — 29CM 상품 카드 실측을 그대로 옮겼다.
+     rounded-2 → 2px · px-4 py-2 → 2·4px · min-h-16 → 16px
+     text-xxs-medium → 10px / weight 500 · bg-tertiary + text-secondary → 회색 배경에 회색 글자
+   **테두리 알약이 아니다.** 배경으로 채우고 모서리는 거의 직각이다.
+   경고(품절)만 액센트를 쓴다 — 나머지가 전부 무채라 그것만 튄다. */
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px;position:relative;z-index:2}
+.tg{display:inline-flex;align-items:center;min-height:16px;padding:2px 4px;border-radius:2px;
+font-size:10px;line-height:1.2;font-weight:500;color:var(--mut);background:var(--card);white-space:nowrap}
+.tg.w{color:var(--acc);font-weight:700}
+.card .meta{font-size:11.5px;color:var(--dim);font-variant-numeric:tabular-nums;line-height:1.55}
 .card.f .ar{font-size:12px}
 .card.f .al{font-size:28px;line-height:1.16;margin:8px 0 12px;-webkit-line-clamp:3}
 .card.f .meta{font-size:13.5px}
@@ -672,7 +676,7 @@ ${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품�
     const bd = opt.best.breakdown
       .map(
         (b) => `<tr><td class="rt">${esc(b.retailer)}</td><td class="num">${b.count}종</td><td class="num">${won(b.subtotal)}</td>
-<td class="num">${b.fee == null ? '<span class="flag">무게기반</span>' : b.fee === 0 ? '<span class="ok2">무료</span>' : won(b.fee)}${b.unknown ? '<sup class="q">?</sup>' : ''}</td>
+<td class="num">${b.fee == null ? `<span class="flag">${esc(b.why || '금액 미확인')}</span>` : b.fee === 0 ? '<span class="ok2">무료</span>' : won(b.fee)}${b.unknown ? '<sup class="q">?</sup>' : ''}</td>
 <td class="num">${b.coupon ? `<span class="ok2">-${won(b.coupon)}</span>` : '—'}</td>
 <td class="mut">${esc([b.why, b.couponWhy].filter(Boolean).join(' · '))}</td></tr>`
       )
@@ -681,7 +685,7 @@ ${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품�
       .map(
         (s) => `<tr><td class="rt">${esc(s.retailer)}</td><td class="num">${s.count}/${opt.versions}종${s.full ? '' : ' <span class="flag">부족</span>'}</td>
 <td class="num">${won(s.goods)}</td>
-<td class="num">${s.fee == null ? '<span class="flag">무게기반</span>' : s.fee === 0 ? '<span class="ok2">무료</span>' : won(s.fee)}</td>
+<td class="num">${s.fee == null ? '<span class="flag">금액 미확인</span>' : s.fee === 0 ? '<span class="ok2">무료</span>' : won(s.fee)}</td>
 <td class="num">${s.coupon ? `<span class="ok2">-${won(s.coupon)}</span>` : '—'}</td>
 <td class="num"><b>${won(s.sum)}</b>${s.unknown ? '<sup class="q">?</sup>' : ''}</td></tr>`
       )
@@ -770,13 +774,38 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
  * `a.covers`(버전별 커버 배열)가 있으면 넘길 수 있는 스트립으로, 없으면 `a.cover` 한 장으로 낸다.
  * 스트립은 CSS scroll-snap이라 손가락 스와이프는 JS 없이 된다(COVER_JS는 마우스만 다룬다).
  */
+/**
+ * 버전 라벨 정리.
+ *
+ * 키 정규화가 깨진 값이 섞여 들어온다 — `ohitx27shot`(작은따옴표가 `&#x27;`로 escape된 뒤 남은 x27),
+ * `unnaturalvergazedverbreak`(여러 버전명이 뭉개짐) 같은 것들. 그걸 그대로 배지에 띄우면 안 된다.
+ * **고칠 곳은 여기가 아니라 수집 쪽(fetchx.mjs의 3축 정규화)이다.** 여기서는 못 읽을 값만 감춘다.
+ */
+const vLabel = (s) => {
+  const t = String(s || '').replace(/x27/g, '');
+  return !t || t.length > 14 ? '' : t;
+};
+
 function coverStrip(a, eager = false) {
-  const list = (a.covers?.length ? a.covers : a.cover ? [{ url: a.cover }] : []).slice(0, 8);
+  /**
+   * **같은 그림은 한 번만.** 버전 키가 달라도 판매처가 같은 사진을 올려두는 경우가 많다 —
+   * 실측: 민호 Make it hot은 버전 7개인데 썸네일 4개가 같은 파일(QzJWoi.jpg)이었다.
+   * 키로만 거르면 넘겨도 같은 그림이 반복돼서, 넘기기가 정보가 아니라 소음이 된다.
+   */
+  const seen = new Set();
+  const list = (a.covers?.length ? a.covers : a.cover ? [{ url: a.cover }] : [])
+    .filter((c) => {
+      const u = c.url || c;
+      if (!u || seen.has(u)) return false;
+      seen.add(u);
+      return true;
+    })
+    .slice(0, 8);
   if (!list.length) return `<div class="cvw"><div class="strip"><div class="ph"></div></div></div>`;
   const imgs = list
     .map(
       (c, i) =>
-        `<img src="${esc(c.url || c)}" alt=""${c.label ? ` data-v="${esc(c.label)}"` : ''} ${
+        `<img src="${esc(c.url || c)}" alt=""${vLabel(c.label) ? ` data-v="${esc(vLabel(c.label))}"` : ''} ${
           eager && i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'
         } decoding="async">`
     )
@@ -817,6 +846,15 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
   const cards = ordered
     .map((a, i) => {
       const f = a === feature;
+      // 태그 — 29CM 상품 카드 방식. 테두리 알약이 아니라 회색 배경 채움이다(실측: radius 2px).
+      // 경고(품절)만 액센트를 쓴다 — 액센트가 한 곳뿐이라 그게 바로 눈에 띈다.
+      const tg = [
+        a.benefitCount ? `<span class="tg">특전 ${a.benefitCount}곳</span>` : '',
+        a.fansignCount ? '<span class="tg">팬싸</span>' : '',
+        a.soldCount ? `<span class="tg w">품절 ${a.soldCount}</span>` : '',
+      ]
+        .filter(Boolean)
+        .join('');
       return `<div class="card${f ? ' f' : ''}" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
         searchKey(choseong(hayOf(a)))
       )}">
@@ -830,12 +868,9 @@ ${
     : ''
 }<div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
-<div class="meta">${[
+${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
   `${a.versions}종`,
   `판매처 ${a.retailers}`,
-  a.benefitCount ? `<b>특전 ${a.benefitCount}곳</b>` : '',
-  a.fansignCount ? '<b>팬싸</b>' : '',
-  a.soldCount ? `<s>품절 ${a.soldCount}</s>` : '',
   // 마감 카운트다운이 붙는 앨범은 시간 정보가 이미 있다. 없을 때만 발매일을 낸다.
   !a.nextDeadline && a.deliveryDate ? `${esc(a.deliveryDate)} 발매` : '',
 ]
@@ -853,12 +888,13 @@ ${
     'K-POP 앨범 정보 — 버전·구성·가격·판매처별 특전 비교',
     `<header class="hd">
 <div class="hdrow">
-<span class="bd">K-POP 앨범 특전</span>
-<span class="hdm">${esc(shortDate(stamp))} 기준 · 위버스샵 알라딘 Ktown4u 사운드웨이브 위드뮤</span>
+<span class="bd">K-POP 앨범 특전 비교</span>
+<span class="hdm">${esc(shortDate(stamp))} 갱신</span>
 </div>
 </header>
 <h1>예약판매 중인 K-POP 앨범 — 버전·구성·특전</h1>
-<p class="sub">앨범 <b>${live}</b>개가 예약판매 중입니다. 같은 앨범이라도 <b>버전마다 구성이 다르고, 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
+<p class="sub">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직에서 자동으로 모읍니다.
+앨범 <b>${live}</b>개가 예약판매 중이고, 같은 앨범이라도 <b>버전마다 구성이 다르고 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
       albums.some((a) => a.nextDeadline)
         ? ` 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br>${
             siteUrl
