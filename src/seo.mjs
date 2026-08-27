@@ -113,17 +113,36 @@ ${sm ? `\nSitemap: ${sm}\n` : ''}`;
  * 위버스샵은 영문명만 준다("CORTIS"). 국내 팬은 "코르티스"로 검색한다.
  * 알라딘·사운드웨이브 상품명이 한글이라 거기서 역으로 얻는다.
  */
+const normName = (s) =>
+  String(s ?? '')
+    .toLowerCase()
+    .replace(/[^a-z0-9가-힣]/g, '');
+
 export function displayArtist(en, ko) {
   if (!ko) return en;
-  const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
-  if (norm(ko) === norm(en)) return en; // 이미 같은 표기
+  if (normName(ko) === normName(en)) return en; // 이미 같은 표기
   if (en.includes(ko)) return en; // "i-dle (아이들)"처럼 이미 병기됨
+  // 상품명이 스토어와 다른 아티스트를 가리켜 이미 "소연 (SOYEON)"으로 완성돼 온 경우.
+  // 여기에 스토어명을 또 붙이면 "소연(i-dle (아이들))"이 된다 — 아래 koreanArtistFrom 참고.
+  if (ko.includes('(')) return ko;
   return `${ko}(${en})`;
 }
 
-/** 상품명에서 한글 아티스트명을 뽑는다 — "코르티스 - EP 2집 GREENGREEN …" */
-export function koreanArtistFrom(titles) {
+/**
+ * 상품명에서 한글 아티스트명을 뽑는다 — "코르티스 - EP 2집 GREENGREEN …"
+ *
+ * `storeArtist`를 받는 이유 —
+ * 위버스샵은 솔로 앨범을 **그룹 스토어 밑에** 둔다. 소연 정규 1집의 스토어 아티스트는
+ * `i-dle (아이들)`이고, 민호 미니 2집은 `SHINee`다. 그대로 병기하면 `소연(i-dle (아이들))`처럼
+ * 괄호가 겹칠 뿐 아니라 **틀린 이름**이 된다.
+ *
+ * 상품명이 더 믿을 만하다 — 국내 판매처는 `소연 (SOYEON) - 정규 1집 …`으로 적는다.
+ * 그래서 괄호 안 영문까지 같이 들고 와서, 그게 스토어 아티스트와 다르면 상품명 쪽을 택한다.
+ * 같으면(코르티스/CORTIS) 예전처럼 한글만 돌려준다.
+ */
+export function koreanArtistFrom(titles, storeArtist) {
   const counts = new Map();
+  const alts = new Map(); // 한글명 → 상품명 괄호 안 영문
   for (const raw of titles) {
     let t = String(raw || '')
       .replace(/^\s*\[[^\]]*\]\s*/g, '') // 앞의 [SET] [특전증정/세트] 제거
@@ -134,7 +153,13 @@ export function koreanArtistFrom(titles) {
     const key = head.replace(/\s*\([^)]*\)\s*/g, '').trim();
     if (!key || !/[가-힣]/.test(key)) continue;
     counts.set(key, (counts.get(key) || 0) + 1);
+    const en = (head.match(/\(\s*([A-Za-z][A-Za-z0-9 .&'-]{1,})\s*\)/) || [])[1];
+    if (en && !alts.has(key)) alts.set(key, en.trim());
   }
   if (!counts.size) return null;
-  return [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  const ko = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  const en = alts.get(ko);
+  // 표기는 아래 displayArtist와 맞춘다 — "코르티스(CORTIS)"와 같은 모양이어야 한다
+  if (en && storeArtist && normName(en) !== normName(storeArtist)) return `${ko}(${en})`;
+  return ko;
 }

@@ -342,7 +342,8 @@ for (const t of targets) {
 
   // 위버스샵은 영문명만 준다. 국내 팬은 한글로 검색하므로 국내 판매처 상품명에서 역으로 얻는다.
   const artistKo = koreanArtistFrom(
-    rows.filter((r) => /알라딘|사운드웨이브|예스24/.test(r.retailer || '')).map((r) => r.title)
+    rows.filter((r) => /알라딘|사운드웨이브|예스24/.test(r.retailer || '')).map((r) => r.title),
+    t.artist
   );
   const ogImage = rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
 
