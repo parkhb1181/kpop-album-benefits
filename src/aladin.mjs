@@ -62,6 +62,7 @@ export async function search(query) {
       benefit: kept.slice(0, 3),
       benefitFlag: kept.length > 0,
       freeShipping: /무료배송/.test(flat),
+      soldOut: /품절|절판/.test(flat),
       thumb: (b.match(/(https:\/\/image\.aladin\.co\.kr\/product\/[^"' )]+\.(?:jpg|png))/i) || [])[1] || null,
     });
   }

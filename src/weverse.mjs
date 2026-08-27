@@ -42,10 +42,27 @@ export async function search(artistId, keyword) {
     let benefit = [];
     let images = [];
     let benefitImage = null;
+    let soldOut = null;
+    let maxOrder = null;
+    let composition = null;
+    let randomNote = null;
     try {
       const d = await detail(artistId, c.saleId);
       benefit = (d?.eventGuides || []).map((g) => strip(`${g.eventName} ${g.description}`));
       images = (d?.detailImages || []).map((i) => ({ url: i.imageUrl, w: i.width, h: i.height }));
+
+      // 품절 — 특전이 "수량 소진시까지"라 지금 살 수 있는지가 결정을 가른다
+      const opts = d?.option?.options || [];
+      if (opts.length) soldOut = opts.every((o) => o.isSoldOut);
+
+      // 1인 구매 제한 — 버전마다 다르다 (팬싸 응모용 대량 구매에 결정적)
+      maxOrder = d?.goodsOrderLimit?.maxOrderQuantity ?? null;
+
+      // 구성품 — 버전 선택의 실제 기준
+      composition = (d?.notificationInfos || []).find((n) => n.title === '구성')?.description || null;
+
+      // 랜덤 확률 안내
+      randomNote = (d?.cautionInfos || []).find((t) => /랜덤.*확률|확률.*랜덤/.test(t)) || null;
       // 특전 안내 이미지("Pre-order Gift" 카드)는 구성품 컷보다 세로로 길다.
       // eventGuides가 있을 때 가장 세로로 긴 첫 장을 특전 이미지로 본다.
       if (benefit.length && images.length) {
@@ -73,6 +90,11 @@ export async function search(artistId, keyword) {
       benefitStatus: (c.icons || []).includes('BENEFIT') ? 'has' : 'none',
       preOrder: (c.icons || []).includes('PRE_ORDER'),
       chart: c.albumChartTargets || [],
+      soldOut,
+      maxOrder,
+      composition,
+      randomNote,
+      status: c.status || null,
     });
   }
   return out;

@@ -129,9 +129,10 @@ for (const t of targets) {
   const versions = new Set(rows.map((r) => r.key)).size;
   const retailers = new Set(rows.map((r) => r.retailer)).size;
   const benefitCount = new Set(rows.filter((r) => (r.benefit || []).length).map((r) => r.retailer)).size;
+  const soldCount = rows.filter((r) => r.soldOut === true).length;
 
   writeFileSync(`./out/album/${slug}.html`, renderAlbum({ target: t, rows, errors, stamp }), 'utf8');
-  index.push({ ...t, slug, versions, retailers, benefitCount, rowCount: rows.length });
+  index.push({ ...t, slug, versions, retailers, benefitCount, soldCount, rowCount: rows.length });
   console.log(`${rows.length}건 / ${versions}종 / ${retailers}사${benefitCount ? ` / 특전 ${benefitCount}사` : ''}`);
 }
 

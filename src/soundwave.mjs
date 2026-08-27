@@ -46,6 +46,7 @@ export async function search(query) {
       benefit: [...new Set(benefit)].slice(0, 2),
       benefitFlag: benefit.length > 0,
       benefitStatus: benefit.length ? 'has' : 'unknown',
+      soldOut: /품절|SOLD\s*OUT|재입고/i.test(flat),
       thumb: (block.match(/src="(\/\/[^"']*\/web\/product\/(?:small|medium)\/[^"']+)"/) || [])[1]
         ? 'https:' + block.match(/src="(\/\/[^"']*\/web\/product\/(?:small|medium)\/[^"']+)"/)[1]
         : null,

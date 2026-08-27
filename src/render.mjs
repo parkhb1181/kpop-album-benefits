@@ -57,6 +57,13 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 .card .al{font-size:15px;font-weight:700;margin:3px 0 8px;line-height:1.35}
 .card .meta{font-size:12px;color:var(--mut)}
 .badge{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:99px;padding:0 6px;margin-right:5px}
+.sold{color:var(--acc);font-weight:700}
+.soldb{font-size:11px;font-weight:700;color:var(--acc);border:1px solid currentColor;border-radius:99px;padding:1px 8px}
+.chart{font-size:11px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:1px 8px}
+.comp{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--card)}
+.comp summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--mut)}
+.comp pre{margin:8px 0 0;font-size:12px;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:inherit;color:var(--fg)}
+.comp p{margin:8px 0 0}
 `;
 
 const shell = (title, body) => `<!doctype html><html lang="ko"><head><meta charset="utf-8">
@@ -79,6 +86,17 @@ const benefitCell = (i) => {
 };
 const money = (i) =>
   i.price == null ? '—' : i.currency === 'USD' ? `$${i.price.toLocaleString()}` : `${i.price.toLocaleString()}원`;
+
+/** 지금 살 수 있는가 — 특전이 "수량 소진시까지"라 이게 결정을 가른다 */
+const stockCell = (i) =>
+  i.soldOut === true
+    ? '<span class="sold">품절</span>'
+    : i.soldOut === false
+      ? '<span class="ok2">판매중</span>'
+      : '<span class="mut">—</span>';
+
+/** 1인 구매 제한 — 버전마다 다르다. 팬싸 응모용 대량 구매에 결정적 */
+const limitCell = (i) => (i.maxOrder ? `<b>${i.maxOrder}</b>장` : '<span class="mut">—</span>');
 
 export function renderAlbum({ target, rows, errors, stamp }) {
   const byKey = new Map();
@@ -126,12 +144,25 @@ export function renderAlbum({ target, rows, errors, stamp }) {
             (i.events || []).length ? `<div class="ev">${(i.events || []).map(esc).join(' · ')}</div>` : ''
           }</td>
 <td class="num">${money(i)}</td>
+<td class="num">${stockCell(i)}</td>
+<td class="num">${limitCell(i)}</td>
 <td class="ben">${benefitCell(i)}</td>
 <td class="num">${i.sales != null ? i.sales.toLocaleString() : '—'}</td></tr>`
         )
         .join('');
-      return `<h2>${esc(ed === '기본' ? '기본반' : ed)} <span class="pk">${esc(pk)}</span> ${badge}</h2>
-${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>특전</th><th>판매량</th></tr></thead><tbody>${tr}</tbody></table></div>`;
+
+      // 구성품 — 버전 선택의 실제 기준. 위버스샵이 사이즈까지 준다.
+      const comp = items.find((i) => i.composition)?.composition;
+      const rnd = items.find((i) => i.randomNote)?.randomNote;
+      const compHtml = comp
+        ? `<details class="comp"><summary>구성품 보기</summary><pre>${esc(comp)}</pre>${rnd ? `<p class="mut">${esc(rnd)}</p>` : ''}</details>`
+        : '';
+
+      const anySold = items.some((i) => i.soldOut === true);
+      return `<h2>${esc(ed === '기본' ? '기본반' : ed)} <span class="pk">${esc(pk)}</span> ${badge}${
+        anySold ? ' <span class="soldb">일부 품절</span>' : ''
+      }</h2>
+${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody>${tr}</tbody></table></div>${compHtml}`;
     })
     .join('\n');
 
@@ -166,13 +197,17 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
   }
 
   const multi = groups.filter(([, it]) => new Set(it.map((x) => x.retailer)).size >= 2).length;
+  const soldCount = rows.filter((r) => r.soldOut === true).length;
+  const chart = rows.some((r) => (r.chart || []).length > 0);
 
   return shell(
     `${target.artist} ${target.album} — 판매처별 특전`,
     `<a class="back" href="../index.html">← 전체 컴백</a>
 <h1>${esc(target.artist)} — ${esc(target.album)}</h1>
 <div class="stamp">판매처별 예약판매 특전 · <b>${esc(stamp)} 기준</b></div>
-<div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능</div>
+<div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능${
+      soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
+    }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
 ${optHtml}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
 ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`
@@ -185,7 +220,7 @@ export function renderIndex({ albums, stamp }) {
       (a) => `<a class="card" href="album/${esc(a.slug)}.html">
 <div class="ar">${esc(a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
-<div class="meta">${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
+<div class="meta">${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
 </a>`
     )
     .join('');

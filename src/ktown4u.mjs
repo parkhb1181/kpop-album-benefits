@@ -29,6 +29,8 @@ export async function search(query) {
       url: `${BASE}/iteminfo?goods_no=${goodsNo}`,
       thumb: (c.match(/src="(https:\/\/media\.ktown4u\.com\/[^"]+)"/) || [])[1] || null,
       // 상품명 접두어가 판매처 독점 특전 신호
+      // 품절 — 특전이 '수량 소진시까지'라 지금 살 수 있는지가 핵심이다
+      soldOut: /품절|Out of Stock|재입고/.test(c),
       benefitFlag: /Ktown4u Special Gift|케타포 Special Gift|럭키드로우|사인회|Pre-?Order|Lucky Draw|SIGN EVENT/i.test(title),
     });
   }
