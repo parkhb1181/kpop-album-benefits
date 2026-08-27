@@ -172,6 +172,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp.fx td.rt{white-space:nowrap}
 /* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
 .evt{font-weight:600;word-break:keep-all}
+.evc{display:flex;gap:10px;align-items:flex-start}
+.evc>div{min-width:0}
+.evp{flex:0 0 auto;border-bottom:0}
+.evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
@@ -1058,9 +1062,16 @@ ${limits}`;
         .map((o) => `${esc(o.name)}${o.krw != null ? ` <b>${won(o.krw)}</b>` : ''}`)
         .join(' · ');
       const title = e.url ? `<a href="${esc(e.url)}" rel="nofollow">${esc(e.title)}</a>` : esc(e.title);
+      // 포스터가 있으면 제목 옆에 건다. 팬사인회는 앨범값보다 큰 돈이 걸리는
+      // 결정이라, 어떤 이벤트인지 글자보다 사진이 먼저 알려준다.
+      const poster = e.image?.thumb
+        ? `<a class="evp" href="${esc(e.image.url || e.image.thumb)}" target="_blank" rel="noopener">` +
+          `<img src="${esc(e.image.thumb)}" alt="" loading="lazy" width="56" height="56"></a>`
+        : '';
       return `<tr>
-<td class="evt" data-label="이벤트">${title}${e.fansign ? ' <span class="tg">팬싸</span>' : ''}
-<div class="mut">${esc(e.label)}</div></td>
+<td class="evt" data-label="이벤트"><div class="evc">${poster}<div>${title}${
+        e.fansign ? ' <span class="tg">팬싸</span>' : ''
+      }<div class="mut">${esc(e.label)}</div></div></div></td>
 <td class="num" data-label="마감">${when}</td>
 <td class="num" data-label="기간">${esc(e.from)}~${esc(e.to)}${e.winnerAt ? `<div class="mut">발표 ${esc(e.winnerAt)}</div>` : ''}</td>
 <td data-label="응모 조건">${opts || '<span class="mut">—</span>'}</td></tr>`;
