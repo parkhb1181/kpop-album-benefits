@@ -1,8 +1,15 @@
 import * as wev from './weverse.mjs';
 
-/** 동시 실행 제한 */
+/**
+ * 동시 실행 제한.
+ *
+ * 실패 건수를 반드시 밖으로 알린다. 조용히 null로 만들면 "요청이 실패했다"와
+ * "예판이 없다"가 똑같이 보이고, watch.mjs는 그걸 **예판 종료**로 오인해
+ * 없던 변화를 만들어낸다 (다음 회차엔 다시 "새 예판"으로 뜬다).
+ */
 async function pool(items, n, fn) {
   const out = [];
+  let failed = 0;
   let i = 0;
   await Promise.all(
     Array.from({ length: n }, async () => {
@@ -12,11 +19,12 @@ async function pool(items, n, fn) {
           out[idx] = await fn(items[idx], idx);
         } catch {
           out[idx] = null;
+          failed++;
         }
       }
     })
   );
-  return out;
+  return { out, failed };
 }
 
 // 대괄호 안에 이런 말이 들어 있으면 앨범명이 아니라 이벤트·특전 표식이다
@@ -56,7 +64,7 @@ export async function discoverPreorders({ concurrency = 6, limitArtists = 0 } = 
   const artists = await wev.artists();
   const list = (limitArtists ? artists.slice(0, limitArtists) : artists).filter((a) => !VIRTUAL_ARTIST.test(a.name));
 
-  const perArtist = await pool(list, concurrency, async (a) => {
+  const { out: perArtist, failed } = await pool(list, concurrency, async (a) => {
     const cards = await wev.listSales(a.artistId);
     // 예판(PRE_ORDER) + 음반(albumChartTargets가 있으면 한터/써클 반영 = 실제 앨범).
     // 이 조건 하나로 MD·포토북·이벤트 상품이 전부 걸러진다.
@@ -96,5 +104,6 @@ export async function discoverPreorders({ concurrency = 6, limitArtists = 0 } = 
   }
   // 특전 있는 것 → 버전 많은 것 순
   rows.sort((x, y) => Number(y.benefit) - Number(x.benefit) || y.skuCount - x.skuCount);
-  return { artistCount: list.length, artistsWithPreorder: found.length, albums: rows };
+  // failed는 호출자가 반드시 봐야 한다 — 스캔이 불완전하면 "사라졌다"를 믿으면 안 된다
+  return { artistCount: list.length, artistsWithPreorder: found.length, failed, albums: rows };
 }

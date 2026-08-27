@@ -46,20 +46,50 @@ async function json(url) {
 }
 
 let _all = null; // 빌드당 1회만 받는다
+let _allFailed = null; // 실패도 기억한다 (아래 이유)
 
 /** 진행 중(ON_SALE) 이벤트 전량 */
 export async function allEvents() {
   if (_all) return _all;
+  // 실패를 안 기억하면 앨범 16개가 각자 재시도하고, getText가 건마다 3번 물러섰다
+  // 다시 시도한다 — 죽은 API에 48번 두드리게 된다. 한 번 실패하면 그대로 알린다.
+  if (_allFailed) throw _allFailed;
   const out = [];
   // size=200이 서버 상한이다. 그 이상은 200으로 깎여 돌아온다.
-  for (let page = 0; page < 10; page++) {
-    const u = `${API}/v2/commerce/product_event/events/?eventFilterStatus=ON_SALE&sortBy=RECOMMENDED&baseCurrency=krw&size=200&page=${page}`;
-    const j = await json(u);
-    const d = Array.isArray(j.data) ? j.data : [];
-    out.push(...d.map(normalize));
-    if (!j.meta?.hasNext) break;
+  try {
+    for (let page = 0; page < 10; page++) {
+      const u = `${API}/v2/commerce/product_event/events/?eventFilterStatus=ON_SALE&sortBy=RECOMMENDED&baseCurrency=krw&size=200&page=${page}`;
+      const j = await json(u);
+      const d = Array.isArray(j.data) ? j.data : [];
+      out.push(...d.map(normalize));
+      if (!j.meta?.hasNext) break;
+    }
+  } catch (e) {
+    _allFailed = e;
+    throw e;
   }
   _all = out;
+  return out;
+}
+
+/**
+ * 저장된 이벤트의 남은 기간을 다시 계산하고, 끝난 건 뺀다.
+ *
+ * 예판이 끝난 앨범 페이지는 out/data 스냅샷으로 다시 그린다. 그때 dday·마감임박이
+ * **스냅샷을 뜨던 시점의 값**이라, 몇 주 전에 끝난 이벤트가 "D-3"이라고 우긴다.
+ */
+export function refresh(events = []) {
+  const now = Date.now();
+  const out = [];
+  for (const e of events) {
+    if (!e.endAt) {
+      out.push(e);
+      continue;
+    }
+    const dday = Math.ceil((new Date(e.endAt).getTime() - now) / 864e5);
+    if (dday < 0) continue; // 끝난 이벤트는 안 보여준다
+    out.push({ ...e, dday, closing: dday <= 2 });
+  }
   return out;
 }
 
@@ -86,7 +116,8 @@ function normalize(e) {
     startAt: e.salesData?.salesStartAt || null,
     endAt: e.salesData?.salesEndAt || null,
     dday: dday != null && dday >= 0 ? dday : null,
-    closing: dday != null && dday <= 2,
+    // 이미 지난 건(dday<0) "마감임박"이 아니다. 앞의 dday와 판정 기준을 맞춘다.
+    closing: dday != null && dday >= 0 && dday <= 2,
     winnerAt: (e.eventInfo?.winnerAnnounceAt || '').slice(0, 10).replace(/-/g, '.') || null,
     productId: e.product?.id ?? null,
   };

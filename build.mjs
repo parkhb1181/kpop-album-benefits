@@ -312,7 +312,9 @@ for (const a of gone) {
         target: d.target,
         rows: d.rows,
         errors: [],
-        events: d.events || [],
+        // 스냅샷의 dday는 그때 값이다. 다시 계산하지 않으면 몇 주 전에 끝난 이벤트가
+        // "D-3"이라고 우긴다.
+        events: mks.refresh(d.events || []),
         eventTotal: 0,
         stamp,
         siteUrl: SITE_URL,
@@ -322,10 +324,12 @@ for (const a of gone) {
       }),
       'utf8'
     );
-    index.push({ ...a, expired });
+    // nextDeadline은 지난 인덱스에서 딸려온 값이다. 그대로 두면 예판이 끝난 카드에
+    // 카운트다운이 계속 돈다 — 마감이 아직 미래인 이벤트가 남아 있으면 더 그렇다.
+    index.push({ ...a, nextDeadline: null, expired });
   } catch {
     // 스냅샷이 없으면(이전 버전에서 만든 페이지) 그대로 둔다 — 지우는 것보다 낫다
-    index.push({ ...a, expired: a.expired || { lastSeen: shortStamp(prev.stamp) } });
+    index.push({ ...a, nextDeadline: null, expired: a.expired || { lastSeen: shortStamp(prev.stamp) } });
   }
 }
 if (gone.length) console.log(`\n예판 종료 ${gone.length}개 — "종료" 표시로 유지`);

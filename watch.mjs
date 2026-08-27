@@ -59,10 +59,17 @@ try {
 
 // ── B층: 위버스샵 예판 스캔 (요청 158건) ───────────────────────
 let albums = null;
+let scanPartial = false;
 if (deep) {
   try {
     const d = await discoverPreorders({ concurrency: 8 });
     albums = d.albums.map((a) => ({ key: `${a.artistEn}｜${a.album}`, artist: a.artistEn, album: a.album }));
+    // 158팀 중 몇 팀이 실패하면 그 팀의 앨범이 목록에서 빠진다. 그걸 "예판 종료"로
+    // 읽으면 없던 변화를 만들고, 다음 회차엔 같은 앨범이 "새 예판"으로 다시 뜬다.
+    if (d.failed > 0) {
+      scanPartial = true;
+      console.log(`⚠ 아티스트 ${d.failed}팀 스캔 실패 — 이번 회차는 "사라짐"을 판정하지 않습니다.`);
+    }
   } catch (e) {
     console.log(`⚠ 위버스샵 스캔 실패: ${e.message}`);
   }
@@ -81,6 +88,8 @@ const diff = (nowList, prevList, id) => {
 
 const ev = diff(events, prev?.events, (e) => String(e.id));
 const al = diff(albums, prev?.albums, (a) => a.key);
+// 스캔이 불완전하면 새로 뜬 것만 믿는다 (없는 걸 봤을 리는 없다).
+if (scanPartial) al.gone = [];
 
 const changes = [
   ...ev.added.map((e) => ({ type: 'event.new', label: e.label, artist: e.artist, album: e.album, id: e.id, url: e.url, endAt: e.endAt })),
@@ -90,6 +99,17 @@ const changes = [
 ];
 
 // ── 기록 ────────────────────────────────────────────────────
+//
+// 스캔이 불완전했다면 이번 목록을 그대로 저장하면 안 된다. 빠진 앨범이 상태에서
+// 지워지고, 다음 완전 스캔에서 **새 예판**으로 다시 뜬다 (반대 방향 깜빡임).
+// 그래서 합집합으로 남긴다 — 사라진 건 다음 완전 스캔이 정리한다.
+const albumsToStore = (() => {
+  if (!albums) return prev?.albums ?? [];
+  if (!scanPartial) return albums;
+  const seen = new Set(albums.map((a) => a.key));
+  return [...albums, ...(prev?.albums || []).filter((a) => !seen.has(a.key))];
+})();
+
 mkdirSync('./state', { recursive: true });
 writeFileSync(
   STATE,
@@ -99,7 +119,7 @@ writeFileSync(
       lastDeep: deep && albums ? nowIso : prev?.lastDeep || null,
       // 요청 실패로 못 받은 층은 이전 값을 유지한다 (사라진 것으로 오인하지 않기 위해)
       events: events ?? prev?.events ?? [],
-      albums: albums ?? prev?.albums ?? [],
+      albums: albumsToStore,
     },
     null,
     2

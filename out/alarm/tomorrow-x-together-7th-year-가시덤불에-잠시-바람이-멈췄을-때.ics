@@ -11,14 +11,12 @@ X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을
  -때-release@kpop-album-benefits
-DTSTAMP:20260827T021553Z
+DTSTAMP:20260827T023618Z
 DTSTART:20260907T220000Z
 DTEND:20260907T223000Z
 SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) 7TH YEAR: 가시
  덤불에 잠시 바람이 멈췄을 때 — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://example-test.com/album/tomorrow-x-together-7th-year-가시덤
- 불에-잠시-바람이-멈췄을-때.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D

@@ -47,13 +47,17 @@ async function searchOnce(query) {
           const txt = (box?.innerText || '').replace(/\s+/g, ' ').trim();
           const alt = a.querySelector('img')?.getAttribute('alt') || '';
           const title = (alt || txt).trim();
-          const price = (txt.match(/([\d,]{4,})\s*원/) || [])[1];
-          if (!title || !price) continue;
+          // 카드에 금액이 둘 나온다: "16,000원 13,800원 14%" — 앞이 정가(취소선), 뒤가 판매가.
+          // 첫 번째만 집으면 위드뮤만 비싼 것처럼 보인다. 실제로는 13,800원으로 나머지와 같다.
+          const prices = [...txt.matchAll(/([\d,]{4,})\s*원/g)].map((m) => Number(m[1].replace(/,/g, '')));
+          if (!title || !prices.length) continue;
+          const price = prices.length >= 2 && prices[1] < prices[0] ? prices[1] : prices[0];
           seen.add(id);
           out.push({
             id,
             title,
             price,
+            listPrice: prices.length >= 2 && prices[1] < prices[0] ? prices[0] : null,
             soldOut: /품절|SOLD\s*OUT|일시품절/i.test(txt),
             thumb: a.querySelector('img')?.src || null,
           });
@@ -72,7 +76,8 @@ async function searchOnce(query) {
       title,
       ...parseTitle(title),
       currency: 'KRW',
-      price: Number(String(x.price).replace(/,/g, '')),
+      price: Number(x.price),
+      listPrice: x.listPrice ?? null,
       sales: null,
       releaseDate: null,
       url: `${BASE}/goods/goods_view.php?goodsNo=${x.id}`,

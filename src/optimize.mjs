@@ -24,7 +24,13 @@ export function couponFor(items, subtotal) {
  */
 export function optimize(rows, { currency = 'KRW' } = {}) {
   // 통화가 섞이면(Ktown4u USD) 비교가 안 되므로 제외
-  const usable = rows.filter((r) => r.price != null && (r.currency || 'KRW') === currency);
+  const priced = rows.filter((r) => r.price != null && (r.currency || 'KRW') === currency);
+
+  // 품절은 뺀다. 안 그러면 "최저 조합"이 **이미 못 사는 상품**을 사라고 한다.
+  // 실측(2026-08-27): 앨범 16개 중 7개의 최저 조합에 품절이 섞여 있었고,
+  // NCT 127은 9종 중 5종이 품절이었다. 특전이 "수량 소진시까지"라 이게 자주 생긴다.
+  // soldOut이 null인 곳(재고를 안 알려주는 판매처)은 살 수 있는 것으로 본다.
+  const usable = priced.filter((r) => r.soldOut !== true);
 
   // 버전(key)별 후보 판매처
   const byKey = new Map();
@@ -33,6 +39,16 @@ export function optimize(rows, { currency = 'KRW' } = {}) {
     byKey.get(r.key).push(r);
   }
   const keys = [...byKey.keys()];
+
+  // 모든 판매처에서 품절인 버전 — 계산에서 빠졌다는 걸 화면에 알려야 한다.
+  // 조용히 빼면 "전 버전 모으기"가 실제보다 쉬워 보인다.
+  const unbuyable = [...new Set(priced.map((r) => r.key))]
+    .filter((k) => !byKey.has(k))
+    .map((k) => {
+      const any = priced.find((r) => r.key === k);
+      return { key: k, edition: any?.edition, packaging: any?.packaging };
+    });
+
   if (keys.length === 0) return null;
 
   // 버전마다 판매처를 고르는 완전탐색은 조합이 폭발한다 (19종이면 4^19).
@@ -134,5 +150,5 @@ export function optimize(rows, { currency = 'KRW' } = {}) {
   });
   perVersion.sort((a, b) => b.spread - a.spread);
 
-  return { versions: keys.length, best, singles, anyFull, perVersion, policy: POLICY };
+  return { versions: keys.length, best, singles, anyFull, perVersion, unbuyable, policy: POLICY };
 }

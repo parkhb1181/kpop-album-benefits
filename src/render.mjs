@@ -456,6 +456,13 @@ ${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품�
       )
       .join('');
     optHtml = `<h2>전 버전(${opt.versions}종) 모으기 — 합배송·쿠폰 계산</h2>
+${
+      opt.unbuyable?.length
+        ? `<div class="warn"><b>${opt.unbuyable.length}종은 모든 판매처에서 품절</b>이라 계산에서 뺐습니다 —
+${esc(opt.unbuyable.map((u) => u.edition || u.key.split('｜')[0]).join(', ')).slice(0, 200)}.
+아래 ${opt.versions}종은 지금 살 수 있는 것만 모은 결과입니다.</div>`
+        : ''
+    }
 ${opt.anyFull ? '' : `<div class="warn"><b>어느 한 판매처에서도 ${opt.versions}종 전부를 살 수 없습니다.</b> 나눠 사야 하고, 배송비가 몇 번 붙는지가 총액을 가릅니다.</div>`}
 <div class="sum2"><b>최저 조합: ${won(opt.best.sum)}</b> — 상품 ${won(opt.best.goods)} + 배송 ${won(opt.best.ship)}${opt.best.coupon ? ` · 쿠폰 받으면 −${won(opt.best.coupon)}` : ''}${opt.best.unknown ? ' <span class="flag">(일부 미확인)</span>' : ''}</div>
 <div class="wrap"><table><thead><tr><th>판매처</th><th>담을 수</th><th>상품</th><th>배송비</th><th>쿠폰(받기 필요)</th><th>비고</th></tr></thead><tbody>${bd}</tbody></table></div>
