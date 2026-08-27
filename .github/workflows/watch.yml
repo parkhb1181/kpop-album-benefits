@@ -74,8 +74,16 @@ jobs:
         if: steps.watch.outputs.changed == 'true'
         run: npx playwright install --with-deps chromium
 
+      # 스텝 단위 타임아웃.
+      #
+      # 잡 타임아웃(45분)만 있으면 build.mjs가 어느 판매처에서 매달렸을 때
+      # 45분을 통째로 태우고, 그동안 site-build 그룹을 잡고 있어 watch까지 막힌다.
+      # 실제로 그렇게 한 번 죽었다 — "컴백 탐지" 뒤 36분간 출력 0줄, 앨범 1개도 못 찍음.
+      #
+      # 정상 빌드는 5~7분이다. 20분이면 느려진 것과 매달린 것이 구분된다.
       - name: Rebuild
         if: steps.watch.outputs.changed == 'true'
+        timeout-minutes: 20
         run: node build.mjs
 
       - name: Commit site
