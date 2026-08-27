@@ -16,7 +16,10 @@ export async function search(query) {
   const out = [];
   const seen = new Set();
 
-  for (const block of html.split(/<li>/)) {
+  for (const chunk of html.split(/<li>/)) {
+    // 마지막 조각은 목록 뒤 페이지 전체를 끌고 온다. 항목 끝에서 자르지 않으면
+    // 푸터의 문구 하나가 그 상품의 판정을 뒤집을 수 있다 (애플뮤직에서 실측 27,000자).
+    const block = chunk.split('</li>')[0];
     const pno = (block.match(/detail\.php\?pno=([A-Za-z0-9]+)/) || [])[1];
     if (!pno || seen.has(pno)) continue;
 

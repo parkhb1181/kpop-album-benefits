@@ -11,13 +11,21 @@ import { getText, strip, parseTitle } from './fetchx.mjs';
 
 const BASE = 'https://www.applemusic.co.kr';
 
+const thumbOf = (block) => {
+  const src = (block.match(/<img[^>]+src="(\/shopimages\/[^"]+)"/) || [])[1];
+  return src ? `${BASE}${src}` : null;
+};
+
 export async function search(query) {
   const html = await getText(`${BASE}/shop/shopbrand.html?search=${encodeURIComponent(query)}`);
 
   const out = [];
   const seen = new Set();
 
-  for (const block of html.split(/<dl class="item-list">/)) {
+  for (const chunk of html.split(/<dl class="item-list">/)) {
+    // 마지막 조각은 푸터·스크립트까지 통째로 끌고 온다(실측 27,000자). 그대로 두면
+    // 페이지 어딘가의 "품절" 한 글자가 그 상품을 품절로 뒤집는다. 항목 끝에서 자른다.
+    const block = chunk.split('</dl>')[0];
     const uid = (block.match(/shopdetail\.html\?branduid=(\d+)/) || [])[1];
     if (!uid || seen.has(uid)) continue;
 
@@ -53,9 +61,7 @@ export async function search(query) {
       // 여기 품절 표시는 진짜 신호다 — 21개 블록 중 1개에만 붙어 있다.
       // (뮤직플랜트는 모든 블록에 붙어 있어서 못 쓴다)
       soldOut: /품절|sold\s*out/i.test(strip(block)),
-      thumb: (block.match(/<img[^>]+src="(\/shopimages\/[^"]+)"/) || [])[1]
-        ? `${BASE}${(block.match(/<img[^>]+src="(\/shopimages\/[^"]+)"/) || [])[1]}`
-        : null,
+      thumb: thumbOf(block),
     });
   }
   return out;
