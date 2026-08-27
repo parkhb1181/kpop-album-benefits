@@ -14,6 +14,7 @@ import * as ap from './src/applemusic.mjs';
 import * as mks from './src/makestar.mjs';
 import { collectDeadlines, roughLeft } from './src/deadlines.mjs';
 import { calendar } from './src/ics.mjs';
+import { SW_JS } from './src/sw.mjs';
 import { close as closeBrowser, isDisabled } from './src/browser.mjs';
 
 const ONLY = process.argv.slice(2).find((a) => !a.startsWith('-')); // 특정 앨범만 빌드
@@ -26,6 +27,12 @@ const MAX = Number((process.argv.find((a) => a.startsWith('--max=')) || '').spli
  * 배포:  Vercel 환경변수에 SITE_URL=https://도메인
  */
 const SITE_URL = (process.env.SITE_URL || '').trim().replace(/\/$/, '');
+
+/**
+ * 웹푸시 공개키. 페이지에 그대로 박히는 값이라 비밀이 아니다 (개인키만 서버에 둔다).
+ * 없으면 알림 버튼을 아예 안 낸다 — 눌러도 안 되는 버튼을 두는 것보다 낫다.
+ */
+const VAPID_PUBLIC_KEY = (process.env.VAPID_PUBLIC_KEY || '').trim();
 
 /**
  * "2026. 8. 27. 오전 10:06:57" → "2026-08-27".
@@ -471,7 +478,14 @@ catalog.sort(
     b.retailers - a.retailers ||
     b.versions - a.versions
 );
-writeFileSync('./out/index.html', renderIndex({ albums: catalog, stamp, siteUrl: SITE_URL }), 'utf8');
+writeFileSync(
+  './out/index.html',
+  renderIndex({ albums: catalog, stamp, siteUrl: SITE_URL, vapidPublicKey: VAPID_PUBLIC_KEY }),
+  'utf8'
+);
+
+// 서비스워커는 사이트 전체를 범위로 잡아야 해서 반드시 최상위에 있어야 한다
+writeFileSync('./out/sw.js', SW_JS, 'utf8');
 writeFileSync('./out/index.json', JSON.stringify({ stamp, albums: catalog }, null, 2), 'utf8');
 
 // 검색 유입이 1순위 채널이다. sitemap이 없으면 앨범 페이지는 사실상 색인되지 않는다.

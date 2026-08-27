@@ -235,6 +235,61 @@ paint();
 })();
 </script>`;
 
+/**
+ * 알림 구독 버튼.
+ *
+ * 캘린더(.ics)와 역할이 다르다 — 캘린더는 **다가오는 마감**을, 푸시는 **없던 게 생긴 것**을
+ * 맡는다. 둘 다 보내면 같은 일로 알림이 두 번 온다.
+ *
+ * 저장하는 건 푸시 엔드포인트 하나뿐이다. 이메일도 계정도 안 받는다.
+ * iOS는 홈 화면에 추가해야 웹푸시가 오므로, 그 경우엔 버튼 대신 안내를 낸다.
+ */
+const pushHtml = (vapidPublicKey) =>
+  !vapidPublicKey
+    ? ''
+    : `<span class="pushwrap" style="display:none"> · <a href="#" id="pushbtn" role="button">새 예판 알림 받기</a>
+<span class="mut" id="pushmsg"></span></span>
+<script>
+(function(){
+var KEY=${JSON.stringify(vapidPublicKey)};
+var wrap=document.querySelector('.pushwrap'),btn=document.getElementById('pushbtn'),msg=document.getElementById('pushmsg');
+if(!wrap)return;
+var ok='serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+// iOS는 홈 화면에 추가해야 푸시가 온다. 사파리 탭에서는 버튼이 눌러도 아무 일도 안 난다.
+var iosNotInstalled=/iP(hone|ad|od)/.test(navigator.userAgent) && !window.navigator.standalone;
+wrap.style.display='';
+if(!ok){msg.textContent=' (이 브라우저는 알림을 지원하지 않습니다)';btn.style.display='none';return}
+if(iosNotInstalled){msg.textContent=' (아이폰은 공유 → 홈 화면에 추가 후 가능합니다)';btn.style.display='none';return}
+function b64(s){var p='='.repeat((4-s.length%4)%4);var r=(s+p).replace(/-/g,'+').replace(/_/g,'/');var b=atob(r);var a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a}
+function say(t){msg.textContent=' '+t}
+navigator.serviceWorker.getRegistration().then(function(r){
+  if(!r)return;
+  return r.pushManager.getSubscription().then(function(s){ if(s){btn.textContent='알림 끄기';btn.dataset.on='1'} });
+});
+btn.addEventListener('click',function(ev){
+  ev.preventDefault();
+  say('처리 중…');
+  navigator.serviceWorker.register('/sw.js').then(function(reg){
+    return reg.pushManager.getSubscription().then(function(sub){
+      if(btn.dataset.on==='1'&&sub){
+        return fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({endpoint:sub.endpoint,unsubscribe:true})})
+          .then(function(){return sub.unsubscribe()})
+          .then(function(){btn.textContent='새 예판 알림 받기';btn.dataset.on='';say('껐습니다')});
+      }
+      return Notification.requestPermission().then(function(p){
+        if(p!=='granted'){say('브라우저에서 알림이 차단돼 있습니다');return}
+        return reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64(KEY)}).then(function(ns){
+          return fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({endpoint:ns.endpoint})})
+            .then(function(r){return r.json()})
+            .then(function(d){ if(d.ok){btn.textContent='알림 끄기';btn.dataset.on='1';say('켰습니다. 새 예판이 뜨면 알려드립니다')} else say(d.error||'실패했습니다') });
+        });
+      });
+    });
+  }).catch(function(e){say('실패했습니다: '+e.message)});
+});
+})();
+</script>`;
+
 const shell = (title, body, meta = {}) => {
   const { jsonLd, ...rest } = meta;
   // JSON-LD는 </script>만 escape하면 된다. 나머지는 JSON이 알아서 안전하다.
@@ -679,7 +734,7 @@ function coverStrip(a, eager = false) {
   return `<div class="cvw"><div class="strip${list.length > 1 ? ' multi' : ''}">${imgs}</div><span class="vn"></span></div>${dots}`;
 }
 
-export function renderIndex({ albums, stamp, siteUrl }) {
+export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
   /**
    * 초점 하나를 고른다 — **마감이 가장 급한 앨범**.
    *
@@ -738,8 +793,8 @@ ${
       albums.some((a) => a.nextDeadline)
         ? `<br>마감이 걸린 앨범은 남은 시간이 함께 표시됩니다. ${
             siteUrl
-              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>`
-              : '<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>'
+              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>${pushHtml(vapidPublicKey)}`
+              : `<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>${pushHtml(vapidPublicKey)}`
           }`
         : ''
     }</div>
