@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": "out",
   "installCommand": "",
-  "buildCommand": "",
+  "buildCommand": "echo \"no build — out/ is committed by GitHub Actions\"",
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,

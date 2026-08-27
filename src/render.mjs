@@ -361,17 +361,27 @@ btn.addEventListener('click',function(ev){
 </script>`;
 
 /**
- * Vercel Web Analytics.
+ * 측정 스크립트 3종.
  *
- * GA4·Clarity 대신 이걸 쓴다 — Pro 요금제에 포함이고, 쿠키가 없어 동의 배너가 필요 없고,
- * 스크립트가 훨씬 가볍다. 지금 페이지가 28KB인데 GA4(~50KB)+Clarity(~40KB)를 붙이면 3배가 된다.
+ * Vercel Web Analytics — 방문수·유입 경로. Pro에 포함이고 쿠키가 없다.
+ * GA4 — 검색 쿼리별 유입과 랜딩 페이지. 서치콘솔과 붙는 쪽이 이것뿐이다.
+ * Clarity — 세션 리플레이·히트맵. "특전 표를 실제로 끝까지 보는가"는 이것 말고 알 방법이 없다.
  *
- * 지금 알아야 할 건 "검색으로 사람이 오는가" 하나뿐이고 그건 방문수로 충분하다.
- * 세션 리플레이·히트맵(Clarity)은 볼 트래픽이 생긴 뒤에 붙이는 게 맞다.
+ * 셋을 다 붙이면 본문(28KB)보다 스크립트가 무겁다.
+ * 그래도 붙이는 이유는, 지금 단계에서 비싼 건 페이지 무게가 아니라 데이터가 없는 것이기 때문이다.
+ * 셋 다 async/defer라 첫 렌더는 막지 않는다.
  *
  * SITE_URL 이 없는 로컬 빌드에는 넣지 않는다 — 로컬에서 연 페이지가 통계를 오염시킨다.
  */
-const ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>';
+const GA4_ID = 'G-N7EQZZPS6Q';
+const CLARITY_ID = 'y8uije22n0';
+
+const ANALYTICS = [
+  '<script defer src="/_vercel/insights/script.js"></script>',
+  `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>`,
+  `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`,
+  `<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","${CLARITY_ID}");</script>`,
+].join('\n');
 
 const shell = (title, body, meta = {}) => {
   const { jsonLd, siteUrl, ...rest } = meta;
