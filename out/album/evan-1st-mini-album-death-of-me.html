@@ -65,7 +65,9 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .num{white-space:nowrap;text-align:right}
 .ev{font-size:12px;color:var(--acc);margin-top:2px}
 .ben div{margin-bottom:4px}
-.flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
+.flag{color:var(--acc);font-weight:600}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
+   .mut(12px 보조 문구)를 여기 쓰다가 특전 없음만 14px로 커 보였다. */
+.none{color:var(--mut);font-size:inherit}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
 .est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap;margin-left:4px}
 /* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
@@ -315,7 +317,8 @@ font-size:11px;line-height:1.2;font-weight:500;color:var(--mut);background:var(-
 .rkm{flex:0 0 100%;font-size:12px;color:var(--mut);margin-top:2px}
 .rkv{flex:0 0 auto;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .rk.part .rkv{font-weight:600;color:var(--mut)}
-.rkv .est{margin-left:4px}
+.rkv{text-align:right}
+.rkv .est{display:block;margin:2px 0 0}
 .soldb{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:700;color:var(--acc);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .comp{margin-top:12px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
@@ -437,7 +440,7 @@ inp.click();
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017002" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017002" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">52,900원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="기본｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
@@ -453,7 +456,7 @@ inp.click();
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017004" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017004" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">20,800원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="1"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>Weverse Albums ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -470,7 +473,7 @@ inp.click();
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017003" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017003" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">11,300원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="one">1곳만</span></h3>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
@@ -530,7 +533,7 @@ inp.click();
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017001" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017001" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">27,800원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <h2>사진 <span class="one">8장</span></h2>
 <div class="pgal" data-gal="1">
 <div class="pgm"><figure class="tall">
@@ -692,4 +695,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:39:48</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:49:19</b></p></body></html>

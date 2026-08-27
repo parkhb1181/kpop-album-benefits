@@ -65,7 +65,9 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .num{white-space:nowrap;text-align:right}
 .ev{font-size:12px;color:var(--acc);margin-top:2px}
 .ben div{margin-bottom:4px}
-.flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
+.flag{color:var(--acc);font-weight:600}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
+   .mut(12px 보조 문구)를 여기 쓰다가 특전 없음만 14px로 커 보였다. */
+.none{color:var(--mut);font-size:inherit}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
 .est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap;margin-left:4px}
 /* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
@@ -315,7 +317,8 @@ font-size:11px;line-height:1.2;font-weight:500;color:var(--mut);background:var(-
 .rkm{flex:0 0 100%;font-size:12px;color:var(--mut);margin-top:2px}
 .rkv{flex:0 0 auto;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .rk.part .rkv{font-weight:600;color:var(--mut)}
-.rkv .est{margin-left:4px}
+.rkv{text-align:right}
+.rkv .est{display:block;margin:2px 0 0}
 .soldb{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:700;color:var(--acc);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .comp{margin-top:12px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
@@ -465,11 +468,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015277" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015277" target="_blank" rel="noopener" title="5/8 대면 팬사인회">5/8 대면 팬사인회</a><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014793" target="_blank" rel="noopener" title="기본">기본</a></div></td>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=62F9F9F2F162F0259B843C0E55C2CC96" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=62F9F9F2F162F0259B843C0E55C2CC96" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></td>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=BC2C3F62184F128A2859832631D34A47" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=BC2C3F62184F128A2859832631D34A47" target="_blank" rel="noopener" title="특전증정/랜덤">특전증정/랜덤</a></div></td>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원</td>
@@ -477,7 +480,7 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3400058" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></td>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[BRIDGE ver. / STREET ver. / STUDIO ver. 3종 중 랜덤1종]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[BRIDGE ver. / STREET ver. / STUDIO ver. 3종 중 랜덤1종]</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="기본｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
@@ -501,7 +504,7 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014792" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">59,400원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="1"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>Weverse Albums ver. <span class="pk">개별</span> <span class="ok">6개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -514,7 +517,7 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=389002450" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a></td>
 <td class="num" data-label="가격">12,500원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
-<td class="ben" data-label="특전"><span class="mut">증정 종료</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">증정 종료</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://kr.ktown4u.com/iteminfo?goods_no=159669" target="_blank" rel="noopener"><span class="rlg rl0" aria-hidden="true"></span>Ktown4u</a></td>
 <td class="num" data-label="가격">12,500원</td>
 <td class="num" data-label="배송">3,000원</td>
@@ -526,11 +529,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015276" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015276" target="_blank" rel="noopener" title="5/8 대면 팬사인회">5/8 대면 팬사인회</a><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014791" target="_blank" rel="noopener" title="기본">기본</a></div></td>
 <td class="num" data-label="가격">12,500원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=9F3394D44EB8BA738DAD8945782CBA34" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=9F3394D44EB8BA738DAD8945782CBA34" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></td>
 <td class="num" data-label="가격">12,500원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
@@ -542,7 +545,7 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=389002487" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=389002487" target="_blank" rel="noopener" title="SET">SET</a></div></td>
 <td class="num" data-label="가격">50,000원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
-<td class="ben" data-label="특전"><span class="mut">증정 종료</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">증정 종료</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.sound-wave.co.kr/product/cortis코르티스-the-2nd-ep-greengreen-weverse-albums-ver-4종-세트/25430/category/44/display/1/" target="_blank" rel="noopener"><span class="rlg rl2" aria-hidden="true"></span>사운드웨이브</a></td>
 <td class="num" data-label="가격">50,000원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
@@ -550,7 +553,7 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014790" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">50,000원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details></div></div>
 <div class="vp" data-p="2"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Dice ver. <span class="pk">개별</span> <span class="ok">6개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="dice｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -571,15 +574,15 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014788" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=4F358A8DCB54AF89E785B40B38845CE8" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3400060" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[패키지+이너 박스+다이스+스티커 세트+스크래치 카드+포토카드 세트&amp;슬리브+종이접기+미니CD&amp;슬리브]</pre></details></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[패키지+이너 박스+다이스+스티커 세트+스크래치 카드+포토카드 세트&amp;슬리브+종이접기+미니CD&amp;슬리브]</pre></details></div></div>
 <div class="vp" data-p="3"><div class="psw"><button type="button" class="pb on" data-k="0">세트</button><button type="button" class="pb" data-k="1">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball ver. <span class="pk">세트</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="cortisball｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -600,7 +603,7 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015615" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">77,100원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400866841" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400866841" target="_blank" rel="noopener" title="세트">세트</a></div></td>
 <td class="num" data-label="가격">118,800원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
@@ -608,11 +611,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=D610B7A7208245373D255AAB14052C69" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=D610B7A7208245373D255AAB14052C69" target="_blank" rel="noopener" title="세트">세트</a></div></td>
 <td class="num" data-label="가격">118,800원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017224" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017224" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">118,800원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>CORTIS Ball ver. <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>CORTIS Ball ver. <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="cortisball｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
@@ -632,11 +635,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015616" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">25,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=A7A7B1A583C055F4604E4AD888A5FBCF" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=A7A7B1A583C055F4604E4AD888A5FBCF" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></td>
 <td class="num" data-label="가격">25,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="4"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>&#39;Blue Lips&#39; Lip Balm ver. <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="bluelipslipbalm｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -657,11 +660,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015886" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=B32AC1CA8B7248AC5EF6DE2664DDE0DE" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="5"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Vinyl <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="vinyl｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -678,15 +681,15 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014789" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></td>
 <td class="num" data-label="가격">38,900원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=154D110C0B686744B90DB1BD829B0D14" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">38,900원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3400061" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></td>
 <td class="num" data-label="가격">38,900원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[변심반품불가][게이트폴드+이너 슬리브+북클릿+포토카드 세트&amp;슬리브+바이닐 45RPM]</pre></details></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div><details class="comp"><summary>구성품 보기</summary><pre>[변심반품불가][게이트폴드+이너 슬리브+북클릿+포토카드 세트&amp;슬리브+바이닐 45RPM]</pre></details></div></div>
 <div class="vp" data-p="6"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby Pink ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabypink｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -699,11 +702,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017223" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017223" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=8412CFD6A96C23B0C4A23AD27D15FBA3" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="7"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby White ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabywhite｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -716,11 +719,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017220" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017220" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=341E878FEC346FA1415163EECA281F24" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="8"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby Blue ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabyblue｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -733,11 +736,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017222" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017222" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=4955F45633742A0A086F1F41348C3A64" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="9"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby Yellow ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabyyellow｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -750,11 +753,11 @@ tick();setInterval(tick,1000);
 <td class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017221" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017221" target="_blank" rel="noopener" title="예약">예약</a></div></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr><tr>
 <td class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=4784199DDB61A46FC0808964566853E0" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></td>
 <td class="num" data-label="가격">29,700원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="mut">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="none">특전 미표기</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="10"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>LP <span class="pk">개별</span> <span class="one">1곳만</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="lp｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -963,4 +966,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:39:48</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. AM 12:49:19</b></p></body></html>
