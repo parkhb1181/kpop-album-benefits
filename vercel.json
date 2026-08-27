@@ -6,15 +6,18 @@
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/googlef12562bf76a21100.html", "destination": "/gsc-verify" }
-  ],
   "headers": [
     {
       "source": "/(.*).ics",
       "headers": [
-        { "key": "Content-Type", "value": "text/calendar; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, must-revalidate" }
+        {
+          "key": "Content-Type",
+          "value": "text/calendar; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=3600, must-revalidate"
+        }
       ]
     }
   ]
