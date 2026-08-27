@@ -6,6 +6,11 @@ on:
     - cron: '0 1,10 * * *'   # KST 10:00 / 19:00
   workflow_dispatch:
 
+# watch.yml과 같은 그룹. 둘이 동시에 out/을 커밋해 충돌하는 걸 막는다.
+concurrency:
+  group: site-build
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

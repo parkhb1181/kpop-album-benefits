@@ -1,0 +1,84 @@
+name: watch
+
+# 전체 빌드는 판매처 5곳을 다 긁어 오래 걸린다. 그래서 하루 두 번(rebuild.yml)뿐이고,
+# 그 주기로는 예판이 열려도 최대 12시간 뒤에 안다.
+#
+# 이 워크플로는 "뭔가 새로 떴는가"만 싸게 확인하고, 떴을 때만 전체 빌드를 부른다.
+#
+# ⚠ 주기를 더 당기려면 요금을 봐야 한다. Actions는 실행 시간을 분 단위로 올림 청구하고
+#   비공개 저장소 무료 한도는 월 2,000분이다. 감시는 3초로 끝나도 1분으로 청구된다.
+#       30분 주기 → 월 1,440분   (여기에 rebuild 2회/일이 더 붙는다)
+#       15분 주기 → 월 2,880분   ← 한도 초과
+#   저장소를 공개로 바꾸면 Actions가 무제한이라 이 제약이 사라진다.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: '위버스샵 158팀 스캔까지 강제로 수행'
+        type: boolean
+        default: false
+
+# rebuild.yml과 같은 그룹. 둘이 동시에 out/을 커밋해 충돌하는 걸 막는다.
+concurrency:
+  group: site-build
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      SITE_URL: ${{ vars.SITE_URL }}
+      # 위버스샵 스캔(요청 158건)은 이 간격으로만 한다. 나머지 회차는 메이크스타 1건뿐.
+      DEEP_INTERVAL_MIN: '180'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install deps
+        run: npm ci || npm i
+
+      - id: watch
+        name: Watch
+        run: node watch.mjs ${{ inputs.deep && '--deep' || '' }}
+
+      # 변화가 없어도 state는 갱신된다(lastDeep 등). 조용히 커밋해 둔다.
+      #
+      # reason은 긁어온 상품명이다 — 남이 쓴 문자열을 ${{ }}로 셸 명령에 직접 끼워넣으면
+      # 백틱·$(...)가 그대로 실행된다. env로 넘겨야 셸이 값으로만 다룬다.
+      - name: Commit state
+        env:
+          REASON: ${{ steps.watch.outputs.reason }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          git diff --staged --quiet || git commit -m "watch: $REASON"
+
+      # 여기부터는 새 예판·새 이벤트가 실제로 있을 때만 돈다.
+      - name: Install Chromium
+        if: steps.watch.outputs.changed == 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Rebuild
+        if: steps.watch.outputs.changed == 'true'
+        run: node build.mjs
+
+      - name: Commit site
+        if: steps.watch.outputs.changed == 'true'
+        env:
+          REASON: ${{ steps.watch.outputs.reason }}
+        run: |
+          git add out
+          git diff --staged --quiet || git commit -m "rebuild(watch): $REASON"
+
+      - name: Push
+        run: git push

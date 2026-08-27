@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. AM 11:11:13",
+  "stamp": "2026. 8. 27. AM 11:14:26",
   "albums": [
     {
       "artistId": 10,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-27T19:00:00+09:00",
-        "rough": "7시간 48분"
+        "rough": "7시간 45분"
       },
       "rowCount": 44,
       "artistKo": "엔하이픈",
@@ -124,7 +124,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-27T19:00:00+09:00",
-        "rough": "7시간 48분"
+        "rough": "7시간 45분"
       },
       "rowCount": 41,
       "artistKo": "튜이드",
@@ -150,7 +150,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T07:00:00+09:00",
-        "rough": "19시간 45분"
+        "rough": "19시간 42분"
       },
       "rowCount": 27,
       "artistKo": "연준",
