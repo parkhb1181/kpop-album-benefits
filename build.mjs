@@ -14,6 +14,7 @@ import * as ap from './src/applemusic.mjs';
 import * as mks from './src/makestar.mjs';
 import { collectDeadlines, roughLeft } from './src/deadlines.mjs';
 import { calendar } from './src/ics.mjs';
+import { fetchApproved, byAlbum } from './src/reports.mjs';
 import { SW_JS } from './src/sw.mjs';
 import { close as closeBrowser, isDisabled } from './src/browser.mjs';
 
@@ -264,6 +265,10 @@ const cardDate = shortStamp(stamp).replace(/-0?/g, '.');
 
 // 사이트 전체 마감을 모은 캘린더. 구독하면 리빌드마다 알아서 갱신된다.
 const allAlarms = [];
+
+// 승인된 특전 제보. 실패해도 빌드를 세우지 않는다 — 제보는 덤이다.
+const reportsBy = byAlbum(await fetchApproved(SITE_URL));
+if (reportsBy.size) console.log(`승인된 제보 ${[...reportsBy.values()].flat().length}건 (앨범 ${reportsBy.size}개)`);
 
 /** 특정 앨범만 빌드했는가 (`node build.mjs TAEMIN`, `--max=5`) */
 const PARTIAL = Boolean(ONLY || MAX);

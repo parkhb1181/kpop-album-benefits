@@ -60,6 +60,9 @@ a:hover{border-bottom-color:currentColor}
 .gal figure{margin:0;flex:0 0 190px}
 /* 구성품 시트는 치수·랜덤 확률이 글씨로 적혀 있다. 190px에선 안 읽힌다. */
 .gal figure.wide{flex:0 0 300px}
+.rep{margin:2px 0 12px;font-size:12.5px}
+.rep a{font-weight:600}
+.rep .mut{margin-left:6px}
 .gal figcaption{font-size:12px;font-weight:700;margin-bottom:8px}
 .gal img{width:100%;border:0;border-radius:0;display:block;background:var(--card)}
 .gal p{font-size:12px;color:var(--mut);margin:8px 0 0;line-height:1.5}
@@ -432,6 +435,58 @@ const FAVICON = `<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(
     '<rect x="7" y="6" width="8" height="12" fill="#1a1a1a"/></svg>'
 )}">`;
 
+/**
+ * 특전 실물 제보.
+ *
+ * 판매처 대부분이 특전을 발매 전까지 공개하지 않는다(문구 83건 중 44건이 "미공개").
+ * 그래서 실물을 볼 방법은 받아본 팬이 올려주는 것밖에 없다.
+ *
+ * 받는 건 사진 1장과 어느 버전인지뿐이다. **이름도 연락처도 안 받는다** —
+ * 사진 붙일 자리만 알면 되는데 개인정보를 받으면 지켜야 할 것만 늘어난다.
+ *
+ * 올린 즉시 안 나온다는 걸 화면에 적는다. 바로 안 보이면 실패한 줄 알고 다시 올리게 되고,
+ * 그러면 검수 대기열이 같은 사진으로 막힌다.
+ *
+ * 브라우저에서 미리 줄여 보낸다 — 요즘 폰 사진은 한 장에 5MB가 넘어서
+ * 그대로 올리면 상당수가 용량 제한에 걸린다.
+ */
+const reportJs = (slug) => `<script>
+(function(){
+var S=${JSON.stringify(slug)};
+document.querySelectorAll('[data-report]').forEach(function(btn){
+btn.addEventListener('click',function(e){
+e.preventDefault();
+var key=btn.getAttribute('data-report')||'';
+var msg=btn.parentElement.querySelector('.rmsg');
+function say(t){if(msg)msg.textContent=' '+t}
+var inp=document.createElement('input');
+inp.type='file';inp.accept='image/jpeg,image/png,image/webp';
+inp.addEventListener('change',function(){
+var f=inp.files&&inp.files[0];if(!f)return;
+say('줄이는 중…');
+var img=new Image(),fr=new FileReader();
+fr.onload=function(){img.src=fr.result};
+img.onload=function(){
+var max=1400,sc=Math.min(1,max/Math.max(img.width,img.height));
+var c=document.createElement('canvas');
+c.width=Math.round(img.width*sc);c.height=Math.round(img.height*sc);
+c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+say('보내는 중…');
+fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
+body:JSON.stringify({slug:S,versionKey:key,image:c.toDataURL('image/jpeg',0.82)})})
+.then(function(r){return r.json()})
+.then(function(d){say(d.ok?'보냈습니다. 확인 후 올라갑니다':(d.error||'실패했습니다'))})
+.catch(function(){say('실패했습니다')});
+};
+img.onerror=function(){say('이미지를 읽지 못했습니다')};
+fr.readAsDataURL(f);
+});
+inp.click();
+});
+});
+})();
+</script>`;
+
 const shell = (title, body, meta = {}) => {
   const { jsonLd, siteUrl, ...rest } = meta;
   // JSON-LD는 </script>만 escape하면 된다. 나머지는 JSON이 알아서 안전하다.
@@ -679,6 +734,7 @@ export function renderAlbum({
   events,
   eventTotal,
   deadlines,
+  reports,
   siteUrl,
   slug,
   artistKo,
@@ -727,6 +783,19 @@ export function renderAlbum({
         items.map((i) => urlOf((i.images || []).find((x) => urlOf(x) !== i.benefitImage))).find(Boolean);
       if (compShot) shots.push({ url: compShot, cap: '구성품', note: '판매처 공통 — 특전이 아닙니다', wide: true });
 
+      // 팬이 보내준 실물 사진. 판매처가 공개하지 않는 특전은 이것 말고는 볼 방법이 없다.
+      // 사람이 승인한 것만 여기까지 온다 (api/review.js).
+      for (const rp of reports || []) {
+        // 제보에 버전이 적혀 있으면 그 버전에만 붙인다. 안 적혀 있으면 전 버전에 보여준다 —
+        // 어느 버전인지 몰라도 "이 앨범 특전이 이렇게 생겼다"는 정보는 남는다.
+        if (rp.versionKey && rp.versionKey !== key) continue;
+        shots.push({
+          url: rp.url,
+          cap: rp.retailer ? `${rp.retailer} 실물` : '실물 제보',
+          note: '팬 제보',
+        });
+      }
+
       const gal = shots.length
         ? `<div class="gal">${shots
             .map(
@@ -766,7 +835,7 @@ ${s.note ? `<p>${esc(s.note)}</p>` : ''}</figure>`
         anySold ? ' <span class="soldb">일부 품절</span>' : ''
       }</h2>
 <h3>${esc(shops)} 특전 비교</h3>
-${gal}<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody>${tr}</tbody></table></div>${compHtml}`;
+${gal}<p class="rep"><a href="#" data-report="${esc(key)}" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody>${tr}</tbody></table></div>${compHtml}`;
     })
     .join('\n');
 
@@ -844,6 +913,7 @@ ${expiredBanner(expired, target)}
       soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
     }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
 ${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`)}
+${reportJs(slug)}
 ${eventsHtml(events, eventTotal)}
 ${optHtml}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
