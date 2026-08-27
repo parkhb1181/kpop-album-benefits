@@ -67,6 +67,9 @@ a:hover{border-bottom-color:currentColor}
 .gal figure{margin:0;flex:0 0 190px}
 /* 구성품 시트는 치수·랜덤 확률이 글씨로 적혀 있다. 190px에선 안 읽힌다. */
 .gal figure.wide{flex:0 0 300px}
+.rep{margin:2px 0 12px;font-size:12.5px}
+.rep a{font-weight:600}
+.rep .mut{margin-left:6px}
 .gal figcaption{font-size:12px;font-weight:700;margin-bottom:8px}
 .gal img{width:100%;border:0;border-radius:0;display:block;background:var(--card)}
 .gal p{font-size:12px;color:var(--mut);margin:8px 0 0;line-height:1.5}
@@ -219,6 +222,42 @@ h1{font-size:20px}
 <div class="stamp">버전별 구성 · 가격 · 판매처별 예약판매 특전</div>
 <div class="sum">수집 <b>12</b>개 상품 · 버전 <b>6</b>종 · <b>5</b>종은 2개 이상 판매처에서 비교 가능 · <b class="sold">2개 품절</b></div>
 
+<script>
+(function(){
+var S="evan-death-of-me-weverse-exclusive";
+document.querySelectorAll('[data-report]').forEach(function(btn){
+btn.addEventListener('click',function(e){
+e.preventDefault();
+var key=btn.getAttribute('data-report')||'';
+var msg=btn.parentElement.querySelector('.rmsg');
+function say(t){if(msg)msg.textContent=' '+t}
+var inp=document.createElement('input');
+inp.type='file';inp.accept='image/jpeg,image/png,image/webp';
+inp.addEventListener('change',function(){
+var f=inp.files&&inp.files[0];if(!f)return;
+say('줄이는 중…');
+var img=new Image(),fr=new FileReader();
+fr.onload=function(){img.src=fr.result};
+img.onload=function(){
+var max=1400,sc=Math.min(1,max/Math.max(img.width,img.height));
+var c=document.createElement('canvas');
+c.width=Math.round(img.width*sc);c.height=Math.round(img.height*sc);
+c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+say('보내는 중…');
+fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
+body:JSON.stringify({slug:S,versionKey:key,image:c.toDataURL('image/jpeg',0.82)})})
+.then(function(r){return r.json()})
+.then(function(d){say(d.ok?'보냈습니다. 확인 후 올라갑니다':(d.error||'실패했습니다'))})
+.catch(function(){say('실패했습니다')});
+};
+img.onerror=function(){say('이미지를 읽지 못했습니다')};
+fr.readAsDataURL(f);
+});
+inp.click();
+});
+});
+})();
+</script>
 <h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
 <p class="mut" style="font-size:13.5px">진행 중인 메이크스타 이벤트에 <b>이 앨범 건은 없습니다.</b></p>
 <div class="pol">메이크스타 진행 중 이벤트 21건을 전부 대조합니다.
@@ -246,7 +285,7 @@ Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 �
 <h3>Ktown4u · 알라딘 특전 비교</h3>
 <div class="gal"><figure class="wide"><figcaption>구성품</figcaption>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="구성품" loading="lazy"></a>
-<p>판매처 공통 — 특전이 아닙니다</p></figure></div><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/RYTvEt.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
+<p>판매처 공통 — 특전이 아닙니다</p></figure></div><p class="rep"><a href="#" data-report="기본｜세트" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/RYTvEt.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
 <td class="rt" data-label="판매처">Ktown4u</td>
 <td data-label="상품"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167964" target="_blank" rel="noopener">[2CD 세트상품] 에반 (EVAN) - 미니앨범 1집 [DEATH OF ME]</a></td>
 <td class="num" data-label="가격">41,600원</td>
@@ -272,7 +311,7 @@ Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 �
 <h3>Ktown4u · 알라딘 특전 비교</h3>
 <div class="gal"><figure class="wide"><figcaption>구성품</figcaption>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/z7r56A.jpg" alt="구성품" loading="lazy"></a>
-<p>판매처 공통 — 특전이 아닙니다</p></figure></div><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
+<p>판매처 공통 — 특전이 아닙니다</p></figure></div><p class="rep"><a href="#" data-report="기본｜개별" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
 <td class="rt" data-label="판매처">Ktown4u</td>
 <td data-label="상품"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167961" target="_blank" rel="noopener">에반 (EVAN) - 미니앨범 1집 [DEATH OF ME] (Random Ver.)</a></td>
 <td class="num" data-label="가격">20,800원</td>
@@ -291,7 +330,7 @@ Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 �
 <h3>Ktown4u · 알라딘 특전 비교</h3>
 <div class="gal"><figure class="wide"><figcaption>구성품</figcaption>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="구성품" loading="lazy"></a>
-<p>판매처 공통 — 특전이 아닙니다</p></figure></div><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/DuctCR.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
+<p>판매처 공통 — 특전이 아닙니다</p></figure></div><p class="rep"><a href="#" data-report="bandana｜개별" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/DuctCR.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
 <td class="rt" data-label="판매처">Ktown4u</td>
 <td data-label="상품"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167965" target="_blank" rel="noopener">에반 (EVAN) - 미니앨범 1집 [DEATH OF ME] (BANDANA Ver.) (Random Ver.)</a></td>
 <td class="num" data-label="가격">27,800원</td>
@@ -310,7 +349,7 @@ Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 �
 <h3>Ktown4u · 알라딘 특전 비교</h3>
 <div class="gal"><figure class="wide"><figcaption>구성품</figcaption>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/SgADgT.jpg" alt="구성품" loading="lazy"></a>
-<p>판매처 공통 — 특전이 아닙니다</p></figure></div><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/eQZzTg.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
+<p>판매처 공통 — 특전이 아닙니다</p></figure></div><p class="rep"><a href="#" data-report="bandana｜세트" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/eQZzTg.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
 <td class="rt" data-label="판매처">Ktown4u</td>
 <td data-label="상품"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167968" target="_blank" rel="noopener">[2CD 세트상품] 에반 (EVAN) - 미니앨범 1집 [DEATH OF ME] (BANDANA Ver.)</a></td>
 <td class="num" data-label="가격">55,600원</td>
@@ -329,7 +368,7 @@ Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 �
 <h3>Ktown4u · 알라딘 특전 비교</h3>
 <div class="gal"><figure class="wide"><figcaption>구성품</figcaption>
 <a href="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/08/10/2Sua3c.jpg" alt="구성품" loading="lazy"></a>
-<p>판매처 공통 — 특전이 아닙니다</p></figure></div><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ecMW9t.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
+<p>판매처 공통 — 특전이 아닙니다</p></figure></div><p class="rep"><a href="#" data-report="weversealbums｜개별" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ecMW9t.jpg" alt="Ktown4u DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
 <td class="rt" data-label="판매처">Ktown4u</td>
 <td data-label="상품"><a href="https://kr.ktown4u.com/iteminfo?goods_no=167969" target="_blank" rel="noopener">에반 (EVAN) - 미니앨범 1집 [DEATH OF ME] (Weverse Albums ver.)</a></td>
 <td class="num" data-label="가격">11,300원</td>
@@ -346,7 +385,7 @@ Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 �
 <td class="num" data-label="판매량">—</td></tr></tbody></table></div>
 <h2>일반반weversealbums <span class="pk">세트</span> <span class="one">1곳만</span></h2>
 <h3>알라딘 특전 비교</h3>
-<div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://image.aladin.co.kr/product/40013/89/cover150/c992939830_1.jpg" alt="알라딘 DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
+<p class="rep"><a href="#" data-report="일반반weversealbums｜세트" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody><tr><td class="th"><img src="https://image.aladin.co.kr/product/40013/89/cover150/c992939830_1.jpg" alt="알라딘 DEATH OF ME (Weverse Exclusive)" loading="lazy"></td>
 <td class="rt" data-label="판매처">알라딘</td>
 <td data-label="상품"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400138992" target="_blank" rel="noopener">[세트] 에반 - 미니 1집 DEATH OF ME (일반반 2종 세트+Weverse Albums Ver.)</a></td>
 <td class="num" data-label="가격">52,900원</td>
