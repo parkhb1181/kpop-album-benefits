@@ -58,7 +58,9 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .num{white-space:nowrap;text-align:right}
 .ev{font-size:12px;color:var(--acc);margin-top:2px}
 .ben div{margin-bottom:4px}
-.flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
+.flag{color:var(--acc);font-weight:600}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
+   .mut(12px 보조 문구)를 여기 쓰다가 특전 없음만 14px로 커 보였다. */
+.none{color:var(--mut);font-size:inherit}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
 .est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap;margin-left:4px}
 /* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
@@ -308,7 +310,8 @@ font-size:11px;line-height:1.2;font-weight:500;color:var(--mut);background:var(-
 .rkm{flex:0 0 100%;font-size:12px;color:var(--mut);margin-top:2px}
 .rkv{flex:0 0 auto;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .rk.part .rkv{font-weight:600;color:var(--mut)}
-.rkv .est{margin-left:4px}
+.rkv{text-align:right}
+.rkv .est{display:block;margin:2px 0 0}
 .soldb{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:700;color:var(--acc);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .comp{margin-top:12px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
@@ -743,12 +746,12 @@ const fn = (k) => (FN_NO[k] ? `<sup class="fnr"><a href="#fn-${FN_NO[k]}" id="fn
 const STATUS = {
   has: null, // 내용을 표시
   none: `<span class="none">특전 없음</span>`,
-  ended: `<span class="mut">증정 종료</span>`,
+  ended: `<span class="none">증정 종료</span>`,
   secret: `<span class="flag">특전 있음 · 구성 비공개</span>`,
   // 판매처가 상품명에 특전을 달아뒀지만(뮤직플랜트 [특전증정/…], 애플뮤직 [애플특전])
   // 내용은 못 읽은 경우. "특전 없음"과 절대 섞으면 안 된다 — 정반대 정보다.
   listed: `<span class="flag">특전 있음 · 상품명에만 표기</span>`,
-  unknown: `<span class="mut">특전 미표기</span>`,
+  unknown: `<span class="none">특전 미표기</span>`,
 };
 
 /** 본문에서 실제로 쓰인 각주만 하단에 낸다. 안 쓴 각주를 다 늘어놓으면 그건 안내문이지 각주가 아니다. */
