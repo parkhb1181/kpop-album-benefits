@@ -2,6 +2,80 @@ export const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36';
 
 /**
+ * "느린 것"과 "닿지 않는 것"을 가른다.
+ *
+ * undici는 connect 타임아웃(기본 10초)을 우리 AbortSignal(15초)보다 **먼저** 터뜨린다.
+ * 그때 던지는 건 `TypeError: fetch failed`이고, 진짜 원인은 `e.cause`에 들어 있다:
+ *
+ *   e.name        = TypeError            ← 여기만 보면 절대 못 찾는다
+ *   e.cause.name  = ConnectTimeoutError
+ *   e.cause.code  = UND_ERR_CONNECT_TIMEOUT
+ *
+ * 그래서 `e.name === 'TimeoutError'`만 보던 가드가 안 걸렸고, "무응답은 재시도해도
+ * 무응답"이라는 바로 아래 규칙과 **정반대로** 3회를 다 썼다.
+ * 실측(블랙홀 IP): 한 건이 11.3초가 아니라 **35.7초**를 먹었다 — 3회 × 11.3 + 백오프 3.6.
+ * 러너에서 뮤직플랜트가 앨범당 105초(35초 × 질의 3회)였던 게 이것이다.
+ */
+const UNREACHABLE = new Set([
+  'TimeoutError', // AbortSignal.timeout
+  'ConnectTimeoutError', // undici — SYN 무응답
+  'HeadersTimeoutError',
+  'BodyTimeoutError',
+  'UND_ERR_CONNECT_TIMEOUT',
+  'UND_ERR_HEADERS_TIMEOUT',
+  'UND_ERR_BODY_TIMEOUT',
+  'ETIMEDOUT',
+]);
+
+/** 에러 자신과 cause를 모두 본다 — fetch는 진짜 원인을 cause에 숨긴다 */
+function unreachable(e) {
+  for (const x of [e, e?.cause]) {
+    if (x && (UNREACHABLE.has(x.name) || UNREACHABLE.has(x.code))) return true;
+  }
+  return false;
+}
+
+/**
+ * 호스트별 회로 차단기.
+ *
+ * 닿지 않는 호스트에 계속 묻는 건 **비용이 앨범 수만큼 곱해진다.** 게다가
+ * 되먹임이 있다 — 막히면 결과가 0건이 되고, 0건이면 build.mjs의 searchWide가
+ * 폴백 질의를 전부 돌려 앨범당 질의가 1~2회에서 3~7회로 뛴다.
+ * 13앨범이면 죽은 몰 하나에 39~91번을 두드리게 되고, 그게 20분 타임아웃이었다.
+ *
+ * 그래서 연속 3회 연결 실패면 이 빌드 동안 그 호스트를 포기한다.
+ * 3회로 잡은 이유 — 앨범 하나가 쓰는 질의 수와 같아서, 한 앨범치 증거는 보고 판단한다.
+ * 한 번이라도 응답이 오면 초기화한다 (일시적 흔들림으로 몰을 통째로 버리지 않기 위해).
+ *
+ * **연속 회수만으로는 부족하다.** 실측에서 이 지연은 상시가 아니라 간헐적이었다
+ * (같은 코드로 8분 21초와 27분 43초가 갈렸다). 드문드문 성공하면 연속 카운터가
+ * 계속 초기화돼 차단기가 영영 안 걸리고, 앨범마다 30초씩 다시 쌓인다.
+ * 그래서 **누적 낭비 시간**에도 상한을 둔다 — 한 호스트가 이 빌드에서 연결 대기로
+ * 60초를 태웠으면, 그게 몰려 있든 흩어져 있든 포기한다. 막으려는 건 총 소요 시간이다.
+ *
+ * **차단은 조용히 하지 않는다.** 호출자가 hostReport()로 읽어 로그와 화면에 남긴다 —
+ * "못 긁은 것"이 "안 파는 것"으로 보이면 안 된다.
+ */
+const DEAD_AFTER = 3;
+const DEAD_BUDGET_MS = 60000;
+const _fails = new Map();
+const _wasted = new Map();
+const _dead = new Map();
+
+const hostOf = (url) => {
+  try {
+    return new URL(url).host;
+  } catch {
+    return String(url);
+  }
+};
+
+/** 이 빌드에서 포기한 호스트 목록 (건너뛴 요청 수와 함께) */
+export function hostReport() {
+  return [..._dead.entries()].map(([host, skipped]) => ({ host, skipped }));
+}
+
+/**
  * @param {string} url
  * @param {{encoding?: string}} [opt] YES24 등 일부 국내몰은 EUC-KR이라 명시가 필요하다
  */
@@ -15,11 +89,20 @@ export async function getText(url, opt = {}) {
    * 거절(4xx/5xx)은 처리했는데 무응답은 처리하지 않았던 것이다.
    */
   const timeout = opt.timeout ?? 15000;
+  const host = hostOf(url);
 
+  // 이미 포기한 호스트면 즉시 끝낸다. 이게 없으면 죽은 몰 하나가 빌드 전체를 곱한다.
+  if (_dead.has(host)) {
+    _dead.set(host, _dead.get(host) + 1);
+    throw new Error(`연결 불가로 건너뜀 (연속 ${DEAD_AFTER}회 실패) — ${host}`);
+  }
+
+  const ATTEMPTS = 3;
+  const started = Date.now();
   // 알라딘이 연속 요청에 503을 준다. 짧게 물러섰다 다시 시도한다.
   let res = null;
   let lastErr = null;
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
     try {
       res = await fetch(url, {
         headers: { 'user-agent': UA, 'accept-language': 'ko-KR,ko;q=0.9,en;q=0.8' },
@@ -30,18 +113,32 @@ export async function getText(url, opt = {}) {
     } catch (e) {
       lastErr = e;
       res = null;
-      // 무응답은 재시도해도 대개 또 무응답이다. 3회를 다 쓰면 요청 하나가 45초를
+      // 무응답은 재시도해도 대개 또 무응답이다. 3회를 다 쓰면 요청 하나가 35초를
       // 잡아먹는다 — 재시도는 429·503처럼 "지금은 바쁘다"는 신호에만 쓴다.
-      if (e.name === 'TimeoutError') break;
+      // cause까지 봐야 한다. 위 UNREACHABLE 주석 참고.
+      if (unreachable(e)) break;
     }
     if (res && (res.ok || ![429, 503, 502].includes(res.status))) break;
-    await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
+    // 마지막 시도 뒤에는 물러설 이유가 없다 — 그냥 버리는 시간이었다
+    if (attempt < ATTEMPTS - 1) await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
   }
 
   if (lastErr) {
-    const why = lastErr.name === 'TimeoutError' ? `무응답 ${timeout}ms` : lastErr.message;
-    throw new Error(`${why} — ${url}`);
+    if (unreachable(lastErr)) {
+      const n = (_fails.get(host) || 0) + 1;
+      const w = (_wasted.get(host) || 0) + (Date.now() - started);
+      _fails.set(host, n);
+      _wasted.set(host, w);
+      if (n >= DEAD_AFTER || w >= DEAD_BUDGET_MS) _dead.set(host, 0);
+    } else {
+      _fails.set(host, 0);
+    }
+    // 원인을 cause에서 꺼내 적는다. "fetch failed"만 남으면 다음 사람이 또 못 찾는다.
+    const why = lastErr.cause?.name || lastErr.name;
+    throw new Error(`${why}: ${lastErr.cause?.message || lastErr.message} — ${url}`);
   }
+  // 응답이 왔으면 그 호스트는 살아 있다 — 일시적 흔들림으로 몰을 버리지 않는다
+  _fails.set(host, 0);
   if (!res.ok) throw new Error(`${res.status} ${url}`);
 
   // 응답 헤더에 charset이 있으면 그것을 우선한다

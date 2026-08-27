@@ -1,5 +1,5 @@
 import { writeFileSync, mkdirSync, rmSync, readFileSync, existsSync, readdirSync } from 'node:fs';
-import { matchesAlbum, matchesAlbumLoose } from './src/fetchx.mjs';
+import { matchesAlbum, matchesAlbumLoose, hostReport } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
 import { sitemap, robots, koreanArtistFrom, displayArtist, abs } from './src/seo.mjs';
@@ -76,31 +76,52 @@ function nameVariants(artistEn) {
  * 한국어 정식 제목(`끝내주는 인생`)을 써서, 제목으로는 영영 못 만나는 경우가 있다.
  */
 async function searchWide(fn, t, token, limit = 25) {
-  for (const q of [...nameVariants(t.artistEn).map((n) => `${n} ${t.album}`), t.album]) {
+  /**
+   * **"결과가 0건"과 "질의가 전부 실패"는 다른 사실이다.**
+   *
+   * 예전엔 둘 다 []를 돌려줬다. 그래서 뮤직플랜트가 러너에서 막혔을 때 그 판매처가
+   * 페이지에서 조용히 사라졌고, 화면상으로는 "이 앨범을 안 판다"와 구별되지 않았다.
+   * 한 번이라도 응답을 받았으면 0건은 0건이고, 한 번도 못 받았으면 그건 실패다.
+   */
+  let answered = false;
+  let lastErr = null;
+  const ask = async (q) => {
     try {
       const all = await fn(q);
-      // 낱말 경계를 지키는 쪽을 먼저 쓴다. 그게 0건일 때만 헐거운 비교로 되돌린다 —
-      // 판매처가 앨범명을 붙여 쓰면 엄격한 쪽이 통째로 0건을 내기 때문이다.
-      const r = all.filter((x) => matchesAlbum(x.title, token));
-      if (r.length) return r.slice(0, limit);
-      const loose = all.filter((x) => matchesAlbumLoose(x.title, token));
-      if (loose.length) return loose.slice(0, limit);
-    } catch {}
+      answered = true;
+      return all;
+    } catch (e) {
+      lastErr = e;
+      return null;
+    }
+  };
+
+  for (const q of [...nameVariants(t.artistEn).map((n) => `${n} ${t.album}`), t.album]) {
+    const all = await ask(q);
+    if (!all) continue;
+    // 낱말 경계를 지키는 쪽을 먼저 쓴다. 그게 0건일 때만 헐거운 비교로 되돌린다 —
+    // 판매처가 앨범명을 붙여 쓰면 엄격한 쪽이 통째로 0건을 내기 때문이다.
+    const r = all.filter((x) => matchesAlbum(x.title, token));
+    if (r.length) return r.slice(0, limit);
+    const loose = all.filter((x) => matchesAlbumLoose(x.title, token));
+    if (loose.length) return loose.slice(0, limit);
   }
 
-  if (!t.deliveryDate) return [];
-  const target = new Date(t.deliveryDate).getTime();
-  for (const n of nameVariants(t.artistEn)) {
-    try {
-      const all = await fn(n);
+  if (t.deliveryDate) {
+    const target = new Date(t.deliveryDate).getTime();
+    for (const n of nameVariants(t.artistEn)) {
+      const all = await ask(n);
+      if (!all) continue;
       const near = all.filter((x) => {
         if (!x.releaseDate) return false;
         const d = new Date(x.releaseDate.length === 7 ? `${x.releaseDate}-01` : x.releaseDate).getTime();
         return Number.isFinite(d) && Math.abs(d - target) <= 21 * 864e5; // ±3주
       });
       if (near.length) return near.slice(0, limit);
-    } catch {}
+    }
   }
+
+  if (!answered && lastErr) throw lastErr; // 호출자가 errors에 담아 화면에 낸다
   return [];
 }
 
@@ -578,5 +599,10 @@ console.log(
   `  공유 카드: 새로 ${cardStat.written} · 그대로 ${cardStat.skipped}${cardStat.failed ? ` · 실패 ${cardStat.failed}` : ''}` +
     `${SITE_URL ? '' : ' — ⚠ SITE_URL 미설정이라 og:image에는 물리지 않았습니다'}`
 );
+
+// 회로 차단기가 포기한 호스트. 조용히 지나가면 다음 사람이 "그 몰이 원래 안 나온다"고 믿는다.
+for (const { host, skipped } of hostReport()) {
+  console.log(`  ⚠ ${host} — 연결 불가로 이 빌드에서 제외했습니다 (이후 요청 ${skipped}건 건너뜀)`);
+}
 
 await closeBrowser();
