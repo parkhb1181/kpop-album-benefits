@@ -1,14 +1,11 @@
-/**
- * 진단용 — 함수가 실제로 어떤 환경변수를 보는지 이름만 보고한다.
- * 값은 절대 내보내지 않는다. 확인이 끝나면 지운다.
- */
+/** 진단용 — 이름과 배포 환경만 본다. 값은 절대 안 내보낸다. 확인 후 삭제. */
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
   const names = Object.keys(process.env).sort();
   return res.status(200).json({
-    kvLike: names.filter((n) => /^(KV|UPSTASH|REDIS)/i.test(n)),
-    vapidLike: names.filter((n) => /^(VAPID|SITE_URL|CRON)/i.test(n)),
-    total: names.length,
-    node: process.version,
+    vercelEnv: process.env.VERCEL_ENV || null,
+    vercelUrl: process.env.VERCEL_URL || null,
+    target: process.env.VERCEL_TARGET_ENV || null,
+    names,
   });
 }
