@@ -82,6 +82,11 @@ a:hover{border-bottom-color:currentColor}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
 .pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+/* 판매처 상세 이미지는 세로로 아주 길다(위버스샵 1000×6140). 통째로 칸에 넣으면
+   폭이 88px이라 안 읽히고, 지우면 특전 자료의 81%가 날아간다. 칸 안에서 넘겨 본다. */
+.pgm figure.tall a{display:block;height:clamp(340px,58vh,540px);overflow-y:auto;background:var(--card)}
+.pgm figure.tall img{height:auto;object-fit:unset}
+.scr{font-size:11px;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
 .pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
@@ -794,26 +799,6 @@ t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
 w.querySelector('.gnav.n').style.visibility=n>=t.length-1?'hidden':'';
 }
-/* 판매처가 올린 **세로로 아주 긴 안내 배너**는 특전 사진이 아니라 공지문이다.
-   그걸 통째로 옮겨 붙이면 우리 사이트가 남의 공지를 재게시하는 꼴이고,
-   가로로 넓은 갤러리 칸에서는 가운데 도장처럼 찍혀 보기도 나쁘다.
-   비율로만 거른다 — 포토카드는 2:3이라 2.4를 넘지 않는다. */
-function drop(im){
-var f=im.closest('figure');if(!f)return;
-var i=[].slice.call(m.querySelectorAll('figure')).indexOf(f);
-var t=tb();if(t[i])t[i].remove();
-f.remove();
-var n=m.querySelectorAll('figure').length;
-/* 제목의 장수는 서버가 찍은 것이라, 여기서 빼면 숫자가 어긋난다. */
-var hd=w.previousElementSibling;
-if(hd&&hd.tagName==='H2'){var o=hd.querySelector('.one');if(o)o.textContent=n+'장'}
-if(n<2){w.removeAttribute('data-gal');var g=w.querySelector('.pgt');if(g)g.remove()}
-mark();
-}
-[].slice.call(m.querySelectorAll('img')).forEach(function(im){
-function chk(){if(im.naturalWidth&&im.naturalHeight/im.naturalWidth>2.4)drop(im)}
-if(im.complete)chk();else im.addEventListener('load',chk);
-});
 function mk(cls,txt,dir){
 var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
 b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
@@ -1152,23 +1137,29 @@ export function renderAlbum({
        */
       const urlOf = (x) => (typeof x === 'string' ? x : x && x.url) || null;
       /**
-       * 판매처가 올린 **세로로 아주 긴 이미지는 특전 사진이 아니라 공지문**이다.
-       * 실측: 위버스샵 benefitImage가 1000×6140(비율 6.14)짜리 안내문이고, 같은 상품의
-       * 720×1080 사진은 뒤로 밀려 있다. 수집기가 첫 이미지를 집은 탓이다.
-       * 그걸 통째로 실으면 남의 공지를 재게시하는 꼴이라 뺀다.
-       * 포토카드는 2:3이라 2.4에 안 걸린다. 치수를 모르면 통과시킨다(브라우저가 뒤에서 다시 본다).
+       * **세로로 긴 이미지를 지우면 안 된다.** 한 번 그렇게 했다가 되돌렸다.
+       *
+       * 위버스샵 benefitImage(1000×6140)를 열어보니 공지문이 아니라
+       * "증정 상품 — 미공개 셀카 포토카드 5종 중 랜덤 1종" + 실제 포토카드 사진이었다.
+       * 판매처 상세페이지는 원래 세로로 길다. 비율 2.4로 거르면 특전 이미지
+       * 37건 중 30건(81%)이 사라진다 — 판매처가 특전을 공개 안 하는 게 이 사이트의
+       * 존재 이유인데 유일하게 확보한 자료를 지우는 셈이다.
+       *
+       * 문제는 표시 방법이었다. 1:6 이미지를 540px 칸에 통째로 넣으면 폭이 88px이라
+       * 아무것도 안 읽힌다. 그래서 긴 것만 **칸 안에서 위아래로 넘겨 보게** 한다.
        */
       const dim = (i, u) => (i.images || []).find((x) => x && x.url === u) || null;
-      const banner = (d) => !!(d && d.w && d.h && d.h / d.w > 2.4);
+      const isTall = (d) => !!(d && d.w && d.h && d.h / d.w > 2.4);
       const shots = [];
       for (const i of items) {
-        if (i.benefitImage && !banner(dim(i, i.benefitImage)))
-          shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '' });
+        if (i.benefitImage)
+          shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '', tall: isTall(dim(i, i.benefitImage)) });
       }
       // 구성품은 버전당 한 장이면 된다 — 판매처가 달라도 같은 소속사 시트다
-      const usable = (i) => (i.images || []).filter((x) => urlOf(x) && urlOf(x) !== i.benefitImage && !banner(x));
+      const usable = (i) => (i.images || []).filter((x) => urlOf(x) && urlOf(x) !== i.benefitImage);
       const compSrc = items.find((i) => i.retailer === 'Ktown4u' && usable(i).length) || items.find((i) => usable(i).length);
-      const compShot = compSrc ? urlOf(usable(compSrc)[0]) : null;
+      const compPick = compSrc ? usable(compSrc)[0] : null;
+      const compShot = compPick ? urlOf(compPick) : null;
       const compFrom = compSrc ? compSrc.retailer : '';
       /**
        * **"판매처 공통"이라고 쓰면 안 된다.** 검증한 적이 없는 주장이다.
@@ -1177,7 +1168,13 @@ export function renderAlbum({
        * 그래서 **어디서 가져온 것인지**를 적는다. 그게 확인된 사실의 전부다.
        */
       if (compShot)
-        shots.push({ url: compShot, cap: `구성품 (${compFrom})`, note: '판매처 특전이 아닌 앨범 기본 구성품', wide: true });
+        shots.push({
+          url: compShot,
+          cap: `구성품 (${compFrom})`,
+          note: '판매처 특전이 아닌 앨범 기본 구성품',
+          wide: true,
+          tall: isTall(compPick),
+        });
 
       // 팬이 보내준 실물 사진. 판매처가 공개하지 않는 특전은 이것 말고는 볼 방법이 없다.
       // 사람이 승인한 것만 여기까지 온다 (api/review.js).
@@ -1523,9 +1520,11 @@ ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
 <div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
 <div class="pgm">${galShots
         .map(
-          (g, n) => `<figure>
+          (g, n) => `<figure${g.tall ? ' class="tall"' : ''}>
 <a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
-<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
+<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.tall ? ' <b class="scr">위아래로 넘겨 보기</b>' : ''}${
+            g.note ? `<span>${esc(g.note)}</span>` : ''
+          }</figcaption></figure>`
         )
         .join('')}</div>
 ${
