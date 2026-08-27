@@ -1,14 +1,25 @@
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { matchesAlbum } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
+import { sitemap, robots, koreanArtistFrom, displayArtist } from './src/seo.mjs';
 import * as kt from './src/ktown4u.mjs';
 import * as ala from './src/aladin.mjs';
 import * as wev from './src/weverse.mjs';
 import * as sw from './src/soundwave.mjs';
+import * as wm from './src/withmuu.mjs';
+import { close as closeBrowser, isDisabled } from './src/browser.mjs';
 
 const ONLY = process.argv.slice(2).find((a) => !a.startsWith('-')); // 특정 앨범만 빌드
 const MAX = Number((process.argv.find((a) => a.startsWith('--max=')) || '').split('=')[1] || 0);
+
+/**
+ * 배포 도메인. canonical·og:url·sitemap이 절대주소를 요구한다.
+ * 비어 있으면 그 셋을 아예 안 낸다 — 틀린 도메인을 박는 것보다 없는 게 낫다.
+ * 로컬:  SITE_URL= node build.mjs
+ * 배포:  Vercel 환경변수에 SITE_URL=https://도메인
+ */
+const SITE_URL = (process.env.SITE_URL || '').trim().replace(/\/$/, '');
 
 // 앨범 제목에 흔히 붙는 말들. 이걸 매칭 토큰으로 쓰면 남의 앨범까지 통과한다.
 const STOPWORDS =
@@ -125,6 +136,19 @@ async function collectAlbum(t) {
     errors.push(`사운드웨이브: ${e.message}`);
   }
 
+  // 위드뮤 (헤드리스 필요 — playwright가 없으면 조용히 0건)
+  //
+  // 상세는 열지 않는다. 페이지마다 브라우저를 띄워야 하는데 특전 문구가 안 나와서
+  // (실측: benefit 0건) 비용만 들고 얻는 게 없다. 목록에서 가격·재고만 가져온다.
+  try {
+    // 아티스트명으로 한 번만 검색한다 — 브라우저 페이지를 앨범당 1회로 묶기 위해서다
+    const nv = nameVariants(t.artistEn);
+    const list = (await wm.search(nv[0] || t.artistEn)).filter((x) => matchesAlbum(x.title, token)).slice(0, 20);
+    rows.push(...list);
+  } catch (e) {
+    errors.push(`위드뮤: ${e.message}`);
+  }
+
   // 위버스샵
   try {
     rows.push(...(await wev.search(t.artistId, t.album)).filter((x) => matchesAlbum(x.title, token)));
@@ -160,15 +184,61 @@ for (const t of targets) {
   const benefitCount = new Set(rows.filter((r) => (r.benefit || []).length).map((r) => r.retailer)).size;
   const soldCount = rows.filter((r) => r.soldOut === true).length;
 
-  writeFileSync(`./out/album/${slug}.html`, renderAlbum({ target: t, rows, errors, stamp }), 'utf8');
-  index.push({ ...t, slug, versions, retailers, benefitCount, soldCount, rowCount: rows.length });
+  // 위버스샵은 영문명만 준다. 국내 팬은 한글로 검색하므로 국내 판매처 상품명에서 역으로 얻는다.
+  const artistKo = koreanArtistFrom(
+    rows.filter((r) => /알라딘|사운드웨이브|예스24/.test(r.retailer || '')).map((r) => r.title)
+  );
+  const ogImage = rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
+
+  writeFileSync(
+    `./out/album/${slug}.html`,
+    renderAlbum({ target: t, rows, errors, stamp, siteUrl: SITE_URL, slug, artistKo }),
+    'utf8'
+  );
+  index.push({
+    ...t,
+    slug,
+    versions,
+    retailers,
+    benefitCount,
+    soldCount,
+    rowCount: rows.length,
+    artistKo,
+    artistDisplay: displayArtist(t.artist, artistKo),
+    ogImage,
+  });
   console.log(`${rows.length}건 / ${versions}종 / ${retailers}사${benefitCount ? ` / 특전 ${benefitCount}사` : ''}`);
 }
 
 index.sort((a, b) => b.benefitCount - a.benefitCount || b.retailers - a.retailers || b.versions - a.versions);
-writeFileSync('./out/index.html', renderIndex({ albums: index, stamp }), 'utf8');
+writeFileSync('./out/index.html', renderIndex({ albums: index, stamp, siteUrl: SITE_URL }), 'utf8');
 writeFileSync('./out/index.json', JSON.stringify({ stamp, albums: index }, null, 2), 'utf8');
 
+// 검색 유입이 1순위 채널이다. sitemap이 없으면 앨범 페이지는 사실상 색인되지 않는다.
+const today = new Date().toISOString().slice(0, 10);
+// sitemap은 절대주소만 담을 수 있다. SITE_URL이 없으면 빈 sitemap을 배포하느니 안 만든다.
+// (지난 빌드에서 남은 걸 그대로 두면 틀린 도메인이 배포되므로 지운다)
+if (SITE_URL) {
+  writeFileSync(
+    './out/sitemap.xml',
+    sitemap(SITE_URL, [
+      { path: '', lastmod: today, changefreq: 'daily', priority: '1.0' },
+      ...index.map((a) => ({ path: `album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.8' })),
+    ]),
+    'utf8'
+  );
+} else {
+  rmSync('./out/sitemap.xml', { force: true });
+}
+writeFileSync('./out/robots.txt', robots(SITE_URL), 'utf8');
+
 console.log(`\n완료 — 앨범 ${index.length}개 페이지 + 인덱스`);
+console.log(
+  SITE_URL
+    ? `  sitemap.xml (${index.length + 1}개 URL) · robots.txt — ${SITE_URL}`
+    : '  robots.txt — ⚠ SITE_URL 미설정: sitemap·canonical·og:url을 생략했습니다'
+);
 console.log(`  2개 이상 판매처: ${index.filter((a) => a.retailers >= 2).length}개`);
 console.log(`  특전 2곳 이상 비교 가능: ${index.filter((a) => a.benefitCount >= 2).length}개`);
+
+await closeBrowser();

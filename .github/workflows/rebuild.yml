@@ -1,6 +1,6 @@
 name: rebuild
 
-# 예판 정보는 수시로 바뀐다 (특전 추가·소진). 하루 두 번 다시 긁는다.
+# 예판 정보는 수시로 바뀐다 (특전 추가·소진, 품절). 하루 두 번 다시 긁는다.
 on:
   schedule:
     - cron: '0 1,10 * * *'   # KST 10:00 / 19:00
@@ -9,15 +9,31 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     permissions:
       contents: write
+    env:
+      # 저장소 Settings → Variables 에 SITE_URL 을 넣으면 canonical·og:url·sitemap이 절대주소로 나온다.
+      SITE_URL: ${{ vars.SITE_URL }}
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+
+      - name: Install deps
+        run: npm ci || npm i
+
+      # 위드뮤는 정적 fetch로 셸만 와서 헤드리스가 필요하다.
+      # 없으면 위드뮤만 빠지고 나머지 4사는 그대로 돈다.
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
       - name: Build
         run: node build.mjs
+
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"

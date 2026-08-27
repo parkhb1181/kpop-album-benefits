@@ -8,5 +8,10 @@
     "build": "node build.mjs",
     "build:one": "node build.mjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
 }

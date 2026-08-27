@@ -1,4 +1,5 @@
 import { optimize } from './optimize.mjs';
+import { metaTags, abs, displayArtist } from './seo.mjs';
 
 export const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -66,11 +67,21 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 .comp p{margin:8px 0 0}
 `;
 
-const shell = (title, body) => `<!doctype html><html lang="ko"><head><meta charset="utf-8">
+const shell = (title, body, meta = {}) => `<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(title)}</title><style>${CSS}</style></head><body>${body}</body></html>`;
+<title>${esc(title)}</title>
+${metaTags({ title, ...meta })}
+<style>${CSS}</style></head><body>${body}</body></html>`;
 
 const won = (n) => (n == null ? '?' : `${n.toLocaleString()}원`);
+
+/** "2026. 8. 27. AM 10:06:57" → "2026.8.27" — 메타 설명에 초 단위는 노이즈다 */
+const shortDate = (stamp) =>
+  String(stamp ?? '')
+    .split(/오전|오후|AM|PM|\d{1,2}:\d{2}/)[0]
+    .replace(/\s*\.\s*/g, '.')
+    .replace(/[.\s]+$/, '')
+    .trim();
 
 /** 특전 상태 — "없음"과 "종료"와 "비공개"와 "확인 못함"은 전부 다른 정보다 */
 const STATUS = {
@@ -98,7 +109,7 @@ const stockCell = (i) =>
 /** 1인 구매 제한 — 버전마다 다르다. 팬싸 응모용 대량 구매에 결정적 */
 const limitCell = (i) => (i.maxOrder ? `<b>${i.maxOrder}</b>장` : '<span class="mut">—</span>');
 
-export function renderAlbum({ target, rows, errors, stamp }) {
+export function renderAlbum({ target, rows, errors, stamp, siteUrl, slug, artistKo }) {
   const byKey = new Map();
   for (const r of rows) {
     if (!byKey.has(r.key)) byKey.set(r.key, []);
@@ -200,35 +211,63 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
   const soldCount = rows.filter((r) => r.soldOut === true).length;
   const chart = rows.some((r) => (r.chart || []).length > 0);
 
+  // 검색은 한글로 온다 — "코르티스 판매처별 특전". 영문명만 있으면 그 쿼리에 안 잡힌다.
+  const artistName = displayArtist(target.artist, artistKo);
+  const retailerNames = [...new Set(rows.map((r) => r.retailer))];
+  const desc =
+    `${artistName} ${target.album} 예약판매 특전을 ${retailerNames.slice(0, 4).join('·')}` +
+    `${retailerNames.length > 4 ? ` 등 ${retailerNames.length}곳` : ''}에서 비교합니다. ` +
+    `버전 ${groups.length}종${soldCount ? ` · 품절 ${soldCount}건` : ''} · ${shortDate(stamp)} 기준.`;
+  // 공유 카드 이미지 — 특전 이미지가 있으면 그게 가장 설명적이고, 없으면 앨범 썸네일
+  const ogImage = rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
+
   return shell(
-    `${target.artist} ${target.album} — 판매처별 특전`,
+    `${artistName} ${target.album} — 판매처별 특전 비교`,
     `<a class="back" href="../index.html">← 전체 컴백</a>
-<h1>${esc(target.artist)} — ${esc(target.album)}</h1>
+<h1>${esc(artistName)} — ${esc(target.album)}</h1>
 <div class="stamp">판매처별 예약판매 특전 · <b>${esc(stamp)} 기준</b></div>
 <div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능${
       soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
     }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
 ${optHtml}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
-${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`
+${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`,
+    {
+      description: desc.slice(0, 160),
+      canonical: slug ? abs(siteUrl, `album/${slug}`) : null,
+      image: ogImage,
+      type: 'article',
+    }
   );
 }
 
-export function renderIndex({ albums, stamp }) {
+export function renderIndex({ albums, stamp, siteUrl }) {
   const cards = albums
     .map(
       (a) => `<a class="card" href="album/${esc(a.slug)}.html">
-<div class="ar">${esc(a.artist)}</div>
+<div class="ar">${esc(a.artistDisplay || a.artist)}</div>
 <div class="al">${esc(a.album)}</div>
 <div class="meta">${a.benefitCount ? `<span class="badge">특전 ${a.benefitCount}곳</span>` : ''}${a.soldCount ? `<span class="soldb" style="font-size:10.5px;padding:0 6px;margin-right:5px">품절 ${a.soldCount}</span>` : ''}${a.versions}종 · ${a.retailers}개 판매처${a.deliveryDate ? ` · ${esc(a.deliveryDate)} 발매` : ''}</div>
 </a>`
     )
     .join('');
+  const names = albums
+    .slice(0, 6)
+    .map((a) => a.artistDisplay || a.artist)
+    .join(', ');
   return shell(
-    'K-POP 컴백 — 판매처별 특전 비교',
+    'K-POP 앨범 판매처별 특전 비교 — 예약판매 중인 컴백 전체',
     `<h1>진행 중인 컴백 — 판매처별 특전</h1>
 <div class="stamp">위버스샵 · 알라딘 · Ktown4u 자동 수집 · <b>${esc(stamp)} 기준</b></div>
 <div class="sum">예약판매 중인 앨범 <b>${albums.length}</b>개. 같은 앨범이라도 <b>어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b></div>
-<div class="cards">${cards}</div>`
+<div class="cards">${cards}</div>`,
+    {
+      description: (
+        `예약판매 중인 K-POP 앨범 ${albums.length}개의 판매처별 특전을 자동 수집해 비교합니다. ` +
+        `${names ? `${names} 등. ` : ''}${shortDate(stamp)} 기준.`
+      ).slice(0, 160),
+      canonical: abs(siteUrl, ''),
+      image: albums.find((a) => a.ogImage)?.ogImage || null,
+    }
   );
 }

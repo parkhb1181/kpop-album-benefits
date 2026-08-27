@@ -122,14 +122,19 @@ export function parseTitle(rawTitle) {
         .replace(/[^a-z0-9가-힣]/g, '')
     : '기본';
 
+  // 매칭 키에서는 "단품"과 "랜덤"을 하나로 본다.
+  // 위드뮤는 랜덤 표기를 아예 안 쓴다 — "(PHOTO BOOK Ver.)"라고만 적고 실제로는 랜덤 발송이다.
+  // 팬의 결정 축도 "세트냐 낱개냐"라서, 낱개는 묶는 편이 맞다. 표시용 packaging은 그대로 둔다.
+  const packKey = packaging === '세트' ? '세트' : '개별';
+
   return {
     events,
     edition: edition || '기본',
     editionKey: editionKey || '기본',
     packaging,
     setCount,
-    // 매칭 키 = 에디션 + 포장
-    key: `${editionKey}｜${packaging}`,
+    // 매칭 키 = 에디션 + 포장(세트/개별)
+    key: `${editionKey}｜${packKey}`,
   };
 }
 

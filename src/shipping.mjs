@@ -30,6 +30,15 @@ export const POLICY = {
     note: '상품 상세 배송정보에 "배송 비용 : 3,000원 (50,000원 이상 구매 시 무료)" 명시',
     src: 'https://www.sound-wave.co.kr/product/detail.html?product_no=27616',
   },
+  위드뮤: {
+    baseFee: 3000,
+    freeOver: null,
+    combine: true,
+    verified: false,
+    checkedAt: '2026-08-27',
+    note: '배송비 미확인 — 3,000원은 추정치',
+    src: 'https://www.withmuu.com/',
+  },
   위버스샵: {
     baseFee: 3000,
     freeOver: null,

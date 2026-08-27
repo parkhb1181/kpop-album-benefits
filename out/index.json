@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. AM 10:01:31",
+  "stamp": "2026. 8. 27. AM 10:18:39",
   "albums": [
     {
       "artistId": 10,
@@ -11,11 +11,14 @@
       "priceMin": 14200,
       "artist": "ENHYPEN",
       "slug": "enhypen-the-sin-bliss",
-      "versions": 14,
-      "retailers": 4,
+      "versions": 13,
+      "retailers": 5,
       "benefitCount": 3,
       "soldCount": 5,
-      "rowCount": 40
+      "rowCount": 44,
+      "artistKo": "엔하이픈",
+      "artistDisplay": "엔하이픈(ENHYPEN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9e7e12f0b17c882ddc27598723775391.jpg"
     },
     {
       "artistId": 308,
@@ -28,10 +31,32 @@
       "artist": "TAEMIN",
       "slug": "taemin-phase-i-soft-violence",
       "versions": 6,
-      "retailers": 4,
+      "retailers": 5,
       "benefitCount": 3,
       "soldCount": 1,
-      "rowCount": 24
+      "rowCount": 30,
+      "artistKo": "태민",
+      "artistDisplay": "태민(TAEMIN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png"
+    },
+    {
+      "artistId": 294,
+      "artistEn": "AND2BLE",
+      "album": "Sequence 01: Curiosity",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-09-04",
+      "priceMin": 20700,
+      "artist": "AND2BLE",
+      "slug": "and2ble-sequence-01-curiosity",
+      "versions": 10,
+      "retailers": 5,
+      "benefitCount": 2,
+      "soldCount": 7,
+      "rowCount": 47,
+      "artistKo": null,
+      "artistDisplay": "AND2BLE",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg"
     },
     {
       "artistId": 3,
@@ -44,10 +69,13 @@
       "artist": "TOMORROW X TOGETHER",
       "slug": "tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때",
       "versions": 9,
-      "retailers": 4,
+      "retailers": 5,
       "benefitCount": 2,
       "soldCount": 2,
-      "rowCount": 26
+      "rowCount": 29,
+      "artistKo": "투모로우바이투게더",
+      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png"
     },
     {
       "artistId": 306,
@@ -60,26 +88,32 @@
       "artist": "TUIDE",
       "slug": "tuide-tune-play",
       "versions": 8,
-      "retailers": 4,
+      "retailers": 5,
       "benefitCount": 2,
       "soldCount": 3,
-      "rowCount": 34
+      "rowCount": 41,
+      "artistKo": "튜이드",
+      "artistDisplay": "튜이드(TUIDE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/10fc46cd233c5ccf808b62bd033c2c4b.png"
     },
     {
-      "artistId": 294,
-      "artistEn": "AND2BLE",
-      "album": "Sequence 01: Curiosity",
-      "skuCount": 4,
+      "artistId": 3,
+      "artistEn": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02'",
+      "skuCount": 1,
       "benefit": true,
-      "deliveryDate": "2026-09-04",
-      "priceMin": 20700,
-      "artist": "AND2BLE",
-      "slug": "and2ble-sequence-01-curiosity",
-      "versions": 8,
+      "deliveryDate": "2026-08-28",
+      "priceMin": 19800,
+      "artist": "TOMORROW X TOGETHER",
+      "slug": "tomorrow-x-together-no-labels-part-02",
+      "versions": 11,
       "retailers": 4,
       "benefitCount": 2,
-      "soldCount": 7,
-      "rowCount": 27
+      "soldCount": 2,
+      "rowCount": 27,
+      "artistKo": "연준",
+      "artistDisplay": "연준(TOMORROW X TOGETHER)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/cb9a2d2a395217496f2dc5eb85e7f22d.png"
     },
     {
       "artistId": 130,
@@ -95,23 +129,10 @@
       "retailers": 4,
       "benefitCount": 2,
       "soldCount": 1,
-      "rowCount": 20
-    },
-    {
-      "artistId": 3,
-      "artistEn": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02'",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-08-28",
-      "priceMin": 19800,
-      "artist": "TOMORROW X TOGETHER",
-      "slug": "tomorrow-x-together-no-labels-part-02",
-      "versions": 12,
-      "retailers": 3,
-      "benefitCount": 2,
-      "soldCount": 2,
-      "rowCount": 21
+      "rowCount": 20,
+      "artistKo": "민호",
+      "artistDisplay": "민호(SHINee)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/57d2f3971ed98abedffec9fd360a3335.png"
     },
     {
       "artistId": 113,
@@ -127,7 +148,10 @@
       "retailers": 2,
       "benefitCount": 2,
       "soldCount": 0,
-      "rowCount": 9
+      "rowCount": 9,
+      "artistKo": "소연",
+      "artistDisplay": "소연(i-dle (아이들))",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png"
     },
     {
       "artistId": 255,
@@ -139,11 +163,14 @@
       "priceMin": 12400,
       "artist": "CORTIS",
       "slug": "cortis-greengreen",
-      "versions": 19,
-      "retailers": 4,
+      "versions": 18,
+      "retailers": 5,
       "benefitCount": 1,
       "soldCount": 8,
-      "rowCount": 36
+      "rowCount": 52,
+      "artistKo": "코르티스",
+      "artistDisplay": "코르티스(CORTIS)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png"
     },
     {
       "artistId": 127,
@@ -155,11 +182,14 @@
       "priceMin": 14100,
       "artist": "NCT 127",
       "slug": "nct-127-blingy",
-      "versions": 10,
-      "retailers": 4,
+      "versions": 9,
+      "retailers": 5,
       "benefitCount": 1,
       "soldCount": 6,
-      "rowCount": 32
+      "rowCount": 38,
+      "artistKo": "엔시티 127",
+      "artistDisplay": "엔시티 127(NCT 127)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png"
     },
     {
       "artistId": 215,
@@ -172,10 +202,32 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 4,
+      "retailers": 5,
       "benefitCount": 1,
       "soldCount": 1,
-      "rowCount": 12
+      "rowCount": 15,
+      "artistKo": "지수",
+      "artistDisplay": "지수(JISOO)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
+    },
+    {
+      "artistId": 207,
+      "artistEn": "YOUNGTAK (영탁)",
+      "album": "GOGO",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-09-14",
+      "priceMin": 24600,
+      "artist": "YOUNGTAK (영탁)",
+      "slug": "youngtak-영탁-gogo",
+      "versions": 4,
+      "retailers": 5,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "rowCount": 13,
+      "artistKo": "영탁",
+      "artistDisplay": "YOUNGTAK (영탁)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg"
     },
     {
       "artistId": 209,
@@ -188,10 +240,13 @@
       "artist": "JENNIE",
       "slug": "jennie-fallen-angel",
       "versions": 3,
-      "retailers": 4,
+      "retailers": 5,
       "benefitCount": 1,
       "soldCount": 1,
-      "rowCount": 12
+      "rowCount": 15,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
     },
     {
       "artistId": 248,
@@ -204,26 +259,13 @@
       "artist": "82MAJOR",
       "slug": "82major-heat",
       "versions": 2,
-      "retailers": 4,
+      "retailers": 5,
       "benefitCount": 1,
       "soldCount": 1,
-      "rowCount": 8
-    },
-    {
-      "artistId": 207,
-      "artistEn": "YOUNGTAK (영탁)",
-      "album": "GOGO",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-09-14",
-      "priceMin": 24600,
-      "artist": "YOUNGTAK (영탁)",
-      "slug": "youngtak-영탁-gogo",
-      "versions": 2,
-      "retailers": 4,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "rowCount": 10
+      "rowCount": 10,
+      "artistKo": "82메이저",
+      "artistDisplay": "82메이저(82MAJOR)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png"
     },
     {
       "artistId": 300,
@@ -235,11 +277,14 @@
       "priceMin": 11200,
       "artist": "EVAN",
       "slug": "evan-1st-mini-album-death-of-me",
-      "versions": 8,
-      "retailers": 3,
+      "versions": 9,
+      "retailers": 4,
       "benefitCount": 1,
       "soldCount": 1,
-      "rowCount": 14
+      "rowCount": 18,
+      "artistKo": "에반",
+      "artistDisplay": "에반(EVAN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png"
     },
     {
       "artistId": 181,
@@ -252,10 +297,13 @@
       "artist": "VVUP",
       "slug": "vvup-1st-mini-album-vvon",
       "versions": 1,
-      "retailers": 3,
+      "retailers": 4,
       "benefitCount": 0,
       "soldCount": 1,
-      "rowCount": 3
+      "rowCount": 4,
+      "artistKo": "비비업",
+      "artistDisplay": "비비업(VVUP)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg"
     }
   ]
 }
