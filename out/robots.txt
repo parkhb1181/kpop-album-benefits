@@ -6,3 +6,5 @@ Allow: /
 
 User-agent: Daumoa
 Allow: /
+
+Sitemap: https://kpop-album.vercel.app/sitemap.xml

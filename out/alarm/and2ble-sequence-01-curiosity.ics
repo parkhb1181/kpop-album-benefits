@@ -9,13 +9,12 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:and2ble-sequence-01-curiosity-release@kpop-album-benefits
-DTSTAMP:20260827T030250Z
+DTSTAMP:20260827T051223Z
 DTSTART:20260904T100000Z
 DTEND:20260904T103000Z
 SUMMARY:AND2BLE Sequence 01: Curiosity — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album-benefits.vercel.app/album/and2ble-sequence-01-curios
- ity.html
+URL:https://kpop-album.vercel.app/album/and2ble-sequence-01-curiosity.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D

@@ -1,33 +1,6 @@
 {
-  "stamp": "2026. 8. 27. PM 2:05:43",
+  "stamp": "2026. 8. 27. PM 2:08:11",
   "albums": [
-    {
-      "artistId": 10,
-      "artistEn": "ENHYPEN",
-      "album": "THE SIN : BLISS",
-      "skuCount": 8,
-      "benefit": true,
-      "deliveryDate": "2026-08-25",
-      "priceMin": 14200,
-      "artist": "ENHYPEN",
-      "slug": "enhypen-the-sin-bliss",
-      "versions": 13,
-      "retailers": 7,
-      "benefitCount": 3,
-      "soldCount": 4,
-      "eventCount": 1,
-      "fansignCount": 1,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-08-27T19:00:00+09:00",
-        "rough": "4시간 53분"
-      },
-      "rowCount": 60,
-      "artistKo": "엔하이픈",
-      "artistDisplay": "엔하이픈(ENHYPEN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9e7e12f0b17c882ddc27598723775391.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/13/QL0LvJ.jpg"
-    },
     {
       "artistId": 308,
       "artistEn": "TAEMIN",
@@ -39,7 +12,7 @@
       "artist": "TAEMIN",
       "slug": "taemin-phase-i-soft-violence",
       "versions": 6,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 1,
@@ -49,37 +22,11 @@
         "at": "2026-08-30T23:59:59.999999+09:00",
         "rough": "3일 9시간"
       },
-      "rowCount": 30,
+      "rowCount": 43,
       "artistKo": "태민",
       "artistDisplay": "태민(TAEMIN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png"
-    },
-    {
-      "artistId": 306,
-      "artistEn": "TUIDE",
-      "album": "TUNE & PLAY",
-      "skuCount": 12,
-      "benefit": true,
-      "deliveryDate": "2026-08-27",
-      "priceMin": 12100,
-      "artist": "TUIDE",
-      "slug": "tuide-tune-play",
-      "versions": 8,
-      "retailers": 7,
-      "benefitCount": 2,
-      "soldCount": 2,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-08-27T19:00:00+09:00",
-        "rough": "4시간 53분"
-      },
-      "rowCount": 54,
-      "artistKo": "튜이드",
-      "artistDisplay": "튜이드(TUIDE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/10fc46cd233c5ccf808b62bd033c2c4b.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/12/RUmvs6.jpg"
     },
     {
       "artistId": 294,
@@ -91,8 +38,8 @@
       "priceMin": 20700,
       "artist": "AND2BLE",
       "slug": "and2ble-sequence-01-curiosity",
-      "versions": 10,
-      "retailers": 5,
+      "versions": 14,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 7,
       "eventCount": 0,
@@ -102,10 +49,11 @@
         "at": "2026-09-04T19:00:00+09:00",
         "rough": "8일 4시간"
       },
-      "rowCount": 47,
+      "rowCount": 60,
       "artistKo": null,
       "artistDisplay": "AND2BLE",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg"
     },
     {
       "artistId": 215,
@@ -117,8 +65,8 @@
       "priceMin": 18000,
       "artist": "JISOO",
       "slug": "jisoo-click",
-      "versions": 4,
-      "retailers": 5,
+      "versions": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
@@ -128,10 +76,38 @@
         "at": "2026-09-04T13:00:00+09:00",
         "rough": "7일 22시간"
       },
-      "rowCount": 15,
+      "rowCount": 24,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
+    },
+    {
+      "artistId": 306,
+      "artistEn": "TUIDE",
+      "album": "TUNE & PLAY",
+      "skuCount": 6,
+      "benefit": true,
+      "deliveryDate": "2026-08-27",
+      "priceMin": 12100,
+      "artist": "TUIDE",
+      "slug": "tuide-tune-play",
+      "versions": 7,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 3,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-27T19:00:00+09:00",
+        "rough": "4시간 50분"
+      },
+      "rowCount": 45,
+      "artistKo": "튜이드",
+      "artistDisplay": "튜이드(TUIDE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/db3a5e0875ca71044707658a99fb90a7.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
     },
     {
       "artistId": 130,
@@ -143,8 +119,8 @@
       "priceMin": 13900,
       "artist": "SHINee",
       "slug": "shinee-make-it-hot",
-      "versions": 6,
-      "retailers": 4,
+      "versions": 7,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -154,10 +130,11 @@
         "at": "2026-09-06T23:59:59.999999+09:00",
         "rough": "10일 9시간"
       },
-      "rowCount": 20,
+      "rowCount": 30,
       "artistKo": "민호",
       "artistDisplay": "민호(SHINee)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/57d2f3971ed98abedffec9fd360a3335.png"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/57d2f3971ed98abedffec9fd360a3335.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/QzJWoi.jpg"
     },
     {
       "artistId": 113,
@@ -183,7 +160,8 @@
       "rowCount": 9,
       "artistKo": "소연",
       "artistDisplay": "소연(i-dle (아이들))",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png",
+      "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg"
     },
     {
       "artistId": 255,
@@ -196,7 +174,7 @@
       "artist": "CORTIS",
       "slug": "cortis-greengreen",
       "versions": 18,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 8,
       "eventCount": 0,
@@ -206,10 +184,11 @@
         "at": "2026-09-21T07:00:00+09:00",
         "rough": "24일 16시간"
       },
-      "rowCount": 52,
+      "rowCount": 70,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/18/0O7cLx.jpg"
     },
     {
       "artistId": 127,
@@ -221,8 +200,8 @@
       "priceMin": 14100,
       "artist": "NCT 127",
       "slug": "nct-127-blingy",
-      "versions": 9,
-      "retailers": 5,
+      "versions": 10,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 6,
       "eventCount": 1,
@@ -232,10 +211,65 @@
         "at": "2026-08-28T19:00:00+09:00",
         "rough": "1일 4시간"
       },
-      "rowCount": 38,
+      "rowCount": 56,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/AyLyqO.jpg"
+    },
+    {
+      "artistId": 248,
+      "artistEn": "82MAJOR",
+      "album": "HEAT",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-09-01",
+      "priceMin": 11800,
+      "artist": "82MAJOR",
+      "slug": "82major-heat",
+      "versions": 9,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-08-31T23:59:59.999999+09:00",
+        "rough": "4일 9시간"
+      },
+      "rowCount": 24,
+      "artistKo": "82메이저",
+      "artistDisplay": "82메이저(82MAJOR)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/19/rgR15V.png"
+    },
+    {
+      "artistId": 209,
+      "artistEn": "JENNIE",
+      "album": "Fallen Angel",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-30",
+      "priceMin": 16300,
+      "artist": "JENNIE",
+      "slug": "jennie-fallen-angel",
+      "versions": 4,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-29T23:59:59.999999+09:00",
+        "rough": "63일 9시간"
+      },
+      "rowCount": 22,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
     },
     {
       "artistId": 207,
@@ -248,7 +282,7 @@
       "artist": "YOUNGTAK (영탁)",
       "slug": "youngtak-영탁-gogo",
       "versions": 4,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -258,89 +292,11 @@
         "at": "2026-09-14T18:00:00+09:00",
         "rough": "18일 3시간"
       },
-      "rowCount": 13,
+      "rowCount": 19,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg"
-    },
-    {
-      "artistId": 209,
-      "artistEn": "JENNIE",
-      "album": "Fallen Angel",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-10-30",
-      "priceMin": 16300,
-      "artist": "JENNIE",
-      "slug": "jennie-fallen-angel",
-      "versions": 3,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "63일 9시간"
-      },
-      "rowCount": 15,
-      "artistKo": "제니",
-      "artistDisplay": "제니(JENNIE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
-    },
-    {
-      "artistId": 248,
-      "artistEn": "82MAJOR",
-      "album": "HEAT",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-09-01",
-      "priceMin": 11800,
-      "artist": "82MAJOR",
-      "slug": "82major-heat",
-      "versions": 2,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-08-31T23:59:59.999999+09:00",
-        "rough": "4일 9시간"
-      },
-      "rowCount": 10,
-      "artistKo": "82메이저",
-      "artistDisplay": "82메이저(82MAJOR)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png"
-    },
-    {
-      "artistId": 300,
-      "artistEn": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'",
-      "skuCount": 6,
-      "benefit": true,
-      "deliveryDate": "2026-09-07",
-      "priceMin": 11200,
-      "artist": "EVAN",
-      "slug": "evan-1st-mini-album-death-of-me",
-      "versions": 9,
-      "retailers": 4,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "10일 9시간"
-      },
-      "rowCount": 18,
-      "artistKo": "에반",
-      "artistDisplay": "에반(EVAN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg"
     },
     {
       "artistId": 181,
@@ -366,7 +322,8 @@
       "rowCount": 4,
       "artistKo": "비비업",
       "artistDisplay": "비비업(VVUP)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg"
     },
     {
       "artistId": 300,
@@ -388,7 +345,60 @@
       "rowCount": 12,
       "artistKo": "에반",
       "artistDisplay": "에반(EVAN)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
+    },
+    {
+      "artistId": 10,
+      "artistEn": "ENHYPEN",
+      "album": "THE SIN : BLISS",
+      "skuCount": 8,
+      "benefit": true,
+      "deliveryDate": "2026-08-25",
+      "priceMin": 14200,
+      "artist": "ENHYPEN",
+      "slug": "enhypen-the-sin-bliss",
+      "versions": 13,
+      "retailers": 7,
+      "benefitCount": 3,
+      "soldCount": 4,
+      "eventCount": 1,
+      "fansignCount": 1,
+      "nextDeadline": null,
+      "rowCount": 60,
+      "artistKo": "엔하이픈",
+      "artistDisplay": "엔하이픈(ENHYPEN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9e7e12f0b17c882ddc27598723775391.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/13/QL0LvJ.jpg",
+      "expired": {
+        "lastSeen": "2026-08-27"
+      }
+    },
+    {
+      "artistId": 300,
+      "artistEn": "EVAN",
+      "album": "1st Mini Album 'DEATH OF ME'",
+      "skuCount": 6,
+      "benefit": true,
+      "deliveryDate": "2026-09-07",
+      "priceMin": 11200,
+      "artist": "EVAN",
+      "slug": "evan-1st-mini-album-death-of-me",
+      "versions": 9,
+      "retailers": 4,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 18,
+      "artistKo": "에반",
+      "artistDisplay": "에반(EVAN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/004ced26c56c5bdfe3d6e0d72fc0663b.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
+      "expired": {
+        "lastSeen": "2026-08-27"
+      }
     }
   ]
 }
