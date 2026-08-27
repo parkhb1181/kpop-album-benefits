@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. AM 12:49:19",
+  "stamp": "2026. 8. 28. AM 1:23:23",
   "albums": [
     {
       "artistId": 308,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-30T23:59:59.999999+09:00",
-        "rough": "2일 23시간"
+        "rough": "2일 22시간"
       },
       "rowCount": 43,
       "artistKo": "태민",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T19:00:00+09:00",
-        "rough": "7일 18시간"
+        "rough": "7일 17시간"
       },
       "rowCount": 60,
       "artistKo": null,
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "7일 12시간"
+        "rough": "7일 11시간"
       },
       "rowCount": 21,
       "artistKo": "지수",
@@ -95,13 +95,13 @@
       "versions": 7,
       "retailers": 6,
       "benefitCount": 2,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "18시간 9분"
+        "rough": "17시간 35분"
       },
       "rowCount": 44,
       "artistKo": "튜이드",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "9일 23시간"
+        "rough": "9일 22시간"
       },
       "rowCount": 30,
       "artistKo": "민호(MINHO)",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-08-29T23:59:59.999999+09:00",
-        "rough": "1일 23시간"
+        "rough": "1일 22시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-21T07:00:00+09:00",
-        "rough": "24일 6시간"
+        "rough": "24일 5시간"
       },
       "rowCount": 70,
       "artistKo": "코르티스",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "18시간 6분"
+        "rough": "17시간 32분"
       },
       "rowCount": 56,
       "artistKo": "엔시티 127",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-31T23:59:59.999999+09:00",
-        "rough": "3일 23시간"
+        "rough": "3일 22시간"
       },
       "rowCount": 20,
       "artistKo": "82메이저",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "62일 23시간"
+        "rough": "62일 22시간"
       },
       "rowCount": 22,
       "artistKo": "제니",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "17일 17시간"
+        "rough": "17일 16시간"
       },
       "rowCount": 19,
       "artistKo": "영탁",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T00:00:00+09:00",
-        "rough": "61일 23시간"
+        "rough": "61일 22시간"
       },
       "rowCount": 3,
       "artistKo": null,
