@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-08-27T13:07:02.897Z",
-  "lastDeep": "2026-08-27T13:07:02.897Z",
+  "checkedAt": "2026-08-27T23:04:04.200Z",
+  "lastDeep": "2026-08-27T23:04:04.200Z",
   "events": [
     {
       "id": 20277,
@@ -19,10 +19,14 @@
       "to": "2026.08.29",
       "startAt": "2026-08-27T15:00:00+09:00",
       "endAt": "2026-08-29T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.08.31",
-      "productId": 11041
+      "productId": 11041,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353_thumb.jpeg"
+      }
     },
     {
       "id": 20244,
@@ -41,10 +45,14 @@
       "to": "2026.09.06",
       "startAt": "2026-08-26T12:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": "2026.09.07",
-      "productId": 11041
+      "productId": 11041,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364_thumb.jpeg"
+      }
     },
     {
       "id": 20167,
@@ -63,10 +71,14 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 64,
+      "dday": 63,
       "closing": false,
       "winnerAt": null,
-      "productId": 11029
+      "productId": 11029,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595_thumb.jpeg"
+      }
     },
     {
       "id": 20134,
@@ -85,10 +97,14 @@
       "to": "2026.08.31",
       "startAt": "2026-08-21T14:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 5,
+      "dday": 4,
       "closing": false,
       "winnerAt": null,
-      "productId": 11015
+      "productId": 11015,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_1_Banner_Sub.jpg_2026-08-21_082432656309.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_1_Banner_Sub.jpg_2026-08-21_082432656309_thumb.jpeg"
+      }
     },
     {
       "id": 20122,
@@ -107,10 +123,14 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 41,
+      "dday": 40,
       "closing": false,
       "winnerAt": null,
-      "productId": 11019
+      "productId": 11019,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528_thumb.jpeg"
+      }
     },
     {
       "id": 20106,
@@ -129,10 +149,14 @@
       "to": "2026.08.30",
       "startAt": "2026-08-25T12:00:00+09:00",
       "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
-      "productId": 10940
+      "productId": 10940,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_4_Sub.png_2026-08-20_121725782838.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_4_Sub.png_2026-08-20_121725782838_thumb.jpeg"
+      }
     },
     {
       "id": 20105,
@@ -151,10 +175,14 @@
       "to": "2026.09.07",
       "startAt": "2026-08-25T14:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": "2026.09.08",
-      "productId": 11017
+      "productId": 11017,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671_thumb.jpeg"
+      }
     },
     {
       "id": 20076,
@@ -173,10 +201,14 @@
       "to": "2026.08.31",
       "startAt": "2026-08-27T16:00:00+09:00",
       "endAt": "2026-08-31T00:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.08.31",
-      "productId": 10867
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_8_Banner_Sub.jpg_2026-08-20_160421035584.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_8_Banner_Sub.jpg_2026-08-20_160421035584_thumb.jpeg"
+      }
     },
     {
       "id": 20070,
@@ -195,10 +227,14 @@
       "to": "2026.08.30",
       "startAt": "2026-08-22T19:00:00+09:00",
       "endAt": "2026-08-30T00:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.08.31",
-      "productId": 10894
+      "productId": 10894,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083_thumb.jpeg"
+      }
     },
     {
       "id": 20059,
@@ -217,10 +253,14 @@
       "to": "2026.08.31",
       "startAt": "2026-08-27T18:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 5,
+      "dday": 4,
       "closing": false,
       "winnerAt": "2026.09.02",
-      "productId": 10641
+      "productId": 10641,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_15_banner_SUB.png_2026-08-27_155306107075.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_15_banner_SUB.png_2026-08-27_155306107075_thumb.jpeg"
+      }
     },
     {
       "id": 20024,
@@ -239,10 +279,14 @@
       "to": "2026.08.28",
       "startAt": "2026-08-25T12:00:00+09:00",
       "endAt": "2026-08-28T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.08.31",
-      "productId": 11002
+      "productId": 11002,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_1_Sub.png_2026-08-20_164519933196.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_1_Sub.png_2026-08-20_164519933196_thumb.jpeg"
+      }
     },
     {
       "id": 20023,
@@ -261,10 +305,14 @@
       "to": "2026.09.06",
       "startAt": "2026-08-18T14:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": null,
-      "productId": 10999
+      "productId": 10999,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/%EB%B2%84%EC%A0%84%EA%B3%B5%ED%86%B5_%EC%84%AC%EB%84%A4%EC%9D%BC_%EB%AF%BC%ED%98%B8_%EB%AF%B8%EB%8B%88%202%EC%A7%91_Make%20it%20hot.jpg_2026-08-17_214652480575.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/%EB%B2%84%EC%A0%84%EA%B3%B5%ED%86%B5_%EC%84%AC%EB%84%A4%EC%9D%BC_%EB%AF%BC%ED%98%B8_%EB%AF%B8%EB%8B%88_2%EC%A7%91_Make_it_hot.jpg_2026-08-17_214652480575_thumb.jpeg"
+      }
     },
     {
       "id": 20006,
@@ -283,10 +331,14 @@
       "to": "2026.08.30",
       "startAt": "2026-08-25T10:00:00+09:00",
       "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
-      "productId": 10943
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_3_Banner_Sub%20%281%29.jpg_2026-08-18_093359778791.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_3_Banner_Sub_1.jpg_2026-08-18_093359778791_thumb.jpeg"
+      }
     },
     {
       "id": 19996,
@@ -305,10 +357,14 @@
       "to": "2026.08.31",
       "startAt": "2026-08-24T11:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 5,
+      "dday": 4,
       "closing": false,
       "winnerAt": null,
-      "productId": 10488
+      "productId": 10488,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10488_BABYMONSTER_21_Banner_Sub.jpg_2026-08-21_110817316118.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10488_BABYMONSTER_21_Banner_Sub.jpg_2026-08-21_110817316118_thumb.jpeg"
+      }
     },
     {
       "id": 19959,
@@ -327,10 +383,14 @@
       "to": "2026.09.01",
       "startAt": "2026-08-14T14:00:00+09:00",
       "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 6,
+      "dday": 5,
       "closing": false,
       "winnerAt": "2026.09.02",
-      "productId": 10988
+      "productId": 10988,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_1_Thumb.jpg_2026-08-13_122445927131.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_1_Thumb.jpg_2026-08-13_122445927131_thumb.jpeg"
+      }
     },
     {
       "id": 19729,
@@ -349,10 +409,14 @@
       "to": "2026.08.30",
       "startAt": "2026-08-05T14:00:00+09:00",
       "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
-      "productId": 10972
+      "productId": 10972,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10972_TAEMIN_1_Banner_Sub.jpg_2026-08-04_191556754088.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10972_TAEMIN_1_Banner_Sub.jpg_2026-08-04_191556754088_thumb.jpeg"
+      }
     },
     {
       "id": 19696,
@@ -371,10 +435,14 @@
       "to": "2026.09.08",
       "startAt": "2026-08-11T14:00:00+09:00",
       "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 13,
+      "dday": 12,
       "closing": false,
       "winnerAt": "2026.09.09",
-      "productId": 10970
+      "productId": 10970,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_1_thumb.jpg_2026-08-07_151012625597.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_1_thumb.jpg_2026-08-07_151012625597_thumb.jpeg"
+      }
     },
     {
       "id": 19633,
@@ -393,10 +461,14 @@
       "to": "2026.09.06",
       "startAt": "2026-08-10T11:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": null,
-      "productId": 10961
+      "productId": 10961,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10961_EVAN_1_Sub.png_2026-08-07_122302864820.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10961_EVAN_1_Sub.png_2026-08-07_122302864820_thumb.jpeg"
+      }
     },
     {
       "id": 18930,
@@ -415,10 +487,14 @@
       "to": "2026.09.07",
       "startAt": "2026-07-06T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": null,
-      "productId": 10851
+      "productId": 10851,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_2_Banner_thumb_v6.jpg_2026-08-27_174844886537.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_2_Banner_thumb_v6.jpg_2026-08-27_174844886537_thumb.jpeg"
+      }
     },
     {
       "id": 18929,
@@ -437,10 +513,14 @@
       "to": "2026.09.07",
       "startAt": "2026-07-06T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": null,
-      "productId": 10851
+      "productId": 10851,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_1_Banner_thumb_v7.jpg_2026-08-27_174718170108.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_1_Banner_thumb_v7.jpg_2026-08-27_174718170108_thumb.jpeg"
+      }
     },
     {
       "id": 10801,
@@ -462,7 +542,11 @@
       "dday": null,
       "closing": false,
       "winnerAt": null,
-      "productId": 9265
+      "productId": 9265,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_9265_BTS_1_Banner_Sub.png_2025-06-09_151747791246.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_9265_BTS_1_Banner_Sub.png_2025-06-09_151747791246_thumb.jpeg"
+      }
     }
   ],
   "albums": [
