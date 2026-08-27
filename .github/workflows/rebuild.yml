@@ -22,6 +22,9 @@ jobs:
       SITE_URL: ${{ vars.SITE_URL }}
       # Search Console 소유 확인 파일명 (google....html). 없으면 파일을 안 만든다.
       GOOGLE_VERIFY: ${{ vars.GOOGLE_VERIFY }}
+      # 소유 확인 메타태그 토큰. 파일(.html) 방식은 cleanUrls 308 때문에 못 쓴다.
+      NAVER_VERIFY: ${{ vars.NAVER_VERIFY }}
+      GOOGLE_VERIFY_META: ${{ vars.GOOGLE_VERIFY_META }}
     steps:
       - uses: actions/checkout@v4
 
