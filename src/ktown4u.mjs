@@ -10,7 +10,9 @@ export async function search(query) {
   for (const c of cards) {
     const goodsNo = (c.match(/goods_no=(\d+)/) || [])[1];
     if (!goodsNo) continue;
-    const title = (c.match(/<img alt="([^"]+)"/) || [])[1];
+    // 버전 키는 **디코딩 뒤** 문자열로 만들어야 한다. 순서가 뒤바뀌면 x27이 키에 박혀
+    // 같은 상품이 판매처마다 다른 버전으로 갈라진다.
+    const title = strip((c.match(/<img alt="([^"]+)"/) || [])[1]);
     if (!title) continue;
     const priceM = c.match(/<span class="mr-0\.5 text-m3">([A-Z]{3})<\/span><span class="text-s1">([\d.,]+)<\/span>/);
     const sales = (c.match(/Sales\s*([\d,]+)/) || [])[1];
@@ -19,7 +21,7 @@ export async function search(query) {
     out.push({
       retailer: 'Ktown4u',
       id: goodsNo,
-      title: strip(title),
+      title,
       ...parseTitle(title),
       currency: priceM?.[1] || null,
       price: priceM ? Number(priceM[2].replace(/,/g, '')) : null,

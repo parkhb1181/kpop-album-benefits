@@ -57,18 +57,45 @@ export async function getText(url, opt = {}) {
   }
 }
 
-export const strip = (h) =>
-  (h || '')
-    .replace(/<br\s*\/?>/gi, ' ')
-    .replace(/<[^>]+>/g, '')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
+/** 이름 붙은 엔티티. 숫자 엔티티는 아래에서 일반 처리하므로 여기 안 적는다. */
+const NAMED = { nbsp: ' ', lt: '<', gt: '>', quot: '"', apos: "'", amp: '&' };
+
+/**
+ * 엔티티만 푼다 — 줄바꿈은 건드리지 않는다.
+ * 구성품 설명처럼 여러 줄 구조가 의미를 갖는 값에 쓴다 — strip은 줄바꿈을 공백으로 뭉갠다.
+ */
+export const decodeEntities = (s) =>
+  s
+    .replace(/&#(x[0-9a-f]+|\d+);/gi, (m, code) => {
+      const n = code[0].toLowerCase() === 'x' ? parseInt(code.slice(1), 16) : parseInt(code, 10);
+      // 제어문자와 범위 밖은 원문 그대로 둔다 — 억지로 바꾸면 더 이상해진다
+      return Number.isFinite(n) && n > 31 && n <= 0x10ffff ? String.fromCodePoint(n) : m;
+    })
+    .replace(/&(nbsp|lt|gt|quot|apos|amp);/gi, (m, name) => NAMED[name.toLowerCase()] ?? m);
+
+/**
+ * 태그를 걷어내고 엔티티를 푼다.
+ *
+ * **숫자 엔티티를 일반 처리한다.** 판매처마다 같은 문자를 다르게 인코딩하기 때문이다.
+ * 코르티스 립밤 특전 하나가 Ktown4u `&#x27;` · 사운드웨이브 `&#039;` · 알라딘 `'`
+ * 세 갈래로 저장돼 **버전 키가 3개로 쪼개졌고**, 조각마다 "1곳만 판매"라는 틀린
+ * 배지가 붙었다. `&#39;` 하나만 하드코딩해서는 이런 변종을 계속 놓친다.
+ *
+ * **바뀌지 않을 때까지 반복한다.** 사운드웨이브(카페24)는 이미 이스케이프된 제목을
+ * 한 번 더 이스케이프해서 내보낸다 — 실측하면 `TUNE &amp;amp; PLAY`다.
+ * 한 번만 풀면 `&amp;`가 남아 같은 앨범이 또 갈라진다.
+ * 3회로 끊는 건 `&amp;amp;amp;`까지가 현실적인 상한이고, 그 이상은 우리 데이터가
+ * 아니라 상대 쪽이 망가진 것이라 더 풀어봐야 의미가 없기 때문이다.
+ */
+export const strip = (h) => {
+  let s = (h || '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '');
+  for (let i = 0; i < 3; i++) {
+    const next = decodeEntities(s);
+    if (next === s) break;
+    s = next;
+  }
+  return s.replace(/\s+/g, ' ').trim();
+};
 
 // 판매처가 상품명 앞에 붙이는 이벤트 표식 (같은 앨범인데 SKU가 갈리는 원인)
 const EVENT_TOKENS = [

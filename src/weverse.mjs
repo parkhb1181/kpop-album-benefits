@@ -1,4 +1,4 @@
-import { getText, strip, parseTitle } from './fetchx.mjs';
+import { getText, strip, decodeEntities, parseTitle } from './fetchx.mjs';
 
 const BASE = 'https://shop.weverse.io';
 
@@ -59,7 +59,10 @@ export async function search(artistId, keyword) {
       maxOrder = d?.goodsOrderLimit?.maxOrderQuantity ?? null;
 
       // 구성품 — 버전 선택의 실제 기준
-      composition = (d?.notificationInfos || []).find((n) => n.title === '구성')?.description || null;
+      // 이 설명에도 엔티티가 그대로 온다 — 실측 "미니 CD-R &amp; 봉투"
+      const desc = (d?.notificationInfos || []).find((n) => n.title === '구성')?.description;
+      // strip은 안 쓴다 — 구성품은 <pre>로 나가므로 줄바꿈이 정보다
+      composition = desc ? decodeEntities(desc) : null;
 
       // 랜덤 확률 안내
       randomNote = (d?.cautionInfos || []).find((t) => /랜덤.*확률|확률.*랜덤/.test(t)) || null;
@@ -75,7 +78,8 @@ export async function search(artistId, keyword) {
       retailer: '위버스샵',
       id: String(c.saleId),
       title: strip(c.name),
-      ...parseTitle(c.name),
+      // parseTitle도 디코딩된 값을 받아야 한다 — 버전 키가 엔티티로 갈라지는 걸 막는다
+      ...parseTitle(strip(c.name)),
       currency: 'KRW',
       price: c.price?.salePrice ?? null,
       sales: null,
