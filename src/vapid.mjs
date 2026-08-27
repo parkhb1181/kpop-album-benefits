@@ -77,6 +77,16 @@ export async function sendPush(subscription, vapid) {
     headers,
     signal: AbortSignal.timeout(10000),
   });
-  // 404·410은 "이 구독은 죽었다"는 뜻이다. 지우지 않으면 매번 실패하며 쌓인다.
-  return { ok: res.ok, status: res.status, gone: res.status === 404 || res.status === 410 };
+  /**
+   * 죽은 구독은 그 자리에서 알린다. 안 지우면 매번 실패하며 쌓인다.
+   *   404·410  구독이 사라졌다 (브라우저 삭제, 앱 제거 등)
+   *   403      우리 VAPID 키로는 이 구독에 못 보낸다 — **키를 교체하면 전부 이렇게 된다.**
+   *            구독은 신청 당시의 공개키에 묶이기 때문이다. 403을 안 치우면 교체 후
+   *            옛 구독들이 영원히 실패하며 남는다. 그 사람들은 다시 구독해야 한다.
+   */
+  return {
+    ok: res.ok,
+    status: res.status,
+    gone: res.status === 404 || res.status === 410 || res.status === 403,
+  };
 }
