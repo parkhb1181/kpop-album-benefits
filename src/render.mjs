@@ -241,11 +241,16 @@ const shell = (title, body, meta = {}) => {
   const ld = jsonLd
     ? `\n<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`
     : '';
+  // Vercel Web Analytics script
+  const analytics = `<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>`;
   return `<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 ${metaTags({ title, ...rest })}${ld}
-<style>${CSS}</style></head><body>${body}</body></html>`;
+<style>${CSS}</style></head><body>${body}${analytics}</body></html>`;
 };
 
 const won = (n) => (n == null ? '?' : `${n.toLocaleString()}원`);
