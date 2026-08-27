@@ -6,6 +6,9 @@
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/googlef12562bf76a21100.html", "destination": "/gsc-verify" }
+  ],
   "headers": [
     {
       "source": "/(.*).ics",
