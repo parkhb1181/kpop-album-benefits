@@ -20,9 +20,13 @@ const CSS = `
    컴백마다 사이트 인상이 통째로 바뀐다. 우리가 색을 고를 필요가 없어진다.
 
    액센트는 하나뿐이고 **경고에만** 쓴다(품절·마감). 긍정 상태는 색이 아니라 굵기로 낸다 —
-   그래서 --ok는 초록이 아니라 먹이다. 액센트가 둘이면 어느 쪽도 안 급해 보인다. */
+   그래서 --ok는 초록이 아니라 먹이다. 액센트가 둘이면 어느 쪽도 안 급해 보인다.
+
+   **다크모드는 두지 않는다.** 배경은 항상 흰색이다.
+   커버가 화면의 색을 담당하는 구조라 바닥이 어두워지면 그 전제가 흔들리고,
+   흰 배경 상품 사진들이 검은 바닥 위에 뜬 흰 사각형으로 보인다. 29CM도 경쟁사도 다크모드가 없다. */
 :root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
-@media(prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ededf0;--mut:#9a9aa2;--dim:#6f6f78;--line:#2a2a30;--acc:#fb923c;--ok:#ededf0;--card:#1c1c21}}
+html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:28px 16px 72px;max-width:1080px;background:var(--bg);color:var(--fg);
 font:15px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
@@ -110,7 +114,8 @@ h1{font-size:23px;margin:0 0 8px;letter-spacing:-.015em}
 .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;background:var(--card)}
 .strip::-webkit-scrollbar{display:none}
-.strip.multi{cursor:pointer}
+/* 커버는 전부 앨범 페이지로 가는 링크다. 버전이 여럿이든 아니든 커서는 손가락이다. */
+.strip{cursor:pointer}
 .strip img,.strip .ph{flex:0 0 100%;width:100%;aspect-ratio:1;object-fit:cover;display:block;
 scroll-snap-align:center;background:var(--card)}
 .vn{position:absolute;left:9px;bottom:9px;z-index:3;font-size:10.5px;font-weight:700;
@@ -162,12 +167,27 @@ border:0;border-radius:99px;padding:1px 7px;margin-right:5px}
 .card.f .cdl{order:-1;margin:0 0 10px;font-size:13px;color:var(--acc);font-weight:700}
 .card.f{display:flex;flex-direction:column}
 .card.f .cvw{order:-3}.card.f .dots{order:-2}
-.find{margin-top:14px;display:flex;gap:8px;align-items:center}
-.find input{flex:1;min-width:0;padding:10px 12px;font:inherit;font-size:14px;color:var(--fg);
-background:var(--card);border:1px solid var(--line);border-radius:4px}
-.find input:focus{outline:none;border-color:var(--mut)}
-.find .n{font-size:12px;color:var(--mut);white-space:nowrap}
-.none-hit{font-size:13.5px;color:var(--mut);margin-top:16px}
+/* 검색 — 29CM 실측을 옮겼다. border-b-4 border-on-black · 36px semibold · placeholder #d4d4d4.
+   **상자가 아니다.** 배경도 테두리도 없고 아래 굵은 선 하나뿐이다.
+   저쪽은 전체화면 검색이라 36px이지만 우리는 목록 위 필터라 26px로 낮췄다 —
+   그래도 이 화면에서 가장 큰 입력이고, 자기 아티스트를 찾는 게 이 페이지의 주 동작이라 그게 맞다. */
+.find{margin:26px 0 0;display:flex;gap:16px;align-items:baseline;border-bottom:3px solid var(--fg)}
+.find input{flex:1;min-width:0;padding:4px 0 8px;font:inherit;font-size:26px;font-weight:600;
+letter-spacing:-.02em;color:var(--fg);background:none;border:0;border-radius:0}
+.find input::placeholder{color:#d4d4d4;font-weight:600}
+.find input:focus{outline:none}
+.find .n{font-size:12px;color:var(--dim);white-space:nowrap;font-variant-numeric:tabular-nums}
+.none-hit{font-size:13.5px;color:var(--mut);margin-top:20px}
+
+/* 푸터 — 사이트 설명은 여기로 내렸다. 목록을 보러 온 사람에게 설명이 먼저 붙을 이유가 없다.
+   접어두고, 궁금한 사람만 편다. */
+.ft{margin-top:64px;border-top:1px solid var(--line);padding-top:16px}
+.ft summary{cursor:pointer;font-size:12px;font-weight:600;color:var(--mut);list-style:none}
+.ft summary::-webkit-details-marker{display:none}
+.ft summary::before{content:'+ ';color:var(--dim)}
+.ft[open] summary::before{content:'− '}
+.ft .body{font-size:13px;color:var(--mut);line-height:1.8;margin-top:12px;max-width:62ch}
+.ft .body b{color:var(--fg);font-weight:600}
 
 /* 모바일 — 네이버 기준 이 카테고리 검색의 93%가 모바일이다 (코르티스 앨범: 모바일 4,730 / PC 360).
    가로 스크롤 표는 그 화면에서 안 읽히므로 행을 카드로 접는다. */
@@ -270,10 +290,16 @@ function go(i){strip.scrollTo({left:strip.clientWidth*((i+n)%n),behavior:'smooth
 strip.addEventListener('scroll',paint,{passive:true});
 for(var k=0;k<dots.length;k++){(function(k){
 dots[k].addEventListener('click',function(e){e.preventDefault();go(k)})})(k)}
+/* 커버를 누르면 **앨범 페이지로 간다.** 버전 넘기기는 점과 스와이프가 맡는다 —
+   목록에서 상품 사진을 누르면 상품으로 가는 게 몸에 밴 동작이라 그걸 거스르면 안 된다.
+   끌어서 넘긴 경우는 클릭으로 치지 않는다(5px). */
 var sx=0,moved=0;
 strip.addEventListener('pointerdown',function(e){sx=e.clientX;moved=0});
 strip.addEventListener('pointermove',function(e){if(e.buttons){var d=Math.abs(e.clientX-sx);if(d>moved)moved=d}});
-strip.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();if(moved<=5)go(at()+1)});
+strip.addEventListener('click',function(e){
+if(moved>5){e.preventDefault();e.stopPropagation();return}
+var lnk=w.parentElement.querySelector('.go');if(lnk){lnk.click()}
+});
 paint();
 });
 })();
@@ -781,6 +807,12 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
  * `unnaturalvergazedverbreak`(여러 버전명이 뭉개짐) 같은 것들. 그걸 그대로 배지에 띄우면 안 된다.
  * **고칠 곳은 여기가 아니라 수집 쪽(fetchx.mjs의 3축 정규화)이다.** 여기서는 못 읽을 값만 감춘다.
  */
+/** "2026-08-25" → "8월 25일". 목록에서 연도는 노이즈다 — 예판 중인 앨범은 전부 올해다. */
+const krDate = (s) => {
+  const m = String(s || '').match(/(\d{4})-(\d{1,2})-(\d{1,2})/);
+  return m ? `${Number(m[2])}월 ${Number(m[3])}일` : String(s || '');
+};
+
 const vLabel = (s) => {
   const t = String(s || '').replace(/x27/g, '');
   return !t || t.length > 14 ? '' : t;
@@ -849,9 +881,14 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
       // 태그 — 29CM 상품 카드 방식. 테두리 알약이 아니라 회색 배경 채움이다(실측: radius 2px).
       // 경고(품절)만 액센트를 쓴다 — 액센트가 한 곳뿐이라 그게 바로 눈에 띈다.
       const tg = [
-        a.benefitCount ? `<span class="tg">특전 ${a.benefitCount}곳</span>` : '',
-        a.fansignCount ? '<span class="tg">팬싸</span>' : '',
-        a.soldCount ? `<span class="tg w">품절 ${a.soldCount}</span>` : '',
+        // benefitCount는 "특전을 주는 곳"이 아니라 **내용까지 확인된 판매처 수**다.
+        // (build.mjs: benefit 배열이 채워진 row의 판매처 유일값)
+        // 구성 비공개(secret)·확인 못함(unknown)은 여기서 빠지므로 실제보다 적게 잡힌다.
+        // 그래서 "특전 3곳"이 아니라 "특전 확인 3곳"이라고 쓴다 — 라벨이 세는 것과 맞아야 한다.
+        a.benefitCount ? `<span class="tg">특전 확인 ${a.benefitCount}곳</span>` : '',
+        a.fansignCount ? '<span class="tg">팬사인회</span>' : '',
+        // soldCount는 버전이 아니라 **상품(판매처×버전) 단위**라 "종"이 아니라 "건"이다.
+        a.soldCount ? `<span class="tg w">품절 ${a.soldCount}건</span>` : '',
       ]
         .filter(Boolean)
         .join('');
@@ -871,8 +908,9 @@ ${
 ${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
   `${a.versions}종`,
   `판매처 ${a.retailers}`,
-  // 마감 카운트다운이 붙는 앨범은 시간 정보가 이미 있다. 없을 때만 발매일을 낸다.
-  !a.nextDeadline && a.deliveryDate ? `${esc(a.deliveryDate)} 발매` : '',
+  // **항상 낸다.** 조건부로 냈더니 어떤 카드엔 있고 어떤 카드엔 없어서 깨져 보였다.
+  // 실측상 예판 중인 앨범은 전부 발매일이 있다(14/14).
+  a.deliveryDate ? `${esc(krDate(a.deliveryDate))} 발매` : '',
 ]
   .filter(Boolean)
   .join(' · ')}</div>
@@ -885,24 +923,15 @@ ${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
     .join(', ');
   const live = albums.filter((a) => !a.expired).length;
   return shell(
-    'K-POP 앨범 정보 — 버전·구성·가격·판매처별 특전 비교',
+    // 검색 결과에 뜨는 문구다. 키워드는 담되 `A — B·C·D` 나열은 쓰지 않는다.
+    'K-POP 앨범 판매처별 특전 비교 | 버전·구성·가격 한눈에',
     `<header class="hd">
 <div class="hdrow">
-<span class="bd">K-POP 앨범 특전 비교</span>
-<span class="hdm">${esc(shortDate(stamp))} 갱신</span>
+<span class="bd">앨범 특전</span>
+<span class="hdm">${esc(shortDate(stamp).replace(/^\d+\./, '').replace('.', '월 '))}일 갱신</span>
 </div>
 </header>
-<h1>예약판매 중인 K-POP 앨범 — 버전·구성·특전</h1>
-<p class="sub">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직에서 자동으로 모읍니다.
-앨범 <b>${live}</b>개가 예약판매 중이고, 같은 앨범이라도 <b>버전마다 구성이 다르고 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
-      albums.some((a) => a.nextDeadline)
-        ? ` 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br>${
-            siteUrl
-              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>${pushHtml(vapidPublicKey)}`
-              : `<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>${pushHtml(vapidPublicKey)}`
-          }`
-        : ''
-    }</p>
+<h1>예약판매 중인 K-POP 앨범, 판매처마다 포카가 다릅니다</h1>
 ${
       // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
       albums.length >= 8
@@ -913,6 +942,19 @@ ${
         : ''
     }
 <div class="cards">${cards}</div>
+<details class="ft">
+<summary>이 사이트는 무엇인가</summary>
+<div class="body">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직에서 자동으로 모읍니다.
+앨범 <b>${live}</b>개가 예약판매 중이고, 같은 앨범이라도 <b>버전마다 구성이 다르고 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
+      albums.some((a) => a.nextDeadline)
+        ? ` 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br>${
+            siteUrl
+              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>${pushHtml(vapidPublicKey)}`
+              : `<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>${pushHtml(vapidPublicKey)}`
+          }`
+        : ''
+    }</div>
+</details>
 ${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS : ''}${
       albums.some((a) => a.covers?.length > 1) ? COVER_JS : ''
     }`,
