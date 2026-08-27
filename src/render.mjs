@@ -1259,9 +1259,17 @@ const kst = (iso, opt = {}) =>
  * 반면 마감은 초 단위로 정확하고, 팬을 실제로 급하게 만드는 쪽도 마감이다.
  */
 function countdownHtml(deadlines, slug, siteUrl, subject, cover) {
-  if (!deadlines?.length) return '';
+  /**
+   * **마감이 없어도 커버는 낸다.**
+   *
+   * 커버가 이 블록 안에 들어 있는데 `if (!deadlines?.length) return ''`로 통째로 빠져나가서,
+   * 마감이 없는 앨범은 상세 페이지에 **앨범 사진이 아예 안 나왔다.**
+   * 실측: 16개 중 4개(엔하이픈·투바투·에반 2건)가 그랬고, 제목 바로 밑이 갤러리였다.
+   */
+  const hasDl = !!deadlines?.length;
+  if (!hasDl && !cover) return '';
   const now = Date.now();
-  const cards = deadlines
+  const cards = (hasDl ? deadlines : [])
     .map((d) => {
       // 캘린더에 들어간 뒤에는 앨범명이 없으면 무슨 일정인지 알 수 없다.
       const g = googleUrl({
@@ -1290,8 +1298,10 @@ function countdownHtml(deadlines, slug, siteUrl, subject, cover) {
    */
   return `<div class="hero">${
     cover ? `<img class="hcv" src="${esc(cover)}" alt="${esc(subject)}" width="400" height="400" fetchpriority="high" decoding="async">` : ''
-  }<div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p>${cards}</div></div>
-${CD_JS}`;
+  }${
+    hasDl ? `<div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p>${cards}</div>` : ''
+  }</div>
+${hasDl ? CD_JS : ''}`;
 }
 
 /**
