@@ -307,7 +307,13 @@ list-style:none;padding:0}
    **모서리는 직각이다.** 붙여 놓은 이미지에 반경을 주면 맞닿는 자리마다 흰 틈이 생겨
    "붙였다"가 무너진다. 잘린 모서리(clip-path)도 같은 이유로 뺐다 —
    Lando Norris에서 가져왔던 형태인데, 띠를 끊어서 모티브와 부딪힌다. */
-.cvw{position:relative;z-index:2;margin-bottom:12px}
+/* 커버가 카드 전체를 덮는 링크(.go, z-index:1)보다 위에 있으면 **사진이 안 눌린다.**
+   실측: 인덱스 16개가 전부 커버 1장이라 COVER_JS는 으로 매번 빠져나가고,
+   클릭을 .go로 넘겨주던 코드에 닿지도 못했다. 목록에서 사진을 누르면 상품으로 가는 건
+   몸에 밴 동작이라 JS에 기대면 안 된다 — 링크를 위로 올린다.
+   여러 장일 때만 커버를 올려 스와이프를 살린다(그때는 JS가 클릭을 .go로 넘긴다). */
+.cvw{position:relative;z-index:0;margin-bottom:12px}
+.cvw.multi{z-index:2}
 .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;background:var(--card)}
 .strip::-webkit-scrollbar{display:none}
@@ -760,4 +766,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. 07:41:16</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 07:55:38</b></p></body></html>
