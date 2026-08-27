@@ -55,26 +55,46 @@ async function ensure() {
 }
 
 /**
+ * 정해진 시간 안에 안 끝나면 포기한다.
+ *
+ * goto와 waitForSelector에는 한도가 있지만 `page.evaluate`에는 없다. 위드뮤는 SPA라
+ * 렌더러가 물리면 evaluate가 영원히 안 돌아오고, 그러면 빌드 전체가 선다.
+ * 실제로 20분 작업 한도에 걸려 두 번 죽었다 — 그때 로그에는 앨범 한 줄도 안 찍혔다.
+ * page.close()도 라우트 가로채기가 걸린 채로는 안 돌아올 수 있어 같이 막는다.
+ */
+const bounded = (promise, ms, fallback) =>
+  Promise.race([promise, new Promise((res) => setTimeout(() => res(fallback), ms))]);
+
+/**
  * 페이지를 열고 콜백에 넘긴다.
  * @param {string} url
  * @param {(page: any) => Promise<any>} fn
- * @param {{waitFor?: string, timeout?: number, settle?: number}} [opt]
+ * @param {{waitFor?: string, timeout?: number, settle?: number, hard?: number}} [opt]
  */
+
 export async function withPage(url, fn, opt = {}) {
   const ctx = await ensure();
   if (!ctx) return null;
-  const page = await ctx.newPage();
+  const page = await bounded(ctx.newPage(), 15000, null);
+  if (!page) return null;
+  const HANG = Symbol('hang');
   try {
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: opt.timeout ?? 25000 });
-    if (opt.waitFor) {
-      await page.waitForSelector(opt.waitFor, { timeout: opt.timeout ?? 15000 }).catch(() => {});
-    }
-    if (opt.settle) await page.waitForTimeout(opt.settle);
-    return await fn(page);
+    const work = (async () => {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: opt.timeout ?? 25000 });
+      if (opt.waitFor) {
+        await page.waitForSelector(opt.waitFor, { timeout: opt.timeout ?? 15000 }).catch(() => {});
+      }
+      if (opt.settle) await page.waitForTimeout(opt.settle);
+      return await fn(page);
+    })();
+    // 안쪽 한도의 합보다 넉넉하게 — 여기 걸리면 정상 지연이 아니라 멈춘 것이다
+    const out = await bounded(work, opt.hard ?? 60000, HANG);
+    return out === HANG ? null : out;
   } catch {
     return null;
   } finally {
-    await page.close().catch(() => {});
+    // 닫기가 안 돌아와도 기다리지 않는다. 새는 페이지 하나가 빌드를 세우는 것보다 낫다.
+    await bounded(page.close().catch(() => {}), 5000, null);
   }
 }
 
@@ -85,8 +105,8 @@ export async function renderedHtml(url, opt = {}) {
 
 export async function close() {
   try {
-    await _ctx?.close();
-    await _browser?.close();
+    await bounded(_ctx?.close(), 5000, null);
+    await bounded(_browser?.close(), 5000, null);
   } catch {}
   _ctx = null;
   _browser = null;
