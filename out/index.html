@@ -1,7 +1,8 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>K-POP 앨범 판매처별 특전 비교 | 버전·구성·가격 한눈에</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2018%22%3E%3Crect%20width%3D%2213%22%20height%3D%2213%22%20fill%3D%22%23c9c9c9%22%2F%3E%3Crect%20x%3D%227%22%20y%3D%226%22%20width%3D%228%22%20height%3D%2212%22%20fill%3D%22%231a1a1a%22%2F%3E%3C%2Fsvg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Crect%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%224.6%22%20fill%3D%22%23c2410c%22%2F%3E%3Cg%20fill%3D%22%23fafafa%22%3E%3Crect%20x%3D%224.2%22%20y%3D%224.2%22%20width%3D%222.4%22%20height%3D%2211.6%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%224.2%22%20width%3D%2211.6%22%20height%3D%222.4%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%228.8%22%20width%3D%228.4%22%20height%3D%222.4%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%2213.4%22%20width%3D%2210.2%22%20height%3D%222.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&text=%ED%8A%B9%EC%A0%84%EB%85%B8%ED%8A%B8&display=swap">
 <meta name="naver-site-verification" content="57715d7af3e8b922357db2854c0ae8e0fb2eba37">
 <meta name="description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.27 기준.">
 <meta property="og:description" content="예약판매 중인 K-POP 앨범 13개의 버전·구성·가격·판매처별 특전을 자동 수집해 비교합니다. 태민(TAEMIN), AND2BLE, 지수(JISOO), 튜이드(TUIDE), 민호(MINHO), 소연(SOYEON) 등. 2026.8.27 기준.">
@@ -35,7 +36,7 @@
 :root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
 html{color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0 auto;padding:24px 16px 72px;max-width:1080px;background:var(--bg);color:var(--fg);
+body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
 font:16px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
 h2{font-size:16px;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:14px;color:var(--mut);margin:24px 0 8px;font-weight:600}
@@ -59,6 +60,9 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .ben div{margin-bottom:4px}
 .flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
+.est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap}
+/* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
+.num .est,.num .flag.sub{display:block;margin:2px 0 0}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 a:hover{border-bottom-color:currentColor}
 .err{color:var(--acc);font-size:14px;margin-top:24px}
@@ -67,15 +71,134 @@ a:hover{border-bottom-color:currentColor}
 .gal figure{margin:0;flex:0 0 190px}
 /* 구성품 시트는 치수·랜덤 확률이 글씨로 적혀 있다. 190px에선 안 읽힌다. */
 .gal figure.wide{flex:0 0 300px}
-.rep{margin:2px 0 12px;font-size:12.5px}
+.rep{margin:2px 0 12px;font-size:12px}
 .rep a{font-weight:600}
 .rep .mut{margin-left:6px}
-.gal figcaption{font-size:12px;font-weight:700;margin-bottom:8px}
+/* 페이지 갤러리 — 메인 한 장 + 썸네일 줄. */
+.pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
+.pgm{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.pgm::-webkit-scrollbar{display:none}
+.pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
+/* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
+.pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+.pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
+.pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
+.pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
+.pgt button{flex:0 0 auto;width:52px;height:52px;padding:0;cursor:pointer;
+border:1px solid var(--line);background:var(--card)}
+.pgt button[aria-current=true]{border:2px solid var(--fg)}
+.pgt img{width:100%;height:100%;object-fit:cover;display:block}
+.gnav{position:absolute;z-index:2;width:34px;height:34px;border:0;border-radius:2px;
+background:rgba(0,0,0,.62);color:#fff;font-size:17px;line-height:1;cursor:pointer;display:none}
+.pgal[data-gal] .gnav{display:block}
+.gnav.p{left:0}.gnav.n{right:0}
 .gal img{width:100%;border:0;border-radius:0;display:block;background:var(--card)}
 .gal p{font-size:12px;color:var(--mut);margin:8px 0 0;line-height:1.5}
 td.th{width:52px;padding:8px 4px 8px 8px}
 td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
 .back{font-size:14px;color:var(--mut);display:inline-block;margin-bottom:16px;border:0}
+
+/* 상단 — 앨범 커버와 마감을 나란히.
+   가로로 긴 표에 두 줄을 넣으면 여백만 남는다. 커버를 크게 두는 게 이 페이지의 주인공이기도 하다. */
+/* 커버는 왼쪽 400px 고정, 마감은 오른쪽 세로 스택.
+   가로 그리드로 늘어놓으면 2px 규칙이 첫 칸에만 빠져 좌우가 어긋난다(실제로 그렇게 보였다).
+   세로로 쌓으면 그 규칙이 **구분선**으로 읽혀서 첫 항목만 없는 게 맞는 모양이 된다. */
+.hero{display:flex;gap:clamp(20px,3vw,36px);align-items:flex-start;flex-wrap:wrap;
+margin-bottom:clamp(28px,3.4vw,44px)}
+.hcv{width:400px;height:400px;object-fit:cover;display:block;background:var(--card);flex:0 0 auto}
+.dls{display:flex;flex-direction:column;gap:16px}
+.hero .dls{flex:1 1 260px;min-width:0}
+.dl{border-top:2px solid var(--fg);padding-top:10px}
+.dlt{font-size:14px;font-weight:700}
+.dlc{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;margin:4px 0 2px}
+.dlm{font-size:12px;color:var(--mut)}
+.dlm a{border:0}
+.dlb{font-size:14px;line-height:1.7;margin-top:8px}
+.dls .dl:first-child{border-top:0;padding-top:0}
+@media(max-width:760px){.hcv{width:100%;height:auto;aspect-ratio:1}}
+
+/* ── 버전 탭 ─────────────────────────────────────────────────
+   버전 6~18종을 세로로 쌓으면 페이지가 한없이 길어지는데 팬은 보통 한 버전만 본다.
+   선택지는 드롭다운에 감추지 말고 **전부 보이는 버튼**으로 내놓는다(NN/g: 선택 15~20% 상승).
+   JS가 없으면 전부 펼쳐진다 — 탭은 덧붙이는 것이지 전제가 아니다. */
+.vtabs{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 clamp(16px,2vw,24px)}
+.vt{font:inherit;font-size:12px;font-weight:600;color:var(--mut);background:var(--card);
+border:0;border-radius:2px;padding:8px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.vt:hover{color:var(--fg)}
+.vt.on{color:var(--bg);background:var(--fg)}
+.vtp{font-weight:400;opacity:.7}
+.vtd{font-size:11px;font-weight:700;color:var(--acc)}
+.vt.on .vtd{color:var(--bg);opacity:.75}
+.vp+.vp{margin-top:clamp(32px,4vw,56px)}
+.vp>h3,.pp>h3{margin-top:0}
+
+/* 포장(낱개·세트) — 버전을 고른 다음에 정하는 문제라 탭 안에 둔다. */
+.psw{display:flex;gap:4px;margin:0 0 16px}
+.pb{font:inherit;font-size:12px;font-weight:600;color:var(--mut);background:none;
+border:1px solid var(--line);border-radius:2px;padding:4px 12px;cursor:pointer}
+.pb.on{color:var(--fg);border-color:var(--fg)}
+
+/* ── 판매처 카드 (Pangram Pangram 구조 번역) ────────────────
+   특전이 표 한 칸의 긴 문장이면 판매처끼리 비교가 안 된다 — 비교하려고 만든 페이지인데.
+   그래서 판매처를 카드로 세우고 **특전을 카드 본문**으로 올린다.
+   간격은 clamp로 유동이다(PP 방식). 넓은 화면에서 답답하지 않고 좁은 화면에서 안 터진다. */
+.vsw{display:flex;gap:4px;margin:0 0 12px}
+.vb{font:inherit;font-size:11px;font-weight:600;color:var(--mut);background:none;
+border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
+.vb.on{color:var(--bg);background:var(--fg);border-color:var(--fg)}
+/* 열 폭을 내용에 맡기면 탭을 옮길 때마다 열이 통째로 움직인다.
+   실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
+.cmp.fx{table-layout:fixed}
+.cmp.fx .c1{width:170px}
+.cmp.fx .c2{width:132px}
+/* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
+.cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
+.cmp .rt{font-weight:700}
+.rt a,.rt{align-items:center}
+.rt a{display:inline-flex;gap:6px;align-items:center}
+.rlg{display:inline-block;width:18px;height:18px;flex:0 0 auto;border-radius:2px;vertical-align:-4px;background:center/contain no-repeat}
+.rlg.mono{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+color:var(--mut);background:var(--card);border-radius:2px}
+.cmp.fx td.rt{white-space:nowrap}
+/* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
+.evt{font-weight:600;word-break:keep-all}
+.cmp .tags{margin:4px 0 0}
+.cmp td.ben{word-break:keep-all}
+.scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
+gap:clamp(12px,1.4vw,20px);margin-bottom:clamp(20px,2.4vw,32px)}
+.sc{display:flex;flex-direction:column;min-width:0;border-top:2px solid var(--fg);padding-top:10px}
+.sch{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.scn{font-size:14px;font-weight:700}
+.scp{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sc .tags{margin:8px 0 0}
+/* 특전이 이 카드의 주인공이다. 표 칸이 아니라 본문 크기로 읽힌다. */
+.scb{font-size:14px;line-height:1.7;margin:10px 0 12px;flex:1;word-break:keep-all}
+.scb div{margin-bottom:6px}
+.scl{font-size:12px;color:var(--mut);border:0;margin-top:auto}
+.scl:hover{color:var(--fg)}
+
+/* ── 문서 구조 (나무위키식) ─────────────────────────────────
+   개요 → 목차 → 번호 매긴 문단 → 각주.
+   표가 10개 넘게 쌓이는 페이지라 목차가 유일한 항해 수단이다. */
+.lead{font-size:16px;line-height:1.85;margin:0 0 24px;max-width:70ch}
+.lead b{font-weight:600}
+.toc{border:1px solid var(--line);padding:12px 16px;margin:0 0 32px;display:inline-block;min-width:280px;max-width:100%}
+.toc>b{display:block;font-size:12px;color:var(--mut);margin-bottom:8px}
+.toc ol{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.9}
+.toc a{border:0;color:var(--fg)}
+.toc a:hover{text-decoration:underline}
+.sn{color:var(--dim);font-variant-numeric:tabular-nums;margin-right:2px}
+h2:target,section:target{scroll-margin-top:16px}
+
+/* 각주 — 우리 데이터는 88%가 불확실하다. 감추는 대신 왜 모르는지를 여기 적는다. */
+.fnr{font-size:11px;font-weight:600;line-height:0}
+.fnr a{border:0;color:var(--acc)}
+.fns{margin-top:48px;border-top:2px solid var(--fg);padding-top:16px}
+.fns h2{border:0;margin:0 0 8px;padding:0;font-size:12px;color:var(--mut)}
+.fns ol{margin:0;padding-left:20px;font-size:12px;color:var(--mut);line-height:1.8}
+.fns li{scroll-margin-top:16px}
+.fns li b{color:var(--fg)}
+.fns .bk{border:0;color:var(--dim);margin-right:4px}
 /* ── 상단 헤더 ───────────────────────────────────────────────
    29CM 헤더 실측: 로고 높이 16px · 유틸 간격 16~18px · 라벨 10px · font-extralight.
    **브랜드를 크게 안 외친다.** 얇은 한 줄이고 굵은 선으로 본문과 끊는다.
@@ -92,7 +215,8 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
    이름만 두면 검색이 약해지고, 설명만 두면 이름이 없다. 신문 제호가 쓰는 방식이다. */
 .brand{display:flex;align-items:baseline;gap:8px;margin:0;border:0;flex-wrap:wrap}
 .brand .lg{align-self:center;display:block;flex:0 0 auto}
-.hd .bd{font-size:20px;font-weight:700;color:var(--fg);white-space:nowrap;letter-spacing:-.01em}
+.hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif;
+font-size:20px;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
 .hd .tl{font-size:14px;color:var(--mut);white-space:nowrap}
 .hd .hdm{font-size:12px;color:var(--dim);white-space:nowrap}
 
@@ -157,6 +281,17 @@ font-size:11px;line-height:1.2;font-weight:500;color:var(--mut);background:var(-
    인덱스 카드는 이 클래스를 안 쓴다 — 거기선 굵기와 액센트로만 낸다(.card .meta). */
 .badge{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--fg);background:var(--card);border:0;border-radius:2px;padding:2px 4px;margin-right:4px}
 .sold{color:var(--acc);font-weight:700}
+/* 판매처 순위 — 위의 비교표와 생김새가 겹치면 안 된다. 번호·이름·총액 세 덩어리뿐이다. */
+.rks{list-style:none;margin:0;padding:0}
+.rk{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.rk:first-child{border-top:2px solid var(--fg)}
+.rkn{flex:0 0 20px;font-size:12px;font-weight:700;color:var(--dim);font-variant-numeric:tabular-nums}
+.rkb{flex:1 1 auto;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 8px}
+.rkb b{font-size:14px;font-weight:700}
+.rkm{flex:0 0 100%;font-size:12px;color:var(--mut);margin-top:2px}
+.rkv{flex:0 0 auto;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rk.part .rkv{font-weight:600;color:var(--mut)}
+.rkv .est{margin-left:4px}
 .soldb{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:700;color:var(--acc);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .comp{margin-top:12px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
@@ -210,86 +345,84 @@ h1{font-size:20px}
   td.ben{flex-direction:column;gap:3px}
   .gal figure{flex:0 0 150px}
 }
-</style></head><body><header class="hd"><div class="hdrow">
-<h1 class="brand"><svg class="lg" width="24" height="28" viewBox="0 0 18 21" aria-hidden="true" focusable="false">
-<rect width="15" height="15" fill="currentColor" opacity=".2"></rect>
-<rect x="9" y="7" width="9" height="14" fill="currentColor"></rect></svg><span class="bd">특전노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></h1>
+.rl0{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAr8oBkMgTUMwFaMwCfMwEgsIAkcgFhcgAnMgDhscMX8oJYMoAwcsAn8gAvssAzM3JrOWpAAAADXRSTlP++/3+/AXQVZQnvInS7OTUAgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAbpJREFUeNptkzFLw0AUx98HMKUHIVuW1MlNz8mt9OjgfkhHQUIQndvg3gTsGoprFyH9AIVOfgBRs3TyxE9w/QaN771LagVv/OX3fy959wJ6NImFf7sqtNZX+QscJamGQzifvYDHcJ5fC3+4TDU+ZpgV8ISiUOoS1fnsDQA2SQrjqRC+UnKZjiav9hs8s8kgn5Io5clqPHuzFsBsEoivkQ3kWVTmrzWaxlSxgxLhyd17jaJnKgFUkcSo36l3lGZIXWQU9brb2lK8Iqj2Ys3NjRCgnHjcrRFynCGLpyjuGjOAA9HBEF/pV2zSJshh0LZuYRVkINvW+5I4kH/EApD9EQMaMqZZ3NkGZoWm7qdf9IXI6M2Hz1qD8VVoUbM8IeNfPKMJVQjbXcvEIMLbAkxZ59EofZzrqnDEdqAVI1ThkJEYoQoNYsZiTy6hOR6FWezJEuCbmKHDYiSlcp7hcCOeM/wgLQxbEaHnUTm6mUaUSsGnK4dnLyqI7w3VEyIuW1EwJE8k60Ujxrh1DsbZeI2MxIT3k8V09LBgES+ON5lE3OS1E1O38yJ4pJ1/KHGJ8LH7O1jEv2N9o/pJqn8AeyZDArEVLjMAAAAASUVORK5CYII=)}.rl1{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXsZqzShp3d3ef3mUfuOJf8rxj+/f5YdKbqK49Aa7Hvocf21uSEV6XERJzwXG6vfbjeOYJGAAAABHRSTlP8agH3AKHXjQAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAU5JREFUeNpt0bFqwzAQBuALGBPIErJkjt+gQ3ZDj2IIBErp3klDvAZMNg8aRF/ACBIw1C3BhtKlGdI1Qx8gb1D6HpV0suyoucHDh+7XjwzROEAzt492biKYWUP8bXUC49Zw2eI9uINdwEMfcW4VeuYCLhB/rqEN8HB5DamsjybAx2T0coGJ/uTp4bOP+QdHXOzz9AKfuNrOq3AOZ0wEbfNKYRind69wEhigUBM3aSBwsTqG77AbMZbWJdQHxliZiDo4DKGo64a5+SqhWXGQ33qzY5YOEeQOUfCRs2PAEYqtvlq0WgpVForNWSt/M1aZegrXVN3cTpWhyLbUPWdsRaZRmn18Vsgdbk7mZKjW9w6zHT2kqeiQQgVA0K1nVEq9ijXCtfdPNNp9D+U1pFIeUqkeavNCc0Jbyk4M0+xf6ABmBvuh8QSi6UZK2QuNB9EfylcORkCkhDIAAAAASUVORK5CYII=)}.rl2{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEX91dr609gWRkP/2uAMQT2VlZYlT03WvcHry8+4q62kn6HGs7Z9h4dre3s7XVxVbW3dBnHAAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABSElEQVR42mNgGPpAUICRkUGAQUCAUQAuxihswGxgDGQYMCMUCosvbQ+PKu/cujMSrpLR/Jpb6Z8zv/qvnj+zGSbKvM5Jbef90KvrDsetmQwVZLRKUVKbuTy0M3LjVrh2gTonJbcN3OXtO3d372yGigofUVK71WA7tebP37l/iyGCjBxPlFSZGW3Oxv658/IPTNAyReWjIQN7aOT07RGrYIJWSinBjYIMjY3CDIwSMIsYOzouJT23SEu6aOqWNhkuav5E5YWpk8pheSc3hONlnFQuA921OUjJrwEmWHVJSenqIyW1mCQlH0NYcCxzUvL7oqSkn6Kk8pwRJhikpPLyi5LKzRQlt8Uw3cKLlPw2flHR7U5SyUKEZpDbcYsvegstU3LhdjMIbF1uzLh0hgF71EZDpCgyFgTGhCADs4EASrwxMALFQXjIAwB9gWUtVuaT6gAAAABJRU5ErkJggg==)}.rl3{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAAAARGw0AAAAAAAAAAQBkq0X+/v5ptEg3RjBKfjNamz7p6emysrHMzMxnZ2ecnJwrT1cLAAAABHRSTlMD9F62FdF0GwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAT1JREFUeNpt079Kw0AcB/CzT6CYouDSwRcQfIG0N6SCSsFw0s3li4OOIZpNCPWGLkJBHQWl1Fl8AnHqnEfIExQnB3N/frnY3He6fLjL7y73C2Osc8Ab2e6xKp2A/0uodJ+vpV9N5K302EYbN9ur1fpDGkbP74s7PRowqj2cp2maPOj6jObNY5V0ph4I72OTLHAYJRbFi0OaGMe3Dt9qFDlhvbrKK+GRs/iGcMespJcyV0csNI4JH82UrtagiWemniAMt6oEa2ijN1Hj7zKfLleRPsLY4gmQF/gYJs0t7QEShLT5H2Ba48hgBOCbUMwMHkPHYGY/XdnEkcHwEwVgqyf2Ok5xVeJ6olHfhsIJLkpcakzPucUCqxJfCrMnc9yqGaTku5JHMghtY4SubVwG/gbztqK3ab3t7f8RPL/MH0ct9qM4BKMvAAAAAElFTkSuQmCC)}.rl4{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXtGyNMaXHkBBjtGyPzHCTuGiPsGiLvGyPsGiLxGyPtGiLqGiHlGSLtHCT9HSb3HSU3Q5U5AAAADXRSTlP8AAOi/IgpzlHpakERsG5xLgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYlJREFUeNp9kz1LA0EQhqcIWG2OXTAGtdmA9iJpJEgKCyN4IgGxEuNHYWcvGgRtLPQHGBQFwSoQsLFMkX4LG4slgqaIxSWFEFEUd3fmYi4R3+Ju7rmb3bl3ZoFbpXjiJJ++3TCBFdiL4Nu730HQGlpBaqGQm/EvMKq/7HFJUE74CrQRQCsjEIrEATCNgmZFOijv2yHT2lsQFoqxuV+m1dKVNFDuZHWP2LywXxZZL1S5ggQx/KQjik9xkFsqCtW7ADmL2QqoLtWRkGAYsyDIYuQdAi0JzXT+QtGiMNJ2UT3DeQ0LjpVg3b1WHzyVkkcYf8IZwxTjmRh1S6kGlC1UjwVrGf6HeoY1vFvHuKQHcGWqBsLyX/D0v3TMyFUdDDeikpbN7iLZJojFG2tN8Wi3gfib6uGa8+QlI0iGxDqrx0Xsi4GhdV4QUFMNHDDZwTvdJwMHGmchH4+2GGHfMCCMjg1BO2CD0I5iBL66oa350IO9Eo23vwhdvVXCg7AfdHUugI7M5M00aaYqfwCMlrmQEEXoZgAAAABJRU5ErkJggg==)}.rl5{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAy9X///8AyNIEzNb9///5/v5p4ObQ9fgo09xC2eCt7/Lo+/sXz9iQ6e1W3eOA5epcpnLSAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAUlEQVR42mNgGBzAgBlTjEnZSAFDUHN51SQMhR9dXOTRlDLrCa57JfjIAFlMSYldVknpYoGSEpK6jo6pnh0dUyI7OgwQekUEXVwEQdgRbgKzmqigoyAQiAgGJiEJuriIuLg4irigCIo4OoqGiISgqhR0dcTULtWT6DZdfroIiqCswuk96hK6oqjaF7UUnPbQDEQRdFw0cdHRzUwfUQQDLyUmNS46uRBVZVKWUXtTIqr2wE9Mh5U0Njqiqtx5bv+JbDR3CooEOoaKOCILagJDScRFEBhQjpMQYVcY4gIGruKIsGeaLSIIBo47kaJJ43o5GNQ2IUcSVAETavKAGs4wWAEAf3lOYK3zwV0AAAAASUVORK5CYII=)}</style></head><body><header class="hd"><div class="hdrow">
+<h1 class="brand"><svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect width="20" height="20" rx="4.6" fill="#c2410c"/><g fill="#fafafa"><rect x="4.2" y="4.2" width="2.4" height="11.6"/><rect x="4.2" y="4.2" width="11.6" height="2.4"/><rect x="4.2" y="8.8" width="8.4" height="2.4"/><rect x="4.2" y="13.4" width="10.2" height="2.4"/></g></svg><span class="bd">특전노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></h1>
 <span class="hdm">8월 27일 갱신</span>
 </div></header>
 <div class="find" style="display:none">
-<input id="q" type="search" placeholder="아티스트·앨범 검색 — 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
+<input id="q" type="search" placeholder="아티스트·앨범 검색 · 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
 <span class="n" id="qn"></span></div>
 <p class="none-hit" id="qz" style="display:none">찾는 앨범이 없습니다. 예약판매 중인 것만 올라옵니다.</p>
 <div class="cards"><div class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
 <a class="go" href="album/tuide-tune-play.html" aria-label="튜이드(TUIDE) TUNE &amp; PLAY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">20시간 42분</span></div><div class="ar">튜이드(TUIDE)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">19시간 51분</span></div><div class="ar">튜이드(TUIDE)</div>
 <div class="al">TUNE &amp; PLAY</div>
 <div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 2건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
 </div><div class="card" data-q="엔시티127nct127nct127엔시티127blingy" data-c="ㅇㅅㅌ127nct127nct127ㅇㅅㅌ127blingy">
 <a class="go" href="album/nct-127-blingy.html" aria-label="엔시티 127(NCT 127) BLINGY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">20시간 38분</span></div><div class="ar">엔시티 127(NCT 127)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">19시간 47분</span></div><div class="ar">엔시티 127(NCT 127)</div>
 <div class="al">BLINGY</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
 </div><div class="card" data-q="소연soyeonidle아이들소연soyeonwhatawonderfullife" data-c="ㅅㅇsoyeonidleㅇㅇㄷㅅㅇsoyeonwhatawonderfullife">
 <a class="go" href="album/i-dle-아이들-what-a-wonderful-life.html" aria-label="소연(SOYEON) What a Wonderful Life"></a>
 <div class="cvw"><div class="strip"><img src="https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">영상통화 팬사인회 응모 마감 <span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">2일 1시간</span></div><div class="ar">소연(SOYEON)</div>
+<div class="cdl">영상통화 팬사인회 응모 마감 <span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">2일 0시간</span></div><div class="ar">소연(SOYEON)</div>
 <div class="al">What a Wonderful Life</div>
 <div class="tags"><span class="tg">특전 2/2</span><span class="tg">팬사인회</span></div><div class="meta">8종 · 판매처 2 · 9월 7일 발매</div>
 </div><div class="card" data-q="태민taemintaemin태민phaseisoftviolence" data-c="ㅌㅁtaemintaeminㅌㅁphaseisoftviolence">
 <a class="go" href="album/taemin-phase-i-soft-violence.html" aria-label="태민(TAEMIN) PHASE I : Soft Violence"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/24/k68Dth.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">3일 1시간</span></div><div class="ar">태민(TAEMIN)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">3일 0시간</span></div><div class="ar">태민(TAEMIN)</div>
 <div class="al">PHASE I : Soft Violence</div>
 <div class="tags"><span class="tg">특전 3/7</span><span class="tg w">품절 1건</span></div><div class="meta">6종 · 판매처 7 · 8월 31일 발매</div>
 </div><div class="card" data-q="82메이저82major82major82메이저heat" data-c="82ㅁㅇㅈ82major82major82ㅁㅇㅈheat">
 <a class="go" href="album/82major-heat.html" aria-label="82메이저(82MAJOR) HEAT"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/19/rgR15V.png" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-31T23:59:59.999999+09:00">4일 1시간</span></div><div class="ar">82메이저(82MAJOR)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-31T23:59:59.999999+09:00">4일 0시간</span></div><div class="ar">82메이저(82MAJOR)</div>
 <div class="al">HEAT</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 1건</span></div><div class="meta">8종 · 판매처 7 · 9월 1일 발매</div>
 </div><div class="card" data-q="지수jisoojisoo지수click" data-c="ㅈㅅjisoojisooㅈㅅclick">
 <a class="go" href="album/jisoo-click.html" aria-label="지수(JISOO) CLICK"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T13:00:00+09:00">7일 14시간</span></div><div class="ar">지수(JISOO)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T13:00:00+09:00">7일 13시간</span></div><div class="ar">지수(JISOO)</div>
 <div class="al">CLICK</div>
 <div class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 1건</span></div><div class="meta">4종 · 판매처 7 · 9월 4일 발매</div>
 </div><div class="card" data-q="and2bleand2blesequence01curiosity" data-c="and2bleand2blesequence01curiosity">
 <a class="go" href="album/and2ble-sequence-01-curiosity.html" aria-label="AND2BLE Sequence 01: Curiosity"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 20시간</span></div><div class="ar">AND2BLE</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 19시간</span></div><div class="ar">AND2BLE</div>
 <div class="al">Sequence 01: Curiosity</div>
 <div class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 7건</span></div><div class="meta">14종 · 판매처 7 · 9월 4일 발매</div>
 </div><div class="card" data-q="민호minhoshinee민호minhomakeithot" data-c="ㅁㅎminhoshineeㅁㅎminhomakeithot">
 <a class="go" href="album/shinee-make-it-hot.html" aria-label="민호(MINHO) Make it hot"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/QzJWoi.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">10일 1시간</span></div><div class="ar">민호(MINHO)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">10일 0시간</span></div><div class="ar">민호(MINHO)</div>
 <div class="al">Make it hot</div>
 <div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 1건</span></div><div class="meta">7종 · 판매처 6 · 9월 7일 발매</div>
 </div><div class="card" data-q="youngtak영탁youngtak영탁영탁gogo" data-c="youngtakㅇㅌyoungtakㅇㅌㅇㅌgogo">
 <a class="go" href="album/youngtak-영탁-gogo.html" aria-label="YOUNGTAK (영탁) GOGO"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-14T18:00:00+09:00">17일 19시간</span></div><div class="ar">YOUNGTAK (영탁)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-14T18:00:00+09:00">17일 18시간</span></div><div class="ar">YOUNGTAK (영탁)</div>
 <div class="al">GOGO</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 1건</span></div><div class="meta">4종 · 판매처 7 · 9월 14일 발매</div>
 </div><div class="card" data-q="코르티스cortiscortis코르티스greengreen" data-c="ㅋㄹㅌㅅcortiscortisㅋㄹㅌㅅgreengreen">
 <a class="go" href="album/cortis-greengreen.html" aria-label="코르티스(CORTIS) GREENGREEN"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/18/0O7cLx.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">24일 8시간</span></div><div class="ar">코르티스(CORTIS)</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-21T07:00:00+09:00">24일 7시간</span></div><div class="ar">코르티스(CORTIS)</div>
 <div class="al">GREENGREEN</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 8건</span></div><div class="meta">18종 · 판매처 7 · 9월 21일 발매</div>
 </div><div class="card" data-q="vvupvvup1stminialbumvvon" data-c="vvupvvup1stminialbumvvon">
 <a class="go" href="album/vvup-1st-mini-album-vvon.html" aria-label="VVUP 1st Mini Album ‘VVON’"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2025/11/21/I51yHl.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-10-29T00:00:00+09:00">62일 1시간</span></div><div class="ar">VVUP</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-10-29T00:00:00+09:00">62일 0시간</span></div><div class="ar">VVUP</div>
 <div class="al">1st Mini Album ‘VVON’</div>
 <div class="tags"><span class="tg w">품절 1건</span></div><div class="meta">1종 · 판매처 3 · 10월 29일 발매</div>
 </div><div class="card" data-q="제니jenniejennie제니fallenangel" data-c="ㅈㄴjenniejennieㅈㄴfallenangel">
 <a class="go" href="album/jennie-fallen-angel.html" aria-label="제니(JENNIE) Fallen Angel"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span></div>
-<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-10-29T23:59:59.999999+09:00">63일 1시간</span></div><div class="ar">제니(JENNIE)</div>
+<div class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-10-29T23:59:59.999999+09:00">63일 0시간</span></div><div class="ar">제니(JENNIE)</div>
 <div class="al">Fallen Angel</div>
 <div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 1건</span></div><div class="meta">4종 · 판매처 7 · 10월 30일 발매</div>
 </div><div class="card" data-q="에반evanevan에반deathofmeweverseexclusive" data-c="ㅇㅂevanevanㅇㅂdeathofmeweverseexclusive">
@@ -320,7 +453,7 @@ h1{font-size:20px}
 <details class="ft">
 <summary>이 사이트는 무엇인가</summary>
 <div class="body">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직에서 자동으로 모읍니다.
-앨범 <b>13</b>개가 예약판매 중이고, 같은 앨범이라도 <b>버전마다 구성이 다르고 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b> 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br><a href="webcal://kpop-album.vercel.app/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span><span class="pushwrap" style="display:none"> · <a href="#" id="pushbtn" role="button">새 예판 알림 받기</a>
+앨범 <b>13</b>개가 예약판매 중이고, 같은 앨범이라도 <b>버전마다 구성이 다르고 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b> 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br><a href="webcal://kpop-album.vercel.app/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">캘린더가 알아서 갱신됩니다</span><span class="pushwrap" style="display:none"> · <a href="#" id="pushbtn" role="button">새 예판 알림 받기</a>
 <span class="mut" id="pushmsg"></span></span>
 <script>
 (function(){
