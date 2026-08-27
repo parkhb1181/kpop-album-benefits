@@ -6,3 +6,5 @@ Allow: /
 
 User-agent: Daumoa
 Allow: /
+
+Sitemap: https://example.com/sitemap.xml

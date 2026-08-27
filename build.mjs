@@ -1,8 +1,9 @@
-import { writeFileSync, mkdirSync, rmSync, readFileSync } from 'node:fs';
+import { writeFileSync, mkdirSync, rmSync, readFileSync, existsSync } from 'node:fs';
 import { matchesAlbum } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
-import { sitemap, robots, koreanArtistFrom, displayArtist } from './src/seo.mjs';
+import { sitemap, robots, koreanArtistFrom, displayArtist, abs } from './src/seo.mjs';
+import { renderCard, hashesFor } from './src/ogcard.mjs';
 import * as kt from './src/ktown4u.mjs';
 import * as ala from './src/aladin.mjs';
 import * as wev from './src/weverse.mjs';
@@ -212,6 +213,13 @@ try {
 mkdirSync('./out/album', { recursive: true });
 mkdirSync('./out/data', { recursive: true });
 mkdirSync('./out/alarm', { recursive: true });
+mkdirSync('./out/og', { recursive: true });
+
+// 카드는 내용이 바뀐 앨범만 다시 굽는다. 이유는 ogcard.mjs의 hashesFor 주석 참고.
+const cardHashes = hashesFor('./out/og');
+const cardStat = { written: 0, skipped: 0, failed: 0 };
+// 카드에 찍는 날짜. "2026-08-27" → "2026.8.27"
+const cardDate = shortStamp(stamp).replace(/-0?/g, '.');
 
 // 사이트 전체 마감을 모은 캘린더. 구독하면 리빌드마다 알아서 갱신된다.
 const allAlarms = [];
@@ -268,9 +276,34 @@ for (const t of targets) {
     allAlarms.push(...alarms);
   }
 
+  // 공유 카드. og:image는 절대주소를 요구하므로 SITE_URL이 없으면 굽기만 하고 물리지는 않는다
+  // (로컬에서 out/og/*.png로 눈으로 확인할 수는 있다).
+  const card = await renderCard({
+    slug,
+    artist: artistName,
+    album: t.album,
+    rows,
+    hashes: cardHashes,
+    shortDate: cardDate,
+  });
+  cardStat[card === 'written' ? 'written' : card === 'skipped' ? 'skipped' : 'failed']++;
+  const ogCard = card && SITE_URL ? abs(SITE_URL, `og/${slug}.png`) : null;
+
   writeFileSync(
     `./out/album/${slug}.html`,
-    renderAlbum({ target: t, rows, errors, events, eventTotal, deadlines, stamp, siteUrl: SITE_URL, slug, artistKo }),
+    renderAlbum({
+      target: t,
+      rows,
+      errors,
+      events,
+      eventTotal,
+      deadlines,
+      stamp,
+      siteUrl: SITE_URL,
+      slug,
+      artistKo,
+      ogCard,
+    }),
     'utf8'
   );
   // 예판이 끝난 뒤 페이지를 "종료" 상태로 다시 그리려면 원본이 필요하다
@@ -321,6 +354,9 @@ for (const a of gone) {
         slug: a.slug,
         artistKo: d.artistKo,
         expired,
+        // 예판이 끝나도 카드는 다시 굽지 않는다 — 살아 있을 때 구운 걸 그대로 쓴다.
+        // 종료된 앨범도 검색·공유로는 계속 닿는다(위 주석 참고).
+        ogCard: SITE_URL && existsSync(`./out/og/${a.slug}.png`) ? abs(SITE_URL, `og/${a.slug}.png`) : null,
       }),
       'utf8'
     );
@@ -367,6 +403,7 @@ if (SITE_URL) {
   rmSync('./out/sitemap.xml', { force: true });
 }
 writeFileSync('./out/robots.txt', robots(SITE_URL), 'utf8');
+cardHashes.save();
 
 // 전체 마감 캘린더. 이게 사실상의 "알림 서비스"다 —
 // 구독해두면 새 컴백의 마감도 리빌드 때마다 알아서 따라 들어온다.
@@ -382,5 +419,9 @@ console.log(
 console.log(`  2개 이상 판매처: ${index.filter((a) => a.retailers >= 2).length}개`);
 console.log(`  특전 2곳 이상 비교 가능: ${index.filter((a) => a.benefitCount >= 2).length}개`);
 console.log(`  마감 알람: ${allAlarms.length}건 (앨범 ${index.filter((a) => a.nextDeadline).length}개) → alarm.ics`);
+console.log(
+  `  공유 카드: 새로 ${cardStat.written} · 그대로 ${cardStat.skipped}${cardStat.failed ? ` · 실패 ${cardStat.failed}` : ''}` +
+    `${SITE_URL ? '' : ' — ⚠ SITE_URL 미설정이라 og:image에는 물리지 않았습니다'}`
+);
 
 await closeBrowser();

@@ -363,6 +363,7 @@ export function renderAlbum({
   slug,
   artistKo,
   expired,
+  ogCard,
 }) {
   const byKey = new Map();
   for (const r of rows) {
@@ -485,8 +486,18 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
     `${artistName} 앨범 ${target.album} 버전 ${groups.length}종의 구성·가격·판매처별 특전을 ` +
     `${retailerNames.slice(0, 4).join('·')}${retailerNames.length > 4 ? ` 등 ${retailerNames.length}곳` : ''}에서 비교합니다.` +
     `${soldCount ? ` 품절 ${soldCount}건.` : ''} ${shortDate(stamp)} 기준.`;
-  // 공유 카드 이미지 — 특전 이미지가 있으면 그게 가장 설명적이고, 없으면 앨범 썸네일
-  const ogImage = rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
+  /**
+   * 공유 카드 이미지.
+   *
+   * 1순위는 우리가 구운 카드(`ogCard`)다 — 커버·판매처 수·버전 수·품절·최저가가 한 장에 담긴다.
+   * 그게 없을 때만 판매처 이미지로 폴백한다. 폴백은 세로로 긴 배너라(실측 720×1525)
+   * 1.91:1 카드에서 가운데 띠만 잘려 나오고 우리 정보가 하나도 안 담긴다 — 없느니만 못하진 않지만 나쁘다.
+   *
+   * `ogCard`는 SITE_URL이 있을 때만 채워진다. og:image는 절대주소를 요구하는데,
+   * 틀린 도메인을 박느니 판매처 이미지를 쓰는 게 낫기 때문이다(canonical·sitemap과 같은 규칙).
+   */
+  const ogImage =
+    ogCard || rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
 
   return shell(
     `${artistName} 앨범 ${target.album} — 버전·구성·가격·특전 총정리`,
