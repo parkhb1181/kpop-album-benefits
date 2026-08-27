@@ -75,11 +75,11 @@ td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);b
 .hd{margin-bottom:24px}
 .hdrow{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
 padding-bottom:10px;border-bottom:2px solid var(--fg)}
-.hd .bd{font-size:12px;font-weight:700;color:var(--fg);white-space:nowrap}
+/* 브랜드 줄이 곧 h1이다. 별도 제목 줄을 두면 같은 말을 두 번 하게 된다 —
+   "K-POP 앨범 특전 비교"와 "예약판매 중인 K-POP 앨범 …"이 정확히 그랬다.
+   h1은 크기가 아니라 **존재**가 검색 신호라, 12px이어도 제 역할을 한다. */
+.hd .bd{font-size:12px;font-weight:700;color:var(--fg);white-space:nowrap;margin:0;letter-spacing:0}
 .hd .hdm{font-size:10.5px;color:var(--dim);font-weight:400;text-align:right}
-h1{font-size:23px;margin:0 0 8px;letter-spacing:-.015em}
-.sub{font-size:13px;color:var(--mut);line-height:1.75;margin:0}
-.sub b{color:var(--fg);font-weight:600}
 
 /* ── 인덱스 격자 ─────────────────────────────────────────────
    근거는 docs/38-조사-배치원리.md.
@@ -96,13 +96,6 @@ h1{font-size:23px;margin:0 0 8px;letter-spacing:-.015em}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px}
 .card{position:relative;min-width:0;border:0;display:block}
 .card .go{position:absolute;inset:0;z-index:1}
-
-/* 초점 — 마감이 가장 급한 앨범 하나만 2×2로 병합한다.
-   격자는 지키고 딱 한 번 이유를 갖고 깬다. 크기가 곧 "가장 급함"이라는 정보다.
-   무작위로 흩는 건 깨는 게 아니라 격자가 없는 것이다 — NN/g 실측상 반무작위 훑기를 부른다. */
-.card.f{grid-column:span 2;grid-row:span 2}
-/* 열이 하나로 접히는 폭에서만 병합을 푼다(넘침 방지). 배치를 바꾸는 유일한 쿼리다. */
-@media(max-width:440px){.card.f{grid-column:span 1;grid-row:auto}}
 
 /* 커버 — 종횡비는 전부 1:1. 크기만 다르고 비율은 안 섞는다.
    비율을 섞으면 행 정렬이 깨지는데, 행 정렬이 격자를 훑을 수 있게 만드는 바로 그것이다.
@@ -143,10 +136,6 @@ display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hi
 font-size:10px;line-height:1.2;font-weight:500;color:var(--mut);background:var(--card);white-space:nowrap}
 .tg.w{color:var(--acc);font-weight:700}
 .card .meta{font-size:11.5px;color:var(--dim);font-variant-numeric:tabular-nums;line-height:1.55}
-.card.f .ar{font-size:12px}
-.card.f .al{font-size:28px;line-height:1.16;margin:8px 0 12px;-webkit-line-clamp:3}
-.card.f .meta{font-size:13.5px}
-.card.f .cvw{margin-bottom:16px}
 /* 앨범 상세의 칩. --ok가 먹이 된 뒤로 테두리가 너무 세서 배경 칩으로 바꿨다.
    인덱스 카드는 이 클래스를 안 쓴다 — 거기선 굵기와 액센트로만 낸다(.card .meta). */
 .badge{display:inline-block;font-size:10.5px;font-weight:700;color:var(--fg);background:var(--card);
@@ -163,10 +152,6 @@ border:0;border-radius:99px;padding:1px 7px;margin-right:5px}
 .cd.over{color:var(--mut);font-weight:400}
 .alarm{font-size:12px;white-space:nowrap}
 .card .cdl{font-size:11.5px;color:var(--mut);margin-top:6px}
-/* 초점 카드에서는 카운트다운이 "왜 이게 큰가"에 답하는 숫자다. 텍스트 위로 올린다. */
-.card.f .cdl{order:-1;margin:0 0 10px;font-size:13px;color:var(--acc);font-weight:700}
-.card.f{display:flex;flex-direction:column}
-.card.f .cvw{order:-3}.card.f .dots{order:-2}
 /* 검색 — 29CM 실측을 옮겼다. border-b-4 border-on-black · 36px semibold · placeholder #d4d4d4.
    **상자가 아니다.** 배경도 테두리도 없고 아래 굵은 선 하나뿐이다.
    저쪽은 전체화면 검색이라 36px이지만 우리는 목록 위 필터라 26px로 낮췄다 —
@@ -861,23 +846,16 @@ function coverStrip(a, eager = false) {
 
 export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
   /**
-   * 초점 하나를 고른다 — **마감이 가장 급한 앨범**.
+   * 격자는 균일하다. 한 장만 키우는 초점 카드를 뒀다가 뺐다 —
+   * 격자에 구멍이 뚫린 것처럼 보였고, 둘로 늘리면 "왜 저 둘인가"에 답이 없어진다.
+   * 29CM 상품 격자도 균일하다. 저쪽은 카드 크기가 아니라 **섹션**으로 강조한다.
    *
-   * 격자를 깨는 건 이 한 장뿐이다. 격자에 맞춘 것과 깬 것의 대비는
-   * 격자가 먼저 분명히 서 있을 때만 인지되기 때문이다(docs/38-조사-배치원리.md).
-   * 그리고 깨는 데는 이유가 있어야 한다 — 여기서는 **크기가 곧 "가장 급함"이라는 정보**다.
-   *
-   * 목록 순서도 같은 축(마감 급한 순)으로 맞춘다. 크기와 순서가 다른 축을 가리키면
-   * "왜 저게 큰가"에 답이 없어진다.
+   * 대신 **마감이 급한 순으로 정렬**해서 가장 급한 것이 좌상단에 온다 —
+   * 구텐베르크 도해상 눈이 먼저 닿는 자리다(docs/38-조사-배치원리.md).
+   * 크기로 외치지 않고 순서로 말한다.
    */
-  const now = Date.now();
   const at = (a) => (a.nextDeadline?.at ? new Date(a.nextDeadline.at).getTime() : Infinity);
-  const ordered = [...albums].sort(
-    (x, y) => Number(!!x.expired) - Number(!!y.expired) || at(x) - at(y)
-  );
-  // 마감이 이미 지났거나 없는 앨범을 크게 세우면 근거가 없다. 그럴 땐 초점을 안 만든다.
-  const head = ordered[0];
-  const feature = head && !head.expired && Number.isFinite(at(head)) && at(head) > now ? head : null;
+  const ordered = [...albums].sort((x, y) => Number(!!x.expired) - Number(!!y.expired) || at(x) - at(y));
 
   // 검색 대상 문자열을 빌드 때 미리 만들어 카드에 박는다 (브라우저는 비교만 한다)
   const hayOf = (a) => [a.artistDisplay, a.artist, a.artistKo, a.album].filter(Boolean).join(' ');
@@ -887,22 +865,25 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
    */
   const cards = ordered
     .map((a, i) => {
-      const f = a === feature;
       // 태그 — 29CM 상품 카드 방식. 테두리 알약이 아니라 회색 배경 채움이다(실측: radius 2px).
       // 경고(품절)만 액센트를 쓴다 — 액센트가 한 곳뿐이라 그게 바로 눈에 띈다.
       const tg = [
-        // benefitCount는 "특전을 주는 곳"이 아니라 **내용까지 확인된 판매처 수**다.
-        // (build.mjs: benefit 배열이 채워진 row의 판매처 유일값)
-        // 구성 비공개(secret)·확인 못함(unknown)은 여기서 빠지므로 실제보다 적게 잡힌다.
-        // 그래서 "특전 3곳"이 아니라 "특전 확인 3곳"이라고 쓴다 — 라벨이 세는 것과 맞아야 한다.
-        a.benefitCount ? `<span class="tg">특전 확인 ${a.benefitCount}곳</span>` : '',
+        /**
+         * benefitCount는 "특전을 주는 곳"이 아니라 **내용까지 확인된 판매처 수**다.
+         * (build.mjs: benefit 배열이 채워진 row의 판매처 유일값)
+         * 구성 비공개(secret)·확인 못함(unknown)은 빠지므로 실제보다 적게 잡힌다.
+         *
+         * 그래서 "3곳"이라고 단정하지 않고 **전체 판매처 대비 분수**로 쓴다 — `특전 3/7`.
+         * 단위("곳")를 억지로 붙이지 않아도 되고, 7곳 중 3곳이라는 정보가 덤으로 붙는다.
+         */
+        a.benefitCount ? `<span class="tg">특전 ${a.benefitCount}/${a.retailers}</span>` : '',
         a.fansignCount ? '<span class="tg">팬사인회</span>' : '',
         // soldCount는 버전이 아니라 **상품(판매처×버전) 단위**라 "종"이 아니라 "건"이다.
         a.soldCount ? `<span class="tg w">품절 ${a.soldCount}건</span>` : '',
       ]
         .filter(Boolean)
         .join('');
-      return `<div class="card${f ? ' f' : ''}" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
+      return `<div class="card" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
         searchKey(choseong(hayOf(a)))
       )}">
 <a class="go" href="album/${esc(a.slug)}.html" aria-label="${esc(`${a.artistDisplay || a.artist} ${a.album}`)}"></a>
@@ -937,11 +918,10 @@ ${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
     'K-POP 앨범 판매처별 특전 비교 | 버전·구성·가격 한눈에',
     `<header class="hd">
 <div class="hdrow">
-<span class="bd">앨범 특전</span>
+<h1 class="bd">K-POP 앨범 특전</h1>
 <span class="hdm">${esc(shortDate(stamp).replace(/^\d+\./, '').replace('.', '월 '))}일 갱신</span>
 </div>
 </header>
-<h1>예약판매 중인 K-POP 앨범, 판매처마다 포카가 다릅니다</h1>
 ${
       // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
       albums.length >= 8

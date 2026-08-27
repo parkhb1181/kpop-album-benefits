@@ -24,6 +24,19 @@ export default async function handler(req, res) {
   if (!configured) return res.status(503).json({ error: 'KV 미설정' });
   if (!SITE) return res.status(503).json({ error: 'SITE_URL 미설정' });
 
+  /**
+   * 이 저장소를 배포하는 Vercel 프로젝트가 둘이었다. 크론은 vercel.json에 있으므로
+   * **양쪽에서 다 돈다.** 둘이 같은 KV를 보면 거의 동시에 같은 "새 앨범"을 읽고
+   * 둘 다 발송해서 구독자에게 알림이 두 번 간다.
+   *
+   * 한쪽의 KV 연결을 끊어도 이미 떠 있는 배포에는 변수가 구워져 있어 계속 돈다.
+   * 그래서 설정이 아니라 코드로 막는다 — SITE_URL이 가리키는 프로젝트만 발송한다.
+   */
+  const own = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (own && !SITE.includes(own)) {
+    return res.status(200).json({ ok: true, skipped: `정식 배포가 아님 (${own} ≠ ${SITE})` });
+  }
+
   const vapid = {
     publicKey: process.env.VAPID_PUBLIC_KEY,
     privateKey: process.env.VAPID_PRIVATE_KEY,
