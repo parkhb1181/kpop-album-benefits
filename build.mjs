@@ -377,6 +377,8 @@ for (const t of targets) {
       events,
       eventTotal,
       deadlines,
+      // 팬이 보내준 실물 사진. 승인된 것만 온다.
+      reports: reportsBy.get(slug) || [],
       stamp,
       siteUrl: SITE_URL,
       slug,
@@ -436,6 +438,8 @@ for (const a of gone) {
         // "D-3"이라고 우긴다.
         events: mks.refresh(d.events || []),
         eventTotal: 0,
+        // 예판이 끝나도 실물 사진은 유효하다 — 오히려 그때 제일 많이 들어온다
+        reports: reportsBy.get(a.slug) || [],
         stamp,
         siteUrl: SITE_URL,
         slug: a.slug,
