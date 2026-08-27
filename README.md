@@ -312,7 +312,13 @@ B층을 자주 못 도는 건 위버스샵에 **전체 신상품을 한 번에 �
 
 ## 배포
 
+**https://kpop-album.vercel.app**
+
 정적 파일이라 `out/`을 그대로 서빙하면 된다.
+
+`vercel.json`의 `buildCommand`는 **아무것도 안 하는 명령**이다. 빈 문자열도, `null`도 안 된다 —
+`null`은 "기본값"이라 Vercel이 `npm run build`(= 스크래퍼)를 돌리고,
+빈 문자열은 빌드 단계 자체를 없앤다. 스크래퍼를 Vercel에서 돌리면 안 되는 이유는 아래 참고.
 
 - **Vercel** — `vercel.json`에 `outputDirectory: "out"`, 빌드 없음
 - **갱신** — `.github/workflows/rebuild.yml`이 하루 두 번(KST 10시·19시) 다시 긁어 `out/`을 커밋한다.
