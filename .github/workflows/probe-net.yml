@@ -1,0 +1,52 @@
+name: probe-net
+
+# 러너에서만 재현되는 지연을 계측한다 (조사용 — out/을 건드리지 않는다).
+#
+# 뮤직플랜트가 로컬 0.42초인데 Actions에서 앨범당 105초를 먹었다. 그런데 간헐적이라
+# 한 번 돌려서 정상이면 아무것도 증명되지 않는다. 그래서 dispatch로 여러 번 돌린다.
+on:
+  workflow_dispatch:
+    inputs:
+      burst:
+        description: '판매처별 연속 호출 횟수 (요청 누적으로 막히는지 본다)'
+        required: false
+        default: '20'
+
+# rebuild/watch와 그룹을 나눈다 — 조사가 배포를 막으면 안 된다.
+concurrency:
+  group: probe-net
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 러너가 어느 대역에 떴는지 — 뮤직플랜트가 특정 IP 대역만 막는다면 여기가 단서다
+      - name: 러너 출구 IP
+        run: |
+          echo "egress IP:"
+          curl -s --max-time 10 https://api.ipify.org || echo "(확인 실패)"
+          echo
+          echo "IPv6 경로:"
+          curl -s --max-time 10 -6 https://api64.ipify.org || echo "(IPv6 없음)"
+
+      # fetch보다 아래 계층. SYN이 나가는지, 어디서 끊기는지 본다.
+      - name: 저수준 도달성 (SYN·TLS)
+        run: |
+          for h in www.musicplant.co.kr www.aladin.co.kr; do
+            echo "── $h"
+            getent ahosts "$h" || true
+            timeout 15 curl -sS -o /dev/null --max-time 12 \
+              -w '  curl: dns %{time_namelookup}s · connect %{time_connect}s · tls %{time_appconnect}s · ttfb %{time_starttransfer}s · total %{time_total}s · http %{http_code}\n' \
+              "https://$h/" || echo "  curl 실패 (exit $?)"
+          done
+
+      - name: 단계별 계측
+        run: node probe_net.mjs --burst=${{ github.event.inputs.burst || '20' }}
