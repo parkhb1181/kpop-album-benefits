@@ -256,7 +256,24 @@ async function collectAlbum(t) {
 }
 
 // ── 실행 ─────────────────────────────────────────────────────
-const stamp = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
+/**
+ * **12시간제를 쓰지 않는다.** 자정 직후 빌드가 `오전 12:49`로 찍히는데, 그건 정오로 읽힌다.
+ * 마감 시각(render.mjs의 kst)에는 이미 `hour12:false`를 넣어뒀는데 여기만 빠져 있었다.
+ *
+ * `hour12:false`만 주면 ko-KR이 `0시 49분 19초` 형식으로 바뀌어 `shortDate`의 파싱이 깨진다
+ * (`\d{1,2}:\d{2}`로 자르는데 그 형태가 사라진다). 그래서 자리수까지 명시해 고정한다.
+ *   → `2026. 8. 28. 00:49:19`
+ */
+const stamp = new Date().toLocaleString('ko-KR', {
+  timeZone: 'Asia/Seoul',
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  hour12: false,
+});
 console.log('컴백 탐지 중…');
 const disc = await discoverPreorders({ concurrency: 8 });
 let targets = disc.albums.map((a) => ({ ...a, artist: a.artistEn }));
