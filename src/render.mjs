@@ -3,6 +3,7 @@ import { metaTags, abs, displayArtist } from './seo.mjs';
 import { googleUrl } from './ics.mjs';
 import { roughLeft } from './deadlines.mjs';
 import { choseong, searchKey } from './hangul.mjs';
+import { feeFor } from './shipping.mjs';
 
 export const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -153,7 +154,8 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
    실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
 .cmp.fx{table-layout:fixed}
 .cmp.fx .c1{width:170px}
-.cmp.fx .c2{width:132px}
+.cmp.fx .c2{width:112px}
+.cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
 .cmp .rt{font-weight:700}
@@ -972,22 +974,21 @@ function faqHtml({ artistName, album, retailerNames, best, versions }) {
   const qa = [
     [
       `${artistName} 앨범은 어디서 사야 하나요?`,
-      `${retailerNames.join(' · ')}에서 팝니다. <b>상품 가격은 대체로 같고, 판매처마다 주는 특전(미공개 포토카드 등)이 다릅니다.</b> ` +
-        `그래서 "어디가 싼가"보다 <b>"어느 특전을 받고 싶은가"</b>로 고르는 게 맞습니다. 위 표에서 판매처별 특전을 비교하세요.`,
+      `<b>${retailerNames.join(' · ')}</b> ${retailerNames.length}곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.`,
     ],
     [
       `${album} 버전은 몇 종인가요?`,
-      `현재 <b>${versions}종</b>을 확인했습니다. 버전마다 구성품과 포토카드가 다르고, 판매처 특전은 그 위에 따로 붙습니다.`,
+      `<b>${versions}종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.`,
     ],
     best
       ? [
           `전 버전을 다 모으려면 얼마인가요?`,
-          `배송비·쿠폰까지 넣은 최저 조합이 <b>${won(best.sum)}</b>입니다. 한 곳에서 다 못 사는 경우가 많아 배송비가 몇 번 붙는지가 총액을 가릅니다.`,
+          `배송비와 쿠폰까지 넣어 <b>${won(best.sum)}</b>입니다.`,
         ]
       : null,
     [
       `특전은 언제까지 주나요?`,
-      `대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.`,
+      `<b>예약판매 기간 내 선착순</b>이 대부분이고 수량이 소진되면 끝납니다. 이 페이지는 하루 두 번 갱신됩니다.`,
     ],
   ].filter(Boolean);
   return `<h2>자주 묻는 질문</h2>
@@ -1176,7 +1177,7 @@ export function renderAlbum({
        * 그래서 **어디서 가져온 것인지**를 적는다. 그게 확인된 사실의 전부다.
        */
       if (compShot)
-        shots.push({ url: compShot, cap: `구성품 (${compFrom})`, note: '특전이 아니라 앨범 구성품입니다', wide: true });
+        shots.push({ url: compShot, cap: `구성품 (${compFrom})`, note: '판매처 특전이 아닌 앨범 기본 구성품', wide: true });
 
       // 팬이 보내준 실물 사진. 판매처가 공개하지 않는 특전은 이것 말고는 볼 방법이 없다.
       // 사람이 승인한 것만 여기까지 온다 (api/review.js).
@@ -1249,6 +1250,12 @@ export function renderAlbum({
        *       태그로 늘어놓는다. 태그마다 제 상품 링크를 건다.
        * 실측: jetposter｜개별 21줄 → 11줄. 정보는 하나도 안 버린다.
        */
+      /** 앨범명 자체가 대괄호에 들어 있는 판매처가 있다(위버스샵). 그건 변형이 아니다. */
+      const norm = (x) =>
+        String(x || '')
+          .toLowerCase()
+          .replace(/[^a-z0-9가-힣]/g, '');
+      const albumKey = norm(target.album);
       const variantLabel = (i) => {
         const br = (i.title || '').match(/^(?:\s*\[[^\]]+\])+/);
         if (br)
@@ -1258,6 +1265,18 @@ export function renderAlbum({
             .join(' · ');
         return (i.events || []).join(' · ');
       };
+      const meaningful = (l) => {
+        const n = norm(l);
+        return n && n !== albumKey && !(albumKey && albumKey.includes(n) && n.length > 5);
+      };
+      /** 이 상품 한 장만 살 때의 배송비. 판매처별 정책은 shipping.mjs에 출처와 함께 있다. */
+      const shipOf = (i) => feeFor(i.retailer, i.price ?? 0, i.freeShipping === true);
+      const shipCell = (i) => {
+        const f = shipOf(i);
+        if (f.fee == null) return `<span class="flag">${esc(f.why || '미확인')}</span>`;
+        const v = f.fee === 0 ? '<span class="ok2">무료</span>' : won(f.fee);
+        return `${v}${f.unknown ? '<span class="est">추정</span>' : ''}`;
+      };
       const rowGroups = new Map();
       for (const i of items) {
         const k = [i.retailer, i.price, i.soldOut === true, i.maxOrder || '', benefitCell(i)].join('§');
@@ -1265,8 +1284,20 @@ export function renderAlbum({
         rowGroups.get(k).push(i);
       }
       const cards = `<div class="wrap"><table class="cmp fx">
-<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
-<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody>${[...rowGroups.values()]
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th class="num">배송</th><th>특전</th></tr></thead><tbody>${[...rowGroups.values()]
+        /**
+         * **싼 순으로 세운다.** 가격이 같으면 배송비가 갈라놓는다.
+         * 상품값만 보면 알라딘(무료배송)과 케타포(3만원 미만 3,000원)가 같은 줄에 서는데
+         * 실제로 내는 돈은 다르다.
+         */
+        .sort((a, b) => {
+          // 배송비를 **모르는 것**을 0으로 치면 위버스샵(배송지에 따라 다름)이
+          // 무료배송인 알라딘 바로 뒤에 선다. 모르는 건 싸다는 뜻이 아니라서 뒤로 보낸다.
+          const p = (x) => x[0].price ?? 0;
+          const f = (x) => shipOf(x[0]).fee ?? Number.MAX_SAFE_INTEGER;
+          return p(a) - p(b) || f(a) - f(b);
+        })
         .map((g) => {
           const i = g[0];
           // 변형 태그 — 한 줄로 합친 상품들이 서로 무엇이 다른지가 여기 남는다.
@@ -1276,7 +1307,8 @@ export function renderAlbum({
           const said = new Set();
           const vars = [];
           for (const x of g) {
-            const full = variantLabel(x) || (g.length > 1 ? '기본' : '');
+            const raw = variantLabel(x);
+            const full = (meaningful(raw) ? raw : '') || (g.length > 1 ? '기본' : '');
             if (!full || seen.has(full)) continue;
             seen.add(full);
             const segs = full.split(' · ');
@@ -1296,6 +1328,7 @@ export function renderAlbum({
             flags.length ? `<div class="tags">${flags.join('')}</div>` : ''
           }</td>
 <td class="num" data-label="가격">${money(i)}</td>
+<td class="num" data-label="배송">${shipCell(i)}</td>
 <td class="ben" data-label="특전">${benefitCell(i)}</td></tr>`;
         })
         .join('')}</tbody></table></div>`;
@@ -1396,7 +1429,7 @@ ${tabs
             : b.fee === 0
               ? '무료'
               : won(b.fee)
-        }${b.unknown ? '<span class="est">추정</span>' : ''}${b.coupon ? ` · 쿠폰 -${won(b.coupon)}` : ''}</div>
+        }${b.unknown ? '<span class="est">추정</span>' : ''}${b.coupon ? ` · 쿠폰 −${won(b.coupon)}` : ''}</div>
 </div>`
       )
       .join('');
@@ -1411,7 +1444,7 @@ ${tabs
     const singleRows = opt.singles
       .map((s, n) => {
         const meta = [
-          `${s.count}/${opt.versions}종`,
+          s.full ? `${opt.versions}종 전부` : `${opt.versions}종 중 ${s.count}종`,
           s.fee == null ? '배송 미확인' : s.fee === 0 ? '배송 무료' : `배송 ${won(s.fee)}`,
           s.coupon ? `쿠폰 −${won(s.coupon)}` : '',
         ]
@@ -1420,7 +1453,7 @@ ${tabs
         return `<li class="rk${s.full ? '' : ' part'}">
 <span class="rkn">${n + 1}</span>
 <span class="rkb">${retailerMark(s.retailer)}<b>${esc(s.retailer)}</b>
-<span class="rkm">${esc(meta)}${s.full ? '' : ' <span class="flag">전 종 없음</span>'}</span></span>
+<span class="rkm">${esc(meta)}</span></span>
 <span class="rkv">${won(s.sum)}${s.unknown ? '<span class="est">추정</span>' : ''}</span>
 </li>`;
       })
