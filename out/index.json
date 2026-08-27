@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. AM 10:18:39",
+  "stamp": "2026. 8. 27. AM 10:33:20",
   "albums": [
     {
       "artistId": 10,
@@ -14,7 +14,7 @@
       "versions": 13,
       "retailers": 5,
       "benefitCount": 3,
-      "soldCount": 5,
+      "soldCount": 4,
       "rowCount": 44,
       "artistKo": "엔하이픈",
       "artistDisplay": "엔하이픈(ENHYPEN)",
@@ -90,7 +90,7 @@
       "versions": 8,
       "retailers": 5,
       "benefitCount": 2,
-      "soldCount": 3,
+      "soldCount": 2,
       "rowCount": 41,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",

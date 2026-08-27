@@ -1,39 +1,33 @@
 import { withPage, close } from './src/browser.mjs';
 
-const url = 'https://www.withmuu.com/goods/goods_search.php?keyword=' + encodeURIComponent('태민');
 const r = await withPage(
-  url,
+  'https://makestar.co/?keyword=' + encodeURIComponent('태민'),
   async (page) => {
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(6500);
     return page.evaluate(() => {
-      const anchors = [...document.querySelectorAll('a')].filter((a) => /goodsNo=|goods_view/.test(a.href));
-      const items = [];
+      // 이벤트 카드 후보: /event/ 링크를 가진 요소를 위로 거슬러 찾는다
+      const out = [];
       const seen = new Set();
-      for (const a of anchors) {
-        const id = (a.href.match(/goodsNo=(\d+)/) || [])[1];
-        if (!id || seen.has(id)) continue;
-        // 상품 카드 컨테이너를 위로 거슬러 찾는다
+      for (const a of document.querySelectorAll('a')) {
+        const href = a.getAttribute('href') || '';
+        if (!/^\/(event|product)\/\d+/.test(href)) continue;
         let box = a;
-        for (let i = 0; i < 6 && box; i++) {
+        for (let i = 0; i < 5 && box; i++) {
           box = box.parentElement;
-          if (box && /원/.test(box.innerText) && box.innerText.length < 500) break;
+          if (box && box.innerText && box.innerText.length > 30 && box.innerText.length < 400) break;
         }
         const txt = (box?.innerText || a.innerText || '').replace(/\s+/g, ' ').trim();
-        const price = (txt.match(/([\d,]{4,})\s*원/) || [])[1];
-        const alt = a.querySelector('img')?.getAttribute('alt') || '';
-        seen.add(id);
-        items.push({ id, price, alt: alt.slice(0, 80), txt: txt.slice(0, 100) });
+        if (!txt || seen.has(href)) continue;
+        seen.add(href);
+        out.push({ href, txt: txt.slice(0, 220) });
       }
-      return { count: items.length, items: items.slice(0, 10), sampleHtml: document.body.innerHTML.length };
+      return { anchors: out.slice(0, 14), classes: [...new Set([...document.querySelectorAll('div[class]')].map((d) => d.className))].filter((c) => /event|card|item|list/i.test(c)).slice(0, 12) };
     });
   },
-  { settle: 2000 }
+  { settle: 500, timeout: 40000 }
 );
 
-console.log('=== 위드뮤 (headless) ===');
-if (!r) console.log('실패');
-else {
-  console.log('상품', r.count, '건 / DOM', r.sampleHtml, 'b');
-  r.items.forEach((x) => console.log(' ', String(x.price || '-').padStart(8), '|', (x.alt || x.txt).slice(0, 72)));
-}
+console.log('=== 메이크스타 검색 카드 ===');
+(r?.anchors || []).forEach((x) => console.log(' ', x.href.padEnd(18), '|', x.txt.slice(0, 130)));
+console.log('\n클래스 후보:', (r?.classes || []).slice(0, 8).join(' / '));
 await close();

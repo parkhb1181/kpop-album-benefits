@@ -109,7 +109,32 @@ const stockCell = (i) =>
 /** 1인 구매 제한 — 버전마다 다르다. 팬싸 응모용 대량 구매에 결정적 */
 const limitCell = (i) => (i.maxOrder ? `<b>${i.maxOrder}</b>장` : '<span class="mut">—</span>');
 
-export function renderAlbum({ target, rows, errors, stamp, siteUrl, slug, artistKo }) {
+/**
+ * 팬사인회·영상통화 이벤트 — 메이크스타에서만 나온다.
+ * 앨범값(1~2만원)보다 훨씬 큰 돈이 걸리는 결정이라 특전보다 위에 놓는다.
+ */
+function eventsHtml(events) {
+  if (!events?.length) return '';
+  const rows = events
+    .map((e) => {
+      const when = e.closing
+        ? '<span class="sold">마감임박</span>'
+        : e.dday != null
+          ? `<b>D-${e.dday}</b>`
+          : '<span class="mut">진행중</span>';
+      return `<tr><td class="rt">${esc(e.label)}</td><td class="num">${when}</td>
+<td class="mut">${esc(e.from)} ~ ${esc(e.to)}</td>
+<td>${esc(e.title)}</td></tr>`;
+    })
+    .join('');
+  return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
+<div class="warn">앨범을 <b>어디서 사느냐가 응모 자격을 가릅니다.</b> 지정된 판매처에서 사야 응모권이 나옵니다.</div>
+<div class="wrap"><table><thead><tr><th>종류</th><th>남은 기간</th><th>기간</th><th>이벤트</th></tr></thead><tbody>${rows}</tbody></table></div>
+<div class="pol">메이크스타 검색 기준. <b>여기 없다고 팬싸가 없는 건 아닙니다</b> — 다른 판매처가 여는 팬싸는 잡지 못합니다.
+위버스샵·알라딘·Ktown4u·사운드웨이브는 팬싸 정보를 아예 제공하지 않습니다.</div>`;
+}
+
+export function renderAlbum({ target, rows, errors, stamp, events, siteUrl, slug, artistKo }) {
   const byKey = new Map();
   for (const r of rows) {
     if (!byKey.has(r.key)) byKey.set(r.key, []);
@@ -229,6 +254,7 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
 <div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능${
       soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
     }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
+${eventsHtml(events)}
 ${optHtml}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
 ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`,

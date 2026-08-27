@@ -8,6 +8,7 @@ import * as ala from './src/aladin.mjs';
 import * as wev from './src/weverse.mjs';
 import * as sw from './src/soundwave.mjs';
 import * as wm from './src/withmuu.mjs';
+import * as mks from './src/makestar.mjs';
 import { close as closeBrowser, isDisabled } from './src/browser.mjs';
 
 const ONLY = process.argv.slice(2).find((a) => !a.startsWith('-')); // 특정 앨범만 빌드
@@ -156,7 +157,15 @@ async function collectAlbum(t) {
     errors.push(`위버스샵: ${e.message}`);
   }
 
-  return { rows, errors };
+  // 팬사인회·영상통화 — 메이크스타에만 있다 (헤드리스 필요)
+  let events = [];
+  try {
+    events = await mks.events(nameVariants(t.artistEn)[0] || t.artistEn);
+  } catch (e) {
+    errors.push(`메이크스타: ${e.message}`);
+  }
+
+  return { rows, errors, events };
 }
 
 // ── 실행 ─────────────────────────────────────────────────────
@@ -174,7 +183,7 @@ const index = [];
 for (const t of targets) {
   const slug = slugify(`${t.artist}-${t.album}`);
   process.stdout.write(`  ${t.artist} — ${t.album} … `);
-  const { rows, errors } = await collectAlbum(t);
+  const { rows, errors, events } = await collectAlbum(t);
   if (rows.length === 0) {
     console.log('수집 0건, 건너뜀');
     continue;
@@ -192,7 +201,7 @@ for (const t of targets) {
 
   writeFileSync(
     `./out/album/${slug}.html`,
-    renderAlbum({ target: t, rows, errors, stamp, siteUrl: SITE_URL, slug, artistKo }),
+    renderAlbum({ target: t, rows, errors, events, stamp, siteUrl: SITE_URL, slug, artistKo }),
     'utf8'
   );
   index.push({
