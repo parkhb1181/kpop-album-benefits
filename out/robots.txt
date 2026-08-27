@@ -7,4 +7,4 @@ Allow: /
 User-agent: Daumoa
 Allow: /
 
-Sitemap: https://kpop-album.vercel.app/sitemap.xml
+Sitemap: https://kpop-album-benefits.vercel.app/sitemap.xml
