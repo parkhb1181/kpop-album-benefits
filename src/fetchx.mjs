@@ -6,10 +6,16 @@ export const UA =
  * @param {{encoding?: string}} [opt] YES24 등 일부 국내몰은 EUC-KR이라 명시가 필요하다
  */
 export async function getText(url, opt = {}) {
-  const res = await fetch(url, {
-    headers: { 'user-agent': UA, 'accept-language': 'ko-KR,ko;q=0.9,en;q=0.8' },
-    redirect: 'follow',
-  });
+  // 알라딘이 연속 요청에 503을 준다. 짧게 물러섰다 다시 시도한다.
+  let res;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    res = await fetch(url, {
+      headers: { 'user-agent': UA, 'accept-language': 'ko-KR,ko;q=0.9,en;q=0.8' },
+      redirect: 'follow',
+    });
+    if (res.ok || ![429, 503, 502].includes(res.status)) break;
+    await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
+  }
   if (!res.ok) throw new Error(`${res.status} ${url}`);
 
   // 응답 헤더에 charset이 있으면 그것을 우선한다

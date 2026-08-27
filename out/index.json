@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. AM 9:54:28",
+  "stamp": "2026. 8. 27. AM 10:01:31",
   "albums": [
     {
       "artistId": 10,
@@ -114,6 +114,22 @@
       "rowCount": 21
     },
     {
+      "artistId": 113,
+      "artistEn": "i-dle (아이들)",
+      "album": "What a Wonderful Life",
+      "skuCount": 5,
+      "benefit": true,
+      "deliveryDate": "2026-09-07",
+      "priceMin": 13300,
+      "artist": "i-dle (아이들)",
+      "slug": "i-dle-아이들-what-a-wonderful-life",
+      "versions": 8,
+      "retailers": 2,
+      "benefitCount": 2,
+      "soldCount": 0,
+      "rowCount": 9
+    },
+    {
       "artistId": 255,
       "artistEn": "CORTIS",
       "album": "GREENGREEN",
@@ -213,7 +229,7 @@
       "artistId": 300,
       "artistEn": "EVAN",
       "album": "1st Mini Album 'DEATH OF ME'",
-      "skuCount": 5,
+      "skuCount": 6,
       "benefit": true,
       "deliveryDate": "2026-09-07",
       "priceMin": 11200,
@@ -223,23 +239,7 @@
       "retailers": 3,
       "benefitCount": 1,
       "soldCount": 1,
-      "rowCount": 10
-    },
-    {
-      "artistId": 113,
-      "artistEn": "i-dle (아이들)",
-      "album": "What a Wonderful Life",
-      "skuCount": 5,
-      "benefit": true,
-      "deliveryDate": "2026-09-07",
-      "priceMin": 13300,
-      "artist": "i-dle (아이들)",
-      "slug": "i-dle-아이들-what-a-wonderful-life",
-      "versions": 4,
-      "retailers": 1,
-      "benefitCount": 1,
-      "soldCount": 0,
-      "rowCount": 5
+      "rowCount": 14
     },
     {
       "artistId": 181,
@@ -252,26 +252,10 @@
       "artist": "VVUP",
       "slug": "vvup-1st-mini-album-vvon",
       "versions": 1,
-      "retailers": 2,
+      "retailers": 3,
       "benefitCount": 0,
       "soldCount": 1,
-      "rowCount": 2
-    },
-    {
-      "artistId": 300,
-      "artistEn": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME' + 'DEATH OF ME' Set",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-09-07",
-      "priceMin": 52600,
-      "artist": "EVAN",
-      "slug": "evan-1st-mini-album-death-of-me-death-of-me-set",
-      "versions": 2,
-      "retailers": 1,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "rowCount": 2
+      "rowCount": 3
     }
   ]
 }

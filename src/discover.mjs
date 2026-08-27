@@ -26,6 +26,8 @@ const EVENTISH =
 /** 상품명에서 앨범 제목을 추정한다 (버전·이벤트 표기를 걷어냄) */
 function albumTitleOf(name) {
   let t = ' ' + String(name || '').replace(/\s+/g, ' ') + ' ';
+  // "A + A Set" 같은 결합 상품은 같은 앨범이다 — 첫 항목만 남긴다
+  t = t.replace(/\s\+\s.*$/, ' ');
   t = t
     .replace(/\((?:[^()]{0,30}(?:Ver\.?|Version|Set|Random)[^()]{0,10})\)/gi, ' ')
     .replace(/\[[^\][]{0,30}(?:Ver\.?|Set|세트|CD SET)[^\][]{0,10}\]/gi, ' ')

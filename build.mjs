@@ -10,10 +10,19 @@ import * as sw from './src/soundwave.mjs';
 const ONLY = process.argv.slice(2).find((a) => !a.startsWith('-')); // 특정 앨범만 빌드
 const MAX = Number((process.argv.find((a) => a.startsWith('--max=')) || '').split('=')[1] || 0);
 
+// 앨범 제목에 흔히 붙는 말들. 이걸 매칭 토큰으로 쓰면 남의 앨범까지 통과한다.
+const STOPWORDS =
+  /^(album|mini|single|full|part|the|and|vol|ver|version|live|edition|repackage|special|정규|미니|싱글|앨범|리패키지)$/i;
+
 /** 앨범명에서 다른 앨범과 섞이지 않을 토큰을 만든다 */
 function matchToken(album) {
-  const words = album.replace(/['''""]/g, '').split(/[\s:·-]+/).filter((w) => w.length >= 3);
-  return words.sort((a, b) => b.length - a.length)[0] || album;
+  const words = album
+    .replace(/[''""']/g, '')
+    .split(/[\s:·\-&+()[\]]+/)
+    .filter((w) => w.length >= 3 && !STOPWORDS.test(w) && !/^\d+(st|nd|rd|th)?$/i.test(w));
+  if (words.length) return words.sort((a, b) => b.length - a.length)[0];
+  // 전부 불용어면 앨범명 전체를 쓴다 (matchesAlbum이 기호를 무시하고 비교한다)
+  return album;
 }
 
 /** "i-dle (아이들)" 처럼 병기된 이름은 검색을 방해한다 → 후보를 여러 개 만든다 */
@@ -23,12 +32,32 @@ function nameVariants(artistEn) {
   return [...new Set([base, inside, artistEn].filter(Boolean))];
 }
 
-/** 결과가 없으면 아티스트명을 바꿔가며 재시도, 마지막엔 앨범명만으로 */
+/**
+ * 결과가 없으면 아티스트명을 바꿔가며 재시도, 마지막엔 앨범명만으로.
+ *
+ * 그래도 0건이면 최후 폴백: **아티스트명만 검색하고 발매일로 고른다.**
+ * 위버스샵은 영어 부제(`What a Wonderful Life`)를 쓰는데 국내 판매처는
+ * 한국어 정식 제목(`끝내주는 인생`)을 써서, 제목으로는 영영 못 만나는 경우가 있다.
+ */
 async function searchWide(fn, t, token, limit = 25) {
   for (const q of [...nameVariants(t.artistEn).map((n) => `${n} ${t.album}`), t.album]) {
     try {
       const r = (await fn(q)).filter((x) => matchesAlbum(x.title, token));
       if (r.length) return r.slice(0, limit);
+    } catch {}
+  }
+
+  if (!t.deliveryDate) return [];
+  const target = new Date(t.deliveryDate).getTime();
+  for (const n of nameVariants(t.artistEn)) {
+    try {
+      const all = await fn(n);
+      const near = all.filter((x) => {
+        if (!x.releaseDate) return false;
+        const d = new Date(x.releaseDate.length === 7 ? `${x.releaseDate}-01` : x.releaseDate).getTime();
+        return Number.isFinite(d) && Math.abs(d - target) <= 21 * 864e5; // ±3주
+      });
+      if (near.length) return near.slice(0, limit);
     } catch {}
   }
   return [];

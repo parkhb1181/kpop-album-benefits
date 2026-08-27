@@ -32,18 +32,24 @@ export function optimize(rows, { currency = 'KRW' } = {}) {
     if (!byKey.has(r.key)) byKey.set(r.key, []);
     byKey.get(r.key).push(r);
   }
-  // 2곳 이상에서 살 수 있는 버전만 최적화 의미가 있다
   const keys = [...byKey.keys()];
-  if (keys.length === 0 || keys.length > 12) return null;
+  if (keys.length === 0) return null;
+
+  // 버전마다 판매처를 고르는 완전탐색은 조합이 폭발한다 (19종이면 4^19).
+  // 배송비는 "어느 판매처를 쓰느냐"에만 붙으므로, 판매처 부분집합(2^4=16가지)을
+  // 훑고 그 안에서 버전별 최저가를 고르면 된다. 정확하고 빠르다.
+  const retailers = [...new Set(usable.map((r) => r.retailer))];
+  if (retailers.length > 12) return null;
 
   let best = null;
-  const total = keys.reduce((a, k) => a * byKey.get(k).length, 1);
-  if (total > 200000) return null;
-
-  const pick = new Array(keys.length);
-  const rec = (i) => {
-    if (i === keys.length) {
-      const chosen = pick.slice();
+  const evaluate = (subset) => {
+    const chosen = [];
+    for (const k of keys) {
+      const cands = byKey.get(k).filter((c) => subset.includes(c.retailer));
+      if (!cands.length) return; // 이 부분집합으로는 전 버전을 못 채운다
+      chosen.push(cands.reduce((a, b) => (a.price <= b.price ? a : b)));
+    }
+    {
       const perRetailer = new Map();
       for (const c of chosen) {
         if (!perRetailer.has(c.retailer)) perRetailer.set(c.retailer, []);
@@ -78,14 +84,13 @@ export function optimize(rows, { currency = 'KRW' } = {}) {
       if (!best || sum < best.sum || (sum === best.sum && perRetailer.size < best.breakdown.length)) {
         best = { sum, goods, ship, coupon, unknown, breakdown, chosen };
       }
-      return;
-    }
-    for (const cand of byKey.get(keys[i])) {
-      pick[i] = cand;
-      rec(i + 1);
     }
   };
-  rec(0);
+
+  // 판매처 부분집합 전체를 훑는다
+  for (let mask = 1; mask < 1 << retailers.length; mask++) {
+    evaluate(retailers.filter((_, i) => mask & (1 << i)));
+  }
 
   // 비교군: 한 판매처에서 몰아서 살 때 (전 버전을 못 갖춘 곳도 커버리지와 함께 보여준다)
   const singles = [];
