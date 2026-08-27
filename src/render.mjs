@@ -39,6 +39,13 @@ h3{font-size:14px;color:var(--mut);margin:24px 0 8px;font-weight:600}
 .sum{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;font-size:14px;margin-top:16px;color:var(--mut)}
 /* 최저 조합 — 강조는 테두리가 아니라 왼쪽 굵은 선과 글자 굵기로 낸다.
    --ok가 먹이 된 뒤로 여기 테두리가 검은 상자가 돼서 과했다. */
+/* 최저가 조합 요약 — 한 줄 박스. 금액이 판단 기준이라 그것만 크게 두고
+   내역은 같은 줄 오른쪽 끝으로 민다. */
+.best{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+border:2px solid var(--fg);padding:12px 14px;margin-bottom:clamp(16px,2vw,24px)}
+.best .bl{font-size:12px;font-weight:700;color:var(--mut)}
+.best .bv{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.best .bm{font-size:12px;color:var(--mut);margin-left:auto;font-variant-numeric:tabular-nums}
 .sum2{background:var(--card);border:0;border-left:2px solid var(--fg);border-radius:0;
 padding:12px 16px;font-size:14px;margin-bottom:12px}
 .warn{background:none;border:0;border-left:2px solid var(--acc);border-radius:0;padding:4px 0 4px 12px;font-size:14px;margin-bottom:12px}
@@ -101,7 +108,7 @@ margin-bottom:clamp(28px,3.4vw,44px)}
 .dls{display:flex;flex-direction:column;gap:16px}
 .hero .dls{flex:1 1 260px;min-width:0}
 .dl{border-top:2px solid var(--fg);padding-top:10px}
-.dlt{font-size:14px;font-weight:700}
+.dlt{font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px}
 .dlc{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;margin:4px 0 2px}
 .dlm{font-size:12px;color:var(--mut)}
 .dlm a{border:0}
@@ -797,6 +804,28 @@ addEventListener('resize',place);
 if(first&&!first.complete)first.addEventListener('load',place);else place();
 mark();
 });
+/* 탭·포장을 옮길 때마다 표 높이가 달라져 아래 섹션이 튄다.
+   모든 (탭 × 포장) 조합을 재서 가장 높은 것에 바닥을 맞춘다.
+   이미지가 없는 표라 높이가 로딩에 흔들리지 않는다. */
+function levelPanels(){
+var ps=[].slice.call(document.querySelectorAll('.vp'));
+if(ps.length<2)return;
+var prev=ps.map(function(p){return p.style.display}),max=0;
+ps.forEach(function(p){
+p.style.minHeight='';p.style.display='';
+var pps=[].slice.call(p.querySelectorAll('.pp'));
+if(!pps.length){if(p.offsetHeight>max)max=p.offsetHeight;return}
+var pp=pps.map(function(x){return x.style.display});
+pps.forEach(function(x,j){
+pps.forEach(function(y,k){y.style.display=k===j?'':'none'});
+if(p.offsetHeight>max)max=p.offsetHeight;
+});
+pps.forEach(function(x,j){x.style.display=pp[j]});
+});
+ps.forEach(function(p,i){p.style.display=prev[i];p.style.minHeight=max+'px'});
+}
+var lvl;addEventListener('resize',function(){clearTimeout(lvl);lvl=setTimeout(levelPanels,150)});
+
 /* 포장(낱개·세트) — 탭 안의 하위 선택. 탭을 둘로 쪼개는 대신 여기서 고른다. */
 document.querySelectorAll('.psw').forEach(function(sw){
 var vp=sw.parentElement,pps=[].slice.call(vp.querySelectorAll('.pp'));
@@ -807,6 +836,7 @@ sw.querySelectorAll('.pb').forEach(function(x,i){x.className=i===n?'pb on':'pb'}
 sw.querySelectorAll('.pb').forEach(function(b,i){b.addEventListener('click',function(){pick(i)})});
 pick(0);
 });
+levelPanels();
 })();
 </script>`;
 
@@ -1276,7 +1306,7 @@ ${tabs
     const bd = opt.best.breakdown
       .map(
         (b) => `<div class="dl">
-<div class="dlt">${esc(b.retailer)} <span class="pk">${b.count}종</span></div>
+<div class="dlt">${retailerMark(b.retailer)}${esc(b.retailer)} <span class="pk">${b.count}종</span></div>
 <div class="dlc">${won(b.subtotal)}</div>
 <div class="dlm">배송 ${
           b.fee == null
@@ -1321,8 +1351,11 @@ ${esc(opt.unbuyable.map((u) => u.edition || u.key.split('｜')[0]).join(', ')).s
 아래 ${opt.versions}종은 지금 살 수 있는 것만 모은 결과입니다.</div>`
         : ''
     }
-${opt.anyFull ? '' : `<div class="warn"><b>어느 한 판매처에서도 ${opt.versions}종 전부를 살 수 없습니다.</b> 나눠 사야 하고, 배송비가 몇 번 붙는지가 총액을 가릅니다.</div>`}
-<div class="sum2"><b>최저 조합: ${won(opt.best.sum)}</b> · 상품 ${won(opt.best.goods)} + 배송 ${won(opt.best.ship)}${opt.best.coupon ? ` · 쿠폰 받으면 −${won(opt.best.coupon)}` : ''}${opt.best.unknown ? ' <span class="flag">(일부 미확인)</span>' : ''}</div>
+<div class="best"><span class="bl">최저가</span><b class="bv">${won(opt.best.sum)}</b>${
+      opt.best.unknown ? '<span class="flag">일부 미확인</span>' : ''
+    }<span class="bm">상품 ${won(opt.best.goods)} · 배송 ${
+      opt.best.ship ? won(opt.best.ship) : '무료'
+    }${opt.best.coupon ? ` · 쿠폰 −${won(opt.best.coupon)}` : ''}</span></div>
 <div class="dls">${bd}</div>
 ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
 `;
@@ -1371,7 +1404,8 @@ ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
    */
   const galShots = allShots.filter((g, n) => allShots.findIndex((x) => x.url === g.url) === n);
   const pageGal = galShots.length
-    ? `<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
+    ? `<h2>사진 <span class="one">${galShots.length}장</span></h2>
+<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
 <div class="pgm">${galShots
         .map(
           (g, n) => `<figure>
@@ -1392,8 +1426,8 @@ ${
     : '';
 
   const body = `${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`, rows.find((r) => r.thumb)?.thumb)}
-${pageGal}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
+${pageGal}
 ${optHtml}
 ${eventsHtml(events, eventTotal)}
 ${faqHtml({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length })}`;
