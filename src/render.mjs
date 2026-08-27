@@ -28,7 +28,7 @@ const CSS = `
 :root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
 html{color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0 auto;padding:24px 16px 72px;max-width:1080px;background:var(--bg);color:var(--fg);
+body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
 font:16px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
 h2{font-size:16px;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:14px;color:var(--mut);margin:24px 0 8px;font-weight:600}
@@ -52,6 +52,9 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .ben div{margin-bottom:4px}
 .flag{color:var(--acc);font-weight:600}.none{color:var(--mut)}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:12px}.q{color:var(--acc);font-weight:700}
+.est{font-size:11px;font-weight:600;color:var(--acc);white-space:nowrap}
+/* 오른쪽 정렬 칸에서 배지를 이어 붙이면 숫자가 그만큼 밀려 세로줄이 어긋난다. 밑줄로 내린다. */
+.num .est,.num .flag.sub{display:block;margin:2px 0 0}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 a:hover{border-bottom-color:currentColor}
 .err{color:var(--acc);font-size:14px;margin-top:24px}
@@ -60,15 +63,134 @@ a:hover{border-bottom-color:currentColor}
 .gal figure{margin:0;flex:0 0 190px}
 /* 구성품 시트는 치수·랜덤 확률이 글씨로 적혀 있다. 190px에선 안 읽힌다. */
 .gal figure.wide{flex:0 0 300px}
-.rep{margin:2px 0 12px;font-size:12.5px}
+.rep{margin:2px 0 12px;font-size:12px}
 .rep a{font-weight:600}
 .rep .mut{margin-left:6px}
-.gal figcaption{font-size:12px;font-weight:700;margin-bottom:8px}
+/* 페이지 갤러리 — 메인 한 장 + 썸네일 줄. */
+.pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
+.pgm{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.pgm::-webkit-scrollbar{display:none}
+.pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0}
+/* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
+.pgm img{width:100%;height:clamp(340px,58vh,540px);object-fit:contain;background:var(--card);display:block}
+.pgm figcaption{font-size:12px;font-weight:700;margin-top:8px}
+.pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
+.pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
+.pgt button{flex:0 0 auto;width:52px;height:52px;padding:0;cursor:pointer;
+border:1px solid var(--line);background:var(--card)}
+.pgt button[aria-current=true]{border:2px solid var(--fg)}
+.pgt img{width:100%;height:100%;object-fit:cover;display:block}
+.gnav{position:absolute;z-index:2;width:34px;height:34px;border:0;border-radius:2px;
+background:rgba(0,0,0,.62);color:#fff;font-size:17px;line-height:1;cursor:pointer;display:none}
+.pgal[data-gal] .gnav{display:block}
+.gnav.p{left:0}.gnav.n{right:0}
 .gal img{width:100%;border:0;border-radius:0;display:block;background:var(--card)}
 .gal p{font-size:12px;color:var(--mut);margin:8px 0 0;line-height:1.5}
 td.th{width:52px;padding:8px 4px 8px 8px}
 td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
 .back{font-size:14px;color:var(--mut);display:inline-block;margin-bottom:16px;border:0}
+
+/* 상단 — 앨범 커버와 마감을 나란히.
+   가로로 긴 표에 두 줄을 넣으면 여백만 남는다. 커버를 크게 두는 게 이 페이지의 주인공이기도 하다. */
+/* 커버는 왼쪽 400px 고정, 마감은 오른쪽 세로 스택.
+   가로 그리드로 늘어놓으면 2px 규칙이 첫 칸에만 빠져 좌우가 어긋난다(실제로 그렇게 보였다).
+   세로로 쌓으면 그 규칙이 **구분선**으로 읽혀서 첫 항목만 없는 게 맞는 모양이 된다. */
+.hero{display:flex;gap:clamp(20px,3vw,36px);align-items:flex-start;flex-wrap:wrap;
+margin-bottom:clamp(28px,3.4vw,44px)}
+.hcv{width:400px;height:400px;object-fit:cover;display:block;background:var(--card);flex:0 0 auto}
+.dls{display:flex;flex-direction:column;gap:16px}
+.hero .dls{flex:1 1 260px;min-width:0}
+.dl{border-top:2px solid var(--fg);padding-top:10px}
+.dlt{font-size:14px;font-weight:700}
+.dlc{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;margin:4px 0 2px}
+.dlm{font-size:12px;color:var(--mut)}
+.dlm a{border:0}
+.dlb{font-size:14px;line-height:1.7;margin-top:8px}
+.dls .dl:first-child{border-top:0;padding-top:0}
+@media(max-width:760px){.hcv{width:100%;height:auto;aspect-ratio:1}}
+
+/* ── 버전 탭 ─────────────────────────────────────────────────
+   버전 6~18종을 세로로 쌓으면 페이지가 한없이 길어지는데 팬은 보통 한 버전만 본다.
+   선택지는 드롭다운에 감추지 말고 **전부 보이는 버튼**으로 내놓는다(NN/g: 선택 15~20% 상승).
+   JS가 없으면 전부 펼쳐진다 — 탭은 덧붙이는 것이지 전제가 아니다. */
+.vtabs{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 clamp(16px,2vw,24px)}
+.vt{font:inherit;font-size:12px;font-weight:600;color:var(--mut);background:var(--card);
+border:0;border-radius:2px;padding:8px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.vt:hover{color:var(--fg)}
+.vt.on{color:var(--bg);background:var(--fg)}
+.vtp{font-weight:400;opacity:.7}
+.vtd{font-size:11px;font-weight:700;color:var(--acc)}
+.vt.on .vtd{color:var(--bg);opacity:.75}
+.vp+.vp{margin-top:clamp(32px,4vw,56px)}
+.vp>h3,.pp>h3{margin-top:0}
+
+/* 포장(낱개·세트) — 버전을 고른 다음에 정하는 문제라 탭 안에 둔다. */
+.psw{display:flex;gap:4px;margin:0 0 16px}
+.pb{font:inherit;font-size:12px;font-weight:600;color:var(--mut);background:none;
+border:1px solid var(--line);border-radius:2px;padding:4px 12px;cursor:pointer}
+.pb.on{color:var(--fg);border-color:var(--fg)}
+
+/* ── 판매처 카드 (Pangram Pangram 구조 번역) ────────────────
+   특전이 표 한 칸의 긴 문장이면 판매처끼리 비교가 안 된다 — 비교하려고 만든 페이지인데.
+   그래서 판매처를 카드로 세우고 **특전을 카드 본문**으로 올린다.
+   간격은 clamp로 유동이다(PP 방식). 넓은 화면에서 답답하지 않고 좁은 화면에서 안 터진다. */
+.vsw{display:flex;gap:4px;margin:0 0 12px}
+.vb{font:inherit;font-size:11px;font-weight:600;color:var(--mut);background:none;
+border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
+.vb.on{color:var(--bg);background:var(--fg);border-color:var(--fg)}
+/* 열 폭을 내용에 맡기면 탭을 옮길 때마다 열이 통째로 움직인다.
+   실측: PHOTO BOOK [117,70,645] vs JEWEL [289,172,371] — 가격 열이 171px 뛴다. */
+.cmp.fx{table-layout:fixed}
+.cmp.fx .c1{width:170px}
+.cmp.fx .c2{width:132px}
+/* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
+.cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
+.cmp .rt{font-weight:700}
+.rt a,.rt{align-items:center}
+.rt a{display:inline-flex;gap:6px;align-items:center}
+.rlg{display:inline-block;width:18px;height:18px;flex:0 0 auto;border-radius:2px;vertical-align:-4px;background:center/contain no-repeat}
+.rlg.mono{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+color:var(--mut);background:var(--card);border-radius:2px}
+.cmp.fx td.rt{white-space:nowrap}
+/* 이벤트 제목은 길다 — 줄바꿈을 막으면 375px 화면에서 문서가 685px로 늘어난다(실측). */
+.evt{font-weight:600;word-break:keep-all}
+.cmp .tags{margin:4px 0 0}
+.cmp td.ben{word-break:keep-all}
+.scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
+gap:clamp(12px,1.4vw,20px);margin-bottom:clamp(20px,2.4vw,32px)}
+.sc{display:flex;flex-direction:column;min-width:0;border-top:2px solid var(--fg);padding-top:10px}
+.sch{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.scn{font-size:14px;font-weight:700}
+.scp{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sc .tags{margin:8px 0 0}
+/* 특전이 이 카드의 주인공이다. 표 칸이 아니라 본문 크기로 읽힌다. */
+.scb{font-size:14px;line-height:1.7;margin:10px 0 12px;flex:1;word-break:keep-all}
+.scb div{margin-bottom:6px}
+.scl{font-size:12px;color:var(--mut);border:0;margin-top:auto}
+.scl:hover{color:var(--fg)}
+
+/* ── 문서 구조 (나무위키식) ─────────────────────────────────
+   개요 → 목차 → 번호 매긴 문단 → 각주.
+   표가 10개 넘게 쌓이는 페이지라 목차가 유일한 항해 수단이다. */
+.lead{font-size:16px;line-height:1.85;margin:0 0 24px;max-width:70ch}
+.lead b{font-weight:600}
+.toc{border:1px solid var(--line);padding:12px 16px;margin:0 0 32px;display:inline-block;min-width:280px;max-width:100%}
+.toc>b{display:block;font-size:12px;color:var(--mut);margin-bottom:8px}
+.toc ol{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.9}
+.toc a{border:0;color:var(--fg)}
+.toc a:hover{text-decoration:underline}
+.sn{color:var(--dim);font-variant-numeric:tabular-nums;margin-right:2px}
+h2:target,section:target{scroll-margin-top:16px}
+
+/* 각주 — 우리 데이터는 88%가 불확실하다. 감추는 대신 왜 모르는지를 여기 적는다. */
+.fnr{font-size:11px;font-weight:600;line-height:0}
+.fnr a{border:0;color:var(--acc)}
+.fns{margin-top:48px;border-top:2px solid var(--fg);padding-top:16px}
+.fns h2{border:0;margin:0 0 8px;padding:0;font-size:12px;color:var(--mut)}
+.fns ol{margin:0;padding-left:20px;font-size:12px;color:var(--mut);line-height:1.8}
+.fns li{scroll-margin-top:16px}
+.fns li b{color:var(--fg)}
+.fns .bk{border:0;color:var(--dim);margin-right:4px}
 /* ── 상단 헤더 ───────────────────────────────────────────────
    29CM 헤더 실측: 로고 높이 16px · 유틸 간격 16~18px · 라벨 10px · font-extralight.
    **브랜드를 크게 안 외친다.** 얇은 한 줄이고 굵은 선으로 본문과 끊는다.
@@ -85,7 +207,8 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
    이름만 두면 검색이 약해지고, 설명만 두면 이름이 없다. 신문 제호가 쓰는 방식이다. */
 .brand{display:flex;align-items:baseline;gap:8px;margin:0;border:0;flex-wrap:wrap}
 .brand .lg{align-self:center;display:block;flex:0 0 auto}
-.hd .bd{font-size:20px;font-weight:700;color:var(--fg);white-space:nowrap;letter-spacing:-.01em}
+.hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif;
+font-size:20px;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
 .hd .tl{font-size:14px;color:var(--mut);white-space:nowrap}
 .hd .hdm{font-size:12px;color:var(--dim);white-space:nowrap}
 
@@ -150,6 +273,17 @@ font-size:11px;line-height:1.2;font-weight:500;color:var(--mut);background:var(-
    인덱스 카드는 이 클래스를 안 쓴다 — 거기선 굵기와 액센트로만 낸다(.card .meta). */
 .badge{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--fg);background:var(--card);border:0;border-radius:2px;padding:2px 4px;margin-right:4px}
 .sold{color:var(--acc);font-weight:700}
+/* 판매처 순위 — 위의 비교표와 생김새가 겹치면 안 된다. 번호·이름·총액 세 덩어리뿐이다. */
+.rks{list-style:none;margin:0;padding:0}
+.rk{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.rk:first-child{border-top:2px solid var(--fg)}
+.rkn{flex:0 0 20px;font-size:12px;font-weight:700;color:var(--dim);font-variant-numeric:tabular-nums}
+.rkb{flex:1 1 auto;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 8px}
+.rkb b{font-size:14px;font-weight:700}
+.rkm{flex:0 0 100%;font-size:12px;color:var(--mut);margin-top:2px}
+.rkv{flex:0 0 auto;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rk.part .rkv{font-weight:600;color:var(--mut)}
+.rkv .est{margin-left:4px}
 .soldb{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:700;color:var(--acc);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:11px;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 .comp{margin-top:12px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
@@ -381,16 +515,27 @@ const ANALYTICS = [
 /**
  * 로고 마크.
  *
- * 이름이 없는 사이트라 글자 로고는 만들 수 없다. 대신 **뜻을 형태로** 만든다 —
- * 정사각형은 앨범, 그 위로 걸쳐 나오는 2:3 직사각형은 포토카드다.
- * "앨범을 사면 포카가 나온다", 이 사이트가 존재하는 이유 그 자체다.
+ * 로고 — 심볼 + 워드마크 락업.
  *
- * 모티브를 그대로 따른다: 무채, 직각, 두 형태뿐. currentColor라 글자색을 따라간다.
- * 18px에서도 두 도형이 구분돼야 해서 겹침을 크게 잡았다.
+ * 실제 로고 16개를 재보고 정했다(가격비교·판매처·K서비스·국내 강브랜드).
+ * 절반이 글자였고, 그 대부분이 **브랜드색 타일에 흰 글자를 파낸** 같은 형식이었다 —
+ * 다나와 d, 에누리 e, 위버스 w, 29CM, KREAM, MUSINSA.
+ * 선 아이콘을 쓴 건 경쟁자 kpopsite 하나뿐인데, 그게 무료 아이콘 티가 났다.
+ *
+ * 그래서 ㅌ(특전의 초성)을 타일에 판다.
+ * 가로획 세 개의 길이를 다르게 둔 건 **표의 행**으로도 읽히게 하려는 것이다 — 우리가 파는 게 그 표다.
+ * 획이 넷뿐이라 16px 파비콘에서도 안 무너진다. 먹지 배경(OG 카드)에서도 산다.
  */
-const LOGO = `<svg class="lg" width="24" height="28" viewBox="0 0 18 21" aria-hidden="true" focusable="false">
-<rect width="15" height="15" fill="currentColor" opacity=".2"></rect>
-<rect x="9" y="7" width="9" height="14" fill="currentColor"></rect></svg>`;
+const MARK =
+  '<rect width="20" height="20" rx="4.6" fill="#c2410c"/>' +
+  '<g fill="#fafafa">' +
+  '<rect x="4.2" y="4.2" width="2.4" height="11.6"/>' +
+  '<rect x="4.2" y="4.2" width="11.6" height="2.4"/>' +
+  '<rect x="4.2" y="8.8" width="8.4" height="2.4"/>' +
+  '<rect x="4.2" y="13.4" width="10.2" height="2.4"/>' +
+  '</g>';
+
+const LOGO = `<svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false">${MARK}</svg>`;
 
 /**
  * 사이트 이름 — **특전노트**.
@@ -427,12 +572,23 @@ ${href ? `<a class="brand" href="${esc(href)}">${mark}</a>` : `<h1 class="brand"
  *
  * 헤더에만 두면 장식이고, 탭·북마크·홈화면까지 따라와야 사이트의 표식이 된다.
  * SVG를 data URI로 인라인한다. 파일이 안 늘고 요청도 안 는다.
- * currentColor는 파비콘에서 안 먹으므로 색을 박는다.
+ * 헤더 로고와 **완전히 같은 도형**을 쓴다. MARK 하나만 고치면 둘 다 따라온다.
  */
+/**
+ * 워드마크용 서브셋 폰트.
+ *
+ * 로고 글자가 기기 폰트에 따라 모양이 바뀌면 그건 로고가 아니다.
+ * text= 로 **'특전'·'노트' 네 글자만** 잘라 받는다 — 한글 폰트가 보통 수 MB인데 이건 3KB 안쪽이다.
+ * display=swap 이라 폰트가 늦어도 글자는 먼저 뜬다.
+ *
+ * 이 사이트에서 유일한 외부 요청이다. 그 값을 치르는 이유는 로고 모양이 흔들리면 안 되기 때문이다.
+ */
+const WEBFONT =
+  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
+  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&text=%ED%8A%B9%EC%A0%84%EB%85%B8%ED%8A%B8&display=swap">';
+
 const FAVICON = `<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18">' +
-    '<rect width="13" height="13" fill="#c9c9c9"/>' +
-    '<rect x="7" y="6" width="8" height="12" fill="#1a1a1a"/></svg>'
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">${MARK}</svg>`
 )}">`;
 
 /**
@@ -498,8 +654,9 @@ const shell = (title, body, meta = {}) => {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 ${FAVICON}
+${WEBFONT}
 ${metaTags({ title, ...rest })}${ld}${analytics}
-<style>${CSS}</style></head><body>${body}</body></html>`;
+<style>${CSS}${RLOGO_CSS}</style></head><body>${body}</body></html>`;
 };
 
 const won = (n) => (n == null ? '?' : `${n.toLocaleString()}원`);
@@ -512,17 +669,168 @@ const shortDate = (stamp) =>
     .replace(/[.\s]+$/, '')
     .trim();
 
+/**
+ * 판매처 로고. 파비콘을 받아 40px PNG로 줄여 넣었다(6곳 합쳐 4KB).
+ *
+ * 핫링크는 못 쓴다 — 실측하면 /favicon.ico가 7곳 중 3곳만 살아 있고 알라딘은 238KB짜리
+ * .ico를 준다. 판매처 행마다 외부 요청이 붙는 것도 곤란하다. 위드뮤는 쓸 만한 아이콘이
+ * 아예 없어서 이름 첫 글자로 대신한다 — 자리는 남겨야 줄이 안 어긋난다.
+ */
+const RLOGO = {
+  Ktown4u: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAr8oBkMgTUMwFaMwCfMwEgsIAkcgFhcgAnMgDhscMX8oJYMoAwcsAn8gAvssAzM3JrOWpAAAADXRSTlP++/3+/AXQVZQnvInS7OTUAgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAbpJREFUeNptkzFLw0AUx98HMKUHIVuW1MlNz8mt9OjgfkhHQUIQndvg3gTsGoprFyH9AIVOfgBRs3TyxE9w/QaN771LagVv/OX3fy959wJ6NImFf7sqtNZX+QscJamGQzifvYDHcJ5fC3+4TDU+ZpgV8ISiUOoS1fnsDQA2SQrjqRC+UnKZjiav9hs8s8kgn5Io5clqPHuzFsBsEoivkQ3kWVTmrzWaxlSxgxLhyd17jaJnKgFUkcSo36l3lGZIXWQU9brb2lK8Iqj2Ys3NjRCgnHjcrRFynCGLpyjuGjOAA9HBEF/pV2zSJshh0LZuYRVkINvW+5I4kH/EApD9EQMaMqZZ3NkGZoWm7qdf9IXI6M2Hz1qD8VVoUbM8IeNfPKMJVQjbXcvEIMLbAkxZ59EofZzrqnDEdqAVI1ThkJEYoQoNYsZiTy6hOR6FWezJEuCbmKHDYiSlcp7hcCOeM/wgLQxbEaHnUTm6mUaUSsGnK4dnLyqI7w3VEyIuW1EwJE8k60Ujxrh1DsbZeI2MxIT3k8V09LBgES+ON5lE3OS1E1O38yJ4pJ1/KHGJ8LH7O1jEv2N9o/pJqn8AeyZDArEVLjMAAAAASUVORK5CYII=',
+  '알라딘': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXsZqzShp3d3ef3mUfuOJf8rxj+/f5YdKbqK49Aa7Hvocf21uSEV6XERJzwXG6vfbjeOYJGAAAABHRSTlP8agH3AKHXjQAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAU5JREFUeNpt0bFqwzAQBuALGBPIErJkjt+gQ3ZDj2IIBErp3klDvAZMNg8aRF/ACBIw1C3BhtKlGdI1Qx8gb1D6HpV0suyoucHDh+7XjwzROEAzt492biKYWUP8bXUC49Zw2eI9uINdwEMfcW4VeuYCLhB/rqEN8HB5DamsjybAx2T0coGJ/uTp4bOP+QdHXOzz9AKfuNrOq3AOZ0wEbfNKYRind69wEhigUBM3aSBwsTqG77AbMZbWJdQHxliZiDo4DKGo64a5+SqhWXGQ33qzY5YOEeQOUfCRs2PAEYqtvlq0WgpVForNWSt/M1aZegrXVN3cTpWhyLbUPWdsRaZRmn18Vsgdbk7mZKjW9w6zHT2kqeiQQgVA0K1nVEq9ijXCtfdPNNp9D+U1pFIeUqkeavNCc0Jbyk4M0+xf6ABmBvuh8QSi6UZK2QuNB9EfylcORkCkhDIAAAAASUVORK5CYII=',
+  '사운드웨이브': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEX91dr609gWRkP/2uAMQT2VlZYlT03WvcHry8+4q62kn6HGs7Z9h4dre3s7XVxVbW3dBnHAAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABSElEQVR42mNgGPpAUICRkUGAQUCAUQAuxihswGxgDGQYMCMUCosvbQ+PKu/cujMSrpLR/Jpb6Z8zv/qvnj+zGSbKvM5Jbef90KvrDsetmQwVZLRKUVKbuTy0M3LjVrh2gTonJbcN3OXtO3d372yGigofUVK71WA7tebP37l/iyGCjBxPlFSZGW3Oxv658/IPTNAyReWjIQN7aOT07RGrYIJWSinBjYIMjY3CDIwSMIsYOzouJT23SEu6aOqWNhkuav5E5YWpk8pheSc3hONlnFQuA921OUjJrwEmWHVJSenqIyW1mCQlH0NYcCxzUvL7oqSkn6Kk8pwRJhikpPLyi5LKzRQlt8Uw3cKLlPw2flHR7U5SyUKEZpDbcYsvegstU3LhdjMIbF1uzLh0hgF71EZDpCgyFgTGhCADs4EASrwxMALFQXjIAwB9gWUtVuaT6gAAAABJRU5ErkJggg==',
+  '뮤직플랜트': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAAAARGw0AAAAAAAAAAQBkq0X+/v5ptEg3RjBKfjNamz7p6emysrHMzMxnZ2ecnJwrT1cLAAAABHRSTlMD9F62FdF0GwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAT1JREFUeNpt079Kw0AcB/CzT6CYouDSwRcQfIG0N6SCSsFw0s3li4OOIZpNCPWGLkJBHQWl1Fl8AnHqnEfIExQnB3N/frnY3He6fLjL7y73C2Osc8Ab2e6xKp2A/0uodJ+vpV9N5K302EYbN9ur1fpDGkbP74s7PRowqj2cp2maPOj6jObNY5V0ph4I72OTLHAYJRbFi0OaGMe3Dt9qFDlhvbrKK+GRs/iGcMespJcyV0csNI4JH82UrtagiWemniAMt6oEa2ijN1Hj7zKfLleRPsLY4gmQF/gYJs0t7QEShLT5H2Ba48hgBOCbUMwMHkPHYGY/XdnEkcHwEwVgqyf2Ok5xVeJ6olHfhsIJLkpcakzPucUCqxJfCrMnc9yqGaTku5JHMghtY4SubVwG/gbztqK3ab3t7f8RPL/MH0ct9qM4BKMvAAAAAElFTkSuQmCC',
+  '애플뮤직': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXtGyNMaXHkBBjtGyPzHCTuGiPsGiLvGyPsGiLxGyPtGiLqGiHlGSLtHCT9HSb3HSU3Q5U5AAAADXRSTlP8AAOi/IgpzlHpakERsG5xLgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYlJREFUeNp9kz1LA0EQhqcIWG2OXTAGtdmA9iJpJEgKCyN4IgGxEuNHYWcvGgRtLPQHGBQFwSoQsLFMkX4LG4slgqaIxSWFEFEUd3fmYi4R3+Ju7rmb3bl3ZoFbpXjiJJ++3TCBFdiL4Nu730HQGlpBaqGQm/EvMKq/7HFJUE74CrQRQCsjEIrEATCNgmZFOijv2yHT2lsQFoqxuV+m1dKVNFDuZHWP2LywXxZZL1S5ggQx/KQjik9xkFsqCtW7ADmL2QqoLtWRkGAYsyDIYuQdAi0JzXT+QtGiMNJ2UT3DeQ0LjpVg3b1WHzyVkkcYf8IZwxTjmRh1S6kGlC1UjwVrGf6HeoY1vFvHuKQHcGWqBsLyX/D0v3TMyFUdDDeikpbN7iLZJojFG2tN8Wi3gfib6uGa8+QlI0iGxDqrx0Xsi4GhdV4QUFMNHDDZwTvdJwMHGmchH4+2GGHfMCCMjg1BO2CD0I5iBL66oa350IO9Eo23vwhdvVXCg7AfdHUugI7M5M00aaYqfwCMlrmQEEXoZgAAAABJRU5ErkJggg==',
+  '위버스샵': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAy9X///8AyNIEzNb9///5/v5p4ObQ9fgo09xC2eCt7/Lo+/sXz9iQ6e1W3eOA5epcpnLSAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAUlEQVR42mNgGBzAgBlTjEnZSAFDUHN51SQMhR9dXOTRlDLrCa57JfjIAFlMSYldVknpYoGSEpK6jo6pnh0dUyI7OgwQekUEXVwEQdgRbgKzmqigoyAQiAgGJiEJuriIuLg4irigCIo4OoqGiISgqhR0dcTULtWT6DZdfroIiqCswuk96hK6oqjaF7UUnPbQDEQRdFw0cdHRzUwfUQQDLyUmNS46uRBVZVKWUXtTIqr2wE9Mh5U0Njqiqtx5bv+JbDR3CooEOoaKOCILagJDScRFEBhQjpMQYVcY4gIGruKIsGeaLSIIBo47kaJJ43o5GNQ2IUcSVAETavKAGs4wWAEAf3lOYK3zwV0AAAAASUVORK5CYII=',
+};
+/** data URI를 판매처 행마다 심으면 43번 복제된다(실측 +34KB). 규칙 6줄로 한 번만 싣는다. */
+const RKEYS = Object.keys(RLOGO);
+const RLOGO_CSS = RKEYS.map((k, i) => `.rl${i}{background-image:url(${RLOGO[k]})}`).join('');
+const retailerMark = (name) => {
+  const i = RKEYS.indexOf(name);
+  return i >= 0
+    ? `<span class="rlg rl${i}" aria-hidden="true"></span>`
+    : `<span class="rlg mono" aria-hidden="true">${esc(name.slice(0, 1))}</span>`;
+};
+
 /** 특전 상태 — "없음"과 "종료"와 "비공개"와 "확인 못함"은 전부 다른 정보다 */
+/**
+ * 특전 상태와 **각주**.
+ *
+ * 실측하면 전체 561건 중 내용까지 아는 건 12%뿐이다 — `확인 못함` 34%, `특전 없음` 34%,
+ * `구성 비공개` 13%. **88%가 불확실하다.**
+ *
+ * 상점이라면 이걸 감춰야 한다. 재고와 가격이 확정이라 전제하고 파는 곳이니까.
+ * 우리는 자료다. 그래서 **모른다는 걸 등급으로 드러내고, 왜 모르는지를 각주로 적는다.**
+ * 나무위키가 하는 방식이고, 이게 이 사이트를 상점과 갈라놓는 지점이다.
+ */
+const FOOTNOTES = [
+  ['none', '위버스샵이 상품 아이콘에 BENEFIT을 달지 않은 경우입니다. 여기서는 특전이 없다고 단정할 수 있습니다.'],
+  ['secret', 'Ktown4u가 "특전 (구성은 비공개입니다)"라고 명시한 경우입니다. 특전은 있지만 무엇인지는 구매 전까지 알 수 없습니다.'],
+  ['listed', '판매처가 상품명에만 특전을 표기하고(뮤직플랜트 [특전증정/…], 애플뮤직 [애플특전]) 상세에는 내용을 싣지 않은 경우입니다.'],
+  ['ended', '알라딘 상세의 증정 종료 문구를 읽은 것입니다. 특전 자체가 없었다는 뜻은 아닙니다.'],
+  ['unknown', '판매처가 상세에 특전 문구를 싣지 않았거나 요청이 실패한 경우입니다. **특전이 없다는 뜻이 아닙니다.**'],
+];
+const FN_NO = Object.fromEntries(FOOTNOTES.map(([k], i) => [k, i + 1]));
+const fn = (k) => (FN_NO[k] ? `<sup class="fnr"><a href="#fn-${FN_NO[k]}" id="fnr-${FN_NO[k]}">[${FN_NO[k]}]</a></sup>` : '');
+
 const STATUS = {
   has: null, // 내용을 표시
-  none: '<span class="none">특전 없음</span>',
-  ended: '<span class="mut">증정 종료</span>',
-  secret: '<span class="flag">특전 있음 · 구성 비공개</span>',
+  none: `<span class="none">특전 없음</span>`,
+  ended: `<span class="mut">증정 종료</span>`,
+  secret: `<span class="flag">특전 있음 · 구성 비공개</span>`,
   // 판매처가 상품명에 특전을 달아뒀지만(뮤직플랜트 [특전증정/…], 애플뮤직 [애플특전])
   // 내용은 못 읽은 경우. "특전 없음"과 절대 섞으면 안 된다 — 정반대 정보다.
-  listed: '<span class="flag">특전 있음 · 상품명에만 표기</span>',
-  unknown: '<span class="mut">확인 못함</span>',
+  listed: `<span class="flag">특전 있음 · 상품명에만 표기</span>`,
+  unknown: `<span class="mut">특전 미표기</span>`,
 };
+
+/** 본문에서 실제로 쓰인 각주만 하단에 낸다. 안 쓴 각주를 다 늘어놓으면 그건 안내문이지 각주가 아니다. */
+const footnoteList = (html) => {
+  const used = FOOTNOTES.filter(([k]) => html.includes(`#fn-${FN_NO[k]}"`));
+  if (!used.length) return '';
+  return `<section class="fns"><h2>각주</h2><ol>${used
+    .map(
+      ([k, text]) =>
+        `<li id="fn-${FN_NO[k]}"><a class="bk" href="#fnr-${FN_NO[k]}">↑</a> ${text.replace(
+          /\*\*(.+?)\*\*/g,
+          '<b>$1</b>'
+        )}</li>`
+    )
+    .join('')}</ol></section>`;
+};
+
+/**
+ * 뷰 토글 — 비교(카드) / 표.
+ *
+ * 훑을 때와 자세히 볼 때 필요한 게 다르다. Pangram Pangram도 카드 뷰와 리스트 뷰를 나눠 둔다.
+ * 기본은 카드다 — 이 페이지의 목적이 판매처 비교라서.
+ * **표를 지우지 않는다.** 8열의 밀도가 필요한 사람이 있고, 그건 취향이 아니라 다른 작업이다.
+ */
+const VIEW_JS = `<script>
+(function(){
+/* 버전 탭 — 첫 패널만 남기고 접는다. 패널은 DOM에 그대로 있어서 크롤러는 전부 읽는다. */
+var tabs=document.querySelector('.vtabs');
+if(tabs){
+var ps=[].slice.call(document.querySelectorAll('.vp'));
+function show(n){
+/* .vp+.vp 여백은 JS가 없을 때 패널을 세로로 쌓는 용도다.
+   탭으로 하나만 보일 때는 그게 그대로 남아 2번째 탭부터 위가 붕 뜬다. */
+ps.forEach(function(p,i){p.style.display=i===n?'':'none';p.style.marginTop='0'});
+tabs.querySelectorAll('.vt').forEach(function(b,i){b.className=i===n?'vt on':'vt'});
+}
+tabs.querySelectorAll('.vt').forEach(function(b,i){
+b.addEventListener('click',function(){show(i)});
+});
+show(0);
+}
+/* 사진 넘기기. 화살표는 여기서 만든다 — JS가 없으면 가로로 밀어서 보면 되고,
+   빈 버튼이 마크업에 남지 않는다. */
+document.querySelectorAll('.pgal[data-gal]').forEach(function(w){
+var m=w.querySelector('.pgm');if(!m)return;
+var thumbs=[].slice.call(w.querySelectorAll('.pgt button'));
+function at(){return Math.round(m.scrollLeft/(m.clientWidth||1))}
+function go(n){m.scrollTo({left:m.clientWidth*Math.max(0,Math.min(thumbs.length-1,n)),behavior:'smooth'})}
+function mark(){
+var n=at();
+thumbs.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
+w.querySelector('.gnav.p').style.visibility=n?'':'hidden';
+w.querySelector('.gnav.n').style.visibility=n>=thumbs.length-1?'hidden':'';
+}
+function mk(cls,txt,dir){
+var b=document.createElement('button');b.type='button';b.className='gnav '+cls;b.textContent=txt;
+b.setAttribute('aria-label',dir<0?'이전 사진':'다음 사진');
+b.addEventListener('click',function(){go(at()+dir)});
+w.appendChild(b);
+}
+mk('p','\\u2039',-1);mk('n','\\u203a',1);
+/* 화살표는 사진 세로 가운데에 — 캡션·썸네일 높이를 빼야 사진 밖으로 안 나간다. */
+var first=m.querySelector('img');
+function place(){
+if(!first)return;
+w.querySelectorAll('.gnav').forEach(function(b){b.style.top=(first.getBoundingClientRect().height/2-17)+'px'});
+}
+thumbs.forEach(function(b,i){b.addEventListener('click',function(){go(i)})});
+var tick;m.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(mark,90)});
+addEventListener('resize',place);
+if(first&&!first.complete)first.addEventListener('load',place);else place();
+mark();
+});
+/* 포장(낱개·세트) — 탭 안의 하위 선택. 탭을 둘로 쪼개는 대신 여기서 고른다. */
+document.querySelectorAll('.psw').forEach(function(sw){
+var vp=sw.parentElement,pps=[].slice.call(vp.querySelectorAll('.pp'));
+function pick(n){
+pps.forEach(function(p,i){p.style.display=i===n?'':'none'});
+sw.querySelectorAll('.pb').forEach(function(x,i){x.className=i===n?'pb on':'pb'});
+}
+sw.querySelectorAll('.pb').forEach(function(b,i){b.addEventListener('click',function(){pick(i)})});
+pick(0);
+});
+})();
+</script>`;
+
+/**
+ * 나무위키식 번호·앵커·목차.
+ *
+ * 섹션 빌더들이 이미 `<h2>`를 내므로 건드리지 않고 **후처리**로 번호와 앵커를 단다.
+ * 이 페이지는 표가 10개 넘게 쌓여서 **목차가 유일한 항해 수단**이다.
+ */
+function wikiIndex(html) {
+  const items = [];
+  const body = html.replace(/<h2>([\s\S]*?)<\/h2>/g, (_, inner) => {
+    const n = items.length + 1;
+    items.push({ n, label: inner.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim() });
+    return `<h2 id="s-${n}"><span class="sn">${n}.</span> ${inner}</h2>`;
+  });
+  const toc =
+    items.length >= 3
+      ? `<nav class="toc"><b>목차</b><ol>${items
+          .map((i) => `<li><a href="#s-${i.n}"><span class="sn">${i.n}.</span> ${esc(i.label)}</a></li>`)
+          .join('')}</ol></nav>`
+      : '';
+  return { body, toc };
+}
 const benefitCell = (i) => {
   if ((i.benefit || []).length) return (i.benefit || []).map((b) => `<div>${esc(b).slice(0, 320)}</div>`).join('');
   return STATUS[i.benefitStatus] ?? (i.benefitFlag ? '<span class="flag">특전 있음 (내용 미파싱)</span>' : STATUS.unknown);
@@ -568,7 +876,7 @@ function albumJsonLd({ artistName, target, rows, groups, siteUrl, slug, expired 
     return {
       '@type': 'ListItem',
       position: n + 1,
-      name: `${rt} — ${artistName} ${target.album}`,
+      name: `${rt} ${artistName} ${target.album}`,
       url: r?.url || undefined,
     };
   });
@@ -621,7 +929,7 @@ function faqHtml({ artistName, album, retailerNames, best, versions }) {
       `대부분 <b>예약판매 기간 내 선착순</b>이고, 수량이 소진되면 조기 종료됩니다. 이 페이지는 하루 두 번 다시 수집하지만, 구매 직전에 판매처 공지를 한 번 더 확인하세요.`,
     ],
   ].filter(Boolean);
-  return `<h2>자주 묻는 것</h2>
+  return `<h2>자주 묻는 질문</h2>
 ${qa.map(([q, a]) => `<details class="comp"><summary>${esc(q)}</summary><p>${a}</p></details>`).join('\n')}`;
 }
 
@@ -646,37 +954,30 @@ const kst = (iso, opt = {}) =>
  * 메이크스타는 열린 뒤에야(ON_SALE) 목록에 넣고, 위버스샵도 판매 중인 것만 준다.
  * 반면 마감은 초 단위로 정확하고, 팬을 실제로 급하게 만드는 쪽도 마감이다.
  */
-function countdownHtml(deadlines, slug, siteUrl, subject) {
+function countdownHtml(deadlines, slug, siteUrl, subject, cover) {
   if (!deadlines?.length) return '';
   const now = Date.now();
-  const rows = deadlines
+  const cards = deadlines
     .map((d) => {
       // 캘린더에 들어간 뒤에는 앨범명이 없으면 무슨 일정인지 알 수 없다.
-      // 부연(note)은 제목이 아니라 설명으로 보낸다.
       const g = googleUrl({
         at: d.at,
-        title: [subject, d.label].filter(Boolean).join(' — '),
+        title: [subject, d.label].filter(Boolean).join(' · '),
         desc: d.note,
         url: d.url,
       });
-      return `<tr><td class="rt">${esc(d.label)}${d.kind === 'fansign' ? ' <span class="flag">팬싸</span>' : ''}
-${d.note ? `<div class="mut">${esc(d.note).slice(0, 90)}</div>` : ''}</td>
-<td class="num" data-label="남은 시간"><span class="cd" data-until="${esc(d.at)}">${esc(roughLeft(d.ms - now))}</span></td>
-<td class="mut" data-label="시각">${esc(kst(d.at))}</td>
-<td class="alarm" data-label="알림"><a href="${esc(g)}" rel="nofollow noopener" target="_blank">구글 캘린더</a></td></tr>`;
+      return `<div class="dl">
+<div class="dlt">${esc(d.label)}${d.kind === 'fansign' ? ' <span class="flag">팬싸</span>' : ''}</div>
+<div class="dlc"><span class="cd" data-until="${esc(d.at)}">${esc(roughLeft(d.ms - now))}</span></div>
+<div class="dlm">${esc(kst(d.at))} · <a href="${esc(g)}" rel="nofollow noopener" target="_blank">캘린더</a></div>
+</div>`;
     })
     .join('');
 
-  // webcal://은 절대주소여야 한다. SITE_URL이 없으면 구독 안내를 생략한다.
-  const feed = siteUrl
-    ? ` · <a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 구독</a>
-<span class="mut">(구독하면 하루 두 번 갱신됩니다)</span>`
-    : '';
-
-  return `<h2>마감까지 <span class="one">실시간</span></h2>
-<div class="wrap"><table><thead><tr><th>무엇</th><th>남은 시간</th><th>시각 (KST)</th><th>알림</th></tr></thead>
-<tbody>${rows}</tbody></table></div>
-<p class="mut" style="margin-top:8px"><a href="../alarm/${esc(slug)}.ics" download>이 앨범 마감을 캘린더에 넣기 (.ics)</a>${feed}</p>
+  return `<h2>남은 시간 <span class="one">실시간</span></h2>
+<div class="hero">${
+    cover ? `<img class="hcv" src="${esc(cover)}" alt="${esc(subject)}" width="400" height="400" fetchpriority="high" decoding="async">` : ''
+  }<div class="dls">${cards}</div></div>
 ${CD_JS}`;
 }
 
@@ -690,16 +991,14 @@ function eventsHtml(events, eventTotal) {
   const scope = eventTotal
     ? `메이크스타 진행 중 이벤트 ${eventTotal}건을 전부 대조합니다.`
     : '메이크스타 진행 중 이벤트 전량과 대조합니다.';
-  const limits = `<div class="pol">${scope}
-Ktown4u·위버스샵 등이 자체적으로 여는 이벤트는 아직 잡지 못합니다.
-알라딘·사운드웨이브·위드뮤는 팬싸 정보를 아예 제공하지 않습니다.</div>`;
+  const limits = '';
 
   if (!events?.length) {
     return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut" style="font-size:13.5px">진행 중인 메이크스타 이벤트에 <b>이 앨범 건은 없습니다.</b></p>
 ${limits}`;
   }
 
+  // 이벤트도 같은 항목을 여러 건에 대해 견주는 자료다 — 카드 넉 줄씩 쌓지 않고 표로 접는다.
   const rows = events
     .map((e) => {
       const when = e.closing
@@ -709,20 +1008,22 @@ ${limits}`;
           : '<span class="mut">진행중</span>';
       // 어떤 버전을 얼마에 사야 응모되는지 — 이게 없으면 아래 특전표와 이어지지 않는다
       const opts = (e.options || [])
-        .map((o) => `${esc(o.name)} ${o.krw != null ? `<b>${won(o.krw)}</b>` : ''}`)
+        .map((o) => `${esc(o.name)}${o.krw != null ? ` <b>${won(o.krw)}</b>` : ''}`)
         .join(' · ');
       const title = e.url ? `<a href="${esc(e.url)}" rel="nofollow">${esc(e.title)}</a>` : esc(e.title);
-      return `<tr><td class="rt">${esc(e.label)}${e.fansign ? ' <span class="flag">팬싸</span>' : ''}</td>
-<td class="num" data-label="남은 기간">${when}</td>
-<td class="mut" data-label="응모 기간">${esc(e.from)} ~ ${esc(e.to)}${e.winnerAt ? `<br>발표 ${esc(e.winnerAt)}` : ''}</td>
-<td data-label="이벤트">${title}${opts ? `<div class="mut">응모 가능: ${opts}</div>` : ''}</td></tr>`;
+      return `<tr>
+<td class="evt" data-label="이벤트">${title}${e.fansign ? ' <span class="tg">팬싸</span>' : ''}
+<div class="mut">${esc(e.label)}</div></td>
+<td class="num" data-label="마감">${when}</td>
+<td class="num" data-label="기간">${esc(e.from)}~${esc(e.to)}${e.winnerAt ? `<div class="mut">발표 ${esc(e.winnerAt)}</div>` : ''}</td>
+<td data-label="응모 조건">${opts || '<span class="mut">—</span>'}</td></tr>`;
     })
     .join('');
 
   return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<div class="warn">이 이벤트들은 <b>메이크스타에서 그 앨범을 사야 응모됩니다.</b>
-다른 판매처에서 산 앨범으로는 응모할 수 없고, 응모 마감 뒤에는 취소·환불이 안 됩니다.</div>
-<div class="wrap"><table><thead><tr><th>종류</th><th>남은 기간</th><th>응모 기간</th><th>이벤트</th></tr></thead><tbody>${rows}</tbody></table></div>
+<p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
+<div class="wrap"><table class="cmp"><thead><tr>
+<th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody>${rows}</tbody></table></div>
 ${limits}`;
 }
 
@@ -752,9 +1053,24 @@ export function renderAlbum({
     return rb - ra || b[1].length - a[1].length;
   });
 
-  const sections = groups
+  const allShots = [];
+  const panels = groups
     .map(([key, items]) => {
-      const [ed, pk] = key.split('｜');
+      const [edKey, pk] = key.split('｜');
+      /**
+       * 제목은 **키가 아니라 `edition`에서 가져온다.**
+       *
+       * 키는 매칭용 슬러그라 사람이 읽을 값이 아니다 — `photobook`, `ohitx27shot`처럼 나온다.
+       * `edition`에는 판매처가 쓴 원문("PHOTO BOOK Ver.", "Unnatural+Gazed+Break ver.")이 들어 있다.
+       * 판매처마다 표기가 조금씩 달라서 **가장 많이 쓰인 표기**를 고른다.
+       * (엔티티 미디코딩 문제는 수집 쪽 버그다 — docs/38-프론트-작업상태.md §4ⓑ)
+       */
+      const edCount = new Map();
+      for (const x of items) {
+        const e = String(x.edition || '').trim();
+        if (e) edCount.set(e, (edCount.get(e) || 0) + 1);
+      }
+      const ed = [...edCount.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || edKey;
       const retailers = new Set(items.map((x) => x.retailer));
       const badge =
         retailers.size >= 2 ? `<span class="ok">${retailers.size}개 판매처 비교</span>` : `<span class="one">1곳만</span>`;
@@ -778,10 +1094,21 @@ export function renderAlbum({
         if (i.benefitImage) shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '' });
       }
       // 구성품은 버전당 한 장이면 된다 — 판매처가 달라도 같은 소속사 시트다
-      const compShot =
-        items.map((i) => (i.retailer === 'Ktown4u' ? urlOf((i.images || [])[0]) : null)).find(Boolean) ||
-        items.map((i) => urlOf((i.images || []).find((x) => urlOf(x) !== i.benefitImage))).find(Boolean);
-      if (compShot) shots.push({ url: compShot, cap: '구성품', note: '판매처 공통 — 특전이 아닙니다', wide: true });
+      const compSrc =
+        items.find((i) => i.retailer === 'Ktown4u' && urlOf((i.images || [])[0])) ||
+        items.find((i) => urlOf((i.images || []).find((x) => urlOf(x) !== i.benefitImage)));
+      const compShot = compSrc
+        ? urlOf((compSrc.images || []).find((x) => urlOf(x) !== compSrc.benefitImage)) || urlOf((compSrc.images || [])[0])
+        : null;
+      const compFrom = compSrc ? compSrc.retailer : '';
+      /**
+       * **"판매처 공통"이라고 쓰면 안 된다.** 검증한 적이 없는 주장이다.
+       * 실측: photobook｜개별에서 Ktown4u는 yIgtb8.jpg, 위버스샵은 전혀 다른 파일을 갖고 있고
+       * 나머지 5곳은 이미지가 아예 없다. 우리는 그중 한 장을 골라 보여줄 뿐이다.
+       * 그래서 **어디서 가져온 것인지**를 적는다. 그게 확인된 사실의 전부다.
+       */
+      if (compShot)
+        shots.push({ url: compShot, cap: `구성품 (${compFrom})`, note: '특전이 아니라 앨범 구성품입니다', wide: true });
 
       // 팬이 보내준 실물 사진. 판매처가 공개하지 않는 특전은 이것 말고는 볼 방법이 없다.
       // 사람이 승인한 것만 여기까지 온다 (api/review.js).
@@ -796,15 +1123,14 @@ export function renderAlbum({
         });
       }
 
-      const gal = shots.length
-        ? `<div class="gal">${shots
-            .map(
-              (s) => `<figure${s.wide ? ' class="wide"' : ''}><figcaption>${esc(s.cap)}</figcaption>
-<a href="${esc(s.url)}" target="_blank" rel="noopener"><img src="${esc(s.url)}" alt="${esc(s.cap)}" loading="lazy"></a>
-${s.note ? `<p>${esc(s.note)}</p>` : ''}</figure>`
-            )
-            .join('')}</div>`
-        : '';
+      /**
+       * 사진은 **버전마다 따로 두지 않고 페이지 맨 위 갤러리 하나로 모은다.**
+       *
+       * 버전별로 두면 다른 버전 특전을 보려고 탭을 눌러야 하는데, 팬이 여기 오는 이유가
+       * 정확히 "버전별로 뭐가 다른가"라서 그게 제일 보고 싶은 걸 제일 어렵게 만든다.
+       * 캡션에 버전명을 붙여 어느 것인지는 사진 밑에서 읽게 한다.
+       */
+      for (const sh of shots) allShots.push({ ...sh, ver: ed === '기본' ? '기본반' : ed });
       // data-label은 모바일 카드 레이아웃에서 열 이름으로 쓰인다 (트래픽의 93%가 모바일)
       const tr = items
         .map(
@@ -821,6 +1147,47 @@ ${s.note ? `<p>${esc(s.note)}</p>` : ''}</figure>`
         )
         .join('');
 
+      /**
+       * 판매처 카드 — Pangram Pangram 구조를 번역한 것.
+       *
+       * 폰트 파운드리는 폰트를 **설명하지 않고 표본으로 보여준다**(Aa, 알파벳, 팬그램 문장).
+       * 사는 사람이 판단할 근거를 화면에 크게 놓는 게 그 사이트가 목록만으로 최고상을 받은 이유다.
+       *
+       * 우리는 그 표본이 없다 — 특전 이미지 보유율이 **7%(37/561)** 다.
+       * 폰트는 브라우저가 공짜로 렌더하지만 특전 사진은 판매처가 안 준다.
+       * 그래서 표본 자리를 **특전 텍스트 자체**로 채운다. 표 한 칸에 문장을 욱여넣으면
+       * 판매처끼리 비교가 안 되는데, 그게 이 페이지가 존재하는 이유다.
+       *
+       * 정보 순서를 고정한다(PP도 그렇다): 판매처 → 가격 → 재고·한도 → **특전** → 링크.
+       * 표는 없애지 않고 뷰 토글로 남긴다 — 밀도가 필요한 사람이 있다.
+       */
+      /**
+       * 판매처 비교는 **표가 맞다.**
+       *
+       * 카드로 늘어놓으니 판매처 여덟 곳이 세로로 길게 흘러서, 정작 견줘야 할
+       * 가격·특전이 서로 멀어졌다. 같은 항목을 여러 대상에 대해 비교하는 건 표의 일이다.
+       * 열은 셋만 둔다 — 재고·한도·이벤트는 판매처명 밑 태그로 접는다.
+       */
+      const cards = `<div class="wrap"><table class="cmp fx">
+<colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr>
+<th>판매처</th><th class="num">가격</th><th>특전</th></tr></thead><tbody>${items
+        .map((i) => {
+          const flags = [
+            i.soldOut === true ? '<span class="tg w">품절</span>' : '',
+            i.maxOrder ? `<span class="tg">1인 ${i.maxOrder}장</span>` : '',
+            (i.events || []).length ? `<span class="tg">${esc(i.events[0])}</span>` : '',
+          ]
+            .filter(Boolean)
+            .join('');
+          return `<tr>
+<td class="rt" data-label="판매처"><a href="${esc(i.url)}" target="_blank" rel="noopener">${retailerMark(i.retailer)}${esc(i.retailer)}</a>${
+            flags ? `<div class="tags">${flags}</div>` : ''
+          }</td>
+<td class="num" data-label="가격">${money(i)}</td>
+<td class="ben" data-label="특전">${benefitCell(i)}</td></tr>`;
+        })
+        .join('')}</tbody></table></div>`;
+
       // 구성품 — 버전 선택의 실제 기준. 위버스샵이 사이즈까지 준다.
       const comp = items.find((i) => i.composition)?.composition;
       const rnd = items.find((i) => i.randomNote)?.randomNote;
@@ -829,51 +1196,136 @@ ${s.note ? `<p>${esc(s.note)}</p>` : ''}</figure>`
         : '';
 
       const anySold = items.some((i) => i.soldOut === true);
-      // 판매처명을 h2에 노출한다 — `코르티스 알라딘 특전`처럼 판매처명이 붙은 쿼리가 실제로 있다(자동완성 확인)
+      // 탭 배지는 "이 버전은 못 산다"로 읽힌다. 한 곳만 품절인데 달면 거짓말이 된다
+      // (실측: keyring｜개별은 7곳 중 Ktown4u 한 곳뿐이었다). 전 판매처가 품절일 때만 단다.
+      const allSold = items.length > 0 && items.every((i) => i.soldOut === true);
+      // 판매처명을 노출한다 — `코르티스 알라딘 특전`처럼 판매처명이 붙은 쿼리가 실제로 있다(자동완성 확인)
       const shops = [...retailers].join(' · ');
-      return `<h2>${esc(ed === '기본' ? '기본반' : ed)} <span class="pk">${esc(pk)}</span> ${badge}${
-        anySold ? ' <span class="soldb">일부 품절</span>' : ''
-      }</h2>
-<h3>${esc(shops)} 특전 비교</h3>
-${gal}<p class="rep"><a href="#" data-report="${esc(key)}" role="button">특전 실물 사진 보내기</a><span class="mut">— 받아보신 분만. 확인 후 올라갑니다</span><span class="rmsg mut"></span></p><div class="wrap"><table><thead><tr><th></th><th>판매처</th><th>상품명 / 이벤트</th><th>가격</th><th>재고</th><th>1인 최대</th><th>특전</th><th>판매량</th></tr></thead><tbody>${tr}</tbody></table></div>${compHtml}`;
-    })
-    .join('\n');
+      const label = ed === '기본' ? '기본반' : ed;
+      return {
+        label,
+        pk,
+        anySold,
+        allSold,
+        panel: `<h3>${esc(label)} <span class="pk">${esc(pk)}</span> ${badge}${
+          anySold ? ' <span class="soldb">일부 품절</span>' : ''
+        }</h3>
+<p class="rep"><a href="#" data-report="${esc(key)}" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
+${cards}${compHtml}`,
+      };
+    });
+
+  /**
+   * 버전은 **쌓지 않고 넘긴다.**
+   *
+   * 버전 6~18종을 세로로 이어붙이면 페이지가 한없이 길어지는데, 팬은 보통 **한 버전만** 본다.
+   * 나머지는 스크롤 비용일 뿐이다. NN/g 지침도 같다 — 선택지는 드롭다운에 감추지 말고
+   * **전부 보이는 버튼**으로 내놓으면 선택이 15~20% 오른다.
+   *
+   * 패널은 전부 DOM에 남긴다. 숨기는 건 CSS라서 크롤러는 `PHOTO BOOK Ver.` 같은
+   * 버전명을 그대로 읽는다 — 롱테일 검색이 1순위 채널이라 이걸 잃으면 안 된다.
+   * JS가 없으면 전부 펼쳐진다(현재 동작 그대로). 탭은 덧붙이는 것이지 전제가 아니다.
+   */
+  /**
+   * **탭은 에디션 단위다. 낱개·세트는 그 안에서 고른다.**
+   *
+   * 둘을 따로 탭으로 세우면 `PHOTO BOOK Ver.`가 두 개 보이고 "왜 두 개지"가 된다.
+   * 포장은 같은 버전을 몇 장 묶어 파느냐의 차이라, 버전을 고른 **다음에** 정할 문제다.
+   * 태민 기준 탭이 6개 → 4개로 준다.
+   */
+  const byEd = new Map();
+  for (const p of panels) {
+    if (!byEd.has(p.label)) byEd.set(p.label, []);
+    byEd.get(p.label).push(p);
+  }
+  const tabs = [...byEd.entries()].map(([label, ps]) => ({
+    label,
+    allSold: ps.every((p) => p.allSold),
+    packs: ps,
+  }));
+
+  const sections = tabs.length
+    ? `<h2>버전별 판매처 비교 <span class="one">${tabs.length}종</span></h2>
+<div class="vtabs" role="tablist">${tabs
+        .map(
+          (t, i) =>
+            `<button type="button" class="vt${i === 0 ? ' on' : ''}" data-p="${i}" role="tab">${esc(t.label)}${
+              t.allSold ? ' <span class="vtd">품절</span>' : ''
+            }</button>`
+        )
+        .join('')}</div>
+${tabs
+        .map(
+          (t, i) => `<div class="vp" data-p="${i}">${
+            t.packs.length
+              ? `<div class="psw">${t.packs
+                  .map(
+                    (p, j) =>
+                      `<button type="button" class="pb${j === 0 ? ' on' : ''}" data-k="${j}">${esc(p.pk)}</button>`
+                  )
+                  .join('')}</div>`
+              : ''
+          }${t.packs.map((p, j) => `<div class="pp" data-k="${j}">${p.panel}</div>`).join('')}</div>`
+        )
+        .join('\n')}`
+    : '';
 
   const opt = optimize(rows);
   let optHtml = '';
   if (opt?.best) {
     const bd = opt.best.breakdown
       .map(
-        (b) => `<tr><td class="rt">${esc(b.retailer)}</td><td class="num">${b.count}종</td><td class="num">${won(b.subtotal)}</td>
-<td class="num">${b.fee == null ? `<span class="flag">${esc(b.why || '금액 미확인')}</span>` : b.fee === 0 ? '<span class="ok2">무료</span>' : won(b.fee)}${b.unknown ? '<sup class="q">?</sup>' : ''}</td>
-<td class="num">${b.coupon ? `<span class="ok2">-${won(b.coupon)}</span>` : '—'}</td>
-<td class="mut">${esc([b.why, b.couponWhy].filter(Boolean).join(' · '))}</td></tr>`
+        (b) => `<div class="dl">
+<div class="dlt">${esc(b.retailer)} <span class="pk">${b.count}종</span></div>
+<div class="dlc">${won(b.subtotal)}</div>
+<div class="dlm">배송 ${
+          b.fee == null
+            ? `<span class="flag">${esc(b.why || '금액 미확인')}</span>`
+            : b.fee === 0
+              ? '무료'
+              : won(b.fee)
+        }${b.unknown ? '<span class="est">추정</span>' : ''}${b.coupon ? ` · 쿠폰 -${won(b.coupon)}` : ''}</div>
+</div>`
       )
       .join('');
+    /**
+     * **여기는 표를 쓰지 않는다.**
+     *
+     * 바로 위 "버전별 판매처 비교"가 같은 판매처 이름이 같은 순서로 늘어선 표다.
+     * 그 밑에 똑같이 생긴 표를 하나 더 두면 두 개가 무슨 관계인지 읽히지 않는다.
+     * 이건 비교가 아니라 **순위**다 — 어디 한 곳에서 몇 종까지 사지고 얼마인가.
+     * 그래서 등수를 매긴 목록으로 낸다. 총액이 판단 기준이니 그것만 크게 둔다.
+     */
     const singleRows = opt.singles
-      .map(
-        (s) => `<tr><td class="rt">${esc(s.retailer)}</td><td class="num">${s.count}/${opt.versions}종${s.full ? '' : ' <span class="flag">부족</span>'}</td>
-<td class="num">${won(s.goods)}</td>
-<td class="num">${s.fee == null ? '<span class="flag">금액 미확인</span>' : s.fee === 0 ? '<span class="ok2">무료</span>' : won(s.fee)}</td>
-<td class="num">${s.coupon ? `<span class="ok2">-${won(s.coupon)}</span>` : '—'}</td>
-<td class="num"><b>${won(s.sum)}</b>${s.unknown ? '<sup class="q">?</sup>' : ''}</td></tr>`
-      )
+      .map((s, n) => {
+        const meta = [
+          `${s.count}/${opt.versions}종`,
+          s.fee == null ? '배송 미확인' : s.fee === 0 ? '배송 무료' : `배송 ${won(s.fee)}`,
+          s.coupon ? `쿠폰 −${won(s.coupon)}` : '',
+        ]
+          .filter(Boolean)
+          .join(' · ');
+        return `<li class="rk${s.full ? '' : ' part'}">
+<span class="rkn">${n + 1}</span>
+<span class="rkb">${retailerMark(s.retailer)}<b>${esc(s.retailer)}</b>
+<span class="rkm">${esc(meta)}${s.full ? '' : ' <span class="flag">전 종 없음</span>'}</span></span>
+<span class="rkv">${won(s.sum)}${s.unknown ? '<span class="est">추정</span>' : ''}</span>
+</li>`;
+      })
       .join('');
-    optHtml = `<h2>전 버전(${opt.versions}종) 모으기 — 합배송·쿠폰 계산</h2>
+    optHtml = `<h2>최저가 조합 <span class="one">${opt.versions}종</span></h2>
 ${
       opt.unbuyable?.length
-        ? `<div class="warn"><b>${opt.unbuyable.length}종은 모든 판매처에서 품절</b>이라 계산에서 뺐습니다 —
+        ? `<div class="warn"><b>${opt.unbuyable.length}종은 모든 판매처에서 품절</b>이라 계산에서 뺐습니다.
 ${esc(opt.unbuyable.map((u) => u.edition || u.key.split('｜')[0]).join(', ')).slice(0, 200)}.
 아래 ${opt.versions}종은 지금 살 수 있는 것만 모은 결과입니다.</div>`
         : ''
     }
 ${opt.anyFull ? '' : `<div class="warn"><b>어느 한 판매처에서도 ${opt.versions}종 전부를 살 수 없습니다.</b> 나눠 사야 하고, 배송비가 몇 번 붙는지가 총액을 가릅니다.</div>`}
-<div class="sum2"><b>최저 조합: ${won(opt.best.sum)}</b> — 상품 ${won(opt.best.goods)} + 배송 ${won(opt.best.ship)}${opt.best.coupon ? ` · 쿠폰 받으면 −${won(opt.best.coupon)}` : ''}${opt.best.unknown ? ' <span class="flag">(일부 미확인)</span>' : ''}</div>
-<div class="wrap"><table><thead><tr><th>판매처</th><th>담을 수</th><th>상품</th><th>배송비</th><th>쿠폰(받기 필요)</th><th>비고</th></tr></thead><tbody>${bd}</tbody></table></div>
-${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 범위</h3><div class="wrap"><table><thead><tr><th>판매처</th><th>담을 수</th><th>상품</th><th>배송</th><th>쿠폰</th><th>총액</th></tr></thead><tbody>${singleRows}</tbody></table></div>` : ''}
-<div class="pol">배송·쿠폰 근거 — ${Object.entries(opt.policy)
-      .map(([k, v]) => `<b>${esc(k)}</b>: ${esc(v.note)}${v.verified ? '' : ' <sup class="q">?</sup>'}`)
-      .join(' · ')}<br><span class="q">?</span> 표시는 미확인 추정치입니다.</div>`;
+<div class="sum2"><b>최저 조합: ${won(opt.best.sum)}</b> · 상품 ${won(opt.best.goods)} + 배송 ${won(opt.best.ship)}${opt.best.coupon ? ` · 쿠폰 받으면 −${won(opt.best.coupon)}` : ''}${opt.best.unknown ? ' <span class="flag">(일부 미확인)</span>' : ''}</div>
+<div class="dls">${bd}</div>
+${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
+`;
   }
 
   const multi = groups.filter(([, it]) => new Set(it.map((x) => x.retailer)).size >= 2).length;
@@ -902,23 +1354,61 @@ ${singleRows ? `<h3>판매처별 커버리지 — 한 곳에서 살 수 있는 �
   const ogImage =
     ogCard || rows.find((r) => r.benefitImage)?.benefitImage || rows.find((r) => r.thumb)?.thumb || null;
 
+  /**
+   * 문서 조립 — 나무위키 구조를 따른다.
+   *   제목 + 최근 수정 시각 → 개요 → 목차 → 번호 매긴 문단 → 각주
+   *
+   * 상점이 아니라 자료의 형식이다. 우리 데이터는 88%가 불확실한데(FOOTNOTES 주석 참고),
+   * 상점 형식은 확정을 전제하므로 그 위에 얹으면 고장난 상점처럼 보인다.
+   */
+  /**
+   * 메인 사진 한 장 + 썸네일 줄. 썸네일로 전 버전이 한눈에 들어오고, 눌러서 넘긴다.
+   * JS가 없어도 가로 스크롤로 전부 볼 수 있다 — 화살표는 JS가 있을 때만 붙는다.
+   */
+  /**
+   * 같은 에디션의 낱개·세트는 같은 사진을 밀어넣는다(PHOTO BOOK 낱개/세트 → 위버스샵 특전 2장).
+   * 갤러리에서는 같은 파일이 두 번 나오면 그냥 고장으로 읽히므로 URL로 한 번 거른다.
+   */
+  const galShots = allShots.filter((g, n) => allShots.findIndex((x) => x.url === g.url) === n);
+  const pageGal = galShots.length
+    ? `<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
+<div class="pgm">${galShots
+        .map(
+          (g, n) => `<figure>
+<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
+<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
+        )
+        .join('')}</div>
+${
+        galShots.length > 1
+          ? `<div class="pgt">${galShots
+              .map(
+                (g, n) =>
+                  `<button type="button" data-i="${n}" aria-label="${esc(g.ver)} ${esc(g.cap)}"><img src="${esc(g.url)}" alt="" loading="lazy"></button>`
+              )
+              .join('')}</div>`
+          : ''
+      }</div>`
+    : '';
+
+  const body = `${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`, rows.find((r) => r.thumb)?.thumb)}
+${pageGal}
+${sections || '<p>수집된 상품이 없습니다.</p>'}
+${optHtml}
+${eventsHtml(events, eventTotal)}
+${faqHtml({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length })}`;
+
   return shell(
     `${artistName} ${target.album} 판매처별 특전 | 버전·구성·가격`,
     `${siteHeader(stamp, { href: '../index.html' })}
 ${expiredBanner(expired, target)}
 <a class="back" href="../index.html">← 전체 컴백</a>
 <h1>${esc(artistName)} <span class="alb">${esc(target.album)}</span></h1>
-<div class="stamp">버전별 구성 · 가격 · 판매처별 예약판매 특전</div>
-<div class="sum">수집 <b>${rows.length}</b>개 상품 · 버전 <b>${groups.length}</b>종 · <b>${multi}</b>종은 2개 이상 판매처에서 비교 가능${
-      soldCount ? ` · <b class="sold">${soldCount}개 품절</b>` : ''
-    }${chart ? `<br><span class="chart">한터·써클 차트 반영</span> <span class="mut">초동 집계에 잡히는 판매처입니다</span>` : ''}</div>
-${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`)}
 ${reportJs(slug)}
-${eventsHtml(events, eventTotal)}
-${optHtml}
-${sections || '<p>수집된 상품이 없습니다.</p>'}
-${faqHtml({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length })}
-${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}`,
+${body}
+${/class="vtabs"/.test(body) ? VIEW_JS : ""}
+${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}
+<p class="stamp">최근 수집 <b>${esc(stamp)}</b></p>`,
     {
       description: desc.slice(0, 160),
       canonical: slug ? abs(siteUrl, `album/${slug}`) : null,
@@ -1071,7 +1561,7 @@ ${
       // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
       albums.length >= 8
         ? `<div class="find" style="display:none">
-<input id="q" type="search" placeholder="아티스트·앨범 검색 — 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
+<input id="q" type="search" placeholder="아티스트·앨범 검색 · 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
 <span class="n" id="qn"></span></div>
 <p class="none-hit" id="qz" style="display:none">찾는 앨범이 없습니다. 예약판매 중인 것만 올라옵니다.</p>`
         : ''
@@ -1084,7 +1574,7 @@ ${
       albums.some((a) => a.nextDeadline)
         ? ` 마감이 걸린 앨범은 남은 시간이 함께 표시됩니다.<br>${
             siteUrl
-              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">— 캘린더가 알아서 갱신됩니다</span>${pushHtml(vapidPublicKey)}`
+              ? `<a href="${esc(siteUrl.replace(/^https?:/, 'webcal:'))}/alarm.ics">전체 마감 캘린더 구독하기</a> <span class="mut">캘린더가 알아서 갱신됩니다</span>${pushHtml(vapidPublicKey)}`
               : `<a href="alarm.ics" download>전체 마감 캘린더 내려받기 (.ics)</a>${pushHtml(vapidPublicKey)}`
           }`
         : ''
