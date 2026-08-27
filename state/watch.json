@@ -1,7 +1,29 @@
 {
-  "checkedAt": "2026-08-27T02:31:49.931Z",
-  "lastDeep": "2026-08-27T02:31:49.931Z",
+  "checkedAt": "2026-08-27T13:07:02.897Z",
+  "lastDeep": "2026-08-27T13:07:02.897Z",
   "events": [
+    {
+      "id": 20277,
+      "url": "https://makestar.co/event/20277",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "SOYEON 1st Full Album [What a Wonderful Life] PRE-ORDER MEET&CALL EVENT",
+      "album": "정규 [끝내주는 인생]",
+      "albumEn": "Full Album [끝내주는 인생]",
+      "artist": "소연",
+      "artistEn": "SOYEON",
+      "releaseDate": "2026-09-07",
+      "from": "2026.08.27",
+      "to": "2026.08.29",
+      "startAt": "2026-08-27T15:00:00+09:00",
+      "endAt": "2026-08-29T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.08.31",
+      "productId": 11041
+    },
     {
       "id": 20244,
       "url": "https://makestar.co/event/20244",
@@ -45,28 +67,6 @@
       "closing": false,
       "winnerAt": null,
       "productId": 11029
-    },
-    {
-      "id": 20148,
-      "url": "https://makestar.co/event/20148",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER MEET&CALL EVENT",
-      "titleEn": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER MEET&CALL EVENT",
-      "album": "미니 4집 [DOPAMINE]",
-      "albumEn": "4TH MINI ALBUM [DOPAMINE]",
-      "artist": "도경수",
-      "artistEn": "D.O.",
-      "releaseDate": "2026-09-08",
-      "from": "2026.08.25",
-      "to": "2026.08.27",
-      "startAt": "2026-08-25T18:00:00+09:00",
-      "endAt": "2026-08-27T17:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.08.28",
-      "productId": 11017
     },
     {
       "id": 20134,
@@ -157,6 +157,28 @@
       "productId": 11017
     },
     {
+      "id": 20076,
+      "url": "https://makestar.co/event/20076",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.08.27",
+      "to": "2026.08.31",
+      "startAt": "2026-08-27T16:00:00+09:00",
+      "endAt": "2026-08-31T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.08.31",
+      "productId": 10867
+    },
+    {
       "id": 20070,
       "url": "https://makestar.co/event/20070",
       "type": "VIDEOCALL",
@@ -177,6 +199,28 @@
       "closing": false,
       "winnerAt": "2026.08.31",
       "productId": 10894
+    },
+    {
+      "id": 20059,
+      "url": "https://makestar.co/event/20059",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "MEOVV THE 2nd EP ALBUM [BITE NOW] FANSIGN & PHOTO EVENT in BANGKOK",
+      "titleEn": "MEOVV THE 2nd EP ALBUM [BITE NOW] FANSIGN & PHOTO EVENT in BANGKOK",
+      "album": "THE 2nd EP ALBUM [BITE NOW]",
+      "albumEn": "THE 2nd EP ALBUM [BITE NOW]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-06-01",
+      "from": "2026.08.27",
+      "to": "2026.08.31",
+      "startAt": "2026-08-27T18:00:00+09:00",
+      "endAt": "2026-08-31T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.02",
+      "productId": 10641
     },
     {
       "id": 20024,
@@ -428,16 +472,6 @@
       "album": "TUNE & PLAY"
     },
     {
-      "key": "ENHYPEN｜THE SIN : BLISS",
-      "artist": "ENHYPEN",
-      "album": "THE SIN : BLISS"
-    },
-    {
-      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
       "key": "TAEMIN｜PHASE I : Soft Violence",
       "artist": "TAEMIN",
       "album": "PHASE I : Soft Violence"
@@ -451,11 +485,6 @@
       "key": "SHINee｜Make it hot",
       "artist": "SHINee",
       "album": "Make it hot"
-    },
-    {
-      "key": "TOMORROW X TOGETHER｜7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때"
     },
     {
       "key": "CORTIS｜GREENGREEN",
@@ -486,6 +515,11 @@
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
+    },
+    {
+      "key": "EVAN｜DEATH OF ME (Weverse Exclusive)",
+      "artist": "EVAN",
+      "album": "DEATH OF ME (Weverse Exclusive)"
     },
     {
       "key": "YOUNGTAK (영탁)｜GOGO",
