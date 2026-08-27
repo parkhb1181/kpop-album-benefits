@@ -44,9 +44,10 @@ export async function search(query) {
       releaseDate: null,
       url: `${BASE}/shop/detail.php?pno=${pno}`,
       benefit: [],
-      benefitFlag: false,
-      // 목록에서는 특전 문구를 안 준다. 상세를 열어야 한다 (detail 참고).
-      benefitStatus: 'unknown',
+      // 상품명에 특전 표식을 단다: [특전증정/세트] · [특전증정/랜덤]
+      // 상세를 열어봤자 특전 문구가 안 나온다(실측 0/4). 그래서 상품명만 본다.
+      benefitFlag: /특전/.test(title),
+      benefitStatus: /특전/.test(title) ? 'listed' : 'unknown',
       // 재고는 모른다고 둔다. `<div class="soldout">Sold out</div>`가 **모든 상품 블록에**
       // 들어 있다 (실측 20/20) — CSS로 숨기는 템플릿이라 정보가 아니다.
       // 이걸 그대로 읽으면 이 몰 상품 전부를 품절이라고 거짓말하게 된다.
@@ -57,26 +58,13 @@ export async function search(query) {
   return out;
 }
 
-/** 상세 — 예약 특전 문구가 상품 설명에 있다 */
-export async function detail(pno) {
-  const html = await getText(`${BASE}/shop/detail.php?pno=${encodeURIComponent(pno)}`);
-  const flat = strip(html);
-
-  const benefit = [];
-  for (const re of [
-    /예약\s*판매\s*특전[^.]{0,140}/g,
-    /뮤직플랜트\s*특전[^.]{0,140}/g,
-    /특전\s*[:：][^.]{0,120}/g,
-    /미공개\s*포토카드[^.]{0,110}/g,
-  ]) {
-    for (const m of flat.matchAll(re)) benefit.push(m[0].trim());
-  }
-
-  // 긴 것부터 남기고 그 안에 포함되는 짧은 중복은 버린다
-  const uniq = [...new Set(benefit)].sort((a, b) => b.length - a.length);
-  const kept = [];
-  for (const b of uniq) if (!kept.some((k) => k.includes(b))) kept.push(b);
-
-  const ended = /증정\s*종료|특전\s*종료|소진/.test(flat) && kept.length === 0;
-  return { benefit: kept.slice(0, 2), status: kept.length ? 'has' : ended ? 'ended' : 'none' };
-}
+/*
+ * 상세(detail)는 두지 않는다.
+ *
+ * 상품마다 페이지를 한 번씩 더 여는데 특전 문구가 **한 건도** 안 나왔다 (실측 0/4).
+ * 앨범 13개 × 상품 6개면 요청 78건, 빌드에 30초 이상이다. 위드뮤에서 같은 값을 치렀었다.
+ *
+ * 더 나빴던 건 비용이 아니라 거짓말이다 — 못 찾은 걸 status:'none'으로 돌려주면
+ * 화면에 **"특전 없음"** 이라고 단정해서 나온다. 상품명이 [특전증정/랜덤]인데도 그랬다.
+ * 지금은 상품명의 특전 표식만 보고 'listed'(특전 있음 · 상품명에만 표기)로 둔다.
+ */

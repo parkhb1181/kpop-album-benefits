@@ -166,24 +166,16 @@ async function collectAlbum(t) {
     errors.push(`위드뮤: ${e.message}`);
   }
 
-  // 뮤직플랜트 · 애플뮤직 (둘 다 정적, 상세에서 특전 문구를 가져온다)
+  // 뮤직플랜트 · 애플뮤직 (둘 다 정적)
+  //
+  // 상세는 안 연다. 상품마다 페이지를 여는데 특전 문구가 한 건도 안 나왔다(실측 0/4).
+  // 두 몰 다 상품명에 [특전증정/…] · [애플특전]으로 표시하므로 목록만으로 충분하다.
   for (const [label, mod] of [
     ['뮤직플랜트', mp],
     ['애플뮤직', ap],
   ]) {
     try {
-      const list = await searchWide(mod.search, t, token, 20);
-      for (const x of list) {
-        try {
-          const d = await mod.detail(x.id);
-          if (d.benefit.length) x.benefit = d.benefit;
-          x.benefitFlag = d.benefit.length > 0;
-          x.benefitStatus = d.status;
-        } catch {
-          x.benefitStatus = 'unknown';
-        }
-        rows.push(x);
-      }
+      rows.push(...(await searchWide(mod.search, t, token, 20)));
     } catch (e) {
       errors.push(`${label}: ${e.message}`);
     }
@@ -382,6 +374,9 @@ for (const t of targets) {
     artistKo,
     artistDisplay: displayArtist(t.artist, artistKo),
     ogImage,
+    // 인덱스 카드용 앨범 커버. ogImage와 다른 것을 쓴다 —
+    // ogImage는 특전 배너를 먼저 집어서 세로로 긴 그림이 온다 (실측: 샤이니 1000×7849).
+    cover: rows.find((r) => r.thumb)?.thumb || null,
   });
   console.log(`${rows.length}건 / ${versions}종 / ${retailers}사${benefitCount ? ` / 특전 ${benefitCount}사` : ''}`);
 }

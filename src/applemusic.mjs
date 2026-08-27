@@ -45,10 +45,14 @@ export async function search(query) {
       releaseDate: null,
       url: `${BASE}/shop/shopdetail.html?branduid=${uid}`,
       benefit: [],
-      benefitFlag: false,
-      benefitStatus: 'unknown',
+      // 상품명에 특전 표식을 단다: [애플특전]
+      // 상세를 열어봤자 특전 문구가 안 나온다(실측 0/4). 그래서 상품명만 본다.
+      benefitFlag: /특전/.test(title),
+      benefitStatus: /특전/.test(title) ? 'listed' : 'unknown',
       composition,
-      soldOut: /품절|sold\s*out/i.test(strip(block)) || null,
+      // 여기 품절 표시는 진짜 신호다 — 21개 블록 중 1개에만 붙어 있다.
+      // (뮤직플랜트는 모든 블록에 붙어 있어서 못 쓴다)
+      soldOut: /품절|sold\s*out/i.test(strip(block)),
       thumb: (block.match(/<img[^>]+src="(\/shopimages\/[^"]+)"/) || [])[1]
         ? `${BASE}${(block.match(/<img[^>]+src="(\/shopimages\/[^"]+)"/) || [])[1]}`
         : null,
@@ -57,25 +61,13 @@ export async function search(query) {
   return out;
 }
 
-/** 상세 — 예약 특전 문구 */
-export async function detail(uid) {
-  const html = await getText(`${BASE}/shop/shopdetail.html?branduid=${encodeURIComponent(uid)}`);
-  const flat = strip(html);
-
-  const benefit = [];
-  for (const re of [
-    /예약\s*판매\s*특전[^.]{0,140}/g,
-    /애플뮤직\s*특전[^.]{0,140}/g,
-    /특전\s*[:：][^.]{0,120}/g,
-    /미공개\s*포토카드[^.]{0,110}/g,
-  ]) {
-    for (const m of flat.matchAll(re)) benefit.push(m[0].trim());
-  }
-
-  const uniq = [...new Set(benefit)].sort((a, b) => b.length - a.length);
-  const kept = [];
-  for (const b of uniq) if (!kept.some((k) => k.includes(b))) kept.push(b);
-
-  const ended = /증정\s*종료|특전\s*종료|소진/.test(flat) && kept.length === 0;
-  return { benefit: kept.slice(0, 2), status: kept.length ? 'has' : ended ? 'ended' : 'none' };
-}
+/*
+ * 상세(detail)는 두지 않는다.
+ *
+ * 상품마다 페이지를 한 번씩 더 여는데 특전 문구가 **한 건도** 안 나왔다 (실측 0/4).
+ * 앨범 13개 × 상품 6개면 요청 78건, 빌드에 30초 이상이다. 위드뮤에서 같은 값을 치렀었다.
+ *
+ * 더 나빴던 건 비용이 아니라 거짓말이다 — 못 찾은 걸 status:'none'으로 돌려주면
+ * 화면에 **"특전 없음"** 이라고 단정해서 나온다. 상품명이 [애플특전]인데도 그랬다.
+ * 지금은 상품명의 특전 표식만 보고 'listed'(특전 있음 · 상품명에만 표기)로 둔다.
+ */
