@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 27. PM 11:07:21",
+  "stamp": "2026. 8. 27. PM 11:27:14",
   "albums": [
     {
       "artistId": 308,
@@ -95,13 +95,13 @@
       "versions": 7,
       "retailers": 6,
       "benefitCount": 2,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "19시간 51분"
+        "rough": "19시간 32분"
       },
       "rowCount": 45,
       "artistKo": "튜이드",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "19시간 47분"
+        "rough": "19시간 28분"
       },
       "rowCount": 55,
       "artistKo": "엔시티 127",
