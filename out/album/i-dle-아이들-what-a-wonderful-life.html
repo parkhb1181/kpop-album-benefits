@@ -130,7 +130,7 @@ min-height:36px}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
-.pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
+.pgt{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;scrollbar-width:thin}
 .pgt button{flex:0 0 auto;width:52px;height:52px;padding:0;cursor:pointer;
 border:1px solid var(--line);background:var(--card)}
 .pgt button[aria-current=true]{border:2px solid var(--fg)}
@@ -347,6 +347,16 @@ margin:0 0 4px;padding:0;border:0;color:var(--fg);display:block}
    여러 장일 때만 커버를 올려 스와이프를 살린다(그때는 JS가 클릭을 .go로 넘긴다). */
 .cvw{position:relative;z-index:0;margin-bottom:12px}
 .cvw.multi{z-index:2}
+/* 앨범명·아티스트명을 커버 **위에** 얹는다. 커버는 무엇이든 올 수 있어서 글자만 얹으면
+   밝은 커버에서 안 읽힌다 — 아래쪽에만 어두운 기울기를 깔아 글자 자리를 만든다.
+   장식이 아니라 가독 장치다. 클릭은 .go가 받아야 하므로 이 층은 이벤트를 안 먹는다.
+   h2는 그대로 둔다 — 목록 페이지에 항목 제목이 있어야 검색과 스크린리더가 읽는다. */
+.cvt{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:34px 10px 10px;
+background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.74));pointer-events:none}
+.cvt .cva{font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,.82);margin:0 0 2px;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cvt .cval{font-size:0.875rem;font-weight:700;line-height:1.3;letter-spacing:-.01em;color:#fff;
+margin:0;padding:0;border:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;background:var(--card)}
 .strip::-webkit-scrollbar{display:none}
@@ -530,15 +540,15 @@ inp.click();
 </script>
 <main><div class="hero"><img class="hcv" src="https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg" alt="소연(SOYEON) What a Wonderful Life" width="400" height="400" fetchpriority="high" decoding="async"><div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p><div class="dl">
 <div class="dlt">영상통화 팬사인회 응모 마감 <span class="flag">팬싸</span></div>
-<div class="dlc"><span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">1일 15시간</span></div>
+<div class="dlc"><span class="cd" data-until="2026-08-29T23:59:59.999999+09:00">1일 14시간</span></div>
 <div class="dlm">8. 29. (토) 23:59 · <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%86%8C%EC%97%B0%28SOYEON%29+What+a+Wonderful+Life+%C2%B7+%EC%98%81%EC%83%81%ED%86%B5%ED%99%94+%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C+%EC%9D%91%EB%AA%A8+%EB%A7%88%EA%B0%90&amp;dates=20260829T145959Z%2F20260829T152959Z&amp;details=%EC%86%8C%EC%97%B0+%28SOYEON%29+1st+Full+Album+%5B%EB%81%9D%EB%82%B4%EC%A3%BC%EB%8A%94+%EC%9D%B8%EC%83%9D%5D+PRE-ORDER+MEET%26CALL+EVENT%0Ahttps%3A%2F%2Fmakestar.co%2Fevent%2F20277" rel="nofollow noopener" target="_blank">캘린더</a></div>
 </div><div class="dl">
 <div class="dlt">예약 특전 포토카드 응모 마감</div>
-<div class="dlc"><span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 15시간</span></div>
+<div class="dlc"><span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 14시간</span></div>
 <div class="dlm">9. 6. (일) 23:59 · <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%86%8C%EC%97%B0%28SOYEON%29+What+a+Wonderful+Life+%C2%B7+%EC%98%88%EC%95%BD+%ED%8A%B9%EC%A0%84+%ED%8F%AC%ED%86%A0%EC%B9%B4%EB%93%9C+%EC%9D%91%EB%AA%A8+%EB%A7%88%EA%B0%90&amp;dates=20260906T145959Z%2F20260906T152959Z&amp;details=%EC%86%8C%EC%97%B0+%28SOYEON%29+1st+Full+Album+%5B%EB%81%9D%EB%82%B4%EC%A3%BC%EB%8A%94+%EC%9D%B8%EC%83%9D%5D+PRE-ORDER+PHOTOCARD+EVENT%0Ahttps%3A%2F%2Fmakestar.co%2Fevent%2F20244" rel="nofollow noopener" target="_blank">캘린더</a></div>
 </div><div class="dl">
 <div class="dlt">예약 배송 시작</div>
-<div class="dlc"><span class="cd" data-until="2026-09-07T18:00:00+09:00">10일 9시간</span></div>
+<div class="dlc"><span class="cd" data-until="2026-09-07T18:00:00+09:00">10일 8시간</span></div>
 <div class="dlm">9. 7. (월) 18:00 · <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%86%8C%EC%97%B0%28SOYEON%29+What+a+Wonderful+Life+%C2%B7+%EC%98%88%EC%95%BD+%EB%B0%B0%EC%86%A1+%EC%8B%9C%EC%9E%91&amp;dates=20260907T090000Z%2F20260907T093000Z&amp;details=%EC%9C%84%EB%B2%84%EC%8A%A4%EC%83%B5+%EA%B8%B0%EC%A4%80.+%ED%8C%90%EB%A7%A4%EC%B2%98%EB%A7%88%EB%8B%A4+%EB%8B%A4%EB%A5%BC+%EC%88%98+%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4" rel="nofollow noopener" target="_blank">캘린더</a></div>
 </div></div></div>
 <script>
@@ -560,6 +570,7 @@ tick();setInterval(tick,1000);
 </script>
 <h2>버전별 판매처 비교 <span class="one">8종</span></h2>
 <div class="pgal" data-gal="1">
+<div class="pgt"><button type="button" data-i="0" data-p="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="" loading="lazy"></button><button type="button" data-i="1" data-p="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="" loading="lazy"></button><button type="button" data-i="2" data-p="0" aria-label="HOME ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="" loading="lazy"></button><button type="button" data-i="3" data-p="5" aria-label="ISLAND ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="" loading="lazy"></button><button type="button" data-i="4" data-p="6" aria-label="TEMPLE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="" loading="lazy"></button><button type="button" data-i="5" data-p="7" aria-label="LIFE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="" loading="lazy"></button></div>
 <div class="pgm"><figure data-p="0">
 <a href="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="HOME ver. 위버스샵 특전" loading="eager"></a>
 <figcaption>HOME ver. · 위버스샵 특전</figcaption></figure><figure data-p="0">
@@ -572,8 +583,7 @@ tick();setInterval(tick,1000);
 <a href="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="TEMPLE ver. 구성품 (위버스샵)" loading="lazy"></a>
 <figcaption>TEMPLE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="7">
 <a href="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="LIFE ver. 구성품 (위버스샵)" loading="lazy"></a>
-<figcaption>LIFE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div>
-<div class="pgt"><button type="button" data-i="0" data-p="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="" loading="lazy"></button><button type="button" data-i="1" data-p="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="" loading="lazy"></button><button type="button" data-i="2" data-p="0" aria-label="HOME ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="" loading="lazy"></button><button type="button" data-i="3" data-p="5" aria-label="ISLAND ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="" loading="lazy"></button><button type="button" data-i="4" data-p="6" aria-label="TEMPLE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="" loading="lazy"></button><button type="button" data-i="5" data-p="7" aria-label="LIFE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="" loading="lazy"></button></div></div>
+<figcaption>LIFE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div></div>
 <div class="vtabs" role="tablist" aria-label="버전 선택"><button type="button" class="vt on" data-p="0" role="tab" id="vt-0"
 aria-selected="true" aria-controls="vp-0" tabindex="0">HOME ver.</button><button type="button" class="vt" data-p="1" role="tab" id="vt-1"
 aria-selected="false" aria-controls="vp-1" tabindex="-1">삶 ver.</button><button type="button" class="vt" data-p="2" role="tab" id="vt-2"
@@ -819,12 +829,18 @@ goToVer=function(p){
 var figs=[].slice.call(m.querySelectorAll('figure'));
 for(var i=0;i<figs.length;i++)if(parseInt(figs[i].getAttribute('data-p'),10)===p){lastP=p;go(i);return}
 };
-/* 화살표는 사진 세로 가운데에 — 캡션·썸네일 높이를 빼야 사진 밖으로 안 나간다. */
-var first=m.querySelector('img');
+/* 화살표는 **보이는 칸**의 세로 가운데에 둔다.
+   원본 img 높이를 재면 안 된다 — 이미지는 4,001px인데 칸은 558px이라
+   화살표가 사진 밖 1,983px 자리로 나간다(실측). 칸은 a가 들고 있다.
+   썸네일이 위로 올라갔으므로 .pgm의 offsetTop을 더한다. */
 function place(){
-if(!first)return;
-w.querySelectorAll('.gnav').forEach(function(b){b.style.top=(first.getBoundingClientRect().height/2-17)+'px'});
+var a=m.querySelector('figure a');if(!a)return;
+var pr=w.getBoundingClientRect(),ar=a.getBoundingClientRect();
+if(!ar.height)return;
+var top=(ar.top-pr.top)+ar.height/2-17;
+w.querySelectorAll('.gnav').forEach(function(b){b.style.top=top+'px'});
 }
+var first=m.querySelector('img');
 /* 배너를 빼면 썸네일 순서가 바뀐다 — 클릭 시점에 위치를 다시 센다. */
 var pgt=w.querySelector('.pgt');
 if(pgt)pgt.addEventListener('click',function(ev){
@@ -832,7 +848,9 @@ var b=ev.target.closest('button');if(b)go(tb().indexOf(b));
 });
 var tick;m.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(mark,90)});
 addEventListener('resize',place);
-if(first&&!first.complete)first.addEventListener('load',place);else place();
+/* 사진이 다 받아져야 칸 높이가 정해진다. 그 전에 재면 화살표가 엉뚱한 데 붙는다. */
+m.querySelectorAll('img').forEach(function(im){if(!im.complete)im.addEventListener('load',place)});
+addEventListener('load',place);place();
 mark();
 });
 /* 탭·포장을 옮길 때마다 표 높이가 달라져 아래 섹션이 튄다.
@@ -871,4 +889,4 @@ levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. 08:57:08</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 09:06:53</b></p></body></html>
