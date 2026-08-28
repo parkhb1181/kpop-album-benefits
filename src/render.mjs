@@ -319,14 +319,21 @@ list-style:none;padding:0}
 .cards .cvt{padding:24px 8px 8px}
 .cards .cvt .cval{font-size:0.8125rem}
 }
-/* 홍보 칸 — 격자 안에서 2×2로 넓힌 칸. 오른쪽에 카드 두 장이 들어차 구멍이 안 생긴다. */
-.lead{position:relative;min-width:0;list-style:none}
-.lw{position:relative;overflow:hidden;background:var(--card)}
+/* 홍보 칸 — 격자 안에서 2×2로 넓힌 칸. 오른쪽에 카드 두 장이 들어차 구멍이 안 생긴다.
+   **칸을 끝까지 채운다.** 정사각 커버는 두 행 높이를 못 채워서 실측 709px 칸에 내용이
+   560px, 아래 149px이 비어 있었다. 사진이 남은 높이를 먹고(cover라 잘리지만 홍보 칸이다),
+   그 밑 한 줄은 그 앨범의 사실로 채운다 — 빈 자리를 여백이 아니라 정보로 쓴다. */
+.lead{position:relative;min-width:0;list-style:none;display:flex}
+.lw{position:relative;overflow:hidden;background:var(--card);flex:1;display:flex;flex-direction:column;min-height:0}
 .lt{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
-overscroll-behavior-x:contain}
+overscroll-behavior-x:contain;flex:1;min-height:0}
 .lt::-webkit-scrollbar{display:none}
-.ls{position:relative;flex:0 0 100%;scroll-snap-align:start;display:block;border-bottom:0;min-width:0}
-.ls img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--card)}
+.ls{position:relative;flex:0 0 100%;scroll-snap-align:start;border-bottom:0;min-width:0;
+display:flex;flex-direction:column}
+.lim{position:relative;flex:1;min-height:0;display:block;overflow:hidden}
+.ls img{width:100%;height:100%;object-fit:cover;display:block;background:var(--card)}
+.pmeta{flex:0 0 auto;padding:10px 14px 14px;font-size:0.75rem;color:var(--mut);
+background:var(--bg);font-variant-numeric:tabular-nums}
 .lnav{position:absolute;top:calc(50% - 18px);z-index:3;width:36px;height:36px;border:0;border-radius:2px;
 background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:pointer;display:none}
 .lw[data-lead] .lnav{display:block}
@@ -407,6 +414,11 @@ font-size:0.6875rem;line-height:1.2;font-weight:500;color:var(--mut);background:
 .badge{display:inline-flex;align-items:center;min-height:16px;font-size:0.6875rem;font-weight:500;color:var(--fg);background:var(--card);border:0;border-radius:2px;padding:2px 4px;margin-right:4px}
 .sold{color:var(--acc);font-weight:700}
 /* 판매처 순위 — 위의 비교표와 생김새가 겹치면 안 된다. 번호·이름·총액 세 덩어리뿐이다. */
+/* 최저가 조합은 **전 버전을 다 사는 사람 전용**이라 다른 섹션과 성격이 다르다.
+   옅은 바탕을 깔아 "여기부터는 다른 얘기"라는 걸 선 없이 알린다. */
+.optsec{background:var(--card);padding:clamp(14px,2vw,20px);margin-bottom:clamp(20px,2.6vw,28px)}
+.optsec .rk{border-bottom-color:#e0e0e0}
+.optsec .best{background:var(--bg)}
 .rks{list-style:none;margin:0;padding:0}
 .rk{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .rk:first-child{border-top:2px solid var(--fg)}
@@ -1970,6 +1982,7 @@ ${tabs
         ? `</ol><p class="partnote">일부만 취급 — 덜 사서 금액이 낮습니다</p><ol class="rks">${partRows}`
         : '');
     optHtml = `<h2>최저가 조합 <span class="one">${opt.versions}종</span></h2>
+<div class="optsec">
 ${
       opt.unbuyable?.length
         ? `<div class="warn"><b>${opt.unbuyable.length}종은 모든 판매처에서 품절</b>이라 계산에서 뺐습니다.
@@ -1992,7 +2005,7 @@ ${/**
 ${/* 최저 조합이 한 곳뿐이면 아래 순위 1위와 글자 하나까지 같아진다. 같은 걸 두 번 보여주지 않는다. */ ''}
 ${opt.best.breakdown.length > 1 ? `<div class="bds">${bd}</div>` : ''}
 ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
-`;
+</div>`;
   }
 
   const multi = groups.filter(([, it]) => new Set(it.map((x) => x.retailer)).size >= 2).length;
@@ -2172,6 +2185,17 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
    * 고르는 기준은 대표 한 장 때와 같다 — 마감 안 지난 것 중 특전이 많이 확인된 순,
    * 동점이면 판매처 많은 순 → 마감 급한 순. 다섯 장이면 한 바퀴가 30초다.
    */
+  /** 홍보 칸 아래 한 줄. 카드가 쓰는 것과 같은 사실만 — 홍보 문구는 쓰지 않는다. */
+  const promoFacts = (a) => {
+    const d = a.nextDeadline?.at ? Math.ceil((new Date(a.nextDeadline.at).getTime() - Date.now()) / 86400000) : null;
+    return [
+      a.benefitCount ? `특전 ${a.benefitCount}/${a.retailers}` : `판매처 ${a.retailers}`,
+      a.versions ? `${a.versions}종` : '',
+      d != null && d >= 0 ? `마감 D-${d}` : '',
+    ]
+      .filter(Boolean)
+      .join(' · ');
+  };
   const promo = [...albums]
     .filter((a) => !a.expired && a.cover)
     .sort(
@@ -2185,8 +2209,9 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
         .map(
           (a, n) =>
             `<a class="ls" href="album/${esc(a.slug)}.html">
-<img src="${esc(a.cover)}" alt="" width="560" height="560" ${n ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">
-<span class="cvt"><span class="cva">${esc(a.artistDisplay || a.artist)}</span><span class="cval">${esc(a.album)}</span></span></a>`
+<span class="lim"><img src="${esc(a.cover)}" alt="" ${n ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">
+<span class="cvt"><span class="cva">${esc(a.artistDisplay || a.artist)}</span><span class="cval">${esc(a.album)}</span></span></span>
+<span class="pmeta">${esc(promoFacts(a))}</span></a>`
         )
         .join('')}</div>
 ${
