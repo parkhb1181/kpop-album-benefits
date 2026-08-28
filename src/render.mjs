@@ -308,18 +308,30 @@ list-style:none;padding:0}
 @media(max-width:559px){
 .cards{grid-template-columns:repeat(2,1fr);gap:28px 10px}
 .cards .lead{grid-column:span 2}
-.cards .lead .cvt{padding:44px 14px 14px}
+.cards .lead .cvt{padding:44px 14px 22px}
 .cards .lead .cvt .cval{font-size:1.25rem}
 /* 뒤에 오는 기본 규칙과 명시도가 같으면 밀린다 — .cards로 한 단계 올린다. */
 .cards .cvt{padding:24px 8px 8px}
 .cards .cvt .cval{font-size:0.8125rem}
 }
-/* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
-   오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
-   글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
+/* 홍보 칸 — 격자 안에서 2×2로 넓힌 칸. 오른쪽에 카드 두 장이 들어차 구멍이 안 생긴다. */
+.lead{position:relative;min-width:0;list-style:none}
+.lw{position:relative;overflow:hidden;background:var(--card)}
+.lt{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+overscroll-behavior-x:contain}
+.lt::-webkit-scrollbar{display:none}
+.ls{position:relative;flex:0 0 100%;scroll-snap-align:start;display:block;border-bottom:0;min-width:0}
+.ls img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--card)}
+.lnav{position:absolute;top:calc(50% - 18px);z-index:3;width:36px;height:36px;border:0;border-radius:2px;
+background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:pointer;display:none}
+.lw[data-lead] .lnav{display:block}
+.lnav.p{left:0}.lnav.n{right:0}
+.ld{position:absolute;left:0;right:0;bottom:10px;z-index:3;display:flex;justify-content:center;gap:6px}
+.ld button{width:7px;height:7px;padding:0;border:0;border-radius:99px;background:rgba(255,255,255,.45);cursor:pointer}
+.ld button.on{background:#fff}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
-.cards .lead .cvt{padding:56px 18px 18px}
+.cards .lead .cvt{padding:56px 18px 26px}
 .cards .lead .cvt .cval{font-size:1.5rem;-webkit-line-clamp:3}
 .cards .lead .cvt .cva{font-size:0.875rem;margin-bottom:4px}
 }
@@ -561,6 +573,47 @@ box.addEventListener('input',run);run();
  */
 const COVER_JS = `<script>
 (function(){
+/* 홍보 칸 — 넘길 수 있고 자동으로도 넘어간다.
+   자동 넘김은 원래 권하지 않는 물건이라(NN/g 실측 캐러셀 1.96% 대 정적 43.03%)
+   해로운 쪽만 덜어낸다: 손을 대면 아예 멈추고 다시 안 켠다, 마우스가 올라가거나
+   초점이 들어오면 쉰다, 동작 줄이기를 켠 사람에게는 처음부터 안 돈다. */
+document.querySelectorAll('.lw[data-lead]').forEach(function(w){
+var t=w.querySelector('.lt');if(!t)return;
+var slides=[].slice.call(t.querySelectorAll('.ls'));
+var dots=[].slice.call(w.querySelectorAll('.ld button'));
+if(slides.length<2)return;
+var idx=0,moving=0,mv,timer=null,stopped=0;
+function at(){return moving?idx:Math.round(t.scrollLeft/(t.clientWidth||1))}
+function paint(){var n=at();dots.forEach(function(b,i){b.className=i===n?'on':''})}
+function go(n){
+idx=(n+slides.length)%slides.length;moving=1;
+t.scrollLeft=t.clientWidth*idx;
+clearTimeout(mv);mv=setTimeout(function(){moving=0;paint()},500);
+paint();
+}
+function stop(){stopped=1;clearInterval(timer);timer=null}
+function start(){
+if(stopped||timer)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+timer=setInterval(function(){go(at()+1)},6000);
+}
+function mk(cls,txt,dir){
+var b=document.createElement('button');b.type='button';b.className='lnav '+cls;b.textContent=txt;
+b.setAttribute('aria-label',dir<0?'이전 앨범':'다음 앨범');
+b.addEventListener('click',function(e){e.preventDefault();stop();go(at()+dir)});
+w.appendChild(b);
+}
+mk('p','\\u2039',-1);mk('n','\\u203a',1);
+dots.forEach(function(b,i){b.addEventListener('click',function(e){e.preventDefault();stop();go(i)})});
+/* 손가락으로 밀어도 자동은 끈다 — 사용자가 직접 고르기 시작했다는 뜻이다. */
+t.addEventListener('pointerdown',stop);
+var tick;t.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(paint,90)},{passive:true});
+w.addEventListener('mouseenter',function(){clearInterval(timer);timer=null});
+w.addEventListener('mouseleave',start);
+w.addEventListener('focusin',function(){clearInterval(timer);timer=null});
+w.addEventListener('focusout',start);
+paint();start();
+});
 document.querySelectorAll('.cvw').forEach(function(w){
 var strip=w.querySelector('.strip'),tag=w.querySelector('.vn');
 var dw=w.parentElement.querySelector('.dots'),dots=dw?dw.querySelectorAll('button'):[];
@@ -2085,17 +2138,47 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
   const at = (a) => (a.nextDeadline?.at ? new Date(a.nextDeadline.at).getTime() : Infinity);
   const base = [...albums].sort((x, y) => Number(!!x.expired) - Number(!!y.expired) || at(x) - at(y));
   /**
-   * **대표 한 장은 격자의 첫 칸이다.** 따로 띄운 섹션이 아니라 2×2로 넓힌 칸이라,
-   * 오른쪽에 다음 두 장이 그대로 들어차서 격자에 구멍이 안 생긴다.
-   * 거는 기준은 그대로 — 마감 안 지난 것 중 특전이 가장 많이 확인된 앨범,
-   * 동점이면 판매처 많은 순 → 마감 급한 순.
+   * 홍보 칸 — 격자의 첫 칸을 2×2로 넓혀 여러 장을 돌린다.
+   *
+   * **캐러셀은 원래 권하지 않는다.** NN/g 실측으로 상호작용이 캐러셀 1.96% 대
+   * 정적 히어로 43.03%이고, 자동 넘김은 사용자가 통제권을 잃어 짜증을 준다.
+   * 그래도 넣기로 한 이상, 해로운 쪽만 덜어낸다:
+   *   · 손을 대면(누르거나 넘기면) 자동 넘김을 **완전히 멈춘다** — 다시 안 켠다
+   *   · 마우스가 올라가거나 초점이 들어오면 멈춘다
+   *   · prefers-reduced-motion이면 처음부터 안 돈다
+   *   · 점과 화살표로 직접 넘길 수 있다(자동에만 기대지 않는다)
+   *
+   * 고르는 기준은 대표 한 장 때와 같다 — 마감 안 지난 것 중 특전이 많이 확인된 순,
+   * 동점이면 판매처 많은 순 → 마감 급한 순. 다섯 장이면 한 바퀴가 30초다.
    */
-  const lead = [...albums]
+  const promo = [...albums]
     .filter((a) => !a.expired && a.cover)
     .sort(
       (x, y) => (y.benefitCount || 0) - (x.benefitCount || 0) || (y.retailers || 0) - (x.retailers || 0) || at(x) - at(y)
-    )[0];
-  const ordered = lead ? [lead, ...base.filter((a) => a.slug !== lead.slug)] : base;
+    )
+    .slice(0, 5);
+  const ordered = base;
+  const promoHtml = promo.length
+    ? `<li class="lead"><div class="lw"${promo.length > 1 ? ' data-lead="1"' : ''}>
+<div class="lt">${promo
+        .map(
+          (a, n) =>
+            `<a class="ls" href="album/${esc(a.slug)}.html">
+<img src="${esc(a.cover)}" alt="" width="560" height="560" ${n ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">
+<span class="cvt"><span class="cva">${esc(a.artistDisplay || a.artist)}</span><span class="cval">${esc(a.album)}</span></span></a>`
+        )
+        .join('')}</div>
+${
+        promo.length > 1
+          ? `<div class="ld">${promo
+              .map(
+                (a, n) =>
+                  `<button type="button" data-i="${n}"${n ? '' : ' class="on"'} aria-label="${esc(a.album)}"></button>`
+              )
+              .join('')}</div>`
+          : ''
+      }</div></li>`
+    : '';
 
   // 검색 대상 문자열을 빌드 때 미리 만들어 카드에 박는다 (브라우저는 비교만 한다)
   const hayOf = (a) => [a.artistDisplay, a.artist, a.artistKo, a.album].filter(Boolean).join(' ');
@@ -2132,7 +2215,7 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
        *
        * 스타일은 하나도 안 바꾼다 — 태그만 바뀐다(아래 리셋으로 h2 기본 여백만 끈다).
        */
-      return `<li class="card${i === 0 && lead ? ' lead' : ''}" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
+      return `<li class="card" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
         searchKey(choseong(hayOf(a)))
       )}">
 <a class="go" href="album/${esc(a.slug)}.html" aria-label="${esc(`${a.artistDisplay || a.artist} ${a.album}`)}"></a>
@@ -2178,7 +2261,7 @@ ${
         : ''
     }
 ${/* h1은 헤더의 브랜드 줄이다(위 siteHeader 주석 참고). 여기 또 두면 같은 말이 두 번 나온다. */ ''}
-<main><ul class="cards">${cards}</ul></main>
+<main><ul class="cards">${promoHtml}${cards}</ul></main>
 <details class="ft">
 <summary>이 사이트는 무엇인가</summary>
 <div class="body">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직에서 자동으로 모읍니다.
