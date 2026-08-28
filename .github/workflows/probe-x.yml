@@ -18,7 +18,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: 로그아웃 프로필 렌더 확인
         run: |
-          cat > /tmp/probe.mjs <<'EOF'
+          cat > probe-x.mjs <<'EOF'
           import { chromium } from 'playwright';
           const b = await chromium.launch({ headless: true });
           const c = await b.newContext({
@@ -48,4 +48,4 @@ jobs:
           }
           await b.close();
           EOF
-          node /tmp/probe.mjs
+          node probe-x.mjs
