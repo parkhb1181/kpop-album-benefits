@@ -73,6 +73,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/evan-1st-mini-album-death-of-me</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/vvup-1st-mini-album-vvon</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -92,12 +98,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때</loc>
-    <lastmod>2026-08-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/evan-1st-mini-album-death-of-me</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
