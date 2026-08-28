@@ -2157,7 +2157,10 @@ ${faqHtml(faq)}`;
    */
 
   return shell(
-    `${artistName} ${target.album} 판매처별 특전 | 버전·구성·가격`,
+    // 브랜드를 title 끝에 단다. 구글이 사이트 이름을 배우는 자리가 여기다 —
+    // 페이지 16개가 전부 "| 앨범노트"로 끝나면 그게 브랜드 신호가 된다.
+    // 뒤에 있던 "버전·구성·가격"은 description·h2에 그대로 있어 잃는 게 없다.
+    `${artistName} ${target.album} 판매처별 특전 | ${BRAND}`,
     `${siteHeader(stamp, { href: '../index.html' })}
 ${expiredBanner(expired, target)}
 <a class="back" href="../index.html">← 전체 컴백</a>
@@ -2381,7 +2384,7 @@ ${
   const live = albums.filter((a) => !a.expired).length;
   return shell(
     // 검색 결과에 뜨는 문구다. 키워드는 담되 `A — B·C·D` 나열은 쓰지 않는다.
-    'K-POP 앨범 판매처별 특전 비교 | 버전·구성·가격 한눈에',
+    `K-POP 앨범 판매처별 특전 비교 | ${BRAND}`,
     `${siteHeader(stamp)}
 ${
       // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
@@ -2427,8 +2430,24 @@ ${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS
       // 게다가 남의 CDN 핫링크라 저쪽이 URL을 바꾸면 그날로 깨진다.
       // 우리가 구운 1200×630 카드를 먼저 쓴다. ogImage 폴백은 카드가 없을 때만이다.
       image: albums.find((a) => a.ogCard)?.ogCard || albums.find((a) => a.ogImage)?.ogImage || null,
+      
+      
+      
+      
       jsonLd: {
         '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'WebSite',
+            '@id': `${abs(siteUrl, '') || ''}#website`,
+            name: BRAND,
+            alternateName: 'K-POP 앨범 판매처별 특전 비교',
+            description: TAGLINE,
+            url: abs(siteUrl, '') || undefined,
+            inLanguage: 'ko-KR',
+            sameAs: ['https://x.com/albumnote_'],
+          },
+          {
         '@type': 'ItemList',
         name: 'K-POP 앨범 판매처별 특전 비교',
         numberOfItems: albums.length,
@@ -2438,6 +2457,8 @@ ${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS
           name: `${a.artistDisplay || a.artist} 앨범 ${a.album}`,
           url: abs(siteUrl, `album/${a.slug}`) || undefined,
         })),
+          },
+        ],
       },
     }
   );
