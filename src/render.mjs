@@ -866,7 +866,11 @@ if(document.readyState==='complete'){idle(go)}else{addEventListener('load',funct
 //     서로 묻혀 **그냥 흰 동그라미**가 됐다.
 // 그래서 홈을 색이 아니라 **간극**으로 만든다. 링 사이가 비어 있으면 배경이
 // 무슨 색이든 홈이 보인다. 실측으로 흰 배경·먹지·주황 세 곳에서 확인했다.
-const MARK =
+//
+// **영문판(en.mjs)이 이걸 import해서 쓴다.** 예전엔 en.mjs가 따로 베껴 뒀는데,
+// 여기가 위 이유로 바뀐 걸 모르고 옛 도형이 남아 브랜드 로고가 두 개가 됐다.
+// 베끼면 또 갈라진다 — export해서 하나만 둔다.
+export const MARK =
   '<g fill="none" stroke="currentColor">' +
   '<circle cx="10" cy="10" r="8.6" stroke-width="2"/>' +
   '<circle cx="10" cy="10" r="6" stroke-width="2"/>' +

@@ -71,6 +71,53 @@ GitHub Actions에서 돈다(판매처가 클라우드 IP를 막을 수 있어서
 
 ---
 
+## 재빌드는 **한 번만** 건다 — 이미 대기 중이면 아무것도 안 바뀐다
+
+레인 표는 파일 소유권만 정하고 워크플로 트리거는 안 정한다. 정할 필요가 없다 —
+`rebuild.yml`이 이미 막고 있다.
+
+```yaml
+concurrency:
+  group: site-build
+  cancel-in-progress: false
+```
+
+2026-08-28에 한 시간 동안 rebuild가 8번 걸렸고 3번이 `cancelled`로 끝났다.
+그런데 **취소된 3건은 job을 하나도 시작하지 않았다**(`gh run view --json jobs` → `[]`).
+빌드 시간은 1분도 안 탔다. `cancel-in-progress: false`가 하는 일이 정확히 이거다 —
+**도는 것은 지키고, 큐에 쌓인 것 중 제일 최신 하나만 남긴다.**
+
+그리고 `workflow_dispatch`는 **거는 시점의 origin/main**을 빌드한다. 그래서 나중에 건
+것은 먼저 건 것의 커밋을 항상 포함한다. 실측(`fb17139` ⊂ `5a721ce`)으로도 맞았다.
+**살아남은 run이 언제나 가장 많은 커밋을 갖는다** — 내 수정이 빠진 채 배포될 일은 없다.
+
+실제 비용은 **배포 지연** 하나다. 지금 도는 빌드(8~9분)가 끝나야 큐가 풀린다.
+거기에 또 걸어봐야 대기열만 갈아치우고 시작 시각은 그대로다.
+
+**그래서 규칙은 "누가 누르나"가 아니라 "겹쳐 누르지 마라"다.**
+
+보는 건 "뭔가 돌고 있나"가 아니라 **"큐에 있는 게 내 커밋을 포함하나"**다.
+run은 걸린 시점의 SHA에 **고정된다** — 내 푸시보다 먼저 걸린 run은 나중에 내가
+푸시해도 옛 커밋을 빌드한다.
+
+```bash
+git push
+gh run list --workflow=rebuild.yml --limit 3 --json databaseId,status,headSha \
+  --jq '.[] | "\(.databaseId) \(.status) \(.headSha[0:7])"'
+
+# 대기/진행 중인 run의 headSha가 내 커밋을 포함하면 → 걸지 않는다
+git merge-base --is-ancestor $(git rev-parse HEAD) <그 headSha> && echo 포함
+
+# 포함 안 하면(= 내 푸시보다 먼저 걸린 run이면) 한 번 건다.
+# 큐에 있던 옛 run은 자동으로 잘린다 — job을 시작 안 했으니 버리는 것도 없다
+gh workflow run rebuild.yml
+```
+
+푸시만으로는 사이트가 안 바뀐다(Vercel은 `out/`을 서빙만 한다). **푸시 뒤에 걸린
+재빌드에만 올라탄다.** 하루 2회 자동(KST 10시·19시)도 같다.
+
+---
+
 ## `out/`은 커밋하지 않는다 — 병렬에서 제일 먼저 터지는 곳
 
 `out/`의 73개 파일이 git에 추적된다. 그런데 **`node build.mjs`는 그 73개를 전부 다시 쓴다.**

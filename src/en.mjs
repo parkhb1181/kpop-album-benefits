@@ -13,7 +13,7 @@
  *
  * 데이터는 국내판과 **같은 `out/data/{slug}.json`** 을 쓴다. 스크레이퍼도 빌드도 하나다.
  */
-import { esc } from './render.mjs';
+import { esc, MARK } from './render.mjs';
 import { abs, metaTags } from './seo.mjs';
 import { summarizeBenefit } from './i18n-benefit.mjs';
 
@@ -69,22 +69,17 @@ td:nth-child(4){grid-column:1/-1;margin-top:4px}
 }`;
 
 /**
- * 마크 — **국내판(render.mjs의 MARK)과 같은 도형이어야 한다.**
- * 주석에는 같다고 적혀 있었는데 실제로는 선으로 그린 다른 원이었다. 같은 브랜드에
- * 다른 로고가 두 개 있으면 링크를 건너온 사람이 다른 사이트로 읽는다.
- * 국내판이 LP판(채운 원 + 흰 홈 + 라벨)이라 그대로 옮긴다.
+ * 마크는 **베끼지 않고 국내판에서 가져온다**(render.mjs의 MARK).
+ *
+ * 두 번 갈라졌다. 처음엔 en.mjs가 선으로 그린 다른 원을 갖고 있으면서 주석에만
+ * "같다"고 적혀 있었고, 그걸 고친다면서 이번엔 내가 **파일을 안 읽고 기억으로**
+ * LP판(채운 원 + 흰 홈)을 옮겨 적었다. 그 도형은 이미 2시간 반 전에 국내판에서
+ * 걷어낸 것이었다 — 26px 이하에서 홈이 회색 덩어리로 뭉개지고 먹지 배경에서
+ * 흰 동그라미가 돼서(`0ee4fce`). 영문 헤더가 정확히 24px다.
+ *
+ * 같은 브랜드에 로고가 두 개면 링크를 건너온 사람이 다른 사이트로 읽는다.
+ * import면 갈라질 수가 없다.
  */
-const MARK =
-  '<circle cx="10" cy="10" r="9.6" fill="currentColor"/>' +
-  '<g fill="none" stroke="#fff" stroke-width=".5">' +
-  '<circle cx="10" cy="10" r="8.3"/>' +
-  '<circle cx="10" cy="10" r="7.2"/>' +
-  '<circle cx="10" cy="10" r="6.1"/>' +
-  '<circle cx="10" cy="10" r="5"/>' +
-  '</g>' +
-  '<circle cx="10" cy="10" r="3.5" fill="#fff"/>' +
-  '<circle cx="10" cy="10" r=".62" fill="currentColor"/>';
-
 const header = (href) => `<header class="hd"><${href ? `a class="brand" href="${esc(href)}"` : 'h1 class="brand"'}>
 <svg class="lg" width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">${MARK}</svg>
 <span class="bd">${BRAND_EN}</span><span class="tl">${TAGLINE_EN}</span>
