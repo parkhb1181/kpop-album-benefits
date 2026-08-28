@@ -157,6 +157,11 @@ background:rgba(0,0,0,.62);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
 td.th{width:52px;padding:8px 4px 8px 8px}
 td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
 .back{font-size:0.875rem;color:var(--mut);display:inline-block;margin-bottom:16px;border:0}
+/* 3,694px를 내려온 끝이 FAQ였고 돌아갈 길이 맨 위 링크 하나뿐이었다. */
+.endnav{display:flex;gap:16px;justify-content:space-between;margin:clamp(28px,3.4vw,44px) 0 0;
+padding-top:16px;border-top:1px solid var(--line);font-size:0.75rem;font-weight:600}
+.endnav a{border-bottom:0;color:var(--mut)}
+.endnav a:hover{color:var(--fg)}
 
 /* 상단 — 앨범 커버와 마감을 나란히.
    가로로 긴 표에 두 줄을 넣으면 여백만 남는다. 커버를 크게 두는 게 이 페이지의 주인공이기도 하다. */
@@ -184,6 +189,12 @@ margin-bottom:clamp(8px,1vw,12px)}
    읽히면서 "어디서 몇 종"이 서로 멀어진다. */
 .bds{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(12px,1.6vw,20px)}
 .hero .dls{flex:1 1 260px;min-width:0}
+/* 머리글 요약 — 마감 아래 빈자리를 쓴다. 낱말과 값을 두 칸으로 세워 훑기 쉽게. */
+.sm{margin:4px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:8px 16px;border-top:1px solid var(--line);padding-top:12px}
+.sm>div{min-width:0}
+.sm dt{font-size:0.6875rem;font-weight:600;color:var(--mut);margin:0 0 2px}
+.sm dd{margin:0;font-size:0.875rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .dl{border-top:2px solid var(--fg);padding-top:10px}
 .dlt{font-size:0.875rem;font-weight:700;display:flex;align-items:center;gap:6px}
 .dlc{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums;margin:4px 0 2px}
@@ -405,7 +416,7 @@ background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
 .ld button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;
 display:flex;align-items:center;justify-content:center}
 .ld button::before{content:'';width:8px;height:8px;border-radius:99px;
-background:#c9c9c9}
+background:#8a8a8a}
 .ld button.on::before{background:var(--fg)}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
@@ -668,7 +679,12 @@ inp.click();
 <div class="dlt">예약 배송 시작</div>
 <div class="dlc"><span class="cd" data-until="2026-09-07T18:00:00+09:00">10일 3시간</span></div>
 <div class="dlm">9. 7. (월) 18:00 · <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%86%8C%EC%97%B0%28SOYEON%29+What+a+Wonderful+Life+%C2%B7+%EC%98%88%EC%95%BD+%EB%B0%B0%EC%86%A1+%EC%8B%9C%EC%9E%91&amp;dates=20260907T090000Z%2F20260907T093000Z&amp;details=%EC%9C%84%EB%B2%84%EC%8A%A4%EC%83%B5+%EA%B8%B0%EC%A4%80.+%ED%8C%90%EB%A7%A4%EC%B2%98%EB%A7%88%EB%8B%A4+%EB%8B%A4%EB%A5%BC+%EC%88%98+%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4" rel="nofollow noopener" target="_blank">캘린더</a></div>
-</div></div></div>
+</div><dl class="sm">
+<div><dt>가격</dt><dd>13,300원 ~ 53,500원</dd></div>
+<div><dt>판매처</dt><dd>2곳</dd></div>
+<div><dt>특전 확인</dt><dd>2곳</dd></div>
+
+</dl></div></div>
 <script>
 (function(){
 function p(n){return n<10?'0'+n:''+n}
@@ -840,6 +856,8 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <details class="comp"><summary>What a Wonderful Life 버전은 몇 종인가요?</summary><p><b>8종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
 <details class="comp"><summary>전 버전을 다 모으려면 얼마인가요?</summary><p>배송비와 쿠폰까지 넣어 <b>250,900원</b>입니다.</p></details>
 <details class="comp"><summary>특전은 언제까지 주나요?</summary><p><b>예약판매 기간 내 선착순</b>이 대부분이고 수량이 소진되면 끝납니다. 이 페이지는 하루 두 번 갱신됩니다.</p></details></main>
+
+<nav class="endnav"><a href="../index.html">← 전체 컴백</a><a href="#top">맨 위로 ↑</a></nav>
 <script>
 (function(){
 /* 사진 ↔ 탭 동기화. 갤러리가 탭보다 먼저 그려지므로 서로를 여기에 걸어둔다.
@@ -1023,5 +1041,5 @@ pick(0);
 });
 })();
 </script>
-
-<p class="stamp">최근 수집 <b>2026. 8. 28. 13:58:52</b></p></body></html>
+<div class="err">수집 실패: 뮤직플랜트: 연결 불가로 건너뜀 (연속 3회 실패) — www.musicplant.co.kr</div>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 14:07:47</b></p></body></html>
