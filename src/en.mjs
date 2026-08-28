@@ -13,6 +13,7 @@
  *
  * 데이터는 국내판과 **같은 `out/data/{slug}.json`** 을 쓴다. 스크레이퍼도 빌드도 하나다.
  */
+import { existsSync } from 'node:fs';
 import { esc, MARK } from './render.mjs';
 import { abs, metaTags } from './seo.mjs';
 import { summarizeBenefit } from './i18n-benefit.mjs';
@@ -287,8 +288,27 @@ Collected automatically from the stores listed above · Updated ${esc(shortDate 
   });
 }
 
-export function renderEnIndex({ albums, stamp, siteUrl, shortDate }) {
-  const live = albums.filter((a) => !a.expired);
+export function renderEnIndex({
+  albums,
+  stamp,
+  siteUrl,
+  shortDate,
+  /**
+   * 이 앨범의 영어판이 실제로 있는지.
+   *
+   * `expired`만 걸렀더니 **영어 인덱스가 404를 링크하고 있었다** — 실측으로
+   * `/en`이 `album/red-velvet-velvet-summer`를 걸었는데 그 파일은 만들어진 적이 없다.
+   * 예판이 끝나 이번 빌드에서 다시 안 그린 앨범은 국내판 HTML만 예전 것이 남는다.
+   *
+   * 사이트맵과 hreflang은 코드 레인이 같은 이유로 막았는데(`c69db16`) 인덱스는
+   * 안 덮였다. 목록에서 눌러 404를 보는 건 크롤러가 아니라 사람이라 더 나쁘다.
+   *
+   * 파일 존재를 기본값으로 두되 주입할 수 있게 남긴다 — 렌더러를 파일시스템 없이
+   * 부르는 테스트가 그대로 돌아야 한다. 이 함수는 영어판을 다 쓴 뒤에 불린다.
+   */
+  hasEn = (slug) => existsSync(`./out/en/album/${slug}.html`),
+}) {
+  const live = albums.filter((a) => !a.expired && hasEn(a.slug));
   const enUrl = abs(siteUrl, 'en/');
   const koUrl = abs(siteUrl, '');
 
