@@ -1509,7 +1509,20 @@ function eventsHtml(events, eventTotal) {
   const scope = eventTotal
     ? `메이크스타 진행 중 이벤트 ${eventTotal}건을 전부 대조합니다.`
     : '메이크스타 진행 중 이벤트 전량과 대조합니다.';
-  const limits = '';
+  /**
+   * **판매처도 자기 팬사인회를 연다.** 우리는 메이크스타만 본다.
+   *
+   * 실측(2026-08-28) — 뮤직플랜트가 태민 [PHASE I] 팬사인회를 열었다(대면 30명·영통 20명,
+   * 응모 ~8/28). 위드뮤도 이브 [NAIL]로 같은 걸 했다. 둘 다 자기 X 계정에만 올리고
+   * 상품 페이지에는 안 적어서 우리 수집기가 못 본다.
+   *
+   * 그래서 "메이크스타 구매분만 응모됩니다"라고 단정하면 안 된다 — 그건 **여기 실린
+   * 이벤트**에 대해서만 참이다. 팬이 그 문장을 믿고 다른 기회를 놓치게 된다.
+   * 못 잡는다는 사실 자체를 적는 게 맞다. 조사 기록은 docs/41-판매처-특전-출처-조사.md.
+   */
+  const limits =
+    '<p class="mut">판매처가 자체로 여는 팬사인회는 아직 못 잡습니다 — 뮤직플랜트·위드뮤도 각자 엽니다. ' +
+    '여기 없다고 기회가 없는 것은 아닙니다.</p>';
 
   /**
    * 이 블록이 페이지 위로 올라오면서 **빈 제목만 남으면 안 된다.**
@@ -1519,7 +1532,7 @@ function eventsHtml(events, eventTotal) {
    */
   if (!events?.length) {
     return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. ${scope}</p>
+<p class="mut">메이크스타에 진행 중인 팬사인회·이벤트가 없습니다. ${scope}</p>
 ${limits}`;
   }
 
@@ -1553,7 +1566,7 @@ ${limits}`;
     .join('');
 
   return `<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
+<p class="mut">아래 이벤트는 메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
 <div class="wrap"><table class="cmp"><thead><tr>
 <th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody>${rows}</tbody></table></div>
 ${limits}`;
