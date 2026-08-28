@@ -663,16 +663,49 @@ cardHashes.save();
 // 구독해두면 새 컴백의 마감도 리빌드 때마다 알아서 따라 들어온다.
 // 인덱스에서 사라진 앨범의 .ics는 지운다. 안 지우면 저장소에 계속 쌓이고,
 // 그 파일을 직접 받아간 사람에게는 영원히 갱신 안 되는 일정만 남는다.
+/**
+ * 인덱스에서 사라진 앨범의 산출물을 지운다.
+ *
+ * `catalog`에는 **예판이 끝난 앨범도 들어 있다**(종료 표시로 유지한다). 그러니 여기 없다는 건
+ * 종료가 아니라 인덱스에서 통째로 빠졌다는 뜻이고, 그 페이지는 아무 데서도 링크되지 않는다.
+ *
+ * 실측(2026-08-28) — 한국어 18페이지 / 영어 17페이지 / 인덱스 17앨범.
+ * 차이는 `tomorrow-x-together-no-labels-part-02` 하나였다. `.ics`만 지우고 HTML은
+ * 안 지우고 있었다.
+ *
+ * `out/data`는 **안 지운다.** 종료 앨범을 다시 그리는 유일한 원본이고, 지우면 되돌릴 방법이
+ * 없다. 앨범 하나에 수십 KB라 쌓여도 문제될 양이 아니다.
+ */
 {
-  const live = new Set(catalog.map((a) => `${a.slug}.ics`));
-  let removed = 0;
-  for (const f of readdirSync('./out/alarm')) {
-    if (f.endsWith('.ics') && !live.has(f)) {
-      rmSync(`./out/alarm/${f}`, { force: true });
-      removed++;
+  const slugs = new Set(catalog.map((a) => a.slug));
+  const candidates = [];
+  for (const [dir, ext] of [
+    ['./out/alarm', '.ics'],
+    ['./out/album', '.html'],
+    ['./out/en/album', '.html'],
+    ['./out/og', '.png'],
+  ]) {
+    if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir)) {
+      if (f.endsWith(ext) && !slugs.has(f.slice(0, -ext.length))) candidates.push(`${dir}/${f}`);
     }
   }
-  if (removed) console.log(`  알람 파일 정리: ${removed}개 (인덱스에 없는 앨범)`);
+
+  /**
+   * **한 번에 많이 지우려 하면 그건 정리가 아니라 사고다.**
+   * 인덱스가 비거나 깨진 채로 빌드되면(`out/index.json` 유실, discover 전량 실패)
+   * `catalog`가 몇 개로 쪼그라들고, 그러면 멀쩡한 페이지를 전부 지우게 된다.
+   * 그때는 지우지 말고 시끄럽게 알린다 — 되돌릴 방법이 없는 쪽이 삭제다.
+   */
+  const LIMIT = 4;
+  if (candidates.length > LIMIT) {
+    console.log(
+      `  ⚠ 인덱스에 없는 산출물이 ${candidates.length}개입니다 (한도 ${LIMIT}). 인덱스가 깨졌을 수 있어 지우지 않았습니다.`
+    );
+  } else {
+    for (const p of candidates) rmSync(p, { force: true });
+    if (candidates.length) console.log(`  인덱스에서 빠진 앨범 산출물 정리: ${candidates.length}개`);
+  }
 }
 
 allAlarms.sort((a, b) => new Date(a.at) - new Date(b.at));
