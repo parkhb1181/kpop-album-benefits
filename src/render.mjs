@@ -91,7 +91,9 @@ a:hover{border-bottom-color:currentColor}
 .rep .mut{margin-left:6px}
 /* 페이지 갤러리 — 메인 한 장 + 썸네일 줄. */
 .pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
-.pgm{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+/* 슬라이드를 위로 붙인다. 안 그러면 전부 가장 높은 것에 늘어나 높이를 못 잰다. */
+.pgm{display:flex;align-items:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;
+scrollbar-width:none;transition:height .15s}
 .pgm::-webkit-scrollbar{display:none}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0;position:relative}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
@@ -111,7 +113,9 @@ a:hover{border-bottom-color:currentColor}
    540px 칸에 넣고 스크롤하면 한 번에 14%만 보이고 페이지 스크롤과도 싸운다.
    잘라 보여주고 **펼치기**로 연다 — 폭은 줄이지 않는다. 원본이 720px 설계라
    817px면 1.13배로 글씨가 제일 잘 읽힌다(좁히면 글씨가 같이 작아진다). */
-.pgm figure a{display:block;max-height:clamp(360px,62vh,620px);overflow:hidden;
+/* 아직 안 받아진 사진은 높이가 0이라 칸이 통째로 빈다 — Ktown4u 구성품 이미지에
+   치수가 없어 자리를 못 잡는 탓이다(수집 쪽 문제라 여기선 바닥만 깐다). */
+.pgm figure a{display:block;min-height:220px;max-height:clamp(360px,62vh,620px);overflow:hidden;
 background:var(--card);border-bottom:0;position:relative}
 .pgm figure a.open{max-height:none}
 .pgm figure.clipped a:not(.open)::after{content:'';position:absolute;left:0;right:0;bottom:0;
@@ -177,7 +181,13 @@ margin-bottom:clamp(8px,1vw,12px)}
 .dls .dlh+.dl{border-top:0;padding-top:0}
 /* 모바일에서 100%면 351px 정사각형이라 헤더·제목까지 더해 첫 화면이 커버 하나로 끝난다.
    절반만 준다 — 옆에 마감이 같이 서고, 아래 비교표가 첫 화면에 걸린다. */
-@media(max-width:760px){.hcv{width:min(46%,200px)}}
+/* 폰에서는 커버를 폭 전체로 쓴다. 200px로 줄여 마감과 나란히 세웠더니 앨범 사진이
+   너무 작아 뭘 보는 페이지인지 안 읽혔다. 마감은 그 아래로 내려간다(.hero가 wrap). */
+@media(max-width:760px){
+.hero{gap:14px}
+.hcv{width:100%;max-width:none}
+.hero .dls{flex:1 1 100%}
+}
 
 /* ── 버전 탭 ─────────────────────────────────────────────────
    버전 6~18종을 세로로 쌓으면 페이지가 한없이 길어지는데 팬은 보통 한 버전만 본다.
@@ -289,7 +299,7 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
 .brand{display:flex;align-items:baseline;gap:8px;margin:0;border:0;flex-wrap:wrap}
 .brand .lg{align-self:center;display:block;flex:0 0 auto}
 .hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif;
-font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
+font-size:1.5rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
 .hd .tl{font-size:0.875rem;color:var(--mut);white-space:nowrap}
 .hd .hdm{font-size:0.75rem;color:var(--dim);white-space:nowrap}
 
@@ -494,9 +504,10 @@ clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* **"특전 없음"과 "판매처 미공개"는 정반대 정보다.**
    앞은 위버스샵 icons로 단정한 것이고 뒤는 판매처가 안 알린 것인데,
    둘 다 '.none'(회색)이라 화면에서 구분이 안 됐다. 확실한 쪽만 회색으로 두고
-   모르는 쪽에는 물음표를 붙인다 — 이 사이트가 미확인을 물음표로 남긴다는 태도 그대로다. */
+   모르는 쪽은 한 단계 더 흐리게 둔다.
+   **물음표는 뗐다** — 라벨이 판매처 미공개가 된 뒤로는 같은 말을 기호로 한 번 더
+   하는 셈이고, 액센트는 급한 것(품절·마감)에만 쓰기로 한 규칙과도 부딪혔다. */
 .unk{color:var(--dim);font-size:inherit}
-.unk::after{content:' ?';font-weight:700;color:var(--acc)}
 
 /* 순위에서 **동점**과 **부분 구매**를 표시로 가른다.
    실측(태민): 1~5위가 전부 131,100원으로 같은데 등수만 달랐고,
@@ -534,6 +545,20 @@ h1{font-size:1.25rem}
   td.num{text-align:left;white-space:normal}
   .rt{font-size:1rem;font-weight:700}
   td.ben{flex-direction:column;gap:3px}
+  /* **판매처 비교표만 더 접는다.** 네 칸이 각각 한 줄을 먹어서 판매처 일곱 곳이면
+     스물여덟 줄이 된다. 판매처와 가격을 한 줄에 마주 세우고, 배송은 그 밑 작은 글씨로,
+     특전만 아래 폭을 다 쓴다. 판매처·가격 라벨은 뗀다 — 자리가 이미 말한다. */
+  .cmp tbody tr{display:grid;grid-template-columns:1fr auto;gap:0 10px;padding:10px 0}
+  .cmp tbody th,.cmp tbody td{display:block;padding:0}
+  .cmp tbody th::before,.cmp td[data-label="판매처"]::before,.cmp td[data-label="가격"]::before{content:none}
+  .cmp th[scope=row].rt{grid-column:1;grid-row:1}
+  .cmp td[data-label="가격"]{grid-column:2;grid-row:1;text-align:right;font-weight:600;white-space:nowrap}
+  .cmp td[data-label="배송"]{grid-column:2;grid-row:2;text-align:right;font-size:0.75rem;color:var(--mut)}
+  .cmp td[data-label="배송"]::before{content:'배송 ';flex:none;font-size:0.75rem}
+  .cmp td.ben{grid-column:1/-1;margin-top:4px}
+  .cmp .rt .tags{margin:3px 0 0}
+  /* 이벤트 표는 열 구성이 달라 위 규칙을 안 태운다 */
+  .cmp tbody tr:has(.evt){display:block}
   .gal figure{flex:0 0 150px}
 }
 `;
@@ -797,7 +822,7 @@ const MARK =
   '<circle cx="10" cy="10" r="3.5" fill="#fff"/>' +
   '<circle cx="10" cy="10" r=".62" fill="currentColor"/>';
 
-const LOGO = `<svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false">${MARK}</svg>`;
+const LOGO = `<svg class="lg" width="32" height="32" viewBox="0 0 20 20" aria-hidden="true" focusable="false">${MARK}</svg>`;
 
 /**
  * 사이트 이름 — **앨범노트**. (`특전노트`에서 바꿨다)
@@ -1138,8 +1163,24 @@ m.scrollLeft=m.clientWidth*idx;
 clearTimeout(mv);mv=setTimeout(function(){moving=0;mark()},500);
 mark();
 }
+/* 띠 높이를 **지금 보는 슬라이드**에 맞춘다.
+   가로 띠는 가장 높은 슬라이드에 맞춰지므로, 짧거나 아직 안 받아진 것에서 그 차이가
+   빈 줄로 남는다(실측 NCT: 칸 623px인데 2~8번 사진 높이 0 — Ktown4u 구성품에 치수가
+   없어 자리를 못 잡는다). 사진이 도착할 때마다 다시 잰다. */
+/* 가로 띠 안의 lazy 이미지는 브라우저가 제때 안 받는 경우가 있다(실측: 3·4번
+   슬라이드로 옮겨도 8장 중 3장만 받아졌다). 지금 장과 다음 장은 직접 받게 한다. */
+function pull(n){
+var ims=m.querySelectorAll('img');
+[n,n+1].forEach(function(i){var im=ims[i];if(im&&im.loading==='lazy')im.loading='eager'});
+}
+function fit(){
+var n=at(),f=m.querySelectorAll('figure')[n];
+pull(n);
+if(f)m.style.height=Math.ceil(f.getBoundingClientRect().height)+'px';
+}
 function mark(){
 var n=at(),t=tb();
+fit();
 t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 /* 사진을 넘기면 그 사진이 속한 버전 탭이 눌린다. 사진을 보고 버전을 고르는
    순서라, 고른 결과가 아래 표에 바로 반영돼야 한다. */
@@ -1179,8 +1220,12 @@ var b=ev.target.closest('button');if(b)go(tb().indexOf(b));
 var tick;m.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(mark,90)});
 addEventListener('resize',place);
 /* 사진이 다 받아져야 칸 높이가 정해진다. 그 전에 재면 화살표가 엉뚱한 데 붙는다. */
-m.querySelectorAll('img').forEach(function(im){if(!im.complete)im.addEventListener('load',place)});
-addEventListener('load',place);place();
+m.querySelectorAll('img').forEach(function(im){
+if(!im.complete)im.addEventListener('load',function(){place();fit()});
+});
+addEventListener('load',function(){place();fit()});
+addEventListener('resize',fit);
+place();fit();
 mark();
 });
 /* **모든 탭을 가장 큰 탭에 맞추지 않는다.**
@@ -1881,9 +1926,9 @@ ${
 <div class="pgm">${galShots
         .map(
           (g, n) => `<figure data-p="${g.p}">
-<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}"${
+<a href="${esc(g.url)}" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}"${
             g.w && g.h ? ` width="${g.w}" height="${g.h}"` : ''
-          } loading="${n ? 'lazy' : 'eager'}"></a>
+          } loading="${n < 3 ? 'eager' : 'lazy'}"></a>
 <figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
         )
         .join('')}</div></div>`
@@ -2001,7 +2046,7 @@ ${tabs
     const singleRows =
       fullRows +
       (partRows
-        ? `</ol><p class="partnote">일부만 취급 — 덜 사서 금액이 낮습니다</p><ol class="rks">${partRows}`
+        ? `</ol><p class="partnote">일부만 취급</p><ol class="rks">${partRows}`
         : '');
     optHtml = `<h2>최저가 조합 <span class="one">${opt.versions}종</span></h2>
 <div class="optsec">
@@ -2020,7 +2065,8 @@ ${/**
    * 원칙을 지키려면 화면도 그렇게 보여야 한다 — 줄을 내리고 조건을 같이 적는다.
    */ ''}
 <div class="best"><span class="bl">최저가</span><b class="bv">${won(opt.best.sum)}</b>${
-      opt.best.unknown ? '<span class="soft">일부 미확인</span>' : ''
+      /* 배송비를 모르는 판매처가 끼면 총액도 추정이지만, 그건 아래 조합 내역의
+         `배송지별`이 이미 말한다. 총액 옆에 한 번 더 붙이면 금액 읽기만 방해한다. */ ''
     }<span class="bm">상품 ${won(opt.best.goods)} · 배송 ${
       opt.best.ship ? won(opt.best.ship) : '무료'
     }</span></div>
@@ -2331,7 +2377,7 @@ ${
 ${/* h1은 헤더의 브랜드 줄이다(위 siteHeader 주석 참고). 여기 또 두면 같은 말이 두 번 나온다. */ ''}
 <main><ul class="cards">${promoHtml}${cards}</ul></main>
 <details class="ft">
-<summary>이 사이트는 무엇인가</summary>
+<summary>해당 사이트는 어떤 사이트인가요?</summary>
 <div class="body">위버스샵 · 알라딘 · Ktown4u · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직에서 자동으로 모읍니다.
 앨범 <b>${live}</b>개가 예약판매 중이고, 같은 앨범이라도 <b>버전마다 구성이 다르고 어디서 사느냐에 따라 받는 포토카드가 다릅니다.</b>${
       albums.some((a) => a.nextDeadline)
