@@ -11,8 +11,25 @@
 const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
-/** 절대 URL. siteUrl이 없으면 상대경로만 쓴다(로컬 빌드에서 잘못된 도메인을 박지 않기 위해) */
-export const abs = (siteUrl, path) => (siteUrl ? `${siteUrl.replace(/\/$/, '')}/${String(path).replace(/^\//, '')}` : null);
+/**
+ * 절대 URL. siteUrl이 없으면 상대경로만 쓴다(로컬 빌드에서 잘못된 도메인을 박지 않기 위해).
+ *
+ * **끝 슬래시를 뗀다.** `vercel.json`이 `trailingSlash: false`라 서버가 `/en/`을
+ * `/en`으로 308 시킨다. 그런데 `abs(siteUrl, 'en/')`가 canonical·og:url·hreflang·
+ * 사이트맵 네 곳에 전부 `/en/`을 박고 있었다 — 실측:
+ *
+ *   /en   → 200
+ *   /en/  → 308 → /en
+ *   그런데 /en 의 canonical 은 /en/ 이었다
+ *
+ * 자기 자신으로 리다이렉트되는 canonical이고, 사이트맵도 리다이렉트를 선언한다.
+ * 구글이 따라가긴 하지만 문서가 대표적 실수로 꼽는 모양이라 신호를 낭비한다.
+ *
+ * 루트(`''`)만 예외다 — `https://도메인/`이 원래 그 모양이고 리다이렉트도 없다.
+ * 여기서 한 번 막으면 `build.mjs`를 포함해 abs를 지나는 모든 곳이 같이 맞는다.
+ */
+export const abs = (siteUrl, path) =>
+  siteUrl ? `${siteUrl.replace(/\/$/, '')}/${String(path).replace(/^\//, '').replace(/\/$/, '')}` : null;
 
 /**
  * <head>에 들어갈 메타 태그.
