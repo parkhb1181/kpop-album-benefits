@@ -119,7 +119,7 @@ min-height:36px}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
-.pgt{display:flex;gap:6px;overflow-x:auto;margin-top:12px;scrollbar-width:thin}
+.pgt{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;scrollbar-width:thin}
 .pgt button{flex:0 0 auto;width:52px;height:52px;padding:0;cursor:pointer;
 border:1px solid var(--line);background:var(--card)}
 .pgt button[aria-current=true]{border:2px solid var(--fg)}
@@ -336,6 +336,16 @@ margin:0 0 4px;padding:0;border:0;color:var(--fg);display:block}
    여러 장일 때만 커버를 올려 스와이프를 살린다(그때는 JS가 클릭을 .go로 넘긴다). */
 .cvw{position:relative;z-index:0;margin-bottom:12px}
 .cvw.multi{z-index:2}
+/* 앨범명·아티스트명을 커버 **위에** 얹는다. 커버는 무엇이든 올 수 있어서 글자만 얹으면
+   밝은 커버에서 안 읽힌다 — 아래쪽에만 어두운 기울기를 깔아 글자 자리를 만든다.
+   장식이 아니라 가독 장치다. 클릭은 .go가 받아야 하므로 이 층은 이벤트를 안 먹는다.
+   h2는 그대로 둔다 — 목록 페이지에 항목 제목이 있어야 검색과 스크린리더가 읽는다. */
+.cvt{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:34px 10px 10px;
+background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.74));pointer-events:none}
+.cvt .cva{font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,.82);margin:0 0 2px;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cvt .cval{font-size:0.875rem;font-weight:700;line-height:1.3;letter-spacing:-.01em;color:#fff;
+margin:0;padding:0;border:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;background:var(--card)}
 .strip::-webkit-scrollbar{display:none}
@@ -1022,12 +1032,18 @@ goToVer=function(p){
 var figs=[].slice.call(m.querySelectorAll('figure'));
 for(var i=0;i<figs.length;i++)if(parseInt(figs[i].getAttribute('data-p'),10)===p){lastP=p;go(i);return}
 };
-/* 화살표는 사진 세로 가운데에 — 캡션·썸네일 높이를 빼야 사진 밖으로 안 나간다. */
-var first=m.querySelector('img');
+/* 화살표는 **보이는 칸**의 세로 가운데에 둔다.
+   원본 img 높이를 재면 안 된다 — 이미지는 4,001px인데 칸은 558px이라
+   화살표가 사진 밖 1,983px 자리로 나간다(실측). 칸은 a가 들고 있다.
+   썸네일이 위로 올라갔으므로 .pgm의 offsetTop을 더한다. */
 function place(){
-if(!first)return;
-w.querySelectorAll('.gnav').forEach(function(b){b.style.top=(first.getBoundingClientRect().height/2-17)+'px'});
+var a=m.querySelector('figure a');if(!a)return;
+var pr=w.getBoundingClientRect(),ar=a.getBoundingClientRect();
+if(!ar.height)return;
+var top=(ar.top-pr.top)+ar.height/2-17;
+w.querySelectorAll('.gnav').forEach(function(b){b.style.top=top+'px'});
 }
+var first=m.querySelector('img');
 /* 배너를 빼면 썸네일 순서가 바뀐다 — 클릭 시점에 위치를 다시 센다. */
 var pgt=w.querySelector('.pgt');
 if(pgt)pgt.addEventListener('click',function(ev){
@@ -1035,7 +1051,9 @@ var b=ev.target.closest('button');if(b)go(tb().indexOf(b));
 });
 var tick;m.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(mark,90)});
 addEventListener('resize',place);
-if(first&&!first.complete)first.addEventListener('load',place);else place();
+/* 사진이 다 받아져야 칸 높이가 정해진다. 그 전에 재면 화살표가 엉뚱한 데 붙는다. */
+m.querySelectorAll('img').forEach(function(im){if(!im.complete)im.addEventListener('load',place)});
+addEventListener('load',place);place();
 mark();
 });
 /* 탭·포장을 옮길 때마다 표 높이가 달라져 아래 섹션이 튄다.
@@ -1706,14 +1724,9 @@ ${compHtml}${cards}`,
     // 사진 → 탭 번호. 탭 라벨과 shots의 ver는 같은 값(에디션명)에서 나온다.
     .map((g) => ({ ...g, p: tabs.findIndex((t) => t.label === g.ver) }));
   const pageGal = galShots.length
-    ? `<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
-<div class="pgm">${galShots
-        .map(
-          (g, n) => `<figure data-p="${g.p}">
-<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
-<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
-        )
-        .join('')}</div>
+    ? /* 썸네일을 **사진 위**에 둔다. 사진이 길어서(비율 중앙값 3.93) 밑에 있으면
+         한 장 보는 동안 화면 밖으로 밀려나 다른 버전이 있다는 걸 모른다. */
+      `<div class="pgal"${galShots.length > 1 ? ' data-gal="1"' : ''}>
 ${
         galShots.length > 1
           ? `<div class="pgt">${galShots
@@ -1723,7 +1736,14 @@ ${
               )
               .join('')}</div>`
           : ''
-      }</div>`
+      }
+<div class="pgm">${galShots
+        .map(
+          (g, n) => `<figure data-p="${g.p}">
+<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
+<figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
+        )
+        .join('')}</div></div>`
     : '';
 
   const sections = tabs.length
@@ -1991,7 +2011,7 @@ const vLabel = (s) => {
   return !t || t.length > 14 ? '' : t;
 };
 
-function coverStrip(a, eager = false) {
+function coverStrip(a, eager = false, label = '') {
   /**
    * **같은 그림은 한 번만.** 버전 키가 달라도 판매처가 같은 사진을 올려두는 경우가 많다 —
    * 실측: 민호 Make it hot은 버전 7개인데 썸네일 4개가 같은 파일(QzJWoi.jpg)이었다.
@@ -2006,7 +2026,7 @@ function coverStrip(a, eager = false) {
       return true;
     })
     .slice(0, 8);
-  if (!list.length) return `<div class="cvw"><div class="strip"><div class="ph"></div></div></div>`;
+  if (!list.length) return `<div class="cvw"><div class="strip"><div class="ph"></div></div>${label}</div>`;
   const imgs = list
     .map(
       (c, i) =>
@@ -2019,7 +2039,7 @@ function coverStrip(a, eager = false) {
     list.length > 1
       ? `<div class="dots">${list.map(() => '<button type="button" aria-label="버전"></button>').join('')}</div>`
       : '';
-  return `<div class="cvw${list.length > 1 ? ' multi' : ''}"><div class="strip${list.length > 1 ? ' multi' : ''}">${imgs}</div><span class="vn"></span></div>${dots}`;
+  return `<div class="cvw${list.length > 1 ? ' multi' : ''}"><div class="strip${list.length > 1 ? ' multi' : ''}">${imgs}</div><span class="vn"></span>${label}</div>${dots}`;
 }
 
 export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
@@ -2074,16 +2094,18 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
         searchKey(choseong(hayOf(a)))
       )}">
 <a class="go" href="album/${esc(a.slug)}.html" aria-label="${esc(`${a.artistDisplay || a.artist} ${a.album}`)}"></a>
-${coverStrip(a, i < 3)}
+${coverStrip(
+        a,
+        i < 3,
+        `<div class="cvt"><p class="cva">${esc(a.artistDisplay || a.artist)}</p><h2 class="cval">${esc(a.album)}</h2></div>`
+      )}
 ${
   a.nextDeadline
     ? `<div class="cdl">${esc(a.nextDeadline.label)} <span class="cd" data-until="${esc(a.nextDeadline.at)}">${esc(
         a.nextDeadline.rough || ''
       )}</span></div>`
     : ''
-}<div class="ar">${esc(a.artistDisplay || a.artist)}</div>
-<h2 class="al">${esc(a.album)}</h2>
-${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
+}${tg ? `<div class="tags">${tg}</div>` : ''}<div class="meta">${[
   `${a.versions}종`,
   `판매처 ${a.retailers}`,
   // **항상 낸다.** 조건부로 냈더니 어떤 카드엔 있고 어떤 카드엔 없어서 깨져 보였다.
@@ -2163,7 +2185,7 @@ ${
       // 한 화면에 다 들어오면 검색창이 방해만 된다. 카드가 늘어난 뒤에만 낸다.
       albums.length >= 8
         ? `<div class="find" style="display:none">
-<input id="q" type="search" placeholder="아티스트·앨범 검색 · 초성도 됩니다 (ㅌㅁ → 태민)" autocomplete="off" spellcheck="false">
+<input id="q" type="search" placeholder="아티스트 앨범 검색" autocomplete="off" spellcheck="false">
 <span class="n" id="qn"></span></div>
 <p class="none-hit" id="qz" style="display:none">찾는 앨범이 없습니다. 예약판매 중인 것만 올라옵니다.</p>`
         : ''
