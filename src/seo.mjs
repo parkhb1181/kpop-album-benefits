@@ -59,7 +59,12 @@ export function metaTags({ title, description, canonical, image, type = 'website
   }
   t.push(`<meta property="og:type" content="${esc(type)}">`);
   t.push(`<meta property="og:title" content="${esc(title)}">`);
-  t.push(`<meta property="og:site_name" content="K-POP 판매처별 특전 비교">`);
+  /**
+   * `og:site_name`은 **사이트 이름** 자리다. 여기에 기능 설명(`K-POP 판매처별 특전 비교`)을
+   * 넣어놨더니 카카오·X 카드에 제목과 거의 같은 말이 두 번 떴다. 브랜드를 넣는다.
+   * 헤더의 브랜드(render.mjs BRAND)와 같은 말이어야 링크를 누른 직후 이름이 안 어긋난다.
+   */
+  t.push(`<meta property="og:site_name" content="앨범노트">`);
   t.push(`<meta property="og:locale" content="ko_KR">`);
   t.push(`<meta name="twitter:title" content="${esc(title)}">`);
   // 이미지가 있으면 큰 카드, 없으면 요약 카드. 없는데 large를 쓰면 빈 상자가 뜬다.
