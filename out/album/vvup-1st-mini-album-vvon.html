@@ -37,11 +37,11 @@ if(document.readyState==='complete'){idle(go)}else{addEventListener('load',funct
    **다크모드는 두지 않는다.** 배경은 항상 흰색이다.
    커버가 화면의 색을 담당하는 구조라 바닥이 어두워지면 그 전제가 흔들리고,
    흰 배경 상품 사진들이 검은 바닥 위에 뜬 흰 사각형으로 보인다. 29CM도 경쟁사도 다크모드가 없다. */
-:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#8a8a8a;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
 html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
-font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
+font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif}
 h2{font-size:1rem;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:0.875rem;color:var(--mut);margin:24px 0 8px;font-weight:600}
 .pk{font-weight:500;color:var(--mut);font-size:0.875rem}
@@ -104,7 +104,7 @@ a:hover{border-bottom-color:currentColor}
 .pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
 /* 슬라이드를 위로 붙인다. 안 그러면 전부 가장 높은 것에 늘어나 높이를 못 잰다. */
 .pgm{display:flex;align-items:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;
-scrollbar-width:none;transition:height .15s}
+scrollbar-width:none;transition:height .15s ease}
 .pgm::-webkit-scrollbar{display:none}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0;position:relative}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
@@ -240,6 +240,10 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
 .cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
+/* 최저가를 굵게 세운다. 색이 아니라 굵기다 — 액센트는 급한 것(품절·마감)에만 쓴다.
+   상품값만이 아니라 **배송비를 더한 값**으로 고른다. 실제로 내는 돈이 그거다. */
+.cmp td.low{font-weight:700;color:var(--fg)}
+.cmp td.low::after{content:' 최저';font-size:0.6875rem;font-weight:700;color:var(--acc);margin-left:4px}
 .cmp .rt{font-weight:700}
 .rt a,.rt{align-items:center}
 .rt a{display:inline-flex;gap:6px;align-items:center}
@@ -255,9 +259,26 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
-a.tg{border-bottom:0}
+/* 줄을 가르는 정보가 화면에서 제일 약했다. 같은 판매처·같은 가격 여러 줄을 실제로
+   구분하는 건 이 태그인데 11px 회색이라 제일 안 보였다. 링크인 변형 태그만 글자색을
+   살린다 — 배경은 그대로라 시끄러워지지 않는다. */
+a.tg{border-bottom:0;color:var(--fg);font-weight:600}
+/* **포커스 링을 지우기만 하고 대체를 안 뒀다.** 파일 전체에서 outline 규칙이
+   outline:none 하나뿐이라 Tab으로 훑으면 지금 어디인지 알 수 없었다(WCAG 2.4.7).
+   마우스에는 안 보이고 키보드에만 보이는 :focus-visible로 되살린다.
+   카드는 투명 링크(.go)가 덮고 있어 링크 자체에 링을 그리면 카드 밖으로 삐져나가므로
+   카드에 그린다. */
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.card:has(.go:focus-visible),.lead:has(a:focus-visible){outline:2px solid var(--fg);outline-offset:2px}
+.go:focus-visible,.ls:focus-visible{outline:0}
+.gnav:focus-visible,.lnav:focus-visible{outline:2px solid #fff;outline-offset:1px}
+/* 점은 이제 흰 바탕 위 검정이라 흰 링이면 안 보인다. */
+.ld button:focus-visible::before{outline:2px solid var(--fg);outline-offset:2px}
 a.tg:hover{color:var(--fg);background:var(--line)}
+/* 특전 원문이 한 줄에서 네 줄까지 오가 행 높이가 들쭉날쭉해 훑을 수가 없었다.
+   세 줄로 자르고 넘치면 커서를 올렸을 때 전문이 뜬다(title). */
 .cmp td.ben{word-break:keep-all}
+.cmp td.ben>div{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
 gap:clamp(12px,1.4vw,20px);margin-bottom:clamp(20px,2.4vw,32px)}
 .sc{display:flex;flex-direction:column;min-width:0;border-top:2px solid var(--fg);padding-top:10px}
@@ -309,7 +330,7 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
    이름만 두면 검색이 약해지고, 설명만 두면 이름이 없다. 신문 제호가 쓰는 방식이다. */
 .brand{display:flex;align-items:baseline;gap:8px;margin:0;border:0;flex-wrap:wrap}
 .brand .lg{align-self:center;display:block;flex:0 0 auto}
-.hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif;
+.hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;
 font-size:1.5rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
 .hd .tl{font-size:0.875rem;color:var(--mut);white-space:nowrap}
 .hd .hdm{font-size:0.75rem;color:var(--dim);white-space:nowrap}
@@ -351,22 +372,38 @@ list-style:none;padding:0}
    그 밑 한 줄은 그 앨범의 사실로 채운다 — 빈 자리를 여백이 아니라 정보로 쓴다. */
 .lead{position:relative;min-width:0;list-style:none;display:flex}
 .lw{position:relative;overflow:hidden;background:var(--card);flex:1;display:flex;flex-direction:column;min-height:0}
+/* 점·화살표는 사진 칸(.lt) 기준으로 앉는다 — .lw 기준이면 사실 줄까지 포함돼 밖으로 나간다. */
+.lt{position:relative}
 .lt{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;flex:1;min-height:0}
 .lt::-webkit-scrollbar{display:none}
 .ls{position:relative;flex:0 0 100%;scroll-snap-align:start;border-bottom:0;min-width:0;
 display:flex;flex-direction:column}
-.lim{position:relative;flex:1;min-height:0;display:block;overflow:hidden}
-.ls img{width:100%;height:100%;object-fit:cover;display:block;background:var(--card)}
-.pmeta{flex:0 0 auto;padding:10px 14px 14px;font-size:0.75rem;color:var(--mut);
-background:var(--bg);font-variant-numeric:tabular-nums}
+/* **커버를 늘려 자르지 않는다.** 정사각 원본(600×600)을 549×648 세로 칸에 cover로
+   넣었더니 앨범명이 잘려 나갔다 — 실측: "SOFT VIOLENCE"가 "OFT VIOLENCE"가 됐다.
+   홍보 칸의 일이 앨범을 알리는 것인데 이름이 잘리면 그 일을 못 한다.
+   비율을 1:1로 되돌리고, 남는 자리는 아래 정보 블록이 먹는다. */
+.lim{position:relative;flex:0 0 auto;display:block;overflow:hidden}
+.ls img{width:100%;aspect-ratio:1;height:auto;object-fit:cover;display:block;background:var(--card)}
+/* 점이 앉을 자리를 아래에 비워둔다 — 안 그러면 마지막 줄과 겹친다. */
+.pmeta{flex:1;min-height:0;padding:12px 14px 30px;font-size:0.75rem;color:var(--mut);
+background:var(--bg);font-variant-numeric:tabular-nums;display:flex;flex-direction:column;gap:6px}
+.pmeta .cdl{margin:0}
+.pmeta .tags{margin:0;display:flex;flex-wrap:wrap;gap:4px}
+.pmeta .meta{margin:0;color:var(--dim)}
 .lnav{position:absolute;top:calc(50% - 18px);z-index:3;width:36px;height:36px;border:0;border-radius:2px;
 background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:pointer;display:none}
 .lw[data-lead] .lnav{display:block}
 .lnav.p{left:0}.lnav.n{right:0}
-.ld{position:absolute;left:0;right:0;bottom:10px;z-index:3;display:flex;justify-content:center;gap:6px}
-.ld button{width:7px;height:7px;padding:0;border:0;border-radius:99px;background:rgba(255,255,255,.45);cursor:pointer}
-.ld button.on{background:#fff}
+/* 점은 **사진 안**에 둔다. 사실 줄(흰 바탕)을 넣으면서 점이 그 위로 올라탔고,
+   흰 점이 흰 바탕에 놓여 대비 1.1:1이 됐다 — 사실상 안 보였다.
+   누르는 자리는 24px로 키우고(WCAG 2.5.8) 보이는 점만 8px로 둔다. */
+.ld{position:absolute;left:0;right:0;bottom:6px;z-index:3;display:flex;justify-content:center;gap:2px}
+.ld button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;
+display:flex;align-items:center;justify-content:center}
+.ld button::before{content:'';width:8px;height:8px;border-radius:99px;
+background:#c9c9c9}
+.ld button.on::before{background:var(--fg)}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
 /* 첫 행은 홍보 칸 옆 한 칸뿐이라 윗선이 오른쪽 267px에만 걸려 반쪽으로 뜬다.
@@ -464,6 +501,7 @@ font-size:0.6875rem;line-height:1.2;font-weight:500;color:var(--mut);background:
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:0.6875rem;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 /* 표 **위**에 온다(버전을 바꿔도 자리가 안 움직이게). 그래서 아래 여백이 필요하다. */
 .comp{margin:12px 0 16px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
+.comp summary::-webkit-details-marker{display:none}
 .comp summary{cursor:pointer;font-size:0.75rem;font-weight:600;color:var(--mut)}
 .comp pre{margin:8px 0 0;font-size:0.75rem;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:inherit;color:var(--fg)}
 .comp p{margin:8px 0 0}
@@ -573,7 +611,7 @@ h1{font-size:1.25rem}
   .gal figure{flex:0 0 150px}
 }
 .rl0{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAr8oBkMgTUMwFaMwCfMwEgsIAkcgFhcgAnMgDhscMX8oJYMoAwcsAn8gAvssAzM3JrOWpAAAADXRSTlP++/3+/AXQVZQnvInS7OTUAgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAbpJREFUeNptkzFLw0AUx98HMKUHIVuW1MlNz8mt9OjgfkhHQUIQndvg3gTsGoprFyH9AIVOfgBRs3TyxE9w/QaN771LagVv/OX3fy959wJ6NImFf7sqtNZX+QscJamGQzifvYDHcJ5fC3+4TDU+ZpgV8ISiUOoS1fnsDQA2SQrjqRC+UnKZjiav9hs8s8kgn5Io5clqPHuzFsBsEoivkQ3kWVTmrzWaxlSxgxLhyd17jaJnKgFUkcSo36l3lGZIXWQU9brb2lK8Iqj2Ys3NjRCgnHjcrRFynCGLpyjuGjOAA9HBEF/pV2zSJshh0LZuYRVkINvW+5I4kH/EApD9EQMaMqZZ3NkGZoWm7qdf9IXI6M2Hz1qD8VVoUbM8IeNfPKMJVQjbXcvEIMLbAkxZ59EofZzrqnDEdqAVI1ThkJEYoQoNYsZiTy6hOR6FWezJEuCbmKHDYiSlcp7hcCOeM/wgLQxbEaHnUTm6mUaUSsGnK4dnLyqI7w3VEyIuW1EwJE8k60Ujxrh1DsbZeI2MxIT3k8V09LBgES+ON5lE3OS1E1O38yJ4pJ1/KHGJ8LH7O1jEv2N9o/pJqn8AeyZDArEVLjMAAAAASUVORK5CYII=)}.rl1{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXsZqzShp3d3ef3mUfuOJf8rxj+/f5YdKbqK49Aa7Hvocf21uSEV6XERJzwXG6vfbjeOYJGAAAABHRSTlP8agH3AKHXjQAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAU5JREFUeNpt0bFqwzAQBuALGBPIErJkjt+gQ3ZDj2IIBErp3klDvAZMNg8aRF/ACBIw1C3BhtKlGdI1Qx8gb1D6HpV0suyoucHDh+7XjwzROEAzt492biKYWUP8bXUC49Zw2eI9uINdwEMfcW4VeuYCLhB/rqEN8HB5DamsjybAx2T0coGJ/uTp4bOP+QdHXOzz9AKfuNrOq3AOZ0wEbfNKYRind69wEhigUBM3aSBwsTqG77AbMZbWJdQHxliZiDo4DKGo64a5+SqhWXGQ33qzY5YOEeQOUfCRs2PAEYqtvlq0WgpVForNWSt/M1aZegrXVN3cTpWhyLbUPWdsRaZRmn18Vsgdbk7mZKjW9w6zHT2kqeiQQgVA0K1nVEq9ijXCtfdPNNp9D+U1pFIeUqkeavNCc0Jbyk4M0+xf6ABmBvuh8QSi6UZK2QuNB9EfylcORkCkhDIAAAAASUVORK5CYII=)}.rl2{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEX91dr609gWRkP/2uAMQT2VlZYlT03WvcHry8+4q62kn6HGs7Z9h4dre3s7XVxVbW3dBnHAAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABSElEQVR42mNgGPpAUICRkUGAQUCAUQAuxihswGxgDGQYMCMUCosvbQ+PKu/cujMSrpLR/Jpb6Z8zv/qvnj+zGSbKvM5Jbef90KvrDsetmQwVZLRKUVKbuTy0M3LjVrh2gTonJbcN3OXtO3d372yGigofUVK71WA7tebP37l/iyGCjBxPlFSZGW3Oxv658/IPTNAyReWjIQN7aOT07RGrYIJWSinBjYIMjY3CDIwSMIsYOzouJT23SEu6aOqWNhkuav5E5YWpk8pheSc3hONlnFQuA921OUjJrwEmWHVJSenqIyW1mCQlH0NYcCxzUvL7oqSkn6Kk8pwRJhikpPLyi5LKzRQlt8Uw3cKLlPw2flHR7U5SyUKEZpDbcYsvegstU3LhdjMIbF1uzLh0hgF71EZDpCgyFgTGhCADs4EASrwxMALFQXjIAwB9gWUtVuaT6gAAAABJRU5ErkJggg==)}.rl3{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAAAARGw0AAAAAAAAAAQBkq0X+/v5ptEg3RjBKfjNamz7p6emysrHMzMxnZ2ecnJwrT1cLAAAABHRSTlMD9F62FdF0GwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAT1JREFUeNpt079Kw0AcB/CzT6CYouDSwRcQfIG0N6SCSsFw0s3li4OOIZpNCPWGLkJBHQWl1Fl8AnHqnEfIExQnB3N/frnY3He6fLjL7y73C2Osc8Ab2e6xKp2A/0uodJ+vpV9N5K302EYbN9ur1fpDGkbP74s7PRowqj2cp2maPOj6jObNY5V0ph4I72OTLHAYJRbFi0OaGMe3Dt9qFDlhvbrKK+GRs/iGcMespJcyV0csNI4JH82UrtagiWemniAMt6oEa2ijN1Hj7zKfLleRPsLY4gmQF/gYJs0t7QEShLT5H2Ba48hgBOCbUMwMHkPHYGY/XdnEkcHwEwVgqyf2Ok5xVeJ6olHfhsIJLkpcakzPucUCqxJfCrMnc9yqGaTku5JHMghtY4SubVwG/gbztqK3ab3t7f8RPL/MH0ct9qM4BKMvAAAAAElFTkSuQmCC)}.rl4{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXtGyNMaXHkBBjtGyPzHCTuGiPsGiLvGyPsGiLxGyPtGiLqGiHlGSLtHCT9HSb3HSU3Q5U5AAAADXRSTlP8AAOi/IgpzlHpakERsG5xLgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYlJREFUeNp9kz1LA0EQhqcIWG2OXTAGtdmA9iJpJEgKCyN4IgGxEuNHYWcvGgRtLPQHGBQFwSoQsLFMkX4LG4slgqaIxSWFEFEUd3fmYi4R3+Ju7rmb3bl3ZoFbpXjiJJ++3TCBFdiL4Nu730HQGlpBaqGQm/EvMKq/7HFJUE74CrQRQCsjEIrEATCNgmZFOijv2yHT2lsQFoqxuV+m1dKVNFDuZHWP2LywXxZZL1S5ggQx/KQjik9xkFsqCtW7ADmL2QqoLtWRkGAYsyDIYuQdAi0JzXT+QtGiMNJ2UT3DeQ0LjpVg3b1WHzyVkkcYf8IZwxTjmRh1S6kGlC1UjwVrGf6HeoY1vFvHuKQHcGWqBsLyX/D0v3TMyFUdDDeikpbN7iLZJojFG2tN8Wi3gfib6uGa8+QlI0iGxDqrx0Xsi4GhdV4QUFMNHDDZwTvdJwMHGmchH4+2GGHfMCCMjg1BO2CD0I5iBL66oa350IO9Eo23vwhdvVXCg7AfdHUugI7M5M00aaYqfwCMlrmQEEXoZgAAAABJRU5ErkJggg==)}.rl5{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAy9X///8AyNIEzNb9///5/v5p4ObQ9fgo09xC2eCt7/Lo+/sXz9iQ6e1W3eOA5epcpnLSAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAUlEQVR42mNgGBzAgBlTjEnZSAFDUHN51SQMhR9dXOTRlDLrCa57JfjIAFlMSYldVknpYoGSEpK6jo6pnh0dUyI7OgwQekUEXVwEQdgRbgKzmqigoyAQiAgGJiEJuriIuLg4irigCIo4OoqGiISgqhR0dcTULtWT6DZdfroIiqCswuk96hK6oqjaF7UUnPbQDEQRdFw0cdHRzUwfUQQDLyUmNS46uRBVZVKWUXtTIqr2wE9Mh5U0Njqiqtx5bv+JbDR3CooEOoaKOCILagJDScRFEBhQjpMQYVcY4gIGruKIsGeaLSIIBo47kaJJ43o5GNQ2IUcSVAETavKAGs4wWAEAf3lOYK3zwV0AAAAASUVORK5CYII=)}</style></head><body><header class="hd"><div class="hdrow">
-<a class="brand" href="../index.html"><svg class="lg" width="32" height="32" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor"><circle cx="10" cy="10" r="8.6" stroke-width="2"/><circle cx="10" cy="10" r="6" stroke-width="2"/><circle cx="10" cy="10" r="3.5" stroke-width="1.8"/></g><circle cx="10" cy="10" r="1" fill="currentColor"/></svg><span class="bd">앨범노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></a>
+<a class="brand" href="../index.html"><svg class="lg" width="32" height="32" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor"><circle cx="10" cy="10" r="8.6" stroke-width="2"/><circle cx="10" cy="10" r="6" stroke-width="2"/><circle cx="10" cy="10" r="3.5" stroke-width="1.8"/></g><circle cx="10" cy="10" r="1" fill="currentColor"/></svg><span class="bd">앨범노트</span> <span class="tl">K-POP 앨범 판매처별 특전</span></a>
 <span class="hdm">8월 28일 갱신</span>
 </div></header>
 
@@ -674,7 +712,7 @@ aria-selected="true" aria-controls="vp-0" tabindex="0">기본반</button></div>
 <h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
 <p class="mut">메이크스타에 진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 24건을 전부 대조합니다.</p>
 <p class="mut">판매처가 자체로 여는 팬사인회는 아직 못 잡습니다 — 뮤직플랜트·위드뮤도 각자 엽니다. 여기 없다고 기회가 없는 것은 아닙니다.</p>
-<h2>최저가 조합 <span class="one">1종</span></h2>
+<h2>최저가 조합 <span class="one">상품 1개</span></h2>
 <div class="optsec">
 
 
@@ -684,12 +722,12 @@ aria-selected="true" aria-controls="vp-0" tabindex="0">기본반</button></div>
 <ol class="rks"><li class="rk">
 <span class="rkn">1</span>
 <span class="rkb"><span class="rlg rl5" aria-hidden="true"></span><b>위버스샵</b>
-<span class="rkm">1종 전부 · 배송 미확인</span></span>
+<span class="rkm">1개 전부 · 배송 미확인</span></span>
 <span class="rkv">23,900원<span class="est">추정</span></span>
 </li><li class="rk">
 <span class="rkn">2</span>
 <span class="rkb"><span class="rlg mono" aria-hidden="true">위</span><b>위드뮤</b>
-<span class="rkm">1종 전부 · 배송 3,000원</span></span>
+<span class="rkm">1개 전부 · 배송 3,000원</span></span>
 <span class="rkv">26,900원<span class="est">추정</span></span>
 </li></ol>
 </div>
@@ -881,5 +919,5 @@ pick(0);
 });
 })();
 </script>
-<div class="err">수집 실패: 애플뮤직: 연결 불가로 건너뜀 (연속 3회 실패) — www.applemusic.co.kr</div>
-<p class="stamp">최근 수집 <b>2026. 8. 28. 12:36:14</b></p></body></html>
+
+<p class="stamp">최근 수집 <b>2026. 8. 28. 12:45:08</b></p></body></html>
