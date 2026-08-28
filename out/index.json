@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. 12:45:08",
+  "stamp": "2026. 8. 28. 13:58:52",
   "albums": [
     {
       "artistId": 308,
@@ -12,7 +12,7 @@
       "artist": "TAEMIN",
       "slug": "taemin-phase-i-soft-violence",
       "versions": 6,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 1,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-30T23:59:59.999999+09:00",
-        "rough": "2일 11시간"
+        "rough": "2일 9시간"
       },
-      "rowCount": 37,
+      "rowCount": 43,
       "artistKo": "태민",
       "artistDisplay": "태민(TAEMIN)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png",
@@ -38,8 +38,8 @@
       "weversePriceMin": 20700,
       "artist": "AND2BLE",
       "slug": "and2ble-sequence-01-curiosity",
-      "versions": 13,
-      "retailers": 6,
+      "versions": 14,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 7,
       "eventCount": 0,
@@ -47,13 +47,67 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T19:00:00+09:00",
-        "rough": "7일 6시간"
+        "rough": "7일 4시간"
       },
-      "rowCount": 54,
+      "rowCount": 60,
       "artistKo": null,
       "artistDisplay": "AND2BLE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg"
+    },
+    {
+      "artistId": 306,
+      "artistEn": "TUIDE",
+      "album": "TUNE & PLAY",
+      "skuCount": 6,
+      "benefit": true,
+      "deliveryDate": "2026-08-27",
+      "weversePriceMin": 12100,
+      "artist": "TUIDE",
+      "slug": "tuide-tune-play",
+      "versions": 7,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 3,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-08-28T19:00:00+09:00",
+        "rough": "5시간 0분"
+      },
+      "rowCount": 46,
+      "artistKo": "튜이드",
+      "artistDisplay": "튜이드(TUIDE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/db3a5e0875ca71044707658a99fb90a7.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
+    },
+    {
+      "artistId": 130,
+      "artistEn": "SHINee",
+      "album": "Make it hot",
+      "skuCount": 5,
+      "benefit": true,
+      "deliveryDate": "2026-09-07",
+      "weversePriceMin": 13900,
+      "artist": "SHINee",
+      "slug": "shinee-make-it-hot",
+      "versions": 6,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-06T23:59:59.999999+09:00",
+        "rough": "9일 9시간"
+      },
+      "rowCount": 30,
+      "artistKo": "민호(MINHO)",
+      "artistDisplay": "민호(MINHO)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/AoXSUS.jpg"
     },
     {
       "artistId": 215,
@@ -74,67 +128,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "7일 0시간"
+        "rough": "6일 22시간"
       },
       "rowCount": 18,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
-    },
-    {
-      "artistId": 306,
-      "artistEn": "TUIDE",
-      "album": "TUNE & PLAY",
-      "skuCount": 6,
-      "benefit": true,
-      "deliveryDate": "2026-08-27",
-      "weversePriceMin": 12100,
-      "artist": "TUIDE",
-      "slug": "tuide-tune-play",
-      "versions": 7,
-      "retailers": 5,
-      "benefitCount": 2,
-      "soldCount": 3,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-08-28T19:00:00+09:00",
-        "rough": "6시간 14분"
-      },
-      "rowCount": 40,
-      "artistKo": "튜이드",
-      "artistDisplay": "튜이드(TUIDE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/db3a5e0875ca71044707658a99fb90a7.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
-    },
-    {
-      "artistId": 130,
-      "artistEn": "SHINee",
-      "album": "Make it hot",
-      "skuCount": 5,
-      "benefit": true,
-      "deliveryDate": "2026-09-07",
-      "weversePriceMin": 13900,
-      "artist": "SHINee",
-      "slug": "shinee-make-it-hot",
-      "versions": 5,
-      "retailers": 5,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "9일 11시간"
-      },
-      "rowCount": 25,
-      "artistKo": "민호(MINHO)",
-      "artistDisplay": "민호(MINHO)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/AoXSUS.jpg"
     },
     {
       "artistId": 113,
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-08-29T23:59:59.999999+09:00",
-        "rough": "1일 11시간"
+        "rough": "1일 9시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -174,7 +174,7 @@
       "artist": "CORTIS",
       "slug": "cortis-greengreen",
       "versions": 16,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 8,
       "eventCount": 0,
@@ -182,9 +182,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-21T07:00:00+09:00",
-        "rough": "23일 18시간"
+        "rough": "23일 16시간"
       },
-      "rowCount": 67,
+      "rowCount": 70,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png",
@@ -201,7 +201,7 @@
       "artist": "NCT 127",
       "slug": "nct-127-blingy",
       "versions": 10,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 6,
       "eventCount": 1,
@@ -209,13 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "6시간 10분"
+        "rough": "4시간 56분"
       },
-      "rowCount": 52,
+      "rowCount": 61,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/NYZsXf.jpg"
     },
     {
       "artistId": 248,
@@ -228,7 +228,7 @@
       "artist": "82MAJOR",
       "slug": "82major-heat",
       "versions": 8,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -236,9 +236,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-31T23:59:59.999999+09:00",
-        "rough": "3일 11시간"
+        "rough": "3일 9시간"
       },
-      "rowCount": 18,
+      "rowCount": 20,
       "artistKo": "82메이저",
       "artistDisplay": "82메이저(82MAJOR)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png",
@@ -255,7 +255,7 @@
       "artist": "JENNIE",
       "slug": "jennie-fallen-angel",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -263,9 +263,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "62일 11시간"
+        "rough": "62일 9시간"
       },
-      "rowCount": 19,
+      "rowCount": 22,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
@@ -282,7 +282,7 @@
       "artist": "YOUNGTAK (영탁)",
       "slug": "youngtak-영탁-gogo",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -290,9 +290,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "17일 5시간"
+        "rough": "17일 3시간"
       },
-      "rowCount": 16,
+      "rowCount": 19,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "9일 11시간"
+        "rough": "9일 9시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T00:00:00+09:00",
-        "rough": "61일 11시간"
+        "rough": "61일 9시간"
       },
       "rowCount": 3,
       "artistKo": null,
@@ -362,16 +362,16 @@
       "weversePriceMin": 36703,
       "artist": "EVAN",
       "slug": "evan-death-of-me-weverse-exclusive",
-      "versions": 6,
-      "retailers": 2,
+      "versions": 5,
+      "retailers": 1,
       "benefitCount": 0,
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": null,
-      "rowCount": 12,
-      "artistKo": "에반",
-      "artistDisplay": "에반(EVAN)",
+      "rowCount": 6,
+      "artistKo": null,
+      "artistDisplay": "EVAN",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
     },
