@@ -115,7 +115,8 @@ height:64px;background:linear-gradient(rgba(255,255,255,0),var(--bg));pointer-ev
 background:var(--card);border:0;border-top:1px solid var(--line);padding:9px;cursor:pointer;
 min-height:36px}
 .pgx:hover{background:var(--line)}
-.pgm img{width:100%;height:auto;display:block;background:var(--card)}
+/* 원본 크기까지만. width를 100%로 박으면 720px 이미지가 817px 칸에서 늘어나 뭉갠다. */
+.pgm img{width:auto;height:auto;max-width:100%;margin:0 auto;display:block;background:var(--card)}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
@@ -301,6 +302,18 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 폰에서 한 줄에 하나면 앨범 열여섯 개를 보려고 열여섯 번 넘겨야 한다.
+   최소폭 240px이 375px 화면에서 한 칸밖에 못 만들어서 그랬다 — 폰에서는 열 수를 직접 준다.
+   대표 칸은 폭 전체를 쓴다. */
+@media(max-width:559px){
+.cards{grid-template-columns:repeat(2,1fr);gap:28px 10px}
+.cards .lead{grid-column:span 2}
+.cards .lead .cvt{padding:44px 14px 14px}
+.cards .lead .cvt .cval{font-size:1.25rem}
+/* 뒤에 오는 기본 규칙과 명시도가 같으면 밀린다 — .cards로 한 단계 올린다. */
+.cards .cvt{padding:24px 8px 8px}
+.cards .cvt .cval{font-size:0.8125rem}
+}
 /* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
    오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
    글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
@@ -979,6 +992,11 @@ var f=a.closest('figure');if(!f)return;
 var btn=f.querySelector('.pgx');
 if(a.classList.contains('open'))return;
 var over=a.scrollHeight-a.clientHeight>8;
+/* 조금만 넘치면 자르지 말고 통째로 낸다. 한두 화면 더 스크롤하면 될 것을
+   버튼 눌러 펼치게 하는 건 손해다. 1.7배까지는 그냥 다 보여준다. */
+if(over&&a.scrollHeight<=a.clientHeight*1.7){
+a.classList.add('open');f.className='';if(btn)btn.remove();return;
+}
 f.className=over?'clipped':'';
 if(over&&!btn){
 btn=document.createElement('button');btn.type='button';btn.className='pgx';btn.textContent='펼쳐 보기';
@@ -1459,9 +1477,19 @@ export function renderAlbum({
        * 않았고, 그동안 832px 칸에 204px만 그려지고 있었다. 이제 CSS가 전부 같은 방식으로 내고
        * 실제로 넘치는지는 브라우저가 재서 표시한다(VIEW_JS의 scrollHints).
        */
+      /**
+       * **원본보다 크게 그리면 깨진다.**
+       * 실측: 갤러리에 오는 이미지의 원본 폭이 720px 141장 · 1000px 3장 · 4217px 2장이다.
+       * 그런데 데스크톱 칸이 817px이라 720짜리를 1.13배로 늘려 그리고 있었다.
+       * 판매처 상세 이미지는 폰용으로 압축된 JPEG라 조금만 늘려도 글씨가 뭉갠다.
+       * 치수를 실어 보내서 브라우저가 **원본 크기까지만** 그리게 한다(CLS도 같이 잡힌다).
+       */
+      const dimOf = (i, u) => (i.images || []).find((x) => x && x.url === u) || null;
       const shots = [];
       for (const i of items) {
-        if (i.benefitImage) shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '' });
+        if (!i.benefitImage) continue;
+        const d = dimOf(i, i.benefitImage);
+        shots.push({ url: i.benefitImage, cap: `${i.retailer} 특전`, note: '', w: d?.w, h: d?.h });
       }
       // 구성품은 버전당 한 장이면 된다 — 판매처가 달라도 같은 소속사 시트다
       const usable = (i) => (i.images || []).filter((x) => urlOf(x) && urlOf(x) !== i.benefitImage);
@@ -1481,6 +1509,8 @@ export function renderAlbum({
           cap: `구성품 (${compFrom})`,
           note: '판매처 특전이 아닌 앨범 기본 구성품',
           wide: true,
+          w: compPick?.w,
+          h: compPick?.h,
         });
 
       // 팬이 보내준 실물 사진. 판매처가 공개하지 않는 특전은 이것 말고는 볼 방법이 없다.
@@ -1738,7 +1768,9 @@ ${
 <div class="pgm">${galShots
         .map(
           (g, n) => `<figure data-p="${g.p}">
-<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}" loading="${n ? 'lazy' : 'eager'}"></a>
+<a href="${esc(g.url)}" target="_blank" rel="noopener"><img src="${esc(g.url)}" alt="${esc(g.ver)} ${esc(g.cap)}"${
+            g.w && g.h ? ` width="${g.w}" height="${g.h}"` : ''
+          } loading="${n ? 'lazy' : 'eager'}"></a>
 <figcaption>${esc(g.ver)} · ${esc(g.cap)}${g.note ? `<span>${esc(g.note)}</span>` : ''}</figcaption></figure>`
         )
         .join('')}</div></div>`
@@ -1940,8 +1972,8 @@ ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
   const faq = faqData({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length });
   const body = `${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`, rows.find((r) => r.thumb)?.thumb)}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
-${optHtml}
 ${eventsHtml(events, eventTotal)}
+${optHtml}
 ${faqHtml(faq)}`;
 
   /**
