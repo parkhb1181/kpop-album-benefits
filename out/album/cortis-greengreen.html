@@ -102,7 +102,9 @@ a:hover{border-bottom-color:currentColor}
 .rep .mut{margin-left:6px}
 /* 페이지 갤러리 — 메인 한 장 + 썸네일 줄. */
 .pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
-.pgm{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+/* 슬라이드를 위로 붙인다. 안 그러면 전부 가장 높은 것에 늘어나 높이를 못 잰다. */
+.pgm{display:flex;align-items:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;
+scrollbar-width:none;transition:height .15s}
 .pgm::-webkit-scrollbar{display:none}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0;position:relative}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
@@ -122,7 +124,9 @@ a:hover{border-bottom-color:currentColor}
    540px 칸에 넣고 스크롤하면 한 번에 14%만 보이고 페이지 스크롤과도 싸운다.
    잘라 보여주고 **펼치기**로 연다 — 폭은 줄이지 않는다. 원본이 720px 설계라
    817px면 1.13배로 글씨가 제일 잘 읽힌다(좁히면 글씨가 같이 작아진다). */
-.pgm figure a{display:block;max-height:clamp(360px,62vh,620px);overflow:hidden;
+/* 아직 안 받아진 사진은 높이가 0이라 칸이 통째로 빈다 — Ktown4u 구성품 이미지에
+   치수가 없어 자리를 못 잡는 탓이다(수집 쪽 문제라 여기선 바닥만 깐다). */
+.pgm figure a{display:block;min-height:220px;max-height:clamp(360px,62vh,620px);overflow:hidden;
 background:var(--card);border-bottom:0;position:relative}
 .pgm figure a.open{max-height:none}
 .pgm figure.clipped a:not(.open)::after{content:'';position:absolute;left:0;right:0;bottom:0;
@@ -188,7 +192,13 @@ margin-bottom:clamp(8px,1vw,12px)}
 .dls .dlh+.dl{border-top:0;padding-top:0}
 /* 모바일에서 100%면 351px 정사각형이라 헤더·제목까지 더해 첫 화면이 커버 하나로 끝난다.
    절반만 준다 — 옆에 마감이 같이 서고, 아래 비교표가 첫 화면에 걸린다. */
-@media(max-width:760px){.hcv{width:min(46%,200px)}}
+/* 폰에서는 커버를 폭 전체로 쓴다. 200px로 줄여 마감과 나란히 세웠더니 앨범 사진이
+   너무 작아 뭘 보는 페이지인지 안 읽혔다. 마감은 그 아래로 내려간다(.hero가 wrap). */
+@media(max-width:760px){
+.hero{gap:14px}
+.hcv{width:100%;max-width:none}
+.hero .dls{flex:1 1 100%}
+}
 
 /* ── 버전 탭 ─────────────────────────────────────────────────
    버전 6~18종을 세로로 쌓으면 페이지가 한없이 길어지는데 팬은 보통 한 버전만 본다.
@@ -300,7 +310,7 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
 .brand{display:flex;align-items:baseline;gap:8px;margin:0;border:0;flex-wrap:wrap}
 .brand .lg{align-self:center;display:block;flex:0 0 auto}
 .hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif;
-font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
+font-size:1.5rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
 .hd .tl{font-size:0.875rem;color:var(--mut);white-space:nowrap}
 .hd .hdm{font-size:0.75rem;color:var(--dim);white-space:nowrap}
 
@@ -316,8 +326,13 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓒ 칸 최소폭도 넓혔다. 29CM 상품 격자는 auto-fill minmax(261~292px)다 — 우리는 그보다 작은
       정보 단위라 240px. 180px은 글자가 두 줄로 자주 접혀 위계가 무너졌다.
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:28px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 앨범 사이에 얇은 선. 격자 행은 위가 맞춰지므로 카드마다 윗선을 주면 한 행에서
+   선이 같은 높이로 이어진다(세로 간격만 벌려서는 어디까지가 한 줄인지 안 읽혔다).
+   세로 간격을 48→28로 줄이고 선 아래 16을 둔다 — 선이 하던 일을 여백이 하고 있었다.
+   홍보 칸은 뺀다: 두 행에 걸쳐 있어 윗선이 오른쪽 칸과 어긋난다. */
+.cards .card{border-top:1px solid var(--line);padding-top:16px}
 /* 폰에서 한 줄에 하나면 앨범 열여섯 개를 보려고 열여섯 번 넘겨야 한다.
    최소폭 240px이 375px 화면에서 한 칸밖에 못 만들어서 그랬다 — 폰에서는 열 수를 직접 준다.
    대표 칸은 폭 전체를 쓴다. */
@@ -354,6 +369,10 @@ background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
 .ld button.on{background:#fff}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
+/* 첫 행은 홍보 칸 옆 한 칸뿐이라 윗선이 오른쪽 267px에만 걸려 반쪽으로 뜬다.
+   그 하나만 뺀다. 그 아래 칸(둘째 행)은 선을 둔다 — 위아래로 붙은 두 카드를
+   갈라주는 게 그 선이 할 일이다. */
+.cards .card:nth-child(2){border-top:0;padding-top:0}
 .cards .lead .cvt{padding:56px 18px 26px}
 .cards .lead .cvt .cval{font-size:1.5rem;-webkit-line-clamp:3}
 .cards .lead .cvt .cva{font-size:0.875rem;margin-bottom:4px}
@@ -493,12 +512,13 @@ letter-spacing:-.02em;color:var(--fg);background:none;border:0;border-radius:0}
 .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
 clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
-/* **"특전 없음"과 "특전 미표기"는 정반대 정보다.**
-   앞은 위버스샵 icons로 단정한 것이고 뒤는 우리가 확인하지 못한 것인데,
+/* **"특전 없음"과 "판매처 미공개"는 정반대 정보다.**
+   앞은 위버스샵 icons로 단정한 것이고 뒤는 판매처가 안 알린 것인데,
    둘 다 '.none'(회색)이라 화면에서 구분이 안 됐다. 확실한 쪽만 회색으로 두고
-   모르는 쪽에는 물음표를 붙인다 — 이 사이트가 미확인을 물음표로 남긴다는 태도 그대로다. */
+   모르는 쪽은 한 단계 더 흐리게 둔다.
+   **물음표는 뗐다** — 라벨이 판매처 미공개가 된 뒤로는 같은 말을 기호로 한 번 더
+   하는 셈이고, 액센트는 급한 것(품절·마감)에만 쓰기로 한 규칙과도 부딪혔다. */
 .unk{color:var(--dim);font-size:inherit}
-.unk::after{content:' ?';font-weight:700;color:var(--acc)}
 
 /* 순위에서 **동점**과 **부분 구매**를 표시로 가른다.
    실측(태민): 1~5위가 전부 131,100원으로 같은데 등수만 달랐고,
@@ -536,10 +556,24 @@ h1{font-size:1.25rem}
   td.num{text-align:left;white-space:normal}
   .rt{font-size:1rem;font-weight:700}
   td.ben{flex-direction:column;gap:3px}
+  /* **판매처 비교표만 더 접는다.** 네 칸이 각각 한 줄을 먹어서 판매처 일곱 곳이면
+     스물여덟 줄이 된다. 판매처와 가격을 한 줄에 마주 세우고, 배송은 그 밑 작은 글씨로,
+     특전만 아래 폭을 다 쓴다. 판매처·가격 라벨은 뗀다 — 자리가 이미 말한다. */
+  .cmp tbody tr{display:grid;grid-template-columns:1fr auto;gap:0 10px;padding:10px 0}
+  .cmp tbody th,.cmp tbody td{display:block;padding:0}
+  .cmp tbody th::before,.cmp td[data-label="판매처"]::before,.cmp td[data-label="가격"]::before{content:none}
+  .cmp th[scope=row].rt{grid-column:1;grid-row:1}
+  .cmp td[data-label="가격"]{grid-column:2;grid-row:1;text-align:right;font-weight:600;white-space:nowrap}
+  .cmp td[data-label="배송"]{grid-column:2;grid-row:2;text-align:right;font-size:0.75rem;color:var(--mut)}
+  .cmp td[data-label="배송"]::before{content:'배송 ';flex:none;font-size:0.75rem}
+  .cmp td.ben{grid-column:1/-1;margin-top:4px}
+  .cmp .rt .tags{margin:3px 0 0}
+  /* 이벤트 표는 열 구성이 달라 위 규칙을 안 태운다 */
+  .cmp tbody tr:has(.evt){display:block}
   .gal figure{flex:0 0 150px}
 }
 .rl0{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAr8oBkMgTUMwFaMwCfMwEgsIAkcgFhcgAnMgDhscMX8oJYMoAwcsAn8gAvssAzM3JrOWpAAAADXRSTlP++/3+/AXQVZQnvInS7OTUAgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAbpJREFUeNptkzFLw0AUx98HMKUHIVuW1MlNz8mt9OjgfkhHQUIQndvg3gTsGoprFyH9AIVOfgBRs3TyxE9w/QaN771LagVv/OX3fy959wJ6NImFf7sqtNZX+QscJamGQzifvYDHcJ5fC3+4TDU+ZpgV8ISiUOoS1fnsDQA2SQrjqRC+UnKZjiav9hs8s8kgn5Io5clqPHuzFsBsEoivkQ3kWVTmrzWaxlSxgxLhyd17jaJnKgFUkcSo36l3lGZIXWQU9brb2lK8Iqj2Ys3NjRCgnHjcrRFynCGLpyjuGjOAA9HBEF/pV2zSJshh0LZuYRVkINvW+5I4kH/EApD9EQMaMqZZ3NkGZoWm7qdf9IXI6M2Hz1qD8VVoUbM8IeNfPKMJVQjbXcvEIMLbAkxZ59EofZzrqnDEdqAVI1ThkJEYoQoNYsZiTy6hOR6FWezJEuCbmKHDYiSlcp7hcCOeM/wgLQxbEaHnUTm6mUaUSsGnK4dnLyqI7w3VEyIuW1EwJE8k60Ujxrh1DsbZeI2MxIT3k8V09LBgES+ON5lE3OS1E1O38yJ4pJ1/KHGJ8LH7O1jEv2N9o/pJqn8AeyZDArEVLjMAAAAASUVORK5CYII=)}.rl1{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXsZqzShp3d3ef3mUfuOJf8rxj+/f5YdKbqK49Aa7Hvocf21uSEV6XERJzwXG6vfbjeOYJGAAAABHRSTlP8agH3AKHXjQAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAU5JREFUeNpt0bFqwzAQBuALGBPIErJkjt+gQ3ZDj2IIBErp3klDvAZMNg8aRF/ACBIw1C3BhtKlGdI1Qx8gb1D6HpV0suyoucHDh+7XjwzROEAzt492biKYWUP8bXUC49Zw2eI9uINdwEMfcW4VeuYCLhB/rqEN8HB5DamsjybAx2T0coGJ/uTp4bOP+QdHXOzz9AKfuNrOq3AOZ0wEbfNKYRind69wEhigUBM3aSBwsTqG77AbMZbWJdQHxliZiDo4DKGo64a5+SqhWXGQ33qzY5YOEeQOUfCRs2PAEYqtvlq0WgpVForNWSt/M1aZegrXVN3cTpWhyLbUPWdsRaZRmn18Vsgdbk7mZKjW9w6zHT2kqeiQQgVA0K1nVEq9ijXCtfdPNNp9D+U1pFIeUqkeavNCc0Jbyk4M0+xf6ABmBvuh8QSi6UZK2QuNB9EfylcORkCkhDIAAAAASUVORK5CYII=)}.rl2{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEX91dr609gWRkP/2uAMQT2VlZYlT03WvcHry8+4q62kn6HGs7Z9h4dre3s7XVxVbW3dBnHAAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABSElEQVR42mNgGPpAUICRkUGAQUCAUQAuxihswGxgDGQYMCMUCosvbQ+PKu/cujMSrpLR/Jpb6Z8zv/qvnj+zGSbKvM5Jbef90KvrDsetmQwVZLRKUVKbuTy0M3LjVrh2gTonJbcN3OXtO3d372yGigofUVK71WA7tebP37l/iyGCjBxPlFSZGW3Oxv658/IPTNAyReWjIQN7aOT07RGrYIJWSinBjYIMjY3CDIwSMIsYOzouJT23SEu6aOqWNhkuav5E5YWpk8pheSc3hONlnFQuA921OUjJrwEmWHVJSenqIyW1mCQlH0NYcCxzUvL7oqSkn6Kk8pwRJhikpPLyi5LKzRQlt8Uw3cKLlPw2flHR7U5SyUKEZpDbcYsvegstU3LhdjMIbF1uzLh0hgF71EZDpCgyFgTGhCADs4EASrwxMALFQXjIAwB9gWUtVuaT6gAAAABJRU5ErkJggg==)}.rl3{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAAAARGw0AAAAAAAAAAQBkq0X+/v5ptEg3RjBKfjNamz7p6emysrHMzMxnZ2ecnJwrT1cLAAAABHRSTlMD9F62FdF0GwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAT1JREFUeNpt079Kw0AcB/CzT6CYouDSwRcQfIG0N6SCSsFw0s3li4OOIZpNCPWGLkJBHQWl1Fl8AnHqnEfIExQnB3N/frnY3He6fLjL7y73C2Osc8Ab2e6xKp2A/0uodJ+vpV9N5K302EYbN9ur1fpDGkbP74s7PRowqj2cp2maPOj6jObNY5V0ph4I72OTLHAYJRbFi0OaGMe3Dt9qFDlhvbrKK+GRs/iGcMespJcyV0csNI4JH82UrtagiWemniAMt6oEa2ijN1Hj7zKfLleRPsLY4gmQF/gYJs0t7QEShLT5H2Ba48hgBOCbUMwMHkPHYGY/XdnEkcHwEwVgqyf2Ok5xVeJ6olHfhsIJLkpcakzPucUCqxJfCrMnc9yqGaTku5JHMghtY4SubVwG/gbztqK3ab3t7f8RPL/MH0ct9qM4BKMvAAAAAElFTkSuQmCC)}.rl4{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXtGyNMaXHkBBjtGyPzHCTuGiPsGiLvGyPsGiLxGyPtGiLqGiHlGSLtHCT9HSb3HSU3Q5U5AAAADXRSTlP8AAOi/IgpzlHpakERsG5xLgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYlJREFUeNp9kz1LA0EQhqcIWG2OXTAGtdmA9iJpJEgKCyN4IgGxEuNHYWcvGgRtLPQHGBQFwSoQsLFMkX4LG4slgqaIxSWFEFEUd3fmYi4R3+Ju7rmb3bl3ZoFbpXjiJJ++3TCBFdiL4Nu730HQGlpBaqGQm/EvMKq/7HFJUE74CrQRQCsjEIrEATCNgmZFOijv2yHT2lsQFoqxuV+m1dKVNFDuZHWP2LywXxZZL1S5ggQx/KQjik9xkFsqCtW7ADmL2QqoLtWRkGAYsyDIYuQdAi0JzXT+QtGiMNJ2UT3DeQ0LjpVg3b1WHzyVkkcYf8IZwxTjmRh1S6kGlC1UjwVrGf6HeoY1vFvHuKQHcGWqBsLyX/D0v3TMyFUdDDeikpbN7iLZJojFG2tN8Wi3gfib6uGa8+QlI0iGxDqrx0Xsi4GhdV4QUFMNHDDZwTvdJwMHGmchH4+2GGHfMCCMjg1BO2CD0I5iBL66oa350IO9Eo23vwhdvVXCg7AfdHUugI7M5M00aaYqfwCMlrmQEEXoZgAAAABJRU5ErkJggg==)}.rl5{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAy9X///8AyNIEzNb9///5/v5p4ObQ9fgo09xC2eCt7/Lo+/sXz9iQ6e1W3eOA5epcpnLSAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAUlEQVR42mNgGBzAgBlTjEnZSAFDUHN51SQMhR9dXOTRlDLrCa57JfjIAFlMSYldVknpYoGSEpK6jo6pnh0dUyI7OgwQekUEXVwEQdgRbgKzmqigoyAQiAgGJiEJuriIuLg4irigCIo4OoqGiISgqhR0dcTULtWT6DZdfroIiqCswuk96hK6oqjaF7UUnPbQDEQRdFw0cdHRzUwfUQQDLyUmNS46uRBVZVKWUXtTIqr2wE9Mh5U0Njqiqtx5bv+JbDR3CooEOoaKOCILagJDScRFEBhQjpMQYVcY4gIGruKIsGeaLSIIBo47kaJJ43o5GNQ2IUcSVAETavKAGs4wWAEAf3lOYK3zwV0AAAAASUVORK5CYII=)}</style></head><body><header class="hd"><div class="hdrow">
-<a class="brand" href="../index.html"><svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="9.6" fill="currentColor"/><g fill="none" stroke="#fff" stroke-width=".5"><circle cx="10" cy="10" r="8.3"/><circle cx="10" cy="10" r="7.2"/><circle cx="10" cy="10" r="6.1"/><circle cx="10" cy="10" r="5"/></g><circle cx="10" cy="10" r="3.5" fill="#fff"/><circle cx="10" cy="10" r=".62" fill="currentColor"/></svg><span class="bd">앨범노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></a>
+<a class="brand" href="../index.html"><svg class="lg" width="32" height="32" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="9.6" fill="currentColor"/><g fill="none" stroke="#fff" stroke-width=".5"><circle cx="10" cy="10" r="8.3"/><circle cx="10" cy="10" r="7.2"/><circle cx="10" cy="10" r="6.1"/><circle cx="10" cy="10" r="5"/></g><circle cx="10" cy="10" r="3.5" fill="#fff"/><circle cx="10" cy="10" r=".62" fill="currentColor"/></svg><span class="bd">앨범노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></a>
 <span class="hdm">8월 28일 갱신</span>
 </div></header>
 
@@ -583,7 +617,7 @@ inp.click();
 </script>
 <main><div class="hero"><img class="hcv" src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/18/0O7cLx.jpg" alt="코르티스(CORTIS) GREENGREEN" width="400" height="400" fetchpriority="high" decoding="async"><div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p><div class="dl">
 <div class="dlt">예약 배송 시작</div>
-<div class="dlc"><span class="cd" data-until="2026-09-21T07:00:00+09:00">23일 20시간</span></div>
+<div class="dlc"><span class="cd" data-until="2026-09-21T07:00:00+09:00">23일 19시간</span></div>
 <div class="dlm">9. 21. (월) 07:00 · <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%BD%94%EB%A5%B4%ED%8B%B0%EC%8A%A4%28CORTIS%29+GREENGREEN+%C2%B7+%EC%98%88%EC%95%BD+%EB%B0%B0%EC%86%A1+%EC%8B%9C%EC%9E%91&amp;dates=20260920T220000Z%2F20260920T223000Z&amp;details=%EC%9C%84%EB%B2%84%EC%8A%A4%EC%83%B5+%EA%B8%B0%EC%A4%80.+%ED%8C%90%EB%A7%A4%EC%B2%98%EB%A7%88%EB%8B%A4+%EB%8B%A4%EB%A5%BC+%EC%88%98+%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4" rel="nofollow noopener" target="_blank">캘린더</a></div>
 </div></div></div>
 <script>
@@ -607,29 +641,29 @@ tick();setInterval(tick,1000);
 <div class="pgal" data-gal="1">
 <div class="pgt"><button type="button" data-i="0" data-p="0" aria-label="기본반 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png" alt="" loading="lazy"></button><button type="button" data-i="1" data-p="0" aria-label="기본반 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/fkUgjv.jpg" alt="" loading="lazy"></button><button type="button" data-i="2" data-p="1" aria-label="Weverse Albums ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/73928449a86550bb6af43554584c7185.png" alt="" loading="lazy"></button><button type="button" data-i="3" data-p="1" aria-label="Weverse Albums ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/1WbArB.jpg" alt="" loading="lazy"></button><button type="button" data-i="4" data-p="2" aria-label="Dice ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/Q1mtQk.jpg" alt="" loading="lazy"></button><button type="button" data-i="5" data-p="3" aria-label="CORTIS Ball ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/05/18/OmiskU.jpg" alt="" loading="lazy"></button><button type="button" data-i="6" data-p="4" aria-label="&#39;Blue Lips&#39; Lip Balm ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/06/01/z2R4Xd.jpg" alt="" loading="lazy"></button><button type="button" data-i="7" data-p="5" aria-label="Vinyl 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/RqpgAc.jpg" alt="" loading="lazy"></button><button type="button" data-i="8" data-p="0" aria-label="기본반 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/be124473e6418d158613ba331b73ccbf.png" alt="" loading="lazy"></button><button type="button" data-i="9" data-p="0" aria-label="기본반 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/bc574448b47b24f6b5c10602ed8ef481.png" alt="" loading="lazy"></button><button type="button" data-i="10" data-p="1" aria-label="Weverse Albums ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/ee0d5a965d365422fd398ba38e1e63b9.png" alt="" loading="lazy"></button><button type="button" data-i="11" data-p="1" aria-label="Weverse Albums ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/806004b842ef2aa1a04ba844ecc48f88.png" alt="" loading="lazy"></button></div>
 <div class="pgm"><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png" alt="기본반 위버스샵 특전" width="720" height="2833" loading="eager"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png" alt="기본반 위버스샵 특전" width="720" height="2833" loading="eager"></a>
 <figcaption>기본반 · 위버스샵 특전</figcaption></figure><figure data-p="0">
-<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/fkUgjv.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/fkUgjv.jpg" alt="기본반 구성품 (Ktown4u)" loading="lazy"></a>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/fkUgjv.jpg" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/fkUgjv.jpg" alt="기본반 구성품 (Ktown4u)" loading="eager"></a>
 <figcaption>기본반 · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="1">
-<a href="https://cdn-contents.weverseshop.io/public/shop/73928449a86550bb6af43554584c7185.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/73928449a86550bb6af43554584c7185.png" alt="Weverse Albums ver. 위버스샵 특전" width="720" height="2833" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/73928449a86550bb6af43554584c7185.png" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/73928449a86550bb6af43554584c7185.png" alt="Weverse Albums ver. 위버스샵 특전" width="720" height="2833" loading="eager"></a>
 <figcaption>Weverse Albums ver. · 위버스샵 특전</figcaption></figure><figure data-p="1">
-<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/1WbArB.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/1WbArB.jpg" alt="Weverse Albums ver. 구성품 (Ktown4u)" loading="lazy"></a>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/1WbArB.jpg" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/1WbArB.jpg" alt="Weverse Albums ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>Weverse Albums ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="2">
-<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/Q1mtQk.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/Q1mtQk.jpg" alt="Dice ver. 구성품 (Ktown4u)" loading="lazy"></a>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/Q1mtQk.jpg" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/Q1mtQk.jpg" alt="Dice ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>Dice ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="3">
-<a href="https://media.ktown4u.com/products/origin/detail/2026/05/18/OmiskU.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/05/18/OmiskU.jpg" alt="CORTIS Ball ver. 구성품 (Ktown4u)" loading="lazy"></a>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/05/18/OmiskU.jpg" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/05/18/OmiskU.jpg" alt="CORTIS Ball ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>CORTIS Ball ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="4">
-<a href="https://media.ktown4u.com/products/origin/detail/2026/06/01/z2R4Xd.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/06/01/z2R4Xd.jpg" alt="&#39;Blue Lips&#39; Lip Balm ver. 구성품 (Ktown4u)" loading="lazy"></a>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/06/01/z2R4Xd.jpg" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/06/01/z2R4Xd.jpg" alt="&#39;Blue Lips&#39; Lip Balm ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>&#39;Blue Lips&#39; Lip Balm ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="5">
-<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/RqpgAc.jpg" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/RqpgAc.jpg" alt="Vinyl 구성품 (Ktown4u)" loading="lazy"></a>
+<a href="https://media.ktown4u.com/products/origin/detail/2026/04/14/RqpgAc.jpg" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/14/RqpgAc.jpg" alt="Vinyl 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>Vinyl · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/be124473e6418d158613ba331b73ccbf.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/be124473e6418d158613ba331b73ccbf.png" alt="기본반 위버스샵 특전" width="720" height="2833" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/be124473e6418d158613ba331b73ccbf.png" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/be124473e6418d158613ba331b73ccbf.png" alt="기본반 위버스샵 특전" width="720" height="2833" loading="lazy"></a>
 <figcaption>기본반 · 위버스샵 특전</figcaption></figure><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/bc574448b47b24f6b5c10602ed8ef481.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/bc574448b47b24f6b5c10602ed8ef481.png" alt="기본반 구성품 (위버스샵)" width="720" height="1440" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/bc574448b47b24f6b5c10602ed8ef481.png" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/bc574448b47b24f6b5c10602ed8ef481.png" alt="기본반 구성품 (위버스샵)" width="720" height="1440" loading="lazy"></a>
 <figcaption>기본반 · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="1">
-<a href="https://cdn-contents.weverseshop.io/public/shop/ee0d5a965d365422fd398ba38e1e63b9.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/ee0d5a965d365422fd398ba38e1e63b9.png" alt="Weverse Albums ver. 위버스샵 특전" width="720" height="2833" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/ee0d5a965d365422fd398ba38e1e63b9.png" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/ee0d5a965d365422fd398ba38e1e63b9.png" alt="Weverse Albums ver. 위버스샵 특전" width="720" height="2833" loading="lazy"></a>
 <figcaption>Weverse Albums ver. · 위버스샵 특전</figcaption></figure><figure data-p="1">
-<a href="https://cdn-contents.weverseshop.io/public/shop/806004b842ef2aa1a04ba844ecc48f88.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/806004b842ef2aa1a04ba844ecc48f88.png" alt="Weverse Albums ver. 구성품 (위버스샵)" width="720" height="1260" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/806004b842ef2aa1a04ba844ecc48f88.png" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/806004b842ef2aa1a04ba844ecc48f88.png" alt="Weverse Albums ver. 구성품 (위버스샵)" width="720" height="1260" loading="lazy"></a>
 <figcaption>Weverse Albums ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div></div>
 <div class="vtabs" role="tablist" aria-label="버전 선택"><button type="button" class="vt on" data-p="0" role="tab" id="vt-0"
 aria-selected="true" aria-controls="vp-0" tabindex="0">기본반</button><button type="button" class="vt" data-p="1" role="tab" id="vt-1"
@@ -674,11 +708,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015277" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015277" target="_blank" rel="noopener" title="5/8 대면 팬사인회">5/8 대면 팬사인회</a><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014793" target="_blank" rel="noopener" title="기본">기본</a></div></th>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=62F9F9F2F162F0259B843C0E55C2CC96" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=62F9F9F2F162F0259B843C0E55C2CC96" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></th>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=BC2C3F62184F128A2859832631D34A47" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=BC2C3F62184F128A2859832631D34A47" target="_blank" rel="noopener" title="특전증정/랜덤">특전증정/랜덤</a></div></th>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원</td>
@@ -686,7 +720,7 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3400058" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></th>
 <td class="num" data-label="가격">19,800원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>기본반 <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="기본｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details><div class="wrap"><table class="cmp fx">
 <caption class="sr">기본반 세트 — 판매처 4곳의 가격·배송비·특전 비교</caption>
@@ -711,7 +745,7 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014792" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 <td class="num" data-label="가격">59,400원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="1" id="vp-1" role="tabpanel" aria-labelledby="vt-1" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button><button type="button" class="pb" data-k="1">세트</button></div><div class="pp" data-k="0"><h3>Weverse Albums ver. <span class="pk">개별</span> <span class="ok">6개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details><div class="wrap"><table class="cmp fx">
@@ -737,11 +771,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015276" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015276" target="_blank" rel="noopener" title="5/8 대면 팬사인회">5/8 대면 팬사인회</a><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014791" target="_blank" rel="noopener" title="기본">기본</a></div></th>
 <td class="num" data-label="가격">12,500원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=9F3394D44EB8BA738DAD8945782CBA34" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=9F3394D44EB8BA738DAD8945782CBA34" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></th>
 <td class="num" data-label="가격">12,500원</td>
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>Weverse Albums ver. <span class="pk">세트</span> <span class="ok">4개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="weversealbums｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <details class="comp"><summary>구성품 보기</summary><pre>상세페이지 참고</pre><p class="mut">본 음반에 포함된 랜덤 구성품은 동일한 확률로 구성되어 있습니다.</p></details><div class="wrap"><table class="cmp fx">
 <caption class="sr">Weverse Albums ver. 세트 — 판매처 4곳의 가격·배송비·특전 비교</caption>
@@ -762,7 +796,7 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014790" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 <td class="num" data-label="가격">50,000원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="2" id="vp-2" role="tabpanel" aria-labelledby="vt-2" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Dice ver. <span class="pk">개별</span> <span class="ok">6개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="dice｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <details class="comp"><summary>구성품 보기</summary><pre>[패키지+이너 박스+다이스+스티커 세트+스크래치 카드+포토카드 세트&amp;슬리브+종이접기+미니CD&amp;슬리브]</pre></details><p class="sum2">판매처 6곳 모두 <b>29,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -784,15 +818,15 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014788" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=4F358A8DCB54AF89E785B40B38845CE8" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3400060" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="3" id="vp-3" role="tabpanel" aria-labelledby="vt-3" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">세트</button><button type="button" class="pb" data-k="1">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball ver. <span class="pk">세트</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="cortisball｜세트" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -814,7 +848,7 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015615" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 <td class="num" data-label="가격">77,100원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400866841" target="_blank" rel="noopener"><span class="rlg rl1" aria-hidden="true"></span>알라딘</a><div class="tags"><a class="tg" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400866841" target="_blank" rel="noopener" title="세트">세트</a></div></th>
 <td class="num" data-label="가격">118,800원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
@@ -822,11 +856,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=D610B7A7208245373D255AAB14052C69" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=D610B7A7208245373D255AAB14052C69" target="_blank" rel="noopener" title="세트">세트</a></div></th>
 <td class="num" data-label="가격">118,800원</td>
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017224" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017224" target="_blank" rel="noopener" title="예약">예약</a></div></th>
 <td class="num" data-label="가격">118,800원</td>
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>CORTIS Ball ver. <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div><div class="pp" data-k="1"><h3>CORTIS Ball ver. <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="cortisball｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <p class="sum2">판매처 5곳 모두 <b>25,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
 <caption class="sr">CORTIS Ball ver. 개별 — 판매처 5곳의 가격·배송비·특전 비교</caption>
@@ -847,11 +881,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015616" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=A7A7B1A583C055F4604E4AD888A5FBCF" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a><div class="tags"><a class="tg" href="https://www.musicplant.co.kr/shop/detail.php?pno=A7A7B1A583C055F4604E4AD888A5FBCF" target="_blank" rel="noopener" title="랜덤">랜덤</a></div></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="4" id="vp-4" role="tabpanel" aria-labelledby="vt-4" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>&#39;Blue Lips&#39; Lip Balm ver. <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="bluelipslipbalm｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <p class="sum2">판매처 5곳 모두 <b>29,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -873,11 +907,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000015886" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=B32AC1CA8B7248AC5EF6DE2664DDE0DE" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="5" id="vp-5" role="tabpanel" aria-labelledby="vt-5" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>Vinyl <span class="pk">개별</span> <span class="ok">5개 판매처 비교</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="vinyl｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <details class="comp"><summary>구성품 보기</summary><pre>[변심반품불가][게이트폴드+이너 슬리브+북클릿+포토카드 세트&amp;슬리브+바이닐 45RPM]</pre></details><p class="sum2">판매처 5곳 모두 <b>38,900원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -895,15 +929,15 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000014789" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=154D110C0B686744B90DB1BD829B0D14" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.applemusic.co.kr/shop/shopdetail.html?branduid=3400061" target="_blank" rel="noopener"><span class="rlg rl4" aria-hidden="true"></span>애플뮤직</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="6" id="vp-6" role="tabpanel" aria-labelledby="vt-6" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby Pink ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabypink｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <p class="sum2">판매처 3곳 모두 <b>29,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -917,11 +951,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017223" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017223" target="_blank" rel="noopener" title="예약">예약</a></div></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=8412CFD6A96C23B0C4A23AD27D15FBA3" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="7" id="vp-7" role="tabpanel" aria-labelledby="vt-7" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby White ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabywhite｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <p class="sum2">판매처 3곳 모두 <b>29,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -935,11 +969,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017220" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017220" target="_blank" rel="noopener" title="예약">예약</a></div></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=341E878FEC346FA1415163EECA281F24" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="8" id="vp-8" role="tabpanel" aria-labelledby="vt-8" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby Blue ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabyblue｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <p class="sum2">판매처 3곳 모두 <b>29,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -953,11 +987,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017222" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017222" target="_blank" rel="noopener" title="예약">예약</a></div></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=4955F45633742A0A086F1F41348C3A64" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="9" id="vp-9" role="tabpanel" aria-labelledby="vt-9" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>CORTIS Ball Baby Yellow ver. <span class="pk">개별</span> <span class="ok">3개 판매처 비교</span></h3>
 <p class="rep"><a href="#" data-report="cortisballbabyyellow｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <p class="sum2">판매처 3곳 모두 <b>29,700원</b>입니다. 실제로 갈리는 건 <b>배송비</b>와 <b>특전</b>입니다.</p><div class="wrap"><table class="cmp fx">
@@ -971,11 +1005,11 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017221" target="_blank" rel="noopener"><span class="rlg mono" aria-hidden="true">위</span>위드뮤</a><div class="tags"><a class="tg" href="https://www.withmuu.com/goods/goods_view.php?goodsNo=1000017221" target="_blank" rel="noopener" title="예약">예약</a></div></th>
 
 <td class="num" data-label="배송">3,000원<span class="est">추정</span></td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr><tr>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://www.musicplant.co.kr/shop/detail.php?pno=4784199DDB61A46FC0808964566853E0" target="_blank" rel="noopener"><span class="rlg rl3" aria-hidden="true"></span>뮤직플랜트</a></th>
 
 <td class="num" data-label="배송">3,000원</td>
-<td class="ben" data-label="특전"><span class="unk">특전 미표기</span></td></tr></tbody></table></div></div></div>
+<td class="ben" data-label="특전"><span class="unk">판매처 미공개</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="10" id="vp-10" role="tabpanel" aria-labelledby="vt-10" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>LP <span class="pk">개별</span> <span class="one">1곳만</span> <span class="soldb">일부 품절</span></h3>
 <p class="rep"><a href="#" data-report="lp｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
 <div class="wrap"><table class="cmp fx">
@@ -1011,13 +1045,13 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 21건을 전부 대조합니다.</p>
+<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 23건을 전부 대조합니다.</p>
 
 <h2>최저가 조합 <span class="one">16종</span></h2>
 <div class="optsec">
 
 
-<div class="best"><span class="bl">최저가</span><b class="bv">624,200원</b><span class="soft">일부 미확인</span><span class="bm">상품 624,200원 · 배송 무료</span></div>
+<div class="best"><span class="bl">최저가</span><b class="bv">624,200원</b><span class="bm">상품 624,200원 · 배송 무료</span></div>
 
 <div class="bds"><div class="dl">
 <div class="dlt"><span class="rlg rl5" aria-hidden="true"></span>위버스샵 <span class="pk">2종</span></div>
@@ -1032,7 +1066,7 @@ aria-selected="false" aria-controls="vp-12" tabindex="-1">Bridge Version</button
 <div class="dlc">131,100원</div>
 <div class="dlm">배송 무료</div>
 </div></div>
-<ol class="rks"></ol><p class="partnote">일부만 취급 — 덜 사서 금액이 낮습니다</p><ol class="rks"><li class="rk part">
+<ol class="rks"></ol><p class="partnote">일부만 취급</p><ol class="rks"><li class="rk part">
 <span class="rkn"></span>
 <span class="rkb"><span class="rlg rl1" aria-hidden="true"></span><b>알라딘</b>
 <span class="rkm">16종 중 14종 · 배송 무료 · 쿠폰 −7,000원 (받기 눌러야 적용)</span></span>
@@ -1165,8 +1199,24 @@ m.scrollLeft=m.clientWidth*idx;
 clearTimeout(mv);mv=setTimeout(function(){moving=0;mark()},500);
 mark();
 }
+/* 띠 높이를 **지금 보는 슬라이드**에 맞춘다.
+   가로 띠는 가장 높은 슬라이드에 맞춰지므로, 짧거나 아직 안 받아진 것에서 그 차이가
+   빈 줄로 남는다(실측 NCT: 칸 623px인데 2~8번 사진 높이 0 — Ktown4u 구성품에 치수가
+   없어 자리를 못 잡는다). 사진이 도착할 때마다 다시 잰다. */
+/* 가로 띠 안의 lazy 이미지는 브라우저가 제때 안 받는 경우가 있다(실측: 3·4번
+   슬라이드로 옮겨도 8장 중 3장만 받아졌다). 지금 장과 다음 장은 직접 받게 한다. */
+function pull(n){
+var ims=m.querySelectorAll('img');
+[n,n+1].forEach(function(i){var im=ims[i];if(im&&im.loading==='lazy')im.loading='eager'});
+}
+function fit(){
+var n=at(),f=m.querySelectorAll('figure')[n];
+pull(n);
+if(f)m.style.height=Math.ceil(f.getBoundingClientRect().height)+'px';
+}
 function mark(){
 var n=at(),t=tb();
+fit();
 t.forEach(function(b,i){b.setAttribute('aria-current',i===n?'true':'false')});
 /* 사진을 넘기면 그 사진이 속한 버전 탭이 눌린다. 사진을 보고 버전을 고르는
    순서라, 고른 결과가 아래 표에 바로 반영돼야 한다. */
@@ -1206,8 +1256,12 @@ var b=ev.target.closest('button');if(b)go(tb().indexOf(b));
 var tick;m.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(mark,90)});
 addEventListener('resize',place);
 /* 사진이 다 받아져야 칸 높이가 정해진다. 그 전에 재면 화살표가 엉뚱한 데 붙는다. */
-m.querySelectorAll('img').forEach(function(im){if(!im.complete)im.addEventListener('load',place)});
-addEventListener('load',place);place();
+m.querySelectorAll('img').forEach(function(im){
+if(!im.complete)im.addEventListener('load',function(){place();fit()});
+});
+addEventListener('load',function(){place();fit()});
+addEventListener('resize',fit);
+place();fit();
 mark();
 });
 /* **모든 탭을 가장 큰 탭에 맞추지 않는다.**
@@ -1238,4 +1292,4 @@ pick(0);
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. 10:14:10</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 11:41:40</b></p></body></html>
