@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. 09:41:01",
+  "stamp": "2026. 8. 28. 09:50:56",
   "albums": [
     {
       "artistId": 308,
@@ -95,13 +95,13 @@
       "versions": 7,
       "retailers": 6,
       "benefitCount": 2,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "9시간 18분"
+        "rough": "9시간 8분"
       },
       "rowCount": 46,
       "artistKo": "튜이드",
@@ -209,13 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "9시간 13분"
+        "rough": "9시간 3분"
       },
-      "rowCount": 61,
+      "rowCount": 60,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/AyLyqO.jpg"
     },
     {
       "artistId": 248,
