@@ -492,7 +492,15 @@ for (const a of gone) {
     );
     // nextDeadline은 지난 인덱스에서 딸려온 값이다. 그대로 두면 예판이 끝난 카드에
     // 카운트다운이 계속 돈다 — 마감이 아직 미래인 이벤트가 남아 있으면 더 그렇다.
-    index.push({ ...a, nextDeadline: null, expired });
+    // ogCard는 상세 렌더에만 넘기고 있었다. 인덱스는 이 배열을 쓰는데 여기 없으니
+    // 홈의 og:image가 계속 판매처 CDN 원본(720×1525 세로컷)으로 떨어졌다.
+    // 홈은 X 프로필에 걸리는 URL이라 공유 카드가 깨지는 자리가 하필 거기였다.
+    index.push({
+      ...a,
+      nextDeadline: null,
+      expired,
+      ogCard: SITE_URL && existsSync(`./out/og/${a.slug}.png`) ? abs(SITE_URL, `og/${a.slug}.png`) : null,
+    });
   } catch {
     // 스냅샷이 없으면(이전 버전에서 만든 페이지) 그대로 둔다 — 지우는 것보다 낫다
     index.push({ ...a, nextDeadline: null, expired: a.expired || { lastSeen: shortStamp(prev.stamp) } });
