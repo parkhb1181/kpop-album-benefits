@@ -362,7 +362,7 @@ background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
    "붙였다"가 무너진다. 잘린 모서리(clip-path)도 같은 이유로 뺐다 —
    Lando Norris에서 가져왔던 형태인데, 띠를 끊어서 모티브와 부딪힌다. */
 /* 커버가 카드 전체를 덮는 링크(.go, z-index:1)보다 위에 있으면 **사진이 안 눌린다.**
-   실측: 인덱스 16개가 전부 커버 1장이라 COVER_JS는 으로 매번 빠져나가고,
+   실측: 인덱스 16개가 전부 커버 1장이라 COVER_JS의 n<2 조기 반환에 매번 걸렸고,
    클릭을 .go로 넘겨주던 코드에 닿지도 못했다. 목록에서 사진을 누르면 상품으로 가는 건
    몸에 밴 동작이라 JS에 기대면 안 된다 — 링크를 위로 올린다.
    여러 장일 때만 커버를 올려 스와이프를 살린다(그때는 JS가 클릭을 .go로 넘긴다). */
@@ -2322,7 +2322,13 @@ ${/* h1은 헤더의 브랜드 줄이다(위 siteHeader 주석 참고). 여기 �
     }</div>
 </details>
 ${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS : ''}${
-      albums.some((a) => a.covers?.length > 1) ? COVER_JS : ''
+      /**
+       * COVER_JS는 이제 **홍보 칸 캐러셀도** 돌린다. 커버가 여러 장인 앨범이 있을 때만
+       * 싣던 조건을 그대로 두면 스크립트가 아예 안 실린다 — 실측: 라이브 16개가 전부
+       * 커버 1장이라 홍보 칸에 화살표가 0개, 점 5개가 눌러도 안 먹었다.
+       * (미리보기 하네스는 멀티 커버라 통과해서 못 잡았다)
+       */
+      albums.some((a) => a.covers?.length > 1) || promo.length > 1 ? COVER_JS : ''
     }`,
     {
       description: (
