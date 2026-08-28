@@ -330,14 +330,21 @@ list-style:none;padding:0}
 .cards .cvt{padding:24px 8px 8px}
 .cards .cvt .cval{font-size:0.8125rem}
 }
-/* 홍보 칸 — 격자 안에서 2×2로 넓힌 칸. 오른쪽에 카드 두 장이 들어차 구멍이 안 생긴다. */
-.lead{position:relative;min-width:0;list-style:none}
-.lw{position:relative;overflow:hidden;background:var(--card)}
+/* 홍보 칸 — 격자 안에서 2×2로 넓힌 칸. 오른쪽에 카드 두 장이 들어차 구멍이 안 생긴다.
+   **칸을 끝까지 채운다.** 정사각 커버는 두 행 높이를 못 채워서 실측 709px 칸에 내용이
+   560px, 아래 149px이 비어 있었다. 사진이 남은 높이를 먹고(cover라 잘리지만 홍보 칸이다),
+   그 밑 한 줄은 그 앨범의 사실로 채운다 — 빈 자리를 여백이 아니라 정보로 쓴다. */
+.lead{position:relative;min-width:0;list-style:none;display:flex}
+.lw{position:relative;overflow:hidden;background:var(--card);flex:1;display:flex;flex-direction:column;min-height:0}
 .lt{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
-overscroll-behavior-x:contain}
+overscroll-behavior-x:contain;flex:1;min-height:0}
 .lt::-webkit-scrollbar{display:none}
-.ls{position:relative;flex:0 0 100%;scroll-snap-align:start;display:block;border-bottom:0;min-width:0}
-.ls img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--card)}
+.ls{position:relative;flex:0 0 100%;scroll-snap-align:start;border-bottom:0;min-width:0;
+display:flex;flex-direction:column}
+.lim{position:relative;flex:1;min-height:0;display:block;overflow:hidden}
+.ls img{width:100%;height:100%;object-fit:cover;display:block;background:var(--card)}
+.pmeta{flex:0 0 auto;padding:10px 14px 14px;font-size:0.75rem;color:var(--mut);
+background:var(--bg);font-variant-numeric:tabular-nums}
 .lnav{position:absolute;top:calc(50% - 18px);z-index:3;width:36px;height:36px;border:0;border-radius:2px;
 background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:pointer;display:none}
 .lw[data-lead] .lnav{display:block}
@@ -418,6 +425,11 @@ font-size:0.6875rem;line-height:1.2;font-weight:500;color:var(--mut);background:
 .badge{display:inline-flex;align-items:center;min-height:16px;font-size:0.6875rem;font-weight:500;color:var(--fg);background:var(--card);border:0;border-radius:2px;padding:2px 4px;margin-right:4px}
 .sold{color:var(--acc);font-weight:700}
 /* 판매처 순위 — 위의 비교표와 생김새가 겹치면 안 된다. 번호·이름·총액 세 덩어리뿐이다. */
+/* 최저가 조합은 **전 버전을 다 사는 사람 전용**이라 다른 섹션과 성격이 다르다.
+   옅은 바탕을 깔아 "여기부터는 다른 얘기"라는 걸 선 없이 알린다. */
+.optsec{background:var(--card);padding:clamp(14px,2vw,20px);margin-bottom:clamp(20px,2.6vw,28px)}
+.optsec .rk{border-bottom-color:#e0e0e0}
+.optsec .best{background:var(--bg)}
 .rks{list-style:none;margin:0;padding:0}
 .rk{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .rk:first-child{border-top:2px solid var(--fg)}
@@ -672,6 +684,7 @@ aria-selected="false" aria-controls="vp-3" tabindex="-1">일반반 +Weverse Albu
 <p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 21건을 전부 대조합니다.</p>
 
 <h2>최저가 조합 <span class="one">6종</span></h2>
+<div class="optsec">
 
 
 <div class="best"><span class="bl">최저가</span><b class="bv">210,000원</b><span class="bm">상품 210,000원 · 배송 무료</span></div>
@@ -688,7 +701,7 @@ aria-selected="false" aria-controls="vp-3" tabindex="-1">일반반 +Weverse Albu
 <span class="rkm">6종 중 3종 · 배송 무료</span></span>
 <span class="rkv">73,700원</span>
 </li></ol>
-
+</div>
 <h2>자주 묻는 질문</h2>
 <details class="comp"><summary>에반(EVAN) 앨범은 어디서 사야 하나요?</summary><p><b>Ktown4u · 알라딘</b> 2곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
 <details class="comp"><summary>DEATH OF ME (Weverse Exclusive) 버전은 몇 종인가요?</summary><p><b>6종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
@@ -858,4 +871,4 @@ pick(0);
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. 09:50:56</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 10:02:00</b></p></body></html>
