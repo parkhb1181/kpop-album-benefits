@@ -811,16 +811,19 @@ if(document.readyState==='complete'){idle(go)}else{addEventListener('load',funct
  * 홈은 원본이 12줄인데 16px에서는 회색 덩어리가 되므로 4줄로 줄였다.
  * 판을 currentColor로 두면 헤더에서는 글자색, 파비콘에서는 검정으로 나온다.
  */
+// 판을 통짜로 칠하고 홈을 흰 stroke로 긋던 것을 바꿨다. 두 가지가 깨졌다 —
+//  ① 26px 이하에서 stroke .5가 서브픽셀로 떨어져 홈이 회색 덩어리로 뭉갰다.
+//  ② 먹지 배경(OG 카드·아바타)에서 currentColor가 흰색이 되면 판도 홈도 흰색이라
+//     서로 묻혀 **그냥 흰 동그라미**가 됐다.
+// 그래서 홈을 색이 아니라 **간극**으로 만든다. 링 사이가 비어 있으면 배경이
+// 무슨 색이든 홈이 보인다. 실측으로 흰 배경·먹지·주황 세 곳에서 확인했다.
 const MARK =
-  '<circle cx="10" cy="10" r="9.6" fill="currentColor"/>' +
-  '<g fill="none" stroke="#fff" stroke-width=".5">' +
-  '<circle cx="10" cy="10" r="8.3"/>' +
-  '<circle cx="10" cy="10" r="7.2"/>' +
-  '<circle cx="10" cy="10" r="6.1"/>' +
-  '<circle cx="10" cy="10" r="5"/>' +
+  '<g fill="none" stroke="currentColor">' +
+  '<circle cx="10" cy="10" r="8.6" stroke-width="2"/>' +
+  '<circle cx="10" cy="10" r="6" stroke-width="2"/>' +
+  '<circle cx="10" cy="10" r="3.5" stroke-width="1.8"/>' +
   '</g>' +
-  '<circle cx="10" cy="10" r="3.5" fill="#fff"/>' +
-  '<circle cx="10" cy="10" r=".62" fill="currentColor"/>';
+  '<circle cx="10" cy="10" r="1" fill="currentColor"/>';
 
 const LOGO = `<svg class="lg" width="32" height="32" viewBox="0 0 20 20" aria-hidden="true" focusable="false">${MARK}</svg>`;
 
@@ -894,7 +897,9 @@ const IMGHOSTS =
   '<link rel="preconnect" href="https://image.aladin.co.kr" crossorigin>';
 
 const FAVICON = `<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">${MARK}</svg>`
+  // 파비콘에는 상속받을 글자색이 없어 currentColor가 기본 검정으로 떨어진다.
+  // svg에 color를 직접 걸어 브랜드색이 나오게 한다 — MARK는 헤더와 그대로 공유한다.
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#1a1a1a">${MARK}</svg>`
 )}">`;
 
 /**
@@ -2404,7 +2409,11 @@ ${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS
         `${names ? `${names} 등. ` : ''}${shortDate(stamp)} 기준.`
       ).slice(0, 160),
       canonical: abs(siteUrl, ''),
-      image: albums.find((a) => a.ogImage)?.ogImage || null,
+      // 홈은 X 프로필에 걸리는 URL인데, 여기서 판매처 CDN 원본을 그대로 물고 있었다.
+      // 실측: 위버스샵 720×1525 세로 상세컷 — 1.91:1 카드에서 잘리거나 썸네일로 떨어진다.
+      // 게다가 남의 CDN 핫링크라 저쪽이 URL을 바꾸면 그날로 깨진다.
+      // 우리가 구운 1200×630 카드를 먼저 쓴다. ogImage 폴백은 카드가 없을 때만이다.
+      image: albums.find((a) => a.ogCard)?.ogCard || albums.find((a) => a.ogImage)?.ogImage || null,
       jsonLd: {
         '@context': 'https://schema.org',
         '@type': 'ItemList',

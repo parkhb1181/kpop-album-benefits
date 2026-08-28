@@ -98,7 +98,11 @@ export async function discoverPreorders({ concurrency = 6, limitArtists = 0 } = 
         skuCount: al.skus.length,
         benefit: al.benefit,
         deliveryDate: al.deliveryDate ? al.deliveryDate.slice(0, 10) : null,
-        priceMin: Math.min(...al.skus.map((s) => s.price ?? Infinity)),
+        // **위버스샵 SKU만 본 값이다.** 이 단계에서는 다른 판매처를 아직 안 긁었다.
+        // 이름이 priceMin이면 "이 앨범의 전체 최저가"로 읽혀서, 실제로 16개 중 5개가
+        // 교차 판매처 최저가와 어긋났다(예: 투바투 13,300 vs 실제 11,600).
+        // 화면에 쓰이는 값이 아니라 고치는 대신 이름을 사실대로 바꾼다.
+        weversePriceMin: Math.min(...al.skus.map((s) => s.price ?? Infinity)),
       });
     }
   }

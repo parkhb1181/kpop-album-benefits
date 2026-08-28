@@ -135,9 +135,11 @@ function card(d) {
           ]
         : []),
 
+      // 판매처가 7곳이면 space-between이 밀 여백을 다 써서 날짜와 딱 붙는다
+      // (실측: "…애플뮤직2026.8.28"). 날짜에 여백을 직접 주고 줄지 않게 고정한다.
       div({ justifyContent: 'space-between', marginTop: 30, fontSize: 15, color: C.mut }, [
-        txt({}, d.names),
-        txt({}, d.date),
+        txt({ marginRight: 20 }, d.names),
+        txt({ flexShrink: 0 }, d.date),
       ]),
     ]),
   ]);
@@ -181,8 +183,20 @@ export async function renderCard({ slug, artist, album, rows, outDir = './out/og
     retailers: new Set(rows.map((r) => r.retailer)).size,
     versions: new Set(rows.map((r) => r.key)).size,
     sold: rows.filter((r) => r.soldOut === true).length,
-    best: opt?.best?.sum != null ? opt.best.sum.toLocaleString() : null,
-    names: [...new Set(rows.map((r) => r.retailer))].join(' '),
+    // 카드의 "최저"는 **단품 최저가**다.
+    // 전에는 opt.best.sum(전 버전을 다 모으는 조합 총액)을 넣었다. 페이지 안에서는
+    // "최저가 조합 16종"이라는 제목이 붙어 뜻이 통하지만 카드에는 "최저"만 남는다.
+    // 실측: 코르티스가 624,200원으로 찍혔다(실제 단품 최저 12,400원).
+    // 카톡에 퍼지면 62만원짜리 앨범으로 읽힌다 — 처음 보는 사람에게 첫 숫자가 그것이다.
+    best: (() => {
+      const p = rows.filter((r) => !r.soldOut && r.price && r.currency === 'KRW').map((r) => r.price);
+      return p.length ? Math.min(...p).toLocaleString() : null;
+    })(),
+    // 판매처가 늘면 한 줄을 넘긴다. 5곳까지만 적고 나머지는 개수로 접는다.
+    names: (() => {
+      const n = [...new Set(rows.map((r) => r.retailer))];
+      return n.length > 5 ? `${n.slice(0, 5).join(' ')} 외 ${n.length - 5}` : n.join(' ');
+    })(),
     coverUrl: cover,
   };
 
