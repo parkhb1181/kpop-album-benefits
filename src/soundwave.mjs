@@ -1,4 +1,4 @@
-import { getText, strip, parseTitle } from './fetchx.mjs';
+import { getText, strip, parseTitle, clipBenefit } from './fetchx.mjs';
 
 const BASE = 'https://www.sound-wave.co.kr';
 
@@ -30,7 +30,11 @@ export async function search(query) {
 
     const benefit = [];
     for (const re of [/예약\s*판매\s*특전[^.]{0,120}/g, /특전[^.]{0,100}증정[^.]{0,40}/g, /미공개[^.]{0,100}/g]) {
-      for (const m of flat.matchAll(re)) benefit.push(m[0].trim());
+      // 목록 카드에는 마침표가 없어서 정규식이 다음 상품까지 먹는다 — 잘라낸다
+      for (const m of flat.matchAll(re)) {
+        const c = clipBenefit(m[0]);
+        if (c.length > 6) benefit.push(c);
+      }
     }
 
     out.push({

@@ -1,4 +1,4 @@
-import { getText, strip, parseTitle } from './fetchx.mjs';
+import { getText, strip, parseTitle, clipBenefit } from './fetchx.mjs';
 
 const BASE = 'https://www.aladin.co.kr';
 
@@ -26,12 +26,6 @@ export async function search(query) {
     const salesPoint = (b.match(/세일즈포인트\s*:\s*([\d,]+)/) || [])[1];
     // 특전 관련 문구 (예약판매 특전 / 초도 / 증정 종료 등)
     const flat = strip(b);
-    // UI 잡텍스트에서 잘라낸다 (장바구니/보관함/매장… 이후는 상품정보가 아님)
-    const CUT = /(장바구니|바로구매|보관함|마이리스트|매장판매중|매장새상품|알라딘 중고|판매자 중고|우주점|지역변경|양탄자배송|세일즈포인트|마일리지)/;
-    const clip = (s) => {
-      const i = s.search(CUT);
-      return (i > 0 ? s.slice(0, i) : s).trim().replace(/[\s·,]+$/, '');
-    };
     const benefit = [];
     for (const re of [
       /예약\s*판매\s*특전[^.]{0,120}/g,
@@ -40,7 +34,7 @@ export async function search(query) {
       /포스터[^.]{0,60}증정[^.]{0,60}/g,
     ]) {
       for (const m of flat.matchAll(re)) {
-        const c = clip(m[0]);
+        const c = clipBenefit(m[0]);
         if (c.length > 6) benefit.push(c);
       }
     }
