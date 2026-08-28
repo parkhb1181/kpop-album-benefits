@@ -305,8 +305,13 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓒ 칸 최소폭도 넓혔다. 29CM 상품 격자는 auto-fill minmax(261~292px)다 — 우리는 그보다 작은
       정보 단위라 240px. 180px은 글자가 두 줄로 자주 접혀 위계가 무너졌다.
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:28px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 앨범 사이에 얇은 선. 격자 행은 위가 맞춰지므로 카드마다 윗선을 주면 한 행에서
+   선이 같은 높이로 이어진다(세로 간격만 벌려서는 어디까지가 한 줄인지 안 읽혔다).
+   세로 간격을 48→28로 줄이고 선 아래 16을 둔다 — 선이 하던 일을 여백이 하고 있었다.
+   홍보 칸은 뺀다: 두 행에 걸쳐 있어 윗선이 오른쪽 칸과 어긋난다. */
+.cards .card{border-top:1px solid var(--line);padding-top:16px}
 /* 폰에서 한 줄에 하나면 앨범 열여섯 개를 보려고 열여섯 번 넘겨야 한다.
    최소폭 240px이 375px 화면에서 한 칸밖에 못 만들어서 그랬다 — 폰에서는 열 수를 직접 준다.
    대표 칸은 폭 전체를 쓴다. */
@@ -343,6 +348,10 @@ background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
 .ld button.on{background:#fff}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
+/* 첫 행은 홍보 칸 옆 한 칸뿐이라 윗선이 오른쪽 267px에만 걸려 반쪽으로 뜬다.
+   그 하나만 뺀다. 그 아래 칸(둘째 행)은 선을 둔다 — 위아래로 붙은 두 카드를
+   갈라주는 게 그 선이 할 일이다. */
+.cards .card:nth-child(2){border-top:0;padding-top:0}
 .cards .lead .cvt{padding:56px 18px 26px}
 .cards .lead .cvt .cval{font-size:1.5rem;-webkit-line-clamp:3}
 .cards .lead .cvt .cva{font-size:0.875rem;margin-bottom:4px}
