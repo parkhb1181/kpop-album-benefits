@@ -44,6 +44,7 @@ html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
 font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif}
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 h2{font-size:1rem;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:0.875rem;color:var(--mut);margin:24px 0 8px;font-weight:600}
 .pk{font-weight:500;color:var(--mut);font-size:0.875rem}
@@ -280,8 +281,7 @@ a.tg{border-bottom:0;color:var(--fg);font-weight:600}
    outline:none 하나뿐이라 Tab으로 훑으면 지금 어디인지 알 수 없었다(WCAG 2.4.7).
    마우스에는 안 보이고 키보드에만 보이는 :focus-visible로 되살린다.
    카드는 투명 링크(.go)가 덮고 있어 링크 자체에 링을 그리면 카드 밖으로 삐져나가므로
-   카드에 그린다. */
-:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+   카드에 그린다. 기본 링은 theme.mjs의 FOCUS에 있고, 여기는 예외만 덧붙인다. */
 .card:has(.go:focus-visible),.lead:has(a:focus-visible){outline:2px solid var(--fg);outline-offset:2px}
 .go:focus-visible,.ls:focus-visible{outline:0}
 .gnav:focus-visible,.lnav:focus-visible{outline:2px solid #fff;outline-offset:1px}
@@ -639,24 +639,24 @@ h1{font-size:1.25rem}
 <span class="pmeta"><span class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-08-30T23:59:59.999999+09:00">2일 7시간</span></span><span class="tags"><span class="tg">특전 3/7</span><span class="tg w">품절 1건</span></span><span class="meta">6종 · 판매처 7 · 8월 31일 발매</span></span></a><a class="ls" href="album/jisoo-click.html">
 <span class="lim"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png" alt="" loading="lazy" decoding="async">
 <span class="cvt"><span class="cva">지수(JISOO)</span><span class="cval">CLICK</span></span></span>
-<span class="pmeta"><span class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T13:00:00+09:00">6일 20시간</span></span><span class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 1건</span></span><span class="meta">4종 · 판매처 7 · 9월 4일 발매</span></span></a><a class="ls" href="album/tuide-tune-play.html">
-<span class="lim"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" loading="lazy" decoding="async">
-<span class="cvt"><span class="cva">튜이드(TUIDE)</span><span class="cval">TUNE &amp; PLAY</span></span></span>
-<span class="pmeta"><span class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">2시간 31분</span></span><span class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></span><span class="meta">7종 · 판매처 6 · 8월 27일 발매</span></span></a><a class="ls" href="album/and2ble-sequence-01-curiosity.html">
+<span class="pmeta"><span class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T13:00:00+09:00">6일 20시간</span></span><span class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 1건</span></span><span class="meta">4종 · 판매처 7 · 9월 4일 발매</span></span></a><a class="ls" href="album/and2ble-sequence-01-curiosity.html">
 <span class="lim"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg" alt="" loading="lazy" decoding="async">
 <span class="cvt"><span class="cva">AND2BLE</span><span class="cval">Sequence 01: Curiosity</span></span></span>
-<span class="pmeta"><span class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 2시간</span></span><span class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 7건</span></span><span class="meta">11종 · 판매처 6 · 9월 4일 발매</span></span></a><a class="ls" href="album/shinee-make-it-hot.html">
+<span class="pmeta"><span class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 2시간</span></span><span class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 7건</span></span><span class="meta">14종 · 판매처 7 · 9월 4일 발매</span></span></a><a class="ls" href="album/tuide-tune-play.html">
+<span class="lim"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" loading="lazy" decoding="async">
+<span class="cvt"><span class="cva">튜이드(TUIDE)</span><span class="cval">TUNE &amp; PLAY</span></span></span>
+<span class="pmeta"><span class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">2시간 22분</span></span><span class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></span><span class="meta">7종 · 판매처 6 · 8월 27일 발매</span></span></a><a class="ls" href="album/shinee-make-it-hot.html">
 <span class="lim"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/AoXSUS.jpg" alt="" loading="lazy" decoding="async">
 <span class="cvt"><span class="cva">민호(MINHO)</span><span class="cval">Make it hot</span></span></span>
 <span class="pmeta"><span class="cdl">예약 특전 포토카드 응모 마감 <span class="cd" data-until="2026-09-06T23:59:59.999999+09:00">9일 7시간</span></span><span class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 1건</span></span><span class="meta">6종 · 판매처 6 · 9월 7일 발매</span></span></a></div>
-<div class="ld"><button type="button" data-i="0" class="on" aria-label="PHASE I : Soft Violence"></button><button type="button" data-i="1" aria-label="CLICK"></button><button type="button" data-i="2" aria-label="TUNE &amp; PLAY"></button><button type="button" data-i="3" aria-label="Sequence 01: Curiosity"></button><button type="button" data-i="4" aria-label="Make it hot"></button></div></div></li><li class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
+<div class="ld"><button type="button" data-i="0" class="on" aria-label="PHASE I : Soft Violence"></button><button type="button" data-i="1" aria-label="CLICK"></button><button type="button" data-i="2" aria-label="Sequence 01: Curiosity"></button><button type="button" data-i="3" aria-label="TUNE &amp; PLAY"></button><button type="button" data-i="4" aria-label="Make it hot"></button></div></div></li><li class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
 <a class="go" href="album/tuide-tune-play.html" aria-label="튜이드(TUIDE) TUNE &amp; PLAY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">튜이드(TUIDE)</p><h2 class="cval">TUNE &amp; PLAY</h2></div></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">2시간 31분</span></div><div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">2시간 22분</span></div><div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
 </li><li class="card" data-q="엔시티127nct127nct127엔시티127blingy" data-c="ㅇㅅㅌ127nct127nct127ㅇㅅㅌ127blingy">
 <a class="go" href="album/nct-127-blingy.html" aria-label="엔시티 127(NCT 127) BLINGY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/NYZsXf.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">엔시티 127(NCT 127)</p><h2 class="cval">BLINGY</h2></div></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">2시간 27분</span></div><div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">2시간 18분</span></div><div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
 </li><li class="card" data-q="소연soyeonidle아이들소연soyeonwhatawonderfullife" data-c="ㅅㅇsoyeonidleㅇㅇㄷㅅㅇsoyeonwhatawonderfullife">
 <a class="go" href="album/i-dle-아이들-what-a-wonderful-life.html" aria-label="소연(SOYEON) What a Wonderful Life"></a>
 <div class="cvw"><div class="strip"><img src="https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">소연(SOYEON)</p><h2 class="cval">What a Wonderful Life</h2></div></div>
@@ -676,7 +676,7 @@ h1{font-size:1.25rem}
 </li><li class="card" data-q="and2bleand2blesequence01curiosity" data-c="and2bleand2blesequence01curiosity">
 <a class="go" href="album/and2ble-sequence-01-curiosity.html" aria-label="AND2BLE Sequence 01: Curiosity"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">AND2BLE</p><h2 class="cval">Sequence 01: Curiosity</h2></div></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 2시간</span></div><div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 7건</span></div><div class="meta">11종 · 판매처 6 · 9월 4일 발매</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-09-04T19:00:00+09:00">7일 2시간</span></div><div class="tags"><span class="tg">특전 2/7</span><span class="tg w">품절 7건</span></div><div class="meta">14종 · 판매처 7 · 9월 4일 발매</div>
 </li><li class="card" data-q="민호minhoshinee민호minhomakeithot" data-c="ㅁㅎminhoshineeㅁㅎminhomakeithot">
 <a class="go" href="album/shinee-make-it-hot.html" aria-label="민호(MINHO) Make it hot"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/AoXSUS.jpg" alt="" loading="lazy" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">민호(MINHO)</p><h2 class="cval">Make it hot</h2></div></div>
