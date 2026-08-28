@@ -126,7 +126,8 @@ height:64px;background:linear-gradient(rgba(255,255,255,0),var(--bg));pointer-ev
 background:var(--card);border:0;border-top:1px solid var(--line);padding:9px;cursor:pointer;
 min-height:36px}
 .pgx:hover{background:var(--line)}
-.pgm img{width:100%;height:auto;display:block;background:var(--card)}
+/* 원본 크기까지만. width를 100%로 박으면 720px 이미지가 817px 칸에서 늘어나 뭉갠다. */
+.pgm img{width:auto;height:auto;max-width:100%;margin:0 auto;display:block;background:var(--card)}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
@@ -312,6 +313,18 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 폰에서 한 줄에 하나면 앨범 열여섯 개를 보려고 열여섯 번 넘겨야 한다.
+   최소폭 240px이 375px 화면에서 한 칸밖에 못 만들어서 그랬다 — 폰에서는 열 수를 직접 준다.
+   대표 칸은 폭 전체를 쓴다. */
+@media(max-width:559px){
+.cards{grid-template-columns:repeat(2,1fr);gap:28px 10px}
+.cards .lead{grid-column:span 2}
+.cards .lead .cvt{padding:44px 14px 14px}
+.cards .lead .cvt .cval{font-size:1.25rem}
+/* 뒤에 오는 기본 규칙과 명시도가 같으면 밀린다 — .cards로 한 단계 올린다. */
+.cards .cvt{padding:24px 8px 8px}
+.cards .cvt .cval{font-size:0.8125rem}
+}
 /* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
    오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
    글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
@@ -589,6 +602,9 @@ aria-selected="true" aria-controls="vp-0" tabindex="0">기본반</button></div>
 
 <td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
+<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
+<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 21건을 전부 대조합니다.</p>
+
 <h2>최저가 조합 <span class="one">1종</span></h2>
 
 
@@ -607,9 +623,6 @@ aria-selected="true" aria-controls="vp-0" tabindex="0">기본반</button></div>
 <span class="rkm">1종 전부 · 배송 3,000원</span></span>
 <span class="rkv">26,900원<span class="est">추정</span></span>
 </li></ol>
-
-<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 21건을 전부 대조합니다.</p>
 
 <h2>자주 묻는 질문</h2>
 <details class="comp"><summary>VVUP 앨범은 어디서 사야 하나요?</summary><p><b>Ktown4u · 위드뮤 · 위버스샵</b> 3곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
@@ -664,6 +677,11 @@ var f=a.closest('figure');if(!f)return;
 var btn=f.querySelector('.pgx');
 if(a.classList.contains('open'))return;
 var over=a.scrollHeight-a.clientHeight>8;
+/* 조금만 넘치면 자르지 말고 통째로 낸다. 한두 화면 더 스크롤하면 될 것을
+   버튼 눌러 펼치게 하는 건 손해다. 1.7배까지는 그냥 다 보여준다. */
+if(over&&a.scrollHeight<=a.clientHeight*1.7){
+a.classList.add('open');f.className='';if(btn)btn.remove();return;
+}
 f.className=over?'clipped':'';
 if(over&&!btn){
 btn=document.createElement('button');btn.type='button';btn.className='pgx';btn.textContent='펼쳐 보기';
@@ -774,5 +792,5 @@ pick(0);
 });
 })();
 </script>
-
-<p class="stamp">최근 수집 <b>2026. 8. 28. 09:18:41</b></p></body></html>
+<div class="err">수집 실패: 뮤직플랜트: 연결 불가로 건너뜀 (연속 3회 실패) — www.musicplant.co.kr</div>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 09:29:04</b></p></body></html>

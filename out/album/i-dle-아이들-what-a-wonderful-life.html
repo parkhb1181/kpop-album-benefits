@@ -126,7 +126,8 @@ height:64px;background:linear-gradient(rgba(255,255,255,0),var(--bg));pointer-ev
 background:var(--card);border:0;border-top:1px solid var(--line);padding:9px;cursor:pointer;
 min-height:36px}
 .pgx:hover{background:var(--line)}
-.pgm img{width:100%;height:auto;display:block;background:var(--card)}
+/* 원본 크기까지만. width를 100%로 박으면 720px 이미지가 817px 칸에서 늘어나 뭉갠다. */
+.pgm img{width:auto;height:auto;max-width:100%;margin:0 auto;display:block;background:var(--card)}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
@@ -312,6 +313,18 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 폰에서 한 줄에 하나면 앨범 열여섯 개를 보려고 열여섯 번 넘겨야 한다.
+   최소폭 240px이 375px 화면에서 한 칸밖에 못 만들어서 그랬다 — 폰에서는 열 수를 직접 준다.
+   대표 칸은 폭 전체를 쓴다. */
+@media(max-width:559px){
+.cards{grid-template-columns:repeat(2,1fr);gap:28px 10px}
+.cards .lead{grid-column:span 2}
+.cards .lead .cvt{padding:44px 14px 14px}
+.cards .lead .cvt .cval{font-size:1.25rem}
+/* 뒤에 오는 기본 규칙과 명시도가 같으면 밀린다 — .cards로 한 단계 올린다. */
+.cards .cvt{padding:24px 8px 8px}
+.cards .cvt .cval{font-size:0.8125rem}
+}
 /* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
    오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
    글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
@@ -567,17 +580,17 @@ tick();setInterval(tick,1000);
 <div class="pgal" data-gal="1">
 <div class="pgt"><button type="button" data-i="0" data-p="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="" loading="lazy"></button><button type="button" data-i="1" data-p="0" aria-label="HOME ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="" loading="lazy"></button><button type="button" data-i="2" data-p="0" aria-label="HOME ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="" loading="lazy"></button><button type="button" data-i="3" data-p="5" aria-label="ISLAND ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="" loading="lazy"></button><button type="button" data-i="4" data-p="6" aria-label="TEMPLE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="" loading="lazy"></button><button type="button" data-i="5" data-p="7" aria-label="LIFE ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="" loading="lazy"></button></div>
 <div class="pgm"><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="HOME ver. 위버스샵 특전" loading="eager"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png" alt="HOME ver. 위버스샵 특전" width="720" height="900" loading="eager"></a>
 <figcaption>HOME ver. · 위버스샵 특전</figcaption></figure><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="HOME ver. 위버스샵 특전" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/dd33e0c2228c7bc18b1328a615a7b0fa.png" alt="HOME ver. 위버스샵 특전" width="720" height="900" loading="lazy"></a>
 <figcaption>HOME ver. · 위버스샵 특전</figcaption></figure><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="HOME ver. 구성품 (위버스샵)" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/8043e23754e931699668baea85d2d0ec.png" alt="HOME ver. 구성품 (위버스샵)" width="720" height="900" loading="lazy"></a>
 <figcaption>HOME ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="5">
-<a href="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="ISLAND ver. 위버스샵 특전" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/a2d5fb863c7384182ddc9cc157de2f41.png" alt="ISLAND ver. 위버스샵 특전" width="720" height="900" loading="lazy"></a>
 <figcaption>ISLAND ver. · 위버스샵 특전</figcaption></figure><figure data-p="6">
-<a href="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="TEMPLE ver. 구성품 (위버스샵)" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/fdf72e87ac2aee302a6dafab8408d178.png" alt="TEMPLE ver. 구성품 (위버스샵)" width="720" height="900" loading="lazy"></a>
 <figcaption>TEMPLE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="7">
-<a href="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="LIFE ver. 구성품 (위버스샵)" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/495e5c91894a9e862749507fb579836b.png" alt="LIFE ver. 구성품 (위버스샵)" width="720" height="900" loading="lazy"></a>
 <figcaption>LIFE ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div></div>
 <div class="vtabs" role="tablist" aria-label="버전 선택"><button type="button" class="vt on" data-p="0" role="tab" id="vt-0"
 aria-selected="true" aria-controls="vp-0" tabindex="0">HOME ver.</button><button type="button" class="vt" data-p="1" role="tab" id="vt-1"
@@ -672,6 +685,19 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <td class="num" data-label="가격">53,400원</td>
 <td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
+<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
+<p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
+<div class="wrap"><table class="cmp"><thead><tr>
+<th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody><tr>
+<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353.png" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/20277" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER MEET&amp;CALL EVENT</a> <span class="tg">팬싸</span><div class="mut">영상통화 팬사인회</div></div></div></td>
+<td class="num" data-label="마감"><span class="sold">마감임박</span></td>
+<td class="num" data-label="기간">2026.08.27~2026.08.29<div class="mut">발표 2026.08.31</div></td>
+<td data-label="응모 조건">For. 대면 팬사인회 <b>13,400원</b> · For. 영상통화 <b>19,300원</b></td></tr><tr>
+<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364.png" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/20244" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER PHOTOCARD EVENT</a><div class="mut">예약 특전 포토카드</div></div></div></td>
+<td class="num" data-label="마감"><b>D-10</b></td>
+<td class="num" data-label="기간">2026.08.26~2026.09.06<div class="mut">발표 2026.09.07</div></td>
+<td data-label="응모 조건">For. 섬 ver. <b>13,400원</b> · For. 집 ver. <b>19,300원</b> · For. 섬 ver. + 집 ver.(SET) <b>32,700원</b></td></tr></tbody></table></div>
+
 <h2>최저가 조합 <span class="one">8종</span></h2>
 
 
@@ -698,19 +724,6 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <span class="rkm">8종 중 4종 · 배송 무료 · 쿠폰 −7,000원 (받기 눌러야 적용)</span></span>
 <span class="rkv">125,600원</span>
 </li></ol>
-
-<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
-<div class="wrap"><table class="cmp"><thead><tr>
-<th>이벤트</th><th class="num">마감</th><th class="num">기간</th><th>응모 조건</th></tr></thead><tbody><tr>
-<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353.png" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/20277" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER MEET&amp;CALL EVENT</a> <span class="tg">팬싸</span><div class="mut">영상통화 팬사인회</div></div></div></td>
-<td class="num" data-label="마감"><span class="sold">마감임박</span></td>
-<td class="num" data-label="기간">2026.08.27~2026.08.29<div class="mut">발표 2026.08.31</div></td>
-<td data-label="응모 조건">For. 대면 팬사인회 <b>13,400원</b> · For. 영상통화 <b>19,300원</b></td></tr><tr>
-<td class="evt" data-label="이벤트"><div class="evc"><a class="evp" href="https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364.png" target="_blank" rel="noopener"><img src="https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364_thumb.jpeg" alt="" loading="lazy" width="56" height="56"></a><div><a href="https://makestar.co/event/20244" rel="nofollow">소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER PHOTOCARD EVENT</a><div class="mut">예약 특전 포토카드</div></div></div></td>
-<td class="num" data-label="마감"><b>D-10</b></td>
-<td class="num" data-label="기간">2026.08.26~2026.09.06<div class="mut">발표 2026.09.07</div></td>
-<td data-label="응모 조건">For. 섬 ver. <b>13,400원</b> · For. 집 ver. <b>19,300원</b> · For. 섬 ver. + 집 ver.(SET) <b>32,700원</b></td></tr></tbody></table></div>
 
 <h2>자주 묻는 질문</h2>
 <details class="comp"><summary>소연(SOYEON) 앨범은 어디서 사야 하나요?</summary><p><b>알라딘 · 위버스샵</b> 2곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
@@ -765,6 +778,11 @@ var f=a.closest('figure');if(!f)return;
 var btn=f.querySelector('.pgx');
 if(a.classList.contains('open'))return;
 var over=a.scrollHeight-a.clientHeight>8;
+/* 조금만 넘치면 자르지 말고 통째로 낸다. 한두 화면 더 스크롤하면 될 것을
+   버튼 눌러 펼치게 하는 건 손해다. 1.7배까지는 그냥 다 보여준다. */
+if(over&&a.scrollHeight<=a.clientHeight*1.7){
+a.classList.add('open');f.className='';if(btn)btn.remove();return;
+}
 f.className=over?'clipped':'';
 if(over&&!btn){
 btn=document.createElement('button');btn.type='button';btn.className='pgx';btn.textContent='펼쳐 보기';
@@ -875,5 +893,5 @@ pick(0);
 });
 })();
 </script>
-
-<p class="stamp">최근 수집 <b>2026. 8. 28. 09:18:41</b></p></body></html>
+<div class="err">수집 실패: 뮤직플랜트: 연결 불가로 건너뜀 (연속 3회 실패) — www.musicplant.co.kr</div>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 09:29:04</b></p></body></html>

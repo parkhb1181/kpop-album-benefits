@@ -126,7 +126,8 @@ height:64px;background:linear-gradient(rgba(255,255,255,0),var(--bg));pointer-ev
 background:var(--card);border:0;border-top:1px solid var(--line);padding:9px;cursor:pointer;
 min-height:36px}
 .pgx:hover{background:var(--line)}
-.pgm img{width:100%;height:auto;display:block;background:var(--card)}
+/* 원본 크기까지만. width를 100%로 박으면 720px 이미지가 817px 칸에서 늘어나 뭉갠다. */
+.pgm img{width:auto;height:auto;max-width:100%;margin:0 auto;display:block;background:var(--card)}
 .scr{font-size:0.6875rem;font-weight:600;color:var(--acc)}
 .pgm figcaption{font-size:0.75rem;font-weight:700;margin-top:8px}
 .pgm figcaption span{display:block;font-weight:400;color:var(--mut);margin-top:2px}
@@ -312,6 +313,18 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
+/* 폰에서 한 줄에 하나면 앨범 열여섯 개를 보려고 열여섯 번 넘겨야 한다.
+   최소폭 240px이 375px 화면에서 한 칸밖에 못 만들어서 그랬다 — 폰에서는 열 수를 직접 준다.
+   대표 칸은 폭 전체를 쓴다. */
+@media(max-width:559px){
+.cards{grid-template-columns:repeat(2,1fr);gap:28px 10px}
+.cards .lead{grid-column:span 2}
+.cards .lead .cvt{padding:44px 14px 14px}
+.cards .lead .cvt .cval{font-size:1.25rem}
+/* 뒤에 오는 기본 규칙과 명시도가 같으면 밀린다 — .cards로 한 단계 올린다. */
+.cards .cvt{padding:24px 8px 8px}
+.cards .cvt .cval{font-size:0.8125rem}
+}
 /* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
    오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
    글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
@@ -541,17 +554,17 @@ inp.click();
 <div class="pgal" data-gal="1">
 <div class="pgt"><button type="button" data-i="0" data-p="0" aria-label="기본반 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png" alt="" loading="lazy"></button><button type="button" data-i="1" data-p="0" aria-label="기본반 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/F2tACo.png" alt="" loading="lazy"></button><button type="button" data-i="2" data-p="1" aria-label="THORN Ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/3b85843f2afb3c4c924c84e0155d3eb3.png" alt="" loading="lazy"></button><button type="button" data-i="3" data-p="1" aria-label="THORN Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/spmVAz.png" alt="" loading="lazy"></button><button type="button" data-i="4" data-p="0" aria-label="기본반 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/6f6c1c44fec3067fdf7532f1e2f249ad.png" alt="" loading="lazy"></button><button type="button" data-i="5" data-p="0" aria-label="기본반 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/d4670e54068bc4859636b9f4d8f97cb6.png" alt="" loading="lazy"></button><button type="button" data-i="6" data-p="2" aria-label="CUSHION OF THORNS Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/13/ihrNGZ.png" alt="" loading="lazy"></button><button type="button" data-i="7" data-p="3" aria-label="Photocard Case Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/XVEyJl.png" alt="" loading="lazy"></button><button type="button" data-i="8" data-p="4" aria-label="PPULBATU Ver. 구성품 (Ktown4u)"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/no4NYw.png" alt="" loading="lazy"></button><button type="button" data-i="9" data-p="1" aria-label="THORN Ver. 위버스샵 특전"><img src="https://cdn-contents.weverseshop.io/public/shop/898a1edef247face01a45e3a94f24c64.png" alt="" loading="lazy"></button><button type="button" data-i="10" data-p="1" aria-label="THORN Ver. 구성품 (위버스샵)"><img src="https://cdn-contents.weverseshop.io/public/shop/1fb2d9558201340f38dbc2efb5307268.png" alt="" loading="lazy"></button></div>
 <div class="pgm"><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png" alt="기본반 위버스샵 특전" loading="eager"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/0291fe444e3256ee802d0abb8ddf90ef.png" alt="기본반 위버스샵 특전" width="720" height="4859" loading="eager"></a>
 <figcaption>기본반 · 위버스샵 특전</figcaption></figure><figure data-p="0">
 <a href="https://media.ktown4u.com/products/origin/detail/2026/03/23/F2tACo.png" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/F2tACo.png" alt="기본반 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>기본반 · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="1">
-<a href="https://cdn-contents.weverseshop.io/public/shop/3b85843f2afb3c4c924c84e0155d3eb3.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/3b85843f2afb3c4c924c84e0155d3eb3.png" alt="THORN Ver. 위버스샵 특전" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/3b85843f2afb3c4c924c84e0155d3eb3.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/3b85843f2afb3c4c924c84e0155d3eb3.png" alt="THORN Ver. 위버스샵 특전" width="720" height="2751" loading="lazy"></a>
 <figcaption>THORN Ver. · 위버스샵 특전</figcaption></figure><figure data-p="1">
 <a href="https://media.ktown4u.com/products/origin/detail/2026/03/23/spmVAz.png" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/spmVAz.png" alt="THORN Ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>THORN Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/6f6c1c44fec3067fdf7532f1e2f249ad.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/6f6c1c44fec3067fdf7532f1e2f249ad.png" alt="기본반 위버스샵 특전" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/6f6c1c44fec3067fdf7532f1e2f249ad.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/6f6c1c44fec3067fdf7532f1e2f249ad.png" alt="기본반 위버스샵 특전" width="720" height="4859" loading="lazy"></a>
 <figcaption>기본반 · 위버스샵 특전</figcaption></figure><figure data-p="0">
-<a href="https://cdn-contents.weverseshop.io/public/shop/d4670e54068bc4859636b9f4d8f97cb6.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/d4670e54068bc4859636b9f4d8f97cb6.png" alt="기본반 구성품 (위버스샵)" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/d4670e54068bc4859636b9f4d8f97cb6.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/d4670e54068bc4859636b9f4d8f97cb6.png" alt="기본반 구성품 (위버스샵)" width="720" height="2751" loading="lazy"></a>
 <figcaption>기본반 · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="2">
 <a href="https://media.ktown4u.com/products/origin/detail/2026/04/13/ihrNGZ.png" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/04/13/ihrNGZ.png" alt="CUSHION OF THORNS Ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>CUSHION OF THORNS Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="3">
@@ -559,9 +572,9 @@ inp.click();
 <figcaption>Photocard Case Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="4">
 <a href="https://media.ktown4u.com/products/origin/detail/2026/03/23/no4NYw.png" target="_blank" rel="noopener"><img src="https://media.ktown4u.com/products/origin/detail/2026/03/23/no4NYw.png" alt="PPULBATU Ver. 구성품 (Ktown4u)" loading="lazy"></a>
 <figcaption>PPULBATU Ver. · 구성품 (Ktown4u)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure><figure data-p="1">
-<a href="https://cdn-contents.weverseshop.io/public/shop/898a1edef247face01a45e3a94f24c64.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/898a1edef247face01a45e3a94f24c64.png" alt="THORN Ver. 위버스샵 특전" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/898a1edef247face01a45e3a94f24c64.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/898a1edef247face01a45e3a94f24c64.png" alt="THORN Ver. 위버스샵 특전" width="720" height="2751" loading="lazy"></a>
 <figcaption>THORN Ver. · 위버스샵 특전</figcaption></figure><figure data-p="1">
-<a href="https://cdn-contents.weverseshop.io/public/shop/1fb2d9558201340f38dbc2efb5307268.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/1fb2d9558201340f38dbc2efb5307268.png" alt="THORN Ver. 구성품 (위버스샵)" loading="lazy"></a>
+<a href="https://cdn-contents.weverseshop.io/public/shop/1fb2d9558201340f38dbc2efb5307268.png" target="_blank" rel="noopener"><img src="https://cdn-contents.weverseshop.io/public/shop/1fb2d9558201340f38dbc2efb5307268.png" alt="THORN Ver. 구성품 (위버스샵)" width="720" height="2072" loading="lazy"></a>
 <figcaption>THORN Ver. · 구성품 (위버스샵)<span>판매처 특전이 아닌 앨범 기본 구성품</span></figcaption></figure></div></div>
 <div class="vtabs" role="tablist" aria-label="버전 선택"><button type="button" class="vt on" data-p="0" role="tab" id="vt-0"
 aria-selected="true" aria-controls="vp-0" tabindex="0">기본반</button><button type="button" class="vt" data-p="1" role="tab" id="vt-1"
@@ -803,6 +816,9 @@ aria-selected="false" aria-controls="vp-4" tabindex="-1">PPULBATU Ver.</button><
 
 <td class="num" data-label="배송"><span class="ok2">무료</span></td>
 <td class="ben" data-label="특전"><span class="flag">특전 있음 · 상품명에만 표기</span></td></tr></tbody></table></div></div></div>
+<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
+<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 전량과 대조합니다.</p>
+
 <h2>최저가 조합 <span class="one">9종</span></h2>
 
 
@@ -859,9 +875,6 @@ aria-selected="false" aria-controls="vp-4" tabindex="-1">PPULBATU Ver.</button><
 <span class="rkv">69,600원</span>
 </li></ol>
 
-<h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
-<p class="mut">진행 중인 팬사인회·이벤트가 없습니다. 메이크스타 진행 중 이벤트 전량과 대조합니다.</p>
-
 <h2>자주 묻는 질문</h2>
 <details class="comp"><summary>투모로우바이투게더(TOMORROW X TOGETHER) 앨범은 어디서 사야 하나요?</summary><p><b>Ktown4u · 알라딘 · 사운드웨이브 · 위드뮤 · 뮤직플랜트 · 애플뮤직 · 위버스샵</b> 7곳에서 팝니다. 상품값은 대체로 같고 판매처마다 주는 특전이 다릅니다.</p></details>
 <details class="comp"><summary>7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때 버전은 몇 종인가요?</summary><p><b>9종</b>입니다. 버전마다 구성품과 포토카드가 다릅니다. 판매처 특전은 그 위에 따로 붙습니다.</p></details>
@@ -915,6 +928,11 @@ var f=a.closest('figure');if(!f)return;
 var btn=f.querySelector('.pgx');
 if(a.classList.contains('open'))return;
 var over=a.scrollHeight-a.clientHeight>8;
+/* 조금만 넘치면 자르지 말고 통째로 낸다. 한두 화면 더 스크롤하면 될 것을
+   버튼 눌러 펼치게 하는 건 손해다. 1.7배까지는 그냥 다 보여준다. */
+if(over&&a.scrollHeight<=a.clientHeight*1.7){
+a.classList.add('open');f.className='';if(btn)btn.remove();return;
+}
 f.className=over?'clipped':'';
 if(over&&!btn){
 btn=document.createElement('button');btn.type='button';btn.className='pgx';btn.textContent='펼쳐 보기';
@@ -1026,4 +1044,4 @@ pick(0);
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. 09:18:41</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 09:29:04</b></p></body></html>
