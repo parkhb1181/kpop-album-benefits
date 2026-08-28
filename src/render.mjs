@@ -62,7 +62,12 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .num{white-space:nowrap;text-align:right}
 .ev{font-size:0.75rem;color:var(--acc);margin-top:2px}
 .ben div{margin-bottom:4px}
-.flag{color:var(--acc);font-weight:600}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
+/* 액센트는 **놓치면 손해인 것**에만 쓴다 — 품절·마감·팬싸.
+   특전 있음·구성 비공개나 배송지별은 급한 게 아니라 상태다. 같은 색을 쓰면
+   화면이 온통 주황이 되고 정작 급한 게 안 보인다. 강조는 굵기로만 낸다. */
+.flag{color:var(--acc);font-weight:600}
+.info{color:var(--fg);font-weight:600}
+.soft{color:var(--mut)}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
    .mut(12px 보조 문구)를 여기 쓰다가 특전 없음만 14px로 커 보였다. */
 .none{color:var(--mut);font-size:inherit}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:0.75rem}.q{color:var(--acc);font-weight:700}
@@ -425,6 +430,12 @@ font-size:0.6875rem;line-height:1.2;font-weight:500;color:var(--mut);background:
 .cd.over{color:var(--mut);font-weight:400}
 .alarm{font-size:0.75rem;white-space:nowrap}
 .card .cdl{font-size:0.75rem;color:var(--mut);margin-top:8px}
+/* 카드 아래는 세 줄이다 — 마감 · 태그 · 메타. 셋이 각자 다른 여백을 갖고 있어서
+   줄마다 간격이 달랐고 카드가 헐거워 보였다. 한 리듬(4px)으로 묶는다. */
+.card .cvw{margin-bottom:8px}
+.card .cdl{margin:0 0 4px}
+.card .tags{margin:0 0 4px}
+.card .meta{margin:0;line-height:1.45}
 /* 검색 — 29CM 실측을 옮겼다. border-b-4 border-on-black · 36px semibold · placeholder #d4d4d4.
    **상자가 아니다.** 배경도 테두리도 없고 아래 굵은 선 하나뿐이다.
    저쪽은 전체화면 검색이라 36px이지만 우리는 목록 위 필터라 26px로 낮췄다 —
@@ -966,10 +977,10 @@ const STATUS = {
   has: null, // 내용을 표시
   none: `<span class="none">특전 없음</span>`,
   ended: `<span class="none">증정 종료</span>`,
-  secret: `<span class="flag">특전 있음 · 구성 비공개</span>`,
+  secret: `<span class="info">특전 있음 · 구성 비공개</span>`,
   // 판매처가 상품명에 특전을 달아뒀지만(뮤직플랜트 [특전증정/…], 애플뮤직 [애플특전])
   // 내용은 못 읽은 경우. "특전 없음"과 절대 섞으면 안 된다 — 정반대 정보다.
-  listed: `<span class="flag">특전 있음 · 상품명에만 표기</span>`,
+  listed: `<span class="info">특전 있음 · 상품명에만 표기</span>`,
   // `.none`이 아니라 `.unk`다. "없다"(단정)와 "모른다"(확인 실패)가 같은 회색이면
   // 우리가 확인 못한 것을 판매처가 안 준다고 읽게 된다 — 정확히 반대 방향의 거짓말이다.
   unknown: `<span class="unk">특전 미표기</span>`,
@@ -1182,9 +1193,17 @@ function wikiIndex(html) {
       : '';
   return { body, toc };
 }
+/**
+ * 표 칸에 들어갈 만큼 줄인 배송 사유. 원문은 shipping.mjs(수집 레인 소유)에 그대로 두고
+ * 화면용 낱말만 여기서 바꾼다 — `배송지에 따라 다름`은 열두 자라 배송 칸에 안 들어간다.
+ * 표와 조합 내역 두 곳에서 쓰므로 모듈 바깥에 둔다.
+ */
+const shortWhy = (w) =>
+  ({ '배송지에 따라 다름': '배송지별', '금액 미확인': '미확인', '무료배송 상품': '무료' })[w] || w || '미확인';
+
 const benefitCell = (i) => {
   if ((i.benefit || []).length) return (i.benefit || []).map((b) => `<div>${esc(b).slice(0, 320)}</div>`).join('');
-  return STATUS[i.benefitStatus] ?? (i.benefitFlag ? '<span class="flag">특전 있음 (내용 미파싱)</span>' : STATUS.unknown);
+  return STATUS[i.benefitStatus] ?? (i.benefitFlag ? '<span class="info">특전 있음 (내용 미파싱)</span>' : STATUS.unknown);
 };
 const money = (i) =>
   i.price == null ? '—' : i.currency === 'USD' ? `$${i.price.toLocaleString()}` : `${i.price.toLocaleString()}원`;
@@ -1644,7 +1663,9 @@ export function renderAlbum({
       const shipOf = (i) => feeFor(i.retailer, i.price ?? 0, i.freeShipping === true);
       const shipCell = (i) => {
         const f = shipOf(i);
-        if (f.fee == null) return `<span class="flag">${esc(f.why || '미확인')}</span>`;
+        // 표의 배송 칸은 좁다. shipping.mjs의 설명문을 그대로 넣으면 열두 자가 들어간다.
+        // 원문은 건드리지 않고(수집 레인 소유) 화면용 낱말로만 줄인다.
+        if (f.fee == null) return `<span class="soft">${esc(shortWhy(f.why))}</span>`;
         const v = f.fee === 0 ? '<span class="ok2">무료</span>' : won(f.fee);
         return `${v}${f.unknown ? '<span class="est">추정</span>' : ''}`;
       };
@@ -1880,7 +1901,7 @@ ${tabs
 <div class="dlc">${won(b.subtotal)}</div>
 <div class="dlm">배송 ${
           b.fee == null
-            ? `<span class="flag">${esc(b.why || '금액 미확인')}</span>`
+            ? `<span class="soft">${esc(shortWhy(b.why))}</span>`
             : b.fee === 0
               ? '무료'
               : won(b.fee)
@@ -1941,7 +1962,7 @@ ${tabs
     const singleRows =
       fullRows +
       (partRows
-        ? `</ol><p class="partnote">아래는 ${opt.versions}종을 다 갖추지 못하는 곳입니다 — 금액이 낮은 건 덜 사기 때문입니다.</p><ol class="rks">${partRows}`
+        ? `</ol><p class="partnote">일부만 취급 — 덜 사서 금액이 낮습니다</p><ol class="rks">${partRows}`
         : '');
     optHtml = `<h2>최저가 조합 <span class="one">${opt.versions}종</span></h2>
 ${
@@ -1959,15 +1980,10 @@ ${/**
    * 원칙을 지키려면 화면도 그렇게 보여야 한다 — 줄을 내리고 조건을 같이 적는다.
    */ ''}
 <div class="best"><span class="bl">최저가</span><b class="bv">${won(opt.best.sum)}</b>${
-      opt.best.unknown ? '<span class="flag">일부 미확인</span>' : ''
+      opt.best.unknown ? '<span class="soft">일부 미확인</span>' : ''
     }<span class="bm">상품 ${won(opt.best.goods)} · 배송 ${
       opt.best.ship ? won(opt.best.ship) : '무료'
     }</span></div>
-${
-      opt.best.coupon
-        ? `<p class="pol"><b>쿠폰 −${won(opt.best.coupon)}</b>는 위 금액에서 빼지 않았습니다 — 판매처에서 <b>직접 "받기"를 눌러야</b> 하고 기간 한정 행사입니다.</p>`
-        : ''
-    }
 ${/* 최저 조합이 한 곳뿐이면 아래 순위 1위와 글자 하나까지 같아진다. 같은 걸 두 번 보여주지 않는다. */ ''}
 ${opt.best.breakdown.length > 1 ? `<div class="bds">${bd}</div>` : ''}
 ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
