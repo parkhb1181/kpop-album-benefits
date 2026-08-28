@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. 14:07:47",
+  "stamp": "2026. 8. 28. 14:16:16",
   "albums": [
     {
       "artistId": 308,
@@ -56,6 +56,33 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg"
     },
     {
+      "artistId": 215,
+      "artistEn": "JISOO",
+      "album": "CLICK",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-09-04",
+      "weversePriceMin": 18000,
+      "artist": "JISOO",
+      "slug": "jisoo-click",
+      "versions": 4,
+      "retailers": 7,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-04T13:00:00+09:00",
+        "rough": "6일 22시간"
+      },
+      "rowCount": 21,
+      "artistKo": "지수",
+      "artistDisplay": "지수(JISOO)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
+    },
+    {
       "artistId": 306,
       "artistEn": "TUIDE",
       "album": "TUNE & PLAY",
@@ -74,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "5시간 0분"
+        "rough": "4시간 43분"
       },
       "rowCount": 46,
       "artistKo": "튜이드",
@@ -104,87 +131,6 @@
         "rough": "9일 9시간"
       },
       "rowCount": 30,
-      "artistKo": "민호(MINHO)",
-      "artistDisplay": "민호(MINHO)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/AoXSUS.jpg"
-    },
-    {
-      "artistId": 215,
-      "artistEn": "JISOO",
-      "album": "CLICK",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-09-04",
-      "weversePriceMin": 18000,
-      "artist": "JISOO",
-      "slug": "jisoo-click",
-      "versions": 4,
-      "retailers": 6,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-04T13:00:00+09:00",
-        "rough": "6일 22시간"
-      },
-      "rowCount": 18,
-      "artistKo": "지수",
-      "artistDisplay": "지수(JISOO)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
-    },
-    {
-      "artistId": 306,
-      "artistEn": "TUIDE",
-      "album": "TUNE & PLAY",
-      "skuCount": 6,
-      "benefit": true,
-      "deliveryDate": "2026-08-27",
-      "weversePriceMin": 12100,
-      "artist": "TUIDE",
-      "slug": "tuide-tune-play",
-      "versions": 6,
-      "retailers": 5,
-      "benefitCount": 2,
-      "soldCount": 3,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-08-28T19:00:00+09:00",
-        "rough": "4시간 51분"
-      },
-      "rowCount": 39,
-      "artistKo": "튜이드",
-      "artistDisplay": "튜이드(TUIDE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/db3a5e0875ca71044707658a99fb90a7.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
-    },
-    {
-      "artistId": 130,
-      "artistEn": "SHINee",
-      "album": "Make it hot",
-      "skuCount": 5,
-      "benefit": true,
-      "deliveryDate": "2026-09-07",
-      "weversePriceMin": 13900,
-      "artist": "SHINee",
-      "slug": "shinee-make-it-hot",
-      "versions": 6,
-      "retailers": 5,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "9일 9시간"
-      },
-      "rowCount": 25,
       "artistKo": "민호(MINHO)",
       "artistDisplay": "민호(MINHO)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
@@ -263,13 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "4시간 47분"
+        "rough": "4시간 39분"
       },
       "rowCount": 51,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/NYZsXf.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg"
     },
     {
       "artistId": 207,
@@ -439,16 +385,16 @@
       "weversePriceMin": 36703,
       "artist": "EVAN",
       "slug": "evan-death-of-me-weverse-exclusive",
-      "versions": 5,
-      "retailers": 1,
+      "versions": 6,
+      "retailers": 2,
       "benefitCount": 0,
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": null,
-      "rowCount": 6,
-      "artistKo": null,
-      "artistDisplay": "EVAN",
+      "rowCount": 12,
+      "artistKo": "에반",
+      "artistDisplay": "에반(EVAN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
     },
