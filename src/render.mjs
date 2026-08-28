@@ -4,6 +4,7 @@ import { googleUrl } from './ics.mjs';
 import { roughLeft } from './deadlines.mjs';
 import { choseong, searchKey } from './hangul.mjs';
 import { feeFor } from './shipping.mjs';
+import { BASE_CSS } from './theme.mjs';
 
 export const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -26,11 +27,7 @@ const CSS = `
    **다크모드는 두지 않는다.** 배경은 항상 흰색이다.
    커버가 화면의 색을 담당하는 구조라 바닥이 어두워지면 그 전제가 흔들리고,
    흰 배경 상품 사진들이 검은 바닥 위에 뜬 흰 사각형으로 보인다. 29CM도 경쟁사도 다크모드가 없다. */
-:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#8a8a8a;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
-html{color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
-font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif}
+${BASE_CSS}
 h2{font-size:1rem;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:0.875rem;color:var(--mut);margin:24px 0 8px;font-weight:600}
 .pk{font-weight:500;color:var(--mut);font-size:0.875rem}
@@ -267,8 +264,7 @@ a.tg{border-bottom:0;color:var(--fg);font-weight:600}
    outline:none 하나뿐이라 Tab으로 훑으면 지금 어디인지 알 수 없었다(WCAG 2.4.7).
    마우스에는 안 보이고 키보드에만 보이는 :focus-visible로 되살린다.
    카드는 투명 링크(.go)가 덮고 있어 링크 자체에 링을 그리면 카드 밖으로 삐져나가므로
-   카드에 그린다. */
-:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+   카드에 그린다. 기본 링은 theme.mjs의 FOCUS에 있고, 여기는 예외만 덧붙인다. */
 .card:has(.go:focus-visible),.lead:has(a:focus-visible){outline:2px solid var(--fg);outline-offset:2px}
 .go:focus-visible,.ls:focus-visible{outline:0}
 .gnav:focus-visible,.lnav:focus-visible{outline:2px solid #fff;outline-offset:1px}

@@ -62,12 +62,15 @@ GitHub Actions에서 돈다(판매처가 클라우드 IP를 막을 수 있어서
 
 | 레인 | 소유 | 금지 |
 |---|---|---|
-| **프론트** | `src/render.mjs` · `src/ogcard.mjs` · `src/seo.mjs` | `src/` 수집기, `build.mjs` |
+| **프론트** | `src/render.mjs` · `src/en.mjs` · `src/theme.mjs` · `src/ogcard.mjs` · `src/seo.mjs` | `src/` 수집기, `build.mjs` |
 | **코드** | `src/` 수집기 전부 · `build.mjs` · `watch.mjs` · `api/` · `.github/` | **`src/render.mjs`** |
 | **홍보** | `docs/` · `README.md` | 코드 전부 |
 
 프론트↔코드 경계는 이미 한 번 돌려본 방식이다 — `docs/38-수집단계-인계.md`가
 "프론트에서 못 고치는 것"을 프롬프트째로 수집 레인에 넘긴 문서다.
+
+**표에 없는 파일을 새로 만들면 표에 추가한다.** 소유자 없는 파일이 병렬에서
+제일 먼저 충돌한다. `src/theme.mjs`(국내·영문 공용 CSS 바닥)가 그래서 여기 있다.
 
 ---
 
