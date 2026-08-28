@@ -1,7 +1,7 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>민호(MINHO) Make it hot 판매처별 특전 | 버전·구성·가격</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Crect%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%224.6%22%20fill%3D%22%23c2410c%22%2F%3E%3Cg%20fill%3D%22%23fafafa%22%3E%3Crect%20x%3D%224.2%22%20y%3D%224.2%22%20width%3D%222.4%22%20height%3D%2211.6%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%224.2%22%20width%3D%2211.6%22%20height%3D%222.4%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%228.8%22%20width%3D%228.4%22%20height%3D%222.4%22%2F%3E%3Crect%20x%3D%224.2%22%20y%3D%2213.4%22%20width%3D%2210.2%22%20height%3D%222.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%229.6%22%20fill%3D%22currentColor%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%22.5%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%228.3%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227.2%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%226.1%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%223.5%22%20fill%3D%22%23fff%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%22.62%22%20fill%3D%22currentColor%22%2F%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&text=%ED%8A%B9%EC%A0%84%EB%85%B8%ED%8A%B8&display=swap">
 <link rel="preconnect" href="https://media.ktown4u.com" crossorigin><link rel="preconnect" href="https://image.aladin.co.kr" crossorigin>
 <meta name="naver-site-verification" content="57715d7af3e8b922357db2854c0ae8e0fb2eba37">
@@ -196,6 +196,9 @@ border:0;border-radius:2px;padding:8px 12px;cursor:pointer;display:inline-flex;a
 .vtp{font-weight:400;opacity:.7}
 .vtd{font-size:0.6875rem;font-weight:700;color:var(--acc)}
 .vt.on .vtd{color:var(--bg);opacity:.75}
+/* 판매처 한 곳뿐인 탭이 너무 납작하면 탭을 잘못 눌렀나 싶어진다. 바닥만 깐다 —
+   가장 큰 탭에 맞추는 것과는 다르다(실측 1,201px 공백 대 88px 공백). */
+.vp{min-height:296px}
 .vp+.vp{margin-top:clamp(32px,4vw,56px)}
 .vp>h3,.pp>h3{margin-top:0}
 
@@ -309,23 +312,15 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
-/* 히어로 — 격자 위 별도 섹션. 크기로 외치는 대신 **왜 여기 있는지**를 한 줄로 적는다.
-   위계는 29CM 상단 실측을 우리 눈금(11/12/14/16/20)에 맞춘 것이다:
-   22px/700 제목 → 15px/400 부제 → 11px/700 브랜드  ⇒  20px 앨범명 → 12px 아티스트 → 11px 이유. */
-.feat{position:relative;display:flex;gap:clamp(16px,2.4vw,28px);align-items:center;
-padding-bottom:clamp(20px,2.6vw,28px);margin-bottom:clamp(20px,2.6vw,28px);
-border-bottom:2px solid var(--fg)}
-.fgo{position:absolute;inset:0;z-index:1;border:0}
-.fcv{width:clamp(132px,26vw,260px);height:auto;aspect-ratio:1;object-fit:cover;display:block;
-background:var(--card);flex:0 0 auto}
-.fm{flex:1 1 200px;min-width:0}
-.frs{font-size:0.6875rem;font-weight:700;color:var(--acc);margin:0 0 6px}
-.falb{font-size:1.25rem;font-weight:700;line-height:1.3;letter-spacing:-.01em;
-margin:0 0 4px;padding:0;border:0;color:var(--fg);display:block}
-.fart{font-size:0.75rem;font-weight:600;color:var(--mut);margin:0 0 10px}
-.ffc{font-size:0.75rem;color:var(--mut);margin:0;font-variant-numeric:tabular-nums}
-.ffd{font-size:0.75rem;color:var(--mut);margin:4px 0 0;font-variant-numeric:tabular-nums}
-.ffd b{color:var(--acc)}
+/* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
+   오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
+   글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
+@media(min-width:560px){
+.cards .lead{grid-column:span 2;grid-row:span 2}
+.cards .lead .cvt{padding:56px 18px 18px}
+.cards .lead .cvt .cval{font-size:1.5rem;-webkit-line-clamp:3}
+.cards .lead .cvt .cva{font-size:0.875rem;margin-bottom:4px}
+}
 .card{position:relative;min-width:0;border:0;display:block}
 /* 카드가 li, 앨범명이 h2가 됐다. 브라우저 기본 여백·크기만 끄면 생김새는 그대로다. */
 .card>h2{border:0;padding:0;display:block}
@@ -496,7 +491,7 @@ h1{font-size:1.25rem}
   .gal figure{flex:0 0 150px}
 }
 .rl0{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAr8oBkMgTUMwFaMwCfMwEgsIAkcgFhcgAnMgDhscMX8oJYMoAwcsAn8gAvssAzM3JrOWpAAAADXRSTlP++/3+/AXQVZQnvInS7OTUAgAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAbpJREFUeNptkzFLw0AUx98HMKUHIVuW1MlNz8mt9OjgfkhHQUIQndvg3gTsGoprFyH9AIVOfgBRs3TyxE9w/QaN771LagVv/OX3fy959wJ6NImFf7sqtNZX+QscJamGQzifvYDHcJ5fC3+4TDU+ZpgV8ISiUOoS1fnsDQA2SQrjqRC+UnKZjiav9hs8s8kgn5Io5clqPHuzFsBsEoivkQ3kWVTmrzWaxlSxgxLhyd17jaJnKgFUkcSo36l3lGZIXWQU9brb2lK8Iqj2Ys3NjRCgnHjcrRFynCGLpyjuGjOAA9HBEF/pV2zSJshh0LZuYRVkINvW+5I4kH/EApD9EQMaMqZZ3NkGZoWm7qdf9IXI6M2Hz1qD8VVoUbM8IeNfPKMJVQjbXcvEIMLbAkxZ59EofZzrqnDEdqAVI1ThkJEYoQoNYsZiTy6hOR6FWezJEuCbmKHDYiSlcp7hcCOeM/wgLQxbEaHnUTm6mUaUSsGnK4dnLyqI7w3VEyIuW1EwJE8k60Ujxrh1DsbZeI2MxIT3k8V09LBgES+ON5lE3OS1E1O38yJ4pJ1/KHGJ8LH7O1jEv2N9o/pJqn8AeyZDArEVLjMAAAAASUVORK5CYII=)}.rl1{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXsZqzShp3d3ef3mUfuOJf8rxj+/f5YdKbqK49Aa7Hvocf21uSEV6XERJzwXG6vfbjeOYJGAAAABHRSTlP8agH3AKHXjQAAAAlwSFlzAAAD6AAAA+gBtXtSawAAAU5JREFUeNpt0bFqwzAQBuALGBPIErJkjt+gQ3ZDj2IIBErp3klDvAZMNg8aRF/ACBIw1C3BhtKlGdI1Qx8gb1D6HpV0suyoucHDh+7XjwzROEAzt492biKYWUP8bXUC49Zw2eI9uINdwEMfcW4VeuYCLhB/rqEN8HB5DamsjybAx2T0coGJ/uTp4bOP+QdHXOzz9AKfuNrOq3AOZ0wEbfNKYRind69wEhigUBM3aSBwsTqG77AbMZbWJdQHxliZiDo4DKGo64a5+SqhWXGQ33qzY5YOEeQOUfCRs2PAEYqtvlq0WgpVForNWSt/M1aZegrXVN3cTpWhyLbUPWdsRaZRmn18Vsgdbk7mZKjW9w6zHT2kqeiQQgVA0K1nVEq9ijXCtfdPNNp9D+U1pFIeUqkeavNCc0Jbyk4M0+xf6ABmBvuh8QSi6UZK2QuNB9EfylcORkCkhDIAAAAASUVORK5CYII=)}.rl2{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEX91dr609gWRkP/2uAMQT2VlZYlT03WvcHry8+4q62kn6HGs7Z9h4dre3s7XVxVbW3dBnHAAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABSElEQVR42mNgGPpAUICRkUGAQUCAUQAuxihswGxgDGQYMCMUCosvbQ+PKu/cujMSrpLR/Jpb6Z8zv/qvnj+zGSbKvM5Jbef90KvrDsetmQwVZLRKUVKbuTy0M3LjVrh2gTonJbcN3OXtO3d372yGigofUVK71WA7tebP37l/iyGCjBxPlFSZGW3Oxv658/IPTNAyReWjIQN7aOT07RGrYIJWSinBjYIMjY3CDIwSMIsYOzouJT23SEu6aOqWNhkuav5E5YWpk8pheSc3hONlnFQuA921OUjJrwEmWHVJSenqIyW1mCQlH0NYcCxzUvL7oqSkn6Kk8pwRJhikpPLyi5LKzRQlt8Uw3cKLlPw2flHR7U5SyUKEZpDbcYsvegstU3LhdjMIbF1uzLh0hgF71EZDpCgyFgTGhCADs4EASrwxMALFQXjIAwB9gWUtVuaT6gAAAABJRU5ErkJggg==)}.rl3{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAAAARGw0AAAAAAAAAAQBkq0X+/v5ptEg3RjBKfjNamz7p6emysrHMzMxnZ2ecnJwrT1cLAAAABHRSTlMD9F62FdF0GwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAT1JREFUeNpt079Kw0AcB/CzT6CYouDSwRcQfIG0N6SCSsFw0s3li4OOIZpNCPWGLkJBHQWl1Fl8AnHqnEfIExQnB3N/frnY3He6fLjL7y73C2Osc8Ab2e6xKp2A/0uodJ+vpV9N5K302EYbN9ur1fpDGkbP74s7PRowqj2cp2maPOj6jObNY5V0ph4I72OTLHAYJRbFi0OaGMe3Dt9qFDlhvbrKK+GRs/iGcMespJcyV0csNI4JH82UrtagiWemniAMt6oEa2ijN1Hj7zKfLleRPsLY4gmQF/gYJs0t7QEShLT5H2Ba48hgBOCbUMwMHkPHYGY/XdnEkcHwEwVgqyf2Ok5xVeJ6olHfhsIJLkpcakzPucUCqxJfCrMnc9yqGaTku5JHMghtY4SubVwG/gbztqK3ab3t7f8RPL/MH0ct9qM4BKMvAAAAAElFTkSuQmCC)}.rl4{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEXtGyNMaXHkBBjtGyPzHCTuGiPsGiLvGyPsGiLxGyPtGiLqGiHlGSLtHCT9HSb3HSU3Q5U5AAAADXRSTlP8AAOi/IgpzlHpakERsG5xLgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYlJREFUeNp9kz1LA0EQhqcIWG2OXTAGtdmA9iJpJEgKCyN4IgGxEuNHYWcvGgRtLPQHGBQFwSoQsLFMkX4LG4slgqaIxSWFEFEUd3fmYi4R3+Ju7rmb3bl3ZoFbpXjiJJ++3TCBFdiL4Nu730HQGlpBaqGQm/EvMKq/7HFJUE74CrQRQCsjEIrEATCNgmZFOijv2yHT2lsQFoqxuV+m1dKVNFDuZHWP2LywXxZZL1S5ggQx/KQjik9xkFsqCtW7ADmL2QqoLtWRkGAYsyDIYuQdAi0JzXT+QtGiMNJ2UT3DeQ0LjpVg3b1WHzyVkkcYf8IZwxTjmRh1S6kGlC1UjwVrGf6HeoY1vFvHuKQHcGWqBsLyX/D0v3TMyFUdDDeikpbN7iLZJojFG2tN8Wi3gfib6uGa8+QlI0iGxDqrx0Xsi4GhdV4QUFMNHDDZwTvdJwMHGmchH4+2GGHfMCCMjg1BO2CD0I5iBL66oa350IO9Eo23vwhdvVXCg7AfdHUugI7M5M00aaYqfwCMlrmQEEXoZgAAAABJRU5ErkJggg==)}.rl5{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEUAy9X///8AyNIEzNb9///5/v5p4ObQ9fgo09xC2eCt7/Lo+/sXz9iQ6e1W3eOA5epcpnLSAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAUlEQVR42mNgGBzAgBlTjEnZSAFDUHN51SQMhR9dXOTRlDLrCa57JfjIAFlMSYldVknpYoGSEpK6jo6pnh0dUyI7OgwQekUEXVwEQdgRbgKzmqigoyAQiAgGJiEJuriIuLg4irigCIo4OoqGiISgqhR0dcTULtWT6DZdfroIiqCswuk96hK6oqjaF7UUnPbQDEQRdFw0cdHRzUwfUQQDLyUmNS46uRBVZVKWUXtTIqr2wE9Mh5U0Njqiqtx5bv+JbDR3CooEOoaKOCILagJDScRFEBhQjpMQYVcY4gIGruKIsGeaLSIIBo47kaJJ43o5GNQ2IUcSVAETavKAGs4wWAEAf3lOYK3zwV0AAAAASUVORK5CYII=)}</style></head><body><header class="hd"><div class="hdrow">
-<a class="brand" href="../index.html"><svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect width="20" height="20" rx="4.6" fill="#c2410c"/><g fill="#fafafa"><rect x="4.2" y="4.2" width="2.4" height="11.6"/><rect x="4.2" y="4.2" width="11.6" height="2.4"/><rect x="4.2" y="8.8" width="8.4" height="2.4"/><rect x="4.2" y="13.4" width="10.2" height="2.4"/></g></svg><span class="bd">특전노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></a>
+<a class="brand" href="../index.html"><svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="9.6" fill="currentColor"/><g fill="none" stroke="#fff" stroke-width=".5"><circle cx="10" cy="10" r="8.3"/><circle cx="10" cy="10" r="7.2"/><circle cx="10" cy="10" r="6.1"/><circle cx="10" cy="10" r="5"/></g><circle cx="10" cy="10" r="3.5" fill="#fff"/><circle cx="10" cy="10" r=".62" fill="currentColor"/></svg><span class="bd">특전노트</span><span class="tl">K-POP 앨범 판매처별 특전</span></a>
 <span class="hdm">8월 28일 갱신</span>
 </div></header>
 
@@ -837,7 +832,7 @@ b.setAttribute('tabindex',i===n?'0':'-1');
 }
 showTab=show;
 /* 탭을 누르면 그 버전의 첫 사진으로 갤러리를 옮긴다. */
-function pick(i){show(i);if(goToVer&&!sync){sync=true;goToVer(i);sync=false}}
+function pick(i){show(i);if(goToVer&&!sync){sync=true;goToVer(i);sync=false}keepTabsInView()}
 bs.forEach(function(b,i){
 b.addEventListener('click',function(){pick(i)});
 /* 화살표키 이동 — role=tab을 붙인 이상 이게 없으면 키보드로는 첫 탭에 갇힌다. */
@@ -944,27 +939,20 @@ m.querySelectorAll('img').forEach(function(im){if(!im.complete)im.addEventListen
 addEventListener('load',place);place();
 mark();
 });
-/* 탭·포장을 옮길 때마다 표 높이가 달라져 아래 섹션이 튄다.
-   모든 (탭 × 포장) 조합을 재서 가장 높은 것에 바닥을 맞춘다.
-   이미지가 없는 표라 높이가 로딩에 흔들리지 않는다. */
-function levelPanels(){
-var ps=[].slice.call(document.querySelectorAll('.vp'));
-if(ps.length<2)return;
-var prev=ps.map(function(p){return p.style.display}),max=0;
-ps.forEach(function(p){
-p.style.minHeight='';p.style.display='';
-var pps=[].slice.call(p.querySelectorAll('.pp'));
-if(!pps.length){if(p.offsetHeight>max)max=p.offsetHeight;return}
-var pp=pps.map(function(x){return x.style.display});
-pps.forEach(function(x,j){
-pps.forEach(function(y,k){y.style.display=k===j?'':'none'});
-if(p.offsetHeight>max)max=p.offsetHeight;
-});
-pps.forEach(function(x,j){x.style.display=pp[j]});
-});
-ps.forEach(function(p,i){p.style.display=prev[i];p.style.minHeight=max+'px'});
+/* **모든 탭을 가장 큰 탭에 맞추지 않는다.**
+   디자인 시스템들은 그렇게 하라고 하지만(Carbon·CMS) 그건 탭끼리 크기가 비슷할 때 얘기다.
+   실측: 튜이드 5개 탭의 자연 높이가 1409·312·273·230·208px다. 가장 큰 것에 맞추면
+   제일 짧은 탭이 내용 208px에 여백 1,201px(85%)이 된다.
+   그리고 애초에 **탭 줄은 안 움직인다** — 갤러리도 탭도 패널 위에 있어서, 바뀌는 건
+   표 아래 섹션들뿐이다(실측: 탭을 옮겨도 탭 줄 y=1347 고정). 막아주는 게 없는데
+   1,201px을 내주는 셈이었다.
+   대신 탭이 화면 밖으로 밀려났을 때만 되돌린다 — 긴 탭에서 짧은 탭으로 갈 때
+   문서가 짧아지면서 브라우저가 스크롤을 끌어올리는 게 진짜 튀는 순간이다. */
+function keepTabsInView(){
+var t=document.querySelector('.vtabs');if(!t)return;
+var r=t.getBoundingClientRect();
+if(r.top<0)t.scrollIntoView({block:'start'});
 }
-var lvl;addEventListener('resize',function(){clearTimeout(lvl);lvl=setTimeout(levelPanels,150)});
 
 /* 포장(낱개·세트) — 탭 안의 하위 선택. 탭을 둘로 쪼개는 대신 여기서 고른다. */
 document.querySelectorAll('.psw').forEach(function(sw){
@@ -976,8 +964,7 @@ sw.querySelectorAll('.pb').forEach(function(x,i){x.className=i===n?'pb on':'pb'}
 sw.querySelectorAll('.pb').forEach(function(b,i){b.addEventListener('click',function(){pick(i)})});
 pick(0);
 });
-levelPanels();
 })();
 </script>
 
-<p class="stamp">최근 수집 <b>2026. 8. 28. 09:06:53</b></p></body></html>
+<p class="stamp">최근 수집 <b>2026. 8. 28. 09:18:41</b></p></body></html>
