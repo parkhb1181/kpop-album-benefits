@@ -185,7 +185,16 @@ export const decodeEntities = (s) =>
  * 아니라 상대 쪽이 망가진 것이라 더 풀어봐야 의미가 없기 때문이다.
  */
 export const strip = (h) => {
-  let s = (h || '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '');
+  let s = (h || '')
+    // 태그만 지우면 <script> **안의 코드가 본문으로 남는다.** 실측 —
+    // 알라딘 상세에서 특전 문구가 `알라딘 특전: emEventSwiper; } 이벤트 이벤트 TXT 미니 8집 …`
+    // 으로 저장돼 있었다(8건). 주석도 `>`를 품고 있으면 태그 규칙으로 안 지워진다.
+    // 위버스는 raw HTML에서 __NEXT_DATA__를 따로 뽑으므로 여기서 지워도 안전하다.
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<[^>]+>/g, '');
   for (let i = 0; i < 3; i++) {
     const next = decodeEntities(s);
     if (next === s) break;

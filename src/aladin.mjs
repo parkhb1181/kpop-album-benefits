@@ -85,6 +85,10 @@ export async function detail(itemId) {
     const after = what.match(/알라딘\s*특전\s*(.+)$/);
     if (after) what = after[1].trim();
     else what = what.replace(/^.*?고객분들께\s*(?:각\s*앨범당\s*)?/, '').trim();
+    // 상세 페이지의 탭 라벨이 앞에 딸려온다 — `이벤트 이벤트 [SET] TXT 미니 8집 …`
+    what = what.replace(/^(?:이벤트|특전|혜택|안내)(?:\s+(?:이벤트|특전|혜택|안내))*\s*/, '').trim();
+    // 위 정규식이 80자에서 끊으면 여는 괄호가 잘려 `) 구매 시 포스터`처럼 시작한다
+    what = what.replace(/^[)\]\s·,]+/, '').trim();
     const per = /각\s*앨범당/.test(m1[1]) ? ' (각 앨범당)' : '';
     const when = m1[2].replace(/\s+/g, ' ').trim();
     benefit.push(`알라딘 특전: ${what}${per} · 기간 ${when}`);
