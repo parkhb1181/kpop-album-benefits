@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-08-27T23:04:04.200Z",
-  "lastDeep": "2026-08-27T23:04:04.200Z",
+  "checkedAt": "2026-08-28T06:48:54.585Z",
+  "lastDeep": "2026-08-28T06:48:54.585Z",
   "events": [
     {
       "id": 20277,
@@ -26,6 +26,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_21041_SOYEON_2_Banner_Thumb.png_2026-08-27_125013221353_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20269,
+      "url": "https://makestar.co/event/20269",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' (COMPACT ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' (COMPACT ver.) SPECIAL GIVEAWAY EVENT",
+      "album": "2nd Single Album 'Made My Night'",
+      "albumEn": "2nd Single Album 'Made My Night'",
+      "artist": "르세라핌",
+      "artistEn": "LE SSERAFIM",
+      "releaseDate": "2026-09-11",
+      "from": "2026.08.28",
+      "to": "2026.09.10",
+      "startAt": "2026-08-28T11:00:00+09:00",
+      "endAt": "2026-09-10T23:59:59.999999+09:00",
+      "dday": 14,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11042,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_2_banner_sub.png_2026-08-27_100314473842.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_2_banner_sub.png_2026-08-27_100314473842_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20268,
+      "url": "https://makestar.co/event/20268",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT 발매기념 특전 증정 이벤트",
+      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT SPECIAL GIVEAWAY EVENT",
+      "album": "2nd Single Album 'Made My Night'",
+      "albumEn": "2nd Single Album 'Made My Night'",
+      "artist": "르세라핌",
+      "artistEn": "LE SSERAFIM",
+      "releaseDate": "2026-09-11",
+      "from": "2026.08.28",
+      "to": "2026.09.10",
+      "startAt": "2026-08-28T11:00:00+09:00",
+      "endAt": "2026-09-10T23:59:59.999999+09:00",
+      "dday": 14,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11042,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663_thumb.jpeg"
       }
     },
     {
@@ -55,6 +107,32 @@
       }
     },
     {
+      "id": 20171,
+      "url": "https://makestar.co/event/20171",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) VIDEO CALL EVENT",
+      "titleEn": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) VIDEO CALL EVENT",
+      "album": "3rd Single [SWEAT]",
+      "albumEn": "3rd Single [SWEAT] ",
+      "artist": "키스오브라이프",
+      "artistEn": "KISS OF LIFE",
+      "releaseDate": "2026-08-04",
+      "from": "2026.08.28",
+      "to": "2026.08.30",
+      "startAt": "2026-08-28T15:00:00+09:00",
+      "endAt": "2026-08-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.08.31",
+      "productId": 10907,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_9_Thumb.jpg_2026-08-27_105918462807.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_9_Thumb.jpg_2026-08-27_105918462807_thumb.jpeg"
+      }
+    },
+    {
       "id": 20167,
       "url": "https://makestar.co/event/20167",
       "type": "PHOTOCARD",
@@ -78,6 +156,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20146,
+      "url": "https://makestar.co/event/20146",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.2",
+      "titleEn": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.2",
+      "album": "4TH MINI ALBUM [Off the Grid]",
+      "albumEn": "4TH MINI ALBUM [Off the Grid]",
+      "artist": "루네이트",
+      "artistEn": "LUN8",
+      "releaseDate": "2026-07-22",
+      "from": "2026.08.28",
+      "to": "2026.08.30",
+      "startAt": "2026-08-28T14:00:00+09:00",
+      "endAt": "2026-08-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.08.31",
+      "productId": 10889,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_2_Sub.png_2026-08-25_173201902703.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_2_Sub.png_2026-08-25_173201902703_thumb.jpeg"
       }
     },
     {
@@ -393,6 +497,32 @@
       }
     },
     {
+      "id": 19773,
+      "url": "https://makestar.co/event/19773",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "TOMORROW X TOGETHER 7TH YEAR: A Moment of Stillness in the Thorns GLOBAL LUCKY DRAW EVENT part.2",
+      "titleEn": "TOMORROW X TOGETHER 7TH YEAR: A Moment of Stillness in the Thorns GLOBAL LUCKY DRAW EVENT part.2",
+      "album": "7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때",
+      "albumEn": "7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때",
+      "artist": "투모로우바이투게더",
+      "artistEn": "TOMORROWXTOGETHER",
+      "releaseDate": "2026-04-13",
+      "from": "2026.08.28",
+      "to": "2026.09.02",
+      "startAt": "2026-08-28T12:00:00+09:00",
+      "endAt": "2026-09-02T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10361,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10361_TOMORROWXTOGETHER_24_Banner_Sub.jpg_2026-08-24_112525942432.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10361_TOMORROWXTOGETHER_24_Banner_Sub.jpg_2026-08-24_112525942432_thumb.jpeg"
+      }
+    },
+    {
       "id": 19729,
       "url": "https://makestar.co/event/19729",
       "type": "PHOTOCARD",
@@ -599,6 +729,11 @@
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
+    },
+    {
+      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
+      "artist": "EVAN",
+      "album": "1st Mini Album 'DEATH OF ME'"
     },
     {
       "key": "EVAN｜DEATH OF ME (Weverse Exclusive)",
