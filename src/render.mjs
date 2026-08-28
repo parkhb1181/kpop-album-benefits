@@ -2224,6 +2224,15 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
     {
       description: desc.slice(0, 160),
       canonical: slug ? abs(siteUrl, `album/${slug}`) : null,
+      // 영어판(/en/)과 짝을 선언한다. 이게 없으면 구글이 두 페이지를 **중복**으로 보고
+      // 한쪽을 버린다 — 같은 앨범의 같은 표라 내용이 겹치기 때문이다.
+      // x-default는 seo.mjs가 ko 쪽으로 건다(데이터 원본이 국내 판매처다).
+      alternates: slug
+        ? [
+            { lang: 'ko', href: abs(siteUrl, `album/${slug}`) },
+            { lang: 'en', href: abs(siteUrl, `en/album/${slug}`) },
+          ]
+        : undefined,
       image: ogImage,
       type: 'article',
       jsonLd: [albumJsonLd({ artistName, target, rows, groups, siteUrl, slug, expired }), faqJsonLd(faq)],
@@ -2496,6 +2505,10 @@ ${albums.some((a) => a.nextDeadline) ? CD_JS : ''}${albums.length >= 8 ? FIND_JS
         `${names ? `${names} 등. ` : ''}${shortDate(stamp)} 기준.`
       ).slice(0, 160),
       canonical: abs(siteUrl, ''),
+      alternates: [
+        { lang: 'ko', href: abs(siteUrl, '') },
+        { lang: 'en', href: abs(siteUrl, 'en/') },
+      ],
       // 홈은 X 프로필에 걸리는 URL인데, 여기서 판매처 CDN 원본을 그대로 물고 있었다.
       // 실측: 위버스샵 720×1525 세로 상세컷 — 1.91:1 카드에서 잘리거나 썸네일로 떨어진다.
       // 게다가 남의 CDN 핫링크라 저쪽이 URL을 바꾸면 그날로 깨진다.

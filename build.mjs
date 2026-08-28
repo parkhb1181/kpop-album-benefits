@@ -2,6 +2,7 @@ import { writeFileSync, mkdirSync, rmSync, readFileSync, existsSync, readdirSync
 import { matchesAlbum, matchesAlbumLoose, hostReport } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
+import { renderEnAlbum, renderEnIndex } from './src/en.mjs';
 import { sitemap, robots, koreanArtistFrom, displayArtist, abs } from './src/seo.mjs';
 import { renderCard, hashesFor } from './src/ogcard.mjs';
 import * as kt from './src/ktown4u.mjs';
@@ -294,6 +295,8 @@ mkdirSync('./out/album', { recursive: true });
 mkdirSync('./out/data', { recursive: true });
 mkdirSync('./out/alarm', { recursive: true });
 mkdirSync('./out/og', { recursive: true });
+// 영어판. 국내판과 **같은 스냅샷**을 쓰고 렌더만 다르다 — 스크레이퍼도 빌드도 하나다.
+mkdirSync('./out/en/album', { recursive: true });
 
 // 카드는 내용이 바뀐 앨범만 다시 굽는다. 이유는 ogcard.mjs의 hashesFor 주석 참고.
 const cardHashes = hashesFor('./out/og');
@@ -467,6 +470,20 @@ for (const a of gone) {
   try {
     const d = JSON.parse(readFileSync(`./out/data/${a.slug}.json`, 'utf8'));
     const expired = { lastSeen: shortStamp(a.expired?.lastSeen || d.stamp || prev.stamp) };
+    const enOgCard = SITE_URL && existsSync(`./out/og/${a.slug}.png`) ? abs(SITE_URL, `og/${a.slug}.png`) : null;
+    writeFileSync(
+      `./out/en/album/${a.slug}.html`,
+      renderEnAlbum({
+        slug: a.slug,
+        target: d.target,
+        rows: d.rows,
+        stamp,
+        siteUrl: SITE_URL,
+        ogCard: enOgCard,
+        shortDate: shortStamp(stamp),
+      }),
+      'utf8'
+    );
     writeFileSync(
       `./out/album/${a.slug}.html`,
       renderAlbum({
@@ -540,6 +557,11 @@ catalog.sort(
     b.versions - a.versions
 );
 writeFileSync(
+  './out/en/index.html',
+  renderEnIndex({ albums: catalog, stamp, siteUrl: SITE_URL, shortDate: shortStamp(stamp) }),
+  'utf8'
+);
+writeFileSync(
   './out/index.html',
   renderIndex({ albums: catalog, stamp, siteUrl: SITE_URL, vapidPublicKey: VAPID_PUBLIC_KEY }),
   'utf8'
@@ -563,6 +585,14 @@ if (SITE_URL) {
         a.expired
           ? { path: `album/${a.slug}`, lastmod: a.expired.lastSeen || today, changefreq: 'monthly', priority: '0.3' }
           : { path: `album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.8' }
+      ),
+      // 영어판(/en/). hreflang 으로 국내판과 짝지어져 있어도 **사이트맵에 없으면 색인이 늦다**.
+      // 우선순위는 국내판보다 한 칸 낮춘다 — 데이터 원본이 국내 판매처이고 국내판이 정본이다.
+      { path: 'en/', lastmod: today, changefreq: 'daily', priority: '0.9' },
+      ...catalog.map((a) =>
+        a.expired
+          ? { path: `en/album/${a.slug}`, lastmod: a.expired.lastSeen || today, changefreq: 'monthly', priority: '0.2' }
+          : { path: `en/album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.7' }
       ),
     ]),
     'utf8'

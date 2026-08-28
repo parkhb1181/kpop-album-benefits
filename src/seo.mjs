@@ -46,8 +46,19 @@ function verificationTags() {
   return out;
 }
 
-export function metaTags({ title, description, canonical, image, type = 'website' }) {
+/**
+ * @param locale     og:locale. 한국어 페이지는 ko_KR, 영어 페이지는 en_US.
+ * @param alternates hreflang 쌍. [{ lang:'ko', href }, { lang:'en', href }] 형태.
+ *                   x-default 는 한국어로 둔다 — 데이터가 국내 판매처 기준이고
+ *                   언어를 모르는 크롤러에게는 원본 쪽을 보여주는 게 맞다.
+ */
+export function metaTags({ title, description, canonical, image, type = 'website', locale = 'ko_KR', alternates }) {
   const t = verificationTags();
+  for (const a of alternates || []) {
+    if (a?.href) t.push(`<link rel="alternate" hreflang="${esc(a.lang)}" href="${esc(a.href)}">`);
+  }
+  const xd = (alternates || []).find((a) => a.lang === 'ko');
+  if (xd?.href) t.push(`<link rel="alternate" hreflang="x-default" href="${esc(xd.href)}">`);
   if (description) {
     t.push(`<meta name="description" content="${esc(description)}">`);
     t.push(`<meta property="og:description" content="${esc(description)}">`);
@@ -65,7 +76,7 @@ export function metaTags({ title, description, canonical, image, type = 'website
    * 헤더의 브랜드(render.mjs BRAND)와 같은 말이어야 링크를 누른 직후 이름이 안 어긋난다.
    */
   t.push(`<meta property="og:site_name" content="앨범노트">`);
-  t.push(`<meta property="og:locale" content="ko_KR">`);
+  t.push(`<meta property="og:locale" content="${esc(locale)}">`);
   t.push(`<meta name="twitter:title" content="${esc(title)}">`);
   // 이미지가 있으면 큰 카드, 없으면 요약 카드. 없는데 large를 쓰면 빈 상자가 뜬다.
   t.push(`<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}">`);
