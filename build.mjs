@@ -1,5 +1,5 @@
 import { writeFileSync, mkdirSync, rmSync, readFileSync, existsSync, readdirSync } from 'node:fs';
-import { matchesAlbum, matchesAlbumLoose, hostReport } from './src/fetchx.mjs';
+import { matchesAlbum, matchesAlbumLoose, hostReport, clipBenefit } from './src/fetchx.mjs';
 import { discoverPreorders } from './src/discover.mjs';
 import { renderAlbum, renderIndex, slugify } from './src/render.mjs';
 import { renderEnAlbum, renderEnIndex } from './src/en.mjs';
@@ -486,6 +486,21 @@ console.log(`\n지난 인덱스 ${(prev.albums || []).length}개 · 이번 ${ind
 for (const a of gone) {
   try {
     const d = JSON.parse(readFileSync(`./out/data/${a.slug}.json`, 'utf8'));
+    /**
+     * 스냅샷을 한 번 더 훑는다.
+     *
+     * 종료 앨범은 재수집하지 않으므로 **수집기를 고쳐도 옛 오염이 그대로 남는다.**
+     * 실측(2026-08-28) — 엔하이픈·투바투 페이지에 `EventSwiper; }`, `Buy Now [럭키드로우]`,
+     * `85,200원 96,400원 document` 가 라이브에 떠 있었다. 수집 중인 앨범은 이미 깨끗한데
+     * 종료된 둘만 남아 있던 것이다.
+     *
+     * clipBenefit은 멱등이라 이미 깨끗한 문자열은 그대로 통과한다.
+     */
+    d.rows = (d.rows || []).map((r) =>
+      (r.benefit || []).length
+        ? { ...r, benefit: r.benefit.map(clipBenefit).filter((b) => b.length > 6) }
+        : r
+    );
     const expired = { lastSeen: shortStamp(a.expired?.lastSeen || d.stamp || prev.stamp) };
     const enOgCard = SITE_URL && existsSync(`./out/og/${a.slug}.png`) ? abs(SITE_URL, `og/${a.slug}.png`) : null;
     writeFileSync(

@@ -222,11 +222,28 @@ const BENEFIT_STOP =
   /(\[음반\]|\[DVD\]|\[블루레이\]|Buy Now|장바구니|바로구매|보관함|마이리스트|매장판매중|매장새상품|알라딘 중고|판매자 중고|우주점|지역변경|양탄자배송|세일즈포인트|마일리지|document\b|function\s*\()/;
 
 export function clipBenefit(s) {
-  const t = String(s ?? '').replace(/\s+/g, ' ');
+  let t = String(s ?? '').replace(/\s+/g, ' ');
+
+  // **앞쪽에 붙은 것도 잘라야 한다.** 뒤만 자르면 이런 게 남는다 —
+  //   `알라딘 특전: emEventSwiper; } 이벤트 이벤트 [SET] TXT 미니 8집 …`
+  //
+  // `알라딘 특전:` 같은 라벨은 살려야 하므로 먼저 떼어 두고 본문만 손본다.
+  const label = (t.match(/^([가-힣A-Za-z0-9]{2,12}\s*특전\s*[:：]\s*)/) || [])[1] || '';
+  let body = t.slice(label.length);
+
+  // 정상 특전 문구에 `; }` 나 `Swiper` 가 들어갈 일은 없다. 있으면 스크립트 꼬리다.
+  if (/Swiper|function\s*\(|;\s*\}|\breturn\b/.test(body.slice(0, 80))) {
+    body = body.replace(/^.*?(?:;\s*)?\}\s*/, '');
+  }
+  // 상세 페이지 탭 라벨이 앞에 딸려온 경우 — `이벤트 이벤트 [SET] TXT …`
+  body = body.replace(/^(?:이벤트|혜택|안내)(?:\s+(?:이벤트|혜택|안내))*\s*/, '');
+  t = label + body;
+
   const i = t.search(BENEFIT_STOP);
   return (i >= 0 ? t.slice(0, i) : t)
     .replace(/(\s*[\d,]{4,}\s*원){2,}\s*$/, '') // 끝에 붙은 정가·판매가 쌍
     .replace(/[\s·,\-–—([]+$/, '') // 열린 채 끊긴 괄호·구두점
+    .replace(/^[\s·,)\]]+/, '') // 여는 괄호가 잘려 `) 구매 시 …`로 시작하는 경우
     .trim();
 }
 
