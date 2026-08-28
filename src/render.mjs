@@ -26,7 +26,7 @@ const CSS = `
    **다크모드는 두지 않는다.** 배경은 항상 흰색이다.
    커버가 화면의 색을 담당하는 구조라 바닥이 어두워지면 그 전제가 흔들리고,
    흰 배경 상품 사진들이 검은 바닥 위에 뜬 흰 사각형으로 보인다. 29CM도 경쟁사도 다크모드가 없다. */
-:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#8a8a8a;--line:#e4e4e4;--acc:#c2410c;--ok:#1a1a1a;--card:#f4f4f4}
 html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
@@ -93,7 +93,7 @@ a:hover{border-bottom-color:currentColor}
 .pgal{position:relative;margin:0 0 clamp(28px,3.4vw,44px)}
 /* 슬라이드를 위로 붙인다. 안 그러면 전부 가장 높은 것에 늘어나 높이를 못 잰다. */
 .pgm{display:flex;align-items:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;
-scrollbar-width:none;transition:height .15s}
+scrollbar-width:none;transition:height .15s ease}
 .pgm::-webkit-scrollbar{display:none}
 .pgm figure{margin:0;flex:0 0 100%;scroll-snap-align:start;min-width:0;position:relative}
 /* 구성품 시트는 세로로 길어서 비율만 잡으면 화면을 다 잡아먹는다. 높이를 묶는다. */
@@ -229,6 +229,10 @@ border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
 .cmp.fx .c3{width:96px}
 /* 가격은 오른쪽 정렬이라 숫자 끝이 특전 첫 글자에 붙는다. 특전 칸 왼쪽을 띄운다. */
 .cmp.fx td.ben,.cmp.fx th:last-child{padding-left:24px}
+/* 최저가를 굵게 세운다. 색이 아니라 굵기다 — 액센트는 급한 것(품절·마감)에만 쓴다.
+   상품값만이 아니라 **배송비를 더한 값**으로 고른다. 실제로 내는 돈이 그거다. */
+.cmp td.low{font-weight:700;color:var(--fg)}
+.cmp td.low::after{content:' 최저';font-size:0.6875rem;font-weight:700;color:var(--acc);margin-left:4px}
 .cmp .rt{font-weight:700}
 .rt a,.rt{align-items:center}
 .rt a{display:inline-flex;gap:6px;align-items:center}
@@ -244,7 +248,10 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .evp img{width:56px;height:56px;object-fit:cover;display:block;background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
-a.tg{border-bottom:0}
+/* 줄을 가르는 정보가 화면에서 제일 약했다. 같은 판매처·같은 가격 여러 줄을 실제로
+   구분하는 건 이 태그인데 11px 회색이라 제일 안 보였다. 링크인 변형 태그만 글자색을
+   살린다 — 배경은 그대로라 시끄러워지지 않는다. */
+a.tg{border-bottom:0;color:var(--fg);font-weight:600}
 /* **포커스 링을 지우기만 하고 대체를 안 뒀다.** 파일 전체에서 outline 규칙이
    outline:none 하나뿐이라 Tab으로 훑으면 지금 어디인지 알 수 없었다(WCAG 2.4.7).
    마우스에는 안 보이고 키보드에만 보이는 :focus-visible로 되살린다.
@@ -257,7 +264,10 @@ a.tg{border-bottom:0}
 /* 점은 이제 흰 바탕 위 검정이라 흰 링이면 안 보인다. */
 .ld button:focus-visible::before{outline:2px solid var(--fg);outline-offset:2px}
 a.tg:hover{color:var(--fg);background:var(--line)}
+/* 특전 원문이 한 줄에서 네 줄까지 오가 행 높이가 들쭉날쭉해 훑을 수가 없었다.
+   세 줄로 자르고 넘치면 커서를 올렸을 때 전문이 뜬다(title). */
 .cmp td.ben{word-break:keep-all}
+.cmp td.ben>div{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
 gap:clamp(12px,1.4vw,20px);margin-bottom:clamp(20px,2.4vw,32px)}
 .sc{display:flex;flex-direction:column;min-width:0;border-top:2px solid var(--fg);padding-top:10px}
@@ -480,6 +490,7 @@ font-size:0.6875rem;line-height:1.2;font-weight:500;color:var(--mut);background:
 .chart{display:inline-flex;align-items:center;min-height:16px;font-size:0.6875rem;font-weight:500;color:var(--mut);background:var(--card);border:0;border-radius:2px;padding:2px 4px}
 /* 표 **위**에 온다(버전을 바꿔도 자리가 안 움직이게). 그래서 아래 여백이 필요하다. */
 .comp{margin:12px 0 16px;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
+.comp summary::-webkit-details-marker{display:none}
 .comp summary{cursor:pointer;font-size:0.75rem;font-weight:600;color:var(--mut)}
 .comp pre{margin:8px 0 0;font-size:0.75rem;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:inherit;color:var(--fg)}
 .comp p{margin:8px 0 0}
@@ -882,7 +893,7 @@ const TAGLINE = 'K-POP 앨범 판매처별 특전';
  * 인덱스에서는 브랜드가 h1이고, 상세에서는 앨범명이 h1이라 브랜드를 링크로 낸다.
  */
 const siteHeader = (stamp, { href } = {}) => {
-  const mark = `${LOGO}<span class="bd">${BRAND}</span><span class="tl">${TAGLINE}</span>`;
+  const mark = `${LOGO}<span class="bd">${BRAND}</span> <span class="tl">${TAGLINE}</span>`;
   return `<header class="hd"><div class="hdrow">
 ${href ? `<a class="brand" href="${esc(href)}">${mark}</a>` : `<h1 class="brand">${mark}</h1>`}
 <span class="hdm">${esc(shortDate(stamp).replace(/^\d+\./, '').replace('.', '월 '))}일 갱신</span>
@@ -1318,7 +1329,8 @@ const shortWhy = (w) =>
   ({ '배송지에 따라 다름': '배송지별', '금액 미확인': '미확인', '무료배송 상품': '무료' })[w] || w || '미확인';
 
 const benefitCell = (i) => {
-  if ((i.benefit || []).length) return (i.benefit || []).map((b) => `<div>${esc(b).slice(0, 320)}</div>`).join('');
+  if ((i.benefit || []).length)
+    return (i.benefit || []).map((b) => `<div title="${esc(b)}">${esc(b).slice(0, 320)}</div>`).join('');
   return STATUS[i.benefitStatus] ?? (i.benefitFlag ? '<span class="info">특전 있음 (내용 미파싱)</span>' : STATUS.unknown);
 };
 const money = (i) =>
@@ -1798,6 +1810,11 @@ export function renderAlbum({
         const v = f.fee === 0 ? '<span class="ok2">무료</span>' : won(f.fee);
         return `${v}${f.unknown ? '<span class="est">추정</span>' : ''}`;
       };
+      /** 표 안에서 제일 싼 값(상품값+배송비). 가격 비교인데 최저가가 안 보이면 안 된다. */
+      const cheapest = Math.min(
+        ...items.filter((i) => i.soldOut !== true).map((i) => (i.price ?? Infinity) + (shipOf(i).fee ?? 0))
+      );
+      const low = (i) => i.soldOut !== true && (i.price ?? Infinity) + (shipOf(i).fee ?? 0) === cheapest;
       const rowGroups = new Map();
       for (const i of items) {
         const k = [i.retailer, i.price, i.soldOut === true, i.maxOrder || '', benefitCell(i)].join('§');
@@ -1871,7 +1888,7 @@ export function renderAlbum({
 <th scope="row" class="rt" data-label="판매처"><a href="${esc(i.url)}" target="_blank" rel="noopener">${retailerMark(i.retailer)}${esc(i.retailer)}</a>${
             flags.length ? `<div class="tags">${flags.join('')}</div>` : ''
           }</th>
-${onePrice ? '' : `<td class="num" data-label="가격">${money(i)}</td>`}
+${onePrice ? '' : `<td class="num${low(i) ? ' low' : ''}" data-label="가격">${money(i)}</td>`}
 <td class="num" data-label="배송">${shipCell(i)}</td>
 <td class="ben" data-label="특전">${benefitCell(i)}</td></tr>`;
         })
