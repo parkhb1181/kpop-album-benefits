@@ -372,7 +372,7 @@ background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
    "붙였다"가 무너진다. 잘린 모서리(clip-path)도 같은 이유로 뺐다 —
    Lando Norris에서 가져왔던 형태인데, 띠를 끊어서 모티브와 부딪힌다. */
 /* 커버가 카드 전체를 덮는 링크(.go, z-index:1)보다 위에 있으면 **사진이 안 눌린다.**
-   실측: 인덱스 16개가 전부 커버 1장이라 COVER_JS는 으로 매번 빠져나가고,
+   실측: 인덱스 16개가 전부 커버 1장이라 COVER_JS의 n<2 조기 반환에 매번 걸렸고,
    클릭을 .go로 넘겨주던 코드에 닿지도 못했다. 목록에서 사진을 누르면 상품으로 가는 건
    몸에 밴 동작이라 JS에 기대면 안 된다 — 링크를 위로 올린다.
    여러 장일 때만 커버를 올려 스와이프를 살린다(그때는 JS가 클릭을 .go로 넘긴다). */
@@ -566,11 +566,11 @@ h1{font-size:1.25rem}
 <div class="ld"><button type="button" data-i="0" class="on" aria-label="PHASE I : Soft Violence"></button><button type="button" data-i="1" aria-label="CLICK"></button><button type="button" data-i="2" aria-label="Sequence 01: Curiosity"></button><button type="button" data-i="3" aria-label="TUNE &amp; PLAY"></button><button type="button" data-i="4" aria-label="Make it hot"></button></div></div></li><li class="card" data-q="튜이드tuidetuide튜이드tuneplay" data-c="ㅌㅇㄷtuidetuideㅌㅇㄷtuneplay">
 <a class="go" href="album/tuide-tune-play.html" aria-label="튜이드(TUIDE) TUNE &amp; PLAY"></a>
 <div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">튜이드(TUIDE)</p><h2 class="cval">TUNE &amp; PLAY</h2></div></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">8시간 56분</span></div><div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 3건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">8시간 45분</span></div><div class="tags"><span class="tg">특전 2/6</span><span class="tg w">품절 2건</span></div><div class="meta">7종 · 판매처 6 · 8월 27일 발매</div>
 </li><li class="card" data-q="엔시티127nct127nct127엔시티127blingy" data-c="ㅇㅅㅌ127nct127nct127ㅇㅅㅌ127blingy">
 <a class="go" href="album/nct-127-blingy.html" aria-label="엔시티 127(NCT 127) BLINGY"></a>
-<div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/NYZsXf.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">엔시티 127(NCT 127)</p><h2 class="cval">BLINGY</h2></div></div>
-<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">8시간 52분</span></div><div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
+<div class="cvw"><div class="strip"><img src="https://media.ktown4u.com/products/resize/thumbnail/2026/08/18/ZITDeB.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">엔시티 127(NCT 127)</p><h2 class="cval">BLINGY</h2></div></div>
+<div class="cdl">예약 배송 시작 <span class="cd" data-until="2026-08-28T19:00:00+09:00">8시간 41분</span></div><div class="tags"><span class="tg">특전 1/7</span><span class="tg w">품절 6건</span></div><div class="meta">10종 · 판매처 7 · 8월 28일 발매</div>
 </li><li class="card" data-q="소연soyeonidle아이들소연soyeonwhatawonderfullife" data-c="ㅅㅇsoyeonidleㅇㅇㄷㅅㅇsoyeonwhatawonderfullife">
 <a class="go" href="album/i-dle-아이들-what-a-wonderful-life.html" aria-label="소연(SOYEON) What a Wonderful Life"></a>
 <div class="cvw"><div class="strip"><img src="https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg" alt="" fetchpriority="high" decoding="async"></div><span class="vn"></span><div class="cvt"><p class="cva">소연(SOYEON)</p><h2 class="cval">What a Wonderful Life</h2></div></div>
@@ -708,5 +708,74 @@ cnt.textContent=v?n+'개':'';
 empty.style.display=v&&!n?'':'none';
 }
 box.addEventListener('input',run);run();
+})();
+</script><script>
+(function(){
+/* 홍보 칸 — 넘길 수 있고 자동으로도 넘어간다.
+   자동 넘김은 원래 권하지 않는 물건이라(NN/g 실측 캐러셀 1.96% 대 정적 43.03%)
+   해로운 쪽만 덜어낸다: 손을 대면 아예 멈추고 다시 안 켠다, 마우스가 올라가거나
+   초점이 들어오면 쉰다, 동작 줄이기를 켠 사람에게는 처음부터 안 돈다. */
+document.querySelectorAll('.lw[data-lead]').forEach(function(w){
+var t=w.querySelector('.lt');if(!t)return;
+var slides=[].slice.call(t.querySelectorAll('.ls'));
+var dots=[].slice.call(w.querySelectorAll('.ld button'));
+if(slides.length<2)return;
+var idx=0,moving=0,mv,timer=null,stopped=0;
+function at(){return moving?idx:Math.round(t.scrollLeft/(t.clientWidth||1))}
+function paint(){var n=at();dots.forEach(function(b,i){b.className=i===n?'on':''})}
+function go(n){
+idx=(n+slides.length)%slides.length;moving=1;
+t.scrollLeft=t.clientWidth*idx;
+clearTimeout(mv);mv=setTimeout(function(){moving=0;paint()},500);
+paint();
+}
+function stop(){stopped=1;clearInterval(timer);timer=null}
+function start(){
+if(stopped||timer)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+timer=setInterval(function(){go(at()+1)},6000);
+}
+function mk(cls,txt,dir){
+var b=document.createElement('button');b.type='button';b.className='lnav '+cls;b.textContent=txt;
+b.setAttribute('aria-label',dir<0?'이전 앨범':'다음 앨범');
+b.addEventListener('click',function(e){e.preventDefault();stop();go(at()+dir)});
+w.appendChild(b);
+}
+mk('p','\u2039',-1);mk('n','\u203a',1);
+dots.forEach(function(b,i){b.addEventListener('click',function(e){e.preventDefault();stop();go(i)})});
+/* 손가락으로 밀어도 자동은 끈다 — 사용자가 직접 고르기 시작했다는 뜻이다. */
+t.addEventListener('pointerdown',stop);
+var tick;t.addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(paint,90)},{passive:true});
+w.addEventListener('mouseenter',function(){clearInterval(timer);timer=null});
+w.addEventListener('mouseleave',start);
+w.addEventListener('focusin',function(){clearInterval(timer);timer=null});
+w.addEventListener('focusout',start);
+paint();start();
+});
+document.querySelectorAll('.cvw').forEach(function(w){
+var strip=w.querySelector('.strip'),tag=w.querySelector('.vn');
+var dw=w.parentElement.querySelector('.dots'),dots=dw?dw.querySelectorAll('button'):[];
+var imgs=strip.querySelectorAll('img'),n=imgs.length;
+if(n<2){if(dw)dw.style.display='none';return}
+function at(){return Math.round(strip.scrollLeft/strip.clientWidth)}
+function paint(){var i=at(),k;
+for(k=0;k<dots.length;k++){dots[k].className=k===i?'on':''}
+if(tag){tag.textContent=(i+1)+' / '+n+' · '+(imgs[i].getAttribute('data-v')||'')}}
+function go(i){strip.scrollTo({left:strip.clientWidth*((i+n)%n),behavior:'smooth'})}
+strip.addEventListener('scroll',paint,{passive:true});
+for(var k=0;k<dots.length;k++){(function(k){
+dots[k].addEventListener('click',function(e){e.preventDefault();go(k)})})(k)}
+/* 커버를 누르면 **앨범 페이지로 간다.** 버전 넘기기는 점과 스와이프가 맡는다 —
+   목록에서 상품 사진을 누르면 상품으로 가는 게 몸에 밴 동작이라 그걸 거스르면 안 된다.
+   끌어서 넘긴 경우는 클릭으로 치지 않는다(5px). */
+var sx=0,moved=0;
+strip.addEventListener('pointerdown',function(e){sx=e.clientX;moved=0});
+strip.addEventListener('pointermove',function(e){if(e.buttons){var d=Math.abs(e.clientX-sx);if(d>moved)moved=d}});
+strip.addEventListener('click',function(e){
+if(moved>5){e.preventDefault();e.stopPropagation();return}
+var lnk=w.parentElement.querySelector('.go');if(lnk){lnk.click()}
+});
+paint();
+});
 })();
 </script></body></html>
