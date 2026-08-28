@@ -15,12 +15,17 @@
  */
 import { esc } from './render.mjs';
 import { abs, metaTags } from './seo.mjs';
+import { benefitLine } from './i18n-benefit.mjs';
 
 export const BRAND_EN = 'Albumnote';
 const TAGLINE_EN = 'K-pop album POBs by store';
 
 const CSS = `*{box-sizing:border-box}
-:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#a0a0a0;--line:#e4e4e4;--acc:#c2410c;--card:#f4f4f4}
+/* 토큰·규칙은 국내판(render.mjs)에서 옮겨온 것이다. 두 파일이 CSS를 따로 갖고 있어
+   한쪽만 고치면 갈라진다 — 국내판을 고칠 때 여기도 같이 봐야 한다. */
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#757575;--dim:#8a8a8a;--line:#e4e4e4;--acc:#c2410c;--card:#f4f4f4}
+/* 포커스 링을 없애지 않는다 — 키보드로 훑을 때 지금 어디인지 알아야 한다(WCAG 2.4.7). */
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
 font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{color:inherit}
@@ -44,15 +49,41 @@ td.n{white-space:nowrap}
 .card a{font-weight:700;text-decoration:none}
 .card .m{font-size:13px;color:var(--mut);margin-top:4px}
 .ft{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
-.back{display:inline-block;font-size:13px;color:var(--mut);margin-bottom:14px;text-decoration:none}`;
+.back{display:inline-block;font-size:13px;color:var(--mut);margin-bottom:14px;text-decoration:none}
+/* 영어 요약 밑에 한국어 원문을 작게 남긴다 — 요약이 틀렸을 때 대조할 수 있어야 하고,
+   주 독자인 GOM은 한국 스토어에서 직접 사는 사람들이라 원문을 읽는다. */
+.ko{display:block;font-size:12px;color:var(--dim);margin-top:3px;word-break:keep-all}
+/* 표 네 칸이 375px에 안 들어간다. 폰에서는 판매처와 가격을 한 줄에 세우고
+   POB만 아래 폭을 다 쓴다 — 국내판과 같은 방식이다. */
+@media(max-width:640px){
+body{padding:16px 12px 56px}
+thead{display:none}
+table,tbody,tr{display:block;width:auto}
+tr{border-bottom:1px solid var(--line);padding:10px 0;display:grid;grid-template-columns:1fr auto;gap:0 10px}
+td{border:0;padding:0}
+td:nth-child(1){grid-column:1;grid-row:1;font-weight:700}
+td:nth-child(2){grid-column:2;grid-row:1;text-align:right;font-size:12px;color:var(--mut)}
+td:nth-child(2)::after{content:' versions'}
+td:nth-child(3){grid-column:2;grid-row:2;text-align:right;font-weight:600}
+td:nth-child(4){grid-column:1/-1;margin-top:4px}
+}`;
 
-/** 마크는 국내판과 같은 도형을 쓴다 — 같은 브랜드다 */
+/**
+ * 마크 — **국내판(render.mjs의 MARK)과 같은 도형이어야 한다.**
+ * 주석에는 같다고 적혀 있었는데 실제로는 선으로 그린 다른 원이었다. 같은 브랜드에
+ * 다른 로고가 두 개 있으면 링크를 건너온 사람이 다른 사이트로 읽는다.
+ * 국내판이 LP판(채운 원 + 흰 홈 + 라벨)이라 그대로 옮긴다.
+ */
 const MARK =
-  '<g fill="none" stroke="currentColor">' +
-  '<circle cx="10" cy="10" r="8.6" stroke-width="2"/>' +
-  '<circle cx="10" cy="10" r="6" stroke-width="2"/>' +
-  '<circle cx="10" cy="10" r="3.5" stroke-width="1.8"/>' +
-  '</g><circle cx="10" cy="10" r="1" fill="currentColor"/>';
+  '<circle cx="10" cy="10" r="9.6" fill="currentColor"/>' +
+  '<g fill="none" stroke="#fff" stroke-width=".5">' +
+  '<circle cx="10" cy="10" r="8.3"/>' +
+  '<circle cx="10" cy="10" r="7.2"/>' +
+  '<circle cx="10" cy="10" r="6.1"/>' +
+  '<circle cx="10" cy="10" r="5"/>' +
+  '</g>' +
+  '<circle cx="10" cy="10" r="3.5" fill="#fff"/>' +
+  '<circle cx="10" cy="10" r=".62" fill="currentColor"/>';
 
 const header = (href) => `<header class="hd"><${href ? `a class="brand" href="${esc(href)}"` : 'h1 class="brand"'}>
 <svg class="lg" width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">${MARK}</svg>
@@ -104,8 +135,44 @@ const cleanPob = (b) =>
  * `secret`(구성 비공개)과 `unknown`(우리가 확인 못함)을 절대 합치지 않는다 —
  * "판매처가 안 밝힘"과 "우리가 모름"은 정반대 정보다. 국내판이 지키는 구분과 같다.
  */
+/**
+ * 한국어 특전 문구 → 영어 요약. 못 뽑으면 원문을 그대로 둔다(i18n-benefit.mjs의 계약).
+ * 요약이 되더라도 **원문을 버리지 않는다** — title로 남겨서 GOM이 대조할 수 있게 한다.
+ * 실측: 특전 문구 79건 중 79건이 요약된다.
+ */
+function pobText(list) {
+  const ko = list.map(cleanPob).join(' · ');
+  /**
+   * **문구마다 따로 요약한다.** 합쳐서 넘겼더니 요약이 좁아졌다 —
+   *   원문  미공개 포토카드 2종 중 1종 랜덤 · 미공개 포토카드 2종 중 2종 랜덤
+   *   합쳐서 요약  unreleased photocard, 1 of 2, random   ← 뒤의 "2 of 2"가 사라진다
+   * 같은 품목이라 중복 제거에 걸려버린 것이다. i18n-benefit이 경계한 바로 그 실패다
+   * (문법은 멀쩡하고 뜻만 틀린 요약). 하나씩 요약해 이어 붙인다.
+   */
+  const seen = new Set();
+  const lines = [];
+  for (const b of list) {
+    const line = benefitLine(b);
+    if (!line || seen.has(line)) continue;
+    seen.add(line);
+    lines.push(line);
+  }
+  return lines.length
+    ? `<span class="pob" title="${esc(ko)}">${esc(lines.join(' · '))}</span><span class="ko">${esc(ko)}</span>`
+    : `<span class="pob">${esc(ko)}</span>`;
+}
+
 function pobCell(r) {
-  if (r.benefit?.length) return `<span class="pob">${esc(r.benefit.map(cleanPob).join(' · '))}</span>`;
+  /**
+   * **상태가 "없음"이면 문구가 있어도 특전이 아니다.**
+   * 실측: 11행이 benefit 내용을 갖고 있으면서 상태가 has가 아니다
+   * (none 7 — 알라딘 6·사운드웨이브 1, ended 4 — 알라딘).
+   * none 쪽을 열어보니 특전이 아니라 **앨범 구성품** 문구였다
+   * ("아웃박스+미니 프로젝터 토이 카메라+메탈 다이스…"). 그대로 실으면 구성품이
+   * 특전으로 둔갑한다. 상태를 믿는다. (수집 쪽 문제라 인계했다)
+   */
+  if (r.benefitStatus === 'none') return '<span class="no">None listed</span>';
+  if (r.benefit?.length) return pobText(r.benefit);
   if (r.benefitStatus === 'secret') return '<span class="hid">Yes — contents not revealed</span>';
   if (r.benefitStatus === 'listed') return '<span class="hid">Yes — title only</span>';
   if (r.benefitStatus === 'ended') return '<span class="no">Ended</span>';
@@ -134,7 +201,12 @@ export function renderEnAlbum({ slug, target, rows, stamp, siteUrl, ogCard, shor
   const stores = byStore(rows);
   const live = rows.filter((r) => !r.soldOut);
   const prices = live.filter((r) => r.price && r.currency === 'KRW').map((r) => r.price);
-  const versions = new Set(rows.map((r) => r.key || r.editionKey)).size;
+  /**
+   * **에디션 수를 센다.** key는 `에디션｜포장`이라 같은 버전의 낱개와 세트가 따로 잡힌다 —
+   * 국내판 탭이 5개인데 7이 나오던 것과 같은 문제다(docs/38-수집단계-인계.md 6·7번).
+   * 팬이 "몇 종"이라 할 때 세는 건 에디션이다.
+   */
+  const versions = new Set(rows.map((r) => String(r.key || r.editionKey || '').split('｜')[0])).size;
   const withPob = stores.filter((s) => s.pob.size).length;
 
   const enUrl = abs(siteUrl, `en/album/${slug}`);
@@ -148,9 +220,9 @@ ${stores
       const soldAll = s.rows.every((r) => r.soldOut);
       const link = s.rows.find((r) => r.url)?.url;
       const name = link ? `<a href="${esc(link)}" rel="nofollow noopener" target="_blank">${esc(storeEn(s.retailer))}</a>` : esc(storeEn(s.retailer));
-      const pob = s.pob.size
-        ? `<span class="pob">${esc([...s.pob].map(cleanPob).join(' · '))}</span>`
-        : pobCell(s.rows[0]);
+      // 상태가 none뿐인 판매처는 문구가 있어도 특전이 아니다(pobCell 주석 참고)
+      const onlyNone = s.status.size === 1 && s.status.has('none');
+      const pob = s.pob.size && !onlyNone ? pobText([...s.pob]) : pobCell(s.rows[0]);
       return `<tr><td${soldAll ? ' class="gone"' : ''}>${name}</td>
 <td class="n">${s.rows.length}</td>
 <td class="n">${s.prices.length ? won(Math.min(...s.prices)) : '<span class="no">sold out</span>'}</td>
