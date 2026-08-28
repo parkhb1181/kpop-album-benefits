@@ -15,7 +15,7 @@
  */
 import { esc } from './render.mjs';
 import { abs, metaTags } from './seo.mjs';
-import { benefitLine } from './i18n-benefit.mjs';
+import { summarizeBenefit } from './i18n-benefit.mjs';
 
 export const BRAND_EN = 'Albumnote';
 const TAGLINE_EN = 'K-pop album POBs by store';
@@ -128,6 +128,19 @@ const storeEn = (k) => STORE_EN[k] || k;
 const cleanPob = (b) =>
   String(b)
     .replace(/^\s*(?:케타포|[가-힣A-Za-z0-9]+)\s*특전\s*[:：]?\s*/, '')
+    /**
+     * 스크래퍼가 물고 온 JS 조각을 걷어낸다 —
+     *   "urn itemEventSwiper; } 이벤트 이벤트 TXT 미니 8집 …"
+     * 실측 79건 중 8건(TXT 알라딘 전부)이 이렇다. 요약기는 이걸 무시하고 품목을
+     * 제대로 뽑지만, 원문 줄(.ko)에는 그대로 나간다.
+     *
+     * "; }"에 기대는 건 **대리 지표가 아니라 문법**이다 — JS 블록 닫기라 특전
+     * 설명에 나올 수 없다. 앞은 한글 아닌 것만 40자까지, 뒤는 중복된 "이벤트"까지.
+     * 79건에 돌려서 8건을 다 잡고 나머지 71건은 한 글자도 안 건드린다.
+     *
+     * 표시용 응급처치다. 원인은 수집 쪽이라 docs/38에 10번으로 인계했다.
+     */
+    .replace(/^[^가-힣\n]{0,40};\s*\}\s*(?:이벤트\s*)*/, '')
     .trim();
 
 /**
@@ -143,20 +156,41 @@ const cleanPob = (b) =>
 function pobText(list) {
   const ko = list.map(cleanPob).join(' · ');
   /**
-   * **문구마다 따로 요약한다.** 합쳐서 넘겼더니 요약이 좁아졌다 —
+   * **문구는 하나씩 요약하고, 수식어는 묶음 전체에 한 번만 붙인다.**
+   *
+   * benefitLine()은 품목과 수식어를 한 줄로 평탄화해서 준다. 그걸 문구마다 부르면
+   * 수식어가 문구 수만큼 반복된다. TXT 알라딘(8행) 실측:
+   *
+   *   … 3 of 5, random · while supplies last · … 1 of 5, random · while supplies last
+   *   · … (while supplies last가 **8번**)
+   *
+   * summarizeBenefit()은 {items, notes}로 나눠 주니 notes만 걷어내 끝에 한 번 붙인다.
+   *
+   * 품목은 **문구 단위로** 묶는다. 한 문구 안의 여러 품목은 실제로 같이 주는 것이라
+   * "+"로 잇고(원문도 "+"·"&"였다), 문구끼리는 에디션별 대안이라 "·"로 나눈다.
+   * 전부 "+"로 이으면 8종을 다 받는다는 말이 된다.
+   *
+   * 합쳐서 한 번에 요약하면 안 된다 —
    *   원문  미공개 포토카드 2종 중 1종 랜덤 · 미공개 포토카드 2종 중 2종 랜덤
-   *   합쳐서 요약  unreleased photocard, 1 of 2, random   ← 뒤의 "2 of 2"가 사라진다
-   * 같은 품목이라 중복 제거에 걸려버린 것이다. i18n-benefit이 경계한 바로 그 실패다
-   * (문법은 멀쩡하고 뜻만 틀린 요약). 하나씩 요약해 이어 붙인다.
+   *   합쳐서  unreleased photocard, 1 of 2, random   ← 뒤의 "2 of 2"가 사라진다
+   * 같은 품목이라 중복 제거에 걸려버린 것이다. 문법은 멀쩡하고 뜻만 틀린 요약,
+   * i18n-benefit이 경계한 바로 그 실패다.
    */
   const seen = new Set();
   const lines = [];
+  const notes = [];
   for (const b of list) {
-    const line = benefitLine(b);
+    const sum = summarizeBenefit(b);
+    if (!sum) continue;
+    for (const n of sum.notes) if (!notes.includes(n)) notes.push(n);
+    const line = sum.items.map((i) => (i.count ? `${i.what}, ${i.count}` : i.what)).join(' + ');
     if (!line || seen.has(line)) continue;
     seen.add(line);
     lines.push(line);
   }
+  // 품목을 하나도 못 뽑았는데 수식어만 남는 경우가 있다(조건문만 있는 문구).
+  // 그때는 요약이라 부를 수 없어 원문을 보여준다.
+  if (lines.length) lines.push(...notes);
   return lines.length
     ? `<span class="pob" title="${esc(ko)}">${esc(lines.join(' · '))}</span><span class="ko">${esc(ko)}</span>`
     : `<span class="pob">${esc(ko)}</span>`;
