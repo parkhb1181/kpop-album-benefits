@@ -37,7 +37,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/i-dle-아이들-what-a-wonderful-life</loc>
+    <loc>https://kpop-album.vercel.app/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -67,7 +67,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/youngtak-영탁-gogo</loc>
+    <loc>https://kpop-album.vercel.app/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -97,7 +97,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때</loc>
+    <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-7th-year-%EA%B0%80%EC%8B%9C%EB%8D%A4%EB%B6%88%EC%97%90-%EC%9E%A0%EC%8B%9C-%EB%B0%94%EB%9E%8C%EC%9D%B4-%EB%A9%88%EC%B7%84%EC%9D%84-%EB%95%8C</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -145,7 +145,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/i-dle-아이들-what-a-wonderful-life</loc>
+    <loc>https://kpop-album.vercel.app/en/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -175,7 +175,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/youngtak-영탁-gogo</loc>
+    <loc>https://kpop-album.vercel.app/en/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -205,7 +205,7 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때</loc>
+    <loc>https://kpop-album.vercel.app/en/album/tomorrow-x-together-7th-year-%EA%B0%80%EC%8B%9C%EB%8D%A4%EB%B6%88%EC%97%90-%EC%9E%A0%EC%8B%9C-%EB%B0%94%EB%9E%8C%EC%9D%B4-%EB%A9%88%EC%B7%84%EC%9D%84-%EB%95%8C</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
