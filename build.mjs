@@ -430,6 +430,8 @@ for (const t of targets) {
   writeFileSync(
     `./out/album/${slug}.html`,
     renderAlbum({
+      // 영어판이 없는 앨범에 hreflang을 걸면 404를 가리킨다 — 구글이 그 짝을 버린다.
+      hasEn: existsSync(`./out/en/album/${slug}.html`),
       target: t,
       rows,
       errors,
@@ -519,6 +521,7 @@ for (const a of gone) {
     writeFileSync(
       `./out/album/${a.slug}.html`,
       renderAlbum({
+        hasEn: existsSync(`./out/en/album/${a.slug}.html`),
         target: d.target,
         rows: d.rows,
         errors: [],
@@ -621,11 +624,17 @@ if (SITE_URL) {
       // 영어판(/en/). hreflang 으로 국내판과 짝지어져 있어도 **사이트맵에 없으면 색인이 늦다**.
       // 우선순위는 국내판보다 한 칸 낮춘다 — 데이터 원본이 국내 판매처이고 국내판이 정본이다.
       { path: 'en/', lastmod: today, changefreq: 'daily', priority: '0.9' },
-      ...catalog.map((a) =>
-        a.expired
-          ? { path: `en/album/${a.slug}`, lastmod: a.expired.lastSeen || today, changefreq: 'monthly', priority: '0.2' }
-          : { path: `en/album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.7' }
-      ),
+      // **파일이 있는 것만 넣는다.** 예판이 끝나 이번 빌드에서 다시 안 그린 앨범은
+      // 국내판 HTML만 예전 것이 남고 영어판은 만들어진 적이 없다.
+      // 실측: 18개 중 2개(red-velvet-velvet-summer · txt-no-labels-part-02)가 그랬고,
+      // 사이트맵이 그 둘을 선언해 404를 가리키고 있었다.
+      ...catalog
+        .filter((a) => existsSync(`./out/en/album/${a.slug}.html`))
+        .map((a) =>
+          a.expired
+            ? { path: `en/album/${a.slug}`, lastmod: a.expired.lastSeen || today, changefreq: 'monthly', priority: '0.2' }
+            : { path: `en/album/${a.slug}`, lastmod: today, changefreq: 'daily', priority: '0.7' }
+        ),
     ]),
     'utf8'
   );

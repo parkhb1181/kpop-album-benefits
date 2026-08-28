@@ -1653,6 +1653,8 @@ ${limits}`;
 }
 
 export function renderAlbum({
+  // 이 앨범의 영어판(/en/album/{slug})이 실제로 있는지. build.mjs가 파일 존재로 넘긴다.
+  hasEn = false,
   target,
   rows,
   errors,
@@ -2278,10 +2280,12 @@ ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / '
       // 영어판(/en/)과 짝을 선언한다. 이게 없으면 구글이 두 페이지를 **중복**으로 보고
       // 한쪽을 버린다 — 같은 앨범의 같은 표라 내용이 겹치기 때문이다.
       // x-default는 seo.mjs가 ko 쪽으로 건다(데이터 원본이 국내 판매처다).
+      // hasEn 이 false면 en 짝을 내지 않는다. 없는 URL을 가리키는 hreflang은
+      // 없느니만 못하다 — 구글이 짝 전체를 무시한다.
       alternates: slug
         ? [
             { lang: 'ko', href: abs(siteUrl, `album/${slug}`) },
-            { lang: 'en', href: abs(siteUrl, `en/album/${slug}`) },
+            ...(hasEn ? [{ lang: 'en', href: abs(siteUrl, `en/album/${slug}`) }] : []),
           ]
         : undefined,
       image: ogImage,
