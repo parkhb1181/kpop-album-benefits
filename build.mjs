@@ -410,6 +410,23 @@ for (const t of targets) {
   cardStat[card === 'written' ? 'written' : card === 'skipped' ? 'skipped' : 'failed']++;
   const ogCard = card && SITE_URL ? abs(SITE_URL, `og/${slug}.png`) : null;
 
+  // 영어판은 renderAlbum 호출부 **두 곳 모두**에 붙어야 한다.
+  // 처음엔 스냅샷 재렌더 경로에만 붙였더니 17개 중 2개만 생겼고,
+  // 사이트맵과 hreflang은 17개를 전부 선언해서 15개가 404를 가리켰다.
+  // 없는 URL을 가리키는 hreflang은 없느니만 못하다 — 구글이 그 짝을 통째로 버린다.
+  writeFileSync(
+    `./out/en/album/${slug}.html`,
+    renderEnAlbum({
+      slug,
+      target: t,
+      rows,
+      stamp,
+      siteUrl: SITE_URL,
+      ogCard,
+      shortDate: shortStamp(stamp),
+    }),
+    'utf8'
+  );
   writeFileSync(
     `./out/album/${slug}.html`,
     renderAlbum({
