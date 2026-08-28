@@ -30,7 +30,7 @@ const CSS = `
 html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:24px 24px 72px;max-width:880px;background:var(--bg);color:var(--fg);
-font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif}
+font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif}
 h2{font-size:1rem;margin:32px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 h3{font-size:0.875rem;color:var(--mut);margin:24px 0 8px;font-weight:600}
 .pk{font-weight:500;color:var(--mut);font-size:0.875rem}
@@ -245,6 +245,17 @@ color:var(--mut);background:var(--card);border-radius:2px}
 .cmp .tags{margin:4px 0 0}
 .cmp .rt .tg{white-space:normal;word-break:keep-all}
 a.tg{border-bottom:0}
+/* **포커스 링을 지우기만 하고 대체를 안 뒀다.** 파일 전체에서 outline 규칙이
+   outline:none 하나뿐이라 Tab으로 훑으면 지금 어디인지 알 수 없었다(WCAG 2.4.7).
+   마우스에는 안 보이고 키보드에만 보이는 :focus-visible로 되살린다.
+   카드는 투명 링크(.go)가 덮고 있어 링크 자체에 링을 그리면 카드 밖으로 삐져나가므로
+   카드에 그린다. */
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.card:has(.go:focus-visible),.lead:has(a:focus-visible){outline:2px solid var(--fg);outline-offset:2px}
+.go:focus-visible,.ls:focus-visible{outline:0}
+.gnav:focus-visible,.lnav:focus-visible{outline:2px solid #fff;outline-offset:1px}
+/* 점은 이제 흰 바탕 위 검정이라 흰 링이면 안 보인다. */
+.ld button:focus-visible::before{outline:2px solid var(--fg);outline-offset:2px}
 a.tg:hover{color:var(--fg);background:var(--line)}
 .cmp td.ben{word-break:keep-all}
 .scs{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,24vw,300px),1fr));
@@ -298,7 +309,7 @@ padding-bottom:8px;border-bottom:2px solid var(--fg)}
    이름만 두면 검색이 약해지고, 설명만 두면 이름이 없다. 신문 제호가 쓰는 방식이다. */
 .brand{display:flex;align-items:baseline;gap:8px;margin:0;border:0;flex-wrap:wrap}
 .brand .lg{align-self:center;display:block;flex:0 0 auto}
-.hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",sans-serif;
+.hd .bd{font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;
 font-size:1.5rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spacing:-.03em}
 .hd .tl{font-size:0.875rem;color:var(--mut);white-space:nowrap}
 .hd .hdm{font-size:0.75rem;color:var(--dim);white-space:nowrap}
@@ -340,22 +351,38 @@ list-style:none;padding:0}
    그 밑 한 줄은 그 앨범의 사실로 채운다 — 빈 자리를 여백이 아니라 정보로 쓴다. */
 .lead{position:relative;min-width:0;list-style:none;display:flex}
 .lw{position:relative;overflow:hidden;background:var(--card);flex:1;display:flex;flex-direction:column;min-height:0}
+/* 점·화살표는 사진 칸(.lt) 기준으로 앉는다 — .lw 기준이면 사실 줄까지 포함돼 밖으로 나간다. */
+.lt{position:relative}
 .lt{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
 overscroll-behavior-x:contain;flex:1;min-height:0}
 .lt::-webkit-scrollbar{display:none}
 .ls{position:relative;flex:0 0 100%;scroll-snap-align:start;border-bottom:0;min-width:0;
 display:flex;flex-direction:column}
-.lim{position:relative;flex:1;min-height:0;display:block;overflow:hidden}
-.ls img{width:100%;height:100%;object-fit:cover;display:block;background:var(--card)}
-.pmeta{flex:0 0 auto;padding:10px 14px 14px;font-size:0.75rem;color:var(--mut);
-background:var(--bg);font-variant-numeric:tabular-nums}
+/* **커버를 늘려 자르지 않는다.** 정사각 원본(600×600)을 549×648 세로 칸에 cover로
+   넣었더니 앨범명이 잘려 나갔다 — 실측: "SOFT VIOLENCE"가 "OFT VIOLENCE"가 됐다.
+   홍보 칸의 일이 앨범을 알리는 것인데 이름이 잘리면 그 일을 못 한다.
+   비율을 1:1로 되돌리고, 남는 자리는 아래 정보 블록이 먹는다. */
+.lim{position:relative;flex:0 0 auto;display:block;overflow:hidden}
+.ls img{width:100%;aspect-ratio:1;height:auto;object-fit:cover;display:block;background:var(--card)}
+/* 점이 앉을 자리를 아래에 비워둔다 — 안 그러면 마지막 줄과 겹친다. */
+.pmeta{flex:1;min-height:0;padding:12px 14px 30px;font-size:0.75rem;color:var(--mut);
+background:var(--bg);font-variant-numeric:tabular-nums;display:flex;flex-direction:column;gap:6px}
+.pmeta .cdl{margin:0}
+.pmeta .tags{margin:0;display:flex;flex-wrap:wrap;gap:4px}
+.pmeta .meta{margin:0;color:var(--dim)}
 .lnav{position:absolute;top:calc(50% - 18px);z-index:3;width:36px;height:36px;border:0;border-radius:2px;
 background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:pointer;display:none}
 .lw[data-lead] .lnav{display:block}
 .lnav.p{left:0}.lnav.n{right:0}
-.ld{position:absolute;left:0;right:0;bottom:10px;z-index:3;display:flex;justify-content:center;gap:6px}
-.ld button{width:7px;height:7px;padding:0;border:0;border-radius:99px;background:rgba(255,255,255,.45);cursor:pointer}
-.ld button.on{background:#fff}
+/* 점은 **사진 안**에 둔다. 사실 줄(흰 바탕)을 넣으면서 점이 그 위로 올라탔고,
+   흰 점이 흰 바탕에 놓여 대비 1.1:1이 됐다 — 사실상 안 보였다.
+   누르는 자리는 24px로 키우고(WCAG 2.5.8) 보이는 점만 8px로 둔다. */
+.ld{position:absolute;left:0;right:0;bottom:6px;z-index:3;display:flex;justify-content:center;gap:2px}
+.ld button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;
+display:flex;align-items:center;justify-content:center}
+.ld button::before{content:'';width:8px;height:8px;border-radius:99px;
+background:#c9c9c9}
+.ld button.on::before{background:var(--fg)}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
 /* 첫 행은 홍보 칸 옆 한 칸뿐이라 윗선이 오른쪽 267px에만 걸려 반쪽으로 뜬다.
@@ -2035,7 +2062,7 @@ ${tabs
      */
     const rankRow = (s, rank, tie) => {
       const meta = [
-        s.full ? `${opt.versions}종 전부` : `${opt.versions}종 중 ${s.count}종`,
+        s.full ? `${opt.versions}개 전부` : `${opt.versions}개 중 ${s.count}개`,
         s.fee == null ? '배송 미확인' : s.fee === 0 ? '배송 무료' : `배송 ${won(s.fee)}`,
         s.coupon ? `쿠폰 −${won(s.coupon)} (받기 눌러야 적용)` : '',
       ]
@@ -2066,13 +2093,20 @@ ${tabs
       (partRows
         ? `</ol><p class="partnote">일부만 취급</p><ol class="rks">${partRows}`
         : '');
-    optHtml = `<h2>최저가 조합 <span class="one">${opt.versions}종</span></h2>
+    /**
+     * **여기 숫자는 종이 아니다.** 탭의 5종은 에디션 수이고 여기 7은 상품 키 수다
+     * (같은 에디션의 낱개·세트가 따로 잡힌다). 같은 단위를 붙이면 5와 7이 나란히 나와
+     * 숫자가 안 맞는 사이트로 읽힌다 — 가격 비교에서 그건 신뢰 문제다.
+     * optimize()가 같은 에디션의 낱개와 세트를 **둘 다 사는** 것은 별개의 버그다
+     * (docs/38-수집단계-인계.md 6번). 고쳐지면 이 숫자가 에디션 수와 같아진다.
+     */
+    optHtml = `<h2>최저가 조합 <span class="one">상품 ${opt.versions}개</span></h2>
 <div class="optsec">
 ${
       opt.unbuyable?.length
-        ? `<div class="warn"><b>${opt.unbuyable.length}종은 모든 판매처에서 품절</b>이라 계산에서 뺐습니다.
+        ? `<div class="warn"><b>${opt.unbuyable.length}개는 모든 판매처에서 품절</b>이라 계산에서 뺐습니다.
 ${esc(opt.unbuyable.map((u) => u.edition || u.key.split('｜')[0]).join(', ')).slice(0, 200)}.
-아래 ${opt.versions}종은 지금 살 수 있는 것만 모은 결과입니다.</div>`
+아래 ${opt.versions}개는 지금 살 수 있는 것만 모은 결과입니다.</div>`
         : ''
     }
 ${/**
@@ -2274,16 +2308,36 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
    * 고르는 기준은 대표 한 장 때와 같다 — 마감 안 지난 것 중 특전이 많이 확인된 순,
    * 동점이면 판매처 많은 순 → 마감 급한 순. 다섯 장이면 한 바퀴가 30초다.
    */
-  /** 홍보 칸 아래 한 줄. 카드가 쓰는 것과 같은 사실만 — 홍보 문구는 쓰지 않는다. */
+  /**
+   * 홍보 칸 아래 정보 블록 — **카드와 같은 것을 같은 순서로** 낸다.
+   *
+   * 전에는 한 줄(`특전 3/7 · 6종 · 마감 D-3`)뿐이라, 화면을 제일 크게 먹는 자리가
+   * 정작 그리드 카드보다 정보가 적었다(카운트다운·품절·발매일이 빠져 있었다).
+   * 커버를 정사각으로 되돌리면서 생기는 자리를 여백이 아니라 이걸로 채운다.
+   */
   const promoFacts = (a) => {
-    const d = a.nextDeadline?.at ? Math.ceil((new Date(a.nextDeadline.at).getTime() - Date.now()) / 86400000) : null;
-    return [
-      a.benefitCount ? `특전 ${a.benefitCount}/${a.retailers}` : `판매처 ${a.retailers}`,
+    const tg = [
+      a.benefitCount ? `<span class="tg">특전 ${a.benefitCount}/${a.retailers}</span>` : '',
+      a.soldCount ? `<span class="tg w">품절 ${a.soldCount}건</span>` : '',
+    ]
+      .filter(Boolean)
+      .join('');
+    const meta = [
       a.versions ? `${a.versions}종` : '',
-      d != null && d >= 0 ? `마감 D-${d}` : '',
+      a.retailers ? `판매처 ${a.retailers}` : '',
+      a.deliveryDate ? `${krDate(a.deliveryDate)} 발매` : '',
     ]
       .filter(Boolean)
       .join(' · ');
+    return (
+      (a.nextDeadline
+        ? `<span class="cdl">${esc(a.nextDeadline.label)} <span class="cd" data-until="${esc(
+            a.nextDeadline.at
+          )}">${esc(a.nextDeadline.rough || '')}</span></span>`
+        : '') +
+      (tg ? `<span class="tags">${tg}</span>` : '') +
+      (meta ? `<span class="meta">${esc(meta)}</span>` : '')
+    );
   };
   const promo = [...albums]
     .filter((a) => !a.expired && a.cover)
@@ -2300,7 +2354,7 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
             `<a class="ls" href="album/${esc(a.slug)}.html">
 <span class="lim"><img src="${esc(a.cover)}" alt="" ${n ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">
 <span class="cvt"><span class="cva">${esc(a.artistDisplay || a.artist)}</span><span class="cval">${esc(a.album)}</span></span></span>
-<span class="pmeta">${esc(promoFacts(a))}</span></a>`
+<span class="pmeta">${promoFacts(a)}</span></a>`
         )
         .join('')}</div>
 ${
