@@ -73,7 +73,12 @@ td{padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .num{white-space:nowrap;text-align:right}
 .ev{font-size:0.75rem;color:var(--acc);margin-top:2px}
 .ben div{margin-bottom:4px}
-.flag{color:var(--acc);font-weight:600}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
+/* 액센트는 **놓치면 손해인 것**에만 쓴다 — 품절·마감·팬싸.
+   특전 있음·구성 비공개나 배송지별은 급한 게 아니라 상태다. 같은 색을 쓰면
+   화면이 온통 주황이 되고 정작 급한 게 안 보인다. 강조는 굵기로만 낸다. */
+.flag{color:var(--acc);font-weight:600}
+.info{color:var(--fg);font-weight:600}
+.soft{color:var(--mut)}/* 특전 상태 다섯 개는 같은 칸의 같은 자리에 온다 — 크기가 갈리면 안 된다.
    .mut(12px 보조 문구)를 여기 쓰다가 특전 없음만 14px로 커 보였다. */
 .none{color:var(--mut);font-size:inherit}.ok2{color:var(--ok);font-weight:600}
 .mut{color:var(--mut);font-size:0.75rem}.q{color:var(--acc);font-weight:700}
@@ -319,18 +324,30 @@ list-style:none;padding:0}
 @media(max-width:559px){
 .cards{grid-template-columns:repeat(2,1fr);gap:28px 10px}
 .cards .lead{grid-column:span 2}
-.cards .lead .cvt{padding:44px 14px 14px}
+.cards .lead .cvt{padding:44px 14px 22px}
 .cards .lead .cvt .cval{font-size:1.25rem}
 /* 뒤에 오는 기본 규칙과 명시도가 같으면 밀린다 — .cards로 한 단계 올린다. */
 .cards .cvt{padding:24px 8px 8px}
 .cards .cvt .cval{font-size:0.8125rem}
 }
-/* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
-   오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
-   글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
+/* 홍보 칸 — 격자 안에서 2×2로 넓힌 칸. 오른쪽에 카드 두 장이 들어차 구멍이 안 생긴다. */
+.lead{position:relative;min-width:0;list-style:none}
+.lw{position:relative;overflow:hidden;background:var(--card)}
+.lt{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+overscroll-behavior-x:contain}
+.lt::-webkit-scrollbar{display:none}
+.ls{position:relative;flex:0 0 100%;scroll-snap-align:start;display:block;border-bottom:0;min-width:0}
+.ls img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--card)}
+.lnav{position:absolute;top:calc(50% - 18px);z-index:3;width:36px;height:36px;border:0;border-radius:2px;
+background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:pointer;display:none}
+.lw[data-lead] .lnav{display:block}
+.lnav.p{left:0}.lnav.n{right:0}
+.ld{position:absolute;left:0;right:0;bottom:10px;z-index:3;display:flex;justify-content:center;gap:6px}
+.ld button{width:7px;height:7px;padding:0;border:0;border-radius:99px;background:rgba(255,255,255,.45);cursor:pointer}
+.ld button.on{background:#fff}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
-.cards .lead .cvt{padding:56px 18px 18px}
+.cards .lead .cvt{padding:56px 18px 26px}
 .cards .lead .cvt .cval{font-size:1.5rem;-webkit-line-clamp:3}
 .cards .lead .cvt .cva{font-size:0.875rem;margin-bottom:4px}
 }
@@ -424,6 +441,12 @@ font-size:0.6875rem;line-height:1.2;font-weight:500;color:var(--mut);background:
 .cd.over{color:var(--mut);font-weight:400}
 .alarm{font-size:0.75rem;white-space:nowrap}
 .card .cdl{font-size:0.75rem;color:var(--mut);margin-top:8px}
+/* 카드 아래는 세 줄이다 — 마감 · 태그 · 메타. 셋이 각자 다른 여백을 갖고 있어서
+   줄마다 간격이 달랐고 카드가 헐거워 보였다. 한 리듬(4px)으로 묶는다. */
+.card .cvw{margin-bottom:8px}
+.card .cdl{margin:0 0 4px}
+.card .tags{margin:0 0 4px}
+.card .meta{margin:0;line-height:1.45}
 /* 검색 — 29CM 실측을 옮겼다. border-b-4 border-on-black · 36px semibold · placeholder #d4d4d4.
    **상자가 아니다.** 배경도 테두리도 없고 아래 굵은 선 하나뿐이다.
    저쪽은 전체화면 검색이라 36px이지만 우리는 목록 위 필터라 26px로 낮췄다 —
@@ -609,11 +632,11 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <th scope="col">판매처</th><th scope="col" class="num">가격</th><th scope="col" class="num">배송</th><th scope="col">특전</th></tr></thead><tbody><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67106" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 6장</span></div></th>
 <td class="num" data-label="가격">19,300원</td>
-<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="num" data-label="배송"><span class="soft">배송지별</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 미공개 셀피 포토카드 A 1종 (3종 중 랜덤)이 제공됩니다.</div></td></tr><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67108" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 6장</span></div></th>
 <td class="num" data-label="가격">32,600원</td>
-<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="num" data-label="배송"><span class="soft">배송지별</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 미공개 셀피 포토카드 A 1종 (3종 중 랜덤) + 미공개 셀피 포토카드 B 1종 (3종 중 랜덤) + 인스턴트 포토카드 1종 (3종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="1" id="vp-1" role="tabpanel" aria-labelledby="vt-1" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>삶 ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="삶｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
@@ -663,7 +686,7 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <th scope="col">판매처</th><th scope="col" class="num">가격</th><th scope="col" class="num">배송</th><th scope="col">특전</th></tr></thead><tbody><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67107" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 6장</span></div></th>
 <td class="num" data-label="가격">13,300원</td>
-<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="num" data-label="배송"><span class="soft">배송지별</span></td>
 <td class="ben" data-label="특전"><div>예약 판매 구매자 혜택 구매 시, 미공개 셀피 포토카드 B 1종 (3종 중 랜덤)이 제공됩니다.</div></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="6" id="vp-6" role="tabpanel" aria-labelledby="vt-6" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>TEMPLE ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="temple｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
@@ -673,7 +696,7 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <th scope="col">판매처</th><th scope="col" class="num">가격</th><th scope="col" class="num">배송</th><th scope="col">특전</th></tr></thead><tbody><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67109" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 4장</span></div></th>
 <td class="num" data-label="가격">39,300원</td>
-<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="num" data-label="배송"><span class="soft">배송지별</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <div class="vp" data-p="7" id="vp-7" role="tabpanel" aria-labelledby="vt-7" tabindex="0"><div class="psw"><button type="button" class="pb on" data-k="0">개별</button></div><div class="pp" data-k="0"><h3>LIFE ver. <span class="pk">개별</span> <span class="one">1곳만</span></h3>
 <p class="rep"><a href="#" data-report="life｜개별" role="button">특전 실물 사진 보내기</a><span class="rmsg mut"></span></p>
@@ -683,7 +706,7 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <th scope="col">판매처</th><th scope="col" class="num">가격</th><th scope="col" class="num">배송</th><th scope="col">특전</th></tr></thead><tbody><tr>
 <th scope="row" class="rt" data-label="판매처"><a href="https://shop.weverse.io/ko/shop/KRW/artists/113/sales/67110" target="_blank" rel="noopener"><span class="rlg rl5" aria-hidden="true"></span>위버스샵</a><div class="tags"><span class="tg">1인 4장</span></div></th>
 <td class="num" data-label="가격">53,400원</td>
-<td class="num" data-label="배송"><span class="flag">배송지에 따라 다름</span></td>
+<td class="num" data-label="배송"><span class="soft">배송지별</span></td>
 <td class="ben" data-label="특전"><span class="none">특전 없음</span></td></tr></tbody></table></div></div></div>
 <h2>팬사인회 · 이벤트 <span class="one">메이크스타</span></h2>
 <p class="mut">메이크스타 구매분만 응모됩니다. 응모 마감 뒤 취소·환불 불가.</p>
@@ -701,8 +724,7 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 <h2>최저가 조합 <span class="one">8종</span></h2>
 
 
-<div class="best"><span class="bl">최저가</span><b class="bv">250,900원</b><span class="flag">일부 미확인</span><span class="bm">상품 250,900원 · 배송 무료</span></div>
-<p class="pol"><b>쿠폰 −7,000원</b>는 위 금액에서 빼지 않았습니다 — 판매처에서 <b>직접 "받기"를 눌러야</b> 하고 기간 한정 행사입니다.</p>
+<div class="best"><span class="bl">최저가</span><b class="bv">250,900원</b><span class="soft">일부 미확인</span><span class="bm">상품 250,900원 · 배송 무료</span></div>
 
 <div class="bds"><div class="dl">
 <div class="dlt"><span class="rlg rl1" aria-hidden="true"></span>알라딘 <span class="pk">4종</span></div>
@@ -711,9 +733,9 @@ aria-selected="false" aria-controls="vp-7" tabindex="-1">LIFE ver.</button></div
 </div><div class="dl">
 <div class="dlt"><span class="rlg rl5" aria-hidden="true"></span>위버스샵 <span class="pk">4종</span></div>
 <div class="dlc">125,300원</div>
-<div class="dlm">배송 <span class="flag">배송지에 따라 다름</span><span class="est">추정</span></div>
+<div class="dlm">배송 <span class="soft">배송지별</span><span class="est">추정</span></div>
 </div></div>
-<ol class="rks"></ol><p class="partnote">아래는 8종을 다 갖추지 못하는 곳입니다 — 금액이 낮은 건 덜 사기 때문입니다.</p><ol class="rks"><li class="rk part">
+<ol class="rks"></ol><p class="partnote">일부만 취급 — 덜 사서 금액이 낮습니다</p><ol class="rks"><li class="rk part">
 <span class="rkn"></span>
 <span class="rkb"><span class="rlg rl5" aria-hidden="true"></span><b>위버스샵</b>
 <span class="rkm">8종 중 4종 · 배송 미확인</span></span>
@@ -893,5 +915,5 @@ pick(0);
 });
 })();
 </script>
-<div class="err">수집 실패: 뮤직플랜트: 연결 불가로 건너뜀 (연속 3회 실패) — www.musicplant.co.kr</div>
-<p class="stamp">최근 수집 <b>2026. 8. 28. 09:29:04</b></p></body></html>
+
+<p class="stamp">최근 수집 <b>2026. 8. 28. 09:41:01</b></p></body></html>
