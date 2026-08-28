@@ -28,8 +28,23 @@ const esc = (s) =>
  * 루트(`''`)만 예외다 — `https://도메인/`이 원래 그 모양이고 리다이렉트도 없다.
  * 여기서 한 번 막으면 `build.mjs`를 포함해 abs를 지나는 모든 곳이 같이 맞는다.
  */
+/**
+ * 경로를 퍼센트 인코딩한다.
+ *
+ * 슬러그에 한글이 들어간다(17개 중 3개 — `youngtak-영탁-gogo` 등). 사이트맵 `<loc>`은
+ * RFC 3986 URL이어야 하는데 raw UTF-8이 그대로 나가고 있었다. canonical·og:url·
+ * hreflang·og:image도 같다. 브라우저는 알아서 인코딩해 주지만 **사이트맵을 읽는 건
+ * 브라우저가 아니다.** robots.txt에 Yeti·Daumoa를 따로 적을 만큼 국내 검색을 노리는
+ * 사이트라 규격대로 내는 쪽이 맞다.
+ *
+ * **`encodeURI`는 멱등이 아니다.** `%`를 다시 이스케이프해서 두 번 걸면
+ * `%EC%98%81` → `%25EC%2598%2581`이 된다. 그래서 이미 `%XX`가 있으면 건드리지 않는다.
+ * 실측으로 슬러그 17개 중 `%`를 가진 것은 없어 잘못 건너뛸 경우도 없다.
+ */
+const encPath = (p) => (/%[0-9A-Fa-f]{2}/.test(p) ? p : encodeURI(p));
+
 export const abs = (siteUrl, path) =>
-  siteUrl ? `${siteUrl.replace(/\/$/, '')}/${String(path).replace(/^\//, '').replace(/\/$/, '')}` : null;
+  siteUrl ? `${siteUrl.replace(/\/$/, '')}/${encPath(String(path).replace(/^\//, '').replace(/\/$/, ''))}` : null;
 
 /**
  * <head>에 들어갈 메타 태그.
