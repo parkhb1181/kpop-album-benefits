@@ -143,6 +143,11 @@ background:rgba(0,0,0,.62);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
 td.th{width:52px;padding:8px 4px 8px 8px}
 td.th img{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:2px;display:block}
 .back{font-size:0.875rem;color:var(--mut);display:inline-block;margin-bottom:16px;border:0}
+/* 3,694px를 내려온 끝이 FAQ였고 돌아갈 길이 맨 위 링크 하나뿐이었다. */
+.endnav{display:flex;gap:16px;justify-content:space-between;margin:clamp(28px,3.4vw,44px) 0 0;
+padding-top:16px;border-top:1px solid var(--line);font-size:0.75rem;font-weight:600}
+.endnav a{border-bottom:0;color:var(--mut)}
+.endnav a:hover{color:var(--fg)}
 
 /* 상단 — 앨범 커버와 마감을 나란히.
    가로로 긴 표에 두 줄을 넣으면 여백만 남는다. 커버를 크게 두는 게 이 페이지의 주인공이기도 하다. */
@@ -170,6 +175,12 @@ margin-bottom:clamp(8px,1vw,12px)}
    읽히면서 "어디서 몇 종"이 서로 멀어진다. */
 .bds{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(12px,1.6vw,20px)}
 .hero .dls{flex:1 1 260px;min-width:0}
+/* 머리글 요약 — 마감 아래 빈자리를 쓴다. 낱말과 값을 두 칸으로 세워 훑기 쉽게. */
+.sm{margin:4px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:8px 16px;border-top:1px solid var(--line);padding-top:12px}
+.sm>div{min-width:0}
+.sm dt{font-size:0.6875rem;font-weight:600;color:var(--mut);margin:0 0 2px}
+.sm dd{margin:0;font-size:0.875rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .dl{border-top:2px solid var(--fg);padding-top:10px}
 .dlt{font-size:0.875rem;font-weight:700;display:flex;align-items:center;gap:6px}
 .dlc{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums;margin:4px 0 2px}
@@ -391,7 +402,7 @@ background:rgba(0,0,0,.55);color:#fff;font-size:1.0625rem;line-height:1;cursor:p
 .ld button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;
 display:flex;align-items:center;justify-content:center}
 .ld button::before{content:'';width:8px;height:8px;border-radius:99px;
-background:#c9c9c9}
+background:#8a8a8a}
 .ld button.on::before{background:var(--fg)}
 @media(min-width:560px){
 .cards .lead{grid-column:span 2;grid-row:span 2}
@@ -1492,7 +1503,7 @@ const kst = (iso, opt = {}) =>
  * 메이크스타는 열린 뒤에야(ON_SALE) 목록에 넣고, 위버스샵도 판매 중인 것만 준다.
  * 반면 마감은 초 단위로 정확하고, 팬을 실제로 급하게 만드는 쪽도 마감이다.
  */
-function countdownHtml(deadlines, slug, siteUrl, subject, cover) {
+function countdownHtml(deadlines, slug, siteUrl, subject, cover, rows = []) {
   /**
    * **마감이 없어도 커버는 낸다.**
    *
@@ -1530,10 +1541,36 @@ function countdownHtml(deadlines, slug, siteUrl, subject, cover) {
    *
    * 타이머는 커버 오른쪽에 세로로 쌓는다(.hero + .dls).
    */
+  /**
+   * 머리글 요약 — 커버 옆 빈자리를 채운다.
+   *
+   * 실측(튜이드): 커버 299px 옆에서 마감 블록이 117px만 써서 아래 182px이 비어 있었다.
+   * 그런데 이 페이지에서 제일 먼저 알고 싶은 것(얼마인가·몇 곳인가·특전은 아는가)은
+   * 스크롤해야 나왔다. 빈자리에 그걸 놓는다.
+   *
+   * **아래 표와 같은 말을 두 번 하지 않는다.** 표는 판매처별 낱값이고 여기는 범위다 —
+   * "얼마부터 얼마" 하나로 압축한다. 특전도 곳 수만 세고 내용은 표에 맡긴다.
+   */
+  const sum = (() => {
+    const priced = rows.filter((r) => r.price != null && r.soldOut !== true).map((r) => r.price);
+    if (!priced.length) return '';
+    const lo = Math.min(...priced);
+    const hi = Math.max(...priced);
+    const shops = new Set(rows.map((r) => r.retailer)).size;
+    const withBenefit = new Set(rows.filter((r) => (r.benefit || []).length).map((r) => r.retailer)).size;
+    const sold = rows.filter((r) => r.soldOut === true).length;
+    return `<dl class="sm">
+<div><dt>가격</dt><dd>${lo === hi ? won(lo) : `${won(lo)} ~ ${won(hi)}`}</dd></div>
+<div><dt>판매처</dt><dd>${shops}곳</dd></div>
+<div><dt>특전 확인</dt><dd>${withBenefit ? `${withBenefit}곳` : '<span class="soft">없음</span>'}</dd></div>
+${sold ? `<div><dt>품절</dt><dd><span class="flag">${sold}건</span></dd></div>` : ''}
+</dl>`;
+  })();
+
   return `<div class="hero">${
     cover ? `<img class="hcv" src="${esc(cover)}" alt="${esc(subject)}" width="400" height="400" fetchpriority="high" decoding="async">` : ''
   }${
-    hasDl ? `<div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p>${cards}</div>` : ''
+    hasDl ? `<div class="dls"><p class="dlh">남은 시간 <span class="one">실시간</span></p>${cards}${sum}</div>` : `<div class="dls">${sum}</div>`
   }</div>
 ${hasDl ? CD_JS : ''}`;
 }
@@ -2194,7 +2231,14 @@ ${singleRows ? `<ol class="rks">${singleRows}</ol>` : ''}
    * 한 버전만 살 사람에게는 해당이 없어서 앞으로 올리면 안 된다.
    */
   const faq = faqData({ artistName, album: target.album, retailerNames, best: opt?.best, versions: groups.length });
-  const body = `${countdownHtml(deadlines, slug, siteUrl, `${artistName} ${target.album}`, rows.find((r) => r.thumb)?.thumb)}
+  const body = `${countdownHtml(
+    deadlines,
+    slug,
+    siteUrl,
+    `${artistName} ${target.album}`,
+    rows.find((r) => r.thumb)?.thumb,
+    rows
+  )}
 ${sections || '<p>수집된 상품이 없습니다.</p>'}
 ${eventsHtml(events, eventTotal)}
 ${optHtml}
@@ -2218,6 +2262,9 @@ ${expiredBanner(expired, target)}
 <h1>${esc(artistName)} <span class="alb">${esc(target.album)}</span></h1>
 ${reportJs(slug)}
 <main>${body}</main>
+${/* 3,694px를 내려온 끝이 FAQ였고 돌아갈 길이 맨 위 링크 하나뿐이었다.
+     끝에서 목록으로 돌아가거나 위로 갈 수 있게 한다. */ ''}
+<nav class="endnav"><a href="../index.html">← 전체 컴백</a><a href="#top">맨 위로 ↑</a></nav>
 ${/class="vtabs"/.test(body) ? VIEW_JS : ""}
 ${errors?.length ? `<div class="err">수집 실패: ${errors.map(esc).join(' / ')}</div>` : ''}
 <p class="stamp">최근 수집 <b>${esc(stamp)}</b></p>`,
