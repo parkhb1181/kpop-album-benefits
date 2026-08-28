@@ -301,23 +301,15 @@ font-size:1.25rem;font-weight:800;color:var(--fg);white-space:nowrap;letter-spac
    ⓓ auto-fill이라 브레이크포인트 없이 스스로 접힌다.  */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px 16px;margin-top:24px;
 list-style:none;padding:0}
-/* 히어로 — 격자 위 별도 섹션. 크기로 외치는 대신 **왜 여기 있는지**를 한 줄로 적는다.
-   위계는 29CM 상단 실측을 우리 눈금(11/12/14/16/20)에 맞춘 것이다:
-   22px/700 제목 → 15px/400 부제 → 11px/700 브랜드  ⇒  20px 앨범명 → 12px 아티스트 → 11px 이유. */
-.feat{position:relative;display:flex;gap:clamp(16px,2.4vw,28px);align-items:center;
-padding-bottom:clamp(20px,2.6vw,28px);margin-bottom:clamp(20px,2.6vw,28px);
-border-bottom:2px solid var(--fg)}
-.fgo{position:absolute;inset:0;z-index:1;border:0}
-.fcv{width:clamp(132px,26vw,260px);height:auto;aspect-ratio:1;object-fit:cover;display:block;
-background:var(--card);flex:0 0 auto}
-.fm{flex:1 1 200px;min-width:0}
-.frs{font-size:0.6875rem;font-weight:700;color:var(--acc);margin:0 0 6px}
-.falb{font-size:1.25rem;font-weight:700;line-height:1.3;letter-spacing:-.01em;
-margin:0 0 4px;padding:0;border:0;color:var(--fg);display:block}
-.fart{font-size:0.75rem;font-weight:600;color:var(--mut);margin:0 0 10px}
-.ffc{font-size:0.75rem;color:var(--mut);margin:0;font-variant-numeric:tabular-nums}
-.ffd{font-size:0.75rem;color:var(--mut);margin:4px 0 0;font-variant-numeric:tabular-nums}
-.ffd b{color:var(--acc)}
+/* 대표 칸 — **격자 안에서 2×2로 넓힌 칸**이다. 따로 띄운 섹션이 아니라
+   오른쪽에 다음 두 장이 그대로 들어차서 구멍이 안 생긴다.
+   글자는 커버 위에 얹은 것을 그대로 쓰되 크기만 올린다(14→24px 앨범명). */
+@media(min-width:560px){
+.cards .lead{grid-column:span 2;grid-row:span 2}
+.cards .lead .cvt{padding:56px 18px 18px}
+.cards .lead .cvt .cval{font-size:1.5rem;-webkit-line-clamp:3}
+.cards .lead .cvt .cva{font-size:0.875rem;margin-bottom:4px}
+}
 .card{position:relative;min-width:0;border:0;display:block}
 /* 카드가 li, 앨범명이 h2가 됐다. 브라우저 기본 여백·크기만 끄면 생김새는 그대로다. */
 .card>h2{border:0;padding:0;display:block}
@@ -687,14 +679,25 @@ if(document.readyState==='complete'){idle(go)}else{addEventListener('load',funct
  * 가로획 세 개의 길이를 다르게 둔 건 **표의 행**으로도 읽히게 하려는 것이다 — 우리가 파는 게 그 표다.
  * 획이 넷뿐이라 16px 파비콘에서도 안 무너진다. 먹지 배경(OG 카드)에서도 산다.
  */
+/**
+ * LP판. 사용자가 준 `logo.jpeg`를 그대로 쓰지 않고 도형으로 다시 그렸다 —
+ * 헤더(26px)와 파비콘(16px) 두 자리에 들어가는데 jpeg는 그 크기에서 뭉개지고,
+ * 파비콘은 data URI라 SVG여야 색이 따라온다.
+ *
+ * 원본 비례를 옮겼다: 판 지름 대비 라벨 0.36, 가운데 구멍 0.055.
+ * 홈은 원본이 12줄인데 16px에서는 회색 덩어리가 되므로 4줄로 줄였다.
+ * 판을 currentColor로 두면 헤더에서는 글자색, 파비콘에서는 검정으로 나온다.
+ */
 const MARK =
-  '<rect width="20" height="20" rx="4.6" fill="#c2410c"/>' +
-  '<g fill="#fafafa">' +
-  '<rect x="4.2" y="4.2" width="2.4" height="11.6"/>' +
-  '<rect x="4.2" y="4.2" width="11.6" height="2.4"/>' +
-  '<rect x="4.2" y="8.8" width="8.4" height="2.4"/>' +
-  '<rect x="4.2" y="13.4" width="10.2" height="2.4"/>' +
-  '</g>';
+  '<circle cx="10" cy="10" r="9.6" fill="currentColor"/>' +
+  '<g fill="none" stroke="#fff" stroke-width=".5">' +
+  '<circle cx="10" cy="10" r="8.3"/>' +
+  '<circle cx="10" cy="10" r="7.2"/>' +
+  '<circle cx="10" cy="10" r="6.1"/>' +
+  '<circle cx="10" cy="10" r="5"/>' +
+  '</g>' +
+  '<circle cx="10" cy="10" r="3.5" fill="#fff"/>' +
+  '<circle cx="10" cy="10" r=".62" fill="currentColor"/>';
 
 const LOGO = `<svg class="lg" width="26" height="26" viewBox="0 0 20 20" aria-hidden="true" focusable="false">${MARK}</svg>`;
 
@@ -2048,7 +2051,19 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
    * 크기로 외치지 않고 순서로 말한다.
    */
   const at = (a) => (a.nextDeadline?.at ? new Date(a.nextDeadline.at).getTime() : Infinity);
-  const ordered = [...albums].sort((x, y) => Number(!!x.expired) - Number(!!y.expired) || at(x) - at(y));
+  const base = [...albums].sort((x, y) => Number(!!x.expired) - Number(!!y.expired) || at(x) - at(y));
+  /**
+   * **대표 한 장은 격자의 첫 칸이다.** 따로 띄운 섹션이 아니라 2×2로 넓힌 칸이라,
+   * 오른쪽에 다음 두 장이 그대로 들어차서 격자에 구멍이 안 생긴다.
+   * 거는 기준은 그대로 — 마감 안 지난 것 중 특전이 가장 많이 확인된 앨범,
+   * 동점이면 판매처 많은 순 → 마감 급한 순.
+   */
+  const lead = [...albums]
+    .filter((a) => !a.expired && a.cover)
+    .sort(
+      (x, y) => (y.benefitCount || 0) - (x.benefitCount || 0) || (y.retailers || 0) - (x.retailers || 0) || at(x) - at(y)
+    )[0];
+  const ordered = lead ? [lead, ...base.filter((a) => a.slug !== lead.slug)] : base;
 
   // 검색 대상 문자열을 빌드 때 미리 만들어 카드에 박는다 (브라우저는 비교만 한다)
   const hayOf = (a) => [a.artistDisplay, a.artist, a.artistKo, a.album].filter(Boolean).join(' ');
@@ -2085,7 +2100,7 @@ export function renderIndex({ albums, stamp, siteUrl, vapidPublicKey }) {
        *
        * 스타일은 하나도 안 바꾼다 — 태그만 바뀐다(아래 리셋으로 h2 기본 여백만 끈다).
        */
-      return `<li class="card" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
+      return `<li class="card${i === 0 && lead ? ' lead' : ''}" data-q="${esc(searchKey(hayOf(a)))}" data-c="${esc(
         searchKey(choseong(hayOf(a)))
       )}">
 <a class="go" href="album/${esc(a.slug)}.html" aria-label="${esc(`${a.artistDisplay || a.artist} ${a.album}`)}"></a>
@@ -2112,61 +2127,6 @@ ${
 </li>`;
     })
     .join('');
-  /**
-   * 히어로 — **격자 안에서 한 칸을 키우지 않는다.** 전에 그렇게 했다가 격자에 구멍이
-   * 뚫린 것처럼 보여 뺐다. 29CM도 카드 크기가 아니라 섹션으로 강조한다(상단 실측:
-   * 412×494 정적 이미지 한 장, 캐러셀 라이브러리 0개).
-   *
-   * **돌리지 않는다.** NN/g 실측으로 캐러셀 상호작용은 1.96%, 정적 히어로는 43.03%다.
-   * 케이타운포유 첫 화면이 캐러셀 요소 127개짜리인데, 그게 1.96% 쪽이다.
-   *
-   * 무엇을 거는가 — **마감이 안 지난 것 중 특전이 가장 많이 확인된 앨범**이다.
-   * 격자가 이미 마감 급한 순이라 마감 기준으로 걸면 1번 카드와 같은 앨범이 두 번 나온다.
-   * 그리고 이 사이트의 값어치는 특전 비교라, 특전을 모르는 앨범을 크게 걸면
-   * 눌러도 볼 게 없다. 동점이면 판매처 많은 순 → 마감 급한 순.
-   *
-   * 맨 윗줄에 **왜 걸렸는지**를 사실로 적는다. 여기에 슬로건이 들어가면 배너로 읽히고,
-   * 배너로 읽히면 아예 안 본다(배너 블라인드니스).
-   */
-  const feat = [...albums]
-    .filter((a) => !a.expired && a.cover)
-    .sort(
-      (x, y) => (y.benefitCount || 0) - (x.benefitCount || 0) || (y.retailers || 0) - (x.retailers || 0) || at(x) - at(y)
-    )[0];
-  const dLeft = (a) => {
-    if (!a?.nextDeadline?.at) return null;
-    const d = Math.ceil((new Date(a.nextDeadline.at).getTime() - Date.now()) / 86400000);
-    return d >= 0 ? d : null;
-  };
-  const featured = feat
-    ? (() => {
-        const dd = dLeft(feat);
-        // 마감 문구는 길다(`예약 특전 포토카드 응모 마감`). 판매처·종수와 한 줄로 이으면
-        // 줄이 넘쳐서 무엇이 급한지가 안 읽힌다. 마감만 아랫줄로 뗀다.
-        const facts = [feat.retailers ? `판매처 ${feat.retailers}곳` : '', feat.versions ? `${feat.versions}종` : '']
-          .filter(Boolean)
-          .join(' · ');
-        const due = dd != null ? `${esc(feat.nextDeadline.label)} <b>D-${dd}</b>` : '';
-        const why = feat.benefitCount
-          ? `특전 ${feat.benefitCount}곳 확인`
-          : feat.fansignCount
-            ? '팬사인회 진행'
-            : '비교 준비됨';
-        const artist = feat.artistDisplay || feat.artist;
-        return `<section class="feat">
-<a class="fgo" href="album/${esc(feat.slug)}.html" aria-label="${esc(`${artist} ${feat.album}`)}"></a>
-<img class="fcv" src="${esc(feat.cover)}" alt="" width="260" height="260" fetchpriority="high" decoding="async">
-<div class="fm">
-<p class="frs">${esc(why)}</p>
-<h2 class="falb">${esc(feat.album)}</h2>
-<p class="fart">${esc(artist)}</p>
-${facts ? `<p class="ffc">${esc(facts)}</p>` : ''}
-${due ? `<p class="ffd">${due}</p>` : ''}
-</div>
-</section>`;
-      })()
-    : '';
-
   const names = albums
     .slice(0, 6)
     .map((a) => a.artistDisplay || a.artist)
@@ -2186,7 +2146,6 @@ ${
         : ''
     }
 ${/* h1은 헤더의 브랜드 줄이다(위 siteHeader 주석 참고). 여기 또 두면 같은 말이 두 번 나온다. */ ''}
-${featured}
 <main><ul class="cards">${cards}</ul></main>
 <details class="ft">
 <summary>이 사이트는 무엇인가</summary>
