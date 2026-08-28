@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. 15:49:44",
+  "stamp": "2026. 8. 28. 16:28:12",
   "albums": [
     {
       "artistId": 308,
@@ -20,40 +20,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-30T23:59:59.999999+09:00",
-        "rough": "2일 8시간"
+        "rough": "2일 7시간"
       },
       "rowCount": 43,
       "artistKo": "태민",
       "artistDisplay": "태민(TAEMIN)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/24/k68Dth.jpg"
-    },
-    {
-      "artistId": 294,
-      "artistEn": "AND2BLE",
-      "album": "Sequence 01: Curiosity",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-09-04",
-      "weversePriceMin": 20700,
-      "artist": "AND2BLE",
-      "slug": "and2ble-sequence-01-curiosity",
-      "versions": 14,
-      "retailers": 7,
-      "benefitCount": 2,
-      "soldCount": 7,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-04T19:00:00+09:00",
-        "rough": "7일 3시간"
-      },
-      "rowCount": 60,
-      "artistKo": null,
-      "artistDisplay": "AND2BLE",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg"
     },
     {
       "artistId": 215,
@@ -74,13 +47,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "6일 21시간"
+        "rough": "6일 20시간"
       },
       "rowCount": 21,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png"
+    },
+    {
+      "artistId": 294,
+      "artistEn": "AND2BLE",
+      "album": "Sequence 01: Curiosity",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-09-04",
+      "weversePriceMin": 20700,
+      "artist": "AND2BLE",
+      "slug": "and2ble-sequence-01-curiosity",
+      "versions": 11,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 7,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-04T19:00:00+09:00",
+        "rough": "7일 2시간"
+      },
+      "rowCount": 53,
+      "artistKo": null,
+      "artistDisplay": "AND2BLE",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/05/15/u9nD3z.jpg"
     },
     {
       "artistId": 306,
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "3시간 9분"
+        "rough": "2시간 31분"
       },
       "rowCount": 46,
       "artistKo": "튜이드",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "9일 8시간"
+        "rough": "9일 7시간"
       },
       "rowCount": 30,
       "artistKo": "민호(MINHO)",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-08-29T23:59:59.999999+09:00",
-        "rough": "1일 8시간"
+        "rough": "1일 7시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-21T07:00:00+09:00",
-        "rough": "23일 15시간"
+        "rough": "23일 14시간"
       },
       "rowCount": 70,
       "artistKo": "코르티스",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "3시간 6분"
+        "rough": "2시간 27분"
       },
       "rowCount": 60,
       "artistKo": "엔시티 127",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-08-31T23:59:59.999999+09:00",
-        "rough": "3일 8시간"
+        "rough": "3일 7시간"
       },
       "rowCount": 20,
       "artistKo": "82메이저",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "62일 8시간"
+        "rough": "62일 7시간"
       },
       "rowCount": 22,
       "artistKo": "제니",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "17일 2시간"
+        "rough": "17일 1시간"
       },
       "rowCount": 19,
       "artistKo": "영탁",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "9일 8시간"
+        "rough": "9일 7시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T00:00:00+09:00",
-        "rough": "61일 8시간"
+        "rough": "61일 7시간"
       },
       "rowCount": 3,
       "artistKo": null,
