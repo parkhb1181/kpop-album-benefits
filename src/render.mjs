@@ -185,6 +185,9 @@ border:0;border-radius:2px;padding:8px 12px;cursor:pointer;display:inline-flex;a
 .vtp{font-weight:400;opacity:.7}
 .vtd{font-size:0.6875rem;font-weight:700;color:var(--acc)}
 .vt.on .vtd{color:var(--bg);opacity:.75}
+/* 판매처 한 곳뿐인 탭이 너무 납작하면 탭을 잘못 눌렀나 싶어진다. 바닥만 깐다 —
+   가장 큰 탭에 맞추는 것과는 다르다(실측 1,201px 공백 대 88px 공백). */
+.vp{min-height:296px}
 .vp+.vp{margin-top:clamp(32px,4vw,56px)}
 .vp>h3,.pp>h3{margin-top:0}
 
@@ -949,7 +952,7 @@ b.setAttribute('tabindex',i===n?'0':'-1');
 }
 showTab=show;
 /* 탭을 누르면 그 버전의 첫 사진으로 갤러리를 옮긴다. */
-function pick(i){show(i);if(goToVer&&!sync){sync=true;goToVer(i);sync=false}}
+function pick(i){show(i);if(goToVer&&!sync){sync=true;goToVer(i);sync=false}keepTabsInView()}
 bs.forEach(function(b,i){
 b.addEventListener('click',function(){pick(i)});
 /* 화살표키 이동 — role=tab을 붙인 이상 이게 없으면 키보드로는 첫 탭에 갇힌다. */
@@ -1056,27 +1059,20 @@ m.querySelectorAll('img').forEach(function(im){if(!im.complete)im.addEventListen
 addEventListener('load',place);place();
 mark();
 });
-/* 탭·포장을 옮길 때마다 표 높이가 달라져 아래 섹션이 튄다.
-   모든 (탭 × 포장) 조합을 재서 가장 높은 것에 바닥을 맞춘다.
-   이미지가 없는 표라 높이가 로딩에 흔들리지 않는다. */
-function levelPanels(){
-var ps=[].slice.call(document.querySelectorAll('.vp'));
-if(ps.length<2)return;
-var prev=ps.map(function(p){return p.style.display}),max=0;
-ps.forEach(function(p){
-p.style.minHeight='';p.style.display='';
-var pps=[].slice.call(p.querySelectorAll('.pp'));
-if(!pps.length){if(p.offsetHeight>max)max=p.offsetHeight;return}
-var pp=pps.map(function(x){return x.style.display});
-pps.forEach(function(x,j){
-pps.forEach(function(y,k){y.style.display=k===j?'':'none'});
-if(p.offsetHeight>max)max=p.offsetHeight;
-});
-pps.forEach(function(x,j){x.style.display=pp[j]});
-});
-ps.forEach(function(p,i){p.style.display=prev[i];p.style.minHeight=max+'px'});
+/* **모든 탭을 가장 큰 탭에 맞추지 않는다.**
+   디자인 시스템들은 그렇게 하라고 하지만(Carbon·CMS) 그건 탭끼리 크기가 비슷할 때 얘기다.
+   실측: 튜이드 5개 탭의 자연 높이가 1409·312·273·230·208px다. 가장 큰 것에 맞추면
+   제일 짧은 탭이 내용 208px에 여백 1,201px(85%)이 된다.
+   그리고 애초에 **탭 줄은 안 움직인다** — 갤러리도 탭도 패널 위에 있어서, 바뀌는 건
+   표 아래 섹션들뿐이다(실측: 탭을 옮겨도 탭 줄 y=1347 고정). 막아주는 게 없는데
+   1,201px을 내주는 셈이었다.
+   대신 탭이 화면 밖으로 밀려났을 때만 되돌린다 — 긴 탭에서 짧은 탭으로 갈 때
+   문서가 짧아지면서 브라우저가 스크롤을 끌어올리는 게 진짜 튀는 순간이다. */
+function keepTabsInView(){
+var t=document.querySelector('.vtabs');if(!t)return;
+var r=t.getBoundingClientRect();
+if(r.top<0)t.scrollIntoView({block:'start'});
 }
-var lvl;addEventListener('resize',function(){clearTimeout(lvl);lvl=setTimeout(levelPanels,150)});
 
 /* 포장(낱개·세트) — 탭 안의 하위 선택. 탭을 둘로 쪼개는 대신 여기서 고른다. */
 document.querySelectorAll('.psw').forEach(function(sw){
@@ -1088,7 +1084,6 @@ sw.querySelectorAll('.pb').forEach(function(x,i){x.className=i===n?'pb on':'pb'}
 sw.querySelectorAll('.pb').forEach(function(b,i){b.addEventListener('click',function(){pick(i)})});
 pick(0);
 });
-levelPanels();
 })();
 </script>`;
 
