@@ -13,3 +13,6 @@
 {"at":"2026-08-28T06:48:54.585Z","type":"event.new","label":"영상통화 팬사인회","artist":"루네이트","album":"4TH MINI ALBUM [Off the Grid]","id":20146,"url":"https://makestar.co/event/20146","endAt":"2026-08-30T23:59:59.999999+09:00"}
 {"at":"2026-08-28T06:48:54.585Z","type":"event.new","label":"럭키드로우","artist":"투모로우바이투게더","album":"7TH YEAR: 가시덤불에 잠시 바람이 멈췄을 때","id":19773,"url":"https://makestar.co/event/19773","endAt":"2026-09-02T23:59:59.999999+09:00"}
 {"at":"2026-08-28T06:48:54.585Z","type":"album.new","artist":"EVAN","album":"1st Mini Album 'DEATH OF ME'"}
+{"at":"2026-08-28T19:14:17.411Z","type":"event.gone","label":"영상통화 팬사인회","artist":"뮤","album":"미니 1집 With U","id":20024}
+{"at":"2026-08-28T19:14:17.411Z","type":"album.gone","artist":"CORTIS","album":"GREENGREEN"}
+{"at":"2026-08-28T19:14:17.411Z","type":"album.gone","artist":"AND2BLE","album":"Sequence 01: Curiosity"}
