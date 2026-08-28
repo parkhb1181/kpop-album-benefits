@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 28. 12:26:24",
+  "stamp": "2026. 8. 28. 12:36:14",
   "albums": [
     {
       "artistId": 308,
@@ -12,7 +12,7 @@
       "artist": "TAEMIN",
       "slug": "taemin-phase-i-soft-violence",
       "versions": 6,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 1,
@@ -22,7 +22,7 @@
         "at": "2026-08-30T23:59:59.999999+09:00",
         "rough": "2일 11시간"
       },
-      "rowCount": 43,
+      "rowCount": 37,
       "artistKo": "태민",
       "artistDisplay": "태민(TAEMIN)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/4e17b7f9b63450f76e71d827a5a30a93.png",
@@ -38,8 +38,8 @@
       "weversePriceMin": 20700,
       "artist": "AND2BLE",
       "slug": "and2ble-sequence-01-curiosity",
-      "versions": 14,
-      "retailers": 7,
+      "versions": 13,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 7,
       "eventCount": 0,
@@ -49,7 +49,7 @@
         "at": "2026-09-04T19:00:00+09:00",
         "rough": "7일 6시간"
       },
-      "rowCount": 60,
+      "rowCount": 54,
       "artistKo": null,
       "artistDisplay": "AND2BLE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6aab1cd963a47a4863fc093e2d95122d.jpg",
@@ -66,7 +66,7 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
@@ -76,7 +76,7 @@
         "at": "2026-09-04T13:00:00+09:00",
         "rough": "7일 0시간"
       },
-      "rowCount": 21,
+      "rowCount": 18,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
@@ -93,7 +93,7 @@
       "artist": "TUIDE",
       "slug": "tuide-tune-play",
       "versions": 7,
-      "retailers": 6,
+      "retailers": 5,
       "benefitCount": 2,
       "soldCount": 3,
       "eventCount": 0,
@@ -101,9 +101,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "6시간 32분"
+        "rough": "6시간 22분"
       },
-      "rowCount": 46,
+      "rowCount": 40,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/db3a5e0875ca71044707658a99fb90a7.png",
@@ -119,8 +119,8 @@
       "weversePriceMin": 13900,
       "artist": "SHINee",
       "slug": "shinee-make-it-hot",
-      "versions": 6,
-      "retailers": 6,
+      "versions": 5,
+      "retailers": 5,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -130,7 +130,7 @@
         "at": "2026-09-06T23:59:59.999999+09:00",
         "rough": "9일 11시간"
       },
-      "rowCount": 30,
+      "rowCount": 25,
       "artistKo": "민호(MINHO)",
       "artistDisplay": "민호(MINHO)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
@@ -174,7 +174,7 @@
       "artist": "CORTIS",
       "slug": "cortis-greengreen",
       "versions": 16,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 8,
       "eventCount": 0,
@@ -184,7 +184,7 @@
         "at": "2026-09-21T07:00:00+09:00",
         "rough": "23일 18시간"
       },
-      "rowCount": 70,
+      "rowCount": 67,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6757915bf22d2b510df2f6ee69883fad.png",
@@ -201,7 +201,7 @@
       "artist": "NCT 127",
       "slug": "nct-127-blingy",
       "versions": 10,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 6,
       "eventCount": 1,
@@ -209,9 +209,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-08-28T19:00:00+09:00",
-        "rough": "6시간 29분"
+        "rough": "6시간 18분"
       },
-      "rowCount": 61,
+      "rowCount": 52,
       "artistKo": "엔시티 127",
       "artistDisplay": "엔시티 127(NCT 127)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f95c6ec90484eb86c6d1a3c974d39098.png",
@@ -228,7 +228,7 @@
       "artist": "82MAJOR",
       "slug": "82major-heat",
       "versions": 8,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -238,7 +238,7 @@
         "at": "2026-08-31T23:59:59.999999+09:00",
         "rough": "3일 11시간"
       },
-      "rowCount": 20,
+      "rowCount": 18,
       "artistKo": "82메이저",
       "artistDisplay": "82메이저(82MAJOR)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png",
@@ -255,7 +255,7 @@
       "artist": "JENNIE",
       "slug": "jennie-fallen-angel",
       "versions": 4,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -265,7 +265,7 @@
         "at": "2026-10-29T23:59:59.999999+09:00",
         "rough": "62일 11시간"
       },
-      "rowCount": 22,
+      "rowCount": 19,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
@@ -282,7 +282,7 @@
       "artist": "YOUNGTAK (영탁)",
       "slug": "youngtak-영탁-gogo",
       "versions": 4,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -292,7 +292,7 @@
         "at": "2026-09-14T18:00:00+09:00",
         "rough": "17일 5시간"
       },
-      "rowCount": 19,
+      "rowCount": 16,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
@@ -399,7 +399,8 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/13/QL0LvJ.jpg",
       "expired": {
         "lastSeen": "2026-08-27"
-      }
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/enhypen-the-sin-bliss.png"
     },
     {
       "artistId": 3,
@@ -425,7 +426,8 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/13/zXVZCw.png",
       "expired": {
         "lastSeen": "2026-08-27"
-      }
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-7th-year-가시덤불에-잠시-바람이-멈췄을-때.png"
     }
   ]
 }
