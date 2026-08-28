@@ -1,0 +1,51 @@
+# 일회성 확인용. 러너 IP에서 **로그아웃 상태**로 x.com 프로필이 열리는지 본다.
+# syndication은 2025-10에서 멈춘 데이터를 줘서 못 쓴다(확인 완료).
+# 확인 후 삭제한다.
+name: probe-x
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci --omit=dev || npm i
+      - run: npx playwright install --with-deps chromium
+      - name: 로그아웃 프로필 렌더 확인
+        run: |
+          cat > /tmp/probe.mjs <<'EOF'
+          import { chromium } from 'playwright';
+          const b = await chromium.launch({ headless: true });
+          const c = await b.newContext({
+            userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
+            locale: 'ko-KR',
+          });
+          for (const h of ['musicplant_kr', 'soundwave_korea', 'Ktown4u_kr', 'Withmuu_twt']) {
+            const p = await c.newPage();
+            try {
+              await p.goto(`https://x.com/${h}`, { waitUntil: 'domcontentloaded', timeout: 30000 });
+              await p.waitForTimeout(6000);
+              const r = await p.evaluate(() => {
+                const a = [...document.querySelectorAll('article')];
+                return {
+                  n: a.length,
+                  benefit: a.filter(x => /특전|증정|GIFT|LUCKY DRAW/i.test(x.innerText)).length,
+                  first: (a[0]?.innerText || '').replace(/\s+/g, ' ').slice(0, 110),
+                  wall: /로그인하여|Something went wrong|다시 시도/.test(document.body.innerText),
+                };
+              });
+              console.log(`${h} → 트윗 ${r.n} · 특전 ${r.benefit} · 벽 ${r.wall}`);
+              console.log(`   ${r.first}`);
+            } catch (e) {
+              console.log(`${h} → 실패 ${e.message.slice(0, 90)}`);
+            }
+            await p.close();
+          }
+          await b.close();
+          EOF
+          node /tmp/probe.mjs
