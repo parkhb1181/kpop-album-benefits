@@ -3,53 +3,53 @@ VERSION:2.0
 PRODID:-//kpop-album-benefits//KR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:EVAN 1st Mini Album 'DEATH OF ME' 마감
+X-WR-CALNAME:에반(EVAN) 1st Mini Album 'DEATH OF ME' 마감
 X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:evan-1st-mini-album-death-of-me-evt19633@kpop-album-benefits
-DTSTAMP:20260829T074145Z
+DTSTAMP:20260829T091206Z
 DTSTART:20260906T145959Z
 DTEND:20260906T152959Z
-SUMMARY:EVAN 1st Mini Album 'DEATH OF ME' — 예약 특전 포토카드 
- 응모 마감
+SUMMARY:에반(EVAN) 1st Mini Album 'DEATH OF ME' — 예약 특전 포토
+ 카드 응모 마감
 DESCRIPTION:EVAN 1st Mini Album 'DEATH OF ME' 발매기념 예약판매 특
  전 증정 이벤트\nhttps://makestar.co/event/19633
 URL:https://makestar.co/event/19633
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:EVAN 1st Mini Album 'DEATH OF ME' — 예약 특전 포토카
- 드 응모 마감 (하루 전)
+DESCRIPTION:에반(EVAN) 1st Mini Album 'DEATH OF ME' — 예약 특전 포
+ 토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:EVAN 1st Mini Album 'DEATH OF ME' — 예약 특전 포토카
- 드 응모 마감 (1시간 전)
+DESCRIPTION:에반(EVAN) 1st Mini Album 'DEATH OF ME' — 예약 특전 포
+ 토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:evan-1st-mini-album-death-of-me-release@kpop-album-benefits
-DTSTAMP:20260829T074145Z
+DTSTAMP:20260829T091206Z
 DTSTART:20260907T090000Z
 DTEND:20260907T093000Z
-SUMMARY:EVAN 1st Mini Album 'DEATH OF ME' — 예약 배송 시작
+SUMMARY:에반(EVAN) 1st Mini Album 'DEATH OF ME' — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/evan-1st-mini-album-death-of-me.htm
  l
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:EVAN 1st Mini Album 'DEATH OF ME' — 예약 배송 시작 (하
- 루 전)
+DESCRIPTION:에반(EVAN) 1st Mini Album 'DEATH OF ME' — 예약 배송 시
+ 작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:EVAN 1st Mini Album 'DEATH OF ME' — 예약 배송 시작 (1
- 시간 전)
+DESCRIPTION:에반(EVAN) 1st Mini Album 'DEATH OF ME' — 예약 배송 시
+ 작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
