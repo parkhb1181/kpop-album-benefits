@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-08-30T11:57:46.169Z",
-  "lastDeep": "2026-08-30T11:57:46.169Z",
+  "checkedAt": "2026-08-30T16:22:58.512Z",
+  "lastDeep": "2026-08-30T16:22:58.512Z",
   "events": [
     {
       "id": 20269,
@@ -19,7 +19,7 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -45,7 +45,7 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -71,8 +71,8 @@
       "to": "2026.09.01",
       "startAt": "2026-08-30T14:00:00+09:00",
       "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.02",
       "productId": 10701,
       "image": {
@@ -97,39 +97,13 @@
       "to": "2026.09.06",
       "startAt": "2026-08-26T12:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.09.07",
       "productId": 11041,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20171,
-      "url": "https://makestar.co/event/20171",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) VIDEO CALL EVENT",
-      "titleEn": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) VIDEO CALL EVENT",
-      "album": "3rd Single [SWEAT]",
-      "albumEn": "3rd Single [SWEAT] ",
-      "artist": "키스오브라이프",
-      "artistEn": "KISS OF LIFE",
-      "releaseDate": "2026-08-04",
-      "from": "2026.08.28",
-      "to": "2026.08.30",
-      "startAt": "2026-08-28T15:00:00+09:00",
-      "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.08.31",
-      "productId": 10907,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_9_Thumb.jpg_2026-08-27_105918462807.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_9_Thumb.jpg_2026-08-27_105918462807_thumb.jpeg"
       }
     },
     {
@@ -149,39 +123,13 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 61,
+      "dday": 60,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20146,
-      "url": "https://makestar.co/event/20146",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.2",
-      "titleEn": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.2",
-      "album": "4TH MINI ALBUM [Off the Grid]",
-      "albumEn": "4TH MINI ALBUM [Off the Grid]",
-      "artist": "루네이트",
-      "artistEn": "LUN8",
-      "releaseDate": "2026-07-22",
-      "from": "2026.08.28",
-      "to": "2026.08.30",
-      "startAt": "2026-08-28T14:00:00+09:00",
-      "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.08.31",
-      "productId": 10889,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_2_Sub.png_2026-08-25_173201902703.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_2_Sub.png_2026-08-25_173201902703_thumb.jpeg"
       }
     },
     {
@@ -201,7 +149,7 @@
       "to": "2026.08.31",
       "startAt": "2026-08-29T15:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.01",
       "productId": 10867,
@@ -227,7 +175,7 @@
       "to": "2026.08.31",
       "startAt": "2026-08-21T14:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 11015,
@@ -253,39 +201,13 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 38,
+      "dday": 37,
       "closing": false,
       "winnerAt": null,
       "productId": 11019,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20106,
-      "url": "https://makestar.co/event/20106",
-      "type": "LUCKYDRAW",
-      "label": "럭키드로우",
-      "fansign": false,
-      "title": "NCT 127 정규 7집 'BLINGY' 발매기념 LUCKY DRAW EVENT",
-      "titleEn": "NCT 127 The 7th Album 'BLINGY' LUCKY DRAW EVENT",
-      "album": "정규 7집 [BLINGY]",
-      "albumEn": "7th Full Album [BLINGY]",
-      "artist": "NCT 127",
-      "artistEn": "NCT 127",
-      "releaseDate": "2026-08-24",
-      "from": "2026.08.25",
-      "to": "2026.08.30",
-      "startAt": "2026-08-25T12:00:00+09:00",
-      "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10940,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_4_Sub.png_2026-08-20_121725782838.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_4_Sub.png_2026-08-20_121725782838_thumb.jpeg"
       }
     },
     {
@@ -305,39 +227,13 @@
       "to": "2026.09.07",
       "startAt": "2026-08-25T14:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 9,
+      "dday": 8,
       "closing": false,
       "winnerAt": "2026.09.08",
       "productId": 11017,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20076,
-      "url": "https://makestar.co/event/20076",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT",
-      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT",
-      "album": "4th Mini Album [.exe]",
-      "albumEn": "4th Mini Album [.exe] ",
-      "artist": "누에라",
-      "artistEn": "NouerA",
-      "releaseDate": "2026-07-27",
-      "from": "2026.08.27",
-      "to": "2026.08.31",
-      "startAt": "2026-08-27T16:00:00+09:00",
-      "endAt": "2026-08-31T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.08.31",
-      "productId": 10867,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_8_Banner_Sub.jpg_2026-08-20_160421035584.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_8_Banner_Sub.jpg_2026-08-20_160421035584_thumb.jpeg"
       }
     },
     {
@@ -357,7 +253,7 @@
       "to": "2026.08.31",
       "startAt": "2026-08-27T18:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.02",
       "productId": 10641,
@@ -383,39 +279,13 @@
       "to": "2026.09.06",
       "startAt": "2026-08-18T14:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": null,
       "productId": 10999,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/%EB%B2%84%EC%A0%84%EA%B3%B5%ED%86%B5_%EC%84%AC%EB%84%A4%EC%9D%BC_%EB%AF%BC%ED%98%B8_%EB%AF%B8%EB%8B%88%202%EC%A7%91_Make%20it%20hot.jpg_2026-08-17_214652480575.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/%EB%B2%84%EC%A0%84%EA%B3%B5%ED%86%B5_%EC%84%AC%EB%84%A4%EC%9D%BC_%EB%AF%BC%ED%98%B8_%EB%AF%B8%EB%8B%88_2%EC%A7%91_Make_it_hot.jpg_2026-08-17_214652480575_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20006,
-      "url": "https://makestar.co/event/20006",
-      "type": "LUCKYDRAW",
-      "label": "럭키드로우",
-      "fansign": false,
-      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM 'UNBREAKABLE : 少年BEAST' 발매기념 LUCKY DRAW EVENT",
-      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM 'UNBREAKABLE : 少年BEAST' LUCKY DRAW EVENT",
-      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
-      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] ",
-      "artist": "알파드라이브원",
-      "artistEn": "ALPHA DRIVE ONE",
-      "releaseDate": "2026-08-24",
-      "from": "2026.08.25",
-      "to": "2026.08.30",
-      "startAt": "2026-08-25T10:00:00+09:00",
-      "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10943,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_3_Banner_Sub%20%281%29.jpg_2026-08-18_093359778791.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_3_Banner_Sub_1.jpg_2026-08-18_093359778791_thumb.jpeg"
       }
     },
     {
@@ -435,7 +305,7 @@
       "to": "2026.08.31",
       "startAt": "2026-08-24T11:00:00+09:00",
       "endAt": "2026-08-31T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 10488,
@@ -461,8 +331,8 @@
       "to": "2026.09.01",
       "startAt": "2026-08-14T14:00:00+09:00",
       "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.02",
       "productId": 10988,
       "image": {
@@ -487,39 +357,13 @@
       "to": "2026.09.02",
       "startAt": "2026-08-28T12:00:00+09:00",
       "endAt": "2026-09-02T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
       "productId": 10361,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10361_TOMORROWXTOGETHER_24_Banner_Sub.jpg_2026-08-24_112525942432.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10361_TOMORROWXTOGETHER_24_Banner_Sub.jpg_2026-08-24_112525942432_thumb.jpeg"
-      }
-    },
-    {
-      "id": 19729,
-      "url": "https://makestar.co/event/19729",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "TAEMIN [PHASE I : Soft Violence] PRE-ORDER PHOTOCARD EVENT",
-      "titleEn": "TAEMIN [PHASE I : Soft Violence] PRE-ORDER PHOTOCARD EVENT",
-      "album": "PHASE I : Soft Violence",
-      "albumEn": "PHASE I : Soft Violence",
-      "artist": "태민",
-      "artistEn": "TAEMIN",
-      "releaseDate": "2026-08-31",
-      "from": "2026.08.05",
-      "to": "2026.08.30",
-      "startAt": "2026-08-05T14:00:00+09:00",
-      "endAt": "2026-08-30T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10972,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10972_TAEMIN_1_Banner_Sub.jpg_2026-08-04_191556754088.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10972_TAEMIN_1_Banner_Sub.jpg_2026-08-04_191556754088_thumb.jpeg"
       }
     },
     {
@@ -539,7 +383,7 @@
       "to": "2026.09.08",
       "startAt": "2026-08-11T14:00:00+09:00",
       "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 10,
+      "dday": 9,
       "closing": false,
       "winnerAt": "2026.09.09",
       "productId": 10970,
@@ -565,7 +409,7 @@
       "to": "2026.09.06",
       "startAt": "2026-08-10T11:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": null,
       "productId": 10961,
@@ -591,7 +435,7 @@
       "to": "2026.09.07",
       "startAt": "2026-07-06T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 9,
+      "dday": 8,
       "closing": false,
       "winnerAt": null,
       "productId": 10851,
@@ -617,7 +461,7 @@
       "to": "2026.09.07",
       "startAt": "2026-07-06T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 9,
+      "dday": 8,
       "closing": false,
       "winnerAt": null,
       "productId": 10851,
@@ -655,16 +499,6 @@
   ],
   "albums": [
     {
-      "key": "TUIDE｜TUNE & PLAY",
-      "artist": "TUIDE",
-      "album": "TUNE & PLAY"
-    },
-    {
-      "key": "TAEMIN｜PHASE I : Soft Violence",
-      "artist": "TAEMIN",
-      "album": "PHASE I : Soft Violence"
-    },
-    {
       "key": "i-dle (아이들)｜What a Wonderful Life",
       "artist": "i-dle (아이들)",
       "album": "What a Wonderful Life"
@@ -673,11 +507,6 @@
       "key": "SHINee｜Make it hot",
       "artist": "SHINee",
       "album": "Make it hot"
-    },
-    {
-      "key": "NCT 127｜BLINGY",
-      "artist": "NCT 127",
-      "album": "BLINGY"
     },
     {
       "key": "82MAJOR｜HEAT",
@@ -703,6 +532,11 @@
       "key": "EVAN｜DEATH OF ME (Weverse Exclusive)",
       "artist": "EVAN",
       "album": "DEATH OF ME (Weverse Exclusive)"
+    },
+    {
+      "key": "TUIDE｜TUNE & PLAY",
+      "artist": "TUIDE",
+      "album": "TUNE & PLAY"
     },
     {
       "key": "YOUNGTAK (영탁)｜GOGO",
