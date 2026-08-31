@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 8. 31. 01:23:29",
+  "stamp": "2026. 8. 31. 14:54:18",
   "albums": [
     {
       "artistId": 215,
@@ -12,7 +12,7 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "4일 11시간"
+        "rough": "3일 22시간"
       },
-      "rowCount": 15,
+      "rowCount": 21,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/25/im9tco.png",
@@ -38,8 +38,8 @@
       "weversePriceMin": 13900,
       "artist": "SHINee",
       "slug": "shinee-make-it-hot",
-      "versions": 5,
-      "retailers": 4,
+      "versions": 6,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "6일 22시간"
+        "rough": "6일 9시간"
       },
-      "rowCount": 20,
+      "rowCount": 30,
       "artistKo": "민호(MINHO)",
       "artistDisplay": "민호(MINHO)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "6일 22시간"
+        "rough": "6일 9시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -93,7 +93,7 @@
       "artist": "TUIDE",
       "slug": "tuide-tune-play",
       "versions": 9,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 3,
       "eventCount": 0,
@@ -101,13 +101,67 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "11일 15시간"
+        "rough": "11일 2시간"
       },
-      "rowCount": 36,
+      "rowCount": 49,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
+    },
+    {
+      "artistId": 248,
+      "artistEn": "82MAJOR",
+      "album": "HEAT",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-09-01",
+      "weversePriceMin": 11800,
+      "artist": "82MAJOR",
+      "slug": "82major-heat",
+      "versions": 8,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-08-31T23:59:59.999999+09:00",
+        "rough": "9시간 3분"
+      },
+      "rowCount": 20,
+      "artistKo": "82메이저",
+      "artistDisplay": "82메이저(82MAJOR)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/19/rgR15V.png"
+    },
+    {
+      "artistId": 209,
+      "artistEn": "JENNIE",
+      "album": "Fallen Angel",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-30",
+      "weversePriceMin": 16300,
+      "artist": "JENNIE",
+      "slug": "jennie-fallen-angel",
+      "versions": 4,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-29T23:59:59.999999+09:00",
+        "rough": "59일 9시간"
+      },
+      "rowCount": 22,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
     },
     {
       "artistId": 207,
@@ -120,7 +174,7 @@
       "artist": "YOUNGTAK (영탁)",
       "slug": "youngtak-영탁-gogo",
       "versions": 4,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -128,67 +182,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "14일 16시간"
+        "rough": "14일 3시간"
       },
-      "rowCount": 13,
+      "rowCount": 19,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg"
-    },
-    {
-      "artistId": 209,
-      "artistEn": "JENNIE",
-      "album": "Fallen Angel",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-10-30",
-      "weversePriceMin": 16300,
-      "artist": "JENNIE",
-      "slug": "jennie-fallen-angel",
-      "versions": 3,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "59일 22시간"
-      },
-      "rowCount": 15,
-      "artistKo": "제니",
-      "artistDisplay": "제니(JENNIE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
-    },
-    {
-      "artistId": 248,
-      "artistEn": "82MAJOR",
-      "album": "HEAT",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-09-01",
-      "weversePriceMin": 11800,
-      "artist": "82MAJOR",
-      "slug": "82major-heat",
-      "versions": 2,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-08-31T23:59:59.999999+09:00",
-        "rough": "22시간 34분"
-      },
-      "rowCount": 10,
-      "artistKo": "82메이저",
-      "artistDisplay": "82메이저(82MAJOR)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b11f834b6dfeb3459435df1c8a41c054.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/19/rgR15V.png"
     },
     {
       "artistId": 300,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "6일 22시간"
+        "rough": "6일 9시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T00:00:00+09:00",
-        "rough": "58일 22시간"
+        "rough": "58일 9시간"
       },
       "rowCount": 3,
       "artistKo": null,
