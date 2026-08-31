@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 1. 02:23:10",
+  "stamp": "2026. 9. 1. 04:15:09",
   "albums": [
     {
       "artistId": 215,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "3일 10시간"
+        "rough": "3일 8시간"
       },
       "rowCount": 21,
       "artistKo": "지수",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "5일 21시간"
+        "rough": "5일 19시간"
       },
       "rowCount": 30,
       "artistKo": "민호(MINHO)",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "5일 21시간"
+        "rough": "5일 19시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "10일 14시간"
+        "rough": "10일 13시간"
       },
       "rowCount": 49,
       "artistKo": "튜이드",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "58일 21시간"
+        "rough": "58일 19시간"
       },
       "rowCount": 22,
       "artistKo": "제니",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "13일 15시간"
+        "rough": "13일 13시간"
       },
       "rowCount": 19,
       "artistKo": "영탁",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-01T18:00:00+09:00",
-        "rough": "15시간 32분"
+        "rough": "13시간 39분"
       },
       "rowCount": 20,
       "artistKo": "82메이저",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "5일 21시간"
+        "rough": "5일 19시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T00:00:00+09:00",
-        "rough": "57일 21시간"
+        "rough": "57일 19시간"
       },
       "rowCount": 3,
       "artistKo": null,
