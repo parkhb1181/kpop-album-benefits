@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-08-31T05:53:48.536Z",
-  "lastDeep": "2026-08-31T05:53:48.536Z",
+  "checkedAt": "2026-08-31T12:40:57.443Z",
+  "lastDeep": "2026-08-31T12:40:57.443Z",
   "events": [
+    {
+      "id": 20351,
+      "url": "https://makestar.co/event/20351",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ENHYPEN 'THE SIN : BLISS' Video Call Event Last Part",
+      "titleEn": "ENHYPEN 'THE SIN : BLISS' Video Call Event Last Part",
+      "album": "[THE SIN : BLISS]",
+      "albumEn": "[THE SIN : BLISS]",
+      "artist": "엔하이픈",
+      "artistEn": "ENHYPEN",
+      "releaseDate": "2026-08-21",
+      "from": "2026.08.31",
+      "to": "2026.09.09",
+      "startAt": "2026-08-31T19:00:00+09:00",
+      "endAt": "2026-09-09T00:59:59.999999+09:00",
+      "dday": 9,
+      "closing": false,
+      "winnerAt": "2026.09.10",
+      "productId": 10894,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083_thumb.jpeg"
+      }
+    },
     {
       "id": 20322,
       "url": "https://makestar.co/event/20322",
@@ -26,6 +52,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_6_Sub.png_2026-08-28_160431077663.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_6_Sub.png_2026-08-28_160431077663_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20295,
+      "url": "https://makestar.co/event/20295",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT PART.1",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT PART.1",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.08.31",
+      "to": "2026.09.02",
+      "startAt": "2026-08-31T15:00:00+09:00",
+      "endAt": "2026-09-02T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.04",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_14_Banner_Sub.jpg_2026-08-28_145647183070.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_14_Banner_Sub.jpg_2026-08-28_145647183070_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20271,
+      "url": "https://makestar.co/event/20271",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ODD YOUTH 3rd Single [ can't go back ] SPECIAL OFFLINE&MEET&CALL EVENT PART.2",
+      "titleEn": "ODD YOUTH 3rd Single [ can't go back ] SPECIAL OFFLINE&MEET&CALL EVENT PART.2",
+      "album": "3rd Single [can't go back]",
+      "albumEn": "3rd Single [can't go back]",
+      "artist": "오드유스",
+      "artistEn": "ODD YOUTH",
+      "releaseDate": "2026-08-24",
+      "from": "2026.08.31",
+      "to": "2026.09.03",
+      "startAt": "2026-08-31T15:00:00+09:00",
+      "endAt": "2026-09-03T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.04",
+      "productId": 10992,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_2_Banner_Sub.jpg_2026-08-27_195653692496.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_2_Banner_Sub.jpg_2026-08-27_195653692496_thumb.jpeg"
       }
     },
     {
@@ -286,6 +364,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20094,
+      "url": "https://makestar.co/event/20094",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "NouerA 4th Mini Album [.exe] FANSIGN & 1:1 PEN DECO EVENT IN SHANGHAI",
+      "titleEn": "NouerA 4th Mini Album [.exe] FANSIGN & 1:1 PEN DECO EVENT IN SHANGHAI",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.08.31",
+      "to": "2026.09.04",
+      "startAt": "2026-08-31T16:00:00+09:00",
+      "endAt": "2026-09-04T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.04",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_11_Banner_Sub.jpg_2026-08-28_143539888129.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_11_Banner_Sub.jpg_2026-08-28_143539888129_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20092,
+      "url": "https://makestar.co/event/20092",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "TREASURE SPECIAL OFFLINE EVENT IN HONG KONG",
+      "titleEn": "TREASURE SPECIAL OFFLINE EVENT IN HONG KONG",
+      "album": "3rd MINI ALBUM [LOVE PULSE]",
+      "albumEn": "3rd MINI ALBUM [LOVE PULSE]",
+      "artist": "TREASURE",
+      "artistEn": "TREASURE",
+      "releaseDate": "2025-09-01",
+      "from": "2026.08.31",
+      "to": "2026.09.04",
+      "startAt": "2026-08-31T15:00:00+09:00",
+      "endAt": "2026-09-04T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.05",
+      "productId": 9532,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_9532_TREASURE_17_Banner_Sub.jpg_2026-08-27_115025139287.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_9532_TREASURE_17_Banner_Sub.jpg_2026-08-27_115025139287_thumb.jpeg"
       }
     },
     {
