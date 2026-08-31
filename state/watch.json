@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-08-31T00:18:26.155Z",
-  "lastDeep": "2026-08-31T00:18:26.155Z",
+  "checkedAt": "2026-08-31T05:53:48.536Z",
+  "lastDeep": "2026-08-31T05:53:48.536Z",
   "events": [
+    {
+      "id": 20322,
+      "url": "https://makestar.co/event/20322",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NEXZ(넥스지) 미니4집 <SAUCIN'> MEET&CALL EVENT PART.2",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> MEET&CALL EVENT PART.2",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.08.31",
+      "to": "2026.09.01",
+      "startAt": "2026-08-31T10:00:00+09:00",
+      "endAt": "2026-09-01T23:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.09.02",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_6_Sub.png_2026-08-28_160431077663.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_6_Sub.png_2026-08-28_160431077663_thumb.jpeg"
+      }
+    },
     {
       "id": 20269,
       "url": "https://makestar.co/event/20269",
@@ -78,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10701_USPEER_16_Sub.png_2026-08-12_144834373184.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10701_USPEER_16_Sub.png_2026-08-12_144834373184_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20246,
+      "url": "https://makestar.co/event/20246",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "원호 (WONHO) EP [CORE] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "WONHO EP [CORE] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "EP [CORE]",
+      "albumEn": "EP [CORE]",
+      "artist": "원호",
+      "artistEn": "WONHO",
+      "releaseDate": "2026-07-21",
+      "from": "2026.08.31",
+      "to": "2026.09.01",
+      "startAt": "2026-08-31T12:00:00+09:00",
+      "endAt": "2026-09-01T23:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.09.02",
+      "productId": 10859,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10859_WONHO_1_Banner_Sub.jpg_2026-08-27_194215969393.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10859_WONHO_1_Banner_Sub.jpg_2026-08-27_194215969393_thumb.jpeg"
       }
     },
     {
