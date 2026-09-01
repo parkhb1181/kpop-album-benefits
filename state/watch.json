@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-01T12:36:09.250Z",
-  "lastDeep": "2026-09-01T12:36:09.250Z",
+  "checkedAt": "2026-09-01T16:55:34.126Z",
+  "lastDeep": "2026-09-01T16:55:34.126Z",
   "events": [
     {
       "id": 20379,
@@ -19,7 +19,7 @@
       "to": "2026.09.07",
       "startAt": "2026-09-01T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 10715,
@@ -45,39 +45,13 @@
       "to": "2026.09.09",
       "startAt": "2026-08-31T19:00:00+09:00",
       "endAt": "2026-09-09T00:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.09.10",
       "productId": 10894,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20322,
-      "url": "https://makestar.co/event/20322",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "NEXZ(넥스지) 미니4집 <SAUCIN'> MEET&CALL EVENT PART.2",
-      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> MEET&CALL EVENT PART.2",
-      "album": "미니 4집 [SAUCIN']",
-      "albumEn": "4th Mini Album [SAUCIN']",
-      "artist": "넥스지",
-      "artistEn": "NEXZ",
-      "releaseDate": "2026-08-24",
-      "from": "2026.08.31",
-      "to": "2026.09.01",
-      "startAt": "2026-08-31T10:00:00+09:00",
-      "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.02",
-      "productId": 10965,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_6_Sub.png_2026-08-28_160431077663.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_6_Sub.png_2026-08-28_160431077663_thumb.jpeg"
       }
     },
     {
@@ -97,7 +71,7 @@
       "to": "2026.09.02",
       "startAt": "2026-08-31T15:00:00+09:00",
       "endAt": "2026-09-02T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.04",
       "productId": 10867,
@@ -123,8 +97,8 @@
       "to": "2026.09.03",
       "startAt": "2026-08-31T15:00:00+09:00",
       "endAt": "2026-09-03T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.04",
       "productId": 10992,
       "image": {
@@ -149,7 +123,7 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 10,
+      "dday": 9,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -175,65 +149,13 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 10,
+      "dday": 9,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20265,
-      "url": "https://makestar.co/event/20265",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "USPEER 1st MINI ALBUM [BITE DISTRICT] 1:1 PHOTO&MEET&CALL EVENT",
-      "titleEn": "USPEER 1st MINI ALBUM [BITE DISTRICT] 1:1 PHOTO&MEET&CALL EVENT",
-      "album": "1st MINI ALBUM [BITE DISTRICT]",
-      "albumEn": "1st MINI ALBUM [BITE DISTRICT]",
-      "artist": "유스피어",
-      "artistEn": "USPEER",
-      "releaseDate": "2026-06-17",
-      "from": "2026.08.30",
-      "to": "2026.09.01",
-      "startAt": "2026-08-30T14:00:00+09:00",
-      "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.02",
-      "productId": 10701,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10701_USPEER_16_Sub.png_2026-08-12_144834373184.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10701_USPEER_16_Sub.png_2026-08-12_144834373184_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20246,
-      "url": "https://makestar.co/event/20246",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "원호 (WONHO) EP [CORE] SPECIAL OFFLINE&MEET&CALL EVENT",
-      "titleEn": "WONHO EP [CORE] SPECIAL OFFLINE&MEET&CALL EVENT",
-      "album": "EP [CORE]",
-      "albumEn": "EP [CORE]",
-      "artist": "원호",
-      "artistEn": "WONHO",
-      "releaseDate": "2026-07-21",
-      "from": "2026.08.31",
-      "to": "2026.09.01",
-      "startAt": "2026-08-31T12:00:00+09:00",
-      "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.02",
-      "productId": 10859,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10859_WONHO_1_Banner_Sub.jpg_2026-08-27_194215969393.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10859_WONHO_1_Banner_Sub.jpg_2026-08-27_194215969393_thumb.jpeg"
       }
     },
     {
@@ -253,7 +175,7 @@
       "to": "2026.09.06",
       "startAt": "2026-08-26T12:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 6,
+      "dday": 5,
       "closing": false,
       "winnerAt": "2026.09.07",
       "productId": 11041,
@@ -279,7 +201,7 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 59,
+      "dday": 58,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
@@ -305,7 +227,7 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 36,
+      "dday": 35,
       "closing": false,
       "winnerAt": null,
       "productId": 11019,
@@ -331,7 +253,7 @@
       "to": "2026.09.07",
       "startAt": "2026-08-25T14:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": "2026.09.08",
       "productId": 11017,
@@ -357,8 +279,8 @@
       "to": "2026.09.04",
       "startAt": "2026-08-31T16:00:00+09:00",
       "endAt": "2026-09-04T00:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.04",
       "productId": 10867,
       "image": {
@@ -383,7 +305,7 @@
       "to": "2026.09.04",
       "startAt": "2026-08-31T15:00:00+09:00",
       "endAt": "2026-09-04T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.09.05",
       "productId": 9532,
@@ -409,39 +331,13 @@
       "to": "2026.09.06",
       "startAt": "2026-08-18T14:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 6,
+      "dday": 5,
       "closing": false,
       "winnerAt": null,
       "productId": 10999,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/%EB%B2%84%EC%A0%84%EA%B3%B5%ED%86%B5_%EC%84%AC%EB%84%A4%EC%9D%BC_%EB%AF%BC%ED%98%B8_%EB%AF%B8%EB%8B%88%202%EC%A7%91_Make%20it%20hot.jpg_2026-08-17_214652480575.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/%EB%B2%84%EC%A0%84%EA%B3%B5%ED%86%B5_%EC%84%AC%EB%84%A4%EC%9D%BC_%EB%AF%BC%ED%98%B8_%EB%AF%B8%EB%8B%88_2%EC%A7%91_Make_it_hot.jpg_2026-08-17_214652480575_thumb.jpeg"
-      }
-    },
-    {
-      "id": 19959,
-      "url": "https://makestar.co/event/19959",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "TUNEXX 2ND MINI ALBUM [BLUE MODE] PRE-ORDER PHOTOCARD EVENT",
-      "titleEn": "TUNEXX 2ND MINI ALBUM [BLUE MODE] PRE-ORDER PHOTOCARD EVENT",
-      "album": "미니 2집 [BLUE MODE]",
-      "albumEn": "2nd Mini Album [BLUE MODE]",
-      "artist": "튜넥스",
-      "artistEn": "TUNEXX",
-      "releaseDate": "2026-09-02",
-      "from": "2026.08.14",
-      "to": "2026.09.01",
-      "startAt": "2026-08-14T14:00:00+09:00",
-      "endAt": "2026-09-01T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.02",
-      "productId": 10988,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_1_Thumb.jpg_2026-08-13_122445927131.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_1_Thumb.jpg_2026-08-13_122445927131_thumb.jpeg"
       }
     },
     {
@@ -461,7 +357,7 @@
       "to": "2026.09.02",
       "startAt": "2026-08-28T12:00:00+09:00",
       "endAt": "2026-09-02T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 10361,
@@ -487,7 +383,7 @@
       "to": "2026.09.08",
       "startAt": "2026-08-11T14:00:00+09:00",
       "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.09.09",
       "productId": 10970,
@@ -513,7 +409,7 @@
       "to": "2026.09.06",
       "startAt": "2026-08-10T11:00:00+09:00",
       "endAt": "2026-09-06T23:59:59.999999+09:00",
-      "dday": 6,
+      "dday": 5,
       "closing": false,
       "winnerAt": null,
       "productId": 10961,
@@ -539,7 +435,7 @@
       "to": "2026.09.07",
       "startAt": "2026-07-06T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 10851,
@@ -565,7 +461,7 @@
       "to": "2026.09.07",
       "startAt": "2026-07-06T18:00:00+09:00",
       "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 10851,
@@ -678,19 +574,9 @@
       "album": "TUNE & PLAY"
     },
     {
-      "key": "82MAJOR｜HEAT",
-      "artist": "82MAJOR",
-      "album": "HEAT"
-    },
-    {
       "key": "YOUNGTAK (영탁)｜GOGO",
       "artist": "YOUNGTAK (영탁)",
       "album": "GOGO"
-    },
-    {
-      "key": "VVUP｜1st Mini Album ‘VVON’",
-      "artist": "VVUP",
-      "album": "1st Mini Album ‘VVON’"
     }
   ]
 }
