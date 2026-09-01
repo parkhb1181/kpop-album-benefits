@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-01T07:15:02.922Z",
-  "lastDeep": "2026-09-01T07:15:02.922Z",
+  "checkedAt": "2026-09-01T12:36:09.250Z",
+  "lastDeep": "2026-09-01T12:36:09.250Z",
   "events": [
+    {
+      "id": 20379,
+      "url": "https://makestar.co/event/20379",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "Hearts2Hearts 미니 2집 'Lemon Tang' 발매기념 LUCKY DRAW EVENT",
+      "titleEn": "Hearts2Hearts 2nd Mini Album 'Lemon Tang' LUCKY DRAW EVENT",
+      "album": "미니 2집 [Lemon Tang]",
+      "albumEn": "2nd Mini Album [Lemon Tang]",
+      "artist": "Hearts2Hearts",
+      "artistEn": "Hearts2Hearts",
+      "releaseDate": "2026-06-22",
+      "from": "2026.09.01",
+      "to": "2026.09.07",
+      "startAt": "2026-09-01T18:00:00+09:00",
+      "endAt": "2026-09-07T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10715,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407_thumb.jpeg"
+      }
+    },
     {
       "id": 20351,
       "url": "https://makestar.co/event/20351",
