@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-01T01:50:33.479Z",
-  "lastDeep": "2026-09-01T01:50:33.479Z",
+  "checkedAt": "2026-09-01T07:15:02.922Z",
+  "lastDeep": "2026-09-01T07:15:02.922Z",
   "events": [
     {
       "id": 20351,
@@ -585,6 +585,46 @@
       "key": "SHINee｜Make it hot",
       "artist": "SHINee",
       "album": "Make it hot"
+    },
+    {
+      "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
+      "artist": "TREASURE",
+      "album": "THE SECOND STEP : CHAPTER ONE"
+    },
+    {
+      "key": "TREASURE｜THE SECOND STEP : CHAPTER TWO",
+      "artist": "TREASURE",
+      "album": "THE SECOND STEP : CHAPTER TWO"
+    },
+    {
+      "key": "TREASURE｜REBOOT",
+      "artist": "TREASURE",
+      "album": "REBOOT"
+    },
+    {
+      "key": "TREASURE｜PLEASURE",
+      "artist": "TREASURE",
+      "album": "PLEASURE"
+    },
+    {
+      "key": "TREASURE｜THE FIRST STEP : CHAPTER ONE",
+      "artist": "TREASURE",
+      "album": "THE FIRST STEP : CHAPTER ONE"
+    },
+    {
+      "key": "TREASURE｜THE FIRST STEP : CHAPTER TWO",
+      "artist": "TREASURE",
+      "album": "THE FIRST STEP : CHAPTER TWO"
+    },
+    {
+      "key": "TREASURE｜THE FIRST STEP : CHAPTER THREE",
+      "artist": "TREASURE",
+      "album": "THE FIRST STEP : CHAPTER THREE"
+    },
+    {
+      "key": "TREASURE｜THE FIRST STEP : EFFECT",
+      "artist": "TREASURE",
+      "album": "THE FIRST STEP : EFFECT"
     },
     {
       "key": "JENNIE｜Fallen Angel",
