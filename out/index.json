@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 2. 18:08:06",
+  "stamp": "2026. 9. 2. 23:03:20",
   "albums": [
     {
       "artistId": 25,
@@ -14,19 +14,19 @@
       "versions": 27,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 9,
+      "soldCount": 5,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
-      "rowCount": 72,
+      "rowCount": 62,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/09/Cwzm4P.jpg"
+      "cover": "https://image.aladin.co.kr/product/30085/99/cover150/c292937764_1.jpg"
     },
     {
       "artistId": 25,
@@ -38,7 +38,7 @@
       "weversePriceMin": 11800,
       "artist": "TREASURE",
       "slug": "treasure-reboot",
-      "versions": 21,
+      "versions": 22,
       "retailers": 7,
       "benefitCount": 3,
       "soldCount": 6,
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
-      "rowCount": 50,
+      "rowCount": 52,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
       "rowCount": 78,
       "artistKo": "트레저",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "1일 18시간"
+        "rough": "1일 13시간"
       },
       "rowCount": 21,
       "artistKo": "지수",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
+        "rough": "25일 7시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "4일 5시간"
+        "rough": "4일 0시간"
       },
       "rowCount": 32,
       "artistKo": "민호(MINHO)",
@@ -263,40 +263,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "4일 5시간"
+        "rough": "4일 0시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
       "artistDisplay": "소연(SOYEON)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png",
       "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg"
-    },
-    {
-      "artistId": 25,
-      "artistEn": "TREASURE",
-      "album": "PLEASURE",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-09-28",
-      "weversePriceMin": 11800,
-      "artist": "TREASURE",
-      "slug": "treasure-pleasure",
-      "versions": 15,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 3,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-28T07:00:00+09:00",
-        "rough": "25일 12시간"
-      },
-      "rowCount": 53,
-      "artistKo": null,
-      "artistDisplay": "TREASURE",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
     },
     {
       "artistId": 306,
@@ -317,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "8일 23시간"
+        "rough": "8일 18시간"
       },
       "rowCount": 50,
       "artistKo": "튜이드",
@@ -344,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "57일 5시간"
+        "rough": "57일 0시간"
       },
       "rowCount": 23,
       "artistKo": "제니",
@@ -371,13 +344,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "11일 23시간"
+        "rough": "11일 18시간"
       },
       "rowCount": 19,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg"
+    },
+    {
+      "artistId": 25,
+      "artistEn": "TREASURE",
+      "album": "PLEASURE",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-09-28",
+      "weversePriceMin": 11800,
+      "artist": "TREASURE",
+      "slug": "treasure-pleasure",
+      "versions": 15,
+      "retailers": 6,
+      "benefitCount": 1,
+      "soldCount": 3,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-28T07:00:00+09:00",
+        "rough": "25일 7시간"
+      },
+      "rowCount": 50,
+      "artistKo": null,
+      "artistDisplay": "TREASURE",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
     },
     {
       "artistId": 300,
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "4일 5시간"
+        "rough": "4일 0시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
