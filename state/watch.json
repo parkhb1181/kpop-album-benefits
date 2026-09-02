@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-02T00:13:30.492Z",
-  "lastDeep": "2026-09-02T00:13:30.492Z",
+  "checkedAt": "2026-09-02T04:39:20.272Z",
+  "lastDeep": "2026-09-02T04:39:20.272Z",
   "events": [
     {
       "id": 20379,
@@ -156,6 +156,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20247,
+      "url": "https://makestar.co/event/20247",
+      "type": "SHOWCASE",
+      "label": "SHOWCASE",
+      "fansign": false,
+      "title": "MW:MEU 1st Mini Album [With U] SHOWCASE INVITATION EVENT",
+      "titleEn": "MW:MEU 1st Mini Album [With U] SHOWCASE INVITATION EVENT",
+      "album": "미니 1집 With U",
+      "albumEn": "1st Mini Album WithU",
+      "artist": "뮤",
+      "artistEn": "MW:MEU",
+      "releaseDate": "2026-09-15",
+      "from": "2026.09.02",
+      "to": "2026.09.08",
+      "startAt": "2026-09-02T12:00:00+09:00",
+      "endAt": "2026-09-08T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.09.09",
+      "productId": 11002,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_2_Sub.png_2026-08-31_123414591047.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_2_Sub.png_2026-08-31_123414591047_thumb.jpeg"
       }
     },
     {
@@ -562,11 +588,6 @@
       "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
       "artist": "EVAN",
       "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
-      "key": "EVAN｜DEATH OF ME (Weverse Exclusive)",
-      "artist": "EVAN",
-      "album": "DEATH OF ME (Weverse Exclusive)"
     },
     {
       "key": "TUIDE｜TUNE & PLAY",

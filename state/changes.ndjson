@@ -54,3 +54,5 @@
 {"at":"2026-09-01T16:55:34.126Z","type":"event.gone","label":"예약 특전 포토카드","artist":"튜넥스","album":"미니 2집 [BLUE MODE]","id":19959}
 {"at":"2026-09-01T16:55:34.126Z","type":"album.gone","artist":"82MAJOR","album":"HEAT"}
 {"at":"2026-09-01T16:55:34.126Z","type":"album.gone","artist":"VVUP","album":"1st Mini Album ‘VVON’"}
+{"at":"2026-09-02T04:39:20.272Z","type":"event.new","label":"SHOWCASE","artist":"뮤","album":"미니 1집 With U","id":20247,"url":"https://makestar.co/event/20247","endAt":"2026-09-08T23:59:59.999999+09:00"}
+{"at":"2026-09-02T04:39:20.272Z","type":"album.gone","artist":"EVAN","album":"DEATH OF ME (Weverse Exclusive)"}
