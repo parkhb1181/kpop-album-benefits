@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-02T04:39:20.272Z",
-  "lastDeep": "2026-09-02T04:39:20.272Z",
+  "checkedAt": "2026-09-02T09:03:46.044Z",
+  "lastDeep": "2026-09-02T09:03:46.044Z",
   "events": [
+    {
+      "id": 20388,
+      "url": "https://makestar.co/event/20388",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA](POCAALBUM) LAST MEET&CALL EVENT",
+      "titleEn": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA](POCAALBUM) LAST MEET&CALL EVENT",
+      "album": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
+      "albumEn": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-05-19",
+      "from": "2026.09.02",
+      "to": "2026.09.06",
+      "startAt": "2026-09-02T15:00:00+09:00",
+      "endAt": "2026-09-06T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10581,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_25_Banner_Sub.jpg_2026-09-01_155841790741.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_25_Banner_Sub.jpg_2026-09-01_155841790741_thumb.jpeg"
+      }
+    },
     {
       "id": 20379,
       "url": "https://makestar.co/event/20379",
@@ -52,6 +78,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20347,
+      "url": "https://makestar.co/event/20347",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "HEART OF WOMAN THE 1st ALBUM [Heart Byte : LEGACY] MEET&CALL EVENT PART.4",
+      "titleEn": "HEART OF WOMAN THE 1st ALBUM [Heart Byte : LEGACY] MEET&CALL EVENT PART.4",
+      "album": "THE 1st ALBUM [Heart Byte : LEGACY] ",
+      "albumEn": "THE 1st ALBUM [Heart Byte : LEGACY] ",
+      "artist": "HEART OF WOMAN (하트오브우먼)",
+      "artistEn": "HEART OF WOMAN",
+      "releaseDate": "2026-05-28",
+      "from": "2026.09.02",
+      "to": "2026.09.04",
+      "startAt": "2026-09-02T15:00:00+09:00",
+      "endAt": "2026-09-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10674,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10674_HEART_OF_WOMAN_14_Banner_Sub.png_2026-09-01_112451008765.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10674_HEART_OF_WOMAN_14_Banner_Sub.png_2026-09-01_112451008765_thumb.jpeg"
       }
     },
     {
@@ -159,6 +211,32 @@
       }
     },
     {
+      "id": 20250,
+      "url": "https://makestar.co/event/20250",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "VAYONN (베이온) 1ST EP 'Youth Today' 1:1 PHOTO&MEET&CALL EVENT",
+      "titleEn": "VAYONN (베이온) 1ST EP 'Youth Today' 1:1 PHOTO&MEET&CALL EVENT",
+      "album": "1ST EP [Youth Today] ",
+      "albumEn": "1ST EP [Youth Today] ",
+      "artist": "베이온",
+      "artistEn": "VAYONN",
+      "releaseDate": "2026-07-06",
+      "from": "2026.09.02",
+      "to": "2026.09.04",
+      "startAt": "2026-09-02T15:00:00+09:00",
+      "endAt": "2026-09-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10780,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10780_VAYONN_4_banner_sub.png_2026-08-27_095715873510.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10780_VAYONN_4_banner_sub.png_2026-08-27_095715873510_thumb.jpeg"
+      }
+    },
+    {
       "id": 20247,
       "url": "https://makestar.co/event/20247",
       "type": "SHOWCASE",
@@ -208,6 +286,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_1_Banner_Thumb.png_2026-08-25_183132598364_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20206,
+      "url": "https://makestar.co/event/20206",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "ENHYPEN 8TH MINI ALBUM 'THE SIN : BLISS' FANSIGN EVENT IN TAIPEI",
+      "titleEn": "ENHYPEN 8TH MINI ALBUM 'THE SIN : BLISS' FANSIGN EVENT IN TAIPEI",
+      "album": "[THE SIN : BLISS]",
+      "albumEn": "[THE SIN : BLISS]",
+      "artist": "엔하이픈",
+      "artistEn": "ENHYPEN",
+      "releaseDate": "2026-08-21",
+      "from": "2026.09.02",
+      "to": "2026.09.07",
+      "startAt": "2026-09-02T18:00:00+09:00",
+      "endAt": "2026-09-07T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": "2026.09.09",
+      "productId": 10894,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_9_Banner_Sub.jpg_2026-08-27_141313371388.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_9_Banner_Sub.jpg_2026-08-27_141313371388_thumb.jpeg"
       }
     },
     {
