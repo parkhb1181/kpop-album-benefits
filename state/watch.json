@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-03T05:05:37.990Z",
-  "lastDeep": "2026-09-03T05:05:37.990Z",
+  "checkedAt": "2026-09-03T09:49:18.034Z",
+  "lastDeep": "2026-09-03T09:49:18.034Z",
   "events": [
     {
       "id": 20388,
@@ -104,6 +104,84 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10674_HEART_OF_WOMAN_14_Banner_Sub.png_2026-09-01_112451008765.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10674_HEART_OF_WOMAN_14_Banner_Sub.png_2026-09-01_112451008765_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20341,
+      "url": "https://makestar.co/event/20341",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ALL(H)OURS SIXTH MINI ALBUM [UNBOUND] MEET&CALL EVENT",
+      "titleEn": "ALL(H)OURS SIXTH MINI ALBUM [UNBOUND] MEET&CALL EVENT",
+      "album": "미니 6집 [UNBOUND]",
+      "albumEn": "6th Mini Album [UNBOUND]",
+      "artist": "올아워즈",
+      "artistEn": "ALL(H)OURS",
+      "releaseDate": "2026-09-10",
+      "from": "2026.09.03",
+      "to": "2026.09.05",
+      "startAt": "2026-09-03T15:00:00+09:00",
+      "endAt": "2026-09-05T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 11034,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11034_ALL%28H%29OURS_1_Banner_thumb.jpg_2026-09-01_145010127681.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11034_ALLHOURS_1_Banner_thumb.jpg_2026-09-01_145010127681_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20288,
+      "url": "https://makestar.co/event/20288",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ONEWE( 원위 ) 3rd Full Album [ 面 : Unknown Atlas] MEET&CALL EVENT",
+      "titleEn": "ONEWE( 원위 ) 3rd Full Album [ 面 : Unknown Atlas] MEET&CALL EVENT",
+      "album": "3rd Full Album  [面 : Unknown Atlas]",
+      "albumEn": "3rd Full Album  [面 : Unknown Atlas]",
+      "artist": "ONEWE",
+      "artistEn": "ONEWE",
+      "releaseDate": "2026-08-19",
+      "from": "2026.09.03",
+      "to": "2026.09.05",
+      "startAt": "2026-09-03T15:00:00+09:00",
+      "endAt": "2026-09-05T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10982,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10982_ONEWE_2_banner_sub.png_2026-09-01_110312728365.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10982_ONEWE_2_banner_sub.png_2026-09-01_110312728365_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20279,
+      "url": "https://makestar.co/event/20279",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "BBGIRLS(브브걸) 3rd SINGLE ALBUM [BODY WAVE] (POCAALBUM) SPECIAL PHOTO+MEET&CALL EVENT PART.4",
+      "titleEn": "BBGIRLS(브브걸) 3rd SINGLE ALBUM [BODY WAVE] (POCAALBUM) SPECIAL PHOTO+MEET&CALL EVENT PART.4",
+      "album": "싱글 3집 SINGLE ALBUM [BODY WAVE] ",
+      "albumEn": "3rd SINGLE ALBUM [BODY WAVE]",
+      "artist": "브브걸",
+      "artistEn": "BBGIRLS",
+      "releaseDate": "2026-07-16",
+      "from": "2026.09.03",
+      "to": "2026.09.06",
+      "startAt": "2026-09-03T15:00:00+09:00",
+      "endAt": "2026-09-06T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10855,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10855_BBGIRLS_4_Banner_Sub.png_2026-09-01_151045971323.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10855_BBGIRLS_4_Banner_Sub.png_2026-09-01_151045971323_thumb.jpeg"
       }
     },
     {
