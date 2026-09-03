@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 3. 23:06:15",
+  "stamp": "2026. 9. 3. 23:17:36",
   "albums": [
     {
       "artistId": 25,
@@ -14,7 +14,7 @@
       "versions": 27,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 9,
+      "soldCount": 8,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
@@ -22,7 +22,7 @@
         "at": "2026-09-28T07:00:00+09:00",
         "rough": "24일 7시간"
       },
-      "rowCount": 67,
+      "rowCount": 75,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
@@ -38,7 +38,7 @@
       "weversePriceMin": 11800,
       "artist": "TREASURE",
       "slug": "treasure-reboot",
-      "versions": 16,
+      "versions": 21,
       "retailers": 7,
       "benefitCount": 3,
       "soldCount": 6,
@@ -49,7 +49,7 @@
         "at": "2026-09-28T07:00:00+09:00",
         "rough": "24일 7시간"
       },
-      "rowCount": 45,
+      "rowCount": 50,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "13시간 46분"
+        "rough": "13시간 34분"
       },
       "rowCount": 21,
       "artistKo": "지수",
@@ -292,11 +292,11 @@
         "at": "2026-09-28T07:00:00+09:00",
         "rough": "24일 7시간"
       },
-      "rowCount": 49,
+      "rowCount": 53,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/YAdzgz.png"
     },
     {
       "artistId": 306,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "7일 18시간"
+        "rough": "7일 17시간"
       },
       "rowCount": 50,
       "artistKo": "튜이드",
