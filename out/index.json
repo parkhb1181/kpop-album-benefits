@@ -1,33 +1,6 @@
 {
-  "stamp": "2026. 9. 3. 14:27:13",
+  "stamp": "2026. 9. 3. 18:49:52",
   "albums": [
-    {
-      "artistId": 25,
-      "artistEn": "TREASURE",
-      "album": "REBOOT",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-09-28",
-      "weversePriceMin": 11800,
-      "artist": "TREASURE",
-      "slug": "treasure-reboot",
-      "versions": 20,
-      "retailers": 6,
-      "benefitCount": 3,
-      "soldCount": 6,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
-      },
-      "rowCount": 45,
-      "artistKo": "트레저",
-      "artistDisplay": "트레저(TREASURE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
-      "cover": "https://image.aladin.co.kr/product/32003/74/cover150/c012937221_0.jpg"
-    },
     {
       "artistId": 25,
       "artistEn": "TREASURE",
@@ -38,22 +11,49 @@
       "weversePriceMin": 10900,
       "artist": "TREASURE",
       "slug": "treasure-the-second-step-chapter-two",
-      "versions": 17,
-      "retailers": 6,
+      "versions": 27,
+      "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 4,
+      "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 12시간"
       },
-      "rowCount": 51,
+      "rowCount": 72,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/09/Cwzm4P.jpg"
+    },
+    {
+      "artistId": 25,
+      "artistEn": "TREASURE",
+      "album": "REBOOT",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-09-28",
+      "weversePriceMin": 11800,
+      "artist": "TREASURE",
+      "slug": "treasure-reboot",
+      "versions": 22,
+      "retailers": 7,
+      "benefitCount": 3,
+      "soldCount": 6,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-28T07:00:00+09:00",
+        "rough": "24일 12시간"
+      },
+      "rowCount": 51,
+      "artistKo": "트레저",
+      "artistDisplay": "트레저(TREASURE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
+      "cover": "https://image.aladin.co.kr/product/32003/74/cover150/c012937221_0.jpg"
     },
     {
       "artistId": 25,
@@ -65,8 +65,8 @@
       "weversePriceMin": 14800,
       "artist": "TREASURE",
       "slug": "treasure-the-first-step-chapter-one",
-      "versions": 22,
-      "retailers": 6,
+      "versions": 33,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 3,
       "eventCount": 0,
@@ -74,9 +74,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 12시간"
       },
-      "rowCount": 30,
+      "rowCount": 43,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/c4c51b28652d7feddffa844b31bf262e.png",
@@ -92,8 +92,8 @@
       "weversePriceMin": 11000,
       "artist": "TREASURE",
       "slug": "treasure-the-second-step-chapter-one",
-      "versions": 12,
-      "retailers": 6,
+      "versions": 23,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 6,
       "eventCount": 0,
@@ -101,13 +101,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 12시간"
       },
-      "rowCount": 67,
+      "rowCount": 79,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fcc4cede79eb82090de112cf735c8845.png",
       "cover": "https://image.aladin.co.kr/product/28669/44/cover150/c202935185_1.jpg"
+    },
+    {
+      "artistId": 25,
+      "artistEn": "TREASURE",
+      "album": "THE FIRST STEP : CHAPTER TWO",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-09-28",
+      "weversePriceMin": 14800,
+      "artist": "TREASURE",
+      "slug": "treasure-the-first-step-chapter-two",
+      "versions": 7,
+      "retailers": 7,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-28T07:00:00+09:00",
+        "rough": "24일 12시간"
+      },
+      "rowCount": 17,
+      "artistKo": null,
+      "artistDisplay": "TREASURE",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0ea054f71be3104339629eec10898d21.png",
+      "cover": "https://image.aladin.co.kr/product/25093/59/cover150/c112832713_1.jpg"
     },
     {
       "artistId": 25,
@@ -120,7 +147,7 @@
       "artist": "TREASURE",
       "slug": "treasure-the-first-step-chapter-three",
       "versions": 7,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
@@ -128,40 +155,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 12시간"
       },
-      "rowCount": 15,
+      "rowCount": 16,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f9d71e046e408ccffca129ceec68f4e2.png",
       "cover": "https://image.aladin.co.kr/product/25454/69/cover150/c172832232_1.jpg"
-    },
-    {
-      "artistId": 25,
-      "artistEn": "TREASURE",
-      "album": "THE FIRST STEP : CHAPTER TWO",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-09-28",
-      "weversePriceMin": 14800,
-      "artist": "TREASURE",
-      "slug": "treasure-the-first-step-chapter-two",
-      "versions": 6,
-      "retailers": 6,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
-      },
-      "rowCount": 14,
-      "artistKo": null,
-      "artistDisplay": "TREASURE",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0ea054f71be3104339629eec10898d21.png",
-      "cover": "https://image.aladin.co.kr/product/25093/59/cover150/c112832713_1.jpg"
     },
     {
       "artistId": 215,
@@ -174,7 +174,7 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
@@ -182,9 +182,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-04T13:00:00+09:00",
-        "rough": "22시간 25분"
+        "rough": "18시간 2분"
       },
-      "rowCount": 18,
+      "rowCount": 21,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
@@ -200,8 +200,8 @@
       "weversePriceMin": 19300,
       "artist": "TREASURE",
       "slug": "treasure-the-first-step-effect",
-      "versions": 6,
-      "retailers": 5,
+      "versions": 7,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 4,
       "eventCount": 0,
@@ -209,9 +209,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 12시간"
       },
-      "rowCount": 23,
+      "rowCount": 28,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/bccd9c3d6869c76bbe1c1eab043d739e.png",
@@ -227,8 +227,8 @@
       "weversePriceMin": 13900,
       "artist": "SHINee",
       "slug": "shinee-make-it-hot",
-      "versions": 5,
-      "retailers": 5,
+      "versions": 6,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -236,9 +236,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "3일 9시간"
+        "rough": "3일 5시간"
       },
-      "rowCount": 25,
+      "rowCount": 30,
       "artistKo": "민호(MINHO)",
       "artistDisplay": "민호(MINHO)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/32df95fce4d797219d21922f968182a5.png",
@@ -263,12 +263,12 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "3일 9시간"
+        "rough": "3일 5시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
       "artistDisplay": "소연(SOYEON)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/aa685bf0538b55dd9bb769d51ae08b2f.png",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/972db14e10fe9ee84b38bf334269b2b2.png",
       "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg"
     },
     {
@@ -282,7 +282,7 @@
       "artist": "TREASURE",
       "slug": "treasure-pleasure",
       "versions": 15,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 3,
       "eventCount": 0,
@@ -290,13 +290,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 12시간"
       },
-      "rowCount": 49,
+      "rowCount": 44,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/RDubQB.jpg"
     },
     {
       "artistId": 306,
@@ -309,7 +309,7 @@
       "artist": "TUIDE",
       "slug": "tuide-tune-play",
       "versions": 9,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 3,
       "eventCount": 0,
@@ -317,9 +317,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "8일 2시간"
+        "rough": "7일 22시간"
       },
-      "rowCount": 44,
+      "rowCount": 50,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg",
@@ -336,7 +336,7 @@
       "artist": "JENNIE",
       "slug": "jennie-fallen-angel",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -344,9 +344,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "56일 9시간"
+        "rough": "56일 5시간"
       },
-      "rowCount": 20,
+      "rowCount": 23,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
@@ -363,7 +363,7 @@
       "artist": "YOUNGTAK (영탁)",
       "slug": "youngtak-영탁-gogo",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -371,9 +371,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "11일 3시간"
+        "rough": "10일 23시간"
       },
-      "rowCount": 16,
+      "rowCount": 19,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "3일 9시간"
+        "rough": "3일 5시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
