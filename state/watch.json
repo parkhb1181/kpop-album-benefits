@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-04T05:39:44.540Z",
-  "lastDeep": "2026-09-04T05:39:44.540Z",
+  "checkedAt": "2026-09-04T09:54:44.320Z",
+  "lastDeep": "2026-09-04T09:54:44.320Z",
   "events": [
     {
       "id": 20434,
@@ -26,6 +26,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_17_banner_SUB.png_2026-09-03_170946959851.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_17_banner_SUB.png_2026-09-03_170946959851_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20408,
+      "url": "https://makestar.co/event/20408",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "민호 미니 2집 'Make it hot' 발매기념 SPECIAL SELFIE EVENT & 대면 사인회",
+      "titleEn": "MINHO The 2nd Mini Album 'Make it hot' SPECIAL SELFIE EVENT & FANSIGN EVENT",
+      "album": "미니 2집 [Make it hot]",
+      "albumEn": "2nd Mini Album [Make it hot]",
+      "artist": "민호",
+      "artistEn": "MINHO",
+      "releaseDate": "2026-09-07",
+      "from": "2026.09.04",
+      "to": "2026.09.06",
+      "startAt": "2026-09-04T18:00:00+09:00",
+      "endAt": "2026-09-06T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10999,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10999_MINHO_7_Banner_thumb.jpg_2026-09-02_120723945843.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10999_MINHO_7_Banner_thumb.jpg_2026-09-02_120723945843_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20402,
+      "url": "https://makestar.co/event/20402",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "MCND 7th Mini Album [Devil Youth Club] (POCAALBUM BOX Ver.) PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "MCND 7th Mini Album [Devil Youth Club] (POCAALBUM BOX Ver.) PRE-ORDER MEET&CALL EVENT",
+      "album": "7th Mini Album [Devil Youth Club]",
+      "albumEn": "7th Mini Album [Devil Youth Club]",
+      "artist": "MCND",
+      "artistEn": "MCND",
+      "releaseDate": "2026-09-10",
+      "from": "2026.09.04",
+      "to": "2026.09.07",
+      "startAt": "2026-09-04T15:00:00+09:00",
+      "endAt": "2026-09-07T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.08",
+      "productId": 11056,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11056_MCND_1_Banner_Sub.png_2026-09-02_112452152603.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11056_MCND_1_Banner_Sub.png_2026-09-02_112452152603_thumb.jpeg"
       }
     },
     {
@@ -81,6 +133,32 @@
       }
     },
     {
+      "id": 20368,
+      "url": "https://makestar.co/event/20368",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER MEET&CALL EVENT PART.2",
+      "titleEn": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER MEET&CALL EVENT PART.2",
+      "album": "미니 4집 [DOPAMINE]",
+      "albumEn": "4TH MINI ALBUM [DOPAMINE]",
+      "artist": "도경수",
+      "artistEn": "D.O.",
+      "releaseDate": "2026-09-08",
+      "from": "2026.09.04",
+      "to": "2026.09.06",
+      "startAt": "2026-09-04T18:00:00+09:00",
+      "endAt": "2026-09-06T17:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.09.07",
+      "productId": 11017,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._3_Banner_Sub.jpg_2026-09-03_091008201021.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._3_Banner_Sub.jpg_2026-09-03_091008201021_thumb.jpeg"
+      }
+    },
+    {
       "id": 20351,
       "url": "https://makestar.co/event/20351",
       "type": "VIDEOCALL",
@@ -104,6 +182,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20350,
+      "url": "https://makestar.co/event/20350",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) PHOTO & VIDEO CALL EVENT",
+      "titleEn": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) PHOTO & VIDEO CALL EVENT",
+      "album": "3rd Single [SWEAT]",
+      "albumEn": "3rd Single [SWEAT]",
+      "artist": "키스오브라이프",
+      "artistEn": "KISS OF LIFE",
+      "releaseDate": "2026-08-04",
+      "from": "2026.09.04",
+      "to": "2026.09.06",
+      "startAt": "2026-09-04T15:00:00+09:00",
+      "endAt": "2026-09-06T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 10907,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_3_Thumb.jpg_2026-07-22_164201332678.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_3_Thumb.jpg_2026-07-22_164201332678_thumb.jpeg"
       }
     },
     {
@@ -182,6 +286,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10982_ONEWE_2_banner_sub.png_2026-09-01_110312728365.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10982_ONEWE_2_banner_sub.png_2026-09-01_110312728365_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20287,
+      "url": "https://makestar.co/event/20287",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "이서연 (Y:SY) 1st Mini Album [GOODIES] 미니 팬미팅",
+      "titleEn": "이서연 (Y:SY) 1st Mini Album [GOODIES] Mini Fan Meeting",
+      "album": "[GOODIES]",
+      "albumEn": "[GOODIES]",
+      "artist": "이서연",
+      "artistEn": "Y:SY",
+      "releaseDate": "2026-09-18",
+      "from": "2026.09.04",
+      "to": "2026.09.06",
+      "startAt": "2026-09-04T15:00:00+09:00",
+      "endAt": "2026-09-06T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.07",
+      "productId": 11049,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11049_Y_SY_1_SUb_banner_v2.jpg_2026-09-01_172519919619.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11049_Y_SY_1_SUb_banner_v2.jpg_2026-09-01_172519919619_thumb.jpeg"
       }
     },
     {
@@ -445,6 +575,32 @@
       }
     },
     {
+      "id": 20095,
+      "url": "https://makestar.co/event/20095",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT Part.2",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT Part.2",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.09.04",
+      "to": "2026.09.08",
+      "startAt": "2026-09-04T16:00:00+09:00",
+      "endAt": "2026-09-08T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.08",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_11_Banner_Sub.jpg_2026-09-01_152514300795.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_11_Banner_Sub.jpg_2026-09-01_152514300795_thumb.jpeg"
+      }
+    },
+    {
       "id": 20092,
       "url": "https://makestar.co/event/20092",
       "type": "SPECIAL OFFLINE EVENT",
@@ -658,11 +814,6 @@
       "key": "i-dle (아이들)｜What a Wonderful Life",
       "artist": "i-dle (아이들)",
       "album": "What a Wonderful Life"
-    },
-    {
-      "key": "SHINee｜Make it hot",
-      "artist": "SHINee",
-      "album": "Make it hot"
     },
     {
       "key": "TUIDE｜TUNE & PLAY",

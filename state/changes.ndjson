@@ -69,3 +69,10 @@
 {"at":"2026-09-03T17:51:33.938Z","type":"event.gone","label":"영상통화 팬사인회","artist":"오드유스","album":"3rd Single [can't go back]","id":20271}
 {"at":"2026-09-03T17:51:33.938Z","type":"event.gone","label":"SPECIAL OFFLINE EVENT","artist":"누에라","album":"4th Mini Album [.exe]","id":20094}
 {"at":"2026-09-04T05:39:44.540Z","type":"event.new","label":"럭키드로우","artist":"스트레이 키즈","album":"미니앨범 [THIS & THAT]","id":20041,"url":"https://makestar.co/event/20041","endAt":"2026-09-06T23:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"민호","album":"미니 2집 [Make it hot]","id":20408,"url":"https://makestar.co/event/20408","endAt":"2026-09-06T23:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"영상통화 팬사인회","artist":"MCND","album":"7th Mini Album [Devil Youth Club]","id":20402,"url":"https://makestar.co/event/20402","endAt":"2026-09-07T23:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"영상통화 팬사인회","artist":"도경수","album":"미니 4집 [DOPAMINE]","id":20368,"url":"https://makestar.co/event/20368","endAt":"2026-09-06T17:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"영상통화 팬사인회","artist":"키스오브라이프","album":"3rd Single [SWEAT]","id":20350,"url":"https://makestar.co/event/20350","endAt":"2026-09-06T23:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"SPECIAL EVENT","artist":"이서연","album":"[GOODIES]","id":20287,"url":"https://makestar.co/event/20287","endAt":"2026-09-06T23:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":20095,"url":"https://makestar.co/event/20095","endAt":"2026-09-08T00:59:59.999999+09:00"}
+{"at":"2026-09-04T09:54:44.320Z","type":"album.gone","artist":"SHINee","album":"Make it hot"}
