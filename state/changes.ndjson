@@ -76,3 +76,6 @@
 {"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"SPECIAL EVENT","artist":"이서연","album":"[GOODIES]","id":20287,"url":"https://makestar.co/event/20287","endAt":"2026-09-06T23:59:59.999999+09:00"}
 {"at":"2026-09-04T09:54:44.320Z","type":"event.new","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":20095,"url":"https://makestar.co/event/20095","endAt":"2026-09-08T00:59:59.999999+09:00"}
 {"at":"2026-09-04T09:54:44.320Z","type":"album.gone","artist":"SHINee","album":"Make it hot"}
+{"at":"2026-09-04T17:32:59.241Z","type":"event.gone","label":"영상통화 팬사인회","artist":"HEART OF WOMAN (하트오브우먼)","album":"THE 1st ALBUM [Heart Byte : LEGACY] ","id":20347}
+{"at":"2026-09-04T17:32:59.241Z","type":"event.gone","label":"영상통화 팬사인회","artist":"베이온","album":"1ST EP [Youth Today] ","id":20250}
+{"at":"2026-09-04T17:32:59.241Z","type":"event.gone","label":"SPECIAL OFFLINE EVENT","artist":"TREASURE","album":"3rd MINI ALBUM [LOVE PULSE]","id":20092}
