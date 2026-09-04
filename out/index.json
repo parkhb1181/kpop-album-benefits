@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 4. 22:58:45",
+  "stamp": "2026. 9. 5. 02:33:35",
   "albums": [
     {
       "artistId": 25,
@@ -11,22 +11,22 @@
       "weversePriceMin": 10900,
       "artist": "TREASURE",
       "slug": "treasure-the-second-step-chapter-two",
-      "versions": 27,
+      "versions": 26,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 3,
+      "soldCount": 7,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
-      "rowCount": 74,
+      "rowCount": 65,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/09/Cwzm4P.jpg"
+      "cover": "https://image.aladin.co.kr/product/30085/99/cover150/c292937764_1.jpg"
     },
     {
       "artistId": 25,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
       "rowCount": 45,
       "artistKo": "트레저",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
@@ -128,9 +128,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "6일 18시간"
+        "rough": "6일 14시간"
       },
-      "rowCount": 52,
+      "rowCount": 50,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/2ffcb169d5ad70538019d5bcf9a82cc4.png",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "2일 1시간"
+        "rough": "1일 21시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -263,9 +263,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "23일 7시간"
+        "rough": "23일 4시간"
       },
-      "rowCount": 53,
+      "rowCount": 41,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "9일 18시간"
+        "rough": "9일 15시간"
       },
       "rowCount": 21,
       "artistKo": "영탁",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "55일 0시간"
+        "rough": "54일 21시간"
       },
       "rowCount": 23,
       "artistKo": "제니",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "51일 13시간"
+        "rough": "51일 10시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -365,13 +365,13 @@
       "versions": 8,
       "retailers": 4,
       "benefitCount": 0,
-      "soldCount": 3,
+      "soldCount": 2,
       "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "2일 0시간"
+        "rough": "1일 21시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
