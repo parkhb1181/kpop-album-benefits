@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-04T09:54:44.320Z",
-  "lastDeep": "2026-09-04T09:54:44.320Z",
+  "checkedAt": "2026-09-04T14:08:29.952Z",
+  "lastDeep": "2026-09-04T14:08:29.952Z",
   "events": [
     {
       "id": 20434,
@@ -861,6 +861,11 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
+      "key": "YOUNGTAK (영탁)｜GOGO",
+      "artist": "YOUNGTAK (영탁)",
+      "album": "GOGO"
+    },
+    {
       "key": "JENNIE｜Fallen Angel",
       "artist": "JENNIE",
       "album": "Fallen Angel"
@@ -869,11 +874,6 @@
       "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
       "artist": "EVAN",
       "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
-      "key": "YOUNGTAK (영탁)｜GOGO",
-      "artist": "YOUNGTAK (영탁)",
-      "album": "GOGO"
     },
     {
       "key": "JISOO｜CLICK",
