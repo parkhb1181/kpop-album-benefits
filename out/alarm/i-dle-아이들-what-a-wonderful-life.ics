@@ -3,53 +3,53 @@ VERSION:2.0
 PRODID:-//kpop-album-benefits//KR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:소연(SOYEON) What a Wonderful Life 마감
+X-WR-CALNAME:i-dle (아이들) What a Wonderful Life 마감
 X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:i-dle-아이들-what-a-wonderful-life-evt20244@kpop-album-benefits
-DTSTAMP:20260904T053002Z
+DTSTAMP:20260904T054109Z
 DTSTART:20260906T145959Z
 DTEND:20260906T152959Z
-SUMMARY:소연(SOYEON) What a Wonderful Life — 예약 특전 포토카드
-  응모 마감
+SUMMARY:i-dle (아이들) What a Wonderful Life — 예약 특전 포토카
+ 드 응모 마감
 DESCRIPTION:소연 (SOYEON) 1st Full Album [끝내주는 인생] PRE-ORDER 
  PHOTOCARD EVENT\nhttps://makestar.co/event/20244
 URL:https://makestar.co/event/20244
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:소연(SOYEON) What a Wonderful Life — 예약 특전 포토
- 카드 응모 마감 (하루 전)
+DESCRIPTION:i-dle (아이들) What a Wonderful Life — 예약 특전 포
+ 토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:소연(SOYEON) What a Wonderful Life — 예약 특전 포토
- 카드 응모 마감 (1시간 전)
+DESCRIPTION:i-dle (아이들) What a Wonderful Life — 예약 특전 포
+ 토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:i-dle-아이들-what-a-wonderful-life-release@kpop-album-benefits
-DTSTAMP:20260904T053002Z
+DTSTAMP:20260904T054109Z
 DTSTART:20260907T090100Z
 DTEND:20260907T093100Z
-SUMMARY:소연(SOYEON) What a Wonderful Life — 예약 배송 시작
+SUMMARY:i-dle (아이들) What a Wonderful Life — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/i-dle-아이들-what-a-wonderful-li
  fe.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:소연(SOYEON) What a Wonderful Life — 예약 배송 시작 (
- 하루 전)
+DESCRIPTION:i-dle (아이들) What a Wonderful Life — 예약 배송 시
+ 작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:소연(SOYEON) What a Wonderful Life — 예약 배송 시작 (
- 1시간 전)
+DESCRIPTION:i-dle (아이들) What a Wonderful Life — 예약 배송 시
+ 작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
