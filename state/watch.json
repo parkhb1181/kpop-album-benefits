@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-04T00:50:43.417Z",
-  "lastDeep": "2026-09-04T00:50:43.417Z",
+  "checkedAt": "2026-09-04T05:39:44.540Z",
+  "lastDeep": "2026-09-04T05:39:44.540Z",
   "events": [
     {
       "id": 20434,
@@ -471,6 +471,32 @@
       }
     },
     {
+      "id": 20041,
+      "url": "https://makestar.co/event/20041",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "Stray Kids (스트레이 키즈) 미니 앨범 'THIS & THAT' LUCKY DRAW EVENT",
+      "titleEn": "Stray Kids Mini Album 'THIS & THAT' LUCKY DRAW EVENT",
+      "album": "미니앨범 [THIS & THAT]",
+      "albumEn": "Mini Album [THIS & THAT]",
+      "artist": "스트레이 키즈",
+      "artistEn": "Stray Kids",
+      "releaseDate": "2026-08-07",
+      "from": "2026.09.04",
+      "to": "2026.09.06",
+      "startAt": "2026-09-04T11:00:00+09:00",
+      "endAt": "2026-09-06T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10861,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10861_STRAY_KIDS_3_banner_Sub_v3.png_2026-09-02_151311710892.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10861_STRAY_KIDS_3_banner_Sub_v3.png_2026-09-02_151311710892_thumb.jpeg"
+      }
+    },
+    {
       "id": 20023,
       "url": "https://makestar.co/event/20023",
       "type": "PHOTOCARD",
@@ -639,6 +665,11 @@
       "album": "Make it hot"
     },
     {
+      "key": "TUIDE｜TUNE & PLAY",
+      "artist": "TUIDE",
+      "album": "TUNE & PLAY"
+    },
+    {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE SECOND STEP : CHAPTER ONE"
@@ -687,11 +718,6 @@
       "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
       "artist": "EVAN",
       "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
-      "key": "TUIDE｜TUNE & PLAY",
-      "artist": "TUIDE",
-      "album": "TUNE & PLAY"
     },
     {
       "key": "YOUNGTAK (영탁)｜GOGO",
