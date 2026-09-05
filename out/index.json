@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 5. 14:14:09",
+  "stamp": "2026. 9. 5. 22:14:15",
   "albums": [
     {
       "artistId": 25,
@@ -14,13 +14,13 @@
       "versions": 26,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 9,
+      "soldCount": 8,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 67,
       "artistKo": "트레저",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 45,
       "artistKo": "트레저",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
@@ -122,13 +122,13 @@
       "versions": 9,
       "retailers": 7,
       "benefitCount": 2,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "6일 3시간"
+        "rough": "5일 19시간"
       },
       "rowCount": 50,
       "artistKo": "튜이드",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "1일 9시간"
+        "rough": "1일 1시간"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
@@ -263,13 +263,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
-      "rowCount": 48,
+      "rowCount": 53,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/qEJikF.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/YAdzgz.png"
     },
     {
       "artistId": 207,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "9일 3시간"
+        "rough": "8일 19시간"
       },
       "rowCount": 21,
       "artistKo": "영탁",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "54일 9시간"
+        "rough": "54일 1시간"
       },
       "rowCount": 23,
       "artistKo": "제니",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "50일 22시간"
+        "rough": "50일 14시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "5일 9시간"
+        "rough": "5일 1시간"
       },
       "rowCount": 12,
       "artistKo": "르세라핌",
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "1일 9시간"
+        "rough": "1일 1시간"
       },
       "rowCount": 14,
       "artistKo": "에반",
