@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-05T17:21:56.835Z",
-  "lastDeep": "2026-09-05T17:21:56.835Z",
+  "checkedAt": "2026-09-05T19:14:19.025Z",
+  "lastDeep": "2026-09-05T19:14:19.025Z",
   "events": [
     {
       "id": 20408,
@@ -655,29 +655,14 @@
   ],
   "albums": [
     {
-      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
       "key": "TUIDE｜TUNE & PLAY",
       "artist": "TUIDE",
       "album": "TUNE & PLAY"
     },
     {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night'"
-    },
-    {
       "key": "i-dle (아이들)｜What a Wonderful Life",
       "artist": "i-dle (아이들)",
       "album": "What a Wonderful Life"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
     },
     {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
@@ -700,16 +685,6 @@
       "album": "PLEASURE"
     },
     {
-      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02'",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02'"
-    },
-    {
-      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02 '",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02 '"
-    },
-    {
       "key": "TREASURE｜THE FIRST STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : CHAPTER ONE"
@@ -730,6 +705,11 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
+      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
+      "artist": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
+    },
+    {
       "key": "YOUNGTAK (영탁)｜GOGO",
       "artist": "YOUNGTAK (영탁)",
       "album": "GOGO"
@@ -738,6 +718,11 @@
       "key": "JENNIE｜Fallen Angel",
       "artist": "JENNIE",
       "album": "Fallen Angel"
+    },
+    {
+      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
+      "artist": "EVAN",
+      "album": "1st Mini Album 'DEATH OF ME'"
     },
     {
       "key": "JISOO｜CLICK",
