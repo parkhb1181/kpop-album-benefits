@@ -55,6 +55,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-chemical-night</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-no-labels-part-02</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>daily</changefreq>
@@ -85,7 +103,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -135,6 +153,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/nct-127-blingy</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -217,6 +241,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-chemical-night</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/tomorrow-x-together-no-labels-part-02</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>daily</changefreq>
@@ -247,7 +289,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <loc>https://kpop-album.vercel.app/en/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -297,6 +339,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/nct-127-blingy</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
