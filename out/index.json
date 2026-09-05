@@ -1,33 +1,6 @@
 {
-  "stamp": "2026. 9. 6. 02:22:31",
+  "stamp": "2026. 9. 6. 04:14:49",
   "albums": [
-    {
-      "artistId": 25,
-      "artistEn": "TREASURE",
-      "album": "THE SECOND STEP : CHAPTER TWO",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-09-28",
-      "weversePriceMin": 10900,
-      "artist": "TREASURE",
-      "slug": "treasure-the-second-step-chapter-two",
-      "versions": 26,
-      "retailers": 7,
-      "benefitCount": 3,
-      "soldCount": 9,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
-      },
-      "rowCount": 67,
-      "artistKo": "트레저",
-      "artistDisplay": "트레저(TREASURE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
-      "cover": "https://image.aladin.co.kr/product/30085/99/cover150/c292937764_1.jpg"
-    },
     {
       "artistId": 25,
       "artistEn": "TREASURE",
@@ -41,19 +14,46 @@
       "versions": 22,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 4,
+      "soldCount": 6,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
-      "rowCount": 47,
+      "rowCount": 52,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
       "cover": "https://image.aladin.co.kr/product/32003/74/cover150/c012937221_0.jpg"
+    },
+    {
+      "artistId": 25,
+      "artistEn": "TREASURE",
+      "album": "THE SECOND STEP : CHAPTER TWO",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-09-28",
+      "weversePriceMin": 10900,
+      "artist": "TREASURE",
+      "slug": "treasure-the-second-step-chapter-two",
+      "versions": 25,
+      "retailers": 6,
+      "benefitCount": 3,
+      "soldCount": 3,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-28T07:00:00+09:00",
+        "rough": "22일 2시간"
+      },
+      "rowCount": 65,
+      "artistKo": "트레저",
+      "artistDisplay": "트레저(TREASURE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/09/Cwzm4P.jpg"
     },
     {
       "artistId": 25,
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,40 +101,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fcc4cede79eb82090de112cf735c8845.png",
       "cover": "https://image.aladin.co.kr/product/28669/44/cover150/c202935185_1.jpg"
-    },
-    {
-      "artistId": 306,
-      "artistEn": "TUIDE",
-      "album": "TUNE & PLAY",
-      "skuCount": 5,
-      "benefit": true,
-      "deliveryDate": "2026-09-14",
-      "weversePriceMin": 12100,
-      "artist": "TUIDE",
-      "slug": "tuide-tune-play",
-      "versions": 8,
-      "retailers": 7,
-      "benefitCount": 2,
-      "soldCount": 3,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-14T12:00:00+09:00",
-        "rough": "8일 9시간"
-      },
-      "rowCount": 54,
-      "artistKo": "튜이드",
-      "artistDisplay": "튜이드(TUIDE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/be974af5ca6fa2d521ee44bc92ec8abf.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
     },
     {
       "artistId": 25,
@@ -155,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -182,13 +155,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
       "rowCount": 16,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f9d71e046e408ccffca129ceec68f4e2.png",
       "cover": "https://image.aladin.co.kr/product/25454/69/cover150/c172832232_1.jpg"
+    },
+    {
+      "artistId": 306,
+      "artistEn": "TUIDE",
+      "album": "TUNE & PLAY",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-09-11",
+      "weversePriceMin": 12100,
+      "artist": "TUIDE",
+      "slug": "tuide-tune-play",
+      "versions": 7,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-11T17:23:00+09:00",
+        "rough": "5일 13시간"
+      },
+      "rowCount": 42,
+      "artistKo": "튜이드",
+      "artistDisplay": "튜이드(TUIDE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/2ffcb169d5ad70538019d5bcf9a82cc4.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
     },
     {
       "artistId": 25,
@@ -209,90 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/bccd9c3d6869c76bbe1c1eab043d739e.png",
       "cover": "https://image.aladin.co.kr/product/25954/59/cover150/c302832852_1.jpg"
-    },
-    {
-      "artistId": 50,
-      "artistEn": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night'",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-09-11",
-      "weversePriceMin": 15500,
-      "artist": "LE SSERAFIM",
-      "slug": "le-sserafim-2nd-single-album-made-my-night",
-      "versions": 4,
-      "retailers": 6,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 2,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "4일 21시간"
-      },
-      "rowCount": 21,
-      "artistKo": "르세라핌",
-      "artistDisplay": "르세라핌(LE SSERAFIM)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5b71bba56fd00de5083e2effcd053e01.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg"
-    },
-    {
-      "artistId": 50,
-      "artistEn": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-09-11",
-      "weversePriceMin": 27100,
-      "artist": "LE SSERAFIM",
-      "slug": "le-sserafim-2nd-single-album-made-my-night-chemical-night",
-      "versions": 4,
-      "retailers": 6,
-      "benefitCount": 2,
-      "soldCount": 0,
-      "eventCount": 2,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "4일 21시간"
-      },
-      "rowCount": 10,
-      "artistKo": "르세라핌",
-      "artistDisplay": "르세라핌(LE SSERAFIM)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5b71bba56fd00de5083e2effcd053e01.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg"
-    },
-    {
-      "artistId": 3,
-      "artistEn": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02'",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-09-02",
-      "weversePriceMin": 19800,
-      "artist": "TOMORROW X TOGETHER",
-      "slug": "tomorrow-x-together-no-labels-part-02",
-      "versions": 11,
-      "retailers": 5,
-      "benefitCount": 2,
-      "soldCount": 2,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 33,
-      "artistKo": "연준(YEONJUN)",
-      "artistDisplay": "연준(YEONJUN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/ec5ad529b30d7c1255afbc2c7dcb9861.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/06/25/l0ns7c.jpg"
     },
     {
       "artistId": 113,
@@ -313,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "21시간 34분"
+        "rough": "19시간 43분"
       },
       "rowCount": 8,
       "artistKo": "소연(SOYEON)",
@@ -340,13 +263,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "22일 4시간"
+        "rough": "22일 2시간"
       },
-      "rowCount": 41,
+      "rowCount": 51,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/YAdzgz.png"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
     },
     {
       "artistId": 207,
@@ -367,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "8일 15시간"
+        "rough": "8일 13시간"
       },
       "rowCount": 21,
       "artistKo": "영탁",
@@ -394,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "53일 21시간"
+        "rough": "53일 19시간"
       },
       "rowCount": 23,
       "artistKo": "제니",
@@ -421,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "50일 10시간"
+        "rough": "50일 8시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -430,53 +353,57 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
     },
     {
-      "artistId": 3,
-      "artistEn": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02 '",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-09-02",
-      "weversePriceMin": 17800,
-      "artist": "TOMORROW X TOGETHER",
-      "slug": "tomorrow-x-together-no-labels-part-02",
-      "versions": 11,
-      "retailers": 4,
+      "artistId": 50,
+      "artistEn": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
+      "skuCount": 6,
+      "benefit": false,
+      "deliveryDate": "2026-09-11",
+      "weversePriceMin": 3797,
+      "artist": "LE SSERAFIM",
+      "slug": "le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl",
+      "versions": 9,
+      "retailers": 3,
       "benefitCount": 1,
-      "soldCount": 2,
-      "eventCount": 0,
+      "soldCount": 1,
+      "eventCount": 2,
       "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 32,
-      "artistKo": "연준(YEONJUN)",
-      "artistDisplay": "연준(YEONJUN)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/06/25/l0ns7c.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/06/25/l0ns7c.jpg"
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-10T23:59:59.999999+09:00",
+        "rough": "4일 19시간"
+      },
+      "rowCount": 12,
+      "artistKo": "르세라핌",
+      "artistDisplay": "르세라핌(LE SSERAFIM)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg"
     },
     {
       "artistId": 300,
       "artistEn": "EVAN",
       "album": "1st Mini Album 'DEATH OF ME'",
-      "skuCount": 6,
-      "benefit": true,
+      "skuCount": 2,
+      "benefit": false,
       "deliveryDate": "2026-09-07",
-      "weversePriceMin": 11200,
+      "weversePriceMin": 27700,
       "artist": "EVAN",
       "slug": "evan-1st-mini-album-death-of-me",
       "versions": 8,
-      "retailers": 3,
-      "benefitCount": 1,
+      "retailers": 4,
+      "benefitCount": 0,
       "soldCount": 3,
       "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-06T23:59:59.999999+09:00",
-        "rough": "21시간 36분"
+        "rough": "19시간 36분"
       },
       "rowCount": 14,
       "artistKo": "에반",
       "artistDisplay": "에반(EVAN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9160ce6cc79086793de07bc861bf3232.png",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg"
     },
     {
@@ -588,6 +515,87 @@
       "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-7th-year-%EA%B0%80%EC%8B%9C%EB%8D%A4%EB%B6%88%EC%97%90-%EC%9E%A0%EC%8B%9C-%EB%B0%94%EB%9E%8C%EC%9D%B4-%EB%A9%88%EC%B7%84%EC%9D%84-%EB%95%8C.png"
     },
     {
+      "artistId": 50,
+      "artistEn": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night'",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-09-11",
+      "weversePriceMin": 15500,
+      "artist": "LE SSERAFIM",
+      "slug": "le-sserafim-2nd-single-album-made-my-night",
+      "versions": 4,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 2,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 21,
+      "artistKo": "르세라핌",
+      "artistDisplay": "르세라핌(LE SSERAFIM)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5b71bba56fd00de5083e2effcd053e01.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
+      "expired": {
+        "lastSeen": "2026-09-06"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/le-sserafim-2nd-single-album-made-my-night.png"
+    },
+    {
+      "artistId": 50,
+      "artistEn": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-09-11",
+      "weversePriceMin": 27100,
+      "artist": "LE SSERAFIM",
+      "slug": "le-sserafim-2nd-single-album-made-my-night-chemical-night",
+      "versions": 4,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 0,
+      "eventCount": 2,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 10,
+      "artistKo": "르세라핌",
+      "artistDisplay": "르세라핌(LE SSERAFIM)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5b71bba56fd00de5083e2effcd053e01.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
+      "expired": {
+        "lastSeen": "2026-09-06"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/le-sserafim-2nd-single-album-made-my-night-chemical-night.png"
+    },
+    {
+      "artistId": 3,
+      "artistEn": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02'",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-09-02",
+      "weversePriceMin": 19800,
+      "artist": "TOMORROW X TOGETHER",
+      "slug": "tomorrow-x-together-no-labels-part-02",
+      "versions": 11,
+      "retailers": 5,
+      "benefitCount": 2,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 33,
+      "artistKo": "연준(YEONJUN)",
+      "artistDisplay": "연준(YEONJUN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/ec5ad529b30d7c1255afbc2c7dcb9861.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/06/25/l0ns7c.jpg",
+      "expired": {
+        "lastSeen": "2026-09-06"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-no-labels-part-02.png"
+    },
+    {
       "artistId": 130,
       "artistEn": "SHINee",
       "album": "Make it hot",
@@ -669,31 +677,31 @@
       "ogCard": "https://kpop-album.vercel.app/og/nct-127-blingy.png"
     },
     {
-      "artistId": 50,
-      "artistEn": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "skuCount": 6,
-      "benefit": false,
-      "deliveryDate": "2026-09-11",
-      "weversePriceMin": 3797,
-      "artist": "LE SSERAFIM",
-      "slug": "le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl",
-      "versions": 9,
-      "retailers": 3,
+      "artistId": 3,
+      "artistEn": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02 '",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-09-02",
+      "weversePriceMin": 17800,
+      "artist": "TOMORROW X TOGETHER",
+      "slug": "tomorrow-x-together-no-labels-part-02",
+      "versions": 11,
+      "retailers": 4,
       "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 2,
+      "soldCount": 2,
+      "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": null,
-      "rowCount": 12,
-      "artistKo": "르세라핌",
-      "artistDisplay": "르세라핌(LE SSERAFIM)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
+      "rowCount": 32,
+      "artistKo": "연준(YEONJUN)",
+      "artistDisplay": "연준(YEONJUN)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/06/25/l0ns7c.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/06/25/l0ns7c.jpg",
       "expired": {
         "lastSeen": "2026-09-06"
       },
-      "ogCard": "https://kpop-album.vercel.app/og/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl.png"
+      "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-no-labels-part-02.png"
     },
     {
       "artistId": 248,
