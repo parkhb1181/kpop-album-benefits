@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-05T15:12:42.379Z",
-  "lastDeep": "2026-09-05T15:12:42.379Z",
+  "checkedAt": "2026-09-05T17:21:56.835Z",
+  "lastDeep": "2026-09-05T17:21:56.835Z",
   "events": [
     {
       "id": 20408,
@@ -149,7 +149,7 @@
       "to": "2026.09.09",
       "startAt": "2026-08-31T19:00:00+09:00",
       "endAt": "2026-09-09T00:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.09.10",
       "productId": 10894,
@@ -461,8 +461,8 @@
       "to": "2026.09.08",
       "startAt": "2026-09-04T16:00:00+09:00",
       "endAt": "2026-09-08T00:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.08",
       "productId": 10867,
       "image": {
@@ -655,14 +655,29 @@
   ],
   "albums": [
     {
-      "key": "i-dle (아이들)｜What a Wonderful Life",
-      "artist": "i-dle (아이들)",
-      "album": "What a Wonderful Life"
+      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
+      "artist": "EVAN",
+      "album": "1st Mini Album 'DEATH OF ME'"
     },
     {
       "key": "TUIDE｜TUNE & PLAY",
       "artist": "TUIDE",
       "album": "TUNE & PLAY"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night'"
+    },
+    {
+      "key": "i-dle (아이들)｜What a Wonderful Life",
+      "artist": "i-dle (아이들)",
+      "album": "What a Wonderful Life"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
     },
     {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
@@ -685,6 +700,16 @@
       "album": "PLEASURE"
     },
     {
+      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02'",
+      "artist": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02'"
+    },
+    {
+      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02 '",
+      "artist": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02 '"
+    },
+    {
       "key": "TREASURE｜THE FIRST STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : CHAPTER ONE"
@@ -705,11 +730,6 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
-    },
-    {
       "key": "YOUNGTAK (영탁)｜GOGO",
       "artist": "YOUNGTAK (영탁)",
       "album": "GOGO"
@@ -718,11 +738,6 @@
       "key": "JENNIE｜Fallen Angel",
       "artist": "JENNIE",
       "album": "Fallen Angel"
-    },
-    {
-      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'"
     },
     {
       "key": "JISOO｜CLICK",
