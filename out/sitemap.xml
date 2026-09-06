@@ -55,12 +55,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/treasure-pleasure</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>daily</changefreq>
@@ -86,6 +80,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -241,12 +241,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/treasure-pleasure</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>daily</changefreq>
@@ -272,6 +266,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
