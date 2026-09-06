@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-06T05:38:14.159Z",
-  "lastDeep": "2026-09-06T05:38:14.159Z",
+  "checkedAt": "2026-09-06T09:39:48.248Z",
+  "lastDeep": "2026-09-06T09:39:48.248Z",
   "events": [
     {
       "id": 20408,
@@ -104,32 +104,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20368,
-      "url": "https://makestar.co/event/20368",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER MEET&CALL EVENT PART.2",
-      "titleEn": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER MEET&CALL EVENT PART.2",
-      "album": "미니 4집 [DOPAMINE]",
-      "albumEn": "4TH MINI ALBUM [DOPAMINE]",
-      "artist": "도경수",
-      "artistEn": "D.O.",
-      "releaseDate": "2026-09-08",
-      "from": "2026.09.04",
-      "to": "2026.09.06",
-      "startAt": "2026-09-04T18:00:00+09:00",
-      "endAt": "2026-09-06T17:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.07",
-      "productId": 11017,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._3_Banner_Sub.jpg_2026-09-03_091008201021.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._3_Banner_Sub.jpg_2026-09-03_091008201021_thumb.jpeg"
       }
     },
     {
