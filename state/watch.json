@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-07T15:58:06.299Z",
-  "lastDeep": "2026-09-07T15:58:06.299Z",
+  "checkedAt": "2026-09-07T19:46:00.080Z",
+  "lastDeep": "2026-09-07T19:46:00.080Z",
   "events": [
     {
       "id": 20430,
@@ -19,7 +19,7 @@
       "to": "2026.09.11",
       "startAt": "2026-09-07T19:00:00+09:00",
       "endAt": "2026-09-11T00:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.09.11",
       "productId": 10943,
@@ -123,7 +123,7 @@
       "to": "2026.09.09",
       "startAt": "2026-08-31T19:00:00+09:00",
       "endAt": "2026-09-09T00:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.10",
       "productId": 10894,
@@ -253,7 +253,7 @@
       "to": "2026.09.12",
       "startAt": "2026-09-07T16:00:00+09:00",
       "endAt": "2026-09-12T00:59:59.999999+09:00",
-      "dday": 5,
+      "dday": 4,
       "closing": false,
       "winnerAt": "2026.09.14",
       "productId": 10940,
@@ -286,32 +286,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20095,
-      "url": "https://makestar.co/event/20095",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT Part.2",
-      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) 1:1 VIDEO CALL EVENT Part.2",
-      "album": "4th Mini Album [.exe]",
-      "albumEn": "4th Mini Album [.exe] ",
-      "artist": "누에라",
-      "artistEn": "NouerA",
-      "releaseDate": "2026-07-27",
-      "from": "2026.09.04",
-      "to": "2026.09.08",
-      "startAt": "2026-09-04T16:00:00+09:00",
-      "endAt": "2026-09-08T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.08",
-      "productId": 10867,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_11_Banner_Sub.jpg_2026-09-01_152514300795.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_11_Banner_Sub.jpg_2026-09-01_152514300795_thumb.jpeg"
       }
     },
     {
