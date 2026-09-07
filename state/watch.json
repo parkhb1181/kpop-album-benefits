@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-07T10:16:56.367Z",
-  "lastDeep": "2026-09-07T10:16:56.367Z",
+  "checkedAt": "2026-09-07T15:58:06.299Z",
+  "lastDeep": "2026-09-07T15:58:06.299Z",
   "events": [
     {
       "id": 20430,
@@ -29,32 +29,6 @@
       }
     },
     {
-      "id": 20402,
-      "url": "https://makestar.co/event/20402",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "MCND 7th Mini Album [Devil Youth Club] (POCAALBUM BOX Ver.) PRE-ORDER MEET&CALL EVENT",
-      "titleEn": "MCND 7th Mini Album [Devil Youth Club] (POCAALBUM BOX Ver.) PRE-ORDER MEET&CALL EVENT",
-      "album": "7th Mini Album [Devil Youth Club]",
-      "albumEn": "7th Mini Album [Devil Youth Club]",
-      "artist": "MCND",
-      "artistEn": "MCND",
-      "releaseDate": "2026-09-10",
-      "from": "2026.09.04",
-      "to": "2026.09.07",
-      "startAt": "2026-09-04T15:00:00+09:00",
-      "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.08",
-      "productId": 11056,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11056_MCND_1_Banner_Sub.png_2026-09-02_112452152603.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11056_MCND_1_Banner_Sub.png_2026-09-02_112452152603_thumb.jpeg"
-      }
-    },
-    {
       "id": 20401,
       "url": "https://makestar.co/event/20401",
       "type": "PHOTOCARD",
@@ -71,7 +45,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T11:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11070,
@@ -97,39 +71,13 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T11:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11070,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20260928%20-%20BOYNEXTDOOR%201st%20Studio%20Album%20Repackage%20%5BHOME_%20DELUXE%5D%20%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-09-07_110040797251.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20260928_-_BOYNEXTDOOR_1st_Studio_Album_Repackage_HOME__DELUXE_%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-09-07_110040797251_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20379,
-      "url": "https://makestar.co/event/20379",
-      "type": "LUCKYDRAW",
-      "label": "럭키드로우",
-      "fansign": false,
-      "title": "Hearts2Hearts 미니 2집 'Lemon Tang' 발매기념 LUCKY DRAW EVENT",
-      "titleEn": "Hearts2Hearts 2nd Mini Album 'Lemon Tang' LUCKY DRAW EVENT",
-      "album": "미니 2집 [Lemon Tang]",
-      "albumEn": "2nd Mini Album [Lemon Tang]",
-      "artist": "Hearts2Hearts",
-      "artistEn": "Hearts2Hearts",
-      "releaseDate": "2026-06-22",
-      "from": "2026.09.01",
-      "to": "2026.09.07",
-      "startAt": "2026-09-01T18:00:00+09:00",
-      "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10715,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407_thumb.jpeg"
       }
     },
     {
@@ -149,7 +97,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T12:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11063,
@@ -201,7 +149,7 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -227,7 +175,7 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -253,39 +201,13 @@
       "to": "2026.09.08",
       "startAt": "2026-09-02T12:00:00+09:00",
       "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.09",
       "productId": 11002,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_2_Sub.png_2026-08-31_123414591047.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_2_Sub.png_2026-08-31_123414591047_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20206,
-      "url": "https://makestar.co/event/20206",
-      "type": "FANSIGN",
-      "label": "대면 팬사인회",
-      "fansign": true,
-      "title": "ENHYPEN 8TH MINI ALBUM 'THE SIN : BLISS' FANSIGN EVENT IN TAIPEI",
-      "titleEn": "ENHYPEN 8TH MINI ALBUM 'THE SIN : BLISS' FANSIGN EVENT IN TAIPEI",
-      "album": "[THE SIN : BLISS]",
-      "albumEn": "[THE SIN : BLISS]",
-      "artist": "엔하이픈",
-      "artistEn": "ENHYPEN",
-      "releaseDate": "2026-08-21",
-      "from": "2026.09.02",
-      "to": "2026.09.07",
-      "startAt": "2026-09-02T18:00:00+09:00",
-      "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.09",
-      "productId": 10894,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_9_Banner_Sub.jpg_2026-08-27_141313371388.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_9_Banner_Sub.jpg_2026-08-27_141313371388_thumb.jpeg"
       }
     },
     {
@@ -305,7 +227,7 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 53,
+      "dday": 52,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
@@ -357,39 +279,13 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 30,
+      "dday": 29,
       "closing": false,
       "winnerAt": null,
       "productId": 11019,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20105,
-      "url": "https://makestar.co/event/20105",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER PHOTOCARD EVENT",
-      "titleEn": "도경수(D.O.) DOPAMINE - The 4th Mini Album PRE-ORDER PHOTOCARD EVENT",
-      "album": "미니 4집 [DOPAMINE]",
-      "albumEn": "4TH MINI ALBUM [DOPAMINE]",
-      "artist": "도경수",
-      "artistEn": "D.O.",
-      "releaseDate": "2026-09-08",
-      "from": "2026.08.25",
-      "to": "2026.09.07",
-      "startAt": "2026-08-25T14:00:00+09:00",
-      "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.08",
-      "productId": 11017,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._1_Banner_Sub_v2.jpg_2026-08-25_111019284671_thumb.jpeg"
       }
     },
     {
@@ -435,65 +331,13 @@
       "to": "2026.09.08",
       "startAt": "2026-08-11T14:00:00+09:00",
       "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.09",
       "productId": 10970,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_1_thumb.jpg_2026-08-07_151012625597.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_1_thumb.jpg_2026-08-07_151012625597_thumb.jpeg"
-      }
-    },
-    {
-      "id": 18930,
-      "url": "https://makestar.co/event/18930",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "&TEAM KR 2nd Mini Album 'Mark on Me' - SOLO ver. 발매 기념 특전 증정 이벤트",
-      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' - SOLO ver. SPECIAL GIVEAWAY EVENT",
-      "album": "KR 2nd Mini Album 'Mark on Me' ",
-      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
-      "artist": "앤팀",
-      "artistEn": "&TEAM",
-      "releaseDate": "2026-09-08",
-      "from": "2026.07.06",
-      "to": "2026.09.07",
-      "startAt": "2026-07-06T18:00:00+09:00",
-      "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10851,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_2_Banner_thumb_v6.jpg_2026-08-27_174844886537.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_2_Banner_thumb_v6.jpg_2026-08-27_174844886537_thumb.jpeg"
-      }
-    },
-    {
-      "id": 18929,
-      "url": "https://makestar.co/event/18929",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "&TEAM KR 2nd Mini Album 'Mark on Me' - CRAVE YOU ver. / TAME ME ver. 발매 기념 특전 증정 이벤트",
-      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' - CRAVE YOU ver. / TAME ME ver. SPECIAL GIVEAWAY EVENT",
-      "album": "KR 2nd Mini Album 'Mark on Me' ",
-      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
-      "artist": "앤팀",
-      "artistEn": "&TEAM",
-      "releaseDate": "2026-09-08",
-      "from": "2026.07.06",
-      "to": "2026.09.07",
-      "startAt": "2026-07-06T18:00:00+09:00",
-      "endAt": "2026-09-07T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10851,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_1_Banner_thumb_v7.jpg_2026-08-27_174718170108.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_1_Banner_thumb_v7.jpg_2026-08-27_174718170108_thumb.jpeg"
       }
     },
     {
@@ -525,34 +369,9 @@
   ],
   "albums": [
     {
-      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
       "key": "TUIDE｜TUNE & PLAY",
       "artist": "TUIDE",
       "album": "TUNE & PLAY"
-    },
-    {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night'"
-    },
-    {
-      "key": "BOYNEXTDOOR｜EARLY-BIRD",
-      "artist": "BOYNEXTDOOR",
-      "album": "EARLY-BIRD"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
     },
     {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
@@ -575,21 +394,6 @@
       "album": "PLEASURE"
     },
     {
-      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02'",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02'"
-    },
-    {
-      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02 '",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "'NO LABELS: PART 02 '"
-    },
-    {
-      "key": "EVAN｜EVAN 1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "EVAN 1st Mini Album 'DEATH OF ME'"
-    },
-    {
       "key": "TREASURE｜THE FIRST STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : CHAPTER ONE"
@@ -608,6 +412,16 @@
       "key": "TREASURE｜THE FIRST STEP : EFFECT",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : EFFECT"
+    },
+    {
+      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
+      "artist": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
+    },
+    {
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
     },
     {
       "key": "YOUNGTAK (영탁)｜GOGO",
