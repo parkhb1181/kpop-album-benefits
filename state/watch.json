@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-07T05:01:26.246Z",
-  "lastDeep": "2026-09-07T05:01:26.246Z",
+  "checkedAt": "2026-09-07T10:16:56.367Z",
+  "lastDeep": "2026-09-07T10:16:56.367Z",
   "events": [
+    {
+      "id": 20430,
+      "url": "https://makestar.co/event/20430",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] OFFLINE & VIDEO CALL EVENT IN SHANGHAI",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] OFFLINE & VIDEO CALL EVENT IN SHANGHAI",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] ",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.07",
+      "to": "2026.09.11",
+      "startAt": "2026-09-07T19:00:00+09:00",
+      "endAt": "2026-09-11T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.11",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204_thumb.jpeg"
+      }
+    },
     {
       "id": 20402,
       "url": "https://makestar.co/event/20402",
@@ -289,6 +315,32 @@
       }
     },
     {
+      "id": 20133,
+      "url": "https://makestar.co/event/20133",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT 127 7th Album [BLINGY] FANSIGN & PHOTO EVENT IN HONGKONG",
+      "titleEn": "NCT 127 7th Album [BLINGY] FANSIGN & PHOTO EVENT IN HONGKONG",
+      "album": "정규 7집 [BLINGY]",
+      "albumEn": "7th Full Album [BLINGY]",
+      "artist": "NCT 127",
+      "artistEn": "NCT 127",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.07",
+      "to": "2026.09.12",
+      "startAt": "2026-09-07T16:00:00+09:00",
+      "endAt": "2026-09-12T00:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10940,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_5_Sub.png_2026-08-27_104355892823.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_5_Sub.png_2026-08-27_104355892823_thumb.jpeg"
+      }
+    },
+    {
       "id": 20122,
       "url": "https://makestar.co/event/20122",
       "type": "PHOTOCARD",
@@ -473,9 +525,34 @@
   ],
   "albums": [
     {
+      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
+      "artist": "EVAN",
+      "album": "1st Mini Album 'DEATH OF ME'"
+    },
+    {
       "key": "TUIDE｜TUNE & PLAY",
       "artist": "TUIDE",
       "album": "TUNE & PLAY"
+    },
+    {
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night'"
+    },
+    {
+      "key": "BOYNEXTDOOR｜EARLY-BIRD",
+      "artist": "BOYNEXTDOOR",
+      "album": "EARLY-BIRD"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
     },
     {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
@@ -498,6 +575,21 @@
       "album": "PLEASURE"
     },
     {
+      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02'",
+      "artist": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02'"
+    },
+    {
+      "key": "TOMORROW X TOGETHER｜'NO LABELS: PART 02 '",
+      "artist": "TOMORROW X TOGETHER",
+      "album": "'NO LABELS: PART 02 '"
+    },
+    {
+      "key": "EVAN｜EVAN 1st Mini Album 'DEATH OF ME'",
+      "artist": "EVAN",
+      "album": "EVAN 1st Mini Album 'DEATH OF ME'"
+    },
+    {
       "key": "TREASURE｜THE FIRST STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : CHAPTER ONE"
@@ -518,21 +610,6 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
-    },
-    {
-      "key": "i-dle (아이들)｜What a Wonderful Life",
-      "artist": "i-dle (아이들)",
-      "album": "What a Wonderful Life"
-    },
-    {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
-    },
-    {
       "key": "YOUNGTAK (영탁)｜GOGO",
       "artist": "YOUNGTAK (영탁)",
       "album": "GOGO"
@@ -543,9 +620,9 @@
       "album": "Fallen Angel"
     },
     {
-      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'"
+      "key": "i-dle (아이들)｜What a Wonderful Life",
+      "artist": "i-dle (아이들)",
+      "album": "What a Wonderful Life"
     },
     {
       "key": "JISOO｜CLICK",
