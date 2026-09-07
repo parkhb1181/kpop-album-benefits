@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 7. 01:17:02",
+  "stamp": "2026. 9. 7. 14:01:56",
   "albums": [
     {
       "artistId": 25,
@@ -14,19 +14,19 @@
       "versions": 26,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 9,
+      "soldCount": 5,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
-      "rowCount": 69,
+      "rowCount": 72,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
-      "cover": "https://image.aladin.co.kr/product/30085/99/cover150/c292937764_1.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/09/Cwzm4P.jpg"
     },
     {
       "artistId": 25,
@@ -38,18 +38,18 @@
       "weversePriceMin": 11800,
       "artist": "TREASURE",
       "slug": "treasure-reboot",
-      "versions": 12,
+      "versions": 16,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 4,
+      "soldCount": 6,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
-      "rowCount": 33,
+      "rowCount": 45,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "4일 16시간"
+        "rough": "4일 3시간"
       },
       "rowCount": 42,
       "artistKo": "튜이드",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -236,13 +236,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "21일 5시간"
+        "rough": "20일 16시간"
       },
-      "rowCount": 51,
+      "rowCount": 44,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/YAdzgz.png"
     },
     {
       "artistId": 207,
@@ -263,13 +263,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "7일 16시간"
+        "rough": "7일 3시간"
       },
       "rowCount": 21,
       "artistKo": "영탁",
       "artistDisplay": "YOUNGTAK (영탁)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/21/vOy3Jd.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/07/KGGbLy.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/07/KGGbLy.jpg"
     },
     {
       "artistId": 209,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "52일 22시간"
+        "rough": "52일 9시간"
       },
       "rowCount": 23,
       "artistKo": "제니",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "49일 11시간"
+        "rough": "48일 22시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "3일 22시간"
+        "rough": "3일 9시간"
       },
       "rowCount": 12,
       "artistKo": "르세라핌",
@@ -371,13 +371,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-07T18:00:00+09:00",
-        "rough": "16시간 36분"
+        "rough": "3시간 52분"
       },
       "rowCount": 9,
       "artistKo": "소연(SOYEON)",
       "artistDisplay": "소연(SOYEON)",
       "ogImage": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg",
       "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_1.jpg"
+    },
+    {
+      "artistId": 112,
+      "artistEn": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-02",
+      "weversePriceMin": 31623,
+      "artist": "BOYNEXTDOOR",
+      "slug": "boynextdoor-home-deluxe",
+      "versions": 6,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 2,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-27T23:59:59.999999+09:00",
+        "rough": "20일 9시간"
+      },
+      "rowCount": 22,
+      "artistKo": "보이넥스트도어",
+      "artistDisplay": "보이넥스트도어(BOYNEXTDOOR)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/07/x4OtSE.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/07/x4OtSE.jpg"
     },
     {
       "artistId": 300,
@@ -392,15 +419,15 @@
       "versions": 8,
       "retailers": 4,
       "benefitCount": 0,
-      "soldCount": 3,
+      "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-07T18:03:00+09:00",
-        "rough": "16시간 38분"
+        "rough": "3시간 54분"
       },
-      "rowCount": 14,
+      "rowCount": 11,
       "artistKo": "에반",
       "artistDisplay": "에반(EVAN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/10/ZrFn9B.jpg",
