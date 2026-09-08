@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 8. 14:16:06",
+  "stamp": "2026. 9. 8. 14:34:36",
   "albums": [
     {
       "artistId": 25,
@@ -14,7 +14,7 @@
       "versions": 26,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 7,
+      "soldCount": 9,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
@@ -38,10 +38,10 @@
       "weversePriceMin": 11800,
       "artist": "TREASURE",
       "slug": "treasure-reboot",
-      "versions": 21,
+      "versions": 22,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 6,
+      "soldCount": 4,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
@@ -49,7 +49,7 @@
         "at": "2026-09-28T07:00:00+09:00",
         "rough": "19일 16시간"
       },
-      "rowCount": 50,
+      "rowCount": 43,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "3일 3시간"
+        "rough": "3일 2시간"
       },
       "rowCount": 42,
       "artistKo": "튜이드",
@@ -238,11 +238,11 @@
         "at": "2026-09-28T07:00:00+09:00",
         "rough": "19일 16시간"
       },
-      "rowCount": 46,
+      "rowCount": 51,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/YAdzgz.png"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
     },
     {
       "artistId": 207,
@@ -329,13 +329,13 @@
       "artistId": 50,
       "artistEn": "LE SSERAFIM",
       "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "skuCount": 4,
+      "skuCount": 3,
       "benefit": false,
       "deliveryDate": "2026-09-11",
       "weversePriceMin": 3797,
       "artist": "LE SSERAFIM",
       "slug": "le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl",
-      "versions": 7,
+      "versions": 6,
       "retailers": 3,
       "benefitCount": 1,
       "soldCount": 1,
@@ -346,7 +346,7 @@
         "at": "2026-09-10T23:59:59.999999+09:00",
         "rough": "2일 9시간"
       },
-      "rowCount": 10,
+      "rowCount": 9,
       "artistKo": "르세라핌",
       "artistDisplay": "르세라핌(LE SSERAFIM)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
