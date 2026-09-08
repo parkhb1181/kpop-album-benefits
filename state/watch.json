@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-08T14:14:01.721Z",
-  "lastDeep": "2026-09-08T14:14:01.721Z",
+  "checkedAt": "2026-09-08T17:55:07.612Z",
+  "lastDeep": "2026-09-08T17:55:07.612Z",
   "events": [
     {
       "id": 20430,
@@ -19,8 +19,8 @@
       "to": "2026.09.11",
       "startAt": "2026-09-07T19:00:00+09:00",
       "endAt": "2026-09-11T00:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.11",
       "productId": 10943,
       "image": {
@@ -45,8 +45,8 @@
       "to": "2026.09.10",
       "startAt": "2026-09-08T14:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.11",
       "productId": 11015,
       "image": {
@@ -71,7 +71,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T11:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 20,
+      "dday": 19,
       "closing": false,
       "winnerAt": null,
       "productId": 11070,
@@ -97,7 +97,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T11:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 20,
+      "dday": 19,
       "closing": false,
       "winnerAt": null,
       "productId": 11070,
@@ -123,7 +123,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T12:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 20,
+      "dday": 19,
       "closing": false,
       "winnerAt": null,
       "productId": 11063,
@@ -149,39 +149,13 @@
       "to": "2026.10.05",
       "startAt": "2026-09-08T17:00:00+09:00",
       "endAt": "2026-10-05T23:59:59.999999+09:00",
-      "dday": 28,
+      "dday": 27,
       "closing": false,
       "winnerAt": "2026.10.06",
       "productId": 11062,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20351,
-      "url": "https://makestar.co/event/20351",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "ENHYPEN 'THE SIN : BLISS' Video Call Event Last Part",
-      "titleEn": "ENHYPEN 'THE SIN : BLISS' Video Call Event Last Part",
-      "album": "[THE SIN : BLISS]",
-      "albumEn": "[THE SIN : BLISS]",
-      "artist": "엔하이픈",
-      "artistEn": "ENHYPEN",
-      "releaseDate": "2026-08-21",
-      "from": "2026.08.31",
-      "to": "2026.09.09",
-      "startAt": "2026-08-31T19:00:00+09:00",
-      "endAt": "2026-09-09T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.10",
-      "productId": 10894,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_8_Banner_Sub_v4.jpg_2026-08-21_215009316083_thumb.jpeg"
       }
     },
     {
@@ -201,8 +175,8 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": null,
       "productId": 11042,
       "image": {
@@ -227,39 +201,13 @@
       "to": "2026.09.10",
       "startAt": "2026-08-28T11:00:00+09:00",
       "endAt": "2026-09-10T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": null,
       "productId": 11042,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_1_banner_sub.png_2026-08-27_100031516663_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20247,
-      "url": "https://makestar.co/event/20247",
-      "type": "SHOWCASE",
-      "label": "SHOWCASE",
-      "fansign": false,
-      "title": "MW:MEU 1st Mini Album [With U] SHOWCASE INVITATION EVENT",
-      "titleEn": "MW:MEU 1st Mini Album [With U] SHOWCASE INVITATION EVENT",
-      "album": "미니 1집 With U",
-      "albumEn": "1st Mini Album WithU",
-      "artist": "뮤",
-      "artistEn": "MW:MEU",
-      "releaseDate": "2026-09-15",
-      "from": "2026.09.02",
-      "to": "2026.09.08",
-      "startAt": "2026-09-02T12:00:00+09:00",
-      "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.09",
-      "productId": 11002,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_2_Sub.png_2026-08-31_123414591047.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_2_Sub.png_2026-08-31_123414591047_thumb.jpeg"
       }
     },
     {
@@ -279,7 +227,7 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 52,
+      "dday": 51,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
@@ -305,7 +253,7 @@
       "to": "2026.09.12",
       "startAt": "2026-09-07T16:00:00+09:00",
       "endAt": "2026-09-12T00:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.09.14",
       "productId": 10940,
@@ -331,39 +279,13 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 29,
+      "dday": 28,
       "closing": false,
       "winnerAt": null,
       "productId": 11019,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528_thumb.jpeg"
-      }
-    },
-    {
-      "id": 19696,
-      "url": "https://makestar.co/event/19696",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "In A Minute 1st Album [When the sun goes down : Midnight] PRE-ORDER PHOTOCARD EVENT",
-      "titleEn": "In A Minute 1st Album [When the sun goes down : Midnight] PRE-ORDER PHOTOCARD EVENT",
-      "album": "[When the sun goes down : Midnight]",
-      "albumEn": "[When the sun goes down : Midnight]",
-      "artist": "인어미닛",
-      "artistEn": "IN A MINUTE",
-      "releaseDate": "2026-09-09",
-      "from": "2026.08.11",
-      "to": "2026.09.08",
-      "startAt": "2026-08-11T14:00:00+09:00",
-      "endAt": "2026-09-08T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.09",
-      "productId": 10970,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_1_thumb.jpg_2026-08-07_151012625597.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_1_thumb.jpg_2026-08-07_151012625597_thumb.jpeg"
       }
     },
     {
