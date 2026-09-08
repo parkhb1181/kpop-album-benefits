@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-08T00:38:20.435Z",
-  "lastDeep": "2026-09-08T00:38:20.435Z",
+  "checkedAt": "2026-09-08T05:15:35.796Z",
+  "lastDeep": "2026-09-08T05:15:35.796Z",
   "events": [
     {
       "id": 20430,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20429,
+      "url": "https://makestar.co/event/20429",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "82MAJOR(82메이저) 2ND SINGLE ALBUM [HEAT] (POCAALBUM) SPECIAL MEET&CALL EVENT",
+      "titleEn": "82MAJOR(82메이저) 2ND SINGLE ALBUM [HEAT] (POCAALBUM) SPECIAL MEET&CALL EVENT",
+      "album": "2ND SINGLE ALBUM [HEAT]",
+      "albumEn": "2ND SINGLE ALBUM [HEAT]",
+      "artist": "82MAJOR",
+      "artistEn": "82MAJOR",
+      "releaseDate": "2026-09-01",
+      "from": "2026.09.08",
+      "to": "2026.09.10",
+      "startAt": "2026-09-08T14:00:00+09:00",
+      "endAt": "2026-09-10T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.11",
+      "productId": 11015,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_2_Banner_Sub.jpg_2026-09-04_142045312528.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_2_Banner_Sub.jpg_2026-09-04_142045312528_thumb.jpeg"
       }
     },
     {
