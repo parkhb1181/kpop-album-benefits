@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-08T05:15:35.796Z",
-  "lastDeep": "2026-09-08T05:15:35.796Z",
+  "checkedAt": "2026-09-08T09:56:00.078Z",
+  "lastDeep": "2026-09-08T09:56:00.078Z",
   "events": [
     {
       "id": 20430,
@@ -130,6 +130,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_1_Banner_Sub_v2.png_2026-09-03_154620175695.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_1_Banner_Sub_v2.png_2026-09-03_154620175695_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20367,
+      "url": "https://makestar.co/event/20367",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Pre-Order Photocard Event",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Pre-Order Photocard Event",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.09.08",
+      "to": "2026.10.05",
+      "startAt": "2026-09-08T17:00:00+09:00",
+      "endAt": "2026-10-05T23:59:59.999999+09:00",
+      "dday": 28,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524_thumb.jpeg"
       }
     },
     {
@@ -374,6 +400,11 @@
       "album": "TUNE & PLAY"
     },
     {
+      "key": "YOUNGTAK (영탁)｜GOGO",
+      "artist": "YOUNGTAK (영탁)",
+      "album": "GOGO"
+    },
+    {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE SECOND STEP : CHAPTER ONE"
@@ -414,19 +445,14 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
-    },
-    {
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
       "artist": "BOYNEXTDOOR",
       "album": "HOME: DELUXE"
     },
     {
-      "key": "YOUNGTAK (영탁)｜GOGO",
-      "artist": "YOUNGTAK (영탁)",
-      "album": "GOGO"
+      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
+      "artist": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
     },
     {
       "key": "JENNIE｜Fallen Angel",
