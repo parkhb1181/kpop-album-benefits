@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-09T21:12:13.214Z",
-  "lastDeep": "2026-09-09T21:12:13.214Z",
+  "checkedAt": "2026-09-09T23:16:18.284Z",
+  "lastDeep": "2026-09-09T23:16:18.284Z",
   "events": [
     {
       "id": 20575,
@@ -419,14 +419,14 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
-      "key": "CORTIS｜GREENGREEN_playextended",
-      "artist": "CORTIS",
-      "album": "GREENGREEN_playextended"
-    },
-    {
       "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
       "artist": "LE SSERAFIM",
       "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
