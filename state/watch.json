@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-09T01:11:02.352Z",
-  "lastDeep": "2026-09-09T01:11:02.352Z",
+  "checkedAt": "2026-09-09T05:59:21.346Z",
+  "lastDeep": "2026-09-09T05:59:21.346Z",
   "events": [
+    {
+      "id": 20543,
+      "url": "https://makestar.co/event/20543",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "OURBIRTHDAY [Our Birthday] SPECIAL OFFLINE+MEET&CALL EVENT",
+      "titleEn": "OURBIRTHDAY [Our Birthday] SPECIAL OFFLINE+MEET&CALL EVENT",
+      "album": "[Our Birthday]",
+      "albumEn": "[Our Birthday]",
+      "artist": "아워벌스데이",
+      "artistEn": "OURBIRTHDAY",
+      "releaseDate": "2026-08-19",
+      "from": "2026.09.09",
+      "to": "2026.09.11",
+      "startAt": "2026-09-09T14:00:00+09:00",
+      "endAt": "2026-09-11T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10952,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_4_Banner_sub.png_2026-09-08_115513082964.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_4_Banner_sub.png_2026-09-08_115513082964_thumb.jpeg"
+      }
+    },
     {
       "id": 20430,
       "url": "https://makestar.co/event/20430",
@@ -377,14 +403,19 @@
       "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
     },
     {
-      "key": "JENNIE｜Fallen Angel",
-      "artist": "JENNIE",
-      "album": "Fallen Angel"
+      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night'",
+      "artist": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night'"
     },
     {
-      "key": "i-dle (아이들)｜What a Wonderful Life",
-      "artist": "i-dle (아이들)",
-      "album": "What a Wonderful Life"
+      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "artist": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT"
+    },
+    {
+      "key": "HYOLYN｜OriginaLyn",
+      "artist": "HYOLYN",
+      "album": "OriginaLyn"
     },
     {
       "key": "JISOO｜CLICK",
