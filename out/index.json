@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 9. 02:55:37",
+  "stamp": "2026. 9. 9. 14:41:34",
   "albums": [
     {
       "artistId": 25,
@@ -11,7 +11,7 @@
       "weversePriceMin": 10900,
       "artist": "TREASURE",
       "slug": "treasure-the-second-step-chapter-two",
-      "versions": 26,
+      "versions": 25,
       "retailers": 7,
       "benefitCount": 3,
       "soldCount": 1,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 4시간"
+        "rough": "18일 16시간"
       },
-      "rowCount": 72,
+      "rowCount": 68,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
@@ -38,18 +38,18 @@
       "weversePriceMin": 11800,
       "artist": "TREASURE",
       "slug": "treasure-reboot",
-      "versions": 21,
+      "versions": 22,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 6,
+      "soldCount": 4,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 4시간"
+        "rough": "18일 16시간"
       },
-      "rowCount": 50,
+      "rowCount": 45,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 3시간"
+        "rough": "18일 16시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 4시간"
+        "rough": "18일 16시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 3시간"
+        "rough": "18일 16시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 3시간"
+        "rough": "18일 16시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "5일 15시간"
+        "rough": "5일 3시간"
       },
       "rowCount": 21,
       "artistKo": "영탁",
@@ -203,13 +203,13 @@
       "versions": 7,
       "retailers": 6,
       "benefitCount": 2,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-11T17:23:00+09:00",
-        "rough": "2일 14시간"
+        "rough": "2일 2시간"
       },
       "rowCount": 40,
       "artistKo": "튜이드",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 3시간"
+        "rough": "18일 16시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -263,40 +263,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "19일 4시간"
+        "rough": "18일 16시간"
       },
-      "rowCount": 51,
+      "rowCount": 44,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
-    },
-    {
-      "artistId": 209,
-      "artistEn": "JENNIE",
-      "album": "Fallen Angel",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-10-30",
-      "weversePriceMin": 16300,
-      "artist": "JENNIE",
-      "slug": "jennie-fallen-angel",
-      "versions": 4,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "50일 20시간"
-      },
-      "rowCount": 23,
-      "artistKo": "제니",
-      "artistDisplay": "제니(JENNIE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/YAdzgz.png"
     },
     {
       "artistId": 215,
@@ -317,13 +290,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "47일 9시간"
+        "rough": "46일 22시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 77,
+      "artistEn": "HYOLYN",
+      "album": "OriginaLyn",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-09-15",
+      "weversePriceMin": 12000,
+      "artist": "HYOLYN",
+      "slug": "hyolyn-originalyn",
+      "versions": 3,
+      "retailers": 5,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-09-15T18:01:00+09:00",
+        "rough": "6일 3시간"
+      },
+      "rowCount": 5,
+      "artistKo": "효린",
+      "artistDisplay": "효린(HYOLYN)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/15/cHp2gD.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/07/15/cHp2gD.png"
     },
     {
       "artistId": 50,
@@ -344,40 +344,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "1일 20시간"
+        "rough": "1일 9시간"
       },
       "rowCount": 9,
       "artistKo": "르세라핌",
       "artistDisplay": "르세라핌(LE SSERAFIM)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg"
-    },
-    {
-      "artistId": 113,
-      "artistEn": "i-dle (아이들)",
-      "album": "What a Wonderful Life",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-09-21",
-      "weversePriceMin": 39300,
-      "artist": "i-dle (아이들)",
-      "slug": "i-dle-아이들-what-a-wonderful-life",
-      "versions": 9,
-      "retailers": 2,
-      "benefitCount": 1,
-      "soldCount": 0,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-09-21T18:00:00+09:00",
-        "rough": "12일 14시간"
-      },
-      "rowCount": 10,
-      "artistKo": "소연(SOYEON)",
-      "artistDisplay": "소연(SOYEON)",
-      "ogImage": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_3.jpg",
-      "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_3.jpg"
     },
     {
       "artistId": 112,
@@ -398,13 +371,67 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-27T23:59:59.999999+09:00",
-        "rough": "18일 20시간"
+        "rough": "18일 9시간"
       },
       "rowCount": 22,
       "artistKo": "보이넥스트도어",
       "artistDisplay": "보이넥스트도어(BOYNEXTDOOR)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/07/x4OtSE.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/07/x4OtSE.jpg"
+    },
+    {
+      "artistId": 50,
+      "artistEn": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night'",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-09",
+      "weversePriceMin": 24003,
+      "artist": "LE SSERAFIM",
+      "slug": "le-sserafim-le-sserafim-2nd-single-album-made-my-night",
+      "versions": 6,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 2,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-10T23:59:59.999999+09:00",
+        "rough": "1일 9시간"
+      },
+      "rowCount": 11,
+      "artistKo": null,
+      "artistDisplay": "LE SSERAFIM",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg"
+    },
+    {
+      "artistId": 50,
+      "artistEn": "LE SSERAFIM",
+      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-09",
+      "weversePriceMin": 44323,
+      "artist": "LE SSERAFIM",
+      "slug": "le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi",
+      "versions": 3,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 2,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-09-10T23:59:59.999999+09:00",
+        "rough": "1일 9시간"
+      },
+      "rowCount": 5,
+      "artistKo": null,
+      "artistDisplay": "LE SSERAFIM",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/28/3s2A4j.jpg"
     },
     {
       "artistId": 10,
@@ -596,6 +623,33 @@
       "ogCard": "https://kpop-album.vercel.app/og/nct-127-blingy.png"
     },
     {
+      "artistId": 209,
+      "artistEn": "JENNIE",
+      "album": "Fallen Angel",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-30",
+      "weversePriceMin": 16300,
+      "artist": "JENNIE",
+      "slug": "jennie-fallen-angel",
+      "versions": 4,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 23,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
+      "expired": {
+        "lastSeen": "2026-09-09"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/jennie-fallen-angel.png"
+    },
+    {
       "artistId": 50,
       "artistEn": "LE SSERAFIM",
       "album": "2nd Single Album 'Made My Night'",
@@ -702,6 +756,33 @@
         "lastSeen": "2026-09-07"
       },
       "ogCard": "https://kpop-album.vercel.app/og/evan-evan-1st-mini-album-death-of-me.png"
+    },
+    {
+      "artistId": 113,
+      "artistEn": "i-dle (아이들)",
+      "album": "What a Wonderful Life",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-09-21",
+      "weversePriceMin": 39300,
+      "artist": "i-dle (아이들)",
+      "slug": "i-dle-아이들-what-a-wonderful-life",
+      "versions": 9,
+      "retailers": 2,
+      "benefitCount": 1,
+      "soldCount": 0,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 10,
+      "artistKo": "소연(SOYEON)",
+      "artistDisplay": "소연(SOYEON)",
+      "ogImage": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_3.jpg",
+      "cover": "https://image.aladin.co.kr/product/40098/83/cover150/c362939139_3.jpg",
+      "expired": {
+        "lastSeen": "2026-09-09"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life.png"
     },
     {
       "artistId": 300,
