@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-09T18:36:13.418Z",
-  "lastDeep": "2026-09-09T18:36:13.418Z",
+  "checkedAt": "2026-09-09T21:12:13.214Z",
+  "lastDeep": "2026-09-09T21:12:13.214Z",
   "events": [
     {
       "id": 20575,
@@ -417,6 +417,11 @@
       "key": "TREASURE｜THE FIRST STEP : EFFECT",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : EFFECT"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
