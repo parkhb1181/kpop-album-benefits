@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-09T05:59:21.346Z",
-  "lastDeep": "2026-09-09T05:59:21.346Z",
+  "checkedAt": "2026-09-09T11:10:59.588Z",
+  "lastDeep": "2026-09-09T11:10:59.588Z",
   "events": [
+    {
+      "id": 20575,
+      "url": "https://makestar.co/event/20575",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "민호 미니 2집 'Make it hot' 발매기념 VIDEO CALL EVENT",
+      "titleEn": "MINHO The 2nd Mini Album 'Make it hot' VIDEO CALL EVENT",
+      "album": "미니 2집 [Make it hot]",
+      "albumEn": "2nd Mini Album [Make it hot]",
+      "artist": "민호",
+      "artistEn": "MINHO",
+      "releaseDate": "2026-09-07",
+      "from": "2026.09.09",
+      "to": "2026.09.11",
+      "startAt": "2026-09-09T18:00:00+09:00",
+      "endAt": "2026-09-11T17:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.09.11",
+      "productId": 10999,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10999_MINHO_8_Banner_thumb.jpg_2026-09-09_113225234211.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10999_MINHO_8_Banner_thumb.jpg_2026-09-09_113225234211_thumb.jpeg"
+      }
+    },
     {
       "id": 20543,
       "url": "https://makestar.co/event/20543",
