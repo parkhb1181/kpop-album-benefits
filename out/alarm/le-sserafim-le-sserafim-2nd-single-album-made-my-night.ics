@@ -9,57 +9,9 @@ X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:le-sserafim-le-sserafim-2nd-single-album-made-my-night-evt20269@kpop-al
- bum-benefits
-DTSTAMP:20260910T140750Z
-DTSTART:20260910T145959Z
-DTEND:20260910T152959Z
-SUMMARY:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 예약
-  특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' (COMPACT ver.) 발
- 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20269
-URL:https://makestar.co/event/20269
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-le-sserafim-2nd-single-album-made-my-night-evt20268@kpop-al
- bum-benefits
-DTSTAMP:20260910T140750Z
-DTSTART:20260910T145959Z
-DTEND:20260910T152959Z
-SUMMARY:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 예약
-  특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT 발
- 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20268
-URL:https://makestar.co/event/20268
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:le-sserafim-le-sserafim-2nd-single-album-made-my-night-release@kpop-alb
  um-benefits
-DTSTAMP:20260910T140750Z
+DTSTAMP:20260910T151615Z
 DTSTART:20261009T080500Z
 DTEND:20261009T083500Z
 SUMMARY:LE SSERAFIM LE SSERAFIM 2nd Single Album 'Made My Night' — 예약
