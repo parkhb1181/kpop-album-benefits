@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-10T15:09:48.309Z",
-  "lastDeep": "2026-09-10T15:09:48.309Z",
+  "checkedAt": "2026-09-10T18:27:15.335Z",
+  "lastDeep": "2026-09-10T18:27:15.335Z",
   "events": [
     {
       "id": 20575,
@@ -52,32 +52,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_4_Banner_sub.png_2026-09-08_115513082964.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_4_Banner_sub.png_2026-09-08_115513082964_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20430,
-      "url": "https://makestar.co/event/20430",
-      "type": "FANSIGN&PHOTO EVENT",
-      "label": "FANSIGN&PHOTO EVENT",
-      "fansign": false,
-      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] OFFLINE & VIDEO CALL EVENT IN SHANGHAI",
-      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] OFFLINE & VIDEO CALL EVENT IN SHANGHAI",
-      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
-      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] ",
-      "artist": "알파드라이브원",
-      "artistEn": "ALPHA DRIVE ONE",
-      "releaseDate": "2026-08-24",
-      "from": "2026.09.07",
-      "to": "2026.09.11",
-      "startAt": "2026-09-07T19:00:00+09:00",
-      "endAt": "2026-09-11T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.11",
-      "productId": 10943,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204_thumb.jpeg"
       }
     },
     {
@@ -279,7 +253,7 @@
       "to": "2026.09.12",
       "startAt": "2026-09-07T16:00:00+09:00",
       "endAt": "2026-09-12T00:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.14",
       "productId": 10940,
