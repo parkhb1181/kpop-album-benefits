@@ -146,3 +146,6 @@
 {"at":"2026-09-09T21:12:13.214Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
 {"at":"2026-09-10T06:20:12.458Z","type":"event.new","label":"럭키드로우","artist":"프로미스나인","album":"정규앨범 2집 [Glow ME]","id":20310,"url":"https://makestar.co/event/20310","endAt":"2026-09-13T23:59:59.999999+09:00"}
 {"at":"2026-09-10T06:20:12.458Z","type":"event.new","label":"대면 팬사인회","artist":"튜이드","album":"The 1st EP [TUNE & PLAY]","id":20079,"url":"https://makestar.co/event/20079","endAt":"2026-09-14T23:59:59.999999+09:00"}
+{"at":"2026-09-10T11:39:01.626Z","type":"event.new","label":"PHOTO EVENT","artist":"엔하이픈","album":"[THE SIN : BLISS]","id":20207,"url":"https://makestar.co/event/20207","endAt":"2026-09-15T23:59:59.999999+09:00"}
+{"at":"2026-09-10T11:39:01.626Z","type":"album.gone","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"}
+{"at":"2026-09-10T11:39:01.626Z","type":"album.gone","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT"}

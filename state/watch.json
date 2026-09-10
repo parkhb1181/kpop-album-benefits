@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-10T06:20:12.458Z",
-  "lastDeep": "2026-09-10T06:20:12.458Z",
+  "checkedAt": "2026-09-10T11:39:01.626Z",
+  "lastDeep": "2026-09-10T11:39:01.626Z",
   "events": [
     {
       "id": 20575,
@@ -19,7 +19,7 @@
       "to": "2026.09.11",
       "startAt": "2026-09-09T18:00:00+09:00",
       "endAt": "2026-09-11T17:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.11",
       "productId": 10999,
@@ -289,6 +289,32 @@
       }
     },
     {
+      "id": 20207,
+      "url": "https://makestar.co/event/20207",
+      "type": "PHOTO EVENT",
+      "label": "PHOTO EVENT",
+      "fansign": false,
+      "title": "ENHYPEN 8TH MINI ALBUM 'THE SIN : BLISS'  1:1 PHOTO EVENT IN TAIPEI",
+      "titleEn": "ENHYPEN 8TH MINI ALBUM 'THE SIN : BLISS'  1:1 PHOTO EVENT IN TAIPEI",
+      "album": "[THE SIN : BLISS]",
+      "albumEn": "[THE SIN : BLISS]",
+      "artist": "엔하이픈",
+      "artistEn": "ENHYPEN",
+      "releaseDate": "2026-08-21",
+      "from": "2026.09.10",
+      "to": "2026.09.15",
+      "startAt": "2026-09-10T17:00:00+09:00",
+      "endAt": "2026-09-15T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": "2026.09.17",
+      "productId": 10894,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_6_Banner_Sub.jpg_2026-08-14_141452560557.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10894_ENHYPEN_6_Banner_Sub.jpg_2026-08-14_141452560557_thumb.jpeg"
+      }
+    },
+    {
       "id": 20167,
       "url": "https://makestar.co/event/20167",
       "type": "PHOTOCARD",
@@ -476,11 +502,6 @@
       "album": "HOME: DELUXE"
     },
     {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
-    },
-    {
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
@@ -489,11 +510,6 @@
       "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night'",
       "artist": "LE SSERAFIM",
       "album": "LE SSERAFIM 2nd Single Album 'Made My Night'"
-    },
-    {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT"
     },
     {
       "key": "HYOLYN｜OriginaLyn",
