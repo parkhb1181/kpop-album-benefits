@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 10. 14:33:13",
+  "stamp": "2026. 9. 10. 15:20:53",
   "albums": [
     {
       "artistId": 25,
@@ -14,19 +14,19 @@
       "versions": 26,
       "retailers": 7,
       "benefitCount": 3,
-      "soldCount": 1,
+      "soldCount": 9,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
-      "rowCount": 72,
+      "rowCount": 67,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/50274260faff3a7463e9183b5019a9d5.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/09/Cwzm4P.jpg"
+      "cover": "https://image.aladin.co.kr/product/30085/99/cover150/c292937764_1.jpg"
     },
     {
       "artistId": 25,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 45,
       "artistKo": "트레저",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "4일 3시간"
+        "rough": "4일 2시간"
       },
       "rowCount": 21,
       "artistKo": "영탁",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -263,13 +263,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 15시간"
       },
       "rowCount": 51,
       "artistKo": null,
       "artistDisplay": "TREASURE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a52807332354d3e57b13e9a379873283.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/9kA6sA.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/02/24/qEJikF.jpg"
     },
     {
       "artistId": 215,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "45일 22시간"
+        "rough": "45일 21시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-15T18:01:00+09:00",
-        "rough": "5일 3시간"
+        "rough": "5일 2시간"
       },
       "rowCount": 5,
       "artistKo": "효린",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "9시간 20분"
+        "rough": "8시간 32분"
       },
       "rowCount": 9,
       "artistKo": "르세라핌",
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-27T23:59:59.999999+09:00",
-        "rough": "17일 9시간"
+        "rough": "17일 8시간"
       },
       "rowCount": 22,
       "artistKo": "보이넥스트도어",
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-08T17:20:00+09:00",
-        "rough": "89일 2시간"
+        "rough": "89일 1시간"
       },
       "rowCount": 24,
       "artistKo": "코르티스",
@@ -425,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "9시간 19분"
+        "rough": "8시간 31분"
       },
       "rowCount": 11,
       "artistKo": null,
@@ -452,7 +452,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-10T23:59:59.999999+09:00",
-        "rough": "9시간 19분"
+        "rough": "8시간 31분"
       },
       "rowCount": 5,
       "artistKo": null,
