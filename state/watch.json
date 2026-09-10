@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-10T01:17:50.557Z",
-  "lastDeep": "2026-09-10T01:17:50.557Z",
+  "checkedAt": "2026-09-10T06:20:12.458Z",
+  "lastDeep": "2026-09-10T06:20:12.458Z",
   "events": [
     {
       "id": 20575,
@@ -211,6 +211,32 @@
       }
     },
     {
+      "id": 20310,
+      "url": "https://makestar.co/event/20310",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "프로미스나인(fromis_9) THE 2ND ALBUM  'Glow ME' LUCKY DRAW EVENT",
+      "titleEn": "프로미스나인(fromis_9) THE 2ND ALBUM  'Glow ME' LUCKY DRAW EVENT",
+      "album": "정규앨범 2집 [Glow ME]",
+      "albumEn": "THE 2ND ALBUM [Glow ME]",
+      "artist": "프로미스나인",
+      "artistEn": "fromis_9",
+      "releaseDate": "2026-07-21",
+      "from": "2026.09.10",
+      "to": "2026.09.13",
+      "startAt": "2026-09-10T15:00:00+09:00",
+      "endAt": "2026-09-13T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10853,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10853_FROMIS_9_5_Banner_sub.png_2026-09-09_102244957960.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10853_FROMIS_9_5_Banner_sub.png_2026-09-09_102244957960_thumb.jpeg"
+      }
+    },
+    {
       "id": 20269,
       "url": "https://makestar.co/event/20269",
       "type": "PHOTOCARD",
@@ -341,6 +367,32 @@
       }
     },
     {
+      "id": 20079,
+      "url": "https://makestar.co/event/20079",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "TUIDE The 1st EP [TUNE & PLAY] 발매기념 대면 사인회 이벤트",
+      "titleEn": "TUIDE The 1st EP [TUNE & PLAY] Face-to-face Fansign Event",
+      "album": "The 1st EP [TUNE & PLAY]",
+      "albumEn": "The 1st EP [TUNE & PLAY]",
+      "artist": "튜이드",
+      "artistEn": "TUIDE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.10",
+      "to": "2026.09.14",
+      "startAt": "2026-09-10T11:00:00+09:00",
+      "endAt": "2026-09-14T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.15",
+      "productId": 10962,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10962_TUIDE_1_Sub.png_2026-09-01_153430643304.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10962_TUIDE_1_Sub.png_2026-09-01_153430643304_thumb.jpeg"
+      }
+    },
+    {
       "id": 10801,
       "url": "https://makestar.co/event/10801",
       "type": "ETC",
@@ -419,6 +471,11 @@
       "album": "THE FIRST STEP : EFFECT"
     },
     {
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
+    },
+    {
       "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
       "artist": "LE SSERAFIM",
       "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
@@ -427,11 +484,6 @@
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
-    },
-    {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
     },
     {
       "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night'",
