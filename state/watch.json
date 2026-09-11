@@ -1,31 +1,31 @@
 {
-  "checkedAt": "2026-09-11T05:58:22.352Z",
-  "lastDeep": "2026-09-11T05:58:22.352Z",
+  "checkedAt": "2026-09-11T10:59:50.426Z",
+  "lastDeep": "2026-09-11T10:59:50.426Z",
   "events": [
     {
-      "id": 20575,
-      "url": "https://makestar.co/event/20575",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "민호 미니 2집 'Make it hot' 발매기념 VIDEO CALL EVENT",
-      "titleEn": "MINHO The 2nd Mini Album 'Make it hot' VIDEO CALL EVENT",
-      "album": "미니 2집 [Make it hot]",
-      "albumEn": "2nd Mini Album [Make it hot]",
-      "artist": "민호",
-      "artistEn": "MINHO",
-      "releaseDate": "2026-09-07",
-      "from": "2026.09.09",
-      "to": "2026.09.11",
-      "startAt": "2026-09-09T18:00:00+09:00",
-      "endAt": "2026-09-11T17:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.11",
-      "productId": 10999,
+      "id": 20561,
+      "url": "https://makestar.co/event/20561",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] 1:1 FANSIGN & PHOTO EVENT IN SHANGHAI",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] 1:1 FANSIGN & PHOTO EVENT IN SHANGHAI",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] ",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.11",
+      "to": "2026.09.15",
+      "startAt": "2026-09-11T19:00:00+09:00",
+      "endAt": "2026-09-15T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.15",
+      "productId": 10943,
       "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10999_MINHO_8_Banner_thumb.jpg_2026-09-09_113225234211.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10999_MINHO_8_Banner_thumb.jpg_2026-09-09_113225234211_thumb.jpeg"
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
       }
     },
     {
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_4_Banner_sub.png_2026-09-08_115513082964.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_4_Banner_sub.png_2026-09-08_115513082964_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20445,
+      "url": "https://makestar.co/event/20445",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) MEET&CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) MEET&CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.09.11",
+      "to": "2026.09.13",
+      "startAt": "2026-09-11T15:00:00+09:00",
+      "endAt": "2026-09-13T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_15_Banner_Sub.jpg_2026-09-08_143920669703.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_15_Banner_Sub.jpg_2026-09-08_143920669703_thumb.jpeg"
       }
     },
     {
@@ -156,6 +182,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20328,
+      "url": "https://makestar.co/event/20328",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "MEOVV (미야오) THE 2nd EP ALBUM [BITE NOW] 1:1 ONLINE PHOTO&CALL EVENT PART.3",
+      "titleEn": "MEOVV (미야오) THE 2nd EP ALBUM [BITE NOW] 1:1 ONLINE PHOTO&CALL EVENT PART.3",
+      "album": "THE 2nd EP ALBUM [BITE NOW]",
+      "albumEn": "THE 2nd EP ALBUM [BITE NOW]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-06-01",
+      "from": "2026.09.11",
+      "to": "2026.09.13",
+      "startAt": "2026-09-11T15:00:00+09:00",
+      "endAt": "2026-09-13T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10641,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_16_banner_SUB.png_2026-09-03_105923705813.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_16_banner_SUB.png_2026-09-03_105923705813_thumb.jpeg"
       }
     },
     {
@@ -341,6 +393,32 @@
       }
     },
     {
+      "id": 20100,
+      "url": "https://makestar.co/event/20100",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "어센트 (ASC2NT) 2nd Mini Album [Still with you] SPECIAL MEET&CALL EVENT",
+      "titleEn": "어센트 (ASC2NT) 2nd Mini Album [Still with you] SPECIAL MEET&CALL EVENT",
+      "album": "[Still with you]",
+      "albumEn": "[Still with you]",
+      "artist": "어센트",
+      "artistEn": "ASC2NT",
+      "releaseDate": "2026-09-04",
+      "from": "2026.09.11",
+      "to": "2026.09.13",
+      "startAt": "2026-09-11T15:00:00+09:00",
+      "endAt": "2026-09-13T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 11016,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_1_Banner_Sub.png_2026-09-04_115410349171.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_1_Banner_Sub.png_2026-09-04_115410349171_thumb.jpeg"
+      }
+    },
+    {
       "id": 20079,
       "url": "https://makestar.co/event/20079",
       "type": "FANSIGN",
@@ -395,14 +473,14 @@
   ],
   "albums": [
     {
-      "key": "TUIDE｜TUNE & PLAY",
-      "artist": "TUIDE",
-      "album": "TUNE & PLAY"
-    },
-    {
       "key": "YOUNGTAK (영탁)｜GOGO",
       "artist": "YOUNGTAK (영탁)",
       "album": "GOGO"
+    },
+    {
+      "key": "TUIDE｜TUNE & PLAY",
+      "artist": "TUIDE",
+      "album": "TUNE & PLAY"
     },
     {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
@@ -460,29 +538,9 @@
       "album": "GREENGREEN_playextended"
     },
     {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night'",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night'"
-    },
-    {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT"
-    },
-    {
-      "key": "LE SSERAFIM｜LE SSERAFIM 2nd Single Album 'Made My Night' Single CD",
-      "artist": "LE SSERAFIM",
-      "album": "LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"
-    },
-    {
       "key": "HYOLYN｜OriginaLyn",
       "artist": "HYOLYN",
       "album": "OriginaLyn"
-    },
-    {
-      "key": "JISOO｜CLICK",
-      "artist": "JISOO",
-      "album": "CLICK"
     }
   ]
 }

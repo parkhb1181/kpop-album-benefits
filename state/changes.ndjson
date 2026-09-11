@@ -158,3 +158,12 @@
 {"at":"2026-09-11T05:58:22.352Z","type":"event.new","label":"PHOTO EVENT","artist":"앤팀","album":"KR 2nd Mini Album 'Mark on Me' ","id":20153,"url":"https://makestar.co/event/20153","endAt":"2026-09-13T23:59:59.999999+09:00"}
 {"at":"2026-09-11T05:58:22.352Z","type":"event.new","label":"대면 팬사인회","artist":"앤팀","album":"KR 2nd Mini Album 'Mark on Me' ","id":20152,"url":"https://makestar.co/event/20152","endAt":"2026-09-13T23:59:59.999999+09:00"}
 {"at":"2026-09-11T05:58:22.352Z","type":"album.new","artist":"Y:SY","album":"GOODIES"}
+{"at":"2026-09-11T10:59:50.426Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":20561,"url":"https://makestar.co/event/20561","endAt":"2026-09-15T00:59:59.999999+09:00"}
+{"at":"2026-09-11T10:59:50.426Z","type":"event.new","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":20445,"url":"https://makestar.co/event/20445","endAt":"2026-09-13T23:59:59.999999+09:00"}
+{"at":"2026-09-11T10:59:50.426Z","type":"event.new","label":"ONLINE PHOTO&CALL","artist":"MEOVV","album":"THE 2nd EP ALBUM [BITE NOW]","id":20328,"url":"https://makestar.co/event/20328","endAt":"2026-09-13T23:59:59.999999+09:00"}
+{"at":"2026-09-11T10:59:50.426Z","type":"event.new","label":"영상통화 팬사인회","artist":"어센트","album":"[Still with you]","id":20100,"url":"https://makestar.co/event/20100","endAt":"2026-09-13T23:59:59.999999+09:00"}
+{"at":"2026-09-11T10:59:50.426Z","type":"event.gone","label":"영상통화 팬사인회","artist":"민호","album":"미니 2집 [Make it hot]","id":20575}
+{"at":"2026-09-11T10:59:50.426Z","type":"album.gone","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night'"}
+{"at":"2026-09-11T10:59:50.426Z","type":"album.gone","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT"}
+{"at":"2026-09-11T10:59:50.426Z","type":"album.gone","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"}
+{"at":"2026-09-11T10:59:50.426Z","type":"album.gone","artist":"JISOO","album":"CLICK"}
