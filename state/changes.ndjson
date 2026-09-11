@@ -155,3 +155,6 @@
 {"at":"2026-09-10T18:27:15.335Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":20430}
 {"at":"2026-09-10T21:05:50.650Z","type":"album.new","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night' CHEMICAL NIGHT"}
 {"at":"2026-09-10T23:10:04.163Z","type":"album.new","artist":"LE SSERAFIM","album":"LE SSERAFIM 2nd Single Album 'Made My Night' Single CD"}
+{"at":"2026-09-11T05:58:22.352Z","type":"event.new","label":"PHOTO EVENT","artist":"앤팀","album":"KR 2nd Mini Album 'Mark on Me' ","id":20153,"url":"https://makestar.co/event/20153","endAt":"2026-09-13T23:59:59.999999+09:00"}
+{"at":"2026-09-11T05:58:22.352Z","type":"event.new","label":"대면 팬사인회","artist":"앤팀","album":"KR 2nd Mini Album 'Mark on Me' ","id":20152,"url":"https://makestar.co/event/20152","endAt":"2026-09-13T23:59:59.999999+09:00"}
+{"at":"2026-09-11T05:58:22.352Z","type":"album.new","artist":"Y:SY","album":"GOODIES"}

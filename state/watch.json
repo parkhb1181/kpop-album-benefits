@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-11T01:04:40.788Z",
-  "lastDeep": "2026-09-11T01:04:40.788Z",
+  "checkedAt": "2026-09-11T05:58:22.352Z",
+  "lastDeep": "2026-09-11T05:58:22.352Z",
   "events": [
     {
       "id": 20575,
@@ -237,6 +237,58 @@
       }
     },
     {
+      "id": 20153,
+      "url": "https://makestar.co/event/20153",
+      "type": "PHOTO EVENT",
+      "label": "PHOTO EVENT",
+      "fansign": false,
+      "title": "&TEAM KR 2nd Mini Album 'Mark on Me'  발매기념 1:1 포토 이벤트",
+      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' Release Celebration 1:1 Photo Event",
+      "album": "KR 2nd Mini Album 'Mark on Me' ",
+      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
+      "artist": "앤팀",
+      "artistEn": "&TEAM",
+      "releaseDate": "2026-09-08",
+      "from": "2026.09.11",
+      "to": "2026.09.13",
+      "startAt": "2026-09-11T11:00:00+09:00",
+      "endAt": "2026-09-13T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10851,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_4_Banner_thumb_v4.jpg_2026-08-28_145916505713.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_4_Banner_thumb_v4.jpg_2026-08-28_145916505713_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20152,
+      "url": "https://makestar.co/event/20152",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "&TEAM KR 2nd Mini Album 'Mark on Me' 발매기념 대면 사인회 이벤트",
+      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' Release Celebration Face-to-face Fansign Event",
+      "album": "KR 2nd Mini Album 'Mark on Me' ",
+      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
+      "artist": "앤팀",
+      "artistEn": "&TEAM",
+      "releaseDate": "2026-09-08",
+      "from": "2026.09.11",
+      "to": "2026.09.13",
+      "startAt": "2026-09-11T11:00:00+09:00",
+      "endAt": "2026-09-13T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.14",
+      "productId": 10851,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_3_Banner_thumb_v4.jpg_2026-08-28_141844660165.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_3_Banner_thumb_v4.jpg_2026-08-28_141844660165_thumb.jpeg"
+      }
+    },
+    {
       "id": 20133,
       "url": "https://makestar.co/event/20133",
       "type": "FANSIGN&PHOTO EVENT",
@@ -391,6 +443,11 @@
       "key": "TREASURE｜THE FIRST STEP : EFFECT",
       "artist": "TREASURE",
       "album": "THE FIRST STEP : EFFECT"
+    },
+    {
+      "key": "Y:SY｜GOODIES",
+      "artist": "Y:SY",
+      "album": "GOODIES"
     },
     {
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
