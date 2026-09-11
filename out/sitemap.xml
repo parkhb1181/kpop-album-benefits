@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/tuide-tune-play</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/treasure-the-first-step-chapter-two</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -43,31 +49,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/tuide-tune-play</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/treasure-the-first-step-effect</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/treasure-pleasure</loc>
+    <loc>https://kpop-album.vercel.app/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
+    <loc>https://kpop-album.vercel.app/album/treasure-pleasure</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -92,24 +86,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -153,6 +129,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/nct-127-blingy</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -217,8 +199,26 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -265,6 +265,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/tuide-tune-play</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/treasure-the-first-step-chapter-two</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -277,31 +283,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/tuide-tune-play</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/treasure-the-first-step-effect</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/treasure-pleasure</loc>
+    <loc>https://kpop-album.vercel.app/en/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
+    <loc>https://kpop-album.vercel.app/en/album/treasure-pleasure</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -326,24 +320,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -387,6 +363,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/nct-127-blingy</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -451,8 +433,26 @@
     <priority>0.2</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-singl</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
