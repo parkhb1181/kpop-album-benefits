@@ -170,3 +170,5 @@
 {"at":"2026-09-11T18:16:34.351Z","type":"event.gone","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":20543}
 {"at":"2026-09-11T18:16:34.351Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":20133}
 {"at":"2026-09-11T18:16:34.351Z","type":"album.gone","artist":"TUIDE","album":"TUNE & PLAY"}
+{"at":"2026-09-12T06:09:54.932Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"싸이커스","album":"7TH MINI ALBUM [ROUTE ZERO : The ORA] ","id":20585,"url":"https://makestar.co/event/20585","endAt":"2026-09-15T11:59:59.999999+09:00"}
+{"at":"2026-09-12T06:09:54.932Z","type":"event.new","label":"ONLINE PHOTO&CALL","artist":"키스오브라이프","album":"3rd Single [SWEAT]","id":20404,"url":"https://makestar.co/event/20404","endAt":"2026-09-14T23:59:59.999999+09:00"}

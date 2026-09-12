@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-12T01:20:54.760Z",
-  "lastDeep": "2026-09-12T01:20:54.760Z",
+  "checkedAt": "2026-09-12T06:09:54.932Z",
+  "lastDeep": "2026-09-12T06:09:54.932Z",
   "events": [
+    {
+      "id": 20585,
+      "url": "https://makestar.co/event/20585",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) FANSIGN & SPECIAL 1:1 DRAWING EVENT IN LA",
+      "titleEn": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) FANSIGN & SPECIAL 1:1 DRAWING EVENT IN LA",
+      "album": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
+      "albumEn": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-05-19",
+      "from": "2026.09.12",
+      "to": "2026.09.15",
+      "startAt": "2026-09-12T12:00:00+09:00",
+      "endAt": "2026-09-15T11:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.15",
+      "productId": 10581,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_26_Banner_Sub.jpg_2026-09-11_144218990089.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_26_Banner_Sub.jpg_2026-09-11_144218990089_thumb.jpeg"
+      }
+    },
     {
       "id": 20561,
       "url": "https://makestar.co/event/20561",
@@ -52,6 +78,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_15_Banner_Sub.jpg_2026-09-08_143920669703.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_15_Banner_Sub.jpg_2026-09-08_143920669703_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20404,
+      "url": "https://makestar.co/event/20404",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM Ver.) 1:1 ONLINE PHOTO&CALL EVENT PART.3",
+      "titleEn": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM Ver.) 1:1 ONLINE PHOTO&CALL EVENT PART.3",
+      "album": "3rd Single [SWEAT]",
+      "albumEn": "3rd Single [SWEAT]",
+      "artist": "키스오브라이프",
+      "artistEn": "KISS OF LIFE",
+      "releaseDate": "2026-08-04",
+      "from": "2026.09.12",
+      "to": "2026.09.14",
+      "startAt": "2026-09-12T15:00:00+09:00",
+      "endAt": "2026-09-14T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10907,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_11_Thumb.jpg_2026-09-08_172007779368.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_11_Thumb.jpg_2026-09-08_172007779368_thumb.jpeg"
       }
     },
     {
