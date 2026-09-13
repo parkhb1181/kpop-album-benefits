@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 12. 22:20:23",
+  "stamp": "2026. 9. 13. 14:38:09",
   "albums": [
     {
       "artistId": 25,
@@ -11,7 +11,7 @@
       "weversePriceMin": 10900,
       "artist": "TREASURE",
       "slug": "treasure-the-second-step-chapter-two",
-      "versions": 26,
+      "versions": 27,
       "retailers": 7,
       "benefitCount": 3,
       "soldCount": 9,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 67,
       "artistKo": "트레저",
@@ -38,7 +38,7 @@
       "weversePriceMin": 11800,
       "artist": "TREASURE",
       "slug": "treasure-reboot",
-      "versions": 18,
+      "versions": 16,
       "retailers": 7,
       "benefitCount": 3,
       "soldCount": 6,
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
-      "rowCount": 47,
+      "rowCount": 44,
       "artistKo": "트레저",
       "artistDisplay": "트레저(TREASURE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/8390206fdd93d3696d5ff28c21e3a86a.png",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 43,
       "artistKo": "트레저",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 79,
       "artistKo": "트레저",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 17,
       "artistKo": null,
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 16,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 28,
       "artistKo": "트레저",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-14T18:00:00+09:00",
-        "rough": "1일 19시간"
+        "rough": "1일 3시간"
       },
       "rowCount": 18,
       "artistKo": "영탁",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-28T07:00:00+09:00",
-        "rough": "15일 8시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 53,
       "artistKo": null,
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-18T18:00:00+09:00",
-        "rough": "5일 19시간"
+        "rough": "5일 3시간"
       },
       "rowCount": 10,
       "artistKo": "이서연",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-09-15T18:01:00+09:00",
-        "rough": "2일 19시간"
+        "rough": "2일 3시간"
       },
       "rowCount": 5,
       "artistKo": "효린",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-27T23:59:59.999999+09:00",
-        "rough": "15일 1시간"
+        "rough": "14일 9시간"
       },
       "rowCount": 22,
       "artistKo": "보이넥스트도어",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-08T17:20:00+09:00",
-        "rough": "86일 18시간"
+        "rough": "86일 2시간"
       },
       "rowCount": 24,
       "artistKo": "코르티스",
