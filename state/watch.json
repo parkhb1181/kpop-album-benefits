@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-13T14:55:47.850Z",
-  "lastDeep": "2026-09-13T14:55:47.850Z",
+  "checkedAt": "2026-09-13T17:54:57.405Z",
+  "lastDeep": "2026-09-13T17:54:57.405Z",
   "events": [
     {
       "id": 20585,
@@ -45,39 +45,13 @@
       "to": "2026.09.15",
       "startAt": "2026-09-11T19:00:00+09:00",
       "endAt": "2026-09-15T00:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.15",
       "productId": 10943,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20445,
-      "url": "https://makestar.co/event/20445",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) MEET&CALL EVENT",
-      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) MEET&CALL EVENT",
-      "album": "4th Mini Album [.exe]",
-      "albumEn": "4th Mini Album [.exe] ",
-      "artist": "누에라",
-      "artistEn": "NouerA",
-      "releaseDate": "2026-07-27",
-      "from": "2026.09.11",
-      "to": "2026.09.13",
-      "startAt": "2026-09-11T15:00:00+09:00",
-      "endAt": "2026-09-13T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.14",
-      "productId": 10867,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_15_Banner_Sub.jpg_2026-09-08_143920669703.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_15_Banner_Sub.jpg_2026-09-08_143920669703_thumb.jpeg"
       }
     },
     {
@@ -97,7 +71,7 @@
       "to": "2026.09.14",
       "startAt": "2026-09-12T15:00:00+09:00",
       "endAt": "2026-09-14T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 10907,
@@ -123,7 +97,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T11:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 15,
+      "dday": 14,
       "closing": false,
       "winnerAt": null,
       "productId": 11070,
@@ -149,7 +123,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T11:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 15,
+      "dday": 14,
       "closing": false,
       "winnerAt": null,
       "productId": 11070,
@@ -175,7 +149,7 @@
       "to": "2026.09.27",
       "startAt": "2026-09-07T12:00:00+09:00",
       "endAt": "2026-09-27T23:59:59.999999+09:00",
-      "dday": 15,
+      "dday": 14,
       "closing": false,
       "winnerAt": null,
       "productId": 11063,
@@ -201,65 +175,13 @@
       "to": "2026.10.05",
       "startAt": "2026-09-08T17:00:00+09:00",
       "endAt": "2026-10-05T23:59:59.999999+09:00",
-      "dday": 23,
+      "dday": 22,
       "closing": false,
       "winnerAt": "2026.10.06",
       "productId": 11062,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_1_banner_sub_v2.png_2026-09-03_183352155524_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20328,
-      "url": "https://makestar.co/event/20328",
-      "type": "ONLINE PHOTO&CALL",
-      "label": "ONLINE PHOTO&CALL",
-      "fansign": false,
-      "title": "MEOVV (미야오) THE 2nd EP ALBUM [BITE NOW] 1:1 ONLINE PHOTO&CALL EVENT PART.3",
-      "titleEn": "MEOVV (미야오) THE 2nd EP ALBUM [BITE NOW] 1:1 ONLINE PHOTO&CALL EVENT PART.3",
-      "album": "THE 2nd EP ALBUM [BITE NOW]",
-      "albumEn": "THE 2nd EP ALBUM [BITE NOW]",
-      "artist": "MEOVV",
-      "artistEn": "MEOVV",
-      "releaseDate": "2026-06-01",
-      "from": "2026.09.11",
-      "to": "2026.09.13",
-      "startAt": "2026-09-11T15:00:00+09:00",
-      "endAt": "2026-09-13T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.14",
-      "productId": 10641,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_16_banner_SUB.png_2026-09-03_105923705813.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10641_MEOVV_16_banner_SUB.png_2026-09-03_105923705813_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20310,
-      "url": "https://makestar.co/event/20310",
-      "type": "LUCKYDRAW",
-      "label": "럭키드로우",
-      "fansign": false,
-      "title": "프로미스나인(fromis_9) THE 2ND ALBUM  'Glow ME' LUCKY DRAW EVENT",
-      "titleEn": "프로미스나인(fromis_9) THE 2ND ALBUM  'Glow ME' LUCKY DRAW EVENT",
-      "album": "정규앨범 2집 [Glow ME]",
-      "albumEn": "THE 2ND ALBUM [Glow ME]",
-      "artist": "프로미스나인",
-      "artistEn": "fromis_9",
-      "releaseDate": "2026-07-21",
-      "from": "2026.09.10",
-      "to": "2026.09.13",
-      "startAt": "2026-09-10T15:00:00+09:00",
-      "endAt": "2026-09-13T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.14",
-      "productId": 10853,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10853_FROMIS_9_5_Banner_sub.png_2026-09-09_102244957960.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10853_FROMIS_9_5_Banner_sub.png_2026-09-09_102244957960_thumb.jpeg"
       }
     },
     {
@@ -279,8 +201,8 @@
       "to": "2026.09.15",
       "startAt": "2026-09-10T17:00:00+09:00",
       "endAt": "2026-09-15T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.17",
       "productId": 10894,
       "image": {
@@ -305,65 +227,13 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 47,
+      "dday": 46,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11029_JENNIE_1_Banner_Sub.jpg_2026-08-25_095839364595_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20153,
-      "url": "https://makestar.co/event/20153",
-      "type": "PHOTO EVENT",
-      "label": "PHOTO EVENT",
-      "fansign": false,
-      "title": "&TEAM KR 2nd Mini Album 'Mark on Me'  발매기념 1:1 포토 이벤트",
-      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' Release Celebration 1:1 Photo Event",
-      "album": "KR 2nd Mini Album 'Mark on Me' ",
-      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
-      "artist": "앤팀",
-      "artistEn": "&TEAM",
-      "releaseDate": "2026-09-08",
-      "from": "2026.09.11",
-      "to": "2026.09.13",
-      "startAt": "2026-09-11T11:00:00+09:00",
-      "endAt": "2026-09-13T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.14",
-      "productId": 10851,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_4_Banner_thumb_v4.jpg_2026-08-28_145916505713.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_4_Banner_thumb_v4.jpg_2026-08-28_145916505713_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20152,
-      "url": "https://makestar.co/event/20152",
-      "type": "FANSIGN",
-      "label": "대면 팬사인회",
-      "fansign": true,
-      "title": "&TEAM KR 2nd Mini Album 'Mark on Me' 발매기념 대면 사인회 이벤트",
-      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' Release Celebration Face-to-face Fansign Event",
-      "album": "KR 2nd Mini Album 'Mark on Me' ",
-      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
-      "artist": "앤팀",
-      "artistEn": "&TEAM",
-      "releaseDate": "2026-09-08",
-      "from": "2026.09.11",
-      "to": "2026.09.13",
-      "startAt": "2026-09-11T11:00:00+09:00",
-      "endAt": "2026-09-13T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.14",
-      "productId": 10851,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_3_Banner_thumb_v4.jpg_2026-08-28_141844660165.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_3_Banner_thumb_v4.jpg_2026-08-28_141844660165_thumb.jpeg"
       }
     },
     {
@@ -383,39 +253,13 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 24,
+      "dday": 23,
       "closing": false,
       "winnerAt": null,
       "productId": 11019,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_1_Thumb.png_2026-08-20_155006315528_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20100,
-      "url": "https://makestar.co/event/20100",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "어센트 (ASC2NT) 2nd Mini Album [Still with you] SPECIAL MEET&CALL EVENT",
-      "titleEn": "어센트 (ASC2NT) 2nd Mini Album [Still with you] SPECIAL MEET&CALL EVENT",
-      "album": "[Still with you]",
-      "albumEn": "[Still with you]",
-      "artist": "어센트",
-      "artistEn": "ASC2NT",
-      "releaseDate": "2026-09-04",
-      "from": "2026.09.11",
-      "to": "2026.09.13",
-      "startAt": "2026-09-11T15:00:00+09:00",
-      "endAt": "2026-09-13T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.14",
-      "productId": 11016,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_1_Banner_Sub.png_2026-09-04_115410349171.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_1_Banner_Sub.png_2026-09-04_115410349171_thumb.jpeg"
       }
     },
     {
@@ -435,7 +279,7 @@
       "to": "2026.09.14",
       "startAt": "2026-09-10T11:00:00+09:00",
       "endAt": "2026-09-14T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.15",
       "productId": 10962,
@@ -472,11 +316,6 @@
     }
   ],
   "albums": [
-    {
-      "key": "YOUNGTAK (영탁)｜GOGO",
-      "artist": "YOUNGTAK (영탁)",
-      "album": "GOGO"
-    },
     {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
       "artist": "TREASURE",
