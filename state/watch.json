@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-14T05:19:24.133Z",
-  "lastDeep": "2026-09-14T05:19:24.133Z",
+  "checkedAt": "2026-09-14T10:52:06.215Z",
+  "lastDeep": "2026-09-14T10:52:06.215Z",
   "events": [
     {
       "id": 20656,
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20637,
+      "url": "https://makestar.co/event/20637",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "NCT WISH 미니 4집 'I SPY' 발매기념 특전 증정 이벤트",
+      "titleEn": "NCT WISH The 4th Mini Album 'I SPY' SPECIAL GIVEAWAY EVENT",
+      "album": "미니 4집 [I SPY]",
+      "albumEn": "4th Mini Album [I SPY]",
+      "artist": "NCT WISH",
+      "artistEn": "NCT WISH",
+      "releaseDate": "2026-10-12",
+      "from": "2026.09.14",
+      "to": "2026.10.11",
+      "startAt": "2026-09-14T18:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 28,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11101,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586_thumb.jpeg"
       }
     },
     {
@@ -107,6 +133,32 @@
       }
     },
     {
+      "id": 20586,
+      "url": "https://makestar.co/event/20586",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Pre-Order Meet&Call Event",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Pre-Order Meet&Call Event",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.09.14",
+      "to": "2026.09.16",
+      "startAt": "2026-09-14T15:00:00+09:00",
+      "endAt": "2026-09-16T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.17",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_2_banner_sub.png_2026-09-10_124536841345.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_2_banner_sub.png_2026-09-10_124536841345_thumb.jpeg"
+      }
+    },
+    {
       "id": 20585,
       "url": "https://makestar.co/event/20585",
       "type": "SPECIAL OFFLINE EVENT",
@@ -156,6 +208,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_3_banner_sub.png_2026-09-09_190050203013.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_3_banner_sub.png_2026-09-09_190050203013_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20572,
+      "url": "https://makestar.co/event/20572",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> VIDEO CALL EVENT",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> VIDEO CALL EVENT",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.14",
+      "to": "2026.09.17",
+      "startAt": "2026-09-14T15:00:00+09:00",
+      "endAt": "2026-09-17T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.18",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_9_banner_Sub.png_2026-09-09_163316572695.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_9_banner_Sub.png_2026-09-09_163316572695_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20569,
+      "url": "https://makestar.co/event/20569",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> FANSIGN&PHOTO EVENT IN TOKYO",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> FANSIGN&PHOTO EVENT IN TOKYO",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.14",
+      "to": "2026.09.17",
+      "startAt": "2026-09-14T15:00:00+09:00",
+      "endAt": "2026-09-17T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.18",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_8_banner_Sub_v6.png_2026-09-11_121523150282.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_8_banner_Sub_v6.png_2026-09-11_121523150282_thumb.jpeg"
       }
     },
     {
@@ -452,36 +556,6 @@
       "album": "TUNE & PLAY"
     },
     {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
-    },
-    {
-      "key": "ENHYPEN｜THE SIN : BLISS",
-      "artist": "ENHYPEN",
-      "album": "THE SIN : BLISS"
-    },
-    {
-      "key": "BOYNEXTDOOR｜EARLY-BIRD",
-      "artist": "BOYNEXTDOOR",
-      "album": "EARLY-BIRD"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Glow Clicker Keychain",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' Glow Clicker Keychain"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night'"
-    },
-    {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE SECOND STEP : CHAPTER ONE"
@@ -532,9 +606,14 @@
       "album": "I SPY"
     },
     {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Vinyl",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' Vinyl"
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "HYOLYN｜OriginaLyn",
