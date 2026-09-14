@@ -19,25 +19,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/treasure-the-second-step-chapter-one</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/treasure-the-first-step-chapter-one</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/treasure-pleasure</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/nct-wish-i-spy</loc>
+    <loc>https://kpop-album.vercel.app/album/treasure-the-second-step-chapter-one</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -55,12 +43,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/y-sy-goodies</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/tuide-tune-play</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
@@ -73,6 +55,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/treasure-pleasure</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/nct-wish-i-spy</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/y-sy-goodies</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/boynextdoor-home-deluxe</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
@@ -80,12 +80,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/hyolyn-originalyn</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -223,6 +217,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/hyolyn-originalyn</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -271,25 +271,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/treasure-the-second-step-chapter-one</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/treasure-the-first-step-chapter-one</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/treasure-pleasure</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/nct-wish-i-spy</loc>
+    <loc>https://kpop-album.vercel.app/en/album/treasure-the-second-step-chapter-one</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -307,12 +295,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/y-sy-goodies</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/tuide-tune-play</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
@@ -325,6 +307,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/treasure-pleasure</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/nct-wish-i-spy</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/y-sy-goodies</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/boynextdoor-home-deluxe</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
@@ -332,12 +332,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/hyolyn-originalyn</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -471,6 +465,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night</loc>
     <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/hyolyn-originalyn</loc>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
