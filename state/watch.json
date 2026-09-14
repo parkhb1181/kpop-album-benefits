@@ -1,7 +1,111 @@
 {
-  "checkedAt": "2026-09-14T00:27:18.590Z",
-  "lastDeep": "2026-09-14T00:27:18.590Z",
+  "checkedAt": "2026-09-14T05:19:24.133Z",
+  "lastDeep": "2026-09-14T05:19:24.133Z",
   "events": [
+    {
+      "id": 20656,
+      "url": "https://makestar.co/event/20656",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (LITE ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (LITE ver.) PRE-ORDER PHOTOCARD EVENT",
+      "album": "The 2nd EP Album 'CRASH'",
+      "albumEn": "The 2nd EP Album 'CRASH'",
+      "artist": "올데이프로젝트",
+      "artistEn": "ALLDAY PROJECT",
+      "releaseDate": "2026-09-28",
+      "from": "2026.09.14",
+      "to": "2026.09.27",
+      "startAt": "2026-09-14T12:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 14,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11092,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20655,
+      "url": "https://makestar.co/event/20655",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (FOCUS ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (FOCUS ver.) PRE-ORDER PHOTOCARD EVENT",
+      "album": "The 2nd EP Album 'CRASH'",
+      "albumEn": "The 2nd EP Album 'CRASH'",
+      "artist": "올데이프로젝트",
+      "artistEn": "ALLDAY PROJECT",
+      "releaseDate": "2026-09-28",
+      "from": "2026.09.14",
+      "to": "2026.09.27",
+      "startAt": "2026-09-14T12:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 14,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11092,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20592,
+      "url": "https://makestar.co/event/20592",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (COMPLETE ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (COMPLETE ver.) PRE-ORDER PHOTOCARD EVENT",
+      "album": "The 2nd EP Album 'CRASH'",
+      "albumEn": "The 2nd EP Album 'CRASH'",
+      "artist": "올데이프로젝트",
+      "artistEn": "ALLDAY PROJECT",
+      "releaseDate": "2026-09-28",
+      "from": "2026.09.14",
+      "to": "2026.09.27",
+      "startAt": "2026-09-14T12:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 14,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11092,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20588,
+      "url": "https://makestar.co/event/20588",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain (Pink ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain (Pink ver.) SPECIAL GIVEAWAY EVENT",
+      "album": "2nd Single Album 'Made My Night'",
+      "albumEn": "2nd Single Album 'Made My Night'",
+      "artist": "르세라핌",
+      "artistEn": "LE SSERAFIM",
+      "releaseDate": "2026-09-11",
+      "from": "2026.09.14",
+      "to": "2026.10.22",
+      "startAt": "2026-09-14T11:00:00+09:00",
+      "endAt": "2026-10-22T23:59:59.999999+09:00",
+      "dday": 39,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11042,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_4_banner_sub.png_2026-09-10_103941873302.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_4_banner_sub.png_2026-09-10_103941873302_thumb.jpeg"
+      }
+    },
     {
       "id": 20585,
       "url": "https://makestar.co/event/20585",
@@ -19,13 +123,39 @@
       "to": "2026.09.15",
       "startAt": "2026-09-12T12:00:00+09:00",
       "endAt": "2026-09-15T11:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.15",
       "productId": 10581,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_26_Banner_Sub.jpg_2026-09-11_144218990089.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_26_Banner_Sub.jpg_2026-09-11_144218990089_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20574,
+      "url": "https://makestar.co/event/20574",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain (Mint ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain (Mint ver.) SPECIAL GIVEAWAY EVENT",
+      "album": "2nd Single Album 'Made My Night'",
+      "albumEn": "2nd Single Album 'Made My Night'",
+      "artist": "르세라핌",
+      "artistEn": "LE SSERAFIM",
+      "releaseDate": "2026-09-11",
+      "from": "2026.09.14",
+      "to": "2026.10.22",
+      "startAt": "2026-09-14T11:00:00+09:00",
+      "endAt": "2026-10-22T23:59:59.999999+09:00",
+      "dday": 39,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11042,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_3_banner_sub.png_2026-09-09_190050203013.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_3_banner_sub.png_2026-09-09_190050203013_thumb.jpeg"
       }
     },
     {
@@ -317,6 +447,41 @@
   ],
   "albums": [
     {
+      "key": "TUIDE｜TUNE & PLAY",
+      "artist": "TUIDE",
+      "album": "TUNE & PLAY"
+    },
+    {
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
+    },
+    {
+      "key": "ENHYPEN｜THE SIN : BLISS",
+      "artist": "ENHYPEN",
+      "album": "THE SIN : BLISS"
+    },
+    {
+      "key": "BOYNEXTDOOR｜EARLY-BIRD",
+      "artist": "BOYNEXTDOOR",
+      "album": "EARLY-BIRD"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Glow Clicker Keychain",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' Glow Clicker Keychain"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night'"
+    },
+    {
       "key": "TREASURE｜THE SECOND STEP : CHAPTER ONE",
       "artist": "TREASURE",
       "album": "THE SECOND STEP : CHAPTER ONE"
@@ -362,14 +527,14 @@
       "album": "GOODIES"
     },
     {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
+      "key": "NCT WISH｜I SPY",
+      "artist": "NCT WISH",
+      "album": "I SPY"
     },
     {
-      "key": "CORTIS｜GREENGREEN_playextended",
-      "artist": "CORTIS",
-      "album": "GREENGREEN_playextended"
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Vinyl",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' Vinyl"
     },
     {
       "key": "HYOLYN｜OriginaLyn",

@@ -179,3 +179,17 @@
 {"at":"2026-09-13T17:54:57.405Z","type":"event.gone","label":"대면 팬사인회","artist":"앤팀","album":"KR 2nd Mini Album 'Mark on Me' ","id":20152}
 {"at":"2026-09-13T17:54:57.405Z","type":"event.gone","label":"영상통화 팬사인회","artist":"어센트","album":"[Still with you]","id":20100}
 {"at":"2026-09-13T17:54:57.405Z","type":"album.gone","artist":"YOUNGTAK (영탁)","album":"GOGO"}
+{"at":"2026-09-14T05:19:24.133Z","type":"event.new","label":"예약 특전 포토카드","artist":"올데이프로젝트","album":"The 2nd EP Album 'CRASH'","id":20656,"url":"https://makestar.co/event/20656","endAt":"2026-09-27T23:59:59.999999+09:00"}
+{"at":"2026-09-14T05:19:24.133Z","type":"event.new","label":"예약 특전 포토카드","artist":"올데이프로젝트","album":"The 2nd EP Album 'CRASH'","id":20655,"url":"https://makestar.co/event/20655","endAt":"2026-09-27T23:59:59.999999+09:00"}
+{"at":"2026-09-14T05:19:24.133Z","type":"event.new","label":"예약 특전 포토카드","artist":"올데이프로젝트","album":"The 2nd EP Album 'CRASH'","id":20592,"url":"https://makestar.co/event/20592","endAt":"2026-09-27T23:59:59.999999+09:00"}
+{"at":"2026-09-14T05:19:24.133Z","type":"event.new","label":"예약 특전 포토카드","artist":"르세라핌","album":"2nd Single Album 'Made My Night'","id":20588,"url":"https://makestar.co/event/20588","endAt":"2026-10-22T23:59:59.999999+09:00"}
+{"at":"2026-09-14T05:19:24.133Z","type":"event.new","label":"예약 특전 포토카드","artist":"르세라핌","album":"2nd Single Album 'Made My Night'","id":20574,"url":"https://makestar.co/event/20574","endAt":"2026-10-22T23:59:59.999999+09:00"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"TUIDE","album":"TUNE & PLAY"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"ENHYPEN","album":"THE SIN : BLISS"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"BOYNEXTDOOR","album":"EARLY-BIRD"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"LE SSERAFIM","album":"2nd Single Album 'Made My Night' Glow Clicker Keychain"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"LE SSERAFIM","album":"2nd Single Album 'Made My Night' CHEMICAL NIGHT"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"LE SSERAFIM","album":"2nd Single Album 'Made My Night'"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"NCT WISH","album":"I SPY"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.new","artist":"LE SSERAFIM","album":"2nd Single Album 'Made My Night' Vinyl"}
+{"at":"2026-09-14T05:19:24.133Z","type":"album.gone","artist":"CORTIS","album":"GREENGREEN_playextended"}
