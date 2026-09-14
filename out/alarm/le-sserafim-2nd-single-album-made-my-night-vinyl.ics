@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kpop-album-benefits//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl 마감
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:le-sserafim-2nd-single-album-made-my-night-vinyl-evt20588@kpop-album-be
+ nefits
+DTSTAMP:20260914T052939Z
+DTSTART:20261022T145959Z
+DTEND:20261022T152959Z
+SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
+ ain (Pink ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
+ event/20588
+URL:https://makestar.co/event/20588
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:le-sserafim-2nd-single-album-made-my-night-vinyl-evt20574@kpop-album-be
+ nefits
+DTSTAMP:20260914T052939Z
+DTSTART:20261022T145959Z
+DTEND:20261022T152959Z
+SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
+ ain (Mint ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
+ event/20574
+URL:https://makestar.co/event/20574
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:le-sserafim-2nd-single-album-made-my-night-vinyl-release@kpop-album-ben
+ efits
+DTSTAMP:20260914T052939Z
+DTSTART:20261023T020000Z
+DTEND:20261023T023000Z
+SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 배
+ 송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-m
+ y-night-vinyl.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
+ 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
+ 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
