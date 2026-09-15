@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-15T07:10:27.840Z",
-  "lastDeep": "2026-09-15T07:10:27.840Z",
+  "checkedAt": "2026-09-15T12:40:17.431Z",
+  "lastDeep": "2026-09-15T12:40:17.431Z",
   "events": [
     {
       "id": 20682,
@@ -538,6 +538,11 @@
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
+    },
+    {
+      "key": "SUPER JUNIOR｜Where We Are",
+      "artist": "SUPER JUNIOR",
+      "album": "Where We Are"
     },
     {
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
