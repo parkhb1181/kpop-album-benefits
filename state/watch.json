@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-16T06:24:31.107Z",
-  "lastDeep": "2026-09-16T06:24:31.107Z",
+  "checkedAt": "2026-09-16T11:54:49.703Z",
+  "lastDeep": "2026-09-16T11:54:49.703Z",
   "events": [
     {
       "id": 20682,
@@ -133,6 +133,32 @@
       }
     },
     {
+      "id": 20598,
+      "url": "https://makestar.co/event/20598",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT 127 The 7th Album ‘BLINGY’ FANSIGN & PHOTO EVENT IN SINGAPORE",
+      "titleEn": "NCT 127 The 7th Album ‘BLINGY’ FANSIGN & PHOTO EVENT IN SINGAPORE",
+      "album": "정규 7집 [BLINGY]",
+      "albumEn": "7th Full Album [BLINGY]",
+      "artist": "NCT 127",
+      "artistEn": "NCT 127",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.16",
+      "to": "2026.09.20",
+      "startAt": "2026-09-16T18:00:00+09:00",
+      "endAt": "2026-09-20T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.21",
+      "productId": 10940,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_6_Banner_sub.png_2026-09-15_105440723578.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_6_Banner_sub.png_2026-09-15_105440723578_thumb.jpeg"
+      }
+    },
+    {
       "id": 20593,
       "url": "https://makestar.co/event/20593",
       "type": "PHOTO EVENT",
@@ -234,6 +260,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_2_banner_sub.png_2026-09-10_124536841345.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_2_banner_sub.png_2026-09-10_124536841345_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20576,
+      "url": "https://makestar.co/event/20576",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "도경수(D.O.) DOPAMINE - The 4th Mini Album MEET&CALL EVENT in MACAU",
+      "titleEn": "도경수(D.O.) DOPAMINE - The 4th Mini Album MEET&CALL EVENT in MACAU",
+      "album": "미니 4집 [DOPAMINE]",
+      "albumEn": "4TH MINI ALBUM [DOPAMINE]",
+      "artist": "도경수",
+      "artistEn": "D.O.",
+      "releaseDate": "2026-09-08",
+      "from": "2026.09.16",
+      "to": "2026.09.20",
+      "startAt": "2026-09-16T18:00:00+09:00",
+      "endAt": "2026-09-20T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.21",
+      "productId": 11017,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._4_Banner_Sub.jpg_2026-09-14_172505111988.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._4_Banner_Sub.jpg_2026-09-14_172505111988_thumb.jpeg"
       }
     },
     {
@@ -551,6 +603,11 @@
   ],
   "albums": [
     {
+      "key": "SUPER JUNIOR｜Where We Are",
+      "artist": "SUPER JUNIOR",
+      "album": "Where We Are"
+    },
+    {
       "key": "TUIDE｜TUNE & PLAY",
       "artist": "TUIDE",
       "album": "TUNE & PLAY"
@@ -564,11 +621,6 @@
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
-    },
-    {
-      "key": "SUPER JUNIOR｜Where We Are",
-      "artist": "SUPER JUNIOR",
-      "album": "Where We Are"
     },
     {
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
