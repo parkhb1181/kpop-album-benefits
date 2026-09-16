@@ -222,3 +222,5 @@
 {"at":"2026-09-15T07:10:27.840Z","type":"album.gone","artist":"TREASURE","album":"THE FIRST STEP : EFFECT"}
 {"at":"2026-09-15T12:40:17.431Z","type":"album.new","artist":"SUPER JUNIOR","album":"Where We Are"}
 {"at":"2026-09-15T17:17:00.607Z","type":"event.gone","label":"PHOTO EVENT","artist":"엔하이픈","album":"[THE SIN : BLISS]","id":20207}
+{"at":"2026-09-16T06:24:31.107Z","type":"event.new","label":"영상통화 팬사인회","artist":"에이티즈","album":"미니 14집 [GOLDEN HOUR : Part.5]","id":20605,"url":"https://makestar.co/event/20605","endAt":"2026-09-19T23:59:59.999999+09:00"}
+{"at":"2026-09-16T06:24:31.107Z","type":"event.new","label":"영상통화 팬사인회","artist":"엠제이","album":"SINGLE ALBUM [Right..?]","id":20422,"url":"https://makestar.co/event/20422","endAt":"2026-09-18T23:59:59.999999+09:00"}

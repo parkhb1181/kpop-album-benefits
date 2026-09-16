@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-16T01:24:31.544Z",
-  "lastDeep": "2026-09-16T01:24:31.544Z",
+  "checkedAt": "2026-09-16T06:24:31.107Z",
+  "lastDeep": "2026-09-16T06:24:31.107Z",
   "events": [
     {
       "id": 20682,
@@ -107,6 +107,32 @@
       }
     },
     {
+      "id": 20605,
+      "url": "https://makestar.co/event/20605",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ATEEZ(에이티즈) 14TH MINI ALBUM [GOLDENHOUR : Part.5](POCAALBUM) MEET&CALL EVENT IN LA",
+      "titleEn": "ATEEZ(에이티즈) 14TH MINI ALBUM [GOLDENHOUR : Part.5](POCAALBUM) MEET&CALL EVENT IN LA",
+      "album": "미니 14집 [GOLDEN HOUR : Part.5]",
+      "albumEn": "14th Mini Album [GOLDEN HOUR : Part.5]",
+      "artist": "에이티즈",
+      "artistEn": "ATEEZ",
+      "releaseDate": "2026-06-26",
+      "from": "2026.09.16",
+      "to": "2026.09.19",
+      "startAt": "2026-09-16T15:00:00+09:00",
+      "endAt": "2026-09-19T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.21",
+      "productId": 10714,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10714_ATEEZ_15_Banner_Sub.png_2026-07-16_102404920855.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10714_ATEEZ_15_Banner_Sub.png_2026-07-16_102404920855_thumb.jpeg"
+      }
+    },
+    {
       "id": 20593,
       "url": "https://makestar.co/event/20593",
       "type": "PHOTO EVENT",
@@ -123,8 +149,8 @@
       "to": "2026.09.18",
       "startAt": "2026-09-15T12:00:00+09:00",
       "endAt": "2026-09-18T11:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.09.18",
       "productId": 10581,
       "image": {
@@ -312,6 +338,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_3_Banner_sub.png_2026-09-11_150820777238.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_3_Banner_sub.png_2026-09-11_150820777238_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20422,
+      "url": "https://makestar.co/event/20422",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "MJ 1ST SINGLE ALBUM [Right..?] VIDEO CALL EVENT",
+      "titleEn": "MJ 1ST SINGLE ALBUM [Right..?] VIDEO CALL EVENT",
+      "album": "SINGLE ALBUM [Right..?]",
+      "albumEn": "SINGLE ALBUM [Right..?]",
+      "artist": "엠제이",
+      "artistEn": "MJ",
+      "releaseDate": "2026-08-19",
+      "from": "2026.09.16",
+      "to": "2026.09.18",
+      "startAt": "2026-09-16T14:00:00+09:00",
+      "endAt": "2026-09-18T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.21",
+      "productId": 10974,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10974_MJ_2_Banner_Sub.png_2026-09-14_152616126309.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10974_MJ_2_Banner_Sub.png_2026-09-14_152616126309_thumb.jpeg"
       }
     },
     {
