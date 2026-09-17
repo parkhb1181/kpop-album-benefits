@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:y-sy-goodies-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20260918T090000Z
 DTEND:20260918T093000Z
 SUMMARY:이서연(Y:SY) GOODIES — 예약 배송 시작
@@ -27,29 +27,8 @@ DESCRIPTION:이서연(Y:SY) GOODIES — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:enhypen-the-sin-bliss-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20260918T100000Z
-DTEND:20260918T103000Z
-SUMMARY:엔하이픈(ENHYPEN) THE SIN : BLISS — 예약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/enhypen-the-sin-bliss.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : BLISS — 예약 배송 시작 
- (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : BLISS — 예약 배송 시작 
- (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-evt20401@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20260927T145959Z
 DTEND:20260927T152959Z
 SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특전 
@@ -73,7 +52,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-evt20400@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20260927T145959Z
 DTEND:20260927T152959Z
 SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특전 
@@ -97,9 +76,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20260928T090000Z
-DTEND:20260928T093000Z
+DTSTAMP:20260917T221425Z
+DTSTART:20261002T080700Z
+DTEND:20261002T083700Z
 SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 배송 
  시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
@@ -118,55 +97,8 @@ DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 배
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-chemical-night-release@kpop-
- album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20260928T100100Z
-DTEND:20260928T103100Z
-SUMMARY:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEMICAL
-  NIGHT — 예약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-m
- y-night-chemical-night.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEM
- ICAL NIGHT — 예약 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEM
- ICAL NIGHT — 예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20260928T100100Z
-DTEND:20260928T103100Z
-SUMMARY:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 예
- 약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-m
- y-night.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 
- 예약 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 
- 예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:super-junior-where-we-are-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261006T090100Z
 DTEND:20261006T093100Z
 SUMMARY:예성(SUPER JUNIOR) Where We Are — 예약 배송 시작
@@ -187,7 +119,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-evt20637@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261011T145959Z
 DTEND:20261011T152959Z
 SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 특전 포토카드 응
@@ -210,7 +142,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261012T090100Z
 DTEND:20261012T093100Z
 SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 배송 시작
@@ -231,7 +163,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-random-evt20566@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 예약 
@@ -254,7 +186,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-set-evt20566@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 예약 특
@@ -277,7 +209,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-evt20566@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 특전 
@@ -300,7 +232,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-release@kpop-album-benefits
-DTSTAMP:20260917T190947Z
+DTSTAMP:20260917T221425Z
 DTSTART:20261013T090000Z
 DTEND:20261013T093000Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배송 
@@ -322,249 +254,25 @@ DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-chemical-night-evt20588@kpop
- -album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEMICAL
-  NIGHT — 예약 특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Pink ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20588
-URL:https://makestar.co/event/20588
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEM
- ICAL NIGHT — 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEM
- ICAL NIGHT — 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-chemical-night-evt20574@kpop
- -album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEMICAL
-  NIGHT — 예약 특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Mint ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20574
-URL:https://makestar.co/event/20574
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEM
- ICAL NIGHT — 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' CHEM
- ICAL NIGHT — 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-evt20588@kpop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 예
- 약 특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Pink ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20588
-URL:https://makestar.co/event/20588
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-evt20574@kpop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 예
- 약 특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Mint ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20574
-URL:https://makestar.co/event/20574
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:르세라핌(LE SSERAFIM) 2nd Single Album 'Made My Night' — 
- 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc-evt20588@k
- pop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain 
- — 예약 특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Pink ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20588
-URL:https://makestar.co/event/20588
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain — 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain — 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc-evt20574@k
- pop-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain 
- — 예약 특전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Mint ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20574
-URL:https://makestar.co/event/20574
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain — 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain — 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-vinyl-evt20588@kpop-album-be
- nefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 특
- 전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Pink ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20588
-URL:https://makestar.co/event/20588
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
- 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
- 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-vinyl-evt20574@kpop-album-be
- nefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261022T145959Z
-DTEND:20261022T152959Z
-SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 특
- 전 포토카드 응모 마감
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain (Mint ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/
- event/20574
-URL:https://makestar.co/event/20574
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
- 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
- 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc-release@kp
- op-album-benefits
-DTSTAMP:20260917T190947Z
-DTSTART:20261023T020000Z
-DTEND:20261023T023000Z
-SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keychain 
- — 예약 배송 시작
+UID:cortis-greengreen-playextended-release@kpop-album-benefits
+DTSTAMP:20260917T221425Z
+DTSTART:20261208T082000Z
+DTEND:20261208T085000Z
+SUMMARY:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 시
+ 작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-m
- y-night-glow-clicker-keyc.html
+URL:https://kpop-album.vercel.app/album/cortis-greengreen-playextended.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain — 예약 배송 시작 (하루 전)
+DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
+ 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Glow Clicker Keych
- ain — 예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:le-sserafim-2nd-single-album-made-my-night-vinyl-release@kpop-album-ben
- efits
-DTSTAMP:20260917T190947Z
-DTSTART:20261023T020000Z
-DTEND:20261023T023000Z
-SUMMARY:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 배
- 송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-m
- y-night-vinyl.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
- 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LE SSERAFIM 2nd Single Album 'Made My Night' Vinyl — 예약 
- 배송 시작 (1시간 전)
+DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
+ 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
