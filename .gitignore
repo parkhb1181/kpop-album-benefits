@@ -6,3 +6,5 @@ node_modules/
 # 웹푸시 개인키는 절대 커밋하지 않는다
 vapid-keys.txt
 .env*
+
+.bkit/

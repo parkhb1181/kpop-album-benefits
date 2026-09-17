@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "poc-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "out", "-l", "5178", "--no-clipboard"],
+      "port": 5178
+    }
+  ]
+}
