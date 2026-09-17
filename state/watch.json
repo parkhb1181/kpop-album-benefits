@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-17T15:12:39.368Z",
-  "lastDeep": "2026-09-17T15:12:39.368Z",
+  "checkedAt": "2026-09-17T19:03:13.486Z",
+  "lastDeep": "2026-09-17T19:03:13.486Z",
   "events": [
     {
       "id": 20656,
@@ -97,7 +97,7 @@
       "to": "2026.09.21",
       "startAt": "2026-09-17T19:00:00+09:00",
       "endAt": "2026-09-21T00:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.09.21",
       "productId": 10943,
@@ -525,14 +525,39 @@
   ],
   "albums": [
     {
-      "key": "SUPER JUNIOR｜Where We Are",
-      "artist": "SUPER JUNIOR",
-      "album": "Where We Are"
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
     },
     {
       "key": "TUIDE｜TUNE & PLAY",
       "artist": "TUIDE",
       "album": "TUNE & PLAY"
+    },
+    {
+      "key": "SUPER JUNIOR｜Where We Are",
+      "artist": "SUPER JUNIOR",
+      "album": "Where We Are"
+    },
+    {
+      "key": "ENHYPEN｜THE SIN : BLISS",
+      "artist": "ENHYPEN",
+      "album": "THE SIN : BLISS"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night'"
+    },
+    {
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Glow Clicker Keychain",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' Glow Clicker Keychain"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
@@ -555,14 +580,9 @@
       "album": "I SPY"
     },
     {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
-    },
-    {
-      "key": "CORTIS｜GREENGREEN_playextended",
-      "artist": "CORTIS",
-      "album": "GREENGREEN_playextended"
+      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Vinyl",
+      "artist": "LE SSERAFIM",
+      "album": "2nd Single Album 'Made My Night' Vinyl"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
