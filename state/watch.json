@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-17T05:47:35.976Z",
-  "lastDeep": "2026-09-17T05:47:35.976Z",
+  "checkedAt": "2026-09-17T10:27:31.471Z",
+  "lastDeep": "2026-09-17T10:27:31.471Z",
   "events": [
     {
       "id": 20682,
@@ -104,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20635,
+      "url": "https://makestar.co/event/20635",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] FANSIGN & PHOTO EVENT IN SHENZHEN",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] FANSIGN & PHOTO EVENT IN SHENZHEN",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.17",
+      "to": "2026.09.21",
+      "startAt": "2026-09-17T19:00:00+09:00",
+      "endAt": "2026-09-21T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.21",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
       }
     },
     {
