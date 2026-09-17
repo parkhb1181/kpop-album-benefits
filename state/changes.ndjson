@@ -232,3 +232,7 @@
 {"at":"2026-09-17T05:47:35.976Z","type":"album.new","artist":"PLAVE","album":"5th Mini Album 'HYPERDRIVE' Set"}
 {"at":"2026-09-17T05:47:35.976Z","type":"album.new","artist":"PLAVE","album":"5th Mini Album 'HYPERDRIVE'"}
 {"at":"2026-09-17T10:27:31.471Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":20635,"url":"https://makestar.co/event/20635","endAt":"2026-09-21T00:59:59.999999+09:00"}
+{"at":"2026-09-17T15:12:39.368Z","type":"event.gone","label":"영상통화 팬사인회","artist":"에이티즈","album":"미니 14집 [GOLDEN HOUR : Part.5]","id":20682}
+{"at":"2026-09-17T15:12:39.368Z","type":"event.gone","label":"영상통화 팬사인회","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":20572}
+{"at":"2026-09-17T15:12:39.368Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":20569}
+{"at":"2026-09-17T15:12:39.368Z","type":"event.gone","label":"영상통화 팬사인회","artist":"아르테미스","album":"<Hyper-Ego>","id":20555}
