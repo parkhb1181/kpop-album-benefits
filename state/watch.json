@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-18T17:29:23.901Z",
-  "lastDeep": "2026-09-18T17:29:23.901Z",
+  "checkedAt": "2026-09-18T19:54:41.692Z",
+  "lastDeep": "2026-09-18T19:54:41.692Z",
   "events": [
     {
       "id": 20656,
@@ -525,34 +525,14 @@
   ],
   "albums": [
     {
-      "key": "BOYNEXTDOOR｜HOME: DELUXE",
-      "artist": "BOYNEXTDOOR",
-      "album": "HOME: DELUXE"
-    },
-    {
-      "key": "TUIDE｜TUNE & PLAY",
-      "artist": "TUIDE",
-      "album": "TUNE & PLAY"
-    },
-    {
       "key": "SUPER JUNIOR｜Where We Are",
       "artist": "SUPER JUNIOR",
       "album": "Where We Are"
     },
     {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' CHEMICAL NIGHT",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' CHEMICAL NIGHT"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night'",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night'"
-    },
-    {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Glow Clicker Keychain",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' Glow Clicker Keychain"
+      "key": "TUIDE｜TUNE & PLAY",
+      "artist": "TUIDE",
+      "album": "TUNE & PLAY"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
@@ -565,24 +545,24 @@
       "album": "5th Mini Album 'HYPERDRIVE' Set"
     },
     {
-      "key": "EVAN｜1st Mini Album 'DEATH OF ME'",
-      "artist": "EVAN",
-      "album": "1st Mini Album 'DEATH OF ME'"
-    },
-    {
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
     },
     {
-      "key": "LE SSERAFIM｜2nd Single Album 'Made My Night' Vinyl",
-      "artist": "LE SSERAFIM",
-      "album": "2nd Single Album 'Made My Night' Vinyl"
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
     },
     {
       "key": "JENNIE｜Fallen Angel",
       "artist": "JENNIE",
       "album": "Fallen Angel"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
