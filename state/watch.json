@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-18T04:59:18.648Z",
-  "lastDeep": "2026-09-18T04:59:18.648Z",
+  "checkedAt": "2026-09-18T09:34:59.941Z",
+  "lastDeep": "2026-09-18T09:34:59.941Z",
   "events": [
     {
       "id": 20656,
@@ -104,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20626,
+      "url": "https://makestar.co/event/20626",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "VAYONN (베이온) 1ST EP 'Youth Today' VIDEO CALL EVENT",
+      "titleEn": "VAYONN (베이온) 1ST EP 'Youth Today' VIDEO CALL EVENT",
+      "album": "1ST EP [Youth Today] ",
+      "albumEn": "1ST EP [Youth Today] ",
+      "artist": "베이온",
+      "artistEn": "VAYONN",
+      "releaseDate": "2026-07-06",
+      "from": "2026.09.18",
+      "to": "2026.09.20",
+      "startAt": "2026-09-18T15:00:00+09:00",
+      "endAt": "2026-09-20T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.21",
+      "productId": 10780,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10780_VAYONN_5_banner_sub.png_2026-09-17_105904867309.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10780_VAYONN_5_banner_sub.png_2026-09-17_105904867309_thumb.jpeg"
       }
     },
     {
@@ -560,6 +586,11 @@
       "album": "HOME: DELUXE"
     },
     {
+      "key": "JENNIE｜Fallen Angel",
+      "artist": "JENNIE",
+      "album": "Fallen Angel"
+    },
+    {
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
@@ -568,6 +599,11 @@
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
       "artist": "PLAVE",
       "album": "5th Mini Album 'HYPERDRIVE'"
+    },
+    {
+      "key": "JISOO｜CLICK",
+      "artist": "JISOO",
+      "album": "CLICK"
     }
   ]
 }
