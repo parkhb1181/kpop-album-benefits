@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-18T00:17:58.931Z",
-  "lastDeep": "2026-09-18T00:17:58.931Z",
+  "checkedAt": "2026-09-18T04:59:18.648Z",
+  "lastDeep": "2026-09-18T04:59:18.648Z",
   "events": [
     {
       "id": 20656,
@@ -133,6 +133,32 @@
       }
     },
     {
+      "id": 20604,
+      "url": "https://makestar.co/event/20604",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) 1:1 ONLINE PHOTO&CALL PART.2",
+      "titleEn": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) 1:1 ONLINE PHOTO&CALL PART.2",
+      "album": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
+      "albumEn": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-05-19",
+      "from": "2026.09.18",
+      "to": "2026.09.20",
+      "startAt": "2026-09-18T12:00:00+09:00",
+      "endAt": "2026-09-20T11:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.09.21",
+      "productId": 10581,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_28_Banner_Sub.jpg_2026-09-16_155528105449.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_28_Banner_Sub.jpg_2026-09-16_155528105449_thumb.jpeg"
+      }
+    },
+    {
       "id": 20598,
       "url": "https://makestar.co/event/20598",
       "type": "FANSIGN&PHOTO EVENT",
@@ -156,32 +182,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_6_Banner_sub.png_2026-09-15_105440723578.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_6_Banner_sub.png_2026-09-15_105440723578_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20593,
-      "url": "https://makestar.co/event/20593",
-      "type": "PHOTO EVENT",
-      "label": "PHOTO EVENT",
-      "fansign": false,
-      "title": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) PHOTO EVENT IN LA",
-      "titleEn": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) PHOTO EVENT IN LA",
-      "album": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
-      "albumEn": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
-      "artist": "싸이커스",
-      "artistEn": "xikers",
-      "releaseDate": "2026-05-19",
-      "from": "2026.09.15",
-      "to": "2026.09.18",
-      "startAt": "2026-09-15T12:00:00+09:00",
-      "endAt": "2026-09-18T11:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.18",
-      "productId": 10581,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_23_Banner_Sub.jpg_2026-07-22_154414718587.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_23_Banner_Sub.jpg_2026-07-22_154414718587_thumb.jpeg"
       }
     },
     {
