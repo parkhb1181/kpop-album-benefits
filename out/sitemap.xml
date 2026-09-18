@@ -37,13 +37,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/y-sy-goodies</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive</loc>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -55,7 +49,31 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-chemical-night</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/evan-1st-mini-album-death-of-me</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-vinyl</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -169,13 +187,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-chemical-night</loc>
+    <loc>https://kpop-album.vercel.app/album/y-sy-goodies</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -199,20 +211,8 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/evan-1st-mini-album-death-of-me</loc>
-    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -229,7 +229,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-vinyl</loc>
+    <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -313,13 +313,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/y-sy-goodies</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/plave-5th-mini-album-hyperdrive</loc>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -331,7 +325,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-chemical-night</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/plave-5th-mini-album-hyperdrive</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/evan-1st-mini-album-death-of-me</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-vinyl</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -445,13 +463,7 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-chemical-night</loc>
+    <loc>https://kpop-album.vercel.app/en/album/y-sy-goodies</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
@@ -475,20 +487,8 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-glow-clicker-keyc</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life</loc>
     <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/evan-1st-mini-album-death-of-me</loc>
-    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -505,7 +505,7 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-vinyl</loc>
+    <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
