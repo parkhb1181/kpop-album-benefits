@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-19T04:56:12.184Z",
-  "lastDeep": "2026-09-19T04:56:12.184Z",
+  "checkedAt": "2026-09-19T09:12:37.592Z",
+  "lastDeep": "2026-09-19T09:12:37.592Z",
   "events": [
     {
       "id": 20656,
@@ -338,6 +338,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11091_PLAVE_1_Banner_Thumb.png_2026-09-09_160323489321.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11091_PLAVE_1_Banner_Thumb.png_2026-09-09_160323489321_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20523,
+      "url": "https://makestar.co/event/20523",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "TRENDZ 6th Single Album [On My Knees] (POCAALBUM) ra.L’s BIRTHDAY PARTY",
+      "titleEn": "TRENDZ 6th Single Album [On My Knees] (POCAALBUM) ra.L’s BIRTHDAY PARTY",
+      "album": "6th Single Album [On My Knees] ",
+      "albumEn": "6th Single Album [On My Knees]  ",
+      "artist": "트렌드지",
+      "artistEn": "TRENDZ",
+      "releaseDate": "2026-07-09",
+      "from": "2026.09.19",
+      "to": "2026.09.21",
+      "startAt": "2026-09-19T15:00:00+09:00",
+      "endAt": "2026-09-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.22",
+      "productId": 10832,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_5_Banner_Sub.jpg_2026-09-16_100501367966.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_5_Banner_Sub.jpg_2026-09-16_100501367966_thumb.jpeg"
       }
     },
     {
