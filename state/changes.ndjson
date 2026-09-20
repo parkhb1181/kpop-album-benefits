@@ -272,3 +272,7 @@
 {"at":"2026-09-20T06:40:01.927Z","type":"event.new","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":20748,"url":"https://makestar.co/event/20748","endAt":"2026-09-22T23:59:59.999999+09:00"}
 {"at":"2026-09-20T06:40:01.927Z","type":"event.new","label":"영상통화 팬사인회","artist":"루네이트","album":"4TH MINI ALBUM [Off the Grid]","id":20471,"url":"https://makestar.co/event/20471","endAt":"2026-09-22T23:59:59.999999+09:00"}
 {"at":"2026-09-20T06:40:01.927Z","type":"event.gone","label":"ONLINE PHOTO&CALL","artist":"싸이커스","album":"7TH MINI ALBUM [ROUTE ZERO : The ORA] ","id":20604}
+{"at":"2026-09-20T15:26:23.924Z","type":"event.gone","label":"영상통화 팬사인회","artist":"베이온","album":"1ST EP [Youth Today] ","id":20626}
+{"at":"2026-09-20T15:26:23.924Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":20598}
+{"at":"2026-09-20T15:26:23.924Z","type":"event.gone","label":"영상통화 팬사인회","artist":"도경수","album":"미니 4집 [DOPAMINE]","id":20576}
+{"at":"2026-09-20T15:26:23.924Z","type":"album.new","artist":"i-dle (아이들)","album":"What a Wonderful Life"}
