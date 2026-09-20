@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-20T01:22:48.336Z",
-  "lastDeep": "2026-09-20T01:22:48.336Z",
+  "checkedAt": "2026-09-20T06:40:01.927Z",
+  "lastDeep": "2026-09-20T06:40:01.927Z",
   "events": [
+    {
+      "id": 20748,
+      "url": "https://makestar.co/event/20748",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL GAME &MEET&CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL GAME &MEET&CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.09.20",
+      "to": "2026.09.22",
+      "startAt": "2026-09-20T12:00:00+09:00",
+      "endAt": "2026-09-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.23",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_16_Banner_Sub.jpg_2026-09-18_114327029146.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_16_Banner_Sub.jpg_2026-09-18_114327029146_thumb.jpeg"
+      }
+    },
     {
       "id": 20656,
       "url": "https://makestar.co/event/20656",
@@ -130,32 +156,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10780_VAYONN_5_banner_sub.png_2026-09-17_105904867309.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10780_VAYONN_5_banner_sub.png_2026-09-17_105904867309_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20604,
-      "url": "https://makestar.co/event/20604",
-      "type": "ONLINE PHOTO&CALL",
-      "label": "ONLINE PHOTO&CALL",
-      "fansign": false,
-      "title": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) 1:1 ONLINE PHOTO&CALL PART.2",
-      "titleEn": "xikers 7TH MINI ALBUM [ROUTE ZERO : The ORA] (POCAALBUM) 1:1 ONLINE PHOTO&CALL PART.2",
-      "album": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
-      "albumEn": "7TH MINI ALBUM [ROUTE ZERO : The ORA] ",
-      "artist": "싸이커스",
-      "artistEn": "xikers",
-      "releaseDate": "2026-05-19",
-      "from": "2026.09.18",
-      "to": "2026.09.20",
-      "startAt": "2026-09-18T12:00:00+09:00",
-      "endAt": "2026-09-20T11:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.21",
-      "productId": 10581,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_28_Banner_Sub.jpg_2026-09-16_155528105449.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10581_XIKERS_28_Banner_Sub.jpg_2026-09-16_155528105449_thumb.jpeg"
       }
     },
     {
@@ -338,6 +338,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_5_Banner_Sub.jpg_2026-09-16_100501367966.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_5_Banner_Sub.jpg_2026-09-16_100501367966_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20471,
+      "url": "https://makestar.co/event/20471",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.3",
+      "titleEn": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.3",
+      "album": "4TH MINI ALBUM [Off the Grid]",
+      "albumEn": "4TH MINI ALBUM [Off the Grid]",
+      "artist": "루네이트",
+      "artistEn": "LUN8",
+      "releaseDate": "2026-07-22",
+      "from": "2026.09.20",
+      "to": "2026.09.22",
+      "startAt": "2026-09-20T14:00:00+09:00",
+      "endAt": "2026-09-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.28",
+      "productId": 10889,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_2_Sub.png_2026-08-25_173201902703.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_2_Sub.png_2026-08-25_173201902703_thumb.jpeg"
       }
     },
     {
