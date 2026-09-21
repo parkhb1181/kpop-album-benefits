@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-21T01:04:06.688Z",
-  "lastDeep": "2026-09-21T01:04:06.688Z",
+  "checkedAt": "2026-09-21T06:20:03.650Z",
+  "lastDeep": "2026-09-21T06:20:03.650Z",
   "events": [
     {
       "id": 20748,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_16_Banner_Sub.jpg_2026-09-18_114327029146.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_16_Banner_Sub.jpg_2026-09-18_114327029146_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20731,
+      "url": "https://makestar.co/event/20731",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "NMIXX 6th EP [Strange Muse] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] PRE-ORDER PHOTOCARD EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.09.21",
+      "to": "2026.10.18",
+      "startAt": "2026-09-21T12:00:00+09:00",
+      "endAt": "2026-10-18T23:59:59.999999+09:00",
+      "dday": 28,
+      "closing": false,
+      "winnerAt": "2026.10.19",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471_thumb.jpeg"
       }
     },
     {
@@ -107,6 +133,32 @@
       }
     },
     {
+      "id": 20595,
+      "url": "https://makestar.co/event/20595",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) SELFIE&MEET&CALL EVENT",
+      "titleEn": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) SELFIE&MEET&CALL EVENT",
+      "album": "3rd Single [SWEAT]",
+      "albumEn": "3rd Single [SWEAT]",
+      "artist": "키스오브라이프",
+      "artistEn": "KISS OF LIFE",
+      "releaseDate": "2026-08-04",
+      "from": "2026.09.21",
+      "to": "2026.09.23",
+      "startAt": "2026-09-21T15:00:00+09:00",
+      "endAt": "2026-09-23T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.28",
+      "productId": 10907,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_7_Thumb.jpg_2026-08-12_100841999161.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_7_Thumb.jpg_2026-08-12_100841999161_thumb.jpeg"
+      }
+    },
+    {
       "id": 20592,
       "url": "https://makestar.co/event/20592",
       "type": "PHOTOCARD",
@@ -130,6 +182,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_1_Banner_Sub.jpg_2026-09-11_101148666458_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20589,
+      "url": "https://makestar.co/event/20589",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ODD YOUTH 3rd Single [ can't go back ] SPECIAL OFFLINE&MEET&CALL EVENT PART.3",
+      "titleEn": "ODD YOUTH 3rd Single [ can't go back ] SPECIAL OFFLINE&MEET&CALL EVENT PART.3",
+      "album": "3rd Single [can't go back]",
+      "albumEn": "3rd Single [can't go back]",
+      "artist": "오드유스",
+      "artistEn": "ODD YOUTH",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.21",
+      "to": "2026.09.27",
+      "startAt": "2026-09-21T15:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.09.28",
+      "productId": 10992,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_3_Banner_Sub.jpg_2026-09-15_152641135552.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_3_Banner_Sub.jpg_2026-09-15_152641135552_thumb.jpeg"
       }
     },
     {
@@ -393,6 +471,32 @@
       }
     },
     {
+      "id": 20154,
+      "url": "https://makestar.co/event/20154",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KO1KEYZ DEBUT SINGLE 「KO1KEYZ」 (KR) 발매 기념 대면 사인회 & 1:1 영상 통화 이벤트",
+      "titleEn": "KO1KEYZ DEBUT SINGLE 「KO1KEYZ」 (KR) FANSIGN & 1:1 VIDEO CALL EVENT",
+      "album": "DEBUT SINGLE 「KO1KEYZ」 (KR)",
+      "albumEn": "DEBUT SINGLE 「KO1KEYZ」 (KR)",
+      "artist": "코이키즈",
+      "artistEn": "KO1KEYZ",
+      "releaseDate": "2026-10-07",
+      "from": "2026.09.21",
+      "to": "2026.09.29",
+      "startAt": "2026-09-21T14:00:00+09:00",
+      "endAt": "2026-09-29T23:59:59.999999+09:00",
+      "dday": 9,
+      "closing": false,
+      "winnerAt": "2026.09.30",
+      "productId": 11019,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_2_Thumb.png_2026-09-14_120051739670.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11019_KO1KEYZ_2_Thumb.png_2026-09-14_120051739670_thumb.jpeg"
+      }
+    },
+    {
       "id": 20122,
       "url": "https://makestar.co/event/20122",
       "type": "PHOTOCARD",
@@ -475,11 +579,6 @@
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
       "artist": "BOYNEXTDOOR",
       "album": "HOME: DELUXE"
-    },
-    {
-      "key": "JENNIE｜Fallen Angel",
-      "artist": "JENNIE",
-      "album": "Fallen Angel"
     },
     {
       "key": "i-dle (아이들)｜What a Wonderful Life",
