@@ -9,11 +9,11 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-evt20401@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20260927T145959Z
 DTEND:20260927T152959Z
-SUMMARY:BOYNEXTDOOR HOME: DELUXE — 예약 특전 포토카드 응모 마
- 감
+SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:BOYNEXTDOOR 1st Studio Album Repackage [HOME: DELUXE] (Weverse 
  Albums ver.) 발매기념 특전 증정 이벤트\nhttps://makestar.co/eve
  nt/20401
@@ -21,23 +21,23 @@ URL:https://makestar.co/event/20401
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:BOYNEXTDOOR HOME: DELUXE — 예약 특전 포토카드 응모 
- 마감 (하루 전)
+DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:BOYNEXTDOOR HOME: DELUXE — 예약 특전 포토카드 응모 
- 마감 (1시간 전)
+DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-evt20400@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20260927T145959Z
 DTEND:20260927T152959Z
-SUMMARY:BOYNEXTDOOR HOME: DELUXE — 예약 특전 포토카드 응모 마
- 감
+SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:BOYNEXTDOOR 1st Studio Album Repackage [HOME: DELUXE] (HAZE ver
  . & OVERDRIVE ver. & SPARK ver.) 발매기념 특전 증정 이벤트\nhtt
  ps://makestar.co/event/20400
@@ -45,38 +45,41 @@ URL:https://makestar.co/event/20400
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:BOYNEXTDOOR HOME: DELUXE — 예약 특전 포토카드 응모 
- 마감 (하루 전)
+DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:BOYNEXTDOOR HOME: DELUXE — 예약 특전 포토카드 응모 
- 마감 (1시간 전)
+DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-release@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261002T080700Z
 DTEND:20261002T083700Z
-SUMMARY:BOYNEXTDOOR HOME: DELUXE — 예약 배송 시작
+SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 배송 
+ 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/boynextdoor-home-deluxe.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:BOYNEXTDOOR HOME: DELUXE — 예약 배송 시작 (하루 전)
+DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 배
+ 송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:BOYNEXTDOOR HOME: DELUXE — 예약 배송 시작 (1시간 전)
+DESCRIPTION:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 배
+ 송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-junior-where-we-are-release@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261006T090100Z
 DTEND:20261006T093100Z
 SUMMARY:예성(SUPER JUNIOR) Where We Are — 예약 배송 시작
@@ -97,153 +100,179 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-evt20637@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261011T145959Z
 DTEND:20261011T152959Z
-SUMMARY:NCT WISH I SPY — 예약 특전 포토카드 응모 마감
+SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 특전 포토카드 응
+ 모 마감
 DESCRIPTION:NCT WISH 미니 4집 'I SPY' 발매기념 특전 증정 이벤
  트\nhttps://makestar.co/event/20637
 URL:https://makestar.co/event/20637
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:NCT WISH I SPY — 예약 특전 포토카드 응모 마감 (
- 하루 전)
+DESCRIPTION:엔시티 위시(NCT WISH) I SPY — 예약 특전 포토카드
+  응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:NCT WISH I SPY — 예약 특전 포토카드 응모 마감 (1
- 시간 전)
+DESCRIPTION:엔시티 위시(NCT WISH) I SPY — 예약 특전 포토카드
+  응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-release@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261012T090100Z
 DTEND:20261012T093100Z
-SUMMARY:NCT WISH I SPY — 예약 배송 시작
+SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/nct-wish-i-spy.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:NCT WISH I SPY — 예약 배송 시작 (하루 전)
+DESCRIPTION:엔시티 위시(NCT WISH) I SPY — 예약 배송 시작 (하
+ 루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:NCT WISH I SPY — 예약 배송 시작 (1시간 전)
+DESCRIPTION:엔시티 위시(NCT WISH) I SPY — 예약 배송 시작 (1시
+ 간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-random-evt20566@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
-SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' Random — 예약 특전 포토
- 카드 응모 마감
+SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 예약 
+ 특전 포토카드 응모 마감
 DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' PRE-ORDER PHOTOCARD EVENT\nht
  tps://makestar.co/event/20566
 URL:https://makestar.co/event/20566
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Random — 예약 특전 포
- 토카드 응모 마감 (하루 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 예
+ 약 특전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Random — 예약 특전 포
- 토카드 응모 마감 (1시간 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 예
+ 약 특전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-set-evt20566@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
-SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' Set — 예약 특전 포토카
- 드 응모 마감
+SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 예약 특
+ 전 포토카드 응모 마감
 DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' PRE-ORDER PHOTOCARD EVENT\nht
  tps://makestar.co/event/20566
 URL:https://makestar.co/event/20566
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Set — 예약 특전 포토
- 카드 응모 마감 (하루 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Set — 예약 특전 포토
- 카드 응모 마감 (1시간 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-evt20566@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
-SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 특전 포토카드 
- 응모 마감
+SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' PRE-ORDER PHOTOCARD EVENT\nht
  tps://makestar.co/event/20566
 URL:https://makestar.co/event/20566
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 특전 포토카
- 드 응모 마감 (하루 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 특전 포토카
- 드 응모 마감 (1시간 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-release@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261013T090000Z
 DTEND:20261013T093000Z
-SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 배송 시작
+SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배송 
+ 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive.htm
  l
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 배송 시작 (하
- 루 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배
+ 송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 배송 시작 (1
- 시간 전)
+DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배
+ 송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20260921T184448Z
+DTSTAMP:20260921T221943Z
 DTSTART:20261026T040000Z
 DTEND:20261026T043000Z
-SUMMARY:JISOO CLICK — 예약 배송 시작
+SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/jisoo-click.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:JISOO CLICK — 예약 배송 시작 (하루 전)
+DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:JISOO CLICK — 예약 배송 시작 (1시간 전)
+DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cortis-greengreen-playextended-release@kpop-album-benefits
+DTSTAMP:20260921T221943Z
+DTSTART:20261208T082000Z
+DTEND:20261208T085000Z
+SUMMARY:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 시
+ 작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/cortis-greengreen-playextended.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
+ 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
+ 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
