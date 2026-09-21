@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-21T06:20:03.650Z",
-  "lastDeep": "2026-09-21T06:20:03.650Z",
+  "checkedAt": "2026-09-21T13:08:15.141Z",
+  "lastDeep": "2026-09-21T13:08:15.141Z",
   "events": [
     {
       "id": 20748,
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20720,
+      "url": "https://makestar.co/event/20720",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "NCT 127 정규 7집 'BLINGY' 발매기념 LUCKY DRAW EVENT",
+      "titleEn": "NCT 127 The 7th Album 'BLINGY' LUCKY DRAW EVENT",
+      "album": "정규 7집 [BLINGY]",
+      "albumEn": "7th Full Album [BLINGY]",
+      "artist": "NCT 127",
+      "artistEn": "NCT 127",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.21",
+      "to": "2026.09.27",
+      "startAt": "2026-09-21T18:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10940,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_8_Sub.png_2026-09-17_115934839950.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_8_Sub.png_2026-09-17_115934839950_thumb.jpeg"
       }
     },
     {
@@ -579,11 +605,6 @@
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
       "artist": "BOYNEXTDOOR",
       "album": "HOME: DELUXE"
-    },
-    {
-      "key": "i-dle (아이들)｜What a Wonderful Life",
-      "artist": "i-dle (아이들)",
-      "album": "What a Wonderful Life"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
