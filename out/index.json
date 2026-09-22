@@ -1,6 +1,33 @@
 {
-  "stamp": "2026. 9. 22. 14:49:26",
+  "stamp": "2026. 9. 22. 15:01:34",
   "albums": [
+    {
+      "artistId": 254,
+      "artistEn": "N.Flying",
+      "album": "Still",
+      "skuCount": 4,
+      "benefit": false,
+      "deliveryDate": "2026-10-08",
+      "weversePriceMin": 14800,
+      "artist": "N.Flying",
+      "slug": "n-flying-still",
+      "versions": 12,
+      "retailers": 7,
+      "benefitCount": 3,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-08T18:00:00+09:00",
+        "rough": "16일 2시간"
+      },
+      "rowCount": 39,
+      "artistKo": "엔플라잉",
+      "artistDisplay": "엔플라잉(N.Flying)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/22/uyoZWw.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/22/uyoZWw.jpg"
+    },
     {
       "artistId": 128,
       "artistEn": "SUPER JUNIOR",
@@ -20,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-06T18:01:00+09:00",
-        "rough": "14일 3시간"
+        "rough": "14일 2시간"
       },
       "rowCount": 46,
       "artistKo": "예성",
@@ -52,33 +79,6 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/03/AU94He.jpg"
     },
     {
-      "artistId": 254,
-      "artistEn": "N.Flying",
-      "album": "Still",
-      "skuCount": 4,
-      "benefit": false,
-      "deliveryDate": "2026-10-08",
-      "weversePriceMin": 14800,
-      "artist": "N.Flying",
-      "slug": "n-flying-still",
-      "versions": 12,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-08T18:00:00+09:00",
-        "rough": "16일 3시간"
-      },
-      "rowCount": 39,
-      "artistKo": "엔플라잉",
-      "artistDisplay": "엔플라잉(N.Flying)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/22/uyoZWw.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/22/uyoZWw.jpg"
-    },
-    {
       "artistId": 155,
       "artistEn": "NCT WISH",
       "album": "I SPY",
@@ -97,7 +97,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-11T23:59:59.999999+09:00",
-        "rough": "19일 9시간"
+        "rough": "19일 8시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 위시",
@@ -124,7 +124,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "33일 22시간"
+        "rough": "33일 21시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -151,7 +151,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "20일 9시간"
+        "rough": "20일 8시간"
       },
       "rowCount": 25,
       "artistKo": "플레이브",
@@ -178,7 +178,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-27T23:59:59.999999+09:00",
-        "rough": "5일 9시간"
+        "rough": "5일 8시간"
       },
       "rowCount": 19,
       "artistKo": "보이넥스트도어",
@@ -205,7 +205,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "20일 9시간"
+        "rough": "20일 8시간"
       },
       "rowCount": 14,
       "artistKo": "플레이브",
@@ -232,7 +232,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "20일 9시간"
+        "rough": "20일 8시간"
       },
       "rowCount": 13,
       "artistKo": "플레이브",
