@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-09-22T00:59:35.210Z",
-  "lastDeep": "2026-09-22T00:59:35.210Z",
+  "checkedAt": "2026-09-22T06:01:02.343Z",
+  "lastDeep": "2026-09-22T06:01:02.343Z",
   "events": [
+    {
+      "id": 20824,
+      "url": "https://makestar.co/event/20824",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "SUNGHANBIN 1st EP [DEAD:ALIVE] PRE-ORDER PHOTOCARD EVENT",
+      "album": "미니1집 [DEAD:ALIVE]",
+      "albumEn": "1st Mini Album [DEAD:ALIVE]",
+      "artist": "성한빈",
+      "artistEn": "Sung Han Bin",
+      "releaseDate": "2026-10-12",
+      "from": "2026.09.22",
+      "to": "2026.10.11",
+      "startAt": "2026-09-22T15:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 20,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11133,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280_thumb.jpeg"
+      }
+    },
     {
       "id": 20748,
       "url": "https://makestar.co/event/20748",
@@ -26,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_16_Banner_Sub.jpg_2026-09-18_114327029146.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_16_Banner_Sub.jpg_2026-09-18_114327029146_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20740,
+      "url": "https://makestar.co/event/20740",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "OURBIRTHDAY [Our Birthday] SPECIAL OFFLINE+MEET&CALL EVENT PART.2",
+      "titleEn": "OURBIRTHDAY [Our Birthday] SPECIAL OFFLINE+MEET&CALL EVENT PART.2",
+      "album": "[Our Birthday]",
+      "albumEn": "[Our Birthday]",
+      "artist": "아워벌스데이",
+      "artistEn": "OURBIRTHDAY",
+      "releaseDate": "2026-08-19",
+      "from": "2026.09.22",
+      "to": "2026.09.24",
+      "startAt": "2026-09-22T14:00:00+09:00",
+      "endAt": "2026-09-24T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.09.28",
+      "productId": 10952,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_5_Banner_sub.png_2026-09-18_122101338104.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_5_Banner_sub.png_2026-09-18_122101338104_thumb.jpeg"
       }
     },
     {
@@ -574,6 +626,11 @@
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
+    },
+    {
+      "key": "N.Flying｜Still",
+      "artist": "N.Flying",
+      "album": "Still"
     },
     {
       "key": "BOYNEXTDOOR｜HOME: DELUXE",

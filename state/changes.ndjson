@@ -288,3 +288,6 @@
 {"at":"2026-09-21T18:41:30.440Z","type":"event.gone","label":"영상통화 팬사인회","artist":"트렌드지","album":"6th Single Album [On My Knees] ","id":20523}
 {"at":"2026-09-21T22:15:36.837Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
 {"at":"2026-09-22T00:59:35.210Z","type":"album.gone","artist":"CORTIS","album":"GREENGREEN_playextended"}
+{"at":"2026-09-22T06:01:02.343Z","type":"event.new","label":"예약 특전 포토카드","artist":"성한빈","album":"미니1집 [DEAD:ALIVE]","id":20824,"url":"https://makestar.co/event/20824","endAt":"2026-10-11T23:59:59.999999+09:00"}
+{"at":"2026-09-22T06:01:02.343Z","type":"event.new","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":20740,"url":"https://makestar.co/event/20740","endAt":"2026-09-24T23:59:59.999999+09:00"}
+{"at":"2026-09-22T06:01:02.343Z","type":"album.new","artist":"N.Flying","album":"Still"}
