@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-23T00:36:43.707Z",
-  "lastDeep": "2026-09-23T00:36:43.707Z",
+  "checkedAt": "2026-09-23T05:11:53.436Z",
+  "lastDeep": "2026-09-23T05:11:53.436Z",
   "events": [
     {
       "id": 20826,
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20758,
+      "url": "https://makestar.co/event/20758",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발매기념 특전 증정 이벤트",
+      "titleEn": "JEONGHANXJOSHUA (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' SPECIAL GIVEAWAY EVENT",
+      "album": "1st Mini Album ‘DREAMSCAPE'",
+      "albumEn": "1st Mini Album ‘DREAMSCAPE'",
+      "artist": "정한X조슈아 (SEVENTEEN)",
+      "artistEn": "JEONGHANXJOSHUA (SEVENTEEN)",
+      "releaseDate": "2026-10-19",
+      "from": "2026.09.23",
+      "to": "2026.10.18",
+      "startAt": "2026-09-23T11:00:00+09:00",
+      "endAt": "2026-10-18T23:59:59.999999+09:00",
+      "dday": 26,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11118,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11118_JEONGHAN_X_JOSHUA_1_Banner_sub.png_2026-09-18_112603872552.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11118_JEONGHAN_X_JOSHUA_1_Banner_sub.png_2026-09-18_112603872552_thumb.jpeg"
       }
     },
     {
@@ -130,6 +156,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_8_Sub.png_2026-09-17_115934839950.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_8_Sub.png_2026-09-17_115934839950_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20714,
+      "url": "https://makestar.co/event/20714",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> FANSIGN&SPECIAL&PHOTO EVENT IN TAIPEI",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> FANSIGN&SPECIAL&PHOTO EVENT IN TAIPEI",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.23",
+      "to": "2026.09.27",
+      "startAt": "2026-09-23T14:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.28",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_11_banner_Sub.png_2026-09-18_184015173382.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_11_banner_Sub.png_2026-09-18_184015173382_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20681,
+      "url": "https://makestar.co/event/20681",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "MW:MEU 1st Mini Album [With U] VIDEO CALL EVENT",
+      "titleEn": "MW:MEU 1st Mini Album [With U] VIDEO CALL EVENT",
+      "album": "미니 1집 With U",
+      "albumEn": "1st Mini Album WithU",
+      "artist": "뮤",
+      "artistEn": "MW:MEU",
+      "releaseDate": "2026-09-15",
+      "from": "2026.09.23",
+      "to": "2026.09.28",
+      "startAt": "2026-09-23T12:00:00+09:00",
+      "endAt": "2026-09-28T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": "2026.09.29",
+      "productId": 11002,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_3_Banner_Sub.png_2026-09-17_153819478387.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_3_Banner_Sub.png_2026-09-17_153819478387_thumb.jpeg"
       }
     },
     {
@@ -610,6 +688,21 @@
       "key": "BOYNEXTDOOR｜HOME: DELUXE",
       "artist": "BOYNEXTDOOR",
       "album": "HOME: DELUXE"
+    },
+    {
+      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "artist": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
+    },
+    {
+      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
+      "artist": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver."
+    },
+    {
+      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
+      "artist": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
