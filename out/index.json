@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 23. 00:42:55",
+  "stamp": "2026. 9. 23. 14:12:22",
   "albums": [
     {
       "artistId": 254,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "15일 17시간"
+        "rough": "15일 3시간"
       },
       "rowCount": 40,
       "artistKo": "엔플라잉",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-06T18:01:00+09:00",
-        "rough": "13일 17시간"
+        "rough": "13일 3시간"
       },
       "rowCount": 46,
       "artistKo": "예성",
@@ -68,11 +68,11 @@
       "versions": 9,
       "retailers": 7,
       "benefitCount": 2,
-      "soldCount": 1,
+      "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": null,
-      "rowCount": 52,
+      "rowCount": 51,
       "artistKo": "튜이드",
       "artistDisplay": "튜이드(TUIDE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/c49d8ca8ce94aa8358a627e98c704dd4.png",
@@ -97,7 +97,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-11T23:59:59.999999+09:00",
-        "rough": "18일 23시간"
+        "rough": "18일 9시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 위시",
@@ -124,7 +124,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "33일 12시간"
+        "rough": "32일 22시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -151,7 +151,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "19일 23시간"
+        "rough": "19일 9시간"
       },
       "rowCount": 25,
       "artistKo": "플레이브",
@@ -178,9 +178,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-09-27T23:59:59.999999+09:00",
-        "rough": "4일 23시간"
+        "rough": "4일 9시간"
       },
-      "rowCount": 19,
+      "rowCount": 21,
       "artistKo": "보이넥스트도어",
       "artistDisplay": "보이넥스트도어(BOYNEXTDOOR)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/OYHDQg.jpg",
@@ -205,13 +205,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "19일 23시간"
+        "rough": "19일 9시간"
       },
       "rowCount": 14,
       "artistKo": "플레이브",
       "artistDisplay": "플레이브(PLAVE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/QcE5dS.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/QcE5dS.png"
+    },
+    {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 22225,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-dream-record-ver",
+      "versions": 5,
+      "retailers": 4,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-18T23:59:59.999999+09:00",
+        "rough": "25일 9시간"
+      },
+      "rowCount": 8,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg"
     },
     {
       "artistId": 167,
@@ -232,13 +259,67 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "19일 23시간"
+        "rough": "19일 9시간"
       },
       "rowCount": 13,
       "artistKo": "플레이브",
       "artistDisplay": "플레이브(PLAVE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg"
+    },
+    {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 37465,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-daydreamers-ver",
+      "versions": 5,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 2,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-18T23:59:59.999999+09:00",
+        "rough": "25일 9시간"
+      },
+      "rowCount": 13,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg"
+    },
+    {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 37465,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-dreamchasers-ver",
+      "versions": 5,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-18T23:59:59.999999+09:00",
+        "rough": "25일 9시간"
+      },
+      "rowCount": 11,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg"
     },
     {
       "artistId": 25,

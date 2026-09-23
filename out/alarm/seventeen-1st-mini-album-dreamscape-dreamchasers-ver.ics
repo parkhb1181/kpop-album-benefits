@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kpop-album-benefits//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. 
+ 마감
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-dreamchasers-ver-evt20758@kpop-albu
+ m-benefits
+DTSTAMP:20260923T051653Z
+DTSTART:20261018T145959Z
+DTEND:20261018T152959Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
+ 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
+URL:https://makestar.co/event/20758
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-dreamchasers-ver-release@kpop-album
+ -benefits
+DTSTAMP:20260923T051653Z
+DTSTART:20261023T080200Z
+DTEND:20261023T083200Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. — 예
+ 약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
+ -dreamchasers-ver.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

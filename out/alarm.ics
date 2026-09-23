@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-evt20401@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20260927T145959Z
 DTEND:20260927T152959Z
 SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특전 
@@ -33,7 +33,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-evt20400@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20260927T145959Z
 DTEND:20260927T152959Z
 SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 특전 
@@ -57,7 +57,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:boynextdoor-home-deluxe-release@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261002T080700Z
 DTEND:20261002T083700Z
 SUMMARY:보이넥스트도어(BOYNEXTDOOR) HOME: DELUXE — 예약 배송 
@@ -79,7 +79,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-junior-where-we-are-release@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261006T090100Z
 DTEND:20261006T093100Z
 SUMMARY:예성(SUPER JUNIOR) Where We Are — 예약 배송 시작
@@ -100,7 +100,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:n-flying-still-release@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261008T090000Z
 DTEND:20261008T093000Z
 SUMMARY:엔플라잉(N.Flying) Still — 예약 배송 시작
@@ -121,7 +121,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-evt20637@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261011T145959Z
 DTEND:20261011T152959Z
 SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 특전 포토카드 응
@@ -144,7 +144,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-release@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261012T090100Z
 DTEND:20261012T093100Z
 SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 배송 시작
@@ -165,7 +165,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-random-evt20566@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 예약 
@@ -188,7 +188,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-set-evt20566@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 예약 특
@@ -211,7 +211,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-evt20566@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261012T145959Z
 DTEND:20261012T152959Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 특전 
@@ -234,7 +234,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-release@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261013T090000Z
 DTEND:20261013T093000Z
 SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배송 
@@ -256,8 +256,152 @@ DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-dream-record-ver-evt20758@kpop-albu
+ m-benefits
+DTSTAMP:20260923T051739Z
+DTSTART:20261018T145959Z
+DTEND:20261018T152959Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
+ 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
+URL:https://makestar.co/event/20758
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-daydreamers-ver-evt20758@kpop-album
+ -benefits
+DTSTAMP:20260923T051739Z
+DTSTART:20261018T145959Z
+DTEND:20261018T152959Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
+ 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
+URL:https://makestar.co/event/20758
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
+ 예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
+ 예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-dreamchasers-ver-evt20758@kpop-albu
+ m-benefits
+DTSTAMP:20260923T051739Z
+DTSTART:20261018T145959Z
+DTEND:20261018T152959Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
+ 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
+URL:https://makestar.co/event/20758
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-dream-record-ver-release@kpop-album
+ -benefits
+DTSTAMP:20260923T051739Z
+DTSTART:20261023T080200Z
+DTEND:20261023T083200Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. — 예
+ 약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
+ -dream-record-ver.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
+  예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
+  예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-daydreamers-ver-release@kpop-album-
+ benefits
+DTSTAMP:20260923T051739Z
+DTSTART:20261023T080200Z
+DTEND:20261023T083200Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 예
+ 약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
+ -daydreamers-ver.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
+ 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
+ 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seventeen-1st-mini-album-dreamscape-dreamchasers-ver-release@kpop-album
+ -benefits
+DTSTAMP:20260923T051739Z
+DTSTART:20261023T080200Z
+DTEND:20261023T083200Z
+SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. — 예
+ 약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
+ -dreamchasers-ver.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
+  예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20260922T154731Z
+DTSTAMP:20260923T051739Z
 DTSTART:20261026T040000Z
 DTEND:20261026T043000Z
 SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
