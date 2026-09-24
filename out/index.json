@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 24. 23:37:11",
+  "stamp": "2026. 9. 25. 00:22:55",
   "albums": [
     {
       "artistId": 254,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "13일 18시간"
+        "rough": "13일 17시간"
       },
       "rowCount": 42,
       "artistKo": "엔플라잉",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-06T18:01:00+09:00",
-        "rough": "11일 18시간"
+        "rough": "11일 17시간"
       },
       "rowCount": 46,
       "artistKo": "예성",
@@ -97,7 +97,7 @@
       "nextDeadline": {
         "label": "FANSIGN&PHOTO EVENT 응모 마감",
         "at": "2026-09-27T23:59:59.999999+09:00",
-        "rough": "3일 0시간"
+        "rough": "2일 23시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 위시",
@@ -124,7 +124,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "31일 13시간"
+        "rough": "31일 12시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -151,7 +151,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "18일 0시간"
+        "rough": "17일 23시간"
       },
       "rowCount": 25,
       "artistKo": "플레이브",
@@ -178,7 +178,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "18일 0시간"
+        "rough": "17일 23시간"
       },
       "rowCount": 14,
       "artistKo": "플레이브",
@@ -205,7 +205,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "24일 0시간"
+        "rough": "23일 23시간"
       },
       "rowCount": 8,
       "artistKo": null,
@@ -232,7 +232,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "18일 0시간"
+        "rough": "17일 23시간"
       },
       "rowCount": 13,
       "artistKo": "플레이브",
@@ -259,7 +259,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "24일 0시간"
+        "rough": "23일 23시간"
       },
       "rowCount": 13,
       "artistKo": null,
@@ -286,7 +286,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "24일 0시간"
+        "rough": "23일 23시간"
       },
       "rowCount": 11,
       "artistKo": null,
