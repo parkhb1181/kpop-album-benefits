@@ -305,3 +305,5 @@
 {"at":"2026-09-23T10:00:01.069Z","type":"event.new","label":"영상통화 팬사인회","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":20599,"url":"https://makestar.co/event/20599","endAt":"2026-09-27T23:59:59.999999+09:00"}
 {"at":"2026-09-23T18:49:40.441Z","type":"event.gone","label":"영상통화 팬사인회","artist":"키스오브라이프","album":"3rd Single [SWEAT]","id":20595}
 {"at":"2026-09-24T05:15:47.932Z","type":"album.gone","artist":"BOYNEXTDOOR","album":"HOME: DELUXE"}
+{"at":"2026-09-24T10:20:38.768Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"NCT WISH","album":"미니 4집 [I SPY]","id":20759,"url":"https://makestar.co/event/20759","endAt":"2026-09-27T23:59:59.999999+09:00"}
+{"at":"2026-09-24T10:20:38.768Z","type":"event.new","label":"영상통화 팬사인회","artist":"이한결","album":"1st mini album [NOISE]","id":20719,"url":"https://makestar.co/event/20719","endAt":"2026-09-28T23:59:59.999999+09:00"}

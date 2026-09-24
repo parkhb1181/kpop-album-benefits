@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-24T05:15:47.932Z",
-  "lastDeep": "2026-09-24T05:15:47.932Z",
+  "checkedAt": "2026-09-24T10:20:38.768Z",
+  "lastDeep": "2026-09-24T10:20:38.768Z",
   "events": [
     {
       "id": 20826,
@@ -78,6 +78,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20759,
+      "url": "https://makestar.co/event/20759",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT WISH The 4th Mini Album 'I SPY' FANSIGN&PHOTO EVENT IN TAIPEI",
+      "titleEn": "NCT WISH The 4th Mini Album 'I SPY' FANSIGN&PHOTO EVENT IN TAIPEI",
+      "album": "미니 4집 [I SPY]",
+      "albumEn": "4th Mini Album [I SPY]",
+      "artist": "NCT WISH",
+      "artistEn": "NCT WISH",
+      "releaseDate": "2026-10-12",
+      "from": "2026.09.24",
+      "to": "2026.09.27",
+      "startAt": "2026-09-24T15:00:00+09:00",
+      "endAt": "2026-09-27T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.09.28",
+      "productId": 11101,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_4_Banner_thumb.jpg_2026-09-22_095052007376.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_4_Banner_thumb.jpg_2026-09-22_095052007376_thumb.jpeg"
       }
     },
     {
@@ -182,6 +208,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_8_Sub.png_2026-09-17_115934839950.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_8_Sub.png_2026-09-17_115934839950_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20719,
+      "url": "https://makestar.co/event/20719",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "LEE HAN GYUL 1st Mini Album [NOISE] PRE-ORDER SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "LEE HAN GYUL 1st Mini Album [NOISE] PRE-ORDER SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "1st mini album [NOISE]",
+      "albumEn": "1st mini album [NOISE]",
+      "artist": "이한결",
+      "artistEn": "LEE HANGYUL",
+      "releaseDate": "2026-10-16",
+      "from": "2026.09.24",
+      "to": "2026.09.28",
+      "startAt": "2026-09-24T15:00:00+09:00",
+      "endAt": "2026-09-28T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.09.29",
+      "productId": 11108,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11108_LEE_HANGYUL_1_banner_sub.png_2026-09-22_125739126659.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11108_LEE_HANGYUL_1_banner_sub.png_2026-09-22_125739126659_thumb.jpeg"
       }
     },
     {
