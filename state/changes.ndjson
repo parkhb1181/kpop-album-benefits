@@ -304,3 +304,4 @@
 {"at":"2026-09-23T10:00:01.069Z","type":"event.new","label":"PHOTO EVENT","artist":"도경수","album":"미니 4집 [DOPAMINE]","id":20694,"url":"https://makestar.co/event/20694","endAt":"2026-09-26T23:59:59.999999+09:00"}
 {"at":"2026-09-23T10:00:01.069Z","type":"event.new","label":"영상통화 팬사인회","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":20599,"url":"https://makestar.co/event/20599","endAt":"2026-09-27T23:59:59.999999+09:00"}
 {"at":"2026-09-23T18:49:40.441Z","type":"event.gone","label":"영상통화 팬사인회","artist":"키스오브라이프","album":"3rd Single [SWEAT]","id":20595}
+{"at":"2026-09-24T05:15:47.932Z","type":"album.gone","artist":"BOYNEXTDOOR","album":"HOME: DELUXE"}
