@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-09-28T06:23:31.341Z",
-  "lastDeep": "2026-09-28T06:23:31.341Z",
+  "checkedAt": "2026-09-28T14:18:31.956Z",
+  "lastDeep": "2026-09-28T14:18:31.956Z",
   "events": [
+    {
+      "id": 20858,
+      "url": "https://makestar.co/event/20858",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "DAILY:DIRECTION THE 1st MINI ALBUM [WHICH WAY] 발매기념 특전 증정 이벤트",
+      "titleEn": "DAILY:DIRECTION THE 1st MINI ALBUM [WHICH WAY] SPECIAL GIVEAWAY EVENT",
+      "album": "1st MINI ALBUM [WHICH WAY]",
+      "albumEn": "1st MINI ALBUM [WHICH WAY]",
+      "artist": "데일리디렉션",
+      "artistEn": "DAILY:DIRECTION",
+      "releaseDate": "2026-10-14",
+      "from": "2026.09.28",
+      "to": "2026.10.13",
+      "startAt": "2026-09-28T16:00:00+09:00",
+      "endAt": "2026-10-13T23:59:59.999999+09:00",
+      "dday": 16,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11139,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11139_DAILYDIRECTION_2_Banner_Thumb.png_2026-09-23_093407860805.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11139_DAILYDIRECTION_2_Banner_Thumb.png_2026-09-23_093407860805_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20857,
+      "url": "https://makestar.co/event/20857",
+      "type": "SHOWCASE",
+      "label": "SHOWCASE",
+      "fansign": false,
+      "title": "DAILY:DIRECTION THE 1st MINI ALBUM [WHICH WAY] FAN SHOWCASE INVITATION EVENT",
+      "titleEn": "DAILY:DIRECTION THE 1st MINI ALBUM [WHICH WAY] FAN SHOWCASE INVITATION EVENT",
+      "album": "1st MINI ALBUM [WHICH WAY]",
+      "albumEn": "1st MINI ALBUM [WHICH WAY]",
+      "artist": "데일리디렉션",
+      "artistEn": "DAILY:DIRECTION",
+      "releaseDate": "2026-10-14",
+      "from": "2026.09.28",
+      "to": "2026.10.09",
+      "startAt": "2026-09-28T16:00:00+09:00",
+      "endAt": "2026-10-09T23:59:59.999999+09:00",
+      "dday": 12,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 11139,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11139_DAILYDIRECTION_1_Banner_Thumb.png_2026-09-23_102721418255.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11139_DAILYDIRECTION_1_Banner_Thumb.png_2026-09-23_102721418255_thumb.jpeg"
+      }
+    },
     {
       "id": 20851,
       "url": "https://makestar.co/event/20851",
@@ -603,9 +655,24 @@
   ],
   "albums": [
     {
+      "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
+      "artist": "ILLIT",
+      "album": "5th Mini Album ‘BREAK EVEN’"
+    },
+    {
       "key": "SUPER JUNIOR｜Where We Are",
       "artist": "SUPER JUNIOR",
       "album": "Where We Are"
+    },
+    {
+      "key": "ILLIT｜EARLY-BIRD",
+      "artist": "ILLIT",
+      "album": "EARLY-BIRD"
+    },
+    {
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’",
+      "artist": "SEVENTEEN",
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
@@ -618,6 +685,21 @@
       "album": "5th Mini Album 'HYPERDRIVE' Set"
     },
     {
+      "key": "ILLIT｜ILLIT 5th Mini Album ‘BREAK EVEN’",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th Mini Album ‘BREAK EVEN’"
+    },
+    {
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "artist": "SEVENTEEN",
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
+    },
+    {
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Weverse Albums ver.",
+      "artist": "SEVENTEEN",
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Weverse Albums ver."
+    },
+    {
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
@@ -628,34 +710,19 @@
       "album": "Still"
     },
     {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN'"
-    },
-    {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
-    },
-    {
       "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
       "artist": "TVXQ!",
       "album": "The 3rd Mini Album 'All Of My Life'"
     },
     {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
+      "key": "DAILY:DIRECTION｜WHICH WAY",
+      "artist": "DAILY:DIRECTION",
+      "album": "WHICH WAY"
     },
     {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ KiT Ver.",
       "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver."
-    },
-    {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ KiT Ver."
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
