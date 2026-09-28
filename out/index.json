@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 9. 29. 02:56:42",
+  "stamp": "2026. 9. 29. 05:40:12",
   "albums": [
     {
       "artistId": 254,
@@ -12,48 +12,21 @@
       "artist": "N.Flying",
       "slug": "n-flying-still",
       "versions": 14,
-      "retailers": 7,
-      "benefitCount": 3,
+      "retailers": 6,
+      "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "9일 15시간"
+        "rough": "9일 12시간"
       },
-      "rowCount": 42,
+      "rowCount": 38,
       "artistKo": "엔플라잉",
       "artistDisplay": "엔플라잉(N.Flying)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/22/uyoZWw.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/22/uyoZWw.jpg"
-    },
-    {
-      "artistId": 128,
-      "artistEn": "SUPER JUNIOR",
-      "album": "Where We Are",
-      "skuCount": 5,
-      "benefit": true,
-      "deliveryDate": "2026-10-06",
-      "weversePriceMin": 14700,
-      "artist": "SUPER JUNIOR",
-      "slug": "super-junior-where-we-are",
-      "versions": 11,
-      "retailers": 6,
-      "benefitCount": 3,
-      "soldCount": 9,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-06T18:01:00+09:00",
-        "rough": "7일 15시간"
-      },
-      "rowCount": 46,
-      "artistKo": "예성",
-      "artistDisplay": "예성(SUPER JUNIOR)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fb504e9108d4bb57eecf3a887776fa50.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dmugNd.png"
     },
     {
       "artistId": 282,
@@ -66,7 +39,7 @@
       "artist": "DAILY:DIRECTION",
       "slug": "daily-direction-which-way",
       "versions": 5,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 2,
@@ -74,13 +47,40 @@
       "nextDeadline": {
         "label": "SHOWCASE 응모 마감",
         "at": "2026-10-09T23:59:59.999999+09:00",
-        "rough": "10일 20시간"
+        "rough": "10일 18시간"
       },
-      "rowCount": 24,
-      "artistKo": "데일리:디렉션",
-      "artistDisplay": "데일리:디렉션(DAILY:DIRECTION)",
+      "rowCount": 21,
+      "artistKo": null,
+      "artistDisplay": "DAILY:DIRECTION",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/UaA57g.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/UaA57g.jpg"
+    },
+    {
+      "artistId": 128,
+      "artistEn": "SUPER JUNIOR",
+      "album": "Where We Are",
+      "skuCount": 5,
+      "benefit": true,
+      "deliveryDate": "2026-10-06",
+      "weversePriceMin": 14700,
+      "artist": "SUPER JUNIOR",
+      "slug": "super-junior-where-we-are",
+      "versions": 6,
+      "retailers": 5,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-06T18:01:00+09:00",
+        "rough": "7일 12시간"
+      },
+      "rowCount": 26,
+      "artistKo": "예성",
+      "artistDisplay": "예성(SUPER JUNIOR)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fb504e9108d4bb57eecf3a887776fa50.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/QYdzg2.jpg"
     },
     {
       "artistId": 155,
@@ -93,7 +93,7 @@
       "artist": "NCT WISH",
       "slug": "nct-wish-i-spy",
       "versions": 9,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -101,40 +101,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-11T23:59:59.999999+09:00",
-        "rough": "12일 21시간"
+        "rough": "12일 18시간"
       },
-      "rowCount": 48,
-      "artistKo": "엔시티 위시",
-      "artistDisplay": "엔시티 위시(NCT WISH)",
+      "rowCount": 41,
+      "artistKo": null,
+      "artistDisplay": "NCT WISH",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/14/masfyA.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/14/masfyA.jpg"
-    },
-    {
-      "artistId": 215,
-      "artistEn": "JISOO",
-      "album": "CLICK",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-11-30",
-      "weversePriceMin": 49000,
-      "artist": "JISOO",
-      "slug": "jisoo-click",
-      "versions": 4,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-26T13:00:00+09:00",
-        "rough": "27일 9시간"
-      },
-      "rowCount": 19,
-      "artistKo": "지수",
-      "artistDisplay": "지수(JISOO)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
     },
     {
       "artistId": 167,
@@ -147,7 +120,7 @@
       "artist": "PLAVE",
       "slug": "plave-5th-mini-album-hyperdrive",
       "versions": 5,
-      "retailers": 5,
+      "retailers": 4,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -155,40 +128,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "13일 20시간"
+        "rough": "13일 18시간"
       },
-      "rowCount": 25,
-      "artistKo": "플레이브",
-      "artistDisplay": "플레이브(PLAVE)",
+      "rowCount": 20,
+      "artistKo": null,
+      "artistDisplay": "PLAVE",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/b9d663369814535fb40fb1feef193192.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg"
     },
     {
-      "artistId": 167,
-      "artistEn": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE' Set",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-10-13",
-      "weversePriceMin": 44500,
-      "artist": "PLAVE",
-      "slug": "plave-5th-mini-album-hyperdrive-set",
-      "versions": 5,
-      "retailers": 4,
+      "artistId": 215,
+      "artistEn": "JISOO",
+      "album": "CLICK",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-11-30",
+      "weversePriceMin": 49000,
+      "artist": "JISOO",
+      "slug": "jisoo-click",
+      "versions": 4,
+      "retailers": 6,
       "benefitCount": 0,
       "soldCount": 1,
-      "eventCount": 1,
+      "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "13일 21시간"
+        "label": "예약 배송 시작",
+        "at": "2026-10-26T13:00:00+09:00",
+        "rough": "27일 7시간"
       },
-      "rowCount": 14,
-      "artistKo": "플레이브",
-      "artistDisplay": "플레이브(PLAVE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/QcE5dS.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/QcE5dS.png"
+      "rowCount": 16,
+      "artistKo": null,
+      "artistDisplay": "JISOO",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
     },
     {
       "artistId": 7,
@@ -209,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "19일 20시간"
+        "rough": "19일 18시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -236,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "26일 21시간"
+        "rough": "26일 18시간"
       },
       "rowCount": 14,
       "artistKo": null,
@@ -247,13 +220,13 @@
     {
       "artistId": 167,
       "artistEn": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE' Random",
+      "album": "5th Mini Album 'HYPERDRIVE' Set",
       "skuCount": 2,
       "benefit": true,
       "deliveryDate": "2026-10-13",
-      "weversePriceMin": 8900,
+      "weversePriceMin": 44500,
       "artist": "PLAVE",
-      "slug": "plave-5th-mini-album-hyperdrive-random",
+      "slug": "plave-5th-mini-album-hyperdrive-set",
       "versions": 5,
       "retailers": 3,
       "benefitCount": 0,
@@ -263,13 +236,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-12T23:59:59.999999+09:00",
-        "rough": "13일 21시간"
+        "rough": "13일 18시간"
       },
-      "rowCount": 13,
-      "artistKo": "플레이브",
-      "artistDisplay": "플레이브(PLAVE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg"
+      "rowCount": 9,
+      "artistKo": null,
+      "artistDisplay": "PLAVE",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/QcE5dS.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/QcE5dS.png"
     },
     {
       "artistId": 7,
@@ -290,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "19일 20시간"
+        "rough": "19일 18시간"
       },
       "rowCount": 12,
       "artistKo": null,
@@ -317,13 +290,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "19일 20시간"
+        "rough": "19일 18시간"
       },
       "rowCount": 10,
       "artistKo": null,
       "artistDisplay": "SEVENTEEN",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg"
+    },
+    {
+      "artistId": 167,
+      "artistEn": "PLAVE",
+      "album": "5th Mini Album 'HYPERDRIVE' Random",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-10-13",
+      "weversePriceMin": 8900,
+      "artist": "PLAVE",
+      "slug": "plave-5th-mini-album-hyperdrive-random",
+      "versions": 5,
+      "retailers": 2,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-12T23:59:59.999999+09:00",
+        "rough": "13일 18시간"
+      },
+      "rowCount": 8,
+      "artistKo": null,
+      "artistDisplay": "PLAVE",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/17/l8zexp.jpg"
     },
     {
       "artistId": 132,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-19T18:01:00+09:00",
-        "rough": "20일 15시간"
+        "rough": "20일 12시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "26일 20시간"
+        "rough": "26일 18시간"
       },
       "rowCount": 6,
       "artistKo": null,
