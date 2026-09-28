@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-28T14:18:31.956Z",
-  "lastDeep": "2026-09-28T14:18:31.956Z",
+  "checkedAt": "2026-09-28T20:39:36.049Z",
+  "lastDeep": "2026-09-28T20:39:36.049Z",
   "events": [
     {
       "id": 20858,
@@ -19,7 +19,7 @@
       "to": "2026.10.13",
       "startAt": "2026-09-28T16:00:00+09:00",
       "endAt": "2026-10-13T23:59:59.999999+09:00",
-      "dday": 16,
+      "dday": 15,
       "closing": false,
       "winnerAt": null,
       "productId": 11139,
@@ -45,7 +45,7 @@
       "to": "2026.10.09",
       "startAt": "2026-09-28T16:00:00+09:00",
       "endAt": "2026-10-09T23:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": "2026.10.12",
       "productId": 11139,
@@ -71,7 +71,7 @@
       "to": "2026.11.01",
       "startAt": "2026-09-28T11:00:00+09:00",
       "endAt": "2026-11-01T23:59:59.999999+09:00",
-      "dday": 35,
+      "dday": 34,
       "closing": false,
       "winnerAt": "2026.11.02",
       "productId": 11105,
@@ -97,39 +97,13 @@
       "to": "2026.09.30",
       "startAt": "2026-09-28T15:00:00+09:00",
       "endAt": "2026-09-30T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.01",
       "productId": 10867,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_17_Banner_Sub.jpg_2026-09-23_113606882685.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_17_Banner_Sub.jpg_2026-09-23_113606882685_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20826,
-      "url": "https://makestar.co/event/20826",
-      "type": "LUCKYDRAW",
-      "label": "럭키드로우",
-      "fansign": false,
-      "title": "Hearts2Hearts 미니 2집 'Lemon Tang' 발매기념 LUCKY DRAW EVENT",
-      "titleEn": "Hearts2Hearts 2nd Mini Album 'Lemon Tang' LUCKY DRAW EVENT",
-      "album": "미니 2집 [Lemon Tang]",
-      "albumEn": "2nd Mini Album [Lemon Tang]",
-      "artist": "Hearts2Hearts",
-      "artistEn": "Hearts2Hearts",
-      "releaseDate": "2026-06-22",
-      "from": "2026.09.22",
-      "to": "2026.09.28",
-      "startAt": "2026-09-22T18:00:00+09:00",
-      "endAt": "2026-09-28T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 10715,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_27_Sub.png_2026-09-01_125451316407_thumb.jpeg"
       }
     },
     {
@@ -149,7 +123,7 @@
       "to": "2026.10.01",
       "startAt": "2026-09-23T15:00:00+09:00",
       "endAt": "2026-10-01T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.10.02",
       "productId": 11133,
@@ -175,7 +149,7 @@
       "to": "2026.10.11",
       "startAt": "2026-09-22T15:00:00+09:00",
       "endAt": "2026-10-11T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11133,
@@ -201,8 +175,8 @@
       "to": "2026.09.30",
       "startAt": "2026-09-28T14:00:00+09:00",
       "endAt": "2026-09-30T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.01",
       "productId": 11015,
       "image": {
@@ -227,7 +201,7 @@
       "to": "2026.10.18",
       "startAt": "2026-09-23T11:00:00+09:00",
       "endAt": "2026-10-18T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11118,
@@ -253,7 +227,7 @@
       "to": "2026.10.25",
       "startAt": "2026-09-28T11:00:00+09:00",
       "endAt": "2026-10-25T23:59:59.999999+09:00",
-      "dday": 28,
+      "dday": 27,
       "closing": false,
       "winnerAt": null,
       "productId": 11114,
@@ -279,39 +253,13 @@
       "to": "2026.10.18",
       "startAt": "2026-09-21T12:00:00+09:00",
       "endAt": "2026-10-18T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": "2026.10.19",
       "productId": 11113,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20719,
-      "url": "https://makestar.co/event/20719",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "LEE HAN GYUL 1st Mini Album [NOISE] PRE-ORDER SPECIAL OFFLINE&MEET&CALL EVENT",
-      "titleEn": "LEE HAN GYUL 1st Mini Album [NOISE] PRE-ORDER SPECIAL OFFLINE&MEET&CALL EVENT",
-      "album": "1st mini album [NOISE]",
-      "albumEn": "1st mini album [NOISE]",
-      "artist": "이한결",
-      "artistEn": "LEE HANGYUL",
-      "releaseDate": "2026-10-16",
-      "from": "2026.09.24",
-      "to": "2026.09.28",
-      "startAt": "2026-09-24T15:00:00+09:00",
-      "endAt": "2026-09-28T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.29",
-      "productId": 11108,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11108_LEE_HANGYUL_1_banner_sub.png_2026-09-22_125739126659.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11108_LEE_HANGYUL_1_banner_sub.png_2026-09-22_125739126659_thumb.jpeg"
       }
     },
     {
@@ -331,39 +279,13 @@
       "to": "2026.09.30",
       "startAt": "2026-09-28T10:00:00+09:00",
       "endAt": "2026-09-30T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.01",
       "productId": 10965,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_10_banner_Sub.jpg_2026-09-17_173341044817.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_10_banner_Sub.jpg_2026-09-17_173341044817_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20681,
-      "url": "https://makestar.co/event/20681",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "MW:MEU 1st Mini Album [With U] VIDEO CALL EVENT",
-      "titleEn": "MW:MEU 1st Mini Album [With U] VIDEO CALL EVENT",
-      "album": "미니 1집 With U",
-      "albumEn": "1st Mini Album WithU",
-      "artist": "뮤",
-      "artistEn": "MW:MEU",
-      "releaseDate": "2026-09-15",
-      "from": "2026.09.23",
-      "to": "2026.09.28",
-      "startAt": "2026-09-23T12:00:00+09:00",
-      "endAt": "2026-09-28T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.09.29",
-      "productId": 11002,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_3_Banner_Sub.png_2026-09-17_153819478387.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11002_MW_MEU_3_Banner_Sub.png_2026-09-17_153819478387_thumb.jpeg"
       }
     },
     {
@@ -383,7 +305,7 @@
       "to": "2026.10.11",
       "startAt": "2026-09-14T18:00:00+09:00",
       "endAt": "2026-10-11T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11101,
@@ -409,8 +331,8 @@
       "to": "2026.09.30",
       "startAt": "2026-09-28T15:00:00+09:00",
       "endAt": "2026-09-30T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.01",
       "productId": 10970,
       "image": {
@@ -435,8 +357,8 @@
       "to": "2026.09.30",
       "startAt": "2026-09-28T15:00:00+09:00",
       "endAt": "2026-09-30T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.01",
       "productId": 11093,
       "image": {
@@ -461,7 +383,7 @@
       "to": "2026.10.22",
       "startAt": "2026-09-14T11:00:00+09:00",
       "endAt": "2026-10-22T23:59:59.999999+09:00",
-      "dday": 25,
+      "dday": 24,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -487,7 +409,7 @@
       "to": "2026.10.22",
       "startAt": "2026-09-14T11:00:00+09:00",
       "endAt": "2026-10-22T23:59:59.999999+09:00",
-      "dday": 25,
+      "dday": 24,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -513,7 +435,7 @@
       "to": "2026.10.12",
       "startAt": "2026-09-17T11:00:00+09:00",
       "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 15,
+      "dday": 14,
       "closing": false,
       "winnerAt": null,
       "productId": 11091,
@@ -539,7 +461,7 @@
       "to": "2026.10.05",
       "startAt": "2026-09-08T17:00:00+09:00",
       "endAt": "2026-10-05T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.10.06",
       "productId": 11062,
@@ -565,7 +487,7 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 32,
+      "dday": 31,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
@@ -591,7 +513,7 @@
       "to": "2026.09.29",
       "startAt": "2026-09-21T14:00:00+09:00",
       "endAt": "2026-09-29T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.09.30",
       "productId": 11019,
@@ -617,7 +539,7 @@
       "to": "2026.10.06",
       "startAt": "2026-08-24T14:00:00+09:00",
       "endAt": "2026-10-06T23:59:59.999999+09:00",
-      "dday": 9,
+      "dday": 8,
       "closing": false,
       "winnerAt": null,
       "productId": 11019,
@@ -655,24 +577,9 @@
   ],
   "albums": [
     {
-      "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
-      "artist": "ILLIT",
-      "album": "5th Mini Album ‘BREAK EVEN’"
-    },
-    {
       "key": "SUPER JUNIOR｜Where We Are",
       "artist": "SUPER JUNIOR",
       "album": "Where We Are"
-    },
-    {
-      "key": "ILLIT｜EARLY-BIRD",
-      "artist": "ILLIT",
-      "album": "EARLY-BIRD"
-    },
-    {
-      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’",
-      "artist": "SEVENTEEN",
-      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
@@ -685,21 +592,6 @@
       "album": "5th Mini Album 'HYPERDRIVE' Set"
     },
     {
-      "key": "ILLIT｜ILLIT 5th Mini Album ‘BREAK EVEN’",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th Mini Album ‘BREAK EVEN’"
-    },
-    {
-      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
-      "artist": "SEVENTEEN",
-      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
-    },
-    {
-      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Weverse Albums ver.",
-      "artist": "SEVENTEEN",
-      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Weverse Albums ver."
-    },
-    {
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
@@ -708,6 +600,16 @@
       "key": "N.Flying｜Still",
       "artist": "N.Flying",
       "album": "Still"
+    },
+    {
+      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN'"
+    },
+    {
+      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
     },
     {
       "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
@@ -720,9 +622,19 @@
       "album": "WHICH WAY"
     },
     {
-      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ KiT Ver.",
+      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
       "artist": "SEVENTEEN",
-      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ KiT Ver."
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
+    },
+    {
+      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
+      "artist": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver."
+    },
+    {
+      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
+      "artist": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
