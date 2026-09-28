@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kpop-album-benefits//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TVXQ! The 3rd Mini Album 'All Of My Life' 마감
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:tvxq-the-3rd-mini-album-all-of-my-life-release@kpop-album-benefits
+DTSTAMP:20260928T062052Z
+DTSTART:20261019T090100Z
+DTEND:20261019T093100Z
+SUMMARY:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/tvxq-the-3rd-mini-album-all-of-my-l
+ ife.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시
+ 작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시
+ 작 (1시간 전)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
