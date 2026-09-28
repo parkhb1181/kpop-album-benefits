@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-09-28T00:45:22.603Z",
-  "lastDeep": "2026-09-28T00:45:22.603Z",
+  "checkedAt": "2026-09-28T06:23:31.341Z",
+  "lastDeep": "2026-09-28T06:23:31.341Z",
   "events": [
+    {
+      "id": 20851,
+      "url": "https://makestar.co/event/20851",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PRE-ORDER PHOTOCARD EVENT",
+      "album": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "albumEn": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-11-02",
+      "from": "2026.09.28",
+      "to": "2026.11.01",
+      "startAt": "2026-09-28T11:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 35,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11105,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_1_Banner_Sub.jpg_2026-09-22_170220237884.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_1_Banner_Sub.jpg_2026-09-22_170220237884_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20834,
+      "url": "https://makestar.co/event/20834",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) MINI GAME&MEET&CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) MINI GAME&MEET&CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.09.28",
+      "to": "2026.09.30",
+      "startAt": "2026-09-28T15:00:00+09:00",
+      "endAt": "2026-09-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.01",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_17_Banner_Sub.jpg_2026-09-23_113606882685.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_17_Banner_Sub.jpg_2026-09-23_113606882685_thumb.jpeg"
+      }
+    },
     {
       "id": 20826,
       "url": "https://makestar.co/event/20826",
@@ -81,6 +133,32 @@
       }
     },
     {
+      "id": 20774,
+      "url": "https://makestar.co/event/20774",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "82MAJOR(82메이저) 2ND SINGLE ALBUM [HEAT] (POCAALBUM) SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "82MAJOR(82메이저) 2ND SINGLE ALBUM [HEAT] (POCAALBUM) SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "2ND SINGLE ALBUM [HEAT]",
+      "albumEn": "2ND SINGLE ALBUM [HEAT]",
+      "artist": "82MAJOR",
+      "artistEn": "82MAJOR",
+      "releaseDate": "2026-09-01",
+      "from": "2026.09.28",
+      "to": "2026.09.30",
+      "startAt": "2026-09-28T14:00:00+09:00",
+      "endAt": "2026-09-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.01",
+      "productId": 11015,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_2_Banner_Sub.jpg_2026-09-04_142045312528.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_2_Banner_Sub.jpg_2026-09-04_142045312528_thumb.jpeg"
+      }
+    },
+    {
       "id": 20758,
       "url": "https://makestar.co/event/20758",
       "type": "PHOTOCARD",
@@ -104,6 +182,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11118_JEONGHAN_X_JOSHUA_1_Banner_sub.png_2026-09-18_112603872552.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11118_JEONGHAN_X_JOSHUA_1_Banner_sub.png_2026-09-18_112603872552_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20743,
+      "url": "https://makestar.co/event/20743",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "아일릿(ILLIT) 5th Mini Album 'BREAK EVEN' 발매기념 예약판매 특전 증정 이벤트",
+      "titleEn": "ILLIT 5th Mini Album 'BREAK EVEN' Release Celebration Pre-Order Benefit Giveaway Event",
+      "album": "[BREAK EVEN]",
+      "albumEn": "[BREAK EVEN]",
+      "artist": "아일릿",
+      "artistEn": "ILLIT",
+      "releaseDate": "2026-10-26",
+      "from": "2026.09.28",
+      "to": "2026.10.25",
+      "startAt": "2026-09-28T11:00:00+09:00",
+      "endAt": "2026-10-25T23:59:59.999999+09:00",
+      "dday": 28,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11114,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11114_ILLIT_1_Banner_Sub_v2.jpg_2026-09-28_095542347229.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11114_ILLIT_1_Banner_Sub_v2.jpg_2026-09-28_095542347229_thumb.jpeg"
       }
     },
     {
@@ -159,6 +263,32 @@
       }
     },
     {
+      "id": 20705,
+      "url": "https://makestar.co/event/20705",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NEXZ(넥스지) 미니4집 <SAUCIN'> VIDEO CALL EVENT",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> VIDEO CALL EVENT",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.28",
+      "to": "2026.09.30",
+      "startAt": "2026-09-28T10:00:00+09:00",
+      "endAt": "2026-09-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.01",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_10_banner_Sub.jpg_2026-09-17_173341044817.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_10_banner_Sub.jpg_2026-09-17_173341044817_thumb.jpeg"
+      }
+    },
+    {
       "id": 20681,
       "url": "https://makestar.co/event/20681",
       "type": "VIDEOCALL",
@@ -208,6 +338,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20608,
+      "url": "https://makestar.co/event/20608",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "In A Minute 1st Album [When the sun goes down : Midnight] MEET&CALL EVENT",
+      "titleEn": "In A Minute 1st Album [When the sun goes down : Midnight] MEET&CALL EVENT",
+      "album": "[When the sun goes down : Midnight]",
+      "albumEn": "[When the sun goes down : Midnight]",
+      "artist": "인어미닛",
+      "artistEn": "IN A MINUTE",
+      "releaseDate": "2026-09-09",
+      "from": "2026.09.28",
+      "to": "2026.09.30",
+      "startAt": "2026-09-28T15:00:00+09:00",
+      "endAt": "2026-09-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.01",
+      "productId": 10970,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_3_thumb.jpg_2026-09-22_152557927488.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_3_thumb.jpg_2026-09-22_152557927488_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20603,
+      "url": "https://makestar.co/event/20603",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ONEUS (원어스) 12TH EP [FIRST LIGHT : 井] MEET&CALL EVENT",
+      "titleEn": "ONEUS (원어스) 12TH EP [FIRST LIGHT : 井] MEET&CALL EVENT",
+      "album": "[FIRST LIGHT : 井]",
+      "albumEn": "[FIRST LIGHT : 井]",
+      "artist": "원어스",
+      "artistEn": "ONEUS",
+      "releaseDate": "2026-09-28",
+      "from": "2026.09.28",
+      "to": "2026.09.30",
+      "startAt": "2026-09-28T15:00:00+09:00",
+      "endAt": "2026-09-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.01",
+      "productId": 11093,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11093_ONEUS_1_banner_sub.jpg_2026-09-21_180532503512.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11093_ONEUS_1_banner_sub.jpg_2026-09-21_180532503512_thumb.jpeg"
       }
     },
     {
@@ -444,6 +626,21 @@
       "key": "N.Flying｜Still",
       "artist": "N.Flying",
       "album": "Still"
+    },
+    {
+      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN'"
+    },
+    {
+      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
+    },
+    {
+      "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
+      "artist": "TVXQ!",
+      "album": "The 3rd Mini Album 'All Of My Life'"
     },
     {
       "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
