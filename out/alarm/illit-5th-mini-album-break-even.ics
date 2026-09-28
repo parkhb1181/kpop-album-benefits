@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kpop-album-benefits//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ILLIT 5th Mini Album ‘BREAK EVEN’ 마감
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:illit-5th-mini-album-break-even-evt20743@kpop-album-benefits
+DTSTAMP:20260928T142040Z
+DTSTART:20261025T145959Z
+DTEND:20261025T152959Z
+SUMMARY:ILLIT 5th Mini Album ‘BREAK EVEN’ — 예약 특전 포토카
+ 드 응모 마감
+DESCRIPTION:아일릿(ILLIT) 5th Mini Album 'BREAK EVEN' 발매기념 예
+ 약판매 특전 증정 이벤트\nhttps://makestar.co/event/20743
+URL:https://makestar.co/event/20743
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:ILLIT 5th Mini Album ‘BREAK EVEN’ — 예약 특전 포토
+ 카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:ILLIT 5th Mini Album ‘BREAK EVEN’ — 예약 특전 포토
+ 카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:illit-5th-mini-album-break-even-release@kpop-album-benefits
+DTSTAMP:20260928T142040Z
+DTSTART:20261026T090000Z
+DTEND:20261026T093000Z
+SUMMARY:ILLIT 5th Mini Album ‘BREAK EVEN’ — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/illit-5th-mini-album-break-even.htm
+ l
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:ILLIT 5th Mini Album ‘BREAK EVEN’ — 예약 배송 시작 
+ (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:ILLIT 5th Mini Album ‘BREAK EVEN’ — 예약 배송 시작 
+ (1시간 전)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
