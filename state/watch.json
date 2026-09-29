@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-29T06:13:57.981Z",
-  "lastDeep": "2026-09-29T06:13:57.981Z",
+  "checkedAt": "2026-09-29T12:58:30.589Z",
+  "lastDeep": "2026-09-29T12:58:30.589Z",
   "events": [
     {
       "id": 20946,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_3_Banner_Thumb_V2.png_2026-09-29_125932961911.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_3_Banner_Thumb_V2.png_2026-09-29_125932961911_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20945,
+      "url": "https://makestar.co/event/20945",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "최강창민 미니 3집 'All Of My Life' 발매기념 특전 증정 이벤트",
+      "titleEn": "MAX CHANGMIN 3rd Mini Album 'All Of My Life' SPECIAL GIVEAWAY EVENT",
+      "album": "미니 3집 [All Of My Life]",
+      "albumEn": "3rd Mini Album [All Of My Life]",
+      "artist": "최강창민",
+      "artistEn": "MAX CHANGMIN",
+      "releaseDate": "2026-10-19",
+      "from": "2026.09.29",
+      "to": "2026.10.18",
+      "startAt": "2026-09-29T18:00:00+09:00",
+      "endAt": "2026-10-18T23:59:59.999999+09:00",
+      "dday": 20,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11146,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11146_MAX_CHANGMIN_1_Banner_thumb.jpg_2026-09-29_145157006722.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11146_MAX_CHANGMIN_1_Banner_thumb.jpg_2026-09-29_145157006722_thumb.jpeg"
       }
     },
     {
@@ -733,11 +759,6 @@
   ],
   "albums": [
     {
-      "key": "SUPER JUNIOR｜Where We Are",
-      "artist": "SUPER JUNIOR",
-      "album": "Where We Are"
-    },
-    {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
       "artist": "PLAVE",
       "album": "5th Mini Album 'HYPERDRIVE' Random"
@@ -746,6 +767,11 @@
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
       "artist": "PLAVE",
       "album": "5th Mini Album 'HYPERDRIVE' Set"
+    },
+    {
+      "key": "SUPER JUNIOR｜Where We Are",
+      "artist": "SUPER JUNIOR",
+      "album": "Where We Are"
     },
     {
       "key": "NCT WISH｜I SPY",
