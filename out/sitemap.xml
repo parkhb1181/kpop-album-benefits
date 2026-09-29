@@ -61,12 +61,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive-random</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape-daydreamers-ver</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
@@ -74,6 +68,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape-dreamchasers-ver</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive-random</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -427,12 +427,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/plave-5th-mini-album-hyperdrive-random</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/seventeen-1st-mini-album-dreamscape-daydreamers-ver</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
@@ -440,6 +434,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/seventeen-1st-mini-album-dreamscape-dreamchasers-ver</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/plave-5th-mini-album-hyperdrive-random</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
