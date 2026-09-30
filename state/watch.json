@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-30T01:35:42.455Z",
-  "lastDeep": "2026-09-30T01:35:42.455Z",
+  "checkedAt": "2026-09-30T07:28:40.246Z",
+  "lastDeep": "2026-09-30T07:28:40.246Z",
   "events": [
     {
       "id": 20946,
@@ -627,6 +627,58 @@
       }
     },
     {
+      "id": 20560,
+      "url": "https://makestar.co/event/20560",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "어센트 (ASC2NT) 2nd Mini Album [Still with you] MEET&CALL EVENT",
+      "titleEn": "어센트 (ASC2NT) 2nd Mini Album [Still with you] MEET&CALL EVENT",
+      "album": "[Still with you]",
+      "albumEn": "[Still with you]",
+      "artist": "어센트",
+      "artistEn": "ASC2NT",
+      "releaseDate": "2026-09-04",
+      "from": "2026.09.30",
+      "to": "2026.10.02",
+      "startAt": "2026-09-30T15:00:00+09:00",
+      "endAt": "2026-10-02T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 11016,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_2_Banner_Sub.png_2026-09-28_113842060260.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_2_Banner_Sub.png_2026-09-28_113842060260_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20519,
+      "url": "https://makestar.co/event/20519",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "NEXZ(넥스지) 미니4집 <SAUCIN'> LUCKY DRAW EVENT",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> LUCKY DRAW EVENT",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.09.30",
+      "to": "2026.10.07",
+      "startAt": "2026-09-30T12:00:00+09:00",
+      "endAt": "2026-10-07T23:59:59.999999+09:00",
+      "dday": 8,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_7_banner_Sub.jpg_2026-09-11_105652120131.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_7_banner_Sub.jpg_2026-09-11_105652120131_thumb.jpeg"
+      }
+    },
+    {
       "id": 20367,
       "url": "https://makestar.co/event/20367",
       "type": "PHOTOCARD",
@@ -733,6 +785,26 @@
   ],
   "albums": [
     {
+      "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
+      "artist": "ILLIT",
+      "album": "5th Mini Album ‘BREAK EVEN’"
+    },
+    {
+      "key": "ILLIT｜EARLY-BIRD",
+      "artist": "ILLIT",
+      "album": "EARLY-BIRD"
+    },
+    {
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’",
+      "artist": "SEVENTEEN",
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’"
+    },
+    {
+      "key": "BOYNEXTDOOR｜HOME: DELUXE",
+      "artist": "BOYNEXTDOOR",
+      "album": "HOME: DELUXE"
+    },
+    {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
       "artist": "PLAVE",
       "album": "5th Mini Album 'HYPERDRIVE' Random"
@@ -741,6 +813,21 @@
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
       "artist": "PLAVE",
       "album": "5th Mini Album 'HYPERDRIVE' Set"
+    },
+    {
+      "key": "ILLIT｜ILLIT 5th Mini Album ‘BREAK EVEN’",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th Mini Album ‘BREAK EVEN’"
+    },
+    {
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "artist": "SEVENTEEN",
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
+    },
+    {
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Weverse Albums ver.",
+      "artist": "SEVENTEEN",
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ Weverse Albums ver."
     },
     {
       "key": "SUPER JUNIOR｜Where We Are",
@@ -753,24 +840,14 @@
       "album": "I SPY"
     },
     {
-      "key": "N.Flying｜Still",
-      "artist": "N.Flying",
-      "album": "Still"
-    },
-    {
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
     },
     {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN'"
-    },
-    {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
+      "key": "N.Flying｜Still",
+      "artist": "N.Flying",
+      "album": "Still"
     },
     {
       "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
@@ -783,19 +860,9 @@
       "album": "WHICH WAY"
     },
     {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "key": "SEVENTEEN｜정한X조슈아 1st Mini Album ‘DREAMSCAPE’ KiT Ver.",
       "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
-    },
-    {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver."
-    },
-    {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."
+      "album": "정한X조슈아 1st Mini Album ‘DREAMSCAPE’ KiT Ver."
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
