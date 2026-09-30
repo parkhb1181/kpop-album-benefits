@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-29T22:37:25.017Z",
-  "lastDeep": "2026-09-29T22:37:25.017Z",
+  "checkedAt": "2026-09-30T01:35:42.455Z",
+  "lastDeep": "2026-09-30T01:35:42.455Z",
   "events": [
     {
       "id": 20946,
@@ -756,6 +756,11 @@
       "key": "N.Flying｜Still",
       "artist": "N.Flying",
       "album": "Still"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
