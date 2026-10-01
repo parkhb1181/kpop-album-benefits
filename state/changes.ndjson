@@ -404,3 +404,9 @@
 {"at":"2026-09-30T19:18:52.728Z","type":"event.gone","label":"영상통화 팬사인회","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":20705}
 {"at":"2026-09-30T19:18:52.728Z","type":"event.gone","label":"영상통화 팬사인회","artist":"인어미닛","album":"[When the sun goes down : Midnight]","id":20608}
 {"at":"2026-09-30T19:18:52.728Z","type":"event.gone","label":"영상통화 팬사인회","artist":"원어스","album":"[FIRST LIGHT : 井]","id":20603}
+{"at":"2026-10-01T08:55:38.771Z","type":"event.new","label":"예약 특전 포토카드","artist":"MEOVV","album":"Single Album [GO HARD]","id":21007,"url":"https://makestar.co/event/21007","endAt":"2026-10-11T23:59:59.999999+09:00"}
+{"at":"2026-10-01T08:55:38.771Z","type":"event.new","label":"예약 특전 포토카드","artist":"MEOVV","album":"Single Album [GO HARD]","id":20979,"url":"https://makestar.co/event/20979","endAt":"2026-10-11T23:59:59.999999+09:00"}
+{"at":"2026-10-01T08:55:38.771Z","type":"event.new","label":"영상통화 팬사인회","artist":"MCND","album":"7th Mini Album [Devil Youth Club]","id":20596,"url":"https://makestar.co/event/20596","endAt":"2026-10-06T23:59:59.999999+09:00"}
+{"at":"2026-10-01T08:55:38.771Z","type":"album.gone","artist":"PLAVE","album":"5th Mini Album 'HYPERDRIVE' Random"}
+{"at":"2026-10-01T08:55:38.771Z","type":"album.gone","artist":"PLAVE","album":"5th Mini Album 'HYPERDRIVE' Set"}
+{"at":"2026-10-01T08:55:38.771Z","type":"album.gone","artist":"PLAVE","album":"5th Mini Album 'HYPERDRIVE'"}

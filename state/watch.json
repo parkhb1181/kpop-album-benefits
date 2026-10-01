@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-10-01T02:08:46.552Z",
-  "lastDeep": "2026-10-01T02:08:46.552Z",
+  "checkedAt": "2026-10-01T08:55:38.771Z",
+  "lastDeep": "2026-10-01T08:55:38.771Z",
   "events": [
+    {
+      "id": 21007,
+      "url": "https://makestar.co/event/21007",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "MEOVV Single Album [GO HARD] (HARD KIT ver.) 발매기념 특전 증정 이벤트",
+      "titleEn": "MEOVV Single Album [GO HARD] (HARD KIT ver.) SPECIAL GIVEAWAY EVENT",
+      "album": "Single Album [GO HARD]",
+      "albumEn": "Single Album [GO HARD]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.01",
+      "to": "2026.10.11",
+      "startAt": "2026-10-01T12:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 11,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11157,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114459124038.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114459124038_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20979,
+      "url": "https://makestar.co/event/20979",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "MEOVV Single Album [GO HARD] 발매기념 특전 증정 이벤트",
+      "titleEn": "MEOVV Single Album [GO HARD] SPECIAL GIVEAWAY EVENT",
+      "album": "Single Album [GO HARD]",
+      "albumEn": "Single Album [GO HARD]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.01",
+      "to": "2026.10.11",
+      "startAt": "2026-10-01T12:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 11,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11157,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114450055059.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114450055059_thumb.jpeg"
+      }
+    },
     {
       "id": 20946,
       "url": "https://makestar.co/event/20946",
@@ -419,6 +471,32 @@
       }
     },
     {
+      "id": 20596,
+      "url": "https://makestar.co/event/20596",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "MCND 7th Mini Album [Devil Youth Club] (POCAALBUM SLEEVE Ver.) MEET&CALL EVENT",
+      "titleEn": "MCND 7th Mini Album [Devil Youth Club] (POCAALBUM SLEEVE Ver.) MEET&CALL EVENT",
+      "album": "7th Mini Album [Devil Youth Club]",
+      "albumEn": "7th Mini Album [Devil Youth Club]",
+      "artist": "MCND",
+      "artistEn": "MCND",
+      "releaseDate": "2026-09-10",
+      "from": "2026.10.01",
+      "to": "2026.10.06",
+      "startAt": "2026-10-01T15:00:00+09:00",
+      "endAt": "2026-10-06T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": "2026.10.07",
+      "productId": 11056,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11056_MCND_2_Banner_Sub.png_2026-09-29_183746489923.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11056_MCND_2_Banner_Sub.png_2026-09-29_183746489923_thumb.jpeg"
+      }
+    },
+    {
       "id": 20588,
       "url": "https://makestar.co/event/20588",
       "type": "PHOTOCARD",
@@ -655,16 +733,6 @@
   ],
   "albums": [
     {
-      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
-      "artist": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE' Random"
-    },
-    {
-      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
-      "artist": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE' Set"
-    },
-    {
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
@@ -713,11 +781,6 @@
       "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
       "artist": "SEVENTEEN",
       "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."
-    },
-    {
-      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
-      "artist": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE'"
     },
     {
       "key": "JISOO｜CLICK",
