@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 3. 03:25:53",
+  "stamp": "2026. 10. 3. 07:27:10",
   "albums": [
     {
       "artistId": 254,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "5일 14시간"
+        "rough": "5일 10시간"
       },
       "rowCount": 42,
       "artistKo": "엔플라잉",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-05T23:59:59.999999+09:00",
-        "rough": "2일 20시간"
+        "rough": "2일 16시간"
       },
       "rowCount": 24,
       "artistKo": "데일리:디렉션",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:01:00+09:00",
-        "rough": "11일 14시간"
+        "rough": "11일 10시간"
       },
       "rowCount": 20,
       "artistKo": "유주",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-05T23:59:59.999999+09:00",
-        "rough": "2일 20시간"
+        "rough": "2일 16시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 위시",
@@ -128,40 +128,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "23일 9시간"
+        "rough": "23일 5시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
-    },
-    {
-      "artistId": 255,
-      "artistEn": "CORTIS",
-      "album": "GREENGREEN_playextended",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-12-08",
-      "weversePriceMin": 49530,
-      "artist": "CORTIS",
-      "slug": "cortis-greengreen-playextended",
-      "versions": 11,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 9,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-12-08T17:20:00+09:00",
-        "rough": "66일 13시간"
-      },
-      "rowCount": 38,
-      "artistKo": "코르티스",
-      "artistDisplay": "코르티스(CORTIS)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg"
     },
     {
       "artistId": 7,
@@ -182,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 20시간"
+        "rough": "15일 16시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -209,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "22일 20시간"
+        "rough": "22일 16시간"
       },
       "rowCount": 14,
       "artistKo": null,
@@ -236,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 20시간"
+        "rough": "15일 16시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -263,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 20시간"
+        "rough": "15일 16시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -290,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 20시간"
+        "rough": "15일 16시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -317,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "22일 20시간"
+        "rough": "22일 16시간"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -1350,6 +1323,33 @@
         "lastSeen": "2026-09-01"
       },
       "ogCard": "https://kpop-album.vercel.app/og/82major-heat.png"
+    },
+    {
+      "artistId": 255,
+      "artistEn": "CORTIS",
+      "album": "GREENGREEN_playextended",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-12-08",
+      "weversePriceMin": 49530,
+      "artist": "CORTIS",
+      "slug": "cortis-greengreen-playextended",
+      "versions": 11,
+      "retailers": 6,
+      "benefitCount": 0,
+      "soldCount": 9,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 38,
+      "artistKo": "코르티스",
+      "artistDisplay": "코르티스(CORTIS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
+      "expired": {
+        "lastSeen": "2026-10-03"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/cortis-greengreen-playextended.png"
     },
     {
       "artistId": 129,
