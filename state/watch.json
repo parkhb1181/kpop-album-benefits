@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-02T00:46:56.547Z",
-  "lastDeep": "2026-10-02T00:46:56.547Z",
+  "checkedAt": "2026-10-02T06:45:06.308Z",
+  "lastDeep": "2026-10-02T06:45:06.308Z",
   "events": [
     {
       "id": 21007,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114459124038.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114459124038_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21002,
+      "url": "https://makestar.co/event/21002",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ONEW 1ST SINGLE ALBUM [착각] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "ONEW 1ST SINGLE ALBUM [착각] PRE-ORDER PHOTOCARD EVENT",
+      "album": "1ST SINGLE ALBUM [착각]",
+      "albumEn": "1ST SINGLE ALBUM [착각]",
+      "artist": "온유",
+      "artistEn": "ONEW",
+      "releaseDate": "2026-10-20",
+      "from": "2026.10.02",
+      "to": "2026.10.19",
+      "startAt": "2026-10-02T15:00:00+09:00",
+      "endAt": "2026-10-19T23:59:59.999999+09:00",
+      "dday": 18,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11163,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196_thumb.jpeg"
       }
     },
     {
@@ -81,6 +107,32 @@
       }
     },
     {
+      "id": 20893,
+      "url": "https://makestar.co/event/20893",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "DAILY:DIRECTION THE 1ST EP ALBUM [WHICH WAY] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "DAILY:DIRECTION THE 1ST EP ALBUM [WHICH WAY] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "1st MINI ALBUM [WHICH WAY]",
+      "albumEn": "1st MINI ALBUM [WHICH WAY]",
+      "artist": "데일리디렉션",
+      "artistEn": "DAILY:DIRECTION",
+      "releaseDate": "2026-10-14",
+      "from": "2026.10.02",
+      "to": "2026.10.05",
+      "startAt": "2026-10-02T15:00:00+09:00",
+      "endAt": "2026-10-05T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 11139,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11139_DAILY_DIRECTION_3_Banner_Thumb.png_2026-09-28_152913708936.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11139_DAILY_DIRECTION_3_Banner_Thumb.png_2026-09-28_152913708936_thumb.jpeg"
+      }
+    },
+    {
       "id": 20892,
       "url": "https://makestar.co/event/20892",
       "type": "PHOTOCARD",
@@ -104,6 +156,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11144_IVE_1_Banner_Sub.jpg_2026-09-28_120402916403.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11144_IVE_1_Banner_Sub.jpg_2026-09-28_120402916403_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20872,
+      "url": "https://makestar.co/event/20872",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ALLDAY PROJECT The 2nd EP Album 'CRASH' GROUP VIDEO CALL EVENT",
+      "titleEn": "ALLDAY PROJECT The 2nd EP Album 'CRASH' GROUP VIDEO CALL EVENT",
+      "album": "The 2nd EP Album 'CRASH'",
+      "albumEn": "The 2nd EP Album 'CRASH'",
+      "artist": "올데이프로젝트",
+      "artistEn": "ALLDAY PROJECT",
+      "releaseDate": "2026-09-28",
+      "from": "2026.10.02",
+      "to": "2026.10.04",
+      "startAt": "2026-10-02T14:00:00+09:00",
+      "endAt": "2026-10-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.05",
+      "productId": 11092,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_4_Banner_Sub%20%281%29.jpg_2026-09-30_160028713449.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_4_Banner_Sub_1.jpg_2026-09-30_160028713449_thumb.jpeg"
       }
     },
     {
@@ -211,6 +289,32 @@
       }
     },
     {
+      "id": 20775,
+      "url": "https://makestar.co/event/20775",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NCT WISH The 4th Mini Album 'I SPY' VIDEO CALL EVENT IN TAIPEI",
+      "titleEn": "NCT WISH The 4th Mini Album 'I SPY' VIDEO CALL EVENT IN TAIPEI",
+      "album": "미니 4집 [I SPY]",
+      "albumEn": "4th Mini Album [I SPY]",
+      "artist": "NCT WISH",
+      "artistEn": "NCT WISH",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.02",
+      "to": "2026.10.05",
+      "startAt": "2026-10-02T15:00:00+09:00",
+      "endAt": "2026-10-05T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 11101,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_5_Banner_thumb.jpg_2026-10-01_110341345924.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_5_Banner_thumb.jpg_2026-10-01_110341345924_thumb.jpeg"
+      }
+    },
+    {
       "id": 20758,
       "url": "https://makestar.co/event/20758",
       "type": "PHOTOCARD",
@@ -286,6 +390,84 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20713,
+      "url": "https://makestar.co/event/20713",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "IDID Single Album 'FLY!' MEET&CALL EVENT",
+      "titleEn": "IDID Single Album 'FLY!' MEET&CALL EVENT",
+      "album": "Single Album [FLY!] ",
+      "albumEn": "Single Album [FLY!] ",
+      "artist": "아이딧",
+      "artistEn": "IDID",
+      "releaseDate": "2026-05-27",
+      "from": "2026.10.02",
+      "to": "2026.10.04",
+      "startAt": "2026-10-02T12:00:00+09:00",
+      "endAt": "2026-10-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 10658,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10658_IDID_6_Sub_v3.png_2026-10-01_144724559641.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10658_IDID_6_Sub_v3.png_2026-10-01_144724559641_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20712,
+      "url": "https://makestar.co/event/20712",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "류수정 ALL THE COLORS I AM MEET&CALL EVENT PART.2",
+      "titleEn": "RYU SUJEONG ALL THE COLORS I AM MEET&CALL EVENT PART.2",
+      "album": "ALL THE COLORS I AM",
+      "albumEn": "ALL THE COLORS I AM",
+      "artist": "류수정",
+      "artistEn": "RYU SUJEONG",
+      "releaseDate": "2026-09-11",
+      "from": "2026.10.02",
+      "to": "2026.10.04",
+      "startAt": "2026-10-02T15:00:00+09:00",
+      "endAt": "2026-10-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 11081,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11081_RYU_SUJEONG_2_banner_sub.png_2026-09-29_180853125029.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11081_RYU_SUJEONG_2_banner_sub.png_2026-09-29_180853125029_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20711,
+      "url": "https://makestar.co/event/20711",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "류수정 ALL THE COLORS I AM MEET&CALL EVENT PART.1",
+      "titleEn": "RYU SUJEONG ALL THE COLORS I AM MEET&CALL EVENT PART.1",
+      "album": "ALL THE COLORS I AM",
+      "albumEn": "ALL THE COLORS I AM",
+      "artist": "류수정",
+      "artistEn": "RYU SUJEONG",
+      "releaseDate": "2026-09-11",
+      "from": "2026.10.02",
+      "to": "2026.10.04",
+      "startAt": "2026-10-02T15:00:00+09:00",
+      "endAt": "2026-10-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 11081,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11081_RYU_SUJEONG_1_banner_sub.png_2026-09-29_114402813187.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11081_RYU_SUJEONG_1_banner_sub.png_2026-09-29_114402813187_thumb.jpeg"
       }
     },
     {
@@ -576,6 +758,11 @@
     }
   ],
   "albums": [
+    {
+      "key": "YUJU｜file. 07",
+      "artist": "YUJU",
+      "album": "file. 07"
+    },
     {
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",

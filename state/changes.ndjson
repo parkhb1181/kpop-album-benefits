@@ -416,3 +416,11 @@
 {"at":"2026-10-01T16:00:17.486Z","type":"event.gone","label":"SHOWCASE","artist":"성한빈","album":"미니1집 [DEAD:ALIVE]","id":20825}
 {"at":"2026-10-01T16:00:17.486Z","type":"event.gone","label":"영상통화 팬사인회","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":20799}
 {"at":"2026-10-01T16:00:17.486Z","type":"event.gone","label":"영상통화 팬사인회","artist":"올아워즈","album":"미니 6집 [UNBOUND]","id":20773}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"예약 특전 포토카드","artist":"온유","album":"1ST SINGLE ALBUM [착각]","id":21002,"url":"https://makestar.co/event/21002","endAt":"2026-10-19T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"영상통화 팬사인회","artist":"데일리디렉션","album":"1st MINI ALBUM [WHICH WAY]","id":20893,"url":"https://makestar.co/event/20893","endAt":"2026-10-05T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"영상통화 팬사인회","artist":"올데이프로젝트","album":"The 2nd EP Album 'CRASH'","id":20872,"url":"https://makestar.co/event/20872","endAt":"2026-10-04T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"영상통화 팬사인회","artist":"NCT WISH","album":"미니 4집 [I SPY]","id":20775,"url":"https://makestar.co/event/20775","endAt":"2026-10-05T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"영상통화 팬사인회","artist":"아이딧","album":"Single Album [FLY!] ","id":20713,"url":"https://makestar.co/event/20713","endAt":"2026-10-04T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"영상통화 팬사인회","artist":"류수정","album":"ALL THE COLORS I AM","id":20712,"url":"https://makestar.co/event/20712","endAt":"2026-10-04T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"event.new","label":"영상통화 팬사인회","artist":"류수정","album":"ALL THE COLORS I AM","id":20711,"url":"https://makestar.co/event/20711","endAt":"2026-10-04T23:59:59.999999+09:00"}
+{"at":"2026-10-02T06:45:06.308Z","type":"album.new","artist":"YUJU","album":"file. 07"}
