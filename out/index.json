@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 3. 07:27:10",
+  "stamp": "2026. 10. 3. 14:59:44",
   "albums": [
     {
       "artistId": 254,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "5일 10시간"
+        "rough": "5일 2시간"
       },
       "rowCount": 42,
       "artistKo": "엔플라잉",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-05T23:59:59.999999+09:00",
-        "rough": "2일 16시간"
+        "rough": "2일 8시간"
       },
       "rowCount": 24,
       "artistKo": "데일리:디렉션",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:01:00+09:00",
-        "rough": "11일 10시간"
+        "rough": "11일 3시간"
       },
       "rowCount": 20,
       "artistKo": "유주",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-05T23:59:59.999999+09:00",
-        "rough": "2일 16시간"
+        "rough": "2일 8시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 위시",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "23일 5시간"
+        "rough": "22일 21시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 16시간"
+        "rough": "15일 8시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 14,
       "artistKo": null,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 16시간"
+        "rough": "15일 8시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 16시간"
+        "rough": "15일 8시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "15일 16시간"
+        "rough": "15일 8시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "22일 16시간"
+        "rough": "22일 8시간"
       },
       "rowCount": 6,
       "artistKo": null,
