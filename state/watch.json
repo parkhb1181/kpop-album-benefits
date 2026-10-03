@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-03T01:18:30.845Z",
-  "lastDeep": "2026-10-03T01:18:30.845Z",
+  "checkedAt": "2026-10-03T06:50:38.650Z",
+  "lastDeep": "2026-10-03T06:50:38.650Z",
   "events": [
     {
       "id": 21007,
@@ -315,6 +315,32 @@
       }
     },
     {
+      "id": 20764,
+      "url": "https://makestar.co/event/20764",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) SPECIAL OFFLINE &MEET&CALL EVENT",
+      "titleEn": "KISS OF LIFE (키스오브라이프) 3rd Single [SWEAT] (POCAALBUM) SPECIAL OFFLINE &MEET&CALL EVENT",
+      "album": "3rd Single [SWEAT]",
+      "albumEn": "3rd Single [SWEAT]",
+      "artist": "키스오브라이프",
+      "artistEn": "KISS OF LIFE",
+      "releaseDate": "2026-08-04",
+      "from": "2026.10.03",
+      "to": "2026.10.05",
+      "startAt": "2026-10-03T15:00:00+09:00",
+      "endAt": "2026-10-05T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 10907,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_13_Thumb%20%281%29.jpg_2026-10-02_125608484607.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10907_KISS_OF_LIFE_13_Thumb_1.jpg_2026-10-02_125608484607_thumb.jpeg"
+      }
+    },
+    {
       "id": 20758,
       "url": "https://makestar.co/event/20758",
       "type": "PHOTOCARD",
@@ -419,6 +445,32 @@
       }
     },
     {
+      "id": 20728,
+      "url": "https://makestar.co/event/20728",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.4",
+      "titleEn": "LUN8 4TH MINI ALBUM [Off the Grid] MEET&CALL EVENT PART.4",
+      "album": "4TH MINI ALBUM [Off the Grid]",
+      "albumEn": "4TH MINI ALBUM [Off the Grid]",
+      "artist": "루네이트",
+      "artistEn": "LUN8",
+      "releaseDate": "2026-07-22",
+      "from": "2026.10.03",
+      "to": "2026.10.05",
+      "startAt": "2026-10-03T14:00:00+09:00",
+      "endAt": "2026-10-05T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.06",
+      "productId": 10889,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_4_banner_sub.png_2026-09-30_164839788800.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10889_LUN8_4_banner_sub.png_2026-09-30_164839788800_thumb.jpeg"
+      }
+    },
+    {
       "id": 20713,
       "url": "https://makestar.co/event/20713",
       "type": "MEET&CALL",
@@ -520,6 +572,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_1_Banner_thumb.jpg_2026-09-14_114004715586_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20606,
+      "url": "https://makestar.co/event/20606",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ATEEZ(에이티즈) 14TH MINI ALBUM [GOLDENHOUR : Part.5](POCAALBUM) LAST PHOTO&CALL EVENT IN LA",
+      "titleEn": "ATEEZ(에이티즈) 14TH MINI ALBUM [GOLDENHOUR : Part.5](POCAALBUM) LAST PHOTO&CALL EVENT IN LA",
+      "album": "미니 14집 [GOLDEN HOUR : Part.5]",
+      "albumEn": "14th Mini Album [GOLDEN HOUR : Part.5]",
+      "artist": "에이티즈",
+      "artistEn": "ATEEZ",
+      "releaseDate": "2026-06-26",
+      "from": "2026.10.03",
+      "to": "2026.10.06",
+      "startAt": "2026-10-03T15:00:00+09:00",
+      "endAt": "2026-10-06T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.07",
+      "productId": 10714,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10714_ATEEZ_18_Banner_Sub.jpg_2026-09-29_161129927700.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10714_ATEEZ_18_Banner_Sub.jpg_2026-09-29_161129927700_thumb.jpeg"
       }
     },
     {
