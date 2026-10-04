@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 4. 15:36:21",
+  "stamp": "2026. 10. 5. 00:07:00",
   "albums": [
     {
       "artistId": 254,
@@ -12,17 +12,17 @@
       "artist": "N.Flying",
       "slug": "n-flying-still",
       "versions": 14,
-      "retailers": 5,
-      "benefitCount": 2,
+      "retailers": 7,
+      "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "4일 2시간"
+        "rough": "3일 17시간"
       },
-      "rowCount": 34,
+      "rowCount": 42,
       "artistKo": "엔플라잉",
       "artistDisplay": "엔플라잉(N.Flying)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/02/DoMfdO.jpg",
@@ -39,7 +39,7 @@
       "artist": "DAILY:DIRECTION",
       "slug": "daily-direction-which-way",
       "versions": 5,
-      "retailers": 5,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 3,
@@ -47,40 +47,13 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-05T23:59:59.999999+09:00",
-        "rough": "1일 8시간"
+        "rough": "23시간 49분"
       },
-      "rowCount": 18,
-      "artistKo": null,
-      "artistDisplay": "DAILY:DIRECTION",
+      "rowCount": 24,
+      "artistKo": "데일리:디렉션",
+      "artistDisplay": "데일리:디렉션(DAILY:DIRECTION)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/UaA57g.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/UaA57g.jpg"
-    },
-    {
-      "artistId": 155,
-      "artistEn": "NCT WISH",
-      "album": "I SPY",
-      "skuCount": 7,
-      "benefit": false,
-      "deliveryDate": "2026-10-12",
-      "weversePriceMin": 13900,
-      "artist": "NCT WISH",
-      "slug": "nct-wish-i-spy",
-      "versions": 7,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 2,
-      "fansignCount": 1,
-      "nextDeadline": {
-        "label": "영상통화 팬사인회 응모 마감",
-        "at": "2026-10-05T23:59:59.999999+09:00",
-        "rough": "1일 8시간"
-      },
-      "rowCount": 34,
-      "artistKo": null,
-      "artistDisplay": "NCT WISH",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/14/masfyA.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/14/masfyA.jpg"
     },
     {
       "artistId": 252,
@@ -92,22 +65,49 @@
       "weversePriceMin": 20500,
       "artist": "YUJU",
       "slug": "yuju-file-07",
-      "versions": 5,
-      "retailers": 3,
-      "benefitCount": 1,
+      "versions": 6,
+      "retailers": 5,
+      "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:01:00+09:00",
-        "rough": "10일 2시간"
+        "rough": "9일 17시간"
       },
-      "rowCount": 12,
+      "rowCount": 20,
       "artistKo": "유주",
       "artistDisplay": "유주(YUJU)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fa673bad3469fab64398b80e3f7371e3.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/02/vDwIuL.jpg"
+    },
+    {
+      "artistId": 155,
+      "artistEn": "NCT WISH",
+      "album": "I SPY",
+      "skuCount": 7,
+      "benefit": false,
+      "deliveryDate": "2026-10-12",
+      "weversePriceMin": 13900,
+      "artist": "NCT WISH",
+      "slug": "nct-wish-i-spy",
+      "versions": 9,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 2,
+      "fansignCount": 1,
+      "nextDeadline": {
+        "label": "영상통화 팬사인회 응모 마감",
+        "at": "2026-10-05T23:59:59.999999+09:00",
+        "rough": "23시간 51분"
+      },
+      "rowCount": 48,
+      "artistKo": "엔시티 위시",
+      "artistDisplay": "엔시티 위시(NCT WISH)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/14/masfyA.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/14/masfyA.jpg"
     },
     {
       "artistId": 215,
@@ -120,21 +120,48 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 5,
-      "benefitCount": 0,
+      "retailers": 7,
+      "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "21일 21시간"
+        "rough": "21일 12시간"
       },
-      "rowCount": 15,
-      "artistKo": null,
-      "artistDisplay": "JISOO",
+      "rowCount": 19,
+      "artistKo": "지수",
+      "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 22225,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-dream-record-ver",
+      "versions": 4,
+      "retailers": 4,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-18T23:59:59.999999+09:00",
+        "rough": "13일 23시간"
+      },
+      "rowCount": 7,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg"
     },
     {
       "artistId": 120,
@@ -155,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "21일 8시간"
+        "rough": "20일 23시간"
       },
       "rowCount": 14,
       "artistKo": null,
@@ -182,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "14일 8시간"
+        "rough": "13일 23시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -209,40 +236,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "14일 8시간"
+        "rough": "13일 23시간"
       },
       "rowCount": 10,
       "artistKo": null,
       "artistDisplay": "SEVENTEEN",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg"
-    },
-    {
-      "artistId": 7,
-      "artistEn": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 22225,
-      "artist": "SEVENTEEN",
-      "slug": "seventeen-1st-mini-album-dreamscape-dream-record-ver",
-      "versions": 4,
-      "retailers": 3,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "14일 8시간"
-      },
-      "rowCount": 6,
-      "artistKo": null,
-      "artistDisplay": "SEVENTEEN",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg"
     },
     {
       "artistId": 132,
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "14일 8시간"
+        "rough": "13일 23시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "21일 8시간"
+        "rough": "20일 23시간"
       },
       "rowCount": 6,
       "artistKo": null,
