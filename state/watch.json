@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-05T04:02:24.352Z",
-  "lastDeep": "2026-10-05T04:02:24.352Z",
+  "checkedAt": "2026-10-05T11:27:33.515Z",
+  "lastDeep": "2026-10-05T11:27:33.515Z",
   "events": [
     {
       "id": 21007,
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20984,
+      "url": "https://makestar.co/event/20984",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.05",
+      "to": "2026.10.07",
+      "startAt": "2026-10-05T15:00:00+09:00",
+      "endAt": "2026-10-07T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.08",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_4_banner_sub.jpg_2026-10-02_120245374812.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_4_banner_sub.jpg_2026-10-02_120245374812_thumb.jpeg"
       }
     },
     {
