@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-10-06T00:57:52.588Z",
-  "lastDeep": "2026-10-06T00:57:52.588Z",
+  "checkedAt": "2026-10-06T07:22:51.025Z",
+  "lastDeep": "2026-10-06T07:22:51.025Z",
   "events": [
+    {
+      "id": 21057,
+      "url": "https://makestar.co/event/21057",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NMIXX 6th EP [Strange Muse] PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] PRE-ORDER MEET&CALL EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T12:00:00+09:00",
+      "endAt": "2026-10-08T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_3_banner_sub.png_2026-10-02_185548453660.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_3_banner_sub.png_2026-10-02_185548453660_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21051,
+      "url": "https://makestar.co/event/21051",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "OURBIRTHDAY [Our Birthday] MEET&CALL EVENT PART.3",
+      "titleEn": "OURBIRTHDAY [Our Birthday] MEET&CALL EVENT PART.3",
+      "album": "[Our Birthday]",
+      "albumEn": "[Our Birthday]",
+      "artist": "아워벌스데이",
+      "artistEn": "OURBIRTHDAY",
+      "releaseDate": "2026-08-19",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T14:00:00+09:00",
+      "endAt": "2026-10-08T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.09",
+      "productId": 10952,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_7_Banner_sub.png_2026-10-06_110134463584.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_7_Banner_sub.png_2026-10-06_110134463584_thumb.jpeg"
+      }
+    },
     {
       "id": 21007,
       "url": "https://makestar.co/event/21007",
@@ -55,6 +107,32 @@
       }
     },
     {
+      "id": 20988,
+      "url": "https://makestar.co/event/20988",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "AND2BLE 2nd EP ‘Sequence 02: Attraction' (POCAALBUM) PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "AND2BLE 2nd EP ‘Sequence 02: Attraction' (POCAALBUM) PRE-ORDER PHOTOCARD EVENT",
+      "album": "미니 2집 [Sequence 02: Attraction]",
+      "albumEn": "2ND MINI ALBUM [Sequence 02: Attraction]",
+      "artist": "앤더블",
+      "artistEn": "AND2BLE",
+      "releaseDate": "2026-10-27",
+      "from": "2026.10.06",
+      "to": "2026.10.26",
+      "startAt": "2026-10-06T11:00:00+09:00",
+      "endAt": "2026-10-26T23:59:59.999999+09:00",
+      "dday": 21,
+      "closing": false,
+      "winnerAt": "2026.10.27",
+      "productId": 11158,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827_thumb.jpeg"
+      }
+    },
+    {
       "id": 20984,
       "url": "https://makestar.co/event/20984",
       "type": "MEET&CALL",
@@ -78,6 +156,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_4_banner_sub.jpg_2026-10-02_120245374812.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_4_banner_sub.jpg_2026-10-02_120245374812_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20983,
+      "url": "https://makestar.co/event/20983",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ONEWE(원위) 3rd Full Album [面 : Unknown Atlas] MEET&CALL EVENT",
+      "titleEn": "ONEWE(원위) 3rd Full Album [面 : Unknown Atlas] MEET&CALL EVENT",
+      "album": "3rd Full Album  [面 : Unknown Atlas]",
+      "albumEn": "3rd Full Album  [面 : Unknown Atlas]",
+      "artist": "ONEWE",
+      "artistEn": "ONEWE",
+      "releaseDate": "2026-08-19",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T15:00:00+09:00",
+      "endAt": "2026-10-08T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 10982,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10664_ONEWE_7_banner_sub.jpg_2026-09-30_125754217077.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10664_ONEWE_7_banner_sub.jpg_2026-09-30_125754217077_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20980,
+      "url": "https://makestar.co/event/20980",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" MEET&CALL EVENT",
+      "titleEn": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" MEET&CALL EVENT",
+      "album": "미니 1집 [Sour Grapes]",
+      "albumEn": "1st Mini Album [Sour Grapes]",
+      "artist": "NiziU",
+      "artistEn": "NiziU",
+      "releaseDate": "2026-09-28",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T10:00:00+09:00",
+      "endAt": "2026-10-08T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 11063,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_2_Banner_Sub.png_2026-10-01_121426802158.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_2_Banner_Sub.png_2026-10-01_121426802158_thumb.jpeg"
       }
     },
     {
@@ -260,6 +390,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_1_Banner_Sub.jpg_2026-09-21_193350950280_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20801,
+      "url": "https://makestar.co/event/20801",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "AHOF (아홉) 미니 3집 [RUN TO YOU] MEET&CALL EVENT PART.2",
+      "titleEn": "AHOF (아홉) 미니 3집 [RUN TO YOU] MEET&CALL EVENT PART.2",
+      "album": "미니 3집 [RUN TO YOU]",
+      "albumEn": "3rd Mini Album [RUN TO YOU]",
+      "artist": "아홉",
+      "artistEn": "AHOF",
+      "releaseDate": "2026-07-08",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T15:00:00+09:00",
+      "endAt": "2026-10-08T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 10797,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10797_AHOF_2_banner_sub.png_2026-10-01_124104809589.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10797_AHOF_2_banner_sub.png_2026-10-01_124104809589_thumb.jpeg"
       }
     },
     {
@@ -603,6 +759,11 @@
   ],
   "albums": [
     {
+      "key": "AND2BLE｜Sequence 02: Attraction",
+      "artist": "AND2BLE",
+      "album": "Sequence 02: Attraction"
+    },
+    {
       "key": "YUJU｜file. 07",
       "artist": "YUJU",
       "album": "file. 07"
@@ -616,6 +777,11 @@
       "key": "N.Flying｜Still",
       "artist": "N.Flying",
       "album": "Still"
+    },
+    {
+      "key": "WayV｜Hey, Somebody",
+      "artist": "WayV",
+      "album": "Hey, Somebody"
     },
     {
       "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
