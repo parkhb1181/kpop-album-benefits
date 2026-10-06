@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 6. 16:09:16",
+  "stamp": "2026. 10. 6. 16:23:23",
   "albums": [
     {
       "artistId": 254,
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-06T18:01:00+09:00",
-        "rough": "1시간 48분"
+        "rough": "1시간 33분"
       },
       "rowCount": 41,
       "artistKo": "예성",
@@ -201,7 +201,7 @@
       "artist": "WayV",
       "slug": "wayv-hey-somebody",
       "versions": 5,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 0,
       "soldCount": 1,
       "eventCount": 0,
@@ -211,7 +211,7 @@
         "at": "2026-10-26T18:01:00+09:00",
         "rough": "20일 1시간"
       },
-      "rowCount": 23,
+      "rowCount": 26,
       "artistKo": "샤오쥔(XIAOJUN)",
       "artistDisplay": "샤오쥔(XIAOJUN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/DjJwPL.jpg",
