@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-10-06T07:22:51.025Z",
-  "lastDeep": "2026-10-06T07:22:51.025Z",
+  "checkedAt": "2026-10-06T14:22:03.299Z",
+  "lastDeep": "2026-10-06T14:22:03.299Z",
   "events": [
+    {
+      "id": 21106,
+      "url": "https://makestar.co/event/21106",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] FANSIGN EVENT IN SHENZHEN",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] FANSIGN EVENT IN SHENZHEN",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T20:00:00+09:00",
+      "endAt": "2026-10-08T19:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.10.09",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-04_170345569204_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21094,
+      "url": "https://makestar.co/event/21094",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] VIDEO CALL EVENT",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年 BEAST] VIDEO CALL EVENT",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.06",
+      "to": "2026.10.08",
+      "startAt": "2026-10-06T19:00:00+09:00",
+      "endAt": "2026-10-08T17:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.10.09",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
+      }
+    },
     {
       "id": 21057,
       "url": "https://makestar.co/event/21057",
@@ -234,6 +286,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114450055059.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114450055059_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20950,
+      "url": "https://makestar.co/event/20950",
+      "type": "FANSIGN&GAME EVENT",
+      "label": "FANSIGN&GAME EVENT",
+      "fansign": false,
+      "title": "ODD YOUTH 3rd Single [ can't go back ] FANSIGN&GAME EVENT IN TAIPEI",
+      "titleEn": "ODD YOUTH 3rd Single [ can't go back ] FANSIGN&GAME EVENT IN TAIPEI",
+      "album": "3rd Single [can't go back]",
+      "albumEn": "3rd Single [can't go back]",
+      "artist": "오드유스",
+      "artistEn": "ODD YOUTH",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.06",
+      "to": "2026.10.12",
+      "startAt": "2026-10-06T18:00:00+09:00",
+      "endAt": "2026-10-12T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.10.13",
+      "productId": 10992,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_4_Banner_Sub.jpg_2026-10-02_130801347704.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_4_Banner_Sub.jpg_2026-10-02_130801347704_thumb.jpeg"
       }
     },
     {
@@ -769,9 +847,19 @@
       "album": "file. 07"
     },
     {
+      "key": "SUPER JUNIOR｜Where We Are",
+      "artist": "SUPER JUNIOR",
+      "album": "Where We Are"
+    },
+    {
       "key": "NCT WISH｜I SPY",
       "artist": "NCT WISH",
       "album": "I SPY"
+    },
+    {
+      "key": "FLARE U｜LOVEHOOD",
+      "artist": "FLARE U",
+      "album": "LOVEHOOD"
     },
     {
       "key": "N.Flying｜Still",
@@ -792,11 +880,6 @@
       "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
       "artist": "ILLIT",
       "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
-    },
-    {
-      "key": "SUPER JUNIOR｜Where We Are",
-      "artist": "SUPER JUNIOR",
-      "album": "Where We Are"
     },
     {
       "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",

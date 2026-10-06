@@ -450,3 +450,7 @@
 {"at":"2026-10-06T07:22:51.025Z","type":"event.new","label":"영상통화 팬사인회","artist":"아홉","album":"미니 3집 [RUN TO YOU]","id":20801,"url":"https://makestar.co/event/20801","endAt":"2026-10-08T23:59:59.999999+09:00"}
 {"at":"2026-10-06T07:22:51.025Z","type":"album.new","artist":"AND2BLE","album":"Sequence 02: Attraction"}
 {"at":"2026-10-06T07:22:51.025Z","type":"album.new","artist":"WayV","album":"Hey, Somebody"}
+{"at":"2026-10-06T14:22:03.299Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":21106,"url":"https://makestar.co/event/21106","endAt":"2026-10-08T19:59:59.999999+09:00"}
+{"at":"2026-10-06T14:22:03.299Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":21094,"url":"https://makestar.co/event/21094","endAt":"2026-10-08T17:59:59.999999+09:00"}
+{"at":"2026-10-06T14:22:03.299Z","type":"event.new","label":"FANSIGN&GAME EVENT","artist":"오드유스","album":"3rd Single [can't go back]","id":20950,"url":"https://makestar.co/event/20950","endAt":"2026-10-12T23:59:59.999999+09:00"}
+{"at":"2026-10-06T14:22:03.299Z","type":"album.new","artist":"FLARE U","album":"LOVEHOOD"}
