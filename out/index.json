@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 7. 01:28:48",
+  "stamp": "2026. 10. 7. 04:41:47",
   "albums": [
     {
       "artistId": 254,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "1일 16시간"
+        "rough": "1일 13시간"
       },
       "rowCount": 48,
       "artistKo": "엔플라잉",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-12T19:00:00+09:00",
-        "rough": "5일 17시간"
+        "rough": "5일 14시간"
       },
       "rowCount": 43,
       "artistKo": "예성",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "SHOWCASE 응모 마감",
         "at": "2026-10-09T23:59:59.999999+09:00",
-        "rough": "2일 22시간"
+        "rough": "2일 19시간"
       },
       "rowCount": 24,
       "artistKo": "데일리:디렉션",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "19일 22시간"
+        "rough": "19일 19시간"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:01:00+09:00",
-        "rough": "7일 16시간"
+        "rough": "7일 13시간"
       },
       "rowCount": 23,
       "artistKo": "유주",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-11T23:59:59.999999+09:00",
-        "rough": "4일 22시간"
+        "rough": "4일 19시간"
       },
       "rowCount": 49,
       "artistKo": "엔시티 위시",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "19일 11시간"
+        "rough": "19일 8시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:02:00+09:00",
-        "rough": "7일 16시간"
+        "rough": "7일 13시간"
       },
       "rowCount": 42,
       "artistKo": "플레어 유",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T18:01:00+09:00",
-        "rough": "19일 16시간"
+        "rough": "19일 13시간"
       },
       "rowCount": 26,
       "artistKo": "샤오쥔(XIAOJUN)",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 22시간"
+        "rough": "11일 19시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "18일 22시간"
+        "rough": "18일 19시간"
       },
       "rowCount": 14,
       "artistKo": null,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 22시간"
+        "rough": "11일 19시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 22시간"
+        "rough": "11일 19시간"
       },
       "rowCount": 10,
       "artistKo": null,
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 22시간"
+        "rough": "11일 19시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "18일 22시간"
+        "rough": "18일 19시간"
       },
       "rowCount": 6,
       "artistKo": null,
