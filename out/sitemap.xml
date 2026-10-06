@@ -13,6 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/super-junior-where-we-are</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/daily-direction-which-way</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
@@ -43,7 +49,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/super-junior-where-we-are</loc>
+    <loc>https://kpop-album.vercel.app/album/flare-u-lovehood</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -397,6 +403,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/super-junior-where-we-are</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/daily-direction-which-way</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
@@ -427,7 +439,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/super-junior-where-we-are</loc>
+    <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
