@@ -7,13 +7,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/n-flying-still</loc>
+    <loc>https://kpop-album.vercel.app/album/and2ble-sequence-02-attraction</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/super-junior-where-we-are</loc>
+    <loc>https://kpop-album.vercel.app/album/n-flying-still</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -25,25 +25,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/and2ble-sequence-02-attraction</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/yuju-file-07</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-weverse-albums-ver</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-everglow-ver</loc>
+    <loc>https://kpop-album.vercel.app/album/super-junior-where-we-are</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -55,7 +37,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
+    <loc>https://kpop-album.vercel.app/album/yuju-file-07</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-everglow-ver</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-weverse-albums-ver</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -80,6 +74,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -421,13 +421,13 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/n-flying-still</loc>
+    <loc>https://kpop-album.vercel.app/en/album/and2ble-sequence-02-attraction</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/super-junior-where-we-are</loc>
+    <loc>https://kpop-album.vercel.app/en/album/n-flying-still</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -439,25 +439,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/and2ble-sequence-02-attraction</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/yuju-file-07</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-weverse-albums-ver</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-everglow-ver</loc>
+    <loc>https://kpop-album.vercel.app/en/album/super-junior-where-we-are</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -469,7 +451,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
+    <loc>https://kpop-album.vercel.app/en/album/yuju-file-07</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-everglow-ver</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-weverse-albums-ver</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -494,6 +488,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>

@@ -11,7 +11,7 @@ X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21155@kpop-album-benef
  its
-DTSTAMP:20261007T024025Z
+DTSTAMP:20261007T065314Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -35,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21154@kpop-album-benef
  its
-DTSTAMP:20261007T024025Z
+DTSTAMP:20261007T065314Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -59,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21133@kpop-album-benef
  its
-DTSTAMP:20261007T024025Z
+DTSTAMP:20261007T065314Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -83,7 +83,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-release@kpop-album-benefi
  ts
-DTSTAMP:20261007T024025Z
+DTSTAMP:20261007T065314Z
 DTSTART:20261106T081000Z
 DTEND:20261106T084000Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
