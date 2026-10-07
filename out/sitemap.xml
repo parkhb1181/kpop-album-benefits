@@ -79,12 +79,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/illit-illit-5th-ep-break-even</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
@@ -325,6 +319,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/red-velvet-velvet-summer</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -488,12 +488,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -735,6 +729,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/82major-heat</loc>
     <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
