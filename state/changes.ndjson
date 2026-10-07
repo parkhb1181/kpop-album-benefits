@@ -457,3 +457,16 @@
 {"at":"2026-10-06T19:41:09.954Z","type":"event.gone","label":"영상통화 팬사인회","artist":"에이티즈","album":"미니 14집 [GOLDEN HOUR : Part.5]","id":20606}
 {"at":"2026-10-06T19:41:09.954Z","type":"event.gone","label":"영상통화 팬사인회","artist":"MCND","album":"7th Mini Album [Devil Youth Club]","id":20596}
 {"at":"2026-10-06T19:41:09.954Z","type":"event.gone","label":"예약 특전 포토카드","artist":"코이키즈","album":"DEBUT SINGLE 「KO1KEYZ」 (KR)","id":20122}
+{"at":"2026-10-07T02:34:49.587Z","type":"event.new","label":"예약 특전 포토카드","artist":"투어스","album":"2nd Single Album ‘TO US’","id":21155,"url":"https://makestar.co/event/21155","endAt":"2026-11-01T23:59:59.999999+09:00"}
+{"at":"2026-10-07T02:34:49.587Z","type":"event.new","label":"예약 특전 포토카드","artist":"투어스","album":"2nd Single Album ‘TO US’","id":21154,"url":"https://makestar.co/event/21154","endAt":"2026-11-01T23:59:59.999999+09:00"}
+{"at":"2026-10-07T02:34:49.587Z","type":"event.new","label":"예약 특전 포토카드","artist":"투어스","album":"2nd Single Album ‘TO US’","id":21133,"url":"https://makestar.co/event/21133","endAt":"2026-11-01T23:59:59.999999+09:00"}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.new","artist":"TWS","album":"2nd Single Album <TO US> Weverse Albums ver."}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.new","artist":"TWS","album":"2nd Single Album <TO US> Everglow Ver."}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.new","artist":"TWS","album":"2nd Single Album <TO US> Beyond Ver."}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.new","artist":"TWS","album":"2nd Single Album <TO US> Closer Ver."}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.gone","artist":"ILLIT","album":"ILLIT 5th EP 'BREAK EVEN'"}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.gone","artist":"ILLIT","album":"ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.gone","artist":"SEVENTEEN","album":"1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.gone","artist":"SEVENTEEN","album":"1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver."}
+{"at":"2026-10-07T02:34:49.587Z","type":"album.gone","artist":"SEVENTEEN","album":"1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."}

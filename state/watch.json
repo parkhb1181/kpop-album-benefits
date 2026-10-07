@@ -1,7 +1,85 @@
 {
-  "checkedAt": "2026-10-06T23:16:32.160Z",
-  "lastDeep": "2026-10-06T23:16:32.160Z",
+  "checkedAt": "2026-10-07T02:34:49.587Z",
+  "lastDeep": "2026-10-07T02:34:49.587Z",
   "events": [
+    {
+      "id": 21155,
+      "url": "https://makestar.co/event/21155",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤트 - Weverse Albums ver.",
+      "titleEn": "TWS 2nd Single Album 'TO US' Pre-Order Special Benefit Event - Weverse Albums ver.",
+      "album": "2nd Single Album ‘TO US’",
+      "albumEn": "2nd Single Album ‘TO US’",
+      "artist": "투어스",
+      "artistEn": "TWS",
+      "releaseDate": "2026-11-02",
+      "from": "2026.10.07",
+      "to": "2026.11.01",
+      "startAt": "2026-10-07T11:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 26,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11191,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21154,
+      "url": "https://makestar.co/event/21154",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤트 - Everglow Ver.",
+      "titleEn": "TWS 2nd Single Album 'TO US' Pre-Order Special Benefit Event - Everglow Ver.",
+      "album": "2nd Single Album ‘TO US’",
+      "albumEn": "2nd Single Album ‘TO US’",
+      "artist": "투어스",
+      "artistEn": "TWS",
+      "releaseDate": "2026-11-02",
+      "from": "2026.10.07",
+      "to": "2026.11.01",
+      "startAt": "2026-10-07T11:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 26,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11191,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21133,
+      "url": "https://makestar.co/event/21133",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤트 - Closer Ver. / Beyond Ver.",
+      "titleEn": "TWS 2nd Single Album 'TO US' Pre-Order Special Benefit Event - Closer Ver. / Beyond Ver.",
+      "album": "2nd Single Album ‘TO US’",
+      "albumEn": "2nd Single Album ‘TO US’",
+      "artist": "투어스",
+      "artistEn": "TWS",
+      "releaseDate": "2026-11-02",
+      "from": "2026.10.07",
+      "to": "2026.11.01",
+      "startAt": "2026-10-07T11:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 26,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11191,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
     {
       "id": 21106,
       "url": "https://makestar.co/event/21106",
@@ -794,16 +872,6 @@
       "album": "Hey, Somebody"
     },
     {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN'"
-    },
-    {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
-    },
-    {
       "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
       "artist": "TVXQ!",
       "album": "The 3rd Mini Album 'All Of My Life'"
@@ -814,19 +882,29 @@
       "album": "WHICH WAY"
     },
     {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver."
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver."
+      "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
+      "artist": "TWS",
+      "album": "2nd Single Album <TO US> Weverse Albums ver."
     },
     {
-      "key": "SEVENTEEN｜1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
-      "artist": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver."
+      "key": "TWS｜2nd Single Album <TO US> Everglow Ver.",
+      "artist": "TWS",
+      "album": "2nd Single Album <TO US> Everglow Ver."
+    },
+    {
+      "key": "TWS｜2nd Single Album <TO US> Beyond Ver.",
+      "artist": "TWS",
+      "album": "2nd Single Album <TO US> Beyond Ver."
+    },
+    {
+      "key": "TWS｜2nd Single Album <TO US> Closer Ver.",
+      "artist": "TWS",
+      "album": "2nd Single Album <TO US> Closer Ver."
     },
     {
       "key": "JISOO｜CLICK",
