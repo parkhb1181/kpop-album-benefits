@@ -13,7 +13,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/n-flying-still</loc>
+    <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/daily-direction-which-way</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -25,13 +31,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/daily-direction-which-way</loc>
+    <loc>https://kpop-album.vercel.app/album/nct-wish-i-spy</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -55,18 +55,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/nct-wish-i-spy</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-beyond-ver</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
@@ -80,6 +68,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/flare-u-lovehood</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -111,6 +105,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/treasure-reboot</loc>
     <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/n-flying-still</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -427,7 +427,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/n-flying-still</loc>
+    <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/daily-direction-which-way</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -439,13 +445,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/daily-direction-which-way</loc>
+    <loc>https://kpop-album.vercel.app/en/album/nct-wish-i-spy</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -469,18 +469,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/nct-wish-i-spy</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-beyond-ver</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
@@ -494,6 +482,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -525,6 +519,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/treasure-reboot</loc>
     <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/n-flying-still</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>

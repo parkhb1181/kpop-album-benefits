@@ -3,52 +3,52 @@ VERSION:2.0
 PRODID:-//kpop-album-benefits//KR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:앤더블(AND2BLE) Sequence 02: Attraction 마감
+X-WR-CALNAME:AND2BLE Sequence 02: Attraction 마감
 X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-evt20988@kpop-album-benefits
-DTSTAMP:20261007T091814Z
+DTSTAMP:20261007T164701Z
 DTSTART:20261026T145959Z
 DTEND:20261026T152959Z
-SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 포토
- 카드 응모 마감
+SUMMARY:AND2BLE Sequence 02: Attraction — 예약 특전 포토카드 응
+ 모 마감
 DESCRIPTION:AND2BLE 2nd EP ‘Sequence 02: Attraction' (POCAALBUM) PRE-ORDE
  R PHOTOCARD EVENT\nhttps://makestar.co/event/20988
 URL:https://makestar.co/event/20988
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 
- 포토카드 응모 마감 (하루 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 특전 포토카드 
+ 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 
- 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 특전 포토카드 
+ 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-release@kpop-album-benefits
-DTSTAMP:20261007T091814Z
+DTSTAMP:20261007T164701Z
 DTSTART:20261027T090000Z
 DTEND:20261027T093000Z
-SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 시작
+SUMMARY:AND2BLE Sequence 02: Attraction — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/and2ble-sequence-02-attraction.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 
- 시작 (하루 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 배송 시작 (하
+ 루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 
- 시작 (1시간 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 배송 시작 (1시
+ 간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
