@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 7. 04:41:47",
+  "stamp": "2026. 10. 7. 11:35:21",
   "albums": [
     {
       "artistId": 254,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-08T18:00:00+09:00",
-        "rough": "1일 13시간"
+        "rough": "1일 6시간"
       },
       "rowCount": 48,
       "artistKo": "엔플라잉",
@@ -41,13 +41,13 @@
       "versions": 10,
       "retailers": 6,
       "benefitCount": 3,
-      "soldCount": 9,
+      "soldCount": 10,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-12T19:00:00+09:00",
-        "rough": "5일 14시간"
+        "rough": "5일 7시간"
       },
       "rowCount": 43,
       "artistKo": "예성",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "SHOWCASE 응모 마감",
         "at": "2026-10-09T23:59:59.999999+09:00",
-        "rough": "2일 19시간"
+        "rough": "2일 12시간"
       },
       "rowCount": 24,
       "artistKo": "데일리:디렉션",
@@ -86,7 +86,7 @@
       "artistId": 294,
       "artistEn": "AND2BLE",
       "album": "Sequence 02: Attraction",
-      "skuCount": 8,
+      "skuCount": 11,
       "benefit": true,
       "deliveryDate": "2026-10-27",
       "weversePriceMin": 11100,
@@ -101,12 +101,12 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "19일 19시간"
+        "rough": "19일 12시간"
       },
-      "rowCount": 48,
+      "rowCount": 51,
       "artistKo": "앤더블",
       "artistDisplay": "앤더블(AND2BLE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/65138b3afe65eb07ab87217d9f9035cb.png",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/84a07d0b62e304ef3ef599a47bf26aec.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/MCMOml.jpg"
     },
     {
@@ -128,13 +128,67 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:01:00+09:00",
-        "rough": "7일 13시간"
+        "rough": "7일 6시간"
       },
       "rowCount": 23,
       "artistKo": "유주",
       "artistDisplay": "유주(YUJU)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fa673bad3469fab64398b80e3f7371e3.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/02/vDwIuL.jpg"
+    },
+    {
+      "artistId": 165,
+      "artistEn": "TWS",
+      "album": "2nd Single Album <TO US> Weverse Albums ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-11-06",
+      "weversePriceMin": 12065,
+      "artist": "TWS",
+      "slug": "tws-2nd-single-album-to-us-weverse-albums-ver",
+      "versions": 2,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 3,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-11-01T23:59:59.999999+09:00",
+        "rough": "25일 12시간"
+      },
+      "rowCount": 7,
+      "artistKo": "투어스",
+      "artistDisplay": "투어스(TWS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/PZsxc8.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/PZsxc8.png"
+    },
+    {
+      "artistId": 165,
+      "artistEn": "TWS",
+      "album": "2nd Single Album <TO US> Everglow Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-11-06",
+      "weversePriceMin": 19685,
+      "artist": "TWS",
+      "slug": "tws-2nd-single-album-to-us-everglow-ver",
+      "versions": 3,
+      "retailers": 5,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 3,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-11-01T23:59:59.999999+09:00",
+        "rough": "25일 12시간"
+      },
+      "rowCount": 9,
+      "artistKo": "투어스",
+      "artistDisplay": "투어스(TWS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/6whqhN.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/6whqhN.png"
     },
     {
       "artistId": 155,
@@ -155,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-11T23:59:59.999999+09:00",
-        "rough": "4일 19시간"
+        "rough": "4일 12시간"
       },
       "rowCount": 49,
       "artistKo": "엔시티 위시",
@@ -182,13 +236,67 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "19일 8시간"
+        "rough": "19일 1시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 165,
+      "artistEn": "TWS",
+      "album": "2nd Single Album <TO US> Beyond Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-11-06",
+      "weversePriceMin": 30353,
+      "artist": "TWS",
+      "slug": "tws-2nd-single-album-to-us-beyond-ver",
+      "versions": 7,
+      "retailers": 3,
+      "benefitCount": 1,
+      "soldCount": 0,
+      "eventCount": 3,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-11-01T23:59:59.999999+09:00",
+        "rough": "25일 12시간"
+      },
+      "rowCount": 8,
+      "artistKo": "투어스",
+      "artistDisplay": "투어스(TWS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png"
+    },
+    {
+      "artistId": 165,
+      "artistEn": "TWS",
+      "album": "2nd Single Album <TO US> Closer Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-11-06",
+      "weversePriceMin": 30353,
+      "artist": "TWS",
+      "slug": "tws-2nd-single-album-to-us-closer-ver",
+      "versions": 7,
+      "retailers": 3,
+      "benefitCount": 1,
+      "soldCount": 0,
+      "eventCount": 3,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-11-01T23:59:59.999999+09:00",
+        "rough": "25일 12시간"
+      },
+      "rowCount": 8,
+      "artistKo": "투어스",
+      "artistDisplay": "투어스(TWS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png"
     },
     {
       "artistId": 289,
@@ -209,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-14T18:02:00+09:00",
-        "rough": "7일 13시간"
+        "rough": "7일 6시간"
       },
       "rowCount": 42,
       "artistKo": "플레어 유",
@@ -236,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T18:01:00+09:00",
-        "rough": "19일 13시간"
+        "rough": "19일 6시간"
       },
       "rowCount": 26,
       "artistKo": "샤오쥔(XIAOJUN)",
@@ -245,112 +353,31 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/DjJwPL.jpg"
     },
     {
-      "artistId": 7,
-      "artistEn": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "artistId": 255,
+      "artistEn": "CORTIS",
+      "album": "GREENGREEN_playextended",
       "skuCount": 1,
       "benefit": false,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 22225,
-      "artist": "SEVENTEEN",
-      "slug": "seventeen-1st-mini-album-dreamscape-dream-record-ver",
-      "versions": 4,
-      "retailers": 4,
+      "deliveryDate": "2026-12-08",
+      "weversePriceMin": 49530,
+      "artist": "CORTIS",
+      "slug": "cortis-greengreen-playextended",
+      "versions": 11,
+      "retailers": 6,
       "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 1,
+      "soldCount": 9,
+      "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 19시간"
+        "label": "예약 배송 시작",
+        "at": "2026-12-08T17:20:00+09:00",
+        "rough": "62일 5시간"
       },
-      "rowCount": 7,
-      "artistKo": null,
-      "artistDisplay": "SEVENTEEN",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg"
-    },
-    {
-      "artistId": 120,
-      "artistEn": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN'",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-10-30",
-      "weversePriceMin": 16383,
-      "artist": "ILLIT",
-      "slug": "illit-illit-5th-ep-break-even",
-      "versions": 9,
-      "retailers": 3,
-      "benefitCount": 0,
-      "soldCount": 0,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "18일 19시간"
-      },
-      "rowCount": 14,
-      "artistKo": null,
-      "artistDisplay": "ILLIT",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg"
-    },
-    {
-      "artistId": 7,
-      "artistEn": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 37465,
-      "artist": "SEVENTEEN",
-      "slug": "seventeen-1st-mini-album-dreamscape-daydreamers-ver",
-      "versions": 5,
-      "retailers": 3,
-      "benefitCount": 0,
-      "soldCount": 0,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 19시간"
-      },
-      "rowCount": 10,
-      "artistKo": null,
-      "artistDisplay": "SEVENTEEN",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg"
-    },
-    {
-      "artistId": 7,
-      "artistEn": "SEVENTEEN",
-      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 37465,
-      "artist": "SEVENTEEN",
-      "slug": "seventeen-1st-mini-album-dreamscape-dreamchasers-ver",
-      "versions": 5,
-      "retailers": 3,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 19시간"
-      },
-      "rowCount": 10,
-      "artistKo": null,
-      "artistDisplay": "SEVENTEEN",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg"
+      "rowCount": 38,
+      "artistKo": "코르티스",
+      "artistDisplay": "코르티스(CORTIS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg"
     },
     {
       "artistId": 132,
@@ -371,40 +398,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "11일 19시간"
+        "rough": "11일 12시간"
       },
       "rowCount": 5,
       "artistKo": null,
       "artistDisplay": "TVXQ!",
       "ogImage": "https://godomall.speedycdn.net/c03670ee9f741fa0343b16321feede3e/goods/1000017814/image/main/1000017813_main_075.jpg",
       "cover": "https://godomall.speedycdn.net/c03670ee9f741fa0343b16321feede3e/goods/1000017814/image/main/1000017813_main_075.jpg"
-    },
-    {
-      "artistId": 120,
-      "artistEn": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-10-30",
-      "weversePriceMin": 31623,
-      "artist": "ILLIT",
-      "slug": "illit-illit-5th-ep-break-even-wev-us-exclusive",
-      "versions": 6,
-      "retailers": 1,
-      "benefitCount": 0,
-      "soldCount": 0,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "18일 19시간"
-      },
-      "rowCount": 6,
-      "artistKo": null,
-      "artistDisplay": "ILLIT",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg"
     },
     {
       "artistId": 25,
@@ -1406,33 +1406,6 @@
       "ogCard": "https://kpop-album.vercel.app/og/82major-heat.png"
     },
     {
-      "artistId": 255,
-      "artistEn": "CORTIS",
-      "album": "GREENGREEN_playextended",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-12-08",
-      "weversePriceMin": 49530,
-      "artist": "CORTIS",
-      "slug": "cortis-greengreen-playextended",
-      "versions": 11,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 9,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 38,
-      "artistKo": "코르티스",
-      "artistDisplay": "코르티스(CORTIS)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
-      "expired": {
-        "lastSeen": "2026-10-06"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/cortis-greengreen-playextended.png"
-    },
-    {
       "artistId": 129,
       "artistEn": "Red Velvet",
       "album": "Velvet Summer",
@@ -1541,6 +1514,33 @@
       "ogCard": "https://kpop-album.vercel.app/og/le-sserafim-le-sserafim-2nd-single-album-made-my-night.png"
     },
     {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dream Record Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 22225,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-dream-record-ver",
+      "versions": 4,
+      "retailers": 4,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 7,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/kTqQ38.jpg",
+      "expired": {
+        "lastSeen": "2026-10-07"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/seventeen-1st-mini-album-dreamscape-dream-record-ver.png"
+    },
+    {
       "artistId": 77,
       "artistEn": "HYOLYN",
       "album": "OriginaLyn",
@@ -1595,6 +1595,33 @@
       "ogCard": "https://kpop-album.vercel.app/og/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi.png"
     },
     {
+      "artistId": 120,
+      "artistEn": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN'",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-30",
+      "weversePriceMin": 16383,
+      "artist": "ILLIT",
+      "slug": "illit-illit-5th-ep-break-even",
+      "versions": 9,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 14,
+      "artistKo": null,
+      "artistDisplay": "ILLIT",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg",
+      "expired": {
+        "lastSeen": "2026-10-07"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/illit-illit-5th-ep-break-even.png"
+    },
+    {
       "artistId": 3,
       "artistEn": "TOMORROW X TOGETHER",
       "album": "'NO LABELS: PART 02 '",
@@ -1620,6 +1647,60 @@
         "lastSeen": "2026-09-07"
       },
       "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-no-labels-part-02.png"
+    },
+    {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 37465,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-daydreamers-ver",
+      "versions": 5,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 10,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
+      "expired": {
+        "lastSeen": "2026-10-07"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/seventeen-1st-mini-album-dreamscape-daydreamers-ver.png"
+    },
+    {
+      "artistId": 7,
+      "artistEn": "SEVENTEEN",
+      "album": "1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 37465,
+      "artist": "SEVENTEEN",
+      "slug": "seventeen-1st-mini-album-dreamscape-dreamchasers-ver",
+      "versions": 5,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 10,
+      "artistKo": null,
+      "artistDisplay": "SEVENTEEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/23/LvV87m.jpg",
+      "expired": {
+        "lastSeen": "2026-10-07"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/seventeen-1st-mini-album-dreamscape-dreamchasers-ver.png"
     },
     {
       "artistId": 50,
@@ -1728,6 +1809,33 @@
         "lastSeen": "2026-10-01"
       },
       "ogCard": "https://kpop-album.vercel.app/og/plave-5th-mini-album-hyperdrive-random.png"
+    },
+    {
+      "artistId": 120,
+      "artistEn": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-30",
+      "weversePriceMin": 31623,
+      "artist": "ILLIT",
+      "slug": "illit-illit-5th-ep-break-even-wev-us-exclusive",
+      "versions": 6,
+      "retailers": 1,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 6,
+      "artistKo": null,
+      "artistDisplay": "ILLIT",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/dx8EmB.jpg",
+      "expired": {
+        "lastSeen": "2026-10-07"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/illit-illit-5th-ep-break-even-wev-us-exclusive.png"
     }
   ]
 }

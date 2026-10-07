@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:n-flying-still-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261008T090000Z
 DTEND:20261008T093000Z
 SUMMARY:엔플라잉(N.Flying) Still — 예약 배송 시작
@@ -30,7 +30,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:daily-direction-which-way-evt20857@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261009T145959Z
 DTEND:20261009T152959Z
 SUMMARY:데일리:디렉션(DAILY:DIRECTION) WHICH WAY — SHOWCASE 응모 
@@ -53,7 +53,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-evt20637@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261011T145959Z
 DTEND:20261011T152959Z
 SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 특전 포토카드 응
@@ -76,7 +76,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-wish-i-spy-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261012T090100Z
 DTEND:20261012T093100Z
 SUMMARY:엔시티 위시(NCT WISH) I SPY — 예약 배송 시작
@@ -97,7 +97,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-junior-where-we-are-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261012T100000Z
 DTEND:20261012T103000Z
 SUMMARY:예성(SUPER JUNIOR) Where We Are — 예약 배송 시작
@@ -118,7 +118,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:daily-direction-which-way-evt20858@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261013T145959Z
 DTEND:20261013T152959Z
 SUMMARY:데일리:디렉션(DAILY:DIRECTION) WHICH WAY — 예약 특전 
@@ -141,7 +141,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:daily-direction-which-way-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261014T090000Z
 DTEND:20261014T093000Z
 SUMMARY:데일리:디렉션(DAILY:DIRECTION) WHICH WAY — 예약 배송 
@@ -163,7 +163,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:yuju-file-07-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261014T090100Z
 DTEND:20261014T093100Z
 SUMMARY:유주(YUJU) file. 07 — 예약 배송 시작
@@ -182,7 +182,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:flare-u-lovehood-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261014T090200Z
 DTEND:20261014T093200Z
 SUMMARY:플레어 유(FLARE U) LOVEHOOD — 예약 배송 시작
@@ -203,7 +203,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tvxq-the-3rd-mini-album-all-of-my-life-evt20945@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261018T145959Z
 DTEND:20261018T152959Z
 SUMMARY:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 특전 포토
@@ -225,80 +225,8 @@ DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 특전 포
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:seventeen-1st-mini-album-dreamscape-dream-record-ver-evt20758@kpop-albu
- m-benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261018T145959Z
-DTEND:20261018T152959Z
-SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. — 예
- 약 특전 포토카드 응모 마감
-DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
- 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
-URL:https://makestar.co/event/20758
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
-  예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
-  예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:seventeen-1st-mini-album-dreamscape-daydreamers-ver-evt20758@kpop-album
- -benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261018T145959Z
-DTEND:20261018T152959Z
-SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 예
- 약 특전 포토카드 응모 마감
-DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
- 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
-URL:https://makestar.co/event/20758
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
- 예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
- 예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:seventeen-1st-mini-album-dreamscape-dreamchasers-ver-evt20758@kpop-albu
- m-benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261018T145959Z
-DTEND:20261018T152959Z
-SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. — 예
- 약 특전 포토카드 응모 마감
-DESCRIPTION:정한X조슈아 (SEVENTEEN) 1st Mini Album ‘DREAMSCAPE' 발
- 매기념 특전 증정 이벤트\nhttps://makestar.co/event/20758
-URL:https://makestar.co/event/20758
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
-  예약 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
-  예약 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:tvxq-the-3rd-mini-album-all-of-my-life-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261019T090100Z
 DTEND:20261019T093100Z
 SUMMARY:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시작
@@ -319,127 +247,8 @@ DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:seventeen-1st-mini-album-dreamscape-dream-record-ver-release@kpop-album
- -benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261023T080200Z
-DTEND:20261023T083200Z
-SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. — 예
- 약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
- -dream-record-ver.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
-  예약 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dream Record Ver. —
-  예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:seventeen-1st-mini-album-dreamscape-daydreamers-ver-release@kpop-album-
- benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261023T080200Z
-DTEND:20261023T083200Z
-SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 예
- 약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
- -daydreamers-ver.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
- 예약 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Daydreamers Ver. — 
- 예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:seventeen-1st-mini-album-dreamscape-dreamchasers-ver-release@kpop-album
- -benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261023T080200Z
-DTEND:20261023T083200Z
-SUMMARY:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. — 예
- 약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/seventeen-1st-mini-album-dreamscape
- -dreamchasers-ver.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
-  예약 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:SEVENTEEN 1st Mini Album ‘DREAMSCAPE’ Dreamchasers Ver. —
-  예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:illit-illit-5th-ep-break-even-evt20743@kpop-album-benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261025T145959Z
-DTEND:20261025T152959Z
-SUMMARY:ILLIT ILLIT 5th EP 'BREAK EVEN' — 예약 특전 포토카드 응
- 모 마감
-DESCRIPTION:아일릿(ILLIT) 5th Mini Album 'BREAK EVEN' 발매기념 예
- 약판매 특전 증정 이벤트\nhttps://makestar.co/event/20743
-URL:https://makestar.co/event/20743
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:ILLIT ILLIT 5th EP 'BREAK EVEN' — 예약 특전 포토카드 
- 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:ILLIT ILLIT 5th EP 'BREAK EVEN' — 예약 특전 포토카드 
- 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:illit-illit-5th-ep-break-even-wev-us-exclusive-evt20743@kpop-album-bene
- fits
-DTSTAMP:20261006T194818Z
-DTSTART:20261025T145959Z
-DTEND:20261025T152959Z
-SUMMARY:ILLIT ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive) — 예약 특
- 전 포토카드 응모 마감
-DESCRIPTION:아일릿(ILLIT) 5th Mini Album 'BREAK EVEN' 발매기념 예
- 약판매 특전 증정 이벤트\nhttps://makestar.co/event/20743
-URL:https://makestar.co/event/20743
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:ILLIT ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive) — 예약 
- 특전 포토카드 응모 마감 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:ILLIT ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive) — 예약 
- 특전 포토카드 응모 마감 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261026T040000Z
 DTEND:20261026T043000Z
 SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
@@ -458,7 +267,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wayv-hey-somebody-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261026T090100Z
 DTEND:20261026T093100Z
 SUMMARY:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 배송 시작
@@ -479,7 +288,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-evt20988@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261026T145959Z
 DTEND:20261026T152959Z
 SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 포토
@@ -502,7 +311,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
+DTSTAMP:20261007T024138Z
 DTSTART:20261027T090000Z
 DTEND:20261027T093000Z
 SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 시작
@@ -522,24 +331,397 @@ DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:illit-illit-5th-ep-break-even-release@kpop-album-benefits
-DTSTAMP:20261006T194818Z
-DTSTART:20261030T081100Z
-DTEND:20261030T084100Z
-SUMMARY:ILLIT ILLIT 5th EP 'BREAK EVEN' — 예약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/illit-illit-5th-ep-break-even.html
+UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21155@kpop-album-benef
+ its
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Weverse Albums ver.\nhttps://makestar.co/event/21155
+URL:https://makestar.co/event/21155
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:ILLIT ILLIT 5th EP 'BREAK EVEN' — 예약 배송 시작 (하
- 루 전)
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:ILLIT ILLIT 5th EP 'BREAK EVEN' — 예약 배송 시작 (1시
- 간 전)
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21154@kpop-album-benef
+ its
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Everglow Ver.\nhttps://makestar.co/event/21154
+URL:https://makestar.co/event/21154
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21133@kpop-album-benef
+ its
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Closer Ver. / Beyond Ver.\nhttps://makestar.co/event/21133
+URL:https://makestar.co/event/21133
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-everglow-ver-evt21155@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
+ 특전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Weverse Albums ver.\nhttps://makestar.co/event/21155
+URL:https://makestar.co/event/21155
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-everglow-ver-evt21154@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
+ 특전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Everglow Ver.\nhttps://makestar.co/event/21154
+URL:https://makestar.co/event/21154
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-everglow-ver-evt21133@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
+ 특전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Closer Ver. / Beyond Ver.\nhttps://makestar.co/event/21133
+URL:https://makestar.co/event/21133
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-beyond-ver-evt21155@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Weverse Albums ver.\nhttps://makestar.co/event/21155
+URL:https://makestar.co/event/21155
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-beyond-ver-evt21154@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Everglow Ver.\nhttps://makestar.co/event/21154
+URL:https://makestar.co/event/21154
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-beyond-ver-evt21133@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Closer Ver. / Beyond Ver.\nhttps://makestar.co/event/21133
+URL:https://makestar.co/event/21133
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-closer-ver-evt21155@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Weverse Albums ver.\nhttps://makestar.co/event/21155
+URL:https://makestar.co/event/21155
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-closer-ver-evt21154@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Everglow Ver.\nhttps://makestar.co/event/21154
+URL:https://makestar.co/event/21154
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-closer-ver-evt21133@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261101T145959Z
+DTEND:20261101T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 특
+ 전 포토카드 응모 마감
+DESCRIPTION:TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤
+ 트 - Closer Ver. / Beyond Ver.\nhttps://makestar.co/event/21133
+URL:https://makestar.co/event/21133
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 특전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-weverse-albums-ver-release@kpop-album-benefi
+ ts
+DTSTAMP:20261007T024138Z
+DTSTART:20261106T081000Z
+DTEND:20261106T084000Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
+ 약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-weverse-
+ albums-ver.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-everglow-ver-release@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261106T081000Z
+DTEND:20261106T084000Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
+ 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-everglow
+ -ver.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예
+ 약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-beyond-ver-release@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261106T081000Z
+DTEND:20261106T084000Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 배
+ 송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-beyond-v
+ er.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 
+ 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-closer-ver-release@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261106T081000Z
+DTEND:20261106T084000Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 배
+ 송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-closer-v
+ er.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 
+ 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cortis-greengreen-playextended-release@kpop-album-benefits
+DTSTAMP:20261007T024138Z
+DTSTART:20261208T082000Z
+DTEND:20261208T085000Z
+SUMMARY:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 시
+ 작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/cortis-greengreen-playextended.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
+ 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
+ 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
