@@ -8,8 +8,31 @@ X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
+UID:wayv-hey-somebody-evt21017@kpop-album-benefits
+DTSTAMP:20261007T091835Z
+DTSTART:20261025T145959Z
+DTEND:20261025T152959Z
+SUMMARY:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 특전 포토카드 
+ 응모 마감
+DESCRIPTION:샤오쥔 미니 1집 'Hey\, Somebody' 발매기념 특전 증
+ 정 이벤트\nhttps://makestar.co/event/21017
+URL:https://makestar.co/event/21017
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 특전 포토카
+ 드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 특전 포토카
+ 드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:wayv-hey-somebody-release@kpop-album-benefits
-DTSTAMP:20261007T065213Z
+DTSTAMP:20261007T091835Z
 DTSTART:20261026T090100Z
 DTEND:20261026T093100Z
 SUMMARY:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 배송 시작
