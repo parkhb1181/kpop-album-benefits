@@ -476,3 +476,6 @@
 {"at":"2026-10-07T09:17:01.253Z","type":"event.new","label":"럭키드로우","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":20985,"url":"https://makestar.co/event/20985","endAt":"2026-10-11T23:59:59.999999+09:00"}
 {"at":"2026-10-07T09:17:01.253Z","type":"event.new","label":"영상통화 팬사인회","artist":"도경수","album":"미니 4집 [DOPAMINE]","id":20976,"url":"https://makestar.co/event/20976","endAt":"2026-10-11T23:59:59.999999+09:00"}
 {"at":"2026-10-07T09:17:01.253Z","type":"album.new","artist":"ILLIT","album":"ILLIT 5th EP 'BREAK EVEN'"}
+{"at":"2026-10-07T16:45:57.632Z","type":"event.gone","label":"영상통화 팬사인회","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":20984}
+{"at":"2026-10-07T16:45:57.632Z","type":"event.gone","label":"럭키드로우","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":20519}
+{"at":"2026-10-07T16:45:57.632Z","type":"album.gone","artist":"N.Flying","album":"Still"}
