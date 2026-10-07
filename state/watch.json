@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-07T02:34:49.587Z",
-  "lastDeep": "2026-10-07T02:34:49.587Z",
+  "checkedAt": "2026-10-07T09:17:01.253Z",
+  "lastDeep": "2026-10-07T09:17:01.253Z",
   "events": [
     {
       "id": 21155,
@@ -107,6 +107,32 @@
       }
     },
     {
+      "id": 21104,
+      "url": "https://makestar.co/event/21104",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "★한정수량★ KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Lucky Draw Event",
+      "titleEn": "★LIMITED QUANTITY★ KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Lucky Draw Event",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.07",
+      "to": "2026.10.11",
+      "startAt": "2026-10-07T14:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_5_banner_sub.jpg_2026-10-02_190704709984.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_5_banner_sub.jpg_2026-10-02_190704709984_thumb.jpeg"
+      }
+    },
+    {
       "id": 21094,
       "url": "https://makestar.co/event/21094",
       "type": "FANSIGN&PHOTO EVENT",
@@ -123,13 +149,39 @@
       "to": "2026.10.08",
       "startAt": "2026-10-06T19:00:00+09:00",
       "endAt": "2026-10-08T17:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.10.09",
       "productId": 10943,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21067,
+      "url": "https://makestar.co/event/21067",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "ARTMS <Hyper-Ego> LUCKY DRAW EVENT",
+      "titleEn": "ARTMS <Hyper-Ego> LUCKY DRAW EVENT",
+      "album": "<Hyper-Ego>",
+      "albumEn": "<Hyper-Ego>",
+      "artist": "아르테미스",
+      "artistEn": "ARTMS",
+      "releaseDate": "2026-08-07",
+      "from": "2026.10.07",
+      "to": "2026.10.13",
+      "startAt": "2026-10-07T15:00:00+09:00",
+      "endAt": "2026-10-13T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10883,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_4_Banner_sub.png_2026-10-06_115249039401.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_4_Banner_sub.png_2026-10-06_115249039401_thumb.jpeg"
       }
     },
     {
@@ -182,6 +234,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_7_Banner_sub.png_2026-10-06_110134463584.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_7_Banner_sub.png_2026-10-06_110134463584_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21017,
+      "url": "https://makestar.co/event/21017",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "샤오쥔 미니 1집 'Hey, Somebody' 발매기념 특전 증정 이벤트",
+      "titleEn": "XIAOJUN 1st Mini Album 'Hey, Somebody' SPECIAL GIVEAWAY EVENT",
+      "album": "미니 1집 [Hey, Somebody]",
+      "albumEn": "1st Mini Album [Hey, Somebody]",
+      "artist": "샤오쥔",
+      "artistEn": "XIAOJUN",
+      "releaseDate": "2026-10-26",
+      "from": "2026.10.07",
+      "to": "2026.10.25",
+      "startAt": "2026-10-07T18:00:00+09:00",
+      "endAt": "2026-10-25T23:59:59.999999+09:00",
+      "dday": 19,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11167,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_1_banner_sub.png_2026-10-06_141555047850.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_1_banner_sub.png_2026-10-06_141555047850_thumb.jpeg"
       }
     },
     {
@@ -260,6 +338,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20985,
+      "url": "https://makestar.co/event/20985",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Lucky Draw Event",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Lucky Draw Event",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.07",
+      "to": "2026.10.11",
+      "startAt": "2026-10-07T14:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_5_banner_sub.jpg_2026-10-02_190704709984.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_5_banner_sub.jpg_2026-10-02_190704709984_thumb.jpeg"
       }
     },
     {
@@ -364,6 +468,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114450055059.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_1_Banner_Thumb_v2.png_2026-10-01_114450055059_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20976,
+      "url": "https://makestar.co/event/20976",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "도경수(D.O.) DOPAMINE - The 4th Mini Album MEET&CALL EVENT in BANGKOK",
+      "titleEn": "도경수(D.O.) DOPAMINE - The 4th Mini Album MEET&CALL EVENT in BANGKOK",
+      "album": "미니 4집 [DOPAMINE]",
+      "albumEn": "4TH MINI ALBUM [DOPAMINE]",
+      "artist": "도경수",
+      "artistEn": "D.O.",
+      "releaseDate": "2026-09-08",
+      "from": "2026.10.07",
+      "to": "2026.10.11",
+      "startAt": "2026-10-07T18:00:00+09:00",
+      "endAt": "2026-10-11T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.10.12",
+      "productId": 11017,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._6_Banner_Sub.jpg_2026-10-06_115238985749.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._6_Banner_Sub.jpg_2026-10-06_115238985749_thumb.jpeg"
       }
     },
     {
@@ -842,6 +972,11 @@
       "album": "Sequence 02: Attraction"
     },
     {
+      "key": "WayV｜Hey, Somebody",
+      "artist": "WayV",
+      "album": "Hey, Somebody"
+    },
+    {
       "key": "YUJU｜file. 07",
       "artist": "YUJU",
       "album": "file. 07"
@@ -867,11 +1002,6 @@
       "album": "Still"
     },
     {
-      "key": "WayV｜Hey, Somebody",
-      "artist": "WayV",
-      "album": "Hey, Somebody"
-    },
-    {
       "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
       "artist": "TVXQ!",
       "album": "The 3rd Mini Album 'All Of My Life'"
@@ -885,6 +1015,11 @@
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
+    },
+    {
+      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
+      "artist": "ILLIT",
+      "album": "ILLIT 5th EP 'BREAK EVEN'"
     },
     {
       "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
