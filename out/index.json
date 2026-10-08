@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 9. 02:10:48",
+  "stamp": "2026. 10. 9. 05:47:39",
   "albums": [
     {
       "artistId": 294,
@@ -11,20 +11,20 @@
       "weversePriceMin": 11100,
       "artist": "AND2BLE",
       "slug": "and2ble-sequence-02-attraction",
-      "versions": 9,
-      "retailers": 5,
-      "benefitCount": 3,
+      "versions": 10,
+      "retailers": 6,
+      "benefitCount": 4,
       "soldCount": 1,
       "eventCount": 2,
       "fansignCount": 1,
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-10T23:59:59.999999+09:00",
-        "rough": "1일 21시간"
+        "rough": "1일 18시간"
       },
-      "rowCount": 43,
-      "artistKo": null,
-      "artistDisplay": "AND2BLE",
+      "rowCount": 51,
+      "artistKo": "앤더블",
+      "artistDisplay": "앤더블(AND2BLE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/84a07d0b62e304ef3ef599a47bf26aec.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/MCMOml.jpg"
     },
@@ -39,7 +39,7 @@
       "artist": "WayV",
       "slug": "wayv-hey-somebody",
       "versions": 5,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "16일 21시간"
+        "rough": "16일 18시간"
       },
-      "rowCount": 22,
+      "rowCount": 26,
       "artistKo": "샤오쥔(XIAOJUN)",
       "artistDisplay": "샤오쥔(XIAOJUN)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/496c776b3cee66c7a3a425f639549896.png",
@@ -66,7 +66,7 @@
       "artist": "DAILY:DIRECTION",
       "slug": "daily-direction-which-way",
       "versions": 5,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 2,
@@ -74,67 +74,13 @@
       "nextDeadline": {
         "label": "SHOWCASE 응모 마감",
         "at": "2026-10-09T23:59:59.999999+09:00",
-        "rough": "21시간 46분"
+        "rough": "18시간 7분"
       },
-      "rowCount": 21,
-      "artistKo": null,
-      "artistDisplay": "DAILY:DIRECTION",
+      "rowCount": 24,
+      "artistKo": "데일리:디렉션",
+      "artistDisplay": "데일리:디렉션(DAILY:DIRECTION)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/UaA57g.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/UaA57g.jpg"
-    },
-    {
-      "artistId": 155,
-      "artistEn": "NCT WISH",
-      "album": "I SPY",
-      "skuCount": 7,
-      "benefit": false,
-      "deliveryDate": "2026-10-12",
-      "weversePriceMin": 13900,
-      "artist": "NCT WISH",
-      "slug": "nct-wish-i-spy",
-      "versions": 9,
-      "retailers": 6,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-11T23:59:59.999999+09:00",
-        "rough": "2일 21시간"
-      },
-      "rowCount": 41,
-      "artistKo": null,
-      "artistDisplay": "NCT WISH",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/tq7X3c.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/tq7X3c.jpg"
-    },
-    {
-      "artistId": 252,
-      "artistEn": "YUJU",
-      "album": "file. 07",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-10-14",
-      "weversePriceMin": 20500,
-      "artist": "YUJU",
-      "slug": "yuju-file-07",
-      "versions": 5,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-14T18:01:00+09:00",
-        "rough": "5일 15시간"
-      },
-      "rowCount": 19,
-      "artistKo": "유주",
-      "artistDisplay": "유주(YUJU)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fa673bad3469fab64398b80e3f7371e3.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/02/vDwIuL.jpg"
     },
     {
       "artistId": 128,
@@ -146,22 +92,49 @@
       "weversePriceMin": 14700,
       "artist": "SUPER JUNIOR",
       "slug": "super-junior-where-we-are",
-      "versions": 5,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
+      "versions": 10,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 9,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-12T19:00:00+09:00",
-        "rough": "3일 16시간"
+        "rough": "3일 13시간"
       },
-      "rowCount": 21,
+      "rowCount": 41,
       "artistKo": "예성",
       "artistDisplay": "예성(SUPER JUNIOR)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/e66d0458e4ea8359996cf6d634093816.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/28/QYdzg2.jpg"
+    },
+    {
+      "artistId": 252,
+      "artistEn": "YUJU",
+      "album": "file. 07",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-10-14",
+      "weversePriceMin": 20500,
+      "artist": "YUJU",
+      "slug": "yuju-file-07",
+      "versions": 6,
+      "retailers": 6,
+      "benefitCount": 2,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-14T18:01:00+09:00",
+        "rough": "5일 12시간"
+      },
+      "rowCount": 23,
+      "artistKo": "유주",
+      "artistDisplay": "유주(YUJU)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/fa673bad3469fab64398b80e3f7371e3.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/02/vDwIuL.jpg"
     },
     {
       "artistId": 165,
@@ -174,17 +147,17 @@
       "artist": "TWS",
       "slug": "tws-2nd-single-album-to-us-everglow-ver",
       "versions": 4,
-      "retailers": 5,
-      "benefitCount": 1,
+      "retailers": 6,
+      "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 3,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "23일 21시간"
+        "rough": "23일 18시간"
       },
-      "rowCount": 9,
+      "rowCount": 11,
       "artistKo": "투어스",
       "artistDisplay": "투어스(TWS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/6whqhN.png",
@@ -201,17 +174,17 @@
       "artist": "TWS",
       "slug": "tws-2nd-single-album-to-us-weverse-albums-ver",
       "versions": 2,
-      "retailers": 5,
-      "benefitCount": 1,
+      "retailers": 6,
+      "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 3,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "23일 21시간"
+        "rough": "23일 18시간"
       },
-      "rowCount": 6,
+      "rowCount": 7,
       "artistKo": "투어스",
       "artistDisplay": "투어스(TWS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/PZsxc8.png",
@@ -228,17 +201,17 @@
       "artist": "TWS",
       "slug": "tws-2nd-single-album-to-us-beyond-ver",
       "versions": 7,
-      "retailers": 3,
-      "benefitCount": 1,
+      "retailers": 4,
+      "benefitCount": 2,
       "soldCount": 0,
       "eventCount": 3,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "23일 21시간"
+        "rough": "23일 18시간"
       },
-      "rowCount": 8,
+      "rowCount": 13,
       "artistKo": "투어스",
       "artistDisplay": "투어스(TWS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png",
@@ -255,48 +228,48 @@
       "artist": "TWS",
       "slug": "tws-2nd-single-album-to-us-closer-ver",
       "versions": 7,
-      "retailers": 3,
-      "benefitCount": 1,
+      "retailers": 4,
+      "benefitCount": 2,
       "soldCount": 0,
       "eventCount": 3,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "23일 21시간"
+        "rough": "23일 18시간"
       },
-      "rowCount": 8,
+      "rowCount": 13,
       "artistKo": "투어스",
       "artistDisplay": "투어스(TWS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/Uu0LvY.png"
     },
     {
-      "artistId": 289,
-      "artistEn": "FLARE U",
-      "album": "LOVEHOOD",
-      "skuCount": 6,
+      "artistId": 155,
+      "artistEn": "NCT WISH",
+      "album": "I SPY",
+      "skuCount": 7,
       "benefit": false,
-      "deliveryDate": "2026-10-14",
-      "weversePriceMin": 12600,
-      "artist": "FLARE U",
-      "slug": "flare-u-lovehood",
-      "versions": 10,
-      "retailers": 6,
-      "benefitCount": 0,
+      "deliveryDate": "2026-10-12",
+      "weversePriceMin": 13900,
+      "artist": "NCT WISH",
+      "slug": "nct-wish-i-spy",
+      "versions": 9,
+      "retailers": 7,
+      "benefitCount": 1,
       "soldCount": 1,
-      "eventCount": 0,
+      "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-14T18:02:00+09:00",
-        "rough": "5일 15시간"
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-10-11T23:59:59.999999+09:00",
+        "rough": "2일 18시간"
       },
-      "rowCount": 36,
-      "artistKo": null,
-      "artistDisplay": "FLARE U",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/gLSgfB.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/gLSgfB.jpg"
+      "rowCount": 48,
+      "artistKo": "엔시티 위시",
+      "artistDisplay": "엔시티 위시(NCT WISH)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/tq7X3c.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/tq7X3c.jpg"
     },
     {
       "artistId": 215,
@@ -309,21 +282,75 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 6,
-      "benefitCount": 0,
+      "retailers": 7,
+      "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "17일 10시간"
+        "rough": "17일 7시간"
       },
-      "rowCount": 16,
-      "artistKo": null,
-      "artistDisplay": "JISOO",
+      "rowCount": 19,
+      "artistKo": "지수",
+      "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 289,
+      "artistEn": "FLARE U",
+      "album": "LOVEHOOD",
+      "skuCount": 6,
+      "benefit": false,
+      "deliveryDate": "2026-10-14",
+      "weversePriceMin": 12600,
+      "artist": "FLARE U",
+      "slug": "flare-u-lovehood",
+      "versions": 10,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-14T18:02:00+09:00",
+        "rough": "5일 12시간"
+      },
+      "rowCount": 42,
+      "artistKo": "플레어 유",
+      "artistDisplay": "플레어 유(FLARE U)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/gLSgfB.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/gLSgfB.jpg"
+    },
+    {
+      "artistId": 255,
+      "artistEn": "CORTIS",
+      "album": "GREENGREEN_playextended",
+      "skuCount": 4,
+      "benefit": false,
+      "deliveryDate": "2026-11-06",
+      "weversePriceMin": 48260,
+      "artist": "CORTIS",
+      "slug": "cortis-greengreen-playextended",
+      "versions": 11,
+      "retailers": 6,
+      "benefitCount": 0,
+      "soldCount": 9,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-11-06T17:20:00+09:00",
+        "rough": "28일 11시간"
+      },
+      "rowCount": 46,
+      "artistKo": "코르티스",
+      "artistDisplay": "코르티스(CORTIS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg"
     },
     {
       "artistId": 120,
@@ -344,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "16일 21시간"
+        "rough": "16일 18시간"
       },
       "rowCount": 14,
       "artistKo": null,
@@ -371,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-18T23:59:59.999999+09:00",
-        "rough": "9일 21시간"
+        "rough": "9일 18시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -398,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "16일 21시간"
+        "rough": "16일 18시간"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -1431,33 +1458,6 @@
         "lastSeen": "2026-09-01"
       },
       "ogCard": "https://kpop-album.vercel.app/og/82major-heat.png"
-    },
-    {
-      "artistId": 255,
-      "artistEn": "CORTIS",
-      "album": "GREENGREEN_playextended",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-12-08",
-      "weversePriceMin": 49530,
-      "artist": "CORTIS",
-      "slug": "cortis-greengreen-playextended",
-      "versions": 11,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 9,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 38,
-      "artistKo": "코르티스",
-      "artistDisplay": "코르티스(CORTIS)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/29/sIL31X.jpg",
-      "expired": {
-        "lastSeen": "2026-10-08"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/cortis-greengreen-playextended.png"
     },
     {
       "artistId": 129,
