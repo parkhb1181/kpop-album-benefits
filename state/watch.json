@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-08T15:30:06.131Z",
-  "lastDeep": "2026-10-08T15:30:06.131Z",
+  "checkedAt": "2026-10-08T20:47:10.123Z",
+  "lastDeep": "2026-10-08T20:47:10.123Z",
   "events": [
     {
       "id": 21155,
@@ -839,6 +839,11 @@
       "key": "FLARE U｜LOVEHOOD",
       "artist": "FLARE U",
       "album": "LOVEHOOD"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
