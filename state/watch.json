@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-09T07:15:23.069Z",
-  "lastDeep": "2026-10-09T07:15:23.069Z",
+  "checkedAt": "2026-10-09T14:24:21.159Z",
+  "lastDeep": "2026-10-09T14:24:21.159Z",
   "events": [
+    {
+      "id": 21172,
+      "url": "https://makestar.co/event/21172",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "Hearts2Hearts 미니 2집 'Lemon Tang' 발매기념 LUCKY DRAW EVENT",
+      "titleEn": "Hearts2Hearts 2nd Mini Album 'Lemon Tang' LUCKY DRAW EVENT",
+      "album": "미니 2집 [Lemon Tang]",
+      "albumEn": "2nd Mini Album [Lemon Tang]",
+      "artist": "Hearts2Hearts",
+      "artistEn": "Hearts2Hearts",
+      "releaseDate": "2026-06-22",
+      "from": "2026.10.09",
+      "to": "2026.10.15",
+      "startAt": "2026-10-09T18:00:00+09:00",
+      "endAt": "2026-10-15T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10715,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_35_Sub_v2.jpg_2026-10-08_145758482109.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_35_Sub_v2.jpg_2026-10-08_145758482109_thumb.jpeg"
+      }
+    },
     {
       "id": 21155,
       "url": "https://makestar.co/event/21155",
@@ -867,11 +893,6 @@
       "album": "LOVEHOOD"
     },
     {
-      "key": "CORTIS｜GREENGREEN_playextended",
-      "artist": "CORTIS",
-      "album": "GREENGREEN_playextended"
-    },
-    {
       "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
       "artist": "ILLIT",
       "album": "ILLIT 5th EP 'BREAK EVEN'"
@@ -890,6 +911,11 @@
       "key": "DAILY:DIRECTION｜WHICH WAY",
       "artist": "DAILY:DIRECTION",
       "album": "WHICH WAY"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
