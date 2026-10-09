@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-09T00:57:45.021Z",
-  "lastDeep": "2026-10-09T00:57:45.021Z",
+  "checkedAt": "2026-10-09T07:15:23.069Z",
+  "lastDeep": "2026-10-09T07:15:23.069Z",
   "events": [
     {
       "id": 21155,
@@ -260,6 +260,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21000,
+      "url": "https://makestar.co/event/21000",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "TUNEXX 2ND MINI ALBUM [BLUE MODE] MEET&CALL EVENT",
+      "titleEn": "TUNEXX 2ND MINI ALBUM [BLUE MODE] MEET&CALL EVENT",
+      "album": "미니 2집 [BLUE MODE]",
+      "albumEn": "2nd Mini Album [BLUE MODE]",
+      "artist": "튜넥스",
+      "artistEn": "TUNEXX",
+      "releaseDate": "2026-09-02",
+      "from": "2026.10.09",
+      "to": "2026.10.12",
+      "startAt": "2026-10-09T15:00:00+09:00",
+      "endAt": "2026-10-12T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.13",
+      "productId": 10988,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_3_Thumb.jpg_2026-10-07_170941286777.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_3_Thumb.jpg_2026-10-07_170941286777_thumb.jpeg"
       }
     },
     {
