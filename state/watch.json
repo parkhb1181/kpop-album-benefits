@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-10T02:45:47.039Z",
-  "lastDeep": "2026-10-10T02:45:47.039Z",
+  "checkedAt": "2026-10-10T09:23:18.786Z",
+  "lastDeep": "2026-10-10T09:23:18.786Z",
   "events": [
     {
       "id": 21172,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_35_Sub_v2.jpg_2026-10-08_145758482109.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_35_Sub_v2.jpg_2026-10-08_145758482109_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21171,
+      "url": "https://makestar.co/event/21171",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "NMIXX 6th EP [Strange Muse] PRE-ORDER SPECIAL BOOK TALK & FANSIGN EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] PRE-ORDER SPECIAL BOOK TALK & FANSIGN EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.10",
+      "to": "2026.10.12",
+      "startAt": "2026-10-10T12:00:00+09:00",
+      "endAt": "2026-10-12T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.13",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_4_banner_sub.png_2026-10-08_152442273860.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_4_banner_sub.png_2026-10-08_152442273860_thumb.jpeg"
       }
     },
     {
@@ -130,6 +156,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21124,
+      "url": "https://makestar.co/event/21124",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "소연 (SOYEON) 1st Full Album [끝내주는 인생] SPECIAL MEET&CALL EVENT",
+      "titleEn": "SOYEON 1st Full Album [What a Wonderful Life] SPECIAL MEET&CALL EVENT",
+      "album": "정규 [끝내주는 인생]",
+      "albumEn": "Full Album [끝내주는 인생]",
+      "artist": "소연",
+      "artistEn": "SOYEON",
+      "releaseDate": "2026-09-07",
+      "from": "2026.10.10",
+      "to": "2026.10.12",
+      "startAt": "2026-10-10T15:00:00+09:00",
+      "endAt": "2026-10-12T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.13",
+      "productId": 11041,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_4_banner_sub.png_2026-10-08_115235065720.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_4_banner_sub.png_2026-10-08_115235065720_thumb.jpeg"
       }
     },
     {
@@ -468,6 +520,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11146_MAX_CHANGMIN_1_Banner_thumb.jpg_2026-09-29_145157006722.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11146_MAX_CHANGMIN_1_Banner_thumb.jpg_2026-09-29_145157006722_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20938,
+      "url": "https://makestar.co/event/20938",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] MEET&CALL EVENT",
+      "titleEn": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] MEET&CALL EVENT",
+      "album": "미니1집 [DEAD:ALIVE]",
+      "albumEn": "1st Mini Album [DEAD:ALIVE]",
+      "artist": "성한빈",
+      "artistEn": "Sung Han Bin",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.10",
+      "to": "2026.10.12",
+      "startAt": "2026-10-10T12:00:00+09:00",
+      "endAt": "2026-10-12T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.13",
+      "productId": 11133,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_3_Banner_Sub.jpg_2026-09-28_183705834064.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_3_Banner_Sub.jpg_2026-09-28_183705834064_thumb.jpeg"
       }
     },
     {

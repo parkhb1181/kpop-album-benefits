@@ -496,3 +496,6 @@
 {"at":"2026-10-09T14:24:21.159Z","type":"event.new","label":"럭키드로우","artist":"Hearts2Hearts","album":"미니 2집 [Lemon Tang]","id":21172,"url":"https://makestar.co/event/21172","endAt":"2026-10-15T23:59:59.999999+09:00"}
 {"at":"2026-10-09T19:36:49.536Z","type":"event.gone","label":"SHOWCASE","artist":"데일리디렉션","album":"1st MINI ALBUM [WHICH WAY]","id":20857}
 {"at":"2026-10-09T19:36:49.536Z","type":"album.new","artist":"BTS","album":"BTS The 5th Album 'ARIRANG' (613 Limited Edition Picture Disc Vinyl)"}
+{"at":"2026-10-10T09:23:18.786Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21171,"url":"https://makestar.co/event/21171","endAt":"2026-10-12T23:59:59.999999+09:00"}
+{"at":"2026-10-10T09:23:18.786Z","type":"event.new","label":"영상통화 팬사인회","artist":"소연","album":"정규 [끝내주는 인생]","id":21124,"url":"https://makestar.co/event/21124","endAt":"2026-10-12T23:59:59.999999+09:00"}
+{"at":"2026-10-10T09:23:18.786Z","type":"event.new","label":"영상통화 팬사인회","artist":"성한빈","album":"미니1집 [DEAD:ALIVE]","id":20938,"url":"https://makestar.co/event/20938","endAt":"2026-10-12T23:59:59.999999+09:00"}
