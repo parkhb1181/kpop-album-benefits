@@ -499,3 +499,4 @@
 {"at":"2026-10-10T09:23:18.786Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21171,"url":"https://makestar.co/event/21171","endAt":"2026-10-12T23:59:59.999999+09:00"}
 {"at":"2026-10-10T09:23:18.786Z","type":"event.new","label":"영상통화 팬사인회","artist":"소연","album":"정규 [끝내주는 인생]","id":21124,"url":"https://makestar.co/event/21124","endAt":"2026-10-12T23:59:59.999999+09:00"}
 {"at":"2026-10-10T09:23:18.786Z","type":"event.new","label":"영상통화 팬사인회","artist":"성한빈","album":"미니1집 [DEAD:ALIVE]","id":20938,"url":"https://makestar.co/event/20938","endAt":"2026-10-12T23:59:59.999999+09:00"}
+{"at":"2026-10-10T15:30:24.310Z","type":"event.gone","label":"영상통화 팬사인회","artist":"앤더블","album":"미니 2집 [Sequence 02: Attraction]","id":21098}
