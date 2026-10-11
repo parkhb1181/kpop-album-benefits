@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-11T01:37:05.140Z",
-  "lastDeep": "2026-10-11T01:37:05.140Z",
+  "checkedAt": "2026-10-11T07:49:40.014Z",
+  "lastDeep": "2026-10-11T07:49:40.014Z",
   "events": [
     {
       "id": 21172,
@@ -130,6 +130,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_2_Banner_Thumb.jpg_2026-10-07_192742304633.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_2_Banner_Thumb.jpg_2026-10-07_192742304633_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21134,
+      "url": "https://makestar.co/event/21134",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ONEUS (원어스) 12TH EP [FIRST LIGHT : 井]  1:1 PHOTO&MEET&CALL EVENT",
+      "titleEn": "ONEUS (원어스) 12TH EP [FIRST LIGHT : 井]  1:1 PHOTO&MEET&CALL EVENT",
+      "album": "[FIRST LIGHT : 井]",
+      "albumEn": "[FIRST LIGHT : 井]",
+      "artist": "원어스",
+      "artistEn": "ONEUS",
+      "releaseDate": "2026-09-28",
+      "from": "2026.10.11",
+      "to": "2026.10.13",
+      "startAt": "2026-10-11T15:00:00+09:00",
+      "endAt": "2026-10-13T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.14",
+      "productId": 11093,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11093_ONEUS_2_banner_sub.jpg_2026-10-08_141506785452.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11093_ONEUS_2_banner_sub.jpg_2026-10-08_141506785452_thumb.jpeg"
       }
     },
     {
