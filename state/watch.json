@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-11T22:54:34.319Z",
-  "lastDeep": "2026-10-11T22:54:34.319Z",
+  "checkedAt": "2026-10-12T02:02:59.498Z",
+  "lastDeep": "2026-10-12T02:02:59.498Z",
   "events": [
     {
       "id": 21172,
@@ -725,6 +725,11 @@
       "key": "SUPER JUNIOR｜Where We Are",
       "artist": "SUPER JUNIOR",
       "album": "Where We Are"
+    },
+    {
+      "key": "LISA｜PRESS PLAY CD",
+      "artist": "LISA",
+      "album": "PRESS PLAY CD"
     },
     {
       "key": "FLARE U｜LOVEHOOD",
