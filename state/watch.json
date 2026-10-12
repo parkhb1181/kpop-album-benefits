@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-12T09:10:49.771Z",
-  "lastDeep": "2026-10-12T09:10:49.771Z",
+  "checkedAt": "2026-10-12T19:02:44.489Z",
+  "lastDeep": "2026-10-12T19:02:44.489Z",
   "events": [
+    {
+      "id": 21173,
+      "url": "https://makestar.co/event/21173",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> FANSIGN & PHOTO & VIDEO CALL EVENT IN BANGKOK",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> FANSIGN & PHOTO & VIDEO CALL EVENT IN BANGKOK",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.12",
+      "to": "2026.10.15",
+      "startAt": "2026-10-12T19:00:00+09:00",
+      "endAt": "2026-10-15T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.16",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_13_banner_Sub_v3.jpg_2026-10-12_174238823698.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_13_banner_Sub_v3.jpg_2026-10-12_174238823698_thumb.jpeg"
+      }
+    },
     {
       "id": 21172,
       "url": "https://makestar.co/event/21172",
@@ -19,39 +45,13 @@
       "to": "2026.10.15",
       "startAt": "2026-10-09T18:00:00+09:00",
       "endAt": "2026-10-15T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
       "productId": 10715,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_35_Sub_v2.jpg_2026-10-08_145758482109.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10715_HEARTS2HEARTS_35_Sub_v2.jpg_2026-10-08_145758482109_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21171,
-      "url": "https://makestar.co/event/21171",
-      "type": "SPECIAL OFFLINE EVENT",
-      "label": "SPECIAL OFFLINE EVENT",
-      "fansign": false,
-      "title": "NMIXX 6th EP [Strange Muse] PRE-ORDER SPECIAL BOOK TALK & FANSIGN EVENT",
-      "titleEn": "NMIXX 6th EP [Strange Muse] PRE-ORDER SPECIAL BOOK TALK & FANSIGN EVENT",
-      "album": "미니 6집 [Strange Muse]",
-      "albumEn": "6th Mini Album [Strange Muse]",
-      "artist": "엔믹스",
-      "artistEn": "NMIXX",
-      "releaseDate": "2026-10-19",
-      "from": "2026.10.10",
-      "to": "2026.10.12",
-      "startAt": "2026-10-10T12:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.13",
-      "productId": 11113,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_4_banner_sub.png_2026-10-08_152442273860.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_4_banner_sub.png_2026-10-08_152442273860_thumb.jpeg"
       }
     },
     {
@@ -71,8 +71,8 @@
       "to": "2026.10.14",
       "startAt": "2026-10-12T18:00:00+09:00",
       "endAt": "2026-10-14T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.15",
       "productId": 11167,
       "image": {
@@ -97,7 +97,7 @@
       "to": "2026.11.01",
       "startAt": "2026-10-07T11:00:00+09:00",
       "endAt": "2026-11-01T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11191,
@@ -123,7 +123,7 @@
       "to": "2026.11.01",
       "startAt": "2026-10-07T11:00:00+09:00",
       "endAt": "2026-11-01T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11191,
@@ -149,8 +149,8 @@
       "to": "2026.10.14",
       "startAt": "2026-10-12T15:00:00+09:00",
       "endAt": "2026-10-14T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.15",
       "productId": 11155,
       "image": {
@@ -175,7 +175,7 @@
       "to": "2026.10.13",
       "startAt": "2026-10-11T15:00:00+09:00",
       "endAt": "2026-10-13T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.10.14",
       "productId": 11093,
@@ -201,39 +201,13 @@
       "to": "2026.11.01",
       "startAt": "2026-10-07T11:00:00+09:00",
       "endAt": "2026-11-01T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11191,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21124,
-      "url": "https://makestar.co/event/21124",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "소연 (SOYEON) 1st Full Album [끝내주는 인생] SPECIAL MEET&CALL EVENT",
-      "titleEn": "SOYEON 1st Full Album [What a Wonderful Life] SPECIAL MEET&CALL EVENT",
-      "album": "정규 [끝내주는 인생]",
-      "albumEn": "Full Album [끝내주는 인생]",
-      "artist": "소연",
-      "artistEn": "SOYEON",
-      "releaseDate": "2026-09-07",
-      "from": "2026.10.10",
-      "to": "2026.10.12",
-      "startAt": "2026-10-10T15:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.13",
-      "productId": 11041,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_4_banner_sub.png_2026-10-08_115235065720.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11041_SOYEON_4_banner_sub.png_2026-10-08_115235065720_thumb.jpeg"
       }
     },
     {
@@ -253,7 +227,7 @@
       "to": "2026.10.13",
       "startAt": "2026-10-07T15:00:00+09:00",
       "endAt": "2026-10-13T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 10883,
@@ -279,8 +253,8 @@
       "to": "2026.10.14",
       "startAt": "2026-10-12T14:00:00+09:00",
       "endAt": "2026-10-14T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.10.15",
       "productId": 11157,
       "image": {
@@ -305,7 +279,7 @@
       "to": "2026.10.25",
       "startAt": "2026-10-07T18:00:00+09:00",
       "endAt": "2026-10-25T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11167,
@@ -331,39 +305,13 @@
       "to": "2026.10.19",
       "startAt": "2026-10-02T15:00:00+09:00",
       "endAt": "2026-10-19T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": null,
       "productId": 11163,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11163_ONEW_1_banner_sub.png_2026-10-01_150216870196_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21000,
-      "url": "https://makestar.co/event/21000",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "TUNEXX 2ND MINI ALBUM [BLUE MODE] MEET&CALL EVENT",
-      "titleEn": "TUNEXX 2ND MINI ALBUM [BLUE MODE] MEET&CALL EVENT",
-      "album": "미니 2집 [BLUE MODE]",
-      "albumEn": "2nd Mini Album [BLUE MODE]",
-      "artist": "튜넥스",
-      "artistEn": "TUNEXX",
-      "releaseDate": "2026-09-02",
-      "from": "2026.10.09",
-      "to": "2026.10.12",
-      "startAt": "2026-10-09T15:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.13",
-      "productId": 10988,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_3_Thumb.jpg_2026-10-07_170941286777.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_3_Thumb.jpg_2026-10-07_170941286777_thumb.jpeg"
       }
     },
     {
@@ -383,7 +331,7 @@
       "to": "2026.11.09",
       "startAt": "2026-10-12T12:00:00+09:00",
       "endAt": "2026-11-09T23:59:59.999999+09:00",
-      "dday": 29,
+      "dday": 28,
       "closing": false,
       "winnerAt": "2026.11.10",
       "productId": 11159,
@@ -409,7 +357,7 @@
       "to": "2026.10.26",
       "startAt": "2026-10-06T11:00:00+09:00",
       "endAt": "2026-10-26T23:59:59.999999+09:00",
-      "dday": 15,
+      "dday": 14,
       "closing": false,
       "winnerAt": "2026.10.27",
       "productId": 11158,
@@ -435,39 +383,13 @@
       "to": "2026.10.18",
       "startAt": "2026-10-12T18:00:00+09:00",
       "endAt": "2026-10-18T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 11101,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_6_Banner_Sub.jpg_2026-10-06_184948262585.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_6_Banner_Sub.jpg_2026-10-06_184948262585_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20950,
-      "url": "https://makestar.co/event/20950",
-      "type": "FANSIGN&GAME EVENT",
-      "label": "FANSIGN&GAME EVENT",
-      "fansign": false,
-      "title": "ODD YOUTH 3rd Single [ can't go back ] FANSIGN&GAME EVENT IN TAIPEI",
-      "titleEn": "ODD YOUTH 3rd Single [ can't go back ] FANSIGN&GAME EVENT IN TAIPEI",
-      "album": "3rd Single [can't go back]",
-      "albumEn": "3rd Single [can't go back]",
-      "artist": "오드유스",
-      "artistEn": "ODD YOUTH",
-      "releaseDate": "2026-08-24",
-      "from": "2026.10.06",
-      "to": "2026.10.12",
-      "startAt": "2026-10-06T18:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.13",
-      "productId": 10992,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_4_Banner_Sub.jpg_2026-10-02_130801347704.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_4_Banner_Sub.jpg_2026-10-02_130801347704_thumb.jpeg"
       }
     },
     {
@@ -487,39 +409,13 @@
       "to": "2026.10.18",
       "startAt": "2026-09-29T18:00:00+09:00",
       "endAt": "2026-10-18T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 11146,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11146_MAX_CHANGMIN_1_Banner_thumb.jpg_2026-09-29_145157006722.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11146_MAX_CHANGMIN_1_Banner_thumb.jpg_2026-09-29_145157006722_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20938,
-      "url": "https://makestar.co/event/20938",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] MEET&CALL EVENT",
-      "titleEn": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] MEET&CALL EVENT",
-      "album": "미니1집 [DEAD:ALIVE]",
-      "albumEn": "1st Mini Album [DEAD:ALIVE]",
-      "artist": "성한빈",
-      "artistEn": "Sung Han Bin",
-      "releaseDate": "2026-10-12",
-      "from": "2026.10.10",
-      "to": "2026.10.12",
-      "startAt": "2026-10-10T12:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.13",
-      "productId": 11133,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_3_Banner_Sub.jpg_2026-09-28_183705834064.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_3_Banner_Sub.jpg_2026-09-28_183705834064_thumb.jpeg"
       }
     },
     {
@@ -539,7 +435,7 @@
       "to": "2026.10.25",
       "startAt": "2026-09-29T11:00:00+09:00",
       "endAt": "2026-10-25T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11144,
@@ -565,7 +461,7 @@
       "to": "2026.10.13",
       "startAt": "2026-09-28T16:00:00+09:00",
       "endAt": "2026-10-13T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 11139,
@@ -591,7 +487,7 @@
       "to": "2026.11.01",
       "startAt": "2026-09-28T11:00:00+09:00",
       "endAt": "2026-11-01T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": "2026.11.02",
       "productId": 11105,
@@ -617,7 +513,7 @@
       "to": "2026.10.18",
       "startAt": "2026-09-23T11:00:00+09:00",
       "endAt": "2026-10-18T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 11118,
@@ -643,7 +539,7 @@
       "to": "2026.10.25",
       "startAt": "2026-09-28T11:00:00+09:00",
       "endAt": "2026-10-25T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11114,
@@ -669,39 +565,13 @@
       "to": "2026.10.18",
       "startAt": "2026-09-21T12:00:00+09:00",
       "endAt": "2026-10-18T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": "2026.10.19",
       "productId": 11113,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20597,
-      "url": "https://makestar.co/event/20597",
-      "type": "FANSIGN",
-      "label": "대면 팬사인회",
-      "fansign": true,
-      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' FANSIGN EVENT IN TAIPEI",
-      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' FANSIGN EVENT IN TAIPEI",
-      "album": "2nd Single Album 'Made My Night'",
-      "albumEn": "2nd Single Album 'Made My Night'",
-      "artist": "르세라핌",
-      "artistEn": "LE SSERAFIM",
-      "releaseDate": "2026-09-11",
-      "from": "2026.10.08",
-      "to": "2026.10.12",
-      "startAt": "2026-10-08T18:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.14",
-      "productId": 11042,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_5_banner_sub.png_2026-10-02_153625978175.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_5_banner_sub.png_2026-10-02_153625978175_thumb.jpeg"
       }
     },
     {
@@ -721,7 +591,7 @@
       "to": "2026.10.22",
       "startAt": "2026-09-14T11:00:00+09:00",
       "endAt": "2026-10-22T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
@@ -747,39 +617,13 @@
       "to": "2026.10.22",
       "startAt": "2026-09-14T11:00:00+09:00",
       "endAt": "2026-10-22T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": null,
       "productId": 11042,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_3_banner_sub.png_2026-09-09_190050203013.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_3_banner_sub.png_2026-09-09_190050203013_thumb.jpeg"
-      }
-    },
-    {
-      "id": 20566,
-      "url": "https://makestar.co/event/20566",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "PLAVE 5th Mini Album 'HYPERDRIVE' PRE-ORDER PHOTOCARD EVENT",
-      "titleEn": "PLAVE 5th Mini Album 'HYPERDRIVE' PRE-ORDER PHOTOCARD EVENT",
-      "album": "5th Mini Album 'HYPERDRIVE'",
-      "albumEn": "5th Mini Album 'HYPERDRIVE'",
-      "artist": "플레이브",
-      "artistEn": "PLAVE",
-      "releaseDate": "2026-10-13",
-      "from": "2026.09.17",
-      "to": "2026.10.12",
-      "startAt": "2026-09-17T11:00:00+09:00",
-      "endAt": "2026-10-12T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": null,
-      "productId": 11091,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11091_PLAVE_1_Banner_Thumb.png_2026-09-09_160323489321.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11091_PLAVE_1_Banner_Thumb.png_2026-09-09_160323489321_thumb.jpeg"
       }
     },
     {
@@ -799,7 +643,7 @@
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
       "endAt": "2026-10-29T23:59:59.999999+09:00",
-      "dday": 18,
+      "dday": 17,
       "closing": false,
       "winnerAt": null,
       "productId": 11029,
@@ -862,11 +706,6 @@
       "album": "S.W.I.S.H."
     },
     {
-      "key": "SUPER JUNIOR｜Where We Are",
-      "artist": "SUPER JUNIOR",
-      "album": "Where We Are"
-    },
-    {
       "key": "LISA｜PRESS PLAY CD",
       "artist": "LISA",
       "album": "PRESS PLAY CD"
@@ -880,6 +719,16 @@
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
+    },
+    {
+      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
+      "artist": "PLAVE",
+      "album": "5th Mini Album 'HYPERDRIVE' Random"
+    },
+    {
+      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
+      "artist": "PLAVE",
+      "album": "5th Mini Album 'HYPERDRIVE' Set"
     },
     {
       "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
@@ -900,6 +749,16 @@
       "key": "TWS｜2nd Single Album <TO US> Closer Ver.",
       "artist": "TWS",
       "album": "2nd Single Album <TO US> Closer Ver."
+    },
+    {
+      "key": "SUPER JUNIOR｜Where We Are",
+      "artist": "SUPER JUNIOR",
+      "album": "Where We Are"
+    },
+    {
+      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
+      "artist": "PLAVE",
+      "album": "5th Mini Album 'HYPERDRIVE'"
     },
     {
       "key": "JISOO｜CLICK",
