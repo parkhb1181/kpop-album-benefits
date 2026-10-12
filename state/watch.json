@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-12T02:02:59.498Z",
-  "lastDeep": "2026-10-12T02:02:59.498Z",
+  "checkedAt": "2026-10-12T09:10:49.771Z",
+  "lastDeep": "2026-10-12T09:10:49.771Z",
   "events": [
     {
       "id": 21172,
@@ -55,6 +55,32 @@
       }
     },
     {
+      "id": 21168,
+      "url": "https://makestar.co/event/21168",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "샤오쥔 미니 1집 'Hey, Somebody' 발매기념 SPECIAL SELFIE EVENT & 사인회",
+      "titleEn": "XIAOJUN The 1st Mini Album 'Hey, Somebody'  SPECIAL SELFIE EVENT & FANSIGN EVENT",
+      "album": "미니 1집 [Hey, Somebody]",
+      "albumEn": "1st Mini Album [Hey, Somebody]",
+      "artist": "샤오쥔",
+      "artistEn": "XIAOJUN",
+      "releaseDate": "2026-10-26",
+      "from": "2026.10.12",
+      "to": "2026.10.14",
+      "startAt": "2026-10-12T18:00:00+09:00",
+      "endAt": "2026-10-14T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.15",
+      "productId": 11167,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_3_banner_sub.png_2026-10-08_160211640409.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_3_banner_sub.png_2026-10-08_160211640409_thumb.jpeg"
+      }
+    },
+    {
       "id": 21155,
       "url": "https://makestar.co/event/21155",
       "type": "PHOTOCARD",
@@ -104,6 +130,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21145,
+      "url": "https://makestar.co/event/21145",
+      "type": "PHOTO EVENT",
+      "label": "PHOTO EVENT",
+      "fansign": false,
+      "title": "ERIC 'Baby Pink Letter Exhibition' PHOTO EVENT",
+      "titleEn": "ERIC 'Baby Pink Letter Exhibition' PHOTO EVENT",
+      "album": "[Baby Pink Letter Exhibition]",
+      "albumEn": "[Baby Pink Letter Exhibition]",
+      "artist": "ERIC",
+      "artistEn": "ERIC",
+      "releaseDate": "2026-11-12",
+      "from": "2026.10.12",
+      "to": "2026.10.14",
+      "startAt": "2026-10-12T15:00:00+09:00",
+      "endAt": "2026-10-14T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.15",
+      "productId": 11155,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_3_Banner_Thumb_v2.jpg_2026-10-07_194117961344.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_3_Banner_Thumb_v2.jpg_2026-10-07_194117961344_thumb.jpeg"
       }
     },
     {
@@ -211,6 +263,32 @@
       }
     },
     {
+      "id": 21020,
+      "url": "https://makestar.co/event/21020",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "MEOVV Single Album [GO HARD] 발매기념 대면 팬사인회 이벤트",
+      "titleEn": "MEOVV Single Album [GO HARD] Face-to-Face Fansign Event",
+      "album": "Single Album [GO HARD]",
+      "albumEn": "Single Album [GO HARD]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.12",
+      "to": "2026.10.14",
+      "startAt": "2026-10-12T14:00:00+09:00",
+      "endAt": "2026-10-14T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.15",
+      "productId": 11157,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_3_Banner_Thumb.png_2026-10-07_164447816223.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_3_Banner_Thumb.png_2026-10-07_164447816223_thumb.jpeg"
+      }
+    },
+    {
       "id": 21017,
       "url": "https://makestar.co/event/21017",
       "type": "PHOTOCARD",
@@ -289,6 +367,32 @@
       }
     },
     {
+      "id": 20989,
+      "url": "https://makestar.co/event/20989",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "LNGSHOT EP [S.W.I.S.H.] (Standard Ver.) PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "LNGSHOT EP [S.W.I.S.H.] (Standard Ver.) PRE-ORDER PHOTOCARD EVENT",
+      "album": "EP [S.W.I.S.H.]",
+      "albumEn": "EP [S.W.I.S.H.]",
+      "artist": "롱샷",
+      "artistEn": "LNGSHOT",
+      "releaseDate": "2026-11-10",
+      "from": "2026.10.12",
+      "to": "2026.11.09",
+      "startAt": "2026-10-12T12:00:00+09:00",
+      "endAt": "2026-11-09T23:59:59.999999+09:00",
+      "dday": 29,
+      "closing": false,
+      "winnerAt": "2026.11.10",
+      "productId": 11159,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11159_LNGSHOT_1_banner_sub.jpg_2026-10-07_160859068775.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11159_LNGSHOT_1_banner_sub.jpg_2026-10-07_160859068775_thumb.jpeg"
+      }
+    },
+    {
       "id": 20988,
       "url": "https://makestar.co/event/20988",
       "type": "PHOTOCARD",
@@ -312,6 +416,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20978,
+      "url": "https://makestar.co/event/20978",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "NCT WISH 미니 4집 'I SPY' 발매기념 LUCKY DRAW EVENT",
+      "titleEn": "NCT WISH The 4th Mini Album 'I SPY' LUCKY DRAW EVENT",
+      "album": "미니 4집 [I SPY]",
+      "albumEn": "4th Mini Album [I SPY]",
+      "artist": "NCT WISH",
+      "artistEn": "NCT WISH",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.12",
+      "to": "2026.10.18",
+      "startAt": "2026-10-12T18:00:00+09:00",
+      "endAt": "2026-10-18T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11101,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_6_Banner_Sub.jpg_2026-10-06_184948262585.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_6_Banner_Sub.jpg_2026-10-06_184948262585_thumb.jpeg"
       }
     },
     {
@@ -712,6 +842,11 @@
       "album": "Sequence 02: Attraction"
     },
     {
+      "key": "FLARE U｜LOVEHOOD",
+      "artist": "FLARE U",
+      "album": "LOVEHOOD"
+    },
+    {
       "key": "WayV｜Hey, Somebody",
       "artist": "WayV",
       "album": "Hey, Somebody"
@@ -720,6 +855,11 @@
       "key": "YUJU｜file. 07",
       "artist": "YUJU",
       "album": "file. 07"
+    },
+    {
+      "key": "LNGSHOT｜S.W.I.S.H.",
+      "artist": "LNGSHOT",
+      "album": "S.W.I.S.H."
     },
     {
       "key": "SUPER JUNIOR｜Where We Are",
@@ -732,26 +872,6 @@
       "album": "PRESS PLAY CD"
     },
     {
-      "key": "FLARE U｜LOVEHOOD",
-      "artist": "FLARE U",
-      "album": "LOVEHOOD"
-    },
-    {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN'",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN'"
-    },
-    {
-      "key": "ILLIT｜ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)",
-      "artist": "ILLIT",
-      "album": "ILLIT 5th EP 'BREAK EVEN' (WEV US Exclusive)"
-    },
-    {
-      "key": "TVXQ!｜The 3rd Mini Album 'All Of My Life'",
-      "artist": "TVXQ!",
-      "album": "The 3rd Mini Album 'All Of My Life'"
-    },
-    {
       "key": "DAILY:DIRECTION｜WHICH WAY",
       "artist": "DAILY:DIRECTION",
       "album": "WHICH WAY"
@@ -760,11 +880,6 @@
       "key": "CORTIS｜GREENGREEN_playextended",
       "artist": "CORTIS",
       "album": "GREENGREEN_playextended"
-    },
-    {
-      "key": "BTS｜BTS The 5th Album 'ARIRANG' (613 Limited Edition Picture Disc Vinyl)",
-      "artist": "BTS",
-      "album": "BTS The 5th Album 'ARIRANG' (613 Limited Edition Picture Disc Vinyl)"
     },
     {
       "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
