@@ -1,7 +1,111 @@
 {
-  "checkedAt": "2026-10-13T01:20:31.380Z",
-  "lastDeep": "2026-10-13T01:20:31.380Z",
+  "checkedAt": "2026-10-13T08:05:07.317Z",
+  "lastDeep": "2026-10-13T08:05:07.317Z",
   "events": [
+    {
+      "id": 21216,
+      "url": "https://makestar.co/event/21216",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) PRE-ORDER PHOTOCARD EVENT",
+      "album": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "albumEn": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "artist": "에이티즈",
+      "artistEn": "ATEEZ",
+      "releaseDate": "2026-11-13",
+      "from": "2026.10.13",
+      "to": "2026.11.12",
+      "startAt": "2026-10-13T11:00:00+09:00",
+      "endAt": "2026-11-12T23:59:59.999999+09:00",
+      "dday": 31,
+      "closing": false,
+      "winnerAt": "2026.11.13",
+      "productId": 11205,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21201,
+      "url": "https://makestar.co/event/21201",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "LNGSHOT EP [S.W.I.S.H.] (Standard Ver.) PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "LNGSHOT EP [S.W.I.S.H.] (Standard Ver.) PRE-ORDER MEET&CALL EVENT",
+      "album": "EP [S.W.I.S.H.]",
+      "albumEn": "EP [S.W.I.S.H.]",
+      "artist": "롱샷",
+      "artistEn": "LNGSHOT",
+      "releaseDate": "2026-11-10",
+      "from": "2026.10.13",
+      "to": "2026.10.15",
+      "startAt": "2026-10-13T15:00:00+09:00",
+      "endAt": "2026-10-15T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.16",
+      "productId": 11159,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11159_LNGSHOT_2_banner_sub.jpg_2026-10-12_152801097510.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11159_LNGSHOT_2_banner_sub.jpg_2026-10-12_152801097510_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21196,
+      "url": "https://makestar.co/event/21196",
+      "type": "SHOWCASE",
+      "label": "SHOWCASE",
+      "fansign": false,
+      "title": "RESCENE 4th Mini Album [PULSE] SHOWCASE INVITATION EVENT",
+      "titleEn": "RESCENE 4th Mini Album [PULSE] SHOWCASE INVITATION EVENT",
+      "album": "4th Mini Album [PULSE]",
+      "albumEn": "4th Mini Album [PULSE]",
+      "artist": "리센느",
+      "artistEn": "RESCENE",
+      "releaseDate": "2026-11-03",
+      "from": "2026.10.13",
+      "to": "2026.10.16",
+      "startAt": "2026-10-13T15:00:00+09:00",
+      "endAt": "2026-10-16T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.20",
+      "productId": 11203,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_2_banner_sub.png_2026-10-12_125803241991.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_2_banner_sub.png_2026-10-12_125803241991_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21195,
+      "url": "https://makestar.co/event/21195",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "RESCENE 4th Mini Album [PULSE] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "RESCENE 4th Mini Album [PULSE] PRE-ORDER PHOTOCARD EVENT",
+      "album": "4th Mini Album [PULSE]",
+      "albumEn": "4th Mini Album [PULSE]",
+      "artist": "리센느",
+      "artistEn": "RESCENE",
+      "releaseDate": "2026-11-03",
+      "from": "2026.10.13",
+      "to": "2026.11.02",
+      "startAt": "2026-10-13T12:00:00+09:00",
+      "endAt": "2026-11-02T23:59:59.999999+09:00",
+      "dday": 21,
+      "closing": false,
+      "winnerAt": "2026.11.03",
+      "productId": 11203,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_1_banner_sub.png_2026-10-12_103959101485.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_1_banner_sub.png_2026-10-12_103959101485_thumb.jpeg"
+      }
+    },
     {
       "id": 21173,
       "url": "https://makestar.co/event/21173",
@@ -78,6 +182,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_3_banner_sub.png_2026-10-08_160211640409.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_3_banner_sub.png_2026-10-08_160211640409_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21156,
+      "url": "https://makestar.co/event/21156",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "PLAVE 5th Mini Album 'HYPERDRIVE' 발매기념 LUCKY DRAW EVENT",
+      "titleEn": "PLAVE 5th Mini Album 'HYPERDRIVE' LUCKY DRAW EVENT",
+      "album": "5th Mini Album 'HYPERDRIVE'",
+      "albumEn": "5th Mini Album 'HYPERDRIVE'",
+      "artist": "플레이브",
+      "artistEn": "PLAVE",
+      "releaseDate": "2026-10-13",
+      "from": "2026.10.13",
+      "to": "2026.10.19",
+      "startAt": "2026-10-13T11:00:00+09:00",
+      "endAt": "2026-10-19T19:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11091,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11091_PLAVE_2_Banner_Thumb_v5.png_2026-10-13_094049629925.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11091_PLAVE_2_Banner_Thumb_v5.png_2026-10-13_094049629925_thumb.jpeg"
       }
     },
     {
@@ -706,19 +836,9 @@
       "album": "S.W.I.S.H."
     },
     {
-      "key": "LISA｜PRESS PLAY CD",
-      "artist": "LISA",
-      "album": "PRESS PLAY CD"
-    },
-    {
       "key": "DAILY:DIRECTION｜WHICH WAY",
       "artist": "DAILY:DIRECTION",
       "album": "WHICH WAY"
-    },
-    {
-      "key": "CORTIS｜GREENGREEN_playextended",
-      "artist": "CORTIS",
-      "album": "GREENGREEN_playextended"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Random",
@@ -729,6 +849,21 @@
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
       "artist": "PLAVE",
       "album": "5th Mini Album 'HYPERDRIVE' Set"
+    },
+    {
+      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
+      "artist": "PLAVE",
+      "album": "5th Mini Album 'HYPERDRIVE'"
+    },
+    {
+      "key": "LISA｜PRESS PLAY CD",
+      "artist": "LISA",
+      "album": "PRESS PLAY CD"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
@@ -754,11 +889,6 @@
       "key": "SUPER JUNIOR｜Where We Are",
       "artist": "SUPER JUNIOR",
       "album": "Where We Are"
-    },
-    {
-      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
-      "artist": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE'"
     },
     {
       "key": "JISOO｜CLICK",
