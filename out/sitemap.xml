@@ -13,12 +13,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/daily-direction-which-way</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/and2ble-sequence-02-attraction</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
@@ -26,18 +20,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/lisa-press-play-cd</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/flare-u-lovehood</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -55,18 +37,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/yuju-file-07</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-beyond-ver</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
@@ -79,19 +49,43 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/lisa-press-play-cd</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/jennie-fallen-angel</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
+    <loc>https://kpop-album.vercel.app/album/super-junior-where-we-are</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/super-junior-where-we-are</loc>
+    <loc>https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/flare-u-lovehood</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -129,6 +123,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/taemin-phase-i-soft-violence</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/daily-direction-which-way</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -241,12 +241,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/jennie-fallen-angel</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/boynextdoor-home-deluxe</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -285,6 +279,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/evan-1st-mini-album-death-of-me</loc>
     <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/yuju-file-07</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -445,12 +445,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/daily-direction-which-way</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/and2ble-sequence-02-attraction</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
@@ -458,18 +452,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/lisa-press-play-cd</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -487,18 +469,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/yuju-file-07</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/plave-5th-mini-album-hyperdrive</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-beyond-ver</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
@@ -511,19 +481,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/lisa-press-play-cd</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/jennie-fallen-angel</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
+    <loc>https://kpop-album.vercel.app/en/album/super-junior-where-we-are</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/super-junior-where-we-are</loc>
+    <loc>https://kpop-album.vercel.app/en/album/plave-5th-mini-album-hyperdrive</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -561,6 +555,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/taemin-phase-i-soft-violence</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/daily-direction-which-way</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -673,12 +673,6 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/jennie-fallen-angel</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/boynextdoor-home-deluxe</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -717,6 +711,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/evan-1st-mini-album-death-of-me</loc>
     <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/yuju-file-07</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
