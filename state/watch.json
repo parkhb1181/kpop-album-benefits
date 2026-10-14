@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-14T00:17:21.583Z",
-  "lastDeep": "2026-10-14T00:17:21.583Z",
+  "checkedAt": "2026-10-14T05:10:49.478Z",
+  "lastDeep": "2026-10-14T05:10:49.478Z",
   "events": [
     {
       "id": 21216,
@@ -104,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_1_banner_sub.png_2026-10-12_103959101485.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_1_banner_sub.png_2026-10-12_103959101485_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21194,
+      "url": "https://makestar.co/event/21194",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "AND2BLE (앤더블) 미니 2집 'Sequence 02: Attraction' (POCAALBUM) PRE-ORDER MEET&CALL EVENT PART.2",
+      "titleEn": "AND2BLE (앤더블) 2nd Mini Album 'Sequence 02: Attraction' (POCAALBUM) PRE-ORDER MEET&CALL EVENT PART.2",
+      "album": "미니 2집 [Sequence 02: Attraction]",
+      "albumEn": "2ND MINI ALBUM [Sequence 02: Attraction]",
+      "artist": "앤더블",
+      "artistEn": "AND2BLE",
+      "releaseDate": "2026-10-27",
+      "from": "2026.10.14",
+      "to": "2026.10.16",
+      "startAt": "2026-10-14T11:00:00+09:00",
+      "endAt": "2026-10-16T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.19",
+      "productId": 11158,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_3_Banner_Sub.jpg_2026-10-13_144359118876.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_3_Banner_Sub.jpg_2026-10-13_144359118876_thumb.jpeg"
       }
     },
     {
