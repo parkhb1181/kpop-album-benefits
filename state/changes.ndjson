@@ -549,3 +549,6 @@
 {"at":"2026-10-14T10:12:42.489Z","type":"event.new","label":"럭키드로우","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":21260,"url":"https://makestar.co/event/21260","endAt":"2026-10-20T23:59:59.999999+09:00"}
 {"at":"2026-10-14T10:12:42.489Z","type":"event.new","label":"PHOTO EVENT","artist":"이은상","album":"1ST EP [꿈의 정원] (POCAALBUM)","id":21167,"url":"https://makestar.co/event/21167","endAt":"2026-10-16T23:59:59.999999+09:00"}
 {"at":"2026-10-14T10:12:42.489Z","type":"event.new","label":"영상통화 팬사인회","artist":"이은상","album":"1ST EP [꿈의 정원] (POCAALBUM)","id":20992,"url":"https://makestar.co/event/20992","endAt":"2026-10-16T23:59:59.999999+09:00"}
+{"at":"2026-10-14T19:23:12.917Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"샤오쥔","album":"미니 1집 [Hey, Somebody]","id":21168}
+{"at":"2026-10-14T19:23:12.917Z","type":"event.gone","label":"PHOTO EVENT","artist":"ERIC","album":"[Baby Pink Letter Exhibition]","id":21145}
+{"at":"2026-10-14T19:23:12.917Z","type":"event.gone","label":"대면 팬사인회","artist":"MEOVV","album":"Single Album [GO HARD]","id":21020}
