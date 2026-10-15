@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-15T00:46:06.449Z",
-  "lastDeep": "2026-10-15T00:46:06.449Z",
+  "checkedAt": "2026-10-15T05:39:43.290Z",
+  "lastDeep": "2026-10-15T05:39:43.290Z",
   "events": [
+    {
+      "id": 21284,
+      "url": "https://makestar.co/event/21284",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "AM8IC (엠빅) 1st Single Album RASCALS (Find The Pearl) PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "AM8IC (엠빅) 1st Single Album RASCALS (Find The Pearl) PRE-ORDER PHOTOCARD EVENT",
+      "album": "1st Single Album RASCALS (Find The Pearl)",
+      "albumEn": "1st Single Album RASCALS (Find The Pearl)",
+      "artist": "엠빅",
+      "artistEn": "AM8IC",
+      "releaseDate": "2026-10-13",
+      "from": "2026.10.15",
+      "to": "2026.10.28",
+      "startAt": "2026-10-15T14:00:00+09:00",
+      "endAt": "2026-10-28T23:59:59.999999+09:00",
+      "dday": 14,
+      "closing": false,
+      "winnerAt": "2026.10.29",
+      "productId": 11215,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11215_AM8IC_1_Banner_Thumb.png_2026-10-14_104054910838.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11215_AM8IC_1_Banner_Thumb.png_2026-10-14_104054910838_thumb.jpeg"
+      }
+    },
     {
       "id": 21260,
       "url": "https://makestar.co/event/21260",
