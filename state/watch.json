@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-15T05:39:43.290Z",
-  "lastDeep": "2026-10-15T05:39:43.290Z",
+  "checkedAt": "2026-10-15T10:18:26.700Z",
+  "lastDeep": "2026-10-15T10:18:26.700Z",
   "events": [
     {
       "id": 21284,
@@ -10,11 +10,11 @@
       "fansign": false,
       "title": "AM8IC (엠빅) 1st Single Album RASCALS (Find The Pearl) PRE-ORDER PHOTOCARD EVENT",
       "titleEn": "AM8IC (엠빅) 1st Single Album RASCALS (Find The Pearl) PRE-ORDER PHOTOCARD EVENT",
-      "album": "1st Single Album RASCALS (Find The Pearl)",
-      "albumEn": "1st Single Album RASCALS (Find The Pearl)",
+      "album": "싱글 1집 [RASCALS (Find The Pearl)]",
+      "albumEn": "1st Single Album [RASCALS (Find The Pearl)]",
       "artist": "엠빅",
       "artistEn": "AM8IC",
-      "releaseDate": "2026-10-13",
+      "releaseDate": "2026-10-30",
       "from": "2026.10.15",
       "to": "2026.10.28",
       "startAt": "2026-10-15T14:00:00+09:00",
@@ -728,6 +728,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_1_banner_sub.png_2026-09-18_153449272471_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20601,
+      "url": "https://makestar.co/event/20601",
+      "type": "PHOTO EVENT",
+      "label": "PHOTO EVENT",
+      "fansign": false,
+      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' 1:1 PHOTO EVENT IN TAIPEI",
+      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' 1:1 PHOTO EVENT IN TAIPEI",
+      "album": "2nd Single Album 'Made My Night'",
+      "albumEn": "2nd Single Album 'Made My Night'",
+      "artist": "르세라핌",
+      "artistEn": "LE SSERAFIM",
+      "releaseDate": "2026-09-11",
+      "from": "2026.10.15",
+      "to": "2026.10.19",
+      "startAt": "2026-10-15T18:00:00+09:00",
+      "endAt": "2026-10-19T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.10.21",
+      "productId": 11042,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_7_banner_sub.png_2026-10-12_142550672249.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_7_banner_sub.png_2026-10-12_142550672249_thumb.jpeg"
       }
     },
     {
