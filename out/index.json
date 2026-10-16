@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 16. 18:48:27",
+  "stamp": "2026. 10. 16. 23:30:16",
   "albums": [
     {
       "artistId": 275,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "24일 5시간"
+        "rough": "24일 0시간"
       },
       "rowCount": 23,
       "artistKo": null,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-16T23:59:59.999999+09:00",
-        "rough": "5시간 10분"
+        "rough": "28분"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "대면 팬사인회 응모 마감",
         "at": "2026-10-19T23:59:59.999999+09:00",
-        "rough": "3일 5시간"
+        "rough": "3일 0시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "9일 5시간"
+        "rough": "9일 0시간"
       },
       "rowCount": 27,
       "artistKo": "샤오쥔(XIAOJUN)",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "19일 23시간"
+        "rough": "19일 18시간"
       },
       "rowCount": 14,
       "artistKo": "에이댑",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "16일 5시간"
+        "rough": "16일 0시간"
       },
       "rowCount": 11,
       "artistKo": "투어스",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "16일 5시간"
+        "rough": "16일 0시간"
       },
       "rowCount": 7,
       "artistKo": "투어스",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "16일 5시간"
+        "rough": "16일 0시간"
       },
       "rowCount": 16,
       "artistKo": "투어스",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "16일 5시간"
+        "rough": "16일 0시간"
       },
       "rowCount": 16,
       "artistKo": "투어스",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T13:00:00+09:00",
-        "rough": "6일 18시간"
+        "rough": "6일 13시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-21T07:00:00+09:00",
-        "rough": "4일 12시간"
+        "rough": "4일 7시간"
       },
       "rowCount": 43,
       "artistKo": "플레어 유",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "13일 5시간"
+        "rough": "13일 0시간"
       },
       "rowCount": 24,
       "artistKo": "제니",
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "9일 18시간"
+        "rough": "9일 13시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-02T18:01:00+09:00",
-        "rough": "16일 23시간"
+        "rough": "16일 18시간"
       },
       "rowCount": 46,
       "artistKo": "예성",
@@ -392,19 +392,19 @@
       "versions": 5,
       "retailers": 5,
       "benefitCount": 1,
-      "soldCount": 2,
+      "soldCount": 1,
       "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-19T19:00:00+09:00",
-        "rough": "3일 0시간"
+        "rough": "2일 19시간"
       },
       "rowCount": 26,
       "artistKo": "플레이브",
       "artistDisplay": "플레이브(PLAVE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/2f9c4f29a2b628b3108e6202b45cd931.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/vSjljk.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/WRxpWv.jpg"
     },
     {
       "artistId": 323,
@@ -425,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "7일 0시간"
+        "rough": "6일 19시간"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -452,7 +452,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "7일 0시간"
+        "rough": "6일 19시간"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -479,7 +479,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "7일 0시간"
+        "rough": "6일 19시간"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -501,12 +501,12 @@
       "retailers": 3,
       "benefitCount": 1,
       "soldCount": 1,
-      "eventCount": 1,
+      "eventCount": 2,
       "fansignCount": 0,
       "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "23일 5시간"
+        "label": "FANSIGN&PHOTO EVENT 응모 마감",
+        "at": "2026-10-18T23:59:59.999999+09:00",
+        "rough": "2일 0시간"
       },
       "rowCount": 41,
       "artistKo": null,
@@ -528,12 +528,12 @@
       "retailers": 2,
       "benefitCount": 1,
       "soldCount": 1,
-      "eventCount": 1,
+      "eventCount": 2,
       "fansignCount": 0,
       "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "23일 5시간"
+        "label": "FANSIGN&PHOTO EVENT 응모 마감",
+        "at": "2026-10-18T23:59:59.999999+09:00",
+        "rough": "2일 0시간"
       },
       "rowCount": 34,
       "artistKo": null,
@@ -560,7 +560,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T17:20:00+09:00",
-        "rough": "20일 22시간"
+        "rough": "20일 17시간"
       },
       "rowCount": 44,
       "artistKo": "코르티스",
@@ -587,7 +587,7 @@
       "nextDeadline": {
         "label": "럭키드로우 응모 마감",
         "at": "2026-10-19T19:59:59.999999+09:00",
-        "rough": "3일 1시간"
+        "rough": "2일 20시간"
       },
       "rowCount": 14,
       "artistKo": "플레이브",
@@ -614,13 +614,13 @@
       "nextDeadline": {
         "label": "럭키드로우 응모 마감",
         "at": "2026-10-19T19:59:59.999999+09:00",
-        "rough": "3일 1시간"
+        "rough": "2일 20시간"
       },
       "rowCount": 14,
       "artistKo": "플레이브",
       "artistDisplay": "플레이브(PLAVE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/vSjljk.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/vSjljk.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/WRxpWv.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/07/WRxpWv.jpg"
     },
     {
       "artistId": 25,
