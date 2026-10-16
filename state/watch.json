@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-16T09:47:55.717Z",
-  "lastDeep": "2026-10-16T09:47:55.717Z",
+  "checkedAt": "2026-10-16T14:41:25.580Z",
+  "lastDeep": "2026-10-16T14:41:25.580Z",
   "events": [
     {
       "id": 21330,
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11215_AM8IC_1_Banner_Thumb.png_2026-10-14_104054910838.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11215_AM8IC_1_Banner_Thumb.png_2026-10-14_104054910838_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21282,
+      "url": "https://makestar.co/event/21282",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT DREAM The 6th Album [DREAM AFTER DREAM] PRE-ORDER 1:1 FANSIGN & PHOTO & VIDEO CALL EVENT IN SINGAPORE",
+      "titleEn": "NCT DREAM The 6th Album [DREAM AFTER DREAM] PRE-ORDER 1:1 FANSIGN & PHOTO & VIDEO CALL EVENT IN SINGAPORE",
+      "album": "[DREAM AFTER DREAM]",
+      "albumEn": "[DREAM AFTER DREAM]",
+      "artist": "NCT DREAM",
+      "artistEn": "NCT DREAM",
+      "releaseDate": "2026-11-09",
+      "from": "2026.10.16",
+      "to": "2026.10.18",
+      "startAt": "2026-10-16T18:00:00+09:00",
+      "endAt": "2026-10-18T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.19",
+      "productId": 11214,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_1_Banner_thumb.jpg_2026-10-15_110859663624.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_1_Banner_thumb.jpg_2026-10-15_110859663624_thumb.jpeg"
       }
     },
     {
@@ -331,7 +357,7 @@
       "to": "2026.10.19",
       "startAt": "2026-10-13T11:00:00+09:00",
       "endAt": "2026-10-19T19:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": null,
       "productId": 11091,
