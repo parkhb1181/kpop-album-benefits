@@ -559,3 +559,8 @@
 {"at":"2026-10-15T15:12:07.092Z","type":"event.gone","label":"럭키드로우","artist":"Hearts2Hearts","album":"미니 2집 [Lemon Tang]","id":21172}
 {"at":"2026-10-15T15:12:07.092Z","type":"event.gone","label":"PHOTO EVENT","artist":"도경수","album":"미니 4집 [DOPAMINE]","id":20977}
 {"at":"2026-10-15T15:12:07.092Z","type":"event.gone","label":"영상통화 팬사인회","artist":"오드유스","album":"3rd Single [can't go back]","id":20952}
+{"at":"2026-10-16T05:00:51.226Z","type":"event.new","label":"예약 특전 포토카드","artist":"드래곤포니","album":"Single [Calling back]","id":21230,"url":"https://makestar.co/event/21230","endAt":"2026-11-04T23:59:59.999999+09:00"}
+{"at":"2026-10-16T05:00:51.226Z","type":"event.new","label":"대면 팬사인회","artist":"드래곤포니","album":"Single [Calling back]","id":21227,"url":"https://makestar.co/event/21227","endAt":"2026-10-19T23:59:59.999999+09:00"}
+{"at":"2026-10-16T05:00:51.226Z","type":"album.new","artist":"Dragon Pony","album":"Calling back"}
+{"at":"2026-10-16T05:00:51.226Z","type":"album.new","artist":"NCT DREAM","album":"The 6th Album 'DREAM AFTER DREAM'"}
+{"at":"2026-10-16T05:00:51.226Z","type":"album.new","artist":"NCT DREAM","album":"The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"}
