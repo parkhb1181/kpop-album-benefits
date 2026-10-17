@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-17T07:40:49.482Z",
-  "lastDeep": "2026-10-17T07:40:49.482Z",
+  "checkedAt": "2026-10-17T11:45:38.545Z",
+  "lastDeep": "2026-10-17T11:45:38.545Z",
   "events": [
     {
       "id": 21330,
@@ -357,8 +357,8 @@
       "to": "2026.10.19",
       "startAt": "2026-10-13T11:00:00+09:00",
       "endAt": "2026-10-19T19:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": null,
       "productId": 11091,
       "image": {
