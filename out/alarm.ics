@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:nct-dream-the-6th-album-dream-after-dream-evt21282@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261018T145959Z
 DTEND:20261018T152959Z
 SUMMARY:NCT DREAM The 6th Album 'DREAM AFTER DREAM' — FANSIGN&PHOTO EVENT
@@ -34,7 +34,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:nct-dream-the-6th-album-dream-after-dream-smart-album-evt21282@kpop-alb
  um-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261018T145959Z
 DTEND:20261018T152959Z
 SUMMARY:NCT DREAM The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM) — FANSI
@@ -58,143 +58,138 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261019T100000Z
 DTEND:20261019T103000Z
-SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배송 
- 시작
+SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/plave-5th-mini-album-hyperdrive.htm
  l
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배
- 송 시작 (하루 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 배송 시작 (하
+ 루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 예약 배
- 송 시작 (1시간 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 예약 배송 시작 (1
+ 시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-random-evt21156@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261019T105959Z
 DTEND:20261019T112959Z
-SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 럭키
- 드로우 응모 마감
+SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' Random — 럭키드로우 응모
+  마감
 DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' 발매기념 LUCKY DRAW EVENT
  \nhttps://makestar.co/event/21156
 URL:https://makestar.co/event/21156
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 럭
- 키드로우 응모 마감 (하루 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Random — 럭키드로우 
+ 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Random — 럭
- 키드로우 응모 마감 (1시간 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Random — 럭키드로우 
+ 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-set-evt21156@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261019T105959Z
 DTEND:20261019T112959Z
-SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 럭키드
- 로우 응모 마감
+SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' Set — 럭키드로우 응모 
+ 마감
 DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' 발매기념 LUCKY DRAW EVENT
  \nhttps://makestar.co/event/21156
 URL:https://makestar.co/event/21156
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 럭키
- 드로우 응모 마감 (하루 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Set — 럭키드로우 응
+ 모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' Set — 럭키
- 드로우 응모 마감 (1시간 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' Set — 럭키드로우 응
+ 모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:plave-5th-mini-album-hyperdrive-evt21156@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261019T105959Z
 DTEND:20261019T112959Z
-SUMMARY:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 럭키드로우
-  응모 마감
+SUMMARY:PLAVE 5th Mini Album 'HYPERDRIVE' — 럭키드로우 응모 마감
 DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' 발매기념 LUCKY DRAW EVENT
  \nhttps://makestar.co/event/21156
 URL:https://makestar.co/event/21156
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 럭키드
- 로우 응모 마감 (하루 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 럭키드로우 응모 
+ 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:플레이브(PLAVE) 5th Mini Album 'HYPERDRIVE' — 럭키드
- 로우 응모 마감 (1시간 전)
+DESCRIPTION:PLAVE 5th Mini Album 'HYPERDRIVE' — 럭키드로우 응모 
+ 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21227@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261019T145959Z
 DTEND:20261019T152959Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 대면 팬사인회 
- 응모 마감
+SUMMARY:Dragon Pony Calling back — 대면 팬사인회 응모 마감
 DESCRIPTION:Dragon Pony (드래곤포니) Single [Calling back] PRE-ORDER F
  ANSIGN EVENT\nhttps://makestar.co/event/21227
 URL:https://makestar.co/event/21227
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 대면 팬사인
- 회 응모 마감 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 대면 팬사인회 응모 마감 
+ (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 대면 팬사인
- 회 응모 마감 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 대면 팬사인회 응모 마감 
+ (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:flare-u-lovehood-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261020T220000Z
 DTEND:20261020T223000Z
-SUMMARY:플레어 유(FLARE U) LOVEHOOD — 예약 배송 시작
+SUMMARY:FLARE U LOVEHOOD — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/flare-u-lovehood.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:플레어 유(FLARE U) LOVEHOOD — 예약 배송 시작 (하
- 루 전)
+DESCRIPTION:FLARE U LOVEHOOD — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:플레어 유(FLARE U) LOVEHOOD — 예약 배송 시작 (1시
- 간 전)
+DESCRIPTION:FLARE U LOVEHOOD — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lisa-press-play-cd-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261023T040000Z
 DTEND:20261023T043000Z
 SUMMARY:LISA PRESS PLAY CD — 예약 배송 시작
@@ -214,7 +209,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:b-the-hood-1st-mini-album-the-real-deal-chop-ver-release@kpop-album-ben
  efits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261023T100000Z
 DTEND:20261023T103000Z
 SUMMARY:B THE HOOD 1st Mini Album ‘THE REAL DEAL’ CHOP VER. — 예약 
@@ -238,7 +233,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:b-the-hood-1st-mini-album-the-real-deal-slice-ver-release@kpop-album-be
  nefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261023T100000Z
 DTEND:20261023T103000Z
 SUMMARY:B THE HOOD 1st Mini Album ‘THE REAL DEAL’ SLICE VER. — 예약
@@ -261,7 +256,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b-the-hood-1st-mini-album-the-real-deal-set-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261023T100000Z
 DTEND:20261023T103000Z
 SUMMARY:B THE HOOD 1st Mini Album ‘THE REAL DEAL’ SET — 예약 배송
@@ -284,7 +279,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wayv-hey-somebody-evt21017@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261025T145959Z
 DTEND:20261025T152959Z
 SUMMARY:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 특전 포토카드 
@@ -307,26 +302,26 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261026T040000Z
 DTEND:20261026T043000Z
-SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
+SUMMARY:JISOO CLICK — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/jisoo-click.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (하루 전)
+DESCRIPTION:JISOO CLICK — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (1시간 전)
+DESCRIPTION:JISOO CLICK — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wayv-hey-somebody-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261026T090100Z
 DTEND:20261026T093100Z
 SUMMARY:샤오쥔(XIAOJUN) Hey\, Somebody — 예약 배송 시작
@@ -347,51 +342,51 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-evt20988@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261026T145959Z
 DTEND:20261026T152959Z
-SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 포토
- 카드 응모 마감
+SUMMARY:AND2BLE Sequence 02: Attraction — 예약 특전 포토카드 응
+ 모 마감
 DESCRIPTION:AND2BLE 2nd EP ‘Sequence 02: Attraction' (POCAALBUM) PRE-ORDE
  R PHOTOCARD EVENT\nhttps://makestar.co/event/20988
 URL:https://makestar.co/event/20988
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 
- 포토카드 응모 마감 (하루 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 특전 포토카드 
+ 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 특전 
- 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 특전 포토카드 
+ 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261027T090000Z
 DTEND:20261027T093000Z
-SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 시작
+SUMMARY:AND2BLE Sequence 02: Attraction — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/and2ble-sequence-02-attraction.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 
- 시작 (하루 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 배송 시작 (하
+ 루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 
- 시작 (1시간 전)
+DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 배송 시작 (1시
+ 간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jennie-fallen-angel-evt20167@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261029T145959Z
 DTEND:20261029T152959Z
 SUMMARY:제니(JENNIE) Fallen Angel — 예약 특전 포토카드 응모 
@@ -414,7 +409,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jennie-fallen-angel-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261030T090000Z
 DTEND:20261030T093000Z
 SUMMARY:제니(JENNIE) Fallen Angel — 예약 배송 시작
@@ -435,31 +430,31 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt20851@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
- 카드 응모 마감
+SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PR
  E-ORDER PHOTOCARD EVENT\nhttps://makestar.co/event/20851
 URL:https://makestar.co/event/20851
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
- 토카드 응모 마감 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
+ 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
- 토카드 응모 마감 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
+ 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21155@kpop-album-benef
  its
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -483,7 +478,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21154@kpop-album-benef
  its
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -507,7 +502,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21133@kpop-album-benef
  its
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -530,7 +525,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-everglow-ver-evt21155@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
@@ -553,7 +548,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-everglow-ver-evt21154@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
@@ -576,7 +571,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-everglow-ver-evt21133@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
@@ -599,7 +594,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-beyond-ver-evt21155@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 특
@@ -622,7 +617,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-beyond-ver-evt21154@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 특
@@ -645,7 +640,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-beyond-ver-evt21133@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 특
@@ -668,7 +663,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-closer-ver-evt21155@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 특
@@ -691,7 +686,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-closer-ver-evt21154@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 특
@@ -714,7 +709,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-closer-ver-evt21133@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 특
@@ -737,7 +732,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-junior-where-we-are-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261102T090100Z
 DTEND:20261102T093100Z
 SUMMARY:예성(SUPER JUNIOR) Where We Are — 예약 배송 시작
@@ -758,51 +753,49 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21230@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261104T145959Z
 DTEND:20261104T152959Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
- 카드 응모 마감
+SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:Dragon Pony (드래곤포니) Single [Calling back] PRE-ORDER P
  HOTOCARD EVENT\nhttps://makestar.co/event/21230
 URL:https://makestar.co/event/21230
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
- 토카드 응모 마감 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
+ 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
- 토카드 응모 마감 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
+ 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261105T090000Z
 DTEND:20261105T093000Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 배송 시작
+SUMMARY:Dragon Pony Calling back — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/dragon-pony-calling-back.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
- 작 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
- 작 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:adap-all-dreams-are-possible-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261105T090100Z
 DTEND:20261105T093100Z
 SUMMARY:에이댑(ADAP) ALL DREAMS ARE POSSIBLE — 예약 배송 시작
@@ -824,7 +817,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-release@kpop-album-benefi
  ts
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261106T081000Z
 DTEND:20261106T084000Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -847,7 +840,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-everglow-ver-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261106T081000Z
 DTEND:20261106T084000Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Everglow Ver. — 예약 
@@ -870,7 +863,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-beyond-ver-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261106T081000Z
 DTEND:20261106T084000Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Beyond Ver. — 예약 배
@@ -893,7 +886,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-closer-ver-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261106T081000Z
 DTEND:20261106T084000Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Closer Ver. — 예약 배
@@ -916,29 +909,28 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cortis-greengreen-playextended-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261106T082000Z
 DTEND:20261106T085000Z
-SUMMARY:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 시
- 작
+SUMMARY:CORTIS GREENGREEN_playextended — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/cortis-greengreen-playextended.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
- 시작 (하루 전)
+DESCRIPTION:CORTIS GREENGREEN_playextended — 예약 배송 시작 (하루
+  전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:코르티스(CORTIS) GREENGREEN_playextended — 예약 배송 
- 시작 (1시간 전)
+DESCRIPTION:CORTIS GREENGREEN_playextended — 예약 배송 시작 (1시
+ 간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-dream-the-6th-album-dream-after-dream-evt21330@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261108T145959Z
 DTEND:20261108T152959Z
 SUMMARY:NCT DREAM The 6th Album 'DREAM AFTER DREAM' — 예약 특전 포
@@ -962,7 +954,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:nct-dream-the-6th-album-dream-after-dream-smart-album-evt21330@kpop-alb
  um-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261108T145959Z
 DTEND:20261108T152959Z
 SUMMARY:NCT DREAM The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM) — 예
@@ -985,7 +977,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nct-dream-the-6th-album-dream-after-dream-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261109T090000Z
 DTEND:20261109T093000Z
 SUMMARY:NCT DREAM The 6th Album 'DREAM AFTER DREAM' — 예약 배송 시
@@ -1008,7 +1000,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-evt20989@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261109T145959Z
 DTEND:20261109T152959Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 특전 포토카드 응모 마감
@@ -1030,7 +1022,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-release@kpop-album-benefits
-DTSTAMP:20261016T183146Z
+DTSTAMP:20261017T052515Z
 DTSTART:20261110T090000Z
 DTEND:20261110T093000Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 배송 시작
