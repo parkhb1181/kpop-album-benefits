@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-18T09:05:52.582Z",
-  "lastDeep": "2026-10-18T09:05:52.582Z",
+  "checkedAt": "2026-10-18T13:16:31.886Z",
+  "lastDeep": "2026-10-18T13:16:31.886Z",
   "events": [
     {
       "id": 21330,
@@ -383,7 +383,7 @@
       "to": "2026.10.19",
       "startAt": "2026-10-13T11:00:00+09:00",
       "endAt": "2026-10-19T19:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": null,
       "productId": 11091,
@@ -1023,11 +1023,6 @@
       "album": "5th Mini Album 'HYPERDRIVE' Random"
     },
     {
-      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
-      "artist": "PLAVE",
-      "album": "5th Mini Album 'HYPERDRIVE' Set"
-    },
-    {
       "key": "LISA｜PRESS PLAY CD",
       "artist": "LISA",
       "album": "PRESS PLAY CD"
@@ -1036,6 +1031,11 @@
       "key": "ADAP｜ALL DREAMS ARE POSSIBLE",
       "artist": "ADAP",
       "album": "ALL DREAMS ARE POSSIBLE"
+    },
+    {
+      "key": "PLAVE｜5th Mini Album 'HYPERDRIVE' Set",
+      "artist": "PLAVE",
+      "album": "5th Mini Album 'HYPERDRIVE' Set"
     },
     {
       "key": "PLAVE｜5th Mini Album 'HYPERDRIVE'",
