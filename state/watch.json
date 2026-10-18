@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-18T04:31:27.361Z",
-  "lastDeep": "2026-10-18T04:31:27.361Z",
+  "checkedAt": "2026-10-18T09:05:52.582Z",
+  "lastDeep": "2026-10-18T09:05:52.582Z",
   "events": [
     {
       "id": 21330,
@@ -312,6 +312,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21211,
+      "url": "https://makestar.co/event/21211",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) UNIT SPECIAL OFFLINE & MEET & CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) UNIT SPECIAL OFFLINE & MEET & CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.10.18",
+      "to": "2026.10.20",
+      "startAt": "2026-10-18T15:00:00+09:00",
+      "endAt": "2026-10-20T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.21",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_18_Banner_Sub.jpg_2026-10-14_174135489794.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_18_Banner_Sub.jpg_2026-10-14_174135489794_thumb.jpeg"
       }
     },
     {
