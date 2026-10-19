@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-19T01:33:11.683Z",
-  "lastDeep": "2026-10-19T01:33:11.683Z",
+  "checkedAt": "2026-10-19T06:50:51.172Z",
+  "lastDeep": "2026-10-19T06:50:51.172Z",
   "events": [
+    {
+      "id": 21331,
+      "url": "https://makestar.co/event/21331",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "OURBIRTHDAY [Our Birthday] SPECIAL OFFLINE+MEET&CALL EVENT PART.4",
+      "titleEn": "OURBIRTHDAY [Our Birthday] SPECIAL OFFLINE+MEET&CALL EVENT PART.4",
+      "album": "[Our Birthday]",
+      "albumEn": "[Our Birthday]",
+      "artist": "아워벌스데이",
+      "artistEn": "OURBIRTHDAY",
+      "releaseDate": "2026-08-19",
+      "from": "2026.10.19",
+      "to": "2026.10.21",
+      "startAt": "2026-10-19T14:00:00+09:00",
+      "endAt": "2026-10-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.22",
+      "productId": 10952,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_8_Banner_sub.png_2026-10-16_171331699792.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_8_Banner_sub.png_2026-10-16_171331699792_thumb.jpeg"
+      }
+    },
     {
       "id": 21330,
       "url": "https://makestar.co/event/21330",
@@ -29,6 +55,32 @@
       }
     },
     {
+      "id": 21313,
+      "url": "https://makestar.co/event/21313",
+      "type": "PHOTO EVENT",
+      "label": "PHOTO EVENT",
+      "fansign": false,
+      "title": "ERIC 'Baby Pink Letter Exhibition' PHOTO EVENT PART.2",
+      "titleEn": "ERIC 'Baby Pink Letter Exhibition' PHOTO EVENT PART.2",
+      "album": "[Baby Pink Letter Exhibition]",
+      "albumEn": "[Baby Pink Letter Exhibition]",
+      "artist": "ERIC",
+      "artistEn": "ERIC",
+      "releaseDate": "2026-11-12",
+      "from": "2026.10.19",
+      "to": "2026.10.21",
+      "startAt": "2026-10-19T15:00:00+09:00",
+      "endAt": "2026-10-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.22",
+      "productId": 11155,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_4_Banner_Thumb.jpg_2026-10-16_164538964258.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_4_Banner_Thumb.jpg_2026-10-16_164538964258_thumb.jpeg"
+      }
+    },
+    {
       "id": 21307,
       "url": "https://makestar.co/event/21307",
       "type": "MEET&CALL",
@@ -52,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_3_banner_sub.png_2026-10-15_175516559283.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_3_banner_sub.png_2026-10-15_175516559283_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21305,
+      "url": "https://makestar.co/event/21305",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "TUNEXX 2ND MINI ALBUM [BLUE MODE] SPECIAL OFFLINE &MEET&CALL EVENT",
+      "titleEn": "TUNEXX 2ND MINI ALBUM [BLUE MODE] SPECIAL OFFLINE &MEET&CALL EVENT",
+      "album": "미니 2집 [BLUE MODE]",
+      "albumEn": "2nd Mini Album [BLUE MODE]",
+      "artist": "튜넥스",
+      "artistEn": "TUNEXX",
+      "releaseDate": "2026-09-02",
+      "from": "2026.10.19",
+      "to": "2026.10.21",
+      "startAt": "2026-10-19T15:00:00+09:00",
+      "endAt": "2026-10-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.22",
+      "productId": 10988,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_4_Thumb.jpg_2026-10-16_164819425245.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10988_TUNEXX_4_Thumb.jpg_2026-10-16_164819425245_thumb.jpeg"
       }
     },
     {
@@ -208,6 +286,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_1_Banner_Sub.jpg_2026-10-15_114837374489.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_1_Banner_Sub.jpg_2026-10-15_114837374489_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21221,
+      "url": "https://makestar.co/event/21221",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.2",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.2",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.19",
+      "to": "2026.10.21",
+      "startAt": "2026-10-19T15:00:00+09:00",
+      "endAt": "2026-10-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.22",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_7_banner_sub.jpg_2026-10-16_162229085808.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_7_banner_sub.jpg_2026-10-16_162229085808_thumb.jpeg"
       }
     },
     {
@@ -520,6 +624,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_1_Banner_Sub.jpg_2026-10-01_173913061827_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20971,
+      "url": "https://makestar.co/event/20971",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ALL(H)OURS SIXTH MINI ALBUM [UNBOUND] MEET&CALL EVENT",
+      "titleEn": "ALL(H)OURS SIXTH MINI ALBUM [UNBOUND] MEET&CALL EVENT",
+      "album": "미니 6집 [UNBOUND]",
+      "albumEn": "6th Mini Album [UNBOUND]",
+      "artist": "올아워즈",
+      "artistEn": "ALL(H)OURS",
+      "releaseDate": "2026-09-10",
+      "from": "2026.10.19",
+      "to": "2026.10.21",
+      "startAt": "2026-10-19T15:00:00+09:00",
+      "endAt": "2026-10-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.22",
+      "productId": 11034,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11034_ALL%28H%29OURS_3_Banner_thumb.jpg_2026-10-08_162306902487.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11034_ALLHOURS_3_Banner_thumb.jpg_2026-10-08_162306902487_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20927,
+      "url": "https://makestar.co/event/20927",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "채령(ITZY) <Lovesick> PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "CHAERYEONG(ITZY) <Lovesick> PRE-ORDER PHOTOCARD EVENT",
+      "album": "미니 1집 [Lovesick]",
+      "albumEn": "1st Mini Album [Lovesick]",
+      "artist": "채령",
+      "artistEn": "CHAERYEONG",
+      "releaseDate": "2026-11-09",
+      "from": "2026.10.19",
+      "to": "2026.11.08",
+      "startAt": "2026-10-19T11:00:00+09:00",
+      "endAt": "2026-11-08T23:59:59.999999+09:00",
+      "dday": 21,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11148,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_1_Banner_thumb.jpg_2026-10-07_102041241532.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_1_Banner_thumb.jpg_2026-10-07_102041241532_thumb.jpeg"
       }
     },
     {

@@ -595,3 +595,9 @@
 {"at":"2026-10-18T16:41:23.985Z","type":"event.gone","label":"예약 특전 포토카드","artist":"정한X조슈아 (SEVENTEEN)","album":"1st Mini Album ‘DREAMSCAPE'","id":20758}
 {"at":"2026-10-18T16:41:23.985Z","type":"event.gone","label":"예약 특전 포토카드","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":20731}
 {"at":"2026-10-18T16:41:23.985Z","type":"album.new","artist":"TVXQ!","album":"The 3rd Mini Album 'All Of My Life'"}
+{"at":"2026-10-19T06:50:51.172Z","type":"event.new","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":21331,"url":"https://makestar.co/event/21331","endAt":"2026-10-21T23:59:59.999999+09:00"}
+{"at":"2026-10-19T06:50:51.172Z","type":"event.new","label":"PHOTO EVENT","artist":"ERIC","album":"[Baby Pink Letter Exhibition]","id":21313,"url":"https://makestar.co/event/21313","endAt":"2026-10-21T23:59:59.999999+09:00"}
+{"at":"2026-10-19T06:50:51.172Z","type":"event.new","label":"영상통화 팬사인회","artist":"튜넥스","album":"미니 2집 [BLUE MODE]","id":21305,"url":"https://makestar.co/event/21305","endAt":"2026-10-21T23:59:59.999999+09:00"}
+{"at":"2026-10-19T06:50:51.172Z","type":"event.new","label":"영상통화 팬사인회","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":21221,"url":"https://makestar.co/event/21221","endAt":"2026-10-21T23:59:59.999999+09:00"}
+{"at":"2026-10-19T06:50:51.172Z","type":"event.new","label":"영상통화 팬사인회","artist":"올아워즈","album":"미니 6집 [UNBOUND]","id":20971,"url":"https://makestar.co/event/20971","endAt":"2026-10-21T23:59:59.999999+09:00"}
+{"at":"2026-10-19T06:50:51.172Z","type":"event.new","label":"예약 특전 포토카드","artist":"채령","album":"미니 1집 [Lovesick]","id":20927,"url":"https://makestar.co/event/20927","endAt":"2026-11-08T23:59:59.999999+09:00"}
