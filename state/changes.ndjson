@@ -625,3 +625,8 @@
 {"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"영상통화 팬사인회","artist":"어센트","album":"[Still with you]","id":21144,"url":"https://makestar.co/event/21144","endAt":"2026-10-22T23:59:59.999999+09:00"}
 {"at":"2026-10-20T07:31:54.433Z","type":"album.gone","artist":"WayV","album":"Hey, Somebody"}
 {"at":"2026-10-20T12:59:24.245Z","type":"event.new","label":"럭키드로우","artist":"최강창민","album":"미니 3집 [All Of My Life]","id":21334,"url":"https://makestar.co/event/21334","endAt":"2026-10-25T23:59:59.999999+09:00"}
+{"at":"2026-10-20T17:53:53.838Z","type":"event.gone","label":"럭키드로우","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":21260}
+{"at":"2026-10-20T17:53:53.838Z","type":"event.gone","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":21211}
+{"at":"2026-10-20T17:53:53.838Z","type":"event.gone","label":"영상통화 팬사인회","artist":"NiziU","album":"미니 1집 [Sour Grapes]","id":21100}
+{"at":"2026-10-20T17:53:53.838Z","type":"album.gone","artist":"FLARE U","album":"LOVEHOOD"}
+{"at":"2026-10-20T17:53:53.838Z","type":"album.gone","artist":"SUPER JUNIOR","album":"Where We Are"}
