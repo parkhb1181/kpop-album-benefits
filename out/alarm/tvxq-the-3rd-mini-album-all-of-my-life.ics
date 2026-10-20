@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:tvxq-the-3rd-mini-album-all-of-my-life-release@kpop-album-benefits
-DTSTAMP:20261020T073444Z
+DTSTAMP:20261020T130222Z
 DTSTART:20261023T100000Z
 DTEND:20261023T103000Z
 SUMMARY:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시작
@@ -27,6 +27,29 @@ ACTION:DISPLAY
 TRIGGER:-PT1H
 DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 예약 배송 시
  작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tvxq-the-3rd-mini-album-all-of-my-life-evt21334@kpop-album-benefits
+DTSTAMP:20261020T130222Z
+DTSTART:20261025T145959Z
+DTEND:20261025T152959Z
+SUMMARY:TVXQ! The 3rd Mini Album 'All Of My Life' — 럭키드로우 응
+ 모 마감
+DESCRIPTION:최강창민 미니 3집 'All Of My Life' 발매기념 LUCKY DR
+ AW EVENT\nhttps://makestar.co/event/21334
+URL:https://makestar.co/event/21334
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 럭키드로우 
+ 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:TVXQ! The 3rd Mini Album 'All Of My Life' — 럭키드로우 
+ 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
