@@ -11,7 +11,7 @@ X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21155@kpop-album-benef
  its
-DTSTAMP:20261019T201120Z
+DTSTAMP:20261020T021402Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -35,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21154@kpop-album-benef
  its
-DTSTAMP:20261019T201120Z
+DTSTAMP:20261020T021402Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -59,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21133@kpop-album-benef
  its
-DTSTAMP:20261019T201120Z
+DTSTAMP:20261020T021402Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -83,7 +83,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tws-2nd-single-album-to-us-weverse-albums-ver-release@kpop-album-benefi
  ts
-DTSTAMP:20261019T201120Z
+DTSTAMP:20261020T021402Z
 DTSTART:20261106T081000Z
 DTEND:20261106T084000Z
 SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
@@ -102,6 +102,31 @@ ACTION:DISPLAY
 TRIGGER:-PT1H
 DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
   예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tws-2nd-single-album-to-us-weverse-albums-ver-evt21258@kpop-album-benef
+ its
+DTSTAMP:20261020T021402Z
+DTSTART:20261115T145959Z
+DTEND:20261115T152959Z
+SUMMARY:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. — 예
+ 약 특전 포토카드 응모 마감
+DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Weverse Albu
+ ms ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
+ 21258
+URL:https://makestar.co/event/21258
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:투어스(TWS) 2nd Single Album <TO US> Weverse Albums ver. —
+  예약 특전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
