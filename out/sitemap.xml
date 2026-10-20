@@ -25,19 +25,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
+    <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-everglow-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/adap-all-dreams-are-possible</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/tws-2nd-single-album-to-us-everglow-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -61,25 +55,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/b-the-hood-1st-mini-album-the-real-deal-slice-ver</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/lisa-press-play-cd</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/flare-u-lovehood</loc>
+    <loc>https://kpop-album.vercel.app/album/b-the-hood-1st-mini-album-the-real-deal-slice-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/jennie-fallen-angel</loc>
+    <loc>https://kpop-album.vercel.app/album/flare-u-lovehood</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -97,6 +85,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/jennie-fallen-angel</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/nct-dream-the-6th-album-dream-after-dream</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -104,12 +98,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/b-the-hood-1st-mini-album-the-real-deal-set</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/b-the-hood-1st-mini-album-the-real-deal-chop-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -128,6 +116,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/tvxq-the-3rd-mini-album-all-of-my-life</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/b-the-hood-1st-mini-album-the-real-deal-chop-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -213,6 +207,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/treasure-the-first-step-chapter-three</loc>
     <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -511,19 +511,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
+    <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-everglow-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/adap-all-dreams-are-possible</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/tws-2nd-single-album-to-us-everglow-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -547,25 +541,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/b-the-hood-1st-mini-album-the-real-deal-slice-ver</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/lisa-press-play-cd</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
+    <loc>https://kpop-album.vercel.app/en/album/b-the-hood-1st-mini-album-the-real-deal-slice-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/jennie-fallen-angel</loc>
+    <loc>https://kpop-album.vercel.app/en/album/flare-u-lovehood</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -583,6 +571,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/jennie-fallen-angel</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/nct-dream-the-6th-album-dream-after-dream</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -590,12 +584,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/b-the-hood-1st-mini-album-the-real-deal-set</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/b-the-hood-1st-mini-album-the-real-deal-chop-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -614,6 +602,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/tvxq-the-3rd-mini-album-all-of-my-life</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/b-the-hood-1st-mini-album-the-real-deal-chop-ver</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -699,6 +693,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/treasure-the-first-step-chapter-three</loc>
     <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
