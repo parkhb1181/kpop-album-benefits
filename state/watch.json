@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-10-20T02:05:41.268Z",
-  "lastDeep": "2026-10-20T02:05:41.268Z",
+  "checkedAt": "2026-10-20T07:31:54.433Z",
+  "lastDeep": "2026-10-20T07:31:54.433Z",
   "events": [
+    {
+      "id": 21493,
+      "url": "https://makestar.co/event/21493",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PRE-ORDER MEET&CALL EVENT",
+      "album": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "albumEn": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-11-02",
+      "from": "2026.10.20",
+      "to": "2026.10.25",
+      "startAt": "2026-10-20T15:00:00+09:00",
+      "endAt": "2026-10-25T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": "2026.10.29",
+      "productId": 11105,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_2_Banner_Sub.jpg_2026-10-19_184121982035.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_2_Banner_Sub.jpg_2026-10-19_184121982035_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21332,
+      "url": "https://makestar.co/event/21332",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "IVE EP <Looks Can Kill> PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "IVE EP <Looks Can Kill> PRE-ORDER MEET&CALL EVENT",
+      "album": "EP [Looks Can Kill]",
+      "albumEn": "EP [Looks Can Kill]",
+      "artist": "아이브",
+      "artistEn": "IVE",
+      "releaseDate": "2026-10-26",
+      "from": "2026.10.20",
+      "to": "2026.10.22",
+      "startAt": "2026-10-20T12:00:00+09:00",
+      "endAt": "2026-10-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.23",
+      "productId": 11144,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11144_IVE_2_Banner_Sub_v2.jpg_2026-10-19_192245302631.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11144_IVE_2_Banner_Sub_v2.jpg_2026-10-19_192245302631_thumb.jpeg"
+      }
+    },
     {
       "id": 21331,
       "url": "https://makestar.co/event/21331",
@@ -78,6 +130,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_4_Banner_Thumb.jpg_2026-10-16_164538964258.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_4_Banner_Thumb.jpg_2026-10-16_164538964258_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21306,
+      "url": "https://makestar.co/event/21306",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "★한정수량★ NMIXX 6th EP [Strange Muse] SPECIAL KIT EVENT",
+      "titleEn": "★Limited Quantity★ NMIXX 6th EP [Strange Muse] SPECIAL KIT EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.20",
+      "to": "2026.10.26",
+      "startAt": "2026-10-20T12:00:00+09:00",
+      "endAt": "2026-10-26T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.10.27",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_7_banner_sub.png_2026-10-19_104158880168.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_7_banner_sub.png_2026-10-19_104158880168_thumb.jpeg"
       }
     },
     {
@@ -367,6 +445,32 @@
       }
     },
     {
+      "id": 21226,
+      "url": "https://makestar.co/event/21226",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NMIXX 6th EP [Strange Muse] MEET&CALL EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] MEET&CALL EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.20",
+      "to": "2026.10.22",
+      "startAt": "2026-10-20T12:00:00+09:00",
+      "endAt": "2026-10-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.23",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_6_banner_sub.png_2026-10-13_111805538660.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_6_banner_sub.png_2026-10-13_111805538660_thumb.jpeg"
+      }
+    },
+    {
       "id": 21221,
       "url": "https://makestar.co/event/21221",
       "type": "MEET&CALL",
@@ -445,6 +549,32 @@
       }
     },
     {
+      "id": 21207,
+      "url": "https://makestar.co/event/21207",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "NMIXX 6th EP [Strange Muse] LUCKY DRAW EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] LUCKY DRAW EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.20",
+      "to": "2026.10.26",
+      "startAt": "2026-10-20T12:00:00+09:00",
+      "endAt": "2026-10-26T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.10.27",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_5_banner_sub.png_2026-10-12_173452550472.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_5_banner_sub.png_2026-10-12_173452550472_thumb.jpeg"
+      }
+    },
+    {
       "id": 21195,
       "url": "https://makestar.co/event/21195",
       "type": "PHOTOCARD",
@@ -520,6 +650,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21144,
+      "url": "https://makestar.co/event/21144",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "어센트 (ASC2NT) 2nd Mini Album [Still with you] SPECIAL OFFLINE + MEET&CALL EVENT",
+      "titleEn": "어센트 (ASC2NT) 2nd Mini Album [Still with you] SPECIAL OFFLINE + MEET&CALL EVENT",
+      "album": "[Still with you]",
+      "albumEn": "[Still with you]",
+      "artist": "어센트",
+      "artistEn": "ASC2NT",
+      "releaseDate": "2026-09-04",
+      "from": "2026.10.20",
+      "to": "2026.10.22",
+      "startAt": "2026-10-20T15:00:00+09:00",
+      "endAt": "2026-10-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.23",
+      "productId": 11016,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_2_Banner_Sub.png_2026-09-28_113842060260.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11016_ASC2NT_2_Banner_Sub.png_2026-09-28_113842060260_thumb.jpeg"
       }
     },
     {
@@ -923,11 +1079,6 @@
       "key": "FLARE U｜LOVEHOOD",
       "artist": "FLARE U",
       "album": "LOVEHOOD"
-    },
-    {
-      "key": "WayV｜Hey, Somebody",
-      "artist": "WayV",
-      "album": "Hey, Somebody"
     },
     {
       "key": "Dragon Pony｜Calling back",

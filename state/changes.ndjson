@@ -617,3 +617,10 @@
 {"at":"2026-10-20T02:05:41.268Z","type":"event.new","label":"예약 특전 포토카드","artist":"투모로우바이투게더","album":"9th Mini Album 'PERFECT STORM'","id":21255,"url":"https://makestar.co/event/21255","endAt":"2026-11-15T23:59:59.999999+09:00"}
 {"at":"2026-10-20T02:05:41.268Z","type":"album.new","artist":"TOMORROW X TOGETHER","album":"TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'"}
 {"at":"2026-10-20T02:05:41.268Z","type":"album.new","artist":"TOMORROW X TOGETHER","album":"TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)"}
+{"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"영상통화 팬사인회","artist":"싸이커스","album":"8TH MINI ALBUM [ROUTE ZERO : The CALLING]","id":21493,"url":"https://makestar.co/event/21493","endAt":"2026-10-25T23:59:59.999999+09:00"}
+{"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"영상통화 팬사인회","artist":"아이브","album":"EP [Looks Can Kill]","id":21332,"url":"https://makestar.co/event/21332","endAt":"2026-10-22T23:59:59.999999+09:00"}
+{"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"럭키드로우","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21306,"url":"https://makestar.co/event/21306","endAt":"2026-10-26T23:59:59.999999+09:00"}
+{"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"영상통화 팬사인회","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21226,"url":"https://makestar.co/event/21226","endAt":"2026-10-22T23:59:59.999999+09:00"}
+{"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"럭키드로우","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21207,"url":"https://makestar.co/event/21207","endAt":"2026-10-26T23:59:59.999999+09:00"}
+{"at":"2026-10-20T07:31:54.433Z","type":"event.new","label":"영상통화 팬사인회","artist":"어센트","album":"[Still with you]","id":21144,"url":"https://makestar.co/event/21144","endAt":"2026-10-22T23:59:59.999999+09:00"}
+{"at":"2026-10-20T07:31:54.433Z","type":"album.gone","artist":"WayV","album":"Hey, Somebody"}
