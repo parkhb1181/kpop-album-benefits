@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-21T08:53:05.658Z",
-  "lastDeep": "2026-10-21T08:53:05.658Z",
+  "checkedAt": "2026-10-21T14:20:09.540Z",
+  "lastDeep": "2026-10-21T14:20:09.540Z",
   "events": [
     {
       "id": 21531,
@@ -364,6 +364,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_2_Banner_thumb.jpg_2026-10-19_115224393709.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_2_Banner_thumb.jpg_2026-10-19_115224393709_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21279,
+      "url": "https://makestar.co/event/21279",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> SPECIAL FANSIGN & PHOTO & BAKERY EVENT IN BANGKOK",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> SPECIAL FANSIGN & PHOTO & BAKERY EVENT IN BANGKOK",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.21",
+      "to": "2026.10.24",
+      "startAt": "2026-10-21T18:00:00+09:00",
+      "endAt": "2026-10-24T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.26",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_15_banner_Sub.jpg_2026-10-16_150537096084.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_15_banner_Sub.jpg_2026-10-16_150537096084_thumb.jpeg"
       }
     },
     {
@@ -861,32 +887,6 @@
       }
     },
     {
-      "id": 20982,
-      "url": "https://makestar.co/event/20982",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM 'UNBREAKABLE : 少年BEAST' 발매 기념 대면 사인회 & 1:1 영상통화 이벤트",
-      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM 'UNBREAKABLE : 少年BEAST' FACE-TO-FACE FANSIGN & 1:1 VIDEO CALL EVENT",
-      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
-      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
-      "artist": "알파드라이브원",
-      "artistEn": "ALPHA DRIVE ONE",
-      "releaseDate": "2026-08-24",
-      "from": "2026.10.19",
-      "to": "2026.10.21",
-      "startAt": "2026-10-19T18:00:00+09:00",
-      "endAt": "2026-10-21T17:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.10.21",
-      "productId": 10943,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_9_Banner_Sub.jpg_2026-10-16_124609114250.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_9_Banner_Sub.jpg_2026-10-16_124609114250_thumb.jpeg"
-      }
-    },
-    {
       "id": 20971,
       "url": "https://makestar.co/event/20971",
       "type": "MEET&CALL",
@@ -910,6 +910,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11034_ALL%28H%29OURS_3_Banner_thumb.jpg_2026-10-08_162306902487.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11034_ALLHOURS_3_Banner_thumb.jpg_2026-10-08_162306902487_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20954,
+      "url": "https://makestar.co/event/20954",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "ODD YOUTH 3rd Single [ can't go back ] HEART TOUCH EVENT IN TAIPEI",
+      "titleEn": "ODD YOUTH 3rd Single [ can't go back ] HEART TOUCH EVENT IN TAIPEI",
+      "album": "3rd Single [can't go back]",
+      "albumEn": "3rd Single [can't go back]",
+      "artist": "오드유스",
+      "artistEn": "ODD YOUTH",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.21",
+      "to": "2026.10.27",
+      "startAt": "2026-10-21T18:00:00+09:00",
+      "endAt": "2026-10-27T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.10.28",
+      "productId": 10992,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_7_Banner_Sub.jpg_2026-10-16_112914020449.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_7_Banner_Sub.jpg_2026-10-16_112914020449_thumb.jpeg"
       }
     },
     {
