@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-10-21T03:34:54.026Z",
-  "lastDeep": "2026-10-21T03:34:54.026Z",
+  "checkedAt": "2026-10-21T08:53:05.658Z",
+  "lastDeep": "2026-10-21T08:53:05.658Z",
   "events": [
+    {
+      "id": 21531,
+      "url": "https://makestar.co/event/21531",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "A2O SOUL EP [SUPERSTAR] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "A2O SOUL EP [SUPERSTAR] PRE-ORDER PHOTOCARD EVENT",
+      "album": "EP [SUPERSTAR]",
+      "albumEn": "EP [SUPERSTAR]",
+      "artist": "A2O SOUL",
+      "artistEn": "A2O SOUL",
+      "releaseDate": "2026-11-09",
+      "from": "2026.10.21",
+      "to": "2026.11.08",
+      "startAt": "2026-10-21T15:00:00+09:00",
+      "endAt": "2026-11-08T23:59:59.999999+09:00",
+      "dday": 19,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 11239,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_1_Banner_Thumb.png_2026-10-21_103312640277.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_1_Banner_Thumb.png_2026-10-21_103312640277_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21503,
+      "url": "https://makestar.co/event/21503",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "WE GO-6 1st EP [SIX HEARTS] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "WE GO-6 1st EP [SIX HEARTS] PRE-ORDER PHOTOCARD EVENT",
+      "album": "미니 1집 [SIX HEARTS]",
+      "albumEn": "1ST MINI ALBUM [SIX HEARTS]",
+      "artist": "위고식스",
+      "artistEn": "WE GO-6",
+      "releaseDate": "2026-11-17",
+      "from": "2026.10.21",
+      "to": "2026.11.16",
+      "startAt": "2026-10-21T17:00:00+09:00",
+      "endAt": "2026-11-16T23:59:59.999999+09:00",
+      "dday": 27,
+      "closing": false,
+      "winnerAt": "2026.11.17",
+      "productId": 11236,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_1_banner_sub.png_2026-10-20_150938024154.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_1_banner_sub.png_2026-10-20_150938024154_thumb.jpeg"
+      }
+    },
     {
       "id": 21493,
       "url": "https://makestar.co/event/21493",
@@ -1076,6 +1128,11 @@
       "album": "Sequence 02: Attraction"
     },
     {
+      "key": "P1Harmony ｜BLOW UP",
+      "artist": "P1Harmony ",
+      "album": "BLOW UP"
+    },
+    {
       "key": "Dragon Pony｜Calling back",
       "artist": "Dragon Pony",
       "album": "Calling back"
@@ -1121,11 +1178,6 @@
       "album": "1st Mini Album ‘THE REAL DEAL’ SET"
     },
     {
-      "key": "P1Harmony ｜BLOW UP",
-      "artist": "P1Harmony ",
-      "album": "BLOW UP"
-    },
-    {
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM'",
       "artist": "NCT DREAM",
       "album": "The 6th Album 'DREAM AFTER DREAM'"
@@ -1154,6 +1206,11 @@
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
       "artist": "NCT DREAM",
       "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"
+    },
+    {
+      "key": "JUSTB｜pop>",
+      "artist": "JUSTB",
+      "album": "pop>"
     },
     {
       "key": "JISOO｜CLICK",

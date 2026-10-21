@@ -638,3 +638,6 @@
 {"at":"2026-10-21T03:34:54.026Z","type":"album.gone","artist":"TWS","album":"2nd Single Album <TO US> Everglow Ver."}
 {"at":"2026-10-21T03:34:54.026Z","type":"album.gone","artist":"TWS","album":"2nd Single Album <TO US> Beyond Ver."}
 {"at":"2026-10-21T03:34:54.026Z","type":"album.gone","artist":"TWS","album":"2nd Single Album <TO US> Closer Ver."}
+{"at":"2026-10-21T08:53:05.658Z","type":"event.new","label":"예약 특전 포토카드","artist":"A2O SOUL","album":"EP [SUPERSTAR]","id":21531,"url":"https://makestar.co/event/21531","endAt":"2026-11-08T23:59:59.999999+09:00"}
+{"at":"2026-10-21T08:53:05.658Z","type":"event.new","label":"예약 특전 포토카드","artist":"위고식스","album":"미니 1집 [SIX HEARTS]","id":21503,"url":"https://makestar.co/event/21503","endAt":"2026-11-16T23:59:59.999999+09:00"}
+{"at":"2026-10-21T08:53:05.658Z","type":"album.new","artist":"JUSTB","album":"pop>"}
