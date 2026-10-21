@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-20T23:56:12.676Z",
-  "lastDeep": "2026-10-20T23:56:12.676Z",
+  "checkedAt": "2026-10-21T03:34:54.026Z",
+  "lastDeep": "2026-10-21T03:34:54.026Z",
   "events": [
     {
       "id": 21493,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_2_Banner_Sub.jpg_2026-10-19_184121982035.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_2_Banner_Sub.jpg_2026-10-19_184121982035_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21406,
+      "url": "https://makestar.co/event/21406",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "유어즈 (YUHZ) 1st EP [B] ONLINE LUCKY DRAW EVENT",
+      "titleEn": "유어즈 (YUHZ) 1st EP [B] ONLINE LUCKY DRAW EVENT",
+      "album": "1st EP [B]",
+      "albumEn": "1st EP [B]",
+      "artist": "유어즈",
+      "artistEn": "YUHZ",
+      "releaseDate": "2026-10-21",
+      "from": "2026.10.21",
+      "to": "2026.10.27",
+      "startAt": "2026-10-21T12:00:00+09:00",
+      "endAt": "2026-10-27T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.10.28",
+      "productId": 11190,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_2_Banner_Sub.jpg_2026-10-20_123818182082.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_2_Banner_Sub.jpg_2026-10-20_123818182082_thumb.jpeg"
       }
     },
     {
@@ -130,6 +156,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_3_Banner_thumb.jpg_2026-10-16_102823332755.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_3_Banner_thumb.jpg_2026-10-16_102823332755_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21322,
+      "url": "https://makestar.co/event/21322",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "TWS 2nd Single Album 'TO US' 예약판매 특전 증정 이벤트 - Beside Ver.",
+      "titleEn": "TWS 2nd Single Album 'TO US' Pre-Order Special Benefit Event - Beside Ver.",
+      "album": "2nd Single Album ‘TO US’",
+      "albumEn": "2nd Single Album ‘TO US’",
+      "artist": "투어스",
+      "artistEn": "TWS",
+      "releaseDate": "2026-11-02",
+      "from": "2026.10.07",
+      "to": "2026.11.01",
+      "startAt": "2026-10-07T11:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 12,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11191,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
       }
     },
     {
@@ -1069,6 +1121,11 @@
       "album": "1st Mini Album ‘THE REAL DEAL’ SET"
     },
     {
+      "key": "P1Harmony ｜BLOW UP",
+      "artist": "P1Harmony ",
+      "album": "BLOW UP"
+    },
+    {
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM'",
       "artist": "NCT DREAM",
       "album": "The 6th Album 'DREAM AFTER DREAM'"
@@ -1097,26 +1154,6 @@
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
       "artist": "NCT DREAM",
       "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"
-    },
-    {
-      "key": "TWS｜2nd Single Album <TO US> Weverse Albums ver.",
-      "artist": "TWS",
-      "album": "2nd Single Album <TO US> Weverse Albums ver."
-    },
-    {
-      "key": "TWS｜2nd Single Album <TO US> Everglow Ver.",
-      "artist": "TWS",
-      "album": "2nd Single Album <TO US> Everglow Ver."
-    },
-    {
-      "key": "TWS｜2nd Single Album <TO US> Beyond Ver.",
-      "artist": "TWS",
-      "album": "2nd Single Album <TO US> Beyond Ver."
-    },
-    {
-      "key": "TWS｜2nd Single Album <TO US> Closer Ver.",
-      "artist": "TWS",
-      "album": "2nd Single Album <TO US> Closer Ver."
     },
     {
       "key": "JISOO｜CLICK",
