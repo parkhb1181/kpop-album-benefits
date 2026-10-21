@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 21. 12:35:22",
+  "stamp": "2026. 10. 21. 14:41:26",
   "albums": [
     {
       "artistId": 275,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "19일 11시간"
+        "rough": "19일 9시간"
       },
-      "rowCount": 23,
+      "rowCount": 25,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/ffb1bb8df7126ddc441e9a689a9fcf6d.png",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "5일 11시간"
+        "rough": "5일 9시간"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "4일 11시간"
+        "rough": "4일 9시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -101,9 +101,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "25일 11시간"
+        "rough": "25일 9시간"
       },
-      "rowCount": 42,
+      "rowCount": 43,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/540b84e0690065cce35b3a32377b79ed.png",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "15일 5시간"
+        "rough": "15일 3시간"
       },
       "rowCount": 15,
       "artistKo": "에이댑",
@@ -155,9 +155,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "25일 11시간"
+        "rough": "25일 9시간"
       },
-      "rowCount": 31,
+      "rowCount": 32,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T13:00:00+09:00",
-        "rough": "2일 0시간"
+        "rough": "1일 22시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -209,9 +209,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "25일 11시간"
+        "rough": "25일 9시간"
       },
-      "rowCount": 15,
+      "rowCount": 16,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "8일 11시간"
+        "rough": "8일 9시간"
       },
       "rowCount": 24,
       "artistKo": "제니",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "5일 0시간"
+        "rough": "4일 22시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "FANSIGN&PHOTO EVENT 응모 마감",
         "at": "2026-10-21T23:59:59.999999+09:00",
-        "rough": "11시간 19분"
+        "rough": "9시간 14분"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "2일 6시간"
+        "rough": "2일 4시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "2일 6시간"
+        "rough": "2일 4시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "2일 6시간"
+        "rough": "2일 4시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "FANSIGN&PHOTO EVENT 응모 마감",
         "at": "2026-10-21T23:59:59.999999+09:00",
-        "rough": "11시간 16분"
+        "rough": "9시간 12분"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -425,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "2일 6시간"
+        "rough": "2일 4시간"
       },
       "rowCount": 5,
       "artistKo": null,
@@ -452,7 +452,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "16일 1시간"
+        "rough": "15일 23시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
@@ -473,13 +473,13 @@
       "versions": 11,
       "retailers": 6,
       "benefitCount": 0,
-      "soldCount": 12,
+      "soldCount": 11,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T17:20:00+09:00",
-        "rough": "16일 4시간"
+        "rough": "16일 2시간"
       },
       "rowCount": 44,
       "artistKo": "코르티스",
