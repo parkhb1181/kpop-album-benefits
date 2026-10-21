@@ -3,19 +3,20 @@ VERSION:2.0
 PRODID:-//kpop-album-benefits//KR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFEC
- T STORM' (Weverse US Exclusive) 마감
+X-WR-CALNAME:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TO
+ GETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) 마감
 X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21258@k
  pop-album-benefits
-DTSTAMP:20261021T085922Z
+DTSTAMP:20261021T142700Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Weverse Albu
  ms ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
  21258
@@ -23,26 +24,27 @@ URL:https://makestar.co/event/21258
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21257@k
  pop-album-benefits
-DTSTAMP:20261021T085922Z
+DTSTAMP:20261021T142700Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Photocard Ca
  se Ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
  21257
@@ -50,26 +52,27 @@ URL:https://makestar.co/event/21257
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21256@k
  pop-album-benefits
-DTSTAMP:20261021T085922Z
+DTSTAMP:20261021T142700Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (STORM IS COM
  ING Ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event
  /21256
@@ -77,42 +80,43 @@ URL:https://makestar.co/event/21256
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21255@k
  pop-album-benefits
-DTSTAMP:20261021T085922Z
+DTSTAMP:20261021T142700Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' 발매기념
   특전 증정 이벤트\nhttps://makestar.co/event/21255
 URL:https://makestar.co/event/21255
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
