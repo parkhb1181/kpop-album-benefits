@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 22. 19:25:48",
+  "stamp": "2026. 10. 22. 23:51:17",
   "albums": [
     {
       "artistId": 275,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "18일 4시간"
+        "rough": "18일 0시간"
       },
       "rowCount": 25,
       "artistKo": null,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "4일 4시간"
+        "rough": "4일 0시간"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "14일 18시간"
+        "rough": "14일 14시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "3일 4시간"
+        "rough": "3일 0시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "13일 22시간"
+        "rough": "13일 18시간"
       },
       "rowCount": 15,
       "artistKo": "에이댑",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T13:00:00+09:00",
-        "rough": "17시간 30분"
+        "rough": "13시간 5분"
       },
       "rowCount": 9,
       "artistKo": "리사",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "24일 4시간"
+        "rough": "24일 0시간"
       },
       "rowCount": 32,
       "artistKo": "투모로우바이투게더",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "24일 4시간"
+        "rough": "24일 0시간"
       },
       "rowCount": 16,
       "artistKo": "투모로우바이투게더",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "3일 17시간"
+        "rough": "3일 13시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "17일 4시간"
+        "rough": "17일 0시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "23시간 29분"
+        "rough": "19시간 4분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "23시간 30분"
+        "rough": "19시간 5분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "23시간 29분"
+        "rough": "19시간 4분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "17일 4시간"
+        "rough": "17일 0시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "23시간 31분"
+        "rough": "19시간 6분"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -425,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T17:20:00+09:00",
-        "rough": "14일 21시간"
+        "rough": "14일 17시간"
       },
       "rowCount": 44,
       "artistKo": "코르티스",
