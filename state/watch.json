@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-22T05:23:39.114Z",
-  "lastDeep": "2026-10-22T05:23:39.114Z",
+  "checkedAt": "2026-10-22T10:25:13.254Z",
+  "lastDeep": "2026-10-22T10:25:13.254Z",
   "events": [
+    {
+      "id": 21532,
+      "url": "https://makestar.co/event/21532",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' FANSIGN & PHOTO EVENT IN TOKYO",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' FANSIGN & PHOTO EVENT IN TOKYO",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.22",
+      "to": "2026.10.25",
+      "startAt": "2026-10-22T15:00:00+09:00",
+      "endAt": "2026-10-25T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.26",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_8_banner_sub%20%281%29.jpg_2026-10-21_162449587988.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_8_banner_sub_1.jpg_2026-10-21_162449587988_thumb.jpeg"
+      }
+    },
     {
       "id": 21531,
       "url": "https://makestar.co/event/21531",
@@ -884,6 +910,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11114_ILLIT_1_Banner_Sub_v2.jpg_2026-09-28_095542347229.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11114_ILLIT_1_Banner_Sub_v2.jpg_2026-09-28_095542347229_thumb.jpeg"
+      }
+    },
+    {
+      "id": 20600,
+      "url": "https://makestar.co/event/20600",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "LE SSERAFIM 2nd Single Album 'Made My Night' 1:1 HANDOVER EVENT IN TAIPEI",
+      "titleEn": "LE SSERAFIM 2nd Single Album 'Made My Night' 1:1 HANDOVER EVENT IN TAIPEI",
+      "album": "2nd Single Album 'Made My Night'",
+      "albumEn": "2nd Single Album 'Made My Night'",
+      "artist": "르세라핌",
+      "artistEn": "LE SSERAFIM",
+      "releaseDate": "2026-09-11",
+      "from": "2026.10.22",
+      "to": "2026.10.26",
+      "startAt": "2026-10-22T18:00:00+09:00",
+      "endAt": "2026-10-26T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.10.28",
+      "productId": 11042,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_6_banner_sub.png_2026-10-19_164457629900.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11042_LE_SSERAFIM_6_banner_sub.png_2026-10-19_164457629900_thumb.jpeg"
       }
     },
     {

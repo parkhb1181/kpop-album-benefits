@@ -652,3 +652,5 @@
 {"at":"2026-10-21T18:48:43.784Z","type":"event.gone","label":"영상통화 팬사인회","artist":"올아워즈","album":"미니 6집 [UNBOUND]","id":20971}
 {"at":"2026-10-21T22:05:26.515Z","type":"album.gone","artist":"TOMORROW X TOGETHER","album":"9th Mini Album 'PERFECT STORM'"}
 {"at":"2026-10-22T05:23:39.114Z","type":"album.gone","artist":"JENNIE","album":"Fallen Angel"}
+{"at":"2026-10-22T10:25:13.254Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":21532,"url":"https://makestar.co/event/21532","endAt":"2026-10-25T23:59:59.999999+09:00"}
+{"at":"2026-10-22T10:25:13.254Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"르세라핌","album":"2nd Single Album 'Made My Night'","id":20600,"url":"https://makestar.co/event/20600","endAt":"2026-10-26T23:59:59.999999+09:00"}
