@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 22. 23:51:17",
+  "stamp": "2026. 10. 23. 00:28:40",
   "albums": [
     {
       "artistId": 275,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "18일 0시간"
+        "rough": "17일 23시간"
       },
       "rowCount": 25,
       "artistKo": null,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "4일 0시간"
+        "rough": "3일 23시간"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "14일 14시간"
+        "rough": "14일 13시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "3일 0시간"
+        "rough": "2일 23시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -128,40 +128,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "13일 18시간"
+        "rough": "13일 17시간"
       },
       "rowCount": 15,
       "artistKo": "에이댑",
       "artistDisplay": "에이댑(ADAP)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/632ddd92256906a01e8fb94cbd92eb2a.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/nXZpQj.jpg"
-    },
-    {
-      "artistId": 321,
-      "artistEn": "LISA",
-      "album": "PRESS PLAY CD",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 23600,
-      "artist": "LISA",
-      "slug": "lisa-press-play-cd",
-      "versions": 2,
-      "retailers": 5,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-23T13:00:00+09:00",
-        "rough": "13시간 5분"
-      },
-      "rowCount": 9,
-      "artistKo": "리사",
-      "artistDisplay": "리사(LISA)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/e3ad3426aa0b941f938ee772980958b9.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png"
     },
     {
       "artistId": 3,
@@ -182,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "24일 0시간"
+        "rough": "23일 23시간"
       },
       "rowCount": 32,
       "artistKo": "투모로우바이투게더",
@@ -209,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "24일 0시간"
+        "rough": "23일 23시간"
       },
       "rowCount": 16,
       "artistKo": "투모로우바이투게더",
@@ -236,13 +209,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "3일 13시간"
+        "rough": "3일 12시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 321,
+      "artistEn": "LISA",
+      "album": "PRESS PLAY CD",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 23600,
+      "artist": "LISA",
+      "slug": "lisa-press-play-cd",
+      "versions": 2,
+      "retailers": 5,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-23T13:00:00+09:00",
+        "rough": "12시간 23분"
+      },
+      "rowCount": 8,
+      "artistKo": "리사",
+      "artistDisplay": "리사(LISA)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png"
     },
     {
       "artistId": 131,
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "17일 0시간"
+        "rough": "16일 23시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "19시간 4분"
+        "rough": "18시간 27분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "19시간 5분"
+        "rough": "18시간 28분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "19시간 4분"
+        "rough": "18시간 27분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "17일 0시간"
+        "rough": "16일 23시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "19시간 6분"
+        "rough": "18시간 28분"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -425,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T17:20:00+09:00",
-        "rough": "14일 17시간"
+        "rough": "14일 16시간"
       },
       "rowCount": 44,
       "artistKo": "코르티스",
