@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 22. 07:05:56",
+  "stamp": "2026. 10. 22. 14:24:08",
   "albums": [
     {
       "artistId": 275,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "18일 16시간"
+        "rough": "18일 9시간"
       },
       "rowCount": 25,
       "artistKo": null,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "4일 16시간"
+        "rough": "4일 9시간"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "15일 6시간"
+        "rough": "14일 23시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "3일 16시간"
+        "rough": "3일 9시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -128,9 +128,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "14일 10시간"
+        "rough": "14일 3시간"
       },
-      "rowCount": 14,
+      "rowCount": 15,
       "artistKo": "에이댑",
       "artistDisplay": "에이댑(ADAP)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/632ddd92256906a01e8fb94cbd92eb2a.png",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T13:00:00+09:00",
-        "rough": "1일 5시간"
+        "rough": "22시간 33분"
       },
       "rowCount": 9,
       "artistKo": "리사",
@@ -182,9 +182,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 9시간"
       },
-      "rowCount": 31,
+      "rowCount": 32,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
@@ -209,40 +209,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "24일 16시간"
+        "rough": "24일 9시간"
       },
-      "rowCount": 15,
+      "rowCount": 16,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg"
-    },
-    {
-      "artistId": 209,
-      "artistEn": "JENNIE",
-      "album": "Fallen Angel",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-10-30",
-      "weversePriceMin": 16300,
-      "artist": "JENNIE",
-      "slug": "jennie-fallen-angel",
-      "versions": 4,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-29T23:59:59.999999+09:00",
-        "rough": "7일 16시간"
-      },
-      "rowCount": 24,
-      "artistKo": "제니",
-      "artistDisplay": "제니(JENNIE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg"
     },
     {
       "artistId": 215,
@@ -263,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "4일 5시간"
+        "rough": "3일 22시간"
       },
       "rowCount": 19,
       "artistKo": "지수",
@@ -290,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 9시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -317,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "1일 11시간"
+        "rough": "1일 4시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -344,12 +317,12 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "1일 11시간"
+        "rough": "1일 4시간"
       },
       "rowCount": 7,
       "artistKo": null,
       "artistDisplay": "B THE HOOD",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/942c440747ac1e5032d356535bfb6085.png",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/7228b5e277ab55f1b377bd635314386f.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/vrbUGY.jpg"
     },
     {
@@ -371,12 +344,12 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "1일 11시간"
+        "rough": "1일 4시간"
       },
       "rowCount": 7,
       "artistKo": null,
       "artistDisplay": "B THE HOOD",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/23633fb946d82af08ac8468a8bfdb1ed.png",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5be6b3c3a5f6e0192f9d0d7422a55a09.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/0oC8tH.jpg"
     },
     {
@@ -398,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 9시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -416,8 +389,8 @@
       "weversePriceMin": 19300,
       "artist": "TVXQ!",
       "slug": "tvxq-the-3rd-mini-album-all-of-my-life",
-      "versions": 3,
-      "retailers": 2,
+      "versions": 4,
+      "retailers": 3,
       "benefitCount": 1,
       "soldCount": 0,
       "eventCount": 1,
@@ -425,13 +398,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "1일 11시간"
+        "rough": "1일 4시간"
       },
-      "rowCount": 5,
+      "rowCount": 6,
       "artistKo": null,
       "artistDisplay": "TVXQ!",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a720f85de92e17cff589211784ffe802.png",
-      "cover": "https://godomall.speedycdn.net/c03670ee9f741fa0343b16321feede3e/goods/1000017814/image/main/1000017814_main_093.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/13/IKAYMg.png"
     },
     {
       "artistId": 255,
@@ -452,7 +425,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T17:20:00+09:00",
-        "rough": "15일 10시간"
+        "rough": "15일 2시간"
       },
       "rowCount": 44,
       "artistKo": "코르티스",
@@ -1292,6 +1265,33 @@
         "lastSeen": "2026-09-27"
       },
       "ogCard": "https://kpop-album.vercel.app/og/tuide-tune-play.png"
+    },
+    {
+      "artistId": 209,
+      "artistEn": "JENNIE",
+      "album": "Fallen Angel",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-10-30",
+      "weversePriceMin": 16300,
+      "artist": "JENNIE",
+      "slug": "jennie-fallen-angel",
+      "versions": 4,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 24,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/08/26/FJrEeO.jpg",
+      "expired": {
+        "lastSeen": "2026-10-22"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/jennie-fallen-angel.png"
     },
     {
       "artistId": 112,
