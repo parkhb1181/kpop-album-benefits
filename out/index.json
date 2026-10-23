@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 23. 07:36:44",
+  "stamp": "2026. 10. 23. 14:42:40",
   "albums": [
     {
       "artistId": 275,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "17일 16시간"
+        "rough": "17일 9시간"
       },
       "rowCount": 25,
       "artistKo": null,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "3일 16시간"
+        "rough": "3일 9시간"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "14일 6시간"
+        "rough": "13일 23시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
@@ -101,13 +101,40 @@
       "nextDeadline": {
         "label": "영상통화 팬사인회 응모 마감",
         "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "2일 16시간"
+        "rough": "2일 9시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
       "artistDisplay": "드래곤포니(Dragon Pony)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/315f5629bcb248f9833a85c5e7229cdf.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/fCgF5z.jpg"
+    },
+    {
+      "artistId": 3,
+      "artistEn": "TOMORROW X TOGETHER",
+      "album": "9th Mini Album 'PERFECT STORM'",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-11-16",
+      "weversePriceMin": 11500,
+      "artist": "TOMORROW X TOGETHER",
+      "slug": "tomorrow-x-together-9th-mini-album-perfect-storm",
+      "versions": 13,
+      "retailers": 5,
+      "benefitCount": 3,
+      "soldCount": 1,
+      "eventCount": 4,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-11-15T23:59:59.999999+09:00",
+        "rough": "23일 9시간"
+      },
+      "rowCount": 42,
+      "artistKo": "투모로우바이투게더",
+      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/540b84e0690065cce35b3a32377b79ed.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg"
     },
     {
       "artistId": 325,
@@ -128,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "13일 10시간"
+        "rough": "13일 3시간"
       },
       "rowCount": 15,
       "artistKo": "에이댑",
@@ -155,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "23일 16시간"
+        "rough": "23일 9시간"
       },
       "rowCount": 32,
       "artistKo": "투모로우바이투게더",
@@ -182,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "23일 16시간"
+        "rough": "23일 9시간"
       },
       "rowCount": 16,
       "artistKo": "투모로우바이투게더",
@@ -209,40 +236,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "3일 5시간"
+        "rough": "2일 22시간"
       },
-      "rowCount": 19,
+      "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
-    },
-    {
-      "artistId": 321,
-      "artistEn": "LISA",
-      "album": "PRESS PLAY CD",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 23600,
-      "artist": "LISA",
-      "slug": "lisa-press-play-cd",
-      "versions": 2,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-23T13:00:00+09:00",
-        "rough": "5시간 16분"
-      },
-      "rowCount": 8,
-      "artistKo": "리사",
-      "artistDisplay": "리사(LISA)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png"
     },
     {
       "artistId": 131,
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "16일 16시간"
+        "rough": "16일 9시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "11시간 19분"
+        "rough": "4시간 12분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "11시간 19분"
+        "rough": "4시간 13분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "11시간 19분"
+        "rough": "4시간 13분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -371,7 +371,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "16일 16시간"
+        "rough": "16일 9시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "11시간 20분"
+        "rough": "4시간 14분"
       },
       "rowCount": 6,
       "artistKo": null,
@@ -563,33 +563,6 @@
         "lastSeen": "2026-10-13"
       },
       "ogCard": "https://kpop-album.vercel.app/og/daily-direction-which-way.png"
-    },
-    {
-      "artistId": 3,
-      "artistEn": "TOMORROW X TOGETHER",
-      "album": "9th Mini Album 'PERFECT STORM'",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-11-16",
-      "weversePriceMin": 11500,
-      "artist": "TOMORROW X TOGETHER",
-      "slug": "tomorrow-x-together-9th-mini-album-perfect-storm",
-      "versions": 13,
-      "retailers": 5,
-      "benefitCount": 3,
-      "soldCount": 1,
-      "eventCount": 4,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 43,
-      "artistKo": "투모로우바이투게더",
-      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/540b84e0690065cce35b3a32377b79ed.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
-      "expired": {
-        "lastSeen": "2026-10-22"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-9th-mini-album-perfect-storm.png"
     },
     {
       "artistId": 25,
@@ -1427,6 +1400,33 @@
         "lastSeen": "2026-09-30"
       },
       "ogCard": "https://kpop-album.vercel.app/og/seventeen-%EC%A0%95%ED%95%9Cx%EC%A1%B0%EC%8A%88%EC%95%84-1st-mini-album-dreamscape-kit-ver.png"
+    },
+    {
+      "artistId": 321,
+      "artistEn": "LISA",
+      "album": "PRESS PLAY CD",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 23600,
+      "artist": "LISA",
+      "slug": "lisa-press-play-cd",
+      "versions": 2,
+      "retailers": 5,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 8,
+      "artistKo": "리사",
+      "artistDisplay": "리사(LISA)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png",
+      "expired": {
+        "lastSeen": "2026-10-23"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/lisa-press-play-cd.png"
     },
     {
       "artistId": 3,
