@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-23T05:51:06.937Z",
-  "lastDeep": "2026-10-23T05:51:06.937Z",
+  "checkedAt": "2026-10-23T11:00:09.071Z",
+  "lastDeep": "2026-10-23T11:00:09.071Z",
   "events": [
+    {
+      "id": 21581,
+      "url": "https://makestar.co/event/21581",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "이븐 (EVNNE) 6th Mini Album [on: our noise] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "이븐 (EVNNE) 6th Mini Album [on: our noise] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "6th Mini Album [on our noise]",
+      "albumEn": "6th Mini Album [on our noise]",
+      "artist": "이븐",
+      "artistEn": "EVNNE",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.23",
+      "to": "2026.10.25",
+      "startAt": "2026-10-23T15:00:00+09:00",
+      "endAt": "2026-10-25T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.26",
+      "productId": 11169,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11169_EVNNE_1_banner_sub.png_2026-10-22_153908572923.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11169_EVNNE_1_banner_sub.png_2026-10-22_153908572923_thumb.jpeg"
+      }
+    },
     {
       "id": 21574,
       "url": "https://makestar.co/event/21574",
