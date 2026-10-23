@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 23. 14:42:40",
+  "stamp": "2026. 10. 23. 14:51:44",
   "albums": [
     {
       "artistId": 275,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "4시간 12분"
+        "rough": "4시간 3분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "4시간 13분"
+        "rough": "4시간 4분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "4시간 13분"
+        "rough": "4시간 3분"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -398,7 +398,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-23T19:00:00+09:00",
-        "rough": "4시간 14분"
+        "rough": "4시간 4분"
       },
       "rowCount": 6,
       "artistKo": null,
