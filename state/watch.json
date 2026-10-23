@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-10-23T00:57:59.740Z",
-  "lastDeep": "2026-10-23T00:57:59.740Z",
+  "checkedAt": "2026-10-23T05:51:06.937Z",
+  "lastDeep": "2026-10-23T05:51:06.937Z",
   "events": [
+    {
+      "id": 21574,
+      "url": "https://makestar.co/event/21574",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "izna 2027 SEASON’S GREETINGS [VACATION CLUB with izna] 예약판매 특전 증정 이벤트",
+      "titleEn": "izna 2027 SEASON’S GREETINGS [VACATION CLUB with izna] PRE-ORDER SPECIAL BENEFIT GIVEAWAY EVENT",
+      "album": "2027 SEASON’S GREETINGS [VACATION CLUB with izna]",
+      "albumEn": "2027 SEASON’S GREETINGS [VACATION CLUB with izna]",
+      "artist": "이즈나",
+      "artistEn": "izna",
+      "releaseDate": "2026-12-18",
+      "from": "2026.10.23",
+      "to": "2026.12.17",
+      "startAt": "2026-10-23T14:00:00+09:00",
+      "endAt": "2026-12-17T23:59:59.999999+09:00",
+      "dday": 56,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11245,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11245_IZNA_1_Banner_Sub.jpg_2026-10-22_151249148610.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11245_IZNA_1_Banner_Sub.jpg_2026-10-22_151249148610_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21573,
+      "url": "https://makestar.co/event/21573",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ZEROBASEONE 2027 SEASON'S GREETINGS [FARMER'S LAB] 예약판매 특전 증정 이벤트",
+      "titleEn": "ZEROBASEONE 2027 SEASON'S GREETINGS [FARMER'S LAB] PRE-ORDER SPECIAL BENEFIT GIVEAWAY EVENT",
+      "album": "2027 SEASON'S GREETINGS [FARMER'S LAB]",
+      "albumEn": "2027 SEASON'S GREETINGS [FARMER'S LAB]",
+      "artist": "ZEROBASEONE",
+      "artistEn": "ZEROBASEONE",
+      "releaseDate": "2026-12-18",
+      "from": "2026.10.23",
+      "to": "2026.12.17",
+      "startAt": "2026-10-23T14:00:00+09:00",
+      "endAt": "2026-12-17T23:59:59.999999+09:00",
+      "dday": 56,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11244,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365_thumb.jpeg"
+      }
+    },
     {
       "id": 21532,
       "url": "https://makestar.co/event/21532",
@@ -237,6 +289,32 @@
       }
     },
     {
+      "id": 21295,
+      "url": "https://makestar.co/event/21295",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "최유정 2nd Single Album [Perfect Target] ONLINE LUCKY DRAW EVENT",
+      "titleEn": "CHOI YOOJUNG 2nd Single Album [Perfect Target] ONLINE LUCKY DRAW EVENT",
+      "album": "2nd Single Album [Perfect Target]",
+      "albumEn": "2nd Single Album [Perfect Target]",
+      "artist": "최유정",
+      "artistEn": "CHOI YOOJUNG",
+      "releaseDate": "2026-06-30",
+      "from": "2026.10.23",
+      "to": "2026.10.27",
+      "startAt": "2026-10-23T14:00:00+09:00",
+      "endAt": "2026-10-27T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.10.28",
+      "productId": 10754,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10754_CHOI_YOOJUNG_4_banner_sub.png_2026-10-21_151821876899.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10754_CHOI_YOOJUNG_4_banner_sub.png_2026-10-21_151821876899_thumb.jpeg"
+      }
+    },
+    {
       "id": 21284,
       "url": "https://makestar.co/event/21284",
       "type": "PHOTOCARD",
@@ -416,6 +494,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_2_Banner_Sub.jpg_2026-10-15_105733343463.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_2_Banner_Sub.jpg_2026-10-15_105733343463_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21220,
+      "url": "https://makestar.co/event/21220",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "NEXZ(넥스지) 미니4집 <SAUCIN'> FLOWER&MEET&CALL EVENT",
+      "titleEn": "NEXZ(넥스지) The 4th Mini Album <SAUCIN'> FLOWER&MEET&CALL EVENT",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.23",
+      "to": "2026.10.25",
+      "startAt": "2026-10-23T10:00:00+09:00",
+      "endAt": "2026-10-25T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.26",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_14_banner_Sub_v5.jpg_2026-10-22_183519062707.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_14_banner_Sub_v5.jpg_2026-10-22_183519062707_thumb.jpeg"
       }
     },
     {
@@ -873,6 +977,11 @@
       "album": "BLOW UP"
     },
     {
+      "key": "TOMORROW X TOGETHER｜9th Mini Album 'PERFECT STORM'",
+      "artist": "TOMORROW X TOGETHER",
+      "album": "9th Mini Album 'PERFECT STORM'"
+    },
+    {
       "key": "Dragon Pony｜Calling back",
       "artist": "Dragon Pony",
       "album": "Calling back"
@@ -936,11 +1045,6 @@
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
-    },
-    {
-      "key": "LISA｜PRESS PLAY CD",
-      "artist": "LISA",
-      "album": "PRESS PLAY CD"
     }
   ]
 }
