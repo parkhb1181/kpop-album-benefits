@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-24T05:51:49.466Z",
-  "lastDeep": "2026-10-24T05:51:49.466Z",
+  "checkedAt": "2026-10-24T10:16:48.843Z",
+  "lastDeep": "2026-10-24T10:16:48.843Z",
   "events": [
     {
       "id": 21581,
@@ -78,6 +78,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21554,
+      "url": "https://makestar.co/event/21554",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) PRE-ORDER MEET&CALL EVENT",
+      "album": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "albumEn": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "artist": "에이티즈",
+      "artistEn": "ATEEZ",
+      "releaseDate": "2026-11-13",
+      "from": "2026.10.24",
+      "to": "2026.11.05",
+      "startAt": "2026-10-24T15:00:00+09:00",
+      "endAt": "2026-11-05T23:59:59.999999+09:00",
+      "dday": 13,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 11205,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_2_Banner_Sub.jpg_2026-10-23_120145640359.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_2_Banner_Sub.jpg_2026-10-23_120145640359_thumb.jpeg"
       }
     },
     {
