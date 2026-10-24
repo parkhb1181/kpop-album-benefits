@@ -669,3 +669,5 @@
 {"at":"2026-10-23T05:51:06.937Z","type":"album.new","artist":"TOMORROW X TOGETHER","album":"9th Mini Album 'PERFECT STORM'"}
 {"at":"2026-10-23T05:51:06.937Z","type":"album.gone","artist":"LISA","album":"PRESS PLAY CD"}
 {"at":"2026-10-23T11:00:09.071Z","type":"event.new","label":"영상통화 팬사인회","artist":"이븐","album":"6th Mini Album [on our noise]","id":21581,"url":"https://makestar.co/event/21581","endAt":"2026-10-25T23:59:59.999999+09:00"}
+{"at":"2026-10-24T05:51:49.466Z","type":"event.new","label":"영상통화 팬사인회","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21534,"url":"https://makestar.co/event/21534","endAt":"2026-10-26T23:59:59.999999+09:00"}
+{"at":"2026-10-24T05:51:49.466Z","type":"event.new","label":"영상통화 팬사인회","artist":"유어즈","album":"1st EP [B]","id":21209,"url":"https://makestar.co/event/21209","endAt":"2026-10-26T23:59:59.999999+09:00"}

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-24T01:07:16.566Z",
-  "lastDeep": "2026-10-24T01:07:16.566Z",
+  "checkedAt": "2026-10-24T05:51:49.466Z",
+  "lastDeep": "2026-10-24T05:51:49.466Z",
   "events": [
     {
       "id": 21581,
@@ -78,6 +78,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21534,
+      "url": "https://makestar.co/event/21534",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NMIXX 6th EP [Strange Muse] SPECIAL VIDEO CALL EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] SPECIAL VIDEO CALL EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.24",
+      "to": "2026.10.26",
+      "startAt": "2026-10-24T12:00:00+09:00",
+      "endAt": "2026-10-26T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.27",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_8_banner_sub.png_2026-10-23_115324534560.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_8_banner_sub.png_2026-10-23_115324534560_thumb.jpeg"
       }
     },
     {
@@ -572,6 +598,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21209,
+      "url": "https://makestar.co/event/21209",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "유어즈 (YUHZ) 1st EP [B] MEET&CALL EVENT",
+      "titleEn": "유어즈 (YUHZ) 1st EP [B] MEET&CALL EVENT",
+      "album": "1st EP [B]",
+      "albumEn": "1st EP [B]",
+      "artist": "유어즈",
+      "artistEn": "YUHZ",
+      "releaseDate": "2026-10-21",
+      "from": "2026.10.24",
+      "to": "2026.10.26",
+      "startAt": "2026-10-24T14:00:00+09:00",
+      "endAt": "2026-10-26T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.27",
+      "productId": 11190,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_1_Banner_Sub.jpg_2026-10-22_182756735922.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_1_Banner_Sub.jpg_2026-10-22_182756735922_thumb.jpeg"
       }
     },
     {
