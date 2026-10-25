@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 25. 23:04:51",
+  "stamp": "2026. 10. 26. 02:24:29",
   "albums": [
     {
       "artistId": 275,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "15일 0시간"
+        "rough": "14일 21시간"
       },
-      "rowCount": 24,
+      "rowCount": 23,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/ffb1bb8df7126ddc441e9a689a9fcf6d.png",
@@ -41,13 +41,13 @@
       "versions": 10,
       "retailers": 6,
       "benefitCount": 4,
-      "soldCount": 3,
+      "soldCount": 2,
       "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "1일 0시간"
+        "rough": "21시간 34분"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "11일 14시간"
+        "rough": "11일 11시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
@@ -96,12 +96,12 @@
       "retailers": 6,
       "benefitCount": 3,
       "soldCount": 0,
-      "eventCount": 3,
-      "fansignCount": 1,
+      "eventCount": 2,
+      "fansignCount": 0,
       "nextDeadline": {
-        "label": "영상통화 팬사인회 응모 마감",
-        "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "52분"
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-11-01T23:59:59.999999+09:00",
+        "rough": "6일 21시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "21일 0시간"
+        "rough": "20일 21시간"
       },
       "rowCount": 41,
       "artistKo": "투모로우바이투게더",
@@ -155,9 +155,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "10일 18시간"
+        "rough": "10일 15시간"
       },
-      "rowCount": 15,
+      "rowCount": 14,
       "artistKo": "에이댑",
       "artistDisplay": "에이댑(ADAP)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/632ddd92256906a01e8fb94cbd92eb2a.png",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "21일 0시간"
+        "rough": "20일 21시간"
       },
       "rowCount": 32,
       "artistKo": "투모로우바이투게더",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "21일 0시간"
+        "rough": "20일 21시간"
       },
       "rowCount": 16,
       "artistKo": "투모로우바이투게더",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-26T13:00:00+09:00",
-        "rough": "13시간 48분"
+        "rough": "10시간 28분"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "14일 0시간"
+        "rough": "13일 21시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -359,40 +359,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "14일 0시간"
+        "rough": "13일 21시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
       "artistDisplay": "엔시티 드림(NCT DREAM)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/JvAC8X.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/JvAC8X.jpg"
-    },
-    {
-      "artistId": 132,
-      "artistEn": "TVXQ!",
-      "album": "The 3rd Mini Album 'All Of My Life'",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 19300,
-      "artist": "TVXQ!",
-      "slug": "tvxq-the-3rd-mini-album-all-of-my-life",
-      "versions": 4,
-      "retailers": 3,
-      "benefitCount": 1,
-      "soldCount": 0,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "럭키드로우 응모 마감",
-        "at": "2026-10-25T23:59:59.999999+09:00",
-        "rough": "52분"
-      },
-      "rowCount": 6,
-      "artistKo": null,
-      "artistDisplay": "TVXQ!",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a720f85de92e17cff589211784ffe802.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/13/IKAYMg.png"
     },
     {
       "artistId": 37,
@@ -1604,6 +1577,33 @@
         "lastSeen": "2026-09-07"
       },
       "ogCard": "https://kpop-album.vercel.app/og/evan-evan-1st-mini-album-death-of-me.png"
+    },
+    {
+      "artistId": 132,
+      "artistEn": "TVXQ!",
+      "album": "The 3rd Mini Album 'All Of My Life'",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 19300,
+      "artist": "TVXQ!",
+      "slug": "tvxq-the-3rd-mini-album-all-of-my-life",
+      "versions": 4,
+      "retailers": 3,
+      "benefitCount": 1,
+      "soldCount": 0,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 6,
+      "artistKo": null,
+      "artistDisplay": "TVXQ!",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a720f85de92e17cff589211784ffe802.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/13/IKAYMg.png",
+      "expired": {
+        "lastSeen": "2026-10-25"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/tvxq-the-3rd-mini-album-all-of-my-life.png"
     },
     {
       "artistId": 112,

@@ -91,12 +91,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/tvxq-the-3rd-mini-album-all-of-my-life</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/justb-pop</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>daily</changefreq>
@@ -367,6 +361,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/tvxq-the-3rd-mini-album-all-of-my-life</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/boynextdoor-early-bird</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -590,12 +590,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/nct-dream-the-6th-album-dream-after-dream-smart-album</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/tvxq-the-3rd-mini-album-all-of-my-life</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -867,6 +861,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/evan-evan-1st-mini-album-death-of-me</loc>
     <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/tvxq-the-3rd-mini-album-all-of-my-life</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
