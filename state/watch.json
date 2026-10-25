@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-25T04:26:36.195Z",
-  "lastDeep": "2026-10-25T04:26:36.195Z",
+  "checkedAt": "2026-10-25T09:17:48.367Z",
+  "lastDeep": "2026-10-25T09:17:48.367Z",
   "events": [
+    {
+      "id": 21612,
+      "url": "https://makestar.co/event/21612",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] 1:1 VIDEO CALL EVENT",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] 1:1 VIDEO CALL EVENT",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.25",
+      "to": "2026.10.27",
+      "startAt": "2026-10-25T18:00:00+09:00",
+      "endAt": "2026-10-27T17:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.10.27",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
+      }
+    },
     {
       "id": 21581,
       "url": "https://makestar.co/event/21581",
