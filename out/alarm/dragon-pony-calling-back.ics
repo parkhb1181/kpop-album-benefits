@@ -3,96 +3,98 @@ VERSION:2.0
 PRODID:-//kpop-album-benefits//KR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Dragon Pony Calling back 마감
+X-WR-CALNAME:드래곤포니(Dragon Pony) Calling back 마감
 X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21493@kpop-album-benefits
-DTSTAMP:20261024T172941Z
+DTSTAMP:20261025T042933Z
 DTSTART:20261025T145959Z
 DTEND:20261025T152959Z
-SUMMARY:Dragon Pony Calling back — 영상통화 팬사인회 응모 마
- 감
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 영상통화 팬사
+ 인회 응모 마감
 DESCRIPTION:xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PR
  E-ORDER MEET&CALL EVENT\nhttps://makestar.co/event/21493
 URL:https://makestar.co/event/21493
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 영상통화 팬사인회 응모 
- 마감 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 영상통화 팬
+ 사인회 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 영상통화 팬사인회 응모 
- 마감 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 영상통화 팬
+ 사인회 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt20851@kpop-album-benefits
-DTSTAMP:20261024T172941Z
+DTSTAMP:20261025T042933Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
-SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
- 감
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
+ 카드 응모 마감
 DESCRIPTION:xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PR
  E-ORDER PHOTOCARD EVENT\nhttps://makestar.co/event/20851
 URL:https://makestar.co/event/20851
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21230@kpop-album-benefits
-DTSTAMP:20261024T172941Z
+DTSTAMP:20261025T042933Z
 DTSTART:20261104T145959Z
 DTEND:20261104T152959Z
-SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
- 감
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
+ 카드 응모 마감
 DESCRIPTION:Dragon Pony (드래곤포니) Single [Calling back] PRE-ORDER P
  HOTOCARD EVENT\nhttps://makestar.co/event/21230
 URL:https://makestar.co/event/21230
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-release@kpop-album-benefits
-DTSTAMP:20261024T172941Z
+DTSTAMP:20261025T042933Z
 DTSTART:20261105T090000Z
 DTEND:20261105T093000Z
-SUMMARY:Dragon Pony Calling back — 예약 배송 시작
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/dragon-pony-calling-back.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
+ 작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
+ 작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
