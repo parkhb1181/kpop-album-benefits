@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-24T23:59:25.182Z",
-  "lastDeep": "2026-10-24T23:59:25.182Z",
+  "checkedAt": "2026-10-25T04:26:36.195Z",
+  "lastDeep": "2026-10-25T04:26:36.195Z",
   "events": [
     {
       "id": 21581,
@@ -208,6 +208,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_1_banner_sub.png_2026-10-20_150938024154.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_1_banner_sub.png_2026-10-20_150938024154_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21494,
+      "url": "https://makestar.co/event/21494",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] MEET&CALL EVENT PART.2",
+      "titleEn": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] MEET&CALL EVENT PART.2",
+      "album": "미니1집 [DEAD:ALIVE]",
+      "albumEn": "1st Mini Album [DEAD:ALIVE]",
+      "artist": "성한빈",
+      "artistEn": "Sung Han Bin",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.25",
+      "to": "2026.10.27",
+      "startAt": "2026-10-25T12:00:00+09:00",
+      "endAt": "2026-10-27T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.28",
+      "productId": 11133,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_4_Banner_Sub.jpg_2026-10-21_191758994225.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_4_Banner_Sub.jpg_2026-10-21_191758994225_thumb.jpeg"
       }
     },
     {
