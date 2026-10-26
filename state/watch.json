@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-26T00:32:30.524Z",
-  "lastDeep": "2026-10-26T00:32:30.524Z",
+  "checkedAt": "2026-10-26T05:18:52.838Z",
+  "lastDeep": "2026-10-26T05:18:52.838Z",
   "events": [
     {
       "id": 21612,
@@ -159,6 +159,32 @@
       }
     },
     {
+      "id": 21530,
+      "url": "https://makestar.co/event/21530",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ENHYPEN 'THE SIN : PARALLEL WORLD' 발매기념 예약판매 특전 증정 이벤트",
+      "titleEn": "ENHYPEN 'THE SIN : PARALLEL WORLD' Release Celebration Pre-Order Benefit Giveaway Event",
+      "album": "[THE SIN : PARALLEL WORLD]",
+      "albumEn": "[THE SIN : PARALLEL WORLD]",
+      "artist": "엔하이픈",
+      "artistEn": "ENHYPEN",
+      "releaseDate": "2026-11-23",
+      "from": "2026.10.26",
+      "to": "2026.11.22",
+      "startAt": "2026-10-26T11:00:00+09:00",
+      "endAt": "2026-11-22T23:59:59.999999+09:00",
+      "dday": 28,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11238,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11238_ENHYPEN_1_Banner_Sub.jpg_2026-10-23_124425405185.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11238_ENHYPEN_1_Banner_Sub.jpg_2026-10-23_124425405185_thumb.jpeg"
+      }
+    },
+    {
       "id": 21503,
       "url": "https://makestar.co/event/21503",
       "type": "PHOTOCARD",
@@ -208,6 +234,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_4_Banner_Sub.jpg_2026-10-21_191758994225.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_4_Banner_Sub.jpg_2026-10-21_191758994225_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21487,
+      "url": "https://makestar.co/event/21487",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "Keyveatz [Mixtape : A1ㄱ] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "Keyveatz [Mixtape : A1ㄱ] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "[Mixtape : A1ㄱ]",
+      "albumEn": "[Mixtape : A1ㄱ]",
+      "artist": "키비츠",
+      "artistEn": "Keyveatz",
+      "releaseDate": "2026-09-30",
+      "from": "2026.10.26",
+      "to": "2026.10.28",
+      "startAt": "2026-10-26T14:00:00+09:00",
+      "endAt": "2026-10-28T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.29",
+      "productId": 11156,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11156_KEYVEATZ_1_banner_sub.png_2026-10-21_153807307954.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11156_KEYVEATZ_1_banner_sub.png_2026-10-21_153807307954_thumb.jpeg"
       }
     },
     {
@@ -899,19 +951,9 @@
       "album": "BLOW UP"
     },
     {
-      "key": "TOMORROW X TOGETHER｜9th Mini Album 'PERFECT STORM'",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "9th Mini Album 'PERFECT STORM'"
-    },
-    {
       "key": "Dragon Pony｜Calling back",
       "artist": "Dragon Pony",
       "album": "Calling back"
-    },
-    {
-      "key": "LNGSHOT｜S.W.I.S.H.",
-      "artist": "LNGSHOT",
-      "album": "S.W.I.S.H."
     },
     {
       "key": "ADAP｜ALL DREAMS ARE POSSIBLE",
@@ -934,6 +976,11 @@
       "album": "1st Mini Album ‘THE REAL DEAL’ SET"
     },
     {
+      "key": "ENHYPEN｜I Want You' Single CD",
+      "artist": "ENHYPEN",
+      "album": "I Want You' Single CD"
+    },
+    {
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM'",
       "artist": "NCT DREAM",
       "album": "The 6th Album 'DREAM AFTER DREAM'"
@@ -947,6 +994,16 @@
       "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)",
       "artist": "TOMORROW X TOGETHER",
       "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)"
+    },
+    {
+      "key": "ENHYPEN｜THE SIN : PARALLEL WORLD (Weverse Exclusive)",
+      "artist": "ENHYPEN",
+      "album": "THE SIN : PARALLEL WORLD (Weverse Exclusive)"
+    },
+    {
+      "key": "ENHYPEN｜THE SIN : PARALLEL WORLD",
+      "artist": "ENHYPEN",
+      "album": "THE SIN : PARALLEL WORLD"
     },
     {
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",

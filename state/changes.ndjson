@@ -684,3 +684,10 @@
 {"at":"2026-10-25T17:23:57.604Z","type":"event.gone","label":"예약 특전 포토카드","artist":"아이브","album":"EP [Looks Can Kill]","id":20892}
 {"at":"2026-10-25T17:23:57.604Z","type":"event.gone","label":"예약 특전 포토카드","artist":"아일릿","album":"[BREAK EVEN]","id":20743}
 {"at":"2026-10-25T17:23:57.604Z","type":"album.gone","artist":"TVXQ!","album":"The 3rd Mini Album 'All Of My Life'"}
+{"at":"2026-10-26T05:18:52.838Z","type":"event.new","label":"예약 특전 포토카드","artist":"엔하이픈","album":"[THE SIN : PARALLEL WORLD]","id":21530,"url":"https://makestar.co/event/21530","endAt":"2026-11-22T23:59:59.999999+09:00"}
+{"at":"2026-10-26T05:18:52.838Z","type":"event.new","label":"영상통화 팬사인회","artist":"키비츠","album":"[Mixtape : A1ㄱ]","id":21487,"url":"https://makestar.co/event/21487","endAt":"2026-10-28T23:59:59.999999+09:00"}
+{"at":"2026-10-26T05:18:52.838Z","type":"album.new","artist":"ENHYPEN","album":"I Want You' Single CD"}
+{"at":"2026-10-26T05:18:52.838Z","type":"album.new","artist":"ENHYPEN","album":"THE SIN : PARALLEL WORLD (Weverse Exclusive)"}
+{"at":"2026-10-26T05:18:52.838Z","type":"album.new","artist":"ENHYPEN","album":"THE SIN : PARALLEL WORLD"}
+{"at":"2026-10-26T05:18:52.838Z","type":"album.gone","artist":"TOMORROW X TOGETHER","album":"9th Mini Album 'PERFECT STORM'"}
+{"at":"2026-10-26T05:18:52.838Z","type":"album.gone","artist":"LNGSHOT","album":"S.W.I.S.H."}
