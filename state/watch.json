@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-26T05:18:52.838Z",
-  "lastDeep": "2026-10-26T05:18:52.838Z",
+  "checkedAt": "2026-10-26T11:22:00.683Z",
+  "lastDeep": "2026-10-26T11:22:00.683Z",
   "events": [
+    {
+      "id": 21650,
+      "url": "https://makestar.co/event/21650",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "볼빨간사춘기(BOL4) 10th Mini Album [October Archive] Face-to-Face Fansign Event",
+      "titleEn": "BOL4 10th Mini Album [October Archive] Face-to-Face Fansign Event",
+      "album": "미니 10집 [October Archive]",
+      "albumEn": "10th Mini Album [October Archive]",
+      "artist": "볼빨간사춘기",
+      "artistEn": "BOL4",
+      "releaseDate": "2026-10-26",
+      "from": "2026.10.26",
+      "to": "2026.10.28",
+      "startAt": "2026-10-26T19:00:00+09:00",
+      "endAt": "2026-10-28T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.29",
+      "productId": 11230,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11230_BOL4_1_banner_sub.png_2026-10-26_153622596774.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11230_BOL4_1_banner_sub.png_2026-10-26_153622596774_thumb.jpeg"
+      }
+    },
     {
       "id": 21612,
       "url": "https://makestar.co/event/21612",
@@ -19,13 +45,117 @@
       "to": "2026.10.27",
       "startAt": "2026-10-25T18:00:00+09:00",
       "endAt": "2026-10-27T17:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.10.27",
       "productId": 10943,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21589,
+      "url": "https://makestar.co/event/21589",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "샤오쥔 미니 1집 'Hey, Somebody' 발매기념 LUCKY DRAW EVENT",
+      "titleEn": "XIAOJUN The 1st Mini Album 'Hey, Somebody' LUCKY DRAW EVENT",
+      "album": "미니 1집 [Hey, Somebody]",
+      "albumEn": "1st Mini Album [Hey, Somebody]",
+      "artist": "샤오쥔",
+      "artistEn": "XIAOJUN",
+      "releaseDate": "2026-10-26",
+      "from": "2026.10.26",
+      "to": "2026.11.01",
+      "startAt": "2026-10-26T19:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11167,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_5_banner_sub.png_2026-10-26_092723278251.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_5_banner_sub.png_2026-10-26_092723278251_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21587,
+      "url": "https://makestar.co/event/21587",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "이은상 1st EP [꿈의 정원] (POCAALBUM) SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "Lee Eun Sang 1st EP [꿈의 정원] (POCAALBUM) SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "1ST EP [꿈의 정원] (POCAALBUM)",
+      "albumEn": "1ST EP [꿈의 정원] (POCAALBUM)",
+      "artist": "이은상",
+      "artistEn": "LEE EUN SANG",
+      "releaseDate": "2026-10-21",
+      "from": "2026.10.26",
+      "to": "2026.10.28",
+      "startAt": "2026-10-26T15:00:00+09:00",
+      "endAt": "2026-10-28T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.29",
+      "productId": 11161,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11161_LEE_EUN_SANG_3_banner_sub.png_2026-10-23_172712997817.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11161_LEE_EUN_SANG_3_banner_sub.png_2026-10-23_172712997817_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21584,
+      "url": "https://makestar.co/event/21584",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "★한정수량★ ARTMS <Hyper-Ego> LUCKY DRAW EVENT PART.2",
+      "titleEn": "★Limited Quantity★ ARTMS <Hyper-Ego> LUCKY DRAW EVENT PART.2",
+      "album": "<Hyper-Ego>",
+      "albumEn": "<Hyper-Ego>",
+      "artist": "아르테미스",
+      "artistEn": "ARTMS",
+      "releaseDate": "2026-08-07",
+      "from": "2026.10.26",
+      "to": "2026.11.01",
+      "startAt": "2026-10-26T15:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10883,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_5_Banner_sub.png_2026-10-23_150841914092.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_5_Banner_sub.png_2026-10-23_150841914092_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21576,
+      "url": "https://makestar.co/event/21576",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' FANSIGN & SPECIAL & PHOTO EVENT IN TOKYO",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' FANSIGN & SPECIAL & PHOTO EVENT IN TOKYO",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.26",
+      "to": "2026.10.29",
+      "startAt": "2026-10-26T15:00:00+09:00",
+      "endAt": "2026-10-29T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.10.30",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_9_banner_sub.jpg_2026-10-22_180304227481.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_9_banner_sub.jpg_2026-10-22_180304227481_thumb.jpeg"
       }
     },
     {
@@ -81,6 +211,32 @@
       }
     },
     {
+      "id": 21557,
+      "url": "https://makestar.co/event/21557",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "RESCENE 4th Mini Album [PULSE] MEET&CALL EVENT",
+      "titleEn": "RESCENE 4th Mini Album [PULSE] MEET&CALL EVENT",
+      "album": "4th Mini Album [PULSE]",
+      "albumEn": "4th Mini Album [PULSE]",
+      "artist": "리센느",
+      "artistEn": "RESCENE",
+      "releaseDate": "2026-11-03",
+      "from": "2026.10.26",
+      "to": "2026.10.28",
+      "startAt": "2026-10-26T15:00:00+09:00",
+      "endAt": "2026-10-28T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.29",
+      "productId": 11203,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_4_benner_sub.png_2026-10-22_120638504452.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_4_benner_sub.png_2026-10-22_120638504452_thumb.jpeg"
+      }
+    },
+    {
       "id": 21554,
       "url": "https://makestar.co/event/21554",
       "type": "MEET&CALL",
@@ -130,6 +286,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_8_banner_sub.png_2026-10-23_115324534560.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_8_banner_sub.png_2026-10-23_115324534560_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21533,
+      "url": "https://makestar.co/event/21533",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "ARTMS <Hyper-Ego> LUCKY DRAW EVENT PART.2",
+      "titleEn": "ARTMS <Hyper-Ego> LUCKY DRAW EVENT PART.2",
+      "album": "<Hyper-Ego>",
+      "albumEn": "<Hyper-Ego>",
+      "artist": "아르테미스",
+      "artistEn": "ARTMS",
+      "releaseDate": "2026-08-07",
+      "from": "2026.10.26",
+      "to": "2026.11.01",
+      "startAt": "2026-10-26T15:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10883,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_5_Banner_sub.png_2026-10-23_150120660699.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_5_Banner_sub.png_2026-10-23_150120660699_thumb.jpeg"
       }
     },
     {
@@ -949,6 +1131,11 @@
       "key": "P1Harmony ｜BLOW UP",
       "artist": "P1Harmony ",
       "album": "BLOW UP"
+    },
+    {
+      "key": "WayV｜Hey, Somebody",
+      "artist": "WayV",
+      "album": "Hey, Somebody"
     },
     {
       "key": "Dragon Pony｜Calling back",
