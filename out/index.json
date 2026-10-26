@@ -1,33 +1,6 @@
 {
-  "stamp": "2026. 10. 26. 20:22:35",
+  "stamp": "2026. 10. 27. 01:37:59",
   "albums": [
-    {
-      "artistId": 294,
-      "artistEn": "AND2BLE",
-      "album": "Sequence 02: Attraction",
-      "skuCount": 8,
-      "benefit": true,
-      "deliveryDate": "2026-10-27",
-      "weversePriceMin": 11100,
-      "artist": "AND2BLE",
-      "slug": "and2ble-sequence-02-attraction",
-      "versions": 10,
-      "retailers": 6,
-      "benefitCount": 4,
-      "soldCount": 3,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "3시간 36분"
-      },
-      "rowCount": 48,
-      "artistKo": "앤더블",
-      "artistDisplay": "앤더블(AND2BLE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/24a423f8cd7737172182e2b5be1156b6.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/diAHSM.jpg"
-    },
     {
       "artistId": 14,
       "artistEn": "P1Harmony ",
@@ -39,7 +12,7 @@
       "artist": "P1Harmony ",
       "slug": "p1harmony-blow-up",
       "versions": 9,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 0,
@@ -47,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "10일 17시간"
+        "rough": "10일 12시간"
       },
-      "rowCount": 48,
+      "rowCount": 41,
       "artistKo": "피원하모니",
       "artistDisplay": "피원하모니(P1Harmony )",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/26ef4679c81bf784e118d8b938a69318.png",
@@ -74,13 +47,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "6일 3시간"
+        "rough": "5일 22시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
       "artistDisplay": "드래곤포니(Dragon Pony)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/315f5629bcb248f9833a85c5e7229cdf.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/fCgF5z.jpg"
+    },
+    {
+      "artistId": 294,
+      "artistEn": "AND2BLE",
+      "album": "Sequence 02: Attraction",
+      "skuCount": 7,
+      "benefit": false,
+      "deliveryDate": "2026-10-27",
+      "weversePriceMin": 11100,
+      "artist": "AND2BLE",
+      "slug": "and2ble-sequence-02-attraction",
+      "versions": 10,
+      "retailers": 7,
+      "benefitCount": 2,
+      "soldCount": 3,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-27T18:00:00+09:00",
+        "rough": "16시간 20분"
+      },
+      "rowCount": 55,
+      "artistKo": "앤더블",
+      "artistDisplay": "앤더블(AND2BLE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/diAHSM.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/diAHSM.jpg"
     },
     {
       "artistId": 10,
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "27일 3시간"
+        "rough": "26일 22시간"
       },
       "rowCount": 41,
       "artistKo": "엔하이픈",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "9일 21시간"
+        "rough": "9일 16시간"
       },
       "rowCount": 14,
       "artistKo": "에이댑",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 3시간"
+        "rough": "19일 22시간"
       },
       "rowCount": 35,
       "artistKo": "투모로우바이투게더",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 3시간"
+        "rough": "19일 22시간"
       },
       "rowCount": 19,
       "artistKo": "투모로우바이투게더",
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T11:00:00+09:00",
-        "rough": "2일 14시간"
+        "rough": "2일 9시간"
       },
       "rowCount": 26,
       "artistKo": "샤오쥔(XIAOJUN)",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "34일 16시간"
+        "rough": "34일 11시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -263,82 +263,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "13일 3시간"
+        "rough": "12일 22시간"
       },
-      "rowCount": 48,
+      "rowCount": 47,
       "artistKo": "엔시티 드림",
       "artistDisplay": "엔시티 드림(NCT DREAM)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/JvAC8X.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/JvAC8X.jpg"
-    },
-    {
-      "artistId": 323,
-      "artistEn": "B THE HOOD",
-      "album": "1st Mini Album ‘THE REAL DEAL’ SET",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 21900,
-      "artist": "B THE HOOD",
-      "slug": "b-the-hood-1st-mini-album-the-real-deal-set",
-      "versions": 6,
-      "retailers": 4,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 7,
-      "artistKo": null,
-      "artistDisplay": "B THE HOOD",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/bbe9862738140a819bee1cde1b42c87b.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/gNqfGm.jpg"
-    },
-    {
-      "artistId": 323,
-      "artistEn": "B THE HOOD",
-      "album": "1st Mini Album ‘THE REAL DEAL’ CHOP VER.",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 9500,
-      "artist": "B THE HOOD",
-      "slug": "b-the-hood-1st-mini-album-the-real-deal-chop-ver",
-      "versions": 5,
-      "retailers": 4,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 7,
-      "artistKo": null,
-      "artistDisplay": "B THE HOOD",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/7228b5e277ab55f1b377bd635314386f.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/vrbUGY.jpg"
-    },
-    {
-      "artistId": 323,
-      "artistEn": "B THE HOOD",
-      "album": "1st Mini Album ‘THE REAL DEAL’ SLICE VER.",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-10-23",
-      "weversePriceMin": 12400,
-      "artist": "B THE HOOD",
-      "slug": "b-the-hood-1st-mini-album-the-real-deal-slice-ver",
-      "versions": 5,
-      "retailers": 4,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 7,
-      "artistKo": null,
-      "artistDisplay": "B THE HOOD",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5be6b3c3a5f6e0192f9d0d7422a55a09.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/0oC8tH.jpg"
     },
     {
       "artistId": 131,
@@ -350,7 +281,7 @@
       "weversePriceMin": 14700,
       "artist": "NCT DREAM",
       "slug": "nct-dream-the-6th-album-dream-after-dream-smart-album",
-      "versions": 18,
+      "versions": 17,
       "retailers": 3,
       "benefitCount": 1,
       "soldCount": 1,
@@ -359,9 +290,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "13일 3시간"
+        "rough": "12일 22시간"
       },
-      "rowCount": 41,
+      "rowCount": 40,
       "artistKo": "엔시티 드림",
       "artistDisplay": "엔시티 드림(NCT DREAM)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/JvAC8X.jpg",
@@ -409,7 +340,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "24일 20시간"
+        "rough": "24일 15시간"
       },
       "rowCount": 20,
       "artistKo": null,
@@ -1519,6 +1450,87 @@
         "lastSeen": "2026-09-19"
       },
       "ogCard": "https://kpop-album.vercel.app/og/evan-1st-mini-album-death-of-me.png"
+    },
+    {
+      "artistId": 323,
+      "artistEn": "B THE HOOD",
+      "album": "1st Mini Album ‘THE REAL DEAL’ SET",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 21900,
+      "artist": "B THE HOOD",
+      "slug": "b-the-hood-1st-mini-album-the-real-deal-set",
+      "versions": 6,
+      "retailers": 4,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 7,
+      "artistKo": null,
+      "artistDisplay": "B THE HOOD",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/bbe9862738140a819bee1cde1b42c87b.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/gNqfGm.jpg",
+      "expired": {
+        "lastSeen": "2026-10-26"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/b-the-hood-1st-mini-album-the-real-deal-set.png"
+    },
+    {
+      "artistId": 323,
+      "artistEn": "B THE HOOD",
+      "album": "1st Mini Album ‘THE REAL DEAL’ CHOP VER.",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 9500,
+      "artist": "B THE HOOD",
+      "slug": "b-the-hood-1st-mini-album-the-real-deal-chop-ver",
+      "versions": 5,
+      "retailers": 4,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 7,
+      "artistKo": null,
+      "artistDisplay": "B THE HOOD",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/7228b5e277ab55f1b377bd635314386f.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/vrbUGY.jpg",
+      "expired": {
+        "lastSeen": "2026-10-26"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/b-the-hood-1st-mini-album-the-real-deal-chop-ver.png"
+    },
+    {
+      "artistId": 323,
+      "artistEn": "B THE HOOD",
+      "album": "1st Mini Album ‘THE REAL DEAL’ SLICE VER.",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-10-23",
+      "weversePriceMin": 12400,
+      "artist": "B THE HOOD",
+      "slug": "b-the-hood-1st-mini-album-the-real-deal-slice-ver",
+      "versions": 5,
+      "retailers": 4,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 7,
+      "artistKo": null,
+      "artistDisplay": "B THE HOOD",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/5be6b3c3a5f6e0192f9d0d7422a55a09.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/0oC8tH.jpg",
+      "expired": {
+        "lastSeen": "2026-10-26"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/b-the-hood-1st-mini-album-the-real-deal-slice-ver.png"
     },
     {
       "artistId": 167,
