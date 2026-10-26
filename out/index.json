@@ -1,33 +1,6 @@
 {
-  "stamp": "2026. 10. 26. 02:24:29",
+  "stamp": "2026. 10. 26. 14:19:24",
   "albums": [
-    {
-      "artistId": 275,
-      "artistEn": "LNGSHOT",
-      "album": "S.W.I.S.H.",
-      "skuCount": 3,
-      "benefit": true,
-      "deliveryDate": "2026-11-10",
-      "weversePriceMin": 10800,
-      "artist": "LNGSHOT",
-      "slug": "lngshot-s-w-i-s-h",
-      "versions": 5,
-      "retailers": 7,
-      "benefitCount": 4,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "14일 21시간"
-      },
-      "rowCount": 23,
-      "artistKo": null,
-      "artistDisplay": "LNGSHOT",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/ffb1bb8df7126ddc441e9a689a9fcf6d.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg"
-    },
     {
       "artistId": 294,
       "artistEn": "AND2BLE",
@@ -41,13 +14,13 @@
       "versions": 10,
       "retailers": 6,
       "benefitCount": 4,
-      "soldCount": 2,
+      "soldCount": 3,
       "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "21시간 34분"
+        "rough": "9시간 39분"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -74,13 +47,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "11일 11시간"
+        "rough": "10일 23시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
       "artistDisplay": "피원하모니(P1Harmony )",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/26ef4679c81bf784e118d8b938a69318.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/21/1S1viW.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/lmTp8A.jpg"
     },
     {
       "artistId": 243,
@@ -101,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "6일 21시간"
+        "rough": "6일 9시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -110,31 +83,31 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/fCgF5z.jpg"
     },
     {
-      "artistId": 3,
-      "artistEn": "TOMORROW X TOGETHER",
-      "album": "9th Mini Album 'PERFECT STORM'",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-11-16",
-      "weversePriceMin": 11500,
-      "artist": "TOMORROW X TOGETHER",
-      "slug": "tomorrow-x-together-9th-mini-album-perfect-storm",
-      "versions": 13,
-      "retailers": 5,
-      "benefitCount": 3,
+      "artistId": 10,
+      "artistEn": "ENHYPEN",
+      "album": "THE SIN : PARALLEL WORLD",
+      "skuCount": 2,
+      "benefit": false,
+      "deliveryDate": "2026-12-04",
+      "weversePriceMin": 18415,
+      "artist": "ENHYPEN",
+      "slug": "enhypen-the-sin-parallel-world",
+      "versions": 10,
+      "retailers": 7,
+      "benefitCount": 2,
       "soldCount": 1,
-      "eventCount": 4,
+      "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 21시간"
+        "at": "2026-11-22T23:59:59.999999+09:00",
+        "rough": "27일 9시간"
       },
       "rowCount": 41,
-      "artistKo": "투모로우바이투게더",
-      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/540b84e0690065cce35b3a32377b79ed.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg"
+      "artistKo": "엔하이픈",
+      "artistDisplay": "엔하이픈(ENHYPEN)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg"
     },
     {
       "artistId": 325,
@@ -155,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "10일 15시간"
+        "rough": "10일 3시간"
       },
       "rowCount": 14,
       "artistKo": "에이댑",
@@ -182,9 +155,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 21시간"
+        "rough": "20일 9시간"
       },
-      "rowCount": 32,
+      "rowCount": 35,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
@@ -209,9 +182,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 21시간"
+        "rough": "20일 9시간"
       },
-      "rowCount": 16,
+      "rowCount": 19,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
@@ -235,8 +208,8 @@
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
-        "at": "2026-10-26T13:00:00+09:00",
-        "rough": "10시간 28분"
+        "at": "2026-11-30T13:00:00+09:00",
+        "rough": "34일 22시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -263,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "13일 21시간"
+        "rough": "13일 9시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -359,7 +332,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "13일 21시간"
+        "rough": "13일 9시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -389,6 +362,83 @@
       "artistDisplay": "저스트비(JUSTB)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/21/PEpNh0.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/21/PEpNh0.png"
+    },
+    {
+      "artistId": 10,
+      "artistEn": "ENHYPEN",
+      "album": "I Want You' Single CD",
+      "skuCount": 6,
+      "benefit": false,
+      "deliveryDate": "2026-11-20",
+      "weversePriceMin": 3797,
+      "artist": "ENHYPEN",
+      "slug": "enhypen-i-want-you-single-cd",
+      "versions": 10,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-11-20T17:04:00+09:00",
+        "rough": "25일 2시간"
+      },
+      "rowCount": 20,
+      "artistKo": null,
+      "artistDisplay": "ENHYPEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg"
+    },
+    {
+      "artistId": 10,
+      "artistEn": "ENHYPEN",
+      "album": "THE SIN : PARALLEL WORLD (Weverse Exclusive)",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-12-04",
+      "weversePriceMin": 36703,
+      "artist": "ENHYPEN",
+      "slug": "enhypen-the-sin-parallel-world-weverse-exclusive",
+      "versions": 4,
+      "retailers": 1,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 6,
+      "artistKo": null,
+      "artistDisplay": "ENHYPEN",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg"
+    },
+    {
+      "artistId": 275,
+      "artistEn": "LNGSHOT",
+      "album": "S.W.I.S.H.",
+      "skuCount": 3,
+      "benefit": true,
+      "deliveryDate": "2026-11-10",
+      "weversePriceMin": 10800,
+      "artist": "LNGSHOT",
+      "slug": "lngshot-s-w-i-s-h",
+      "versions": 5,
+      "retailers": 7,
+      "benefitCount": 4,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 23,
+      "artistKo": null,
+      "artistDisplay": "LNGSHOT",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/ffb1bb8df7126ddc441e9a689a9fcf6d.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
+      "expired": {
+        "lastSeen": "2026-10-26"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/lngshot-s-w-i-s-h.png"
     },
     {
       "artistId": 25,
@@ -524,6 +574,33 @@
         "lastSeen": "2026-10-13"
       },
       "ogCard": "https://kpop-album.vercel.app/og/daily-direction-which-way.png"
+    },
+    {
+      "artistId": 3,
+      "artistEn": "TOMORROW X TOGETHER",
+      "album": "9th Mini Album 'PERFECT STORM'",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-11-16",
+      "weversePriceMin": 11500,
+      "artist": "TOMORROW X TOGETHER",
+      "slug": "tomorrow-x-together-9th-mini-album-perfect-storm",
+      "versions": 13,
+      "retailers": 5,
+      "benefitCount": 3,
+      "soldCount": 1,
+      "eventCount": 4,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 41,
+      "artistKo": "투모로우바이투게더",
+      "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/540b84e0690065cce35b3a32377b79ed.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
+      "expired": {
+        "lastSeen": "2026-10-26"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-9th-mini-album-perfect-storm.png"
     },
     {
       "artistId": 25,
