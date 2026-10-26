@@ -699,3 +699,12 @@
 {"at":"2026-10-26T11:22:00.683Z","type":"event.new","label":"영상통화 팬사인회","artist":"리센느","album":"4th Mini Album [PULSE]","id":21557,"url":"https://makestar.co/event/21557","endAt":"2026-10-28T23:59:59.999999+09:00"}
 {"at":"2026-10-26T11:22:00.683Z","type":"event.new","label":"럭키드로우","artist":"아르테미스","album":"<Hyper-Ego>","id":21533,"url":"https://makestar.co/event/21533","endAt":"2026-11-01T23:59:59.999999+09:00"}
 {"at":"2026-10-26T11:22:00.683Z","type":"album.new","artist":"WayV","album":"Hey, Somebody"}
+{"at":"2026-10-26T17:31:09.130Z","type":"event.gone","label":"영상통화 팬사인회","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21534}
+{"at":"2026-10-26T17:31:09.130Z","type":"event.gone","label":"럭키드로우","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21306}
+{"at":"2026-10-26T17:31:09.130Z","type":"event.gone","label":"영상통화 팬사인회","artist":"유어즈","album":"1st EP [B]","id":21209}
+{"at":"2026-10-26T17:31:09.130Z","type":"event.gone","label":"럭키드로우","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21207}
+{"at":"2026-10-26T17:31:09.130Z","type":"event.gone","label":"예약 특전 포토카드","artist":"앤더블","album":"미니 2집 [Sequence 02: Attraction]","id":20988}
+{"at":"2026-10-26T17:31:09.130Z","type":"event.gone","label":"SPECIAL OFFLINE EVENT","artist":"르세라핌","album":"2nd Single Album 'Made My Night'","id":20600}
+{"at":"2026-10-26T17:31:09.130Z","type":"album.gone","artist":"B THE HOOD","album":"1st Mini Album ‘THE REAL DEAL’ CHOP VER."}
+{"at":"2026-10-26T17:31:09.130Z","type":"album.gone","artist":"B THE HOOD","album":"1st Mini Album ‘THE REAL DEAL’ SLICE VER."}
+{"at":"2026-10-26T17:31:09.130Z","type":"album.gone","artist":"B THE HOOD","album":"1st Mini Album ‘THE REAL DEAL’ SET"}
