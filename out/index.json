@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 26. 14:44:48",
+  "stamp": "2026. 10. 26. 20:22:35",
   "albums": [
     {
       "artistId": 294,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-10-26T23:59:59.999999+09:00",
-        "rough": "9시간 14분"
+        "rough": "3시간 36분"
       },
       "rowCount": 48,
       "artistKo": "앤더블",
@@ -47,13 +47,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "10일 23시간"
+        "rough": "10일 17시간"
       },
       "rowCount": 48,
       "artistKo": "피원하모니",
       "artistDisplay": "피원하모니(P1Harmony )",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/26ef4679c81bf784e118d8b938a69318.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/lmTp8A.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/JDR291.jpg"
     },
     {
       "artistId": 243,
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "6일 9시간"
+        "rough": "6일 3시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "27일 9시간"
+        "rough": "27일 3시간"
       },
       "rowCount": 41,
       "artistKo": "엔하이픈",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "10일 3시간"
+        "rough": "9일 21시간"
       },
       "rowCount": 14,
       "artistKo": "에이댑",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 9시간"
+        "rough": "20일 3시간"
       },
       "rowCount": 35,
       "artistKo": "투모로우바이투게더",
@@ -182,13 +182,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "20일 9시간"
+        "rough": "20일 3시간"
       },
       "rowCount": 19,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg"
+    },
+    {
+      "artistId": 135,
+      "artistEn": "WayV",
+      "album": "Hey, Somebody",
+      "skuCount": 3,
+      "benefit": true,
+      "deliveryDate": "2026-10-29",
+      "weversePriceMin": 13900,
+      "artist": "WayV",
+      "slug": "wayv-hey-somebody",
+      "versions": 5,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 2,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-10-29T11:00:00+09:00",
+        "rough": "2일 14시간"
+      },
+      "rowCount": 26,
+      "artistKo": "샤오쥔(XIAOJUN)",
+      "artistDisplay": "샤오쥔(XIAOJUN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/371d9e1ac8017a7fcfbdea2456a1ffd4.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/23/wwg9bA.jpg"
     },
     {
       "artistId": 215,
@@ -209,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "34일 22시간"
+        "rough": "34일 16시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -236,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "13일 9시간"
+        "rough": "13일 3시간"
       },
       "rowCount": 48,
       "artistKo": "엔시티 드림",
@@ -332,7 +359,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "13일 9시간"
+        "rough": "13일 3시간"
       },
       "rowCount": 41,
       "artistKo": "엔시티 드림",
@@ -382,7 +409,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "25일 2시간"
+        "rough": "24일 20시간"
       },
       "rowCount": 20,
       "artistKo": null,
@@ -790,33 +817,6 @@
         "lastSeen": "2026-09-15"
       },
       "ogCard": "https://kpop-album.vercel.app/og/treasure-the-first-step-chapter-three.png"
-    },
-    {
-      "artistId": 135,
-      "artistEn": "WayV",
-      "album": "Hey, Somebody",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-10-26",
-      "weversePriceMin": 13900,
-      "artist": "WayV",
-      "slug": "wayv-hey-somebody",
-      "versions": 5,
-      "retailers": 7,
-      "benefitCount": 2,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 26,
-      "artistKo": "샤오쥔(XIAOJUN)",
-      "artistDisplay": "샤오쥔(XIAOJUN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/496c776b3cee66c7a3a425f639549896.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/06/DjJwPL.jpg",
-      "expired": {
-        "lastSeen": "2026-10-20"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/wayv-hey-somebody.png"
     },
     {
       "artistId": 25,
