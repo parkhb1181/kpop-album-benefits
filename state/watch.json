@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-27T01:07:02.782Z",
-  "lastDeep": "2026-10-27T01:07:02.782Z",
+  "checkedAt": "2026-10-27T06:15:36.015Z",
+  "lastDeep": "2026-10-27T06:15:36.015Z",
   "events": [
     {
       "id": 21650,
@@ -26,6 +26,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11230_BOL4_1_banner_sub.png_2026-10-26_153622596774.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11230_BOL4_1_banner_sub.png_2026-10-26_153622596774_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21630,
+      "url": "https://makestar.co/event/21630",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "ALPHA DRIVE ONE 2027 SEASON’S GREETINGS [ALD1 GARAGE] 예약판매 특전 증정 이벤트",
+      "titleEn": "ALPHA DRIVE ONE 2027 SEASON’S GREETINGS [ALD1 GARAGE] PRE-ORDER SPECIAL BENEFIT GIVEAWAY EVENT",
+      "album": "2027 SEASON’S GREETINGS",
+      "albumEn": "2027 SEASON’S GREETINGS",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-12-18",
+      "from": "2026.10.27",
+      "to": "2026.12.17",
+      "startAt": "2026-10-27T14:00:00+09:00",
+      "endAt": "2026-12-17T23:59:59.999999+09:00",
+      "dday": 52,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11246,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352_thumb.jpeg"
       }
     },
     {
@@ -442,6 +468,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_2_Banner_Sub.jpg_2026-10-20_123818182082.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_2_Banner_Sub.jpg_2026-10-20_123818182082_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21349,
+      "url": "https://makestar.co/event/21349",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL OFFLINE & MEET & CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL OFFLINE & MEET & CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.10.27",
+      "to": "2026.10.29",
+      "startAt": "2026-10-27T15:00:00+09:00",
+      "endAt": "2026-10-29T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.10.30",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_19_Banner_Sub.jpg_2026-10-23_174036754543.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_19_Banner_Sub.jpg_2026-10-23_174036754543_thumb.jpeg"
       }
     },
     {
