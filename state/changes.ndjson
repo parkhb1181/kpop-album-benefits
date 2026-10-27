@@ -711,3 +711,8 @@
 {"at":"2026-10-27T06:15:36.015Z","type":"event.new","label":"예약 특전 포토카드","artist":"알파드라이브원","album":"2027 SEASON’S GREETINGS","id":21630,"url":"https://makestar.co/event/21630","endAt":"2026-12-17T23:59:59.999999+09:00"}
 {"at":"2026-10-27T06:15:36.015Z","type":"event.new","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":21349,"url":"https://makestar.co/event/21349","endAt":"2026-10-29T23:59:59.999999+09:00"}
 {"at":"2026-10-27T12:32:06.481Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":21612}
+{"at":"2026-10-27T18:17:00.196Z","type":"event.gone","label":"영상통화 팬사인회","artist":"성한빈","album":"미니1집 [DEAD:ALIVE]","id":21494}
+{"at":"2026-10-27T18:17:00.196Z","type":"event.gone","label":"럭키드로우","artist":"유어즈","album":"1st EP [B]","id":21406}
+{"at":"2026-10-27T18:17:00.196Z","type":"event.gone","label":"럭키드로우","artist":"최유정","album":"2nd Single Album [Perfect Target]","id":21295}
+{"at":"2026-10-27T18:17:00.196Z","type":"event.gone","label":"SPECIAL OFFLINE EVENT","artist":"오드유스","album":"3rd Single [can't go back]","id":20954}
+{"at":"2026-10-27T18:17:00.196Z","type":"album.gone","artist":"JUSTB","album":"pop>"}
