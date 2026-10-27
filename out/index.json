@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 27. 15:16:07",
+  "stamp": "2026. 10. 27. 21:32:45",
   "albums": [
     {
       "artistId": 14,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "9일 22시간"
+        "rough": "9일 16시간"
       },
       "rowCount": 41,
       "artistKo": "피원하모니",
@@ -47,13 +47,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "5일 8시간"
+        "rough": "5일 2시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
       "artistDisplay": "드래곤포니(Dragon Pony)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/315f5629bcb248f9833a85c5e7229cdf.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/fCgF5z.jpg"
+    },
+    {
+      "artistId": 294,
+      "artistEn": "AND2BLE",
+      "album": "Sequence 02: Attraction",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-11-02",
+      "weversePriceMin": 20700,
+      "artist": "AND2BLE",
+      "slug": "and2ble-sequence-02-attraction",
+      "versions": 10,
+      "retailers": 7,
+      "benefitCount": 2,
+      "soldCount": 3,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-11-02T19:00:00+09:00",
+        "rough": "5일 21시간"
+      },
+      "rowCount": 61,
+      "artistKo": "앤더블",
+      "artistDisplay": "앤더블(AND2BLE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0af6f0562a24db445744c0e5be272634.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/diAHSM.jpg"
     },
     {
       "artistId": 10,
@@ -74,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "26일 8시간"
+        "rough": "26일 2시간"
       },
       "rowCount": 41,
       "artistKo": "엔하이픈",
@@ -101,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "9일 2시간"
+        "rough": "8일 20시간"
       },
       "rowCount": 14,
       "artistKo": "에이댑",
@@ -128,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "19일 8시간"
+        "rough": "19일 2시간"
       },
       "rowCount": 35,
       "artistKo": "투모로우바이투게더",
@@ -155,40 +182,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "19일 8시간"
+        "rough": "19일 2시간"
       },
       "rowCount": 19,
       "artistKo": "투모로우바이투게더",
       "artistDisplay": "투모로우바이투게더(TOMORROW X TOGETHER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/20/uTouT0.jpg"
-    },
-    {
-      "artistId": 294,
-      "artistEn": "AND2BLE",
-      "album": "Sequence 02: Attraction",
-      "skuCount": 8,
-      "benefit": false,
-      "deliveryDate": "2026-10-27",
-      "weversePriceMin": 11100,
-      "artist": "AND2BLE",
-      "slug": "and2ble-sequence-02-attraction",
-      "versions": 10,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 3,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-10-27T18:00:00+09:00",
-        "rough": "2시간 41분"
-      },
-      "rowCount": 57,
-      "artistKo": "앤더블",
-      "artistDisplay": "앤더블(AND2BLE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/diAHSM.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/16/diAHSM.jpg"
     },
     {
       "artistId": 135,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T11:00:00+09:00",
-        "rough": "1일 19시간"
+        "rough": "1일 13시간"
       },
       "rowCount": 25,
       "artistKo": "샤오쥔(XIAOJUN)",
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "33일 21시간"
+        "rough": "33일 15시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "12일 8시간"
+        "rough": "12일 2시간"
       },
       "rowCount": 47,
       "artistKo": "엔시티 드림",
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "12일 8시간"
+        "rough": "12일 2시간"
       },
       "rowCount": 40,
       "artistKo": "엔시티 드림",
@@ -325,13 +325,13 @@
       "artistId": 10,
       "artistEn": "ENHYPEN",
       "album": "I Want You' Single CD",
-      "skuCount": 5,
+      "skuCount": 4,
       "benefit": false,
       "deliveryDate": "2026-11-20",
       "weversePriceMin": 3797,
       "artist": "ENHYPEN",
       "slug": "enhypen-i-want-you-single-cd",
-      "versions": 9,
+      "versions": 8,
       "retailers": 3,
       "benefitCount": 0,
       "soldCount": 0,
@@ -340,9 +340,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "24일 1시간"
+        "rough": "23일 19시간"
       },
-      "rowCount": 18,
+      "rowCount": 17,
       "artistKo": null,
       "artistDisplay": "ENHYPEN",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
