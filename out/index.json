@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 10. 28. 03:17:51",
+  "stamp": "2026. 10. 28. 15:36:24",
   "albums": [
     {
       "artistId": 14,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-06T14:00:00+09:00",
-        "rough": "9일 10시간"
+        "rough": "8일 22시간"
       },
       "rowCount": 41,
       "artistKo": "피원하모니",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-01T23:59:59.999999+09:00",
-        "rough": "4일 20시간"
+        "rough": "4일 8시간"
       },
       "rowCount": 17,
       "artistKo": "드래곤포니",
@@ -69,14 +69,14 @@
       "retailers": 7,
       "benefitCount": 2,
       "soldCount": 3,
-      "eventCount": 0,
+      "eventCount": 1,
       "fansignCount": 0,
       "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-02T19:00:00+09:00",
-        "rough": "5일 15시간"
+        "label": "럭키드로우 응모 마감",
+        "at": "2026-11-01T23:59:59.999999+09:00",
+        "rough": "4일 8시간"
       },
-      "rowCount": 61,
+      "rowCount": 63,
       "artistKo": "앤더블",
       "artistDisplay": "앤더블(AND2BLE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/0af6f0562a24db445744c0e5be272634.png",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "25일 20시간"
+        "rough": "25일 8시간"
       },
       "rowCount": 41,
       "artistKo": "엔하이픈",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-05T18:01:00+09:00",
-        "rough": "8일 14시간"
+        "rough": "8일 2시간"
       },
       "rowCount": 14,
       "artistKo": "에이댑",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "18일 20시간"
+        "rough": "18일 8시간"
       },
       "rowCount": 35,
       "artistKo": "투모로우바이투게더",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-15T23:59:59.999999+09:00",
-        "rough": "18일 20시간"
+        "rough": "18일 8시간"
       },
       "rowCount": 19,
       "artistKo": "투모로우바이투게더",
@@ -209,13 +209,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-10-29T11:00:00+09:00",
-        "rough": "1일 7시간"
+        "rough": "19시간 21분"
       },
       "rowCount": 25,
       "artistKo": "샤오쥔(XIAOJUN)",
       "artistDisplay": "샤오쥔(XIAOJUN)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/371d9e1ac8017a7fcfbdea2456a1ffd4.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/23/YqX9mb.jpg"
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/23/wwg9bA.jpg"
     },
     {
       "artistId": 215,
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "33일 9시간"
+        "rough": "32일 21시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "11일 20시간"
+        "rough": "11일 8시간"
       },
       "rowCount": 47,
       "artistKo": "엔시티 드림",
@@ -281,7 +281,7 @@
       "weversePriceMin": 14700,
       "artist": "NCT DREAM",
       "slug": "nct-dream-the-6th-album-dream-after-dream-smart-album",
-      "versions": 17,
+      "versions": 18,
       "retailers": 3,
       "benefitCount": 1,
       "soldCount": 1,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-08T23:59:59.999999+09:00",
-        "rough": "11일 20시간"
+        "rough": "11일 8시간"
       },
       "rowCount": 40,
       "artistKo": "엔시티 드림",
@@ -302,13 +302,13 @@
       "artistId": 10,
       "artistEn": "ENHYPEN",
       "album": "I Want You' Single CD",
-      "skuCount": 4,
+      "skuCount": 3,
       "benefit": false,
       "deliveryDate": "2026-11-20",
       "weversePriceMin": 3797,
       "artist": "ENHYPEN",
       "slug": "enhypen-i-want-you-single-cd",
-      "versions": 8,
+      "versions": 7,
       "retailers": 3,
       "benefitCount": 0,
       "soldCount": 0,
@@ -317,9 +317,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "23일 13시간"
+        "rough": "23일 1시간"
       },
-      "rowCount": 18,
+      "rowCount": 17,
       "artistKo": null,
       "artistDisplay": "ENHYPEN",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
