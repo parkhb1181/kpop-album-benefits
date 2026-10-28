@@ -716,3 +716,6 @@
 {"at":"2026-10-27T18:17:00.196Z","type":"event.gone","label":"럭키드로우","artist":"최유정","album":"2nd Single Album [Perfect Target]","id":21295}
 {"at":"2026-10-27T18:17:00.196Z","type":"event.gone","label":"SPECIAL OFFLINE EVENT","artist":"오드유스","album":"3rd Single [can't go back]","id":20954}
 {"at":"2026-10-27T18:17:00.196Z","type":"album.gone","artist":"JUSTB","album":"pop>"}
+{"at":"2026-10-28T07:26:04.141Z","type":"event.new","label":"영상통화 팬사인회","artist":"엔믹스","album":"미니 6집 [Strange Muse]","id":21694,"url":"https://makestar.co/event/21694","endAt":"2026-10-30T23:59:59.999999+09:00"}
+{"at":"2026-10-28T07:26:04.141Z","type":"event.new","label":"영상통화 팬사인회","artist":"앤팀","album":"KR 2nd Mini Album 'Mark on Me'","id":21298,"url":"https://makestar.co/event/21298","endAt":"2026-11-01T23:59:59.999999+09:00"}
+{"at":"2026-10-28T07:26:04.141Z","type":"event.new","label":"럭키드로우","artist":"앤더블","album":"미니 2집 [Sequence 02: Attraction]","id":21285,"url":"https://makestar.co/event/21285","endAt":"2026-11-01T23:59:59.999999+09:00"}

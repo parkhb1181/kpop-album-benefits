@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-28T01:34:52.249Z",
-  "lastDeep": "2026-10-28T01:34:52.249Z",
+  "checkedAt": "2026-10-28T07:26:04.141Z",
+  "lastDeep": "2026-10-28T07:26:04.141Z",
   "events": [
+    {
+      "id": 21694,
+      "url": "https://makestar.co/event/21694",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NMIXX 6th EP [Strange Muse] MEET&CALL EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] MEET&CALL EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.10.28",
+      "to": "2026.10.30",
+      "startAt": "2026-10-28T12:00:00+09:00",
+      "endAt": "2026-10-30T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_9_banner_sub.png_2026-10-27_115142912431.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_9_banner_sub.png_2026-10-27_115142912431_thumb.jpeg"
+      }
+    },
     {
       "id": 21650,
       "url": "https://makestar.co/event/21650",
@@ -471,6 +497,58 @@
       }
     },
     {
+      "id": 21298,
+      "url": "https://makestar.co/event/21298",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "&TEAM KR 2nd Mini Album 'Mark on Me' MEET & CALL EVENT IN KAOHSIUNG",
+      "titleEn": "&TEAM KR 2nd Mini Album 'Mark on Me' MEET & CALL EVENT IN KAOHSIUNG",
+      "album": "KR 2nd Mini Album 'Mark on Me'",
+      "albumEn": "KR 2nd Mini Album 'Mark on Me'",
+      "artist": "앤팀",
+      "artistEn": "&TEAM",
+      "releaseDate": "2026-09-08",
+      "from": "2026.10.28",
+      "to": "2026.11.01",
+      "startAt": "2026-10-28T12:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.11.04",
+      "productId": 10851,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_%26TEAM_8_Banner_thumb.jpg_2026-10-27_180123041076.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10851_TEAM_8_Banner_thumb.jpg_2026-10-27_180123041076_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21285,
+      "url": "https://makestar.co/event/21285",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "AND2BLE (앤더블) 미니 2 집 ‘Sequence 02: Attraction' (POCAALBUM) LUCKY DRAW EVENT",
+      "titleEn": "AND2BLE (앤더블) 2nd Mini Album 'Sequence 02: Attraction' (POCAALBUM) LUCKY DRAW EVENT",
+      "album": "미니 2집 [Sequence 02: Attraction]",
+      "albumEn": "2ND MINI ALBUM [Sequence 02: Attraction]",
+      "artist": "앤더블",
+      "artistEn": "AND2BLE",
+      "releaseDate": "2026-10-27",
+      "from": "2026.10.28",
+      "to": "2026.11.01",
+      "startAt": "2026-10-28T11:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11158,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_4_Banner_Sub.jpg_2026-10-26_105308511354.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_4_Banner_Sub.jpg_2026-10-26_105308511354_thumb.jpeg"
+      }
+    },
+    {
       "id": 21284,
       "url": "https://makestar.co/event/21284",
       "type": "PHOTOCARD",
@@ -846,7 +924,7 @@
       "albumEn": "EP [Fallen Angel]",
       "artist": "제니",
       "artistEn": "JENNIE",
-      "releaseDate": "2026-10-30",
+      "releaseDate": "2026-11-13",
       "from": "2026.08.26",
       "to": "2026.10.29",
       "startAt": "2026-08-26T11:00:00+09:00",
@@ -919,11 +997,6 @@
       "album": "The 6th Album 'DREAM AFTER DREAM'"
     },
     {
-      "key": "ENHYPEN｜I Want You' Single CD",
-      "artist": "ENHYPEN",
-      "album": "I Want You' Single CD"
-    },
-    {
       "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'",
       "artist": "TOMORROW X TOGETHER",
       "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'"
@@ -932,6 +1005,11 @@
       "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)",
       "artist": "TOMORROW X TOGETHER",
       "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)"
+    },
+    {
+      "key": "ENHYPEN｜I Want You' Single CD",
+      "artist": "ENHYPEN",
+      "album": "I Want You' Single CD"
     },
     {
       "key": "ENHYPEN｜THE SIN : PARALLEL WORLD (Weverse Exclusive)",
