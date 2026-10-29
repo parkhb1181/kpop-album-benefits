@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-29T02:53:26.486Z",
-  "lastDeep": "2026-10-29T02:53:26.486Z",
+  "checkedAt": "2026-10-29T09:19:04.879Z",
+  "lastDeep": "2026-10-29T09:19:04.879Z",
   "events": [
+    {
+      "id": 21714,
+      "url": "https://makestar.co/event/21714",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] 1:1 VIDEO CALL EVENT",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] 1:1 VIDEO CALL EVENT",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.10.29",
+      "to": "2026.10.31",
+      "startAt": "2026-10-29T18:00:00+09:00",
+      "endAt": "2026-10-31T17:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.10.31",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_4_Banner_Sub.jpg_2026-09-09_185201312853_thumb.jpeg"
+      }
+    },
     {
       "id": 21694,
       "url": "https://makestar.co/event/21694",
@@ -52,6 +78,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21591,
+      "url": "https://makestar.co/event/21591",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT DREAM The 6th Album [DREAM AFTER DREAM] FANSIGN & PHOTO EVENT IN TAIPEI",
+      "titleEn": "NCT DREAM The 6th Album [DREAM AFTER DREAM] FANSIGN & PHOTO EVENT IN TAIPEI",
+      "album": "[DREAM AFTER DREAM]",
+      "albumEn": "[DREAM AFTER DREAM]",
+      "artist": "NCT DREAM",
+      "artistEn": "NCT DREAM",
+      "releaseDate": "2026-11-09",
+      "from": "2026.10.29",
+      "to": "2026.11.01",
+      "startAt": "2026-10-29T18:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11214,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_7_Banner_thumb.jpg_2026-10-28_120910067118.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_7_Banner_thumb.jpg_2026-10-28_120910067118_thumb.jpeg"
       }
     },
     {
@@ -208,6 +260,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11244_ZEROBASEONE_1_Banner_Sub_v2.jpg_2026-10-22_170836715365_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21563,
+      "url": "https://makestar.co/event/21563",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" FANSIGN & PHOTO EVENT IN OSAKA",
+      "titleEn": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" FANSIGN & PHOTO EVENT IN OSAKA",
+      "album": "미니 1집 [Sour Grapes]",
+      "albumEn": "1st Mini Album [Sour Grapes]",
+      "artist": "NiziU",
+      "artistEn": "NiziU",
+      "releaseDate": "2026-09-28",
+      "from": "2026.10.29",
+      "to": "2026.11.01",
+      "startAt": "2026-10-29T15:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11063,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_4_banner_sub.png_2026-10-27_161450017536.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_4_banner_sub.png_2026-10-27_161450017536_thumb.jpeg"
       }
     },
     {
@@ -624,6 +702,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21210,
+      "url": "https://makestar.co/event/21210",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "In A Minute 1st Album [When the sun goes down : Midnight] SPECIAL OFFLINE EVENT",
+      "titleEn": "In A Minute 1st Album [When the sun goes down : Midnight] SPECIAL OFFLINE EVENT",
+      "album": "[When the sun goes down : Midnight]",
+      "albumEn": "[When the sun goes down : Midnight]",
+      "artist": "인어미닛",
+      "artistEn": "IN A MINUTE",
+      "releaseDate": "2026-09-09",
+      "from": "2026.10.29",
+      "to": "2026.10.31",
+      "startAt": "2026-10-29T15:00:00+09:00",
+      "endAt": "2026-10-31T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 10970,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_4_thumb.jpg_2026-10-28_123255782241.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10970_IN_A_MINUTE_4_thumb.jpg_2026-10-28_123255782241_thumb.jpeg"
       }
     },
     {
