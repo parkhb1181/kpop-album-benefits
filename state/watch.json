@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-29T16:18:58.694Z",
-  "lastDeep": "2026-10-29T16:18:58.694Z",
+  "checkedAt": "2026-10-29T21:17:35.686Z",
+  "lastDeep": "2026-10-29T21:17:35.686Z",
   "events": [
     {
       "id": 21714,
@@ -950,11 +950,6 @@
       "album": "The 6th Album 'DREAM AFTER DREAM'"
     },
     {
-      "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'",
-      "artist": "TOMORROW X TOGETHER",
-      "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'"
-    },
-    {
       "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)",
       "artist": "TOMORROW X TOGETHER",
       "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)"
@@ -970,14 +965,19 @@
       "album": "THE SIN : PARALLEL WORLD (Weverse Exclusive)"
     },
     {
-      "key": "ENHYPEN｜THE SIN : PARALLEL WORLD",
-      "artist": "ENHYPEN",
-      "album": "THE SIN : PARALLEL WORLD"
+      "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'",
+      "artist": "TOMORROW X TOGETHER",
+      "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'"
     },
     {
       "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
       "artist": "NCT DREAM",
       "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"
+    },
+    {
+      "key": "ENHYPEN｜THE SIN : PARALLEL WORLD",
+      "artist": "ENHYPEN",
+      "album": "THE SIN : PARALLEL WORLD"
     },
     {
       "key": "JENNIE｜Fallen Angel",
