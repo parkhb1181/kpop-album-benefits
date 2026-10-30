@@ -9,75 +9,76 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-evt21586@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261031T145959Z
 DTEND:20261031T152959Z
-SUMMARY:AND2BLE Sequence 02: Attraction — 영상통화 팬사인회 응
- 모 마감
+SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 영상통화 팬사
+ 인회 응모 마감
 DESCRIPTION:AND2BLE (앤더블) 미니 2집 'Sequence 02: Attraction' (POCA
  ALBUM) MEET&CALL EVENT\nhttps://makestar.co/event/21586
 URL:https://makestar.co/event/21586
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:AND2BLE Sequence 02: Attraction — 영상통화 팬사인회 
- 응모 마감 (하루 전)
+DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 영상통화 팬
+ 사인회 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:AND2BLE Sequence 02: Attraction — 영상통화 팬사인회 
- 응모 마감 (1시간 전)
+DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 영상통화 팬
+ 사인회 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-evt21285@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
-SUMMARY:AND2BLE Sequence 02: Attraction — 럭키드로우 응모 마감
+SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 럭키드로우 응
+ 모 마감
 DESCRIPTION:AND2BLE (앤더블) 미니 2 집 ‘Sequence 02: Attraction' (P
  OCAALBUM) LUCKY DRAW EVENT\nhttps://makestar.co/event/21285
 URL:https://makestar.co/event/21285
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:AND2BLE Sequence 02: Attraction — 럭키드로우 응모 마
- 감 (하루 전)
+DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 럭키드로우 
+ 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:AND2BLE Sequence 02: Attraction — 럭키드로우 응모 마
- 감 (1시간 전)
+DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 럭키드로우 
+ 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt20851@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
-SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
- 감
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
+ 카드 응모 마감
 DESCRIPTION:xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) PR
  E-ORDER PHOTOCARD EVENT\nhttps://makestar.co/event/20851
 URL:https://makestar.co/event/20851
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wayv-hey-somebody-evt21589@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261101T145959Z
 DTEND:20261101T152959Z
 SUMMARY:샤오쥔(XIAOJUN) Hey\, Somebody — 럭키드로우 응모 마감
@@ -99,50 +100,51 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:and2ble-sequence-02-attraction-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261102T100000Z
 DTEND:20261102T103000Z
-SUMMARY:AND2BLE Sequence 02: Attraction — 예약 배송 시작
+SUMMARY:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/and2ble-sequence-02-attraction.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 배송 시작 (하
- 루 전)
+DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 
+ 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:AND2BLE Sequence 02: Attraction — 예약 배송 시작 (1시
- 간 전)
+DESCRIPTION:앤더블(AND2BLE) Sequence 02: Attraction — 예약 배송 
+ 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21580@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261102T145959Z
 DTEND:20261102T152959Z
-SUMMARY:Dragon Pony Calling back — 대면 팬사인회 응모 마감
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 대면 팬사인회 
+ 응모 마감
 DESCRIPTION:Dragon Pony (드래곤포니) Single [Calling back] SPECIAL FAN
  SIGNING EVENT\nhttps://makestar.co/event/21580
 URL:https://makestar.co/event/21580
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 대면 팬사인회 응모 마감 
- (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 대면 팬사인
+ 회 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 대면 팬사인회 응모 마감 
- (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 대면 팬사인
+ 회 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kyuhyun-continue-evt21706@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261102T145959Z
 DTEND:20261102T152959Z
 SUMMARY:규현(KYUHYUN) CONTINUE — 대면 팬사인회 응모 마감
@@ -164,7 +166,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lisa-press-play-cd-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261102T220000Z
 DTEND:20261102T223000Z
 SUMMARY:리사(LISA) PRESS PLAY CD — 예약 배송 시작
@@ -185,49 +187,51 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21230@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261104T145959Z
 DTEND:20261104T152959Z
-SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
- 감
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
+ 카드 응모 마감
 DESCRIPTION:Dragon Pony (드래곤포니) Single [Calling back] PRE-ORDER P
  HOTOCARD EVENT\nhttps://makestar.co/event/21230
 URL:https://makestar.co/event/21230
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
- 마감 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
+ 토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261105T090000Z
 DTEND:20261105T093000Z
-SUMMARY:Dragon Pony Calling back — 예약 배송 시작
+SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/dragon-pony-calling-back.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (하루 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
+ 작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (1시간 전)
+DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
+ 작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:adap-all-dreams-are-possible-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261105T090100Z
 DTEND:20261105T093100Z
 SUMMARY:에이댑(ADAP) ALL DREAMS ARE POSSIBLE — 예약 배송 시작
@@ -248,26 +252,28 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:p1harmony-blow-up-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261106T050000Z
 DTEND:20261106T053000Z
-SUMMARY:P1Harmony  BLOW UP — 예약 배송 시작
+SUMMARY:피원하모니(P1Harmony ) BLOW UP — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/p1harmony-blow-up.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:P1Harmony  BLOW UP — 예약 배송 시작 (하루 전)
+DESCRIPTION:피원하모니(P1Harmony ) BLOW UP — 예약 배송 시작 (
+ 하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:P1Harmony  BLOW UP — 예약 배송 시작 (1시간 전)
+DESCRIPTION:피원하모니(P1Harmony ) BLOW UP — 예약 배송 시작 (1
+ 시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-evt20989@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261109T145959Z
 DTEND:20261109T152959Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 특전 포토카드 응모 마감
@@ -289,7 +295,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261110T090000Z
 DTEND:20261110T093000Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 배송 시작
@@ -308,7 +314,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kyuhyun-continue-evt21705@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261110T145959Z
 DTEND:20261110T152959Z
 SUMMARY:규현(KYUHYUN) CONTINUE — 예약 특전 포토카드 응모 마
@@ -331,7 +337,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kyuhyun-continue-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261111T090000Z
 DTEND:20261111T093000Z
 SUMMARY:규현(KYUHYUN) CONTINUE — 예약 배송 시작
@@ -351,11 +357,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21258@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Weverse Albu
  ms ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
  21258
@@ -363,26 +370,27 @@ URL:https://makestar.co/event/21258
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21257@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Photocard Ca
  se Ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
  21257
@@ -390,26 +398,27 @@ URL:https://makestar.co/event/21257
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21256@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (STORM IS COM
  ING Ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event
  /21256
@@ -417,52 +426,54 @@ URL:https://makestar.co/event/21256
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21255@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' 발매기념
   특전 증정 이벤트\nhttps://makestar.co/event/21255
 URL:https://makestar.co/event/21255
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' (Weverse US Exclusive) — 예약 특전 포토카드 응모 마
- 감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive) — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21258@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Weverse Albu
  ms ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
  21258
@@ -470,24 +481,27 @@ URL:https://makestar.co/event/21258
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21257@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (Photocard Ca
  se Ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event/
  21257
@@ -495,24 +509,27 @@ URL:https://makestar.co/event/21257
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21256@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM (STORM IS COM
  ING Ver.)' 발매기념 특전 증정 이벤트\nhttps://makestar.co/event
  /21256
@@ -520,67 +537,73 @@ URL:https://makestar.co/event/21256
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-evt21255@k
  pop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261115T145959Z
 DTEND:20261115T152959Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' — 예약 특전 포토카드 응모 마감
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' 발매기념
   특전 증정 이벤트\nhttps://makestar.co/event/21255
 URL:https://makestar.co/event/21255
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 특전 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 특전 포토카드 응모
+  마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrow-x-together-tomorrow-x-together-9th-mini-album-perfe-release@kp
  op-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261120T080300Z
 DTEND:20261120T083300Z
-SUMMARY:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT STO
- RM' — 예약 배송 시작
+SUMMARY:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOGETHE
+ R 9th Mini Album 'PERFECT STORM' — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/tomorrow-x-together-tomorrow-x-toge
  ther-9th-mini-album-perfe.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 배송 시작 (하루 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:TOMORROW X TOGETHER TOMORROW X TOGETHER 9th Mini Album 'PERFECT
-  STORM' — 예약 배송 시작 (1시간 전)
+DESCRIPTION:투모로우바이투게더(TOMORROW X TOGETHER) TOMORROW X TOG
+ ETHER 9th Mini Album 'PERFECT STORM' — 예약 배송 시작 (1시간 전
+ )
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-i-want-you-single-cd-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261120T080400Z
 DTEND:20261120T083400Z
 SUMMARY:ENHYPEN I Want You' Single CD — 예약 배송 시작
@@ -601,7 +624,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-i-want-you-single-cd-evt21530@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261122T145959Z
 DTEND:20261122T152959Z
 SUMMARY:ENHYPEN I Want You' Single CD — 예약 특전 포토카드 응모
@@ -624,70 +647,71 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-the-sin-parallel-world-evt21530@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261122T145959Z
 DTEND:20261122T152959Z
-SUMMARY:ENHYPEN THE SIN : PARALLEL WORLD — 예약 특전 포토카드 응
- 모 마감
+SUMMARY:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 특전 
+ 포토카드 응모 마감
 DESCRIPTION:ENHYPEN 'THE SIN : PARALLEL WORLD' 발매기념 예약판매 
  특전 증정 이벤트\nhttps://makestar.co/event/21530
 URL:https://makestar.co/event/21530
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 특전 포토카드
-  응모 마감 (하루 전)
+DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 특전 포토카드
-  응모 마감 (1시간 전)
+DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261130T040000Z
 DTEND:20261130T043000Z
-SUMMARY:JISOO CLICK — 예약 배송 시작
+SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/jisoo-click.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:JISOO CLICK — 예약 배송 시작 (하루 전)
+DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:JISOO CLICK — 예약 배송 시작 (1시간 전)
+DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-the-sin-parallel-world-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20261204T080400Z
 DTEND:20261204T083400Z
-SUMMARY:ENHYPEN THE SIN : PARALLEL WORLD — 예약 배송 시작
+SUMMARY:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 배송 
+ 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/enhypen-the-sin-parallel-world.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 배송 시작 (하
- 루 전)
+DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 배
+ 송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 배송 시작 (1시
- 간 전)
+DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 배
+ 송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jennie-fallen-angel-release@kpop-album-benefits
-DTSTAMP:20261030T141809Z
+DTSTAMP:20261030T163658Z
 DTSTART:20270129T090000Z
 DTEND:20270129T093000Z
 SUMMARY:제니(JENNIE) Fallen Angel — 예약 배송 시작
