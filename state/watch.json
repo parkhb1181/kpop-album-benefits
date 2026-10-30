@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-30T07:13:02.113Z",
-  "lastDeep": "2026-10-30T07:13:02.113Z",
+  "checkedAt": "2026-10-30T14:12:59.197Z",
+  "lastDeep": "2026-10-30T14:12:59.197Z",
   "events": [
     {
       "id": 21722,
@@ -29,6 +29,32 @@
       }
     },
     {
+      "id": 21716,
+      "url": "https://makestar.co/event/21716",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "RIIZE 미니 2집 'II' VIDEO CALL EVENT",
+      "titleEn": "RIIZE The 2nd Mini Album 'II' VIDEO CALL EVENT",
+      "album": "미니 2집 [II] ",
+      "albumEn": "2nd Mini Album [II] ",
+      "artist": "라이즈",
+      "artistEn": "RIIZE",
+      "releaseDate": "2026-06-15",
+      "from": "2026.10.30",
+      "to": "2026.11.01",
+      "startAt": "2026-10-30T18:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 10690,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10690_RIIZE_32_Banner_thumb.jpg_2026-10-30_121502790146.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10690_RIIZE_32_Banner_thumb.jpg_2026-10-30_121502790146_thumb.jpeg"
+      }
+    },
+    {
       "id": 21714,
       "url": "https://makestar.co/event/21714",
       "type": "VIDEOCALL",
@@ -45,7 +71,7 @@
       "to": "2026.10.31",
       "startAt": "2026-10-29T18:00:00+09:00",
       "endAt": "2026-10-31T17:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.10.31",
       "productId": 10943,
@@ -1139,6 +1165,11 @@
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
+    },
+    {
+      "key": "LISA｜PRESS PLAY CD",
+      "artist": "LISA",
+      "album": "PRESS PLAY CD"
     }
   ]
 }
