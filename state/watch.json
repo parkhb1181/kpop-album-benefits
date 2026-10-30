@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-30T01:13:59.807Z",
-  "lastDeep": "2026-10-30T01:13:59.807Z",
+  "checkedAt": "2026-10-30T07:13:02.113Z",
+  "lastDeep": "2026-10-30T07:13:02.113Z",
   "events": [
+    {
+      "id": 21722,
+      "url": "https://makestar.co/event/21722",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "MEOVV Single Album [GO HARD] 1:1 ONLINE PHOTO&CALL EVENT PART.1",
+      "titleEn": "MEOVV Single Album [GO HARD] 1:1 ONLINE PHOTO&CALL EVENT PART.1",
+      "album": "Single Album [GO HARD]",
+      "albumEn": "Single Album [GO HARD]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-10-12",
+      "from": "2026.10.30",
+      "to": "2026.11.01",
+      "startAt": "2026-10-30T14:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11157,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_4_banner_sub.png_2026-10-29_113345165921.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_4_banner_sub.png_2026-10-29_113345165921_thumb.jpeg"
+      }
+    },
     {
       "id": 21714,
       "url": "https://makestar.co/event/21714",
@@ -29,6 +55,58 @@
       }
     },
     {
+      "id": 21706,
+      "url": "https://makestar.co/event/21706",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "규현 (KYUHYUN) EP [CONTINUE] 대면 팬사인회 이벤트",
+      "titleEn": "KYUHYUN EP [CONTINUE] Face-to-face Fansign Event",
+      "album": "EP [CONTINUE]",
+      "albumEn": "EP [CONTINUE]",
+      "artist": "규현",
+      "artistEn": "KYUHYUN",
+      "releaseDate": "2026-11-11",
+      "from": "2026.10.30",
+      "to": "2026.11.02",
+      "startAt": "2026-10-30T15:00:00+09:00",
+      "endAt": "2026-11-02T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.03",
+      "productId": 11263,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_2_banner_sub.png_2026-10-29_184047972892.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_2_banner_sub.png_2026-10-29_184047972892_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21705,
+      "url": "https://makestar.co/event/21705",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "규현 (KYUHYUN) EP [CONTINUE] PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "KYUHYUN EP [CONTINUE] PRE-ORDER PHOTOCARD EVENT",
+      "album": "EP [CONTINUE]",
+      "albumEn": "EP [CONTINUE]",
+      "artist": "규현",
+      "artistEn": "KYUHYUN",
+      "releaseDate": "2026-11-11",
+      "from": "2026.10.30",
+      "to": "2026.11.10",
+      "startAt": "2026-10-30T14:00:00+09:00",
+      "endAt": "2026-11-10T23:59:59.999999+09:00",
+      "dday": 12,
+      "closing": false,
+      "winnerAt": "2026.11.11",
+      "productId": 11263,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_1_banner_sub.png_2026-10-29_154900726798.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_1_banner_sub.png_2026-10-29_154900726798_thumb.jpeg"
+      }
+    },
+    {
       "id": 21694,
       "url": "https://makestar.co/event/21694",
       "type": "MEET&CALL",
@@ -52,6 +130,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_9_banner_sub.png_2026-10-27_115142912431.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_9_banner_sub.png_2026-10-27_115142912431_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21648,
+      "url": "https://makestar.co/event/21648",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "채령(ITZY)  <Lovesick> PRE-ORDER MEET&CALL EVENT",
+      "titleEn": "CHAERYEONG(ITZY) <Lovesick> PRE-ORDER MEET&CALL EVENT",
+      "album": "미니 1집 [Lovesick]",
+      "albumEn": "1st Mini Album [Lovesick]",
+      "artist": "채령",
+      "artistEn": "CHAERYEONG",
+      "releaseDate": "2026-11-09",
+      "from": "2026.10.30",
+      "to": "2026.11.04",
+      "startAt": "2026-10-30T14:00:00+09:00",
+      "endAt": "2026-11-04T14:00:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.11.04",
+      "productId": 11148,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_3_Banner_thumb.jpg_2026-10-29_173420031035.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_3_Banner_thumb.jpg_2026-10-29_173420031035_thumb.jpeg"
       }
     },
     {
@@ -208,6 +312,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_5_Banner_sub.png_2026-10-23_150841914092.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10883_ARTMS_5_Banner_sub.png_2026-10-23_150841914092_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21580,
+      "url": "https://makestar.co/event/21580",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "Dragon Pony (드래곤포니) Single [Calling back] SPECIAL FANSIGNING EVENT",
+      "titleEn": "Dragon Pony (드래곤포니) Single [Calling back] SPECIAL FANSIGNING EVENT",
+      "album": "Single [Calling back]",
+      "albumEn": "Single [Calling back]",
+      "artist": "드래곤포니",
+      "artistEn": "Dragon Pony",
+      "releaseDate": "2026-11-05",
+      "from": "2026.10.30",
+      "to": "2026.11.02",
+      "startAt": "2026-10-30T14:00:00+09:00",
+      "endAt": "2026-11-02T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.03",
+      "productId": 11207,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_3_Banner_Sub.jpg_2026-10-26_154342127307.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_3_Banner_Sub.jpg_2026-10-26_154342127307_thumb.jpeg"
       }
     },
     {
@@ -468,6 +598,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_1_banner_sub.png_2026-10-06_182756247030_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21320,
+      "url": "https://makestar.co/event/21320",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ONEUS (원어스) 12TH EP [FIRST LIGHT : 井] MEET&CALL EVENT PART.2",
+      "titleEn": "ONEUS (원어스) 12TH EP [FIRST LIGHT : 井] MEET&CALL EVENT PART.2",
+      "album": "[FIRST LIGHT : 井]",
+      "albumEn": "[FIRST LIGHT : 井]",
+      "artist": "원어스",
+      "artistEn": "ONEUS",
+      "releaseDate": "2026-09-28",
+      "from": "2026.10.30",
+      "to": "2026.11.01",
+      "startAt": "2026-10-30T15:00:00+09:00",
+      "endAt": "2026-11-01T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.02",
+      "productId": 11093,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11093_ONEUS_3_banner_sub.jpg_2026-10-28_084736367306.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11093_ONEUS_3_banner_sub.jpg_2026-10-28_084736367306_thumb.jpeg"
       }
     },
     {
@@ -930,6 +1086,11 @@
       "album": "Calling back"
     },
     {
+      "key": "KYUHYUN｜CONTINUE",
+      "artist": "KYUHYUN",
+      "album": "CONTINUE"
+    },
+    {
       "key": "LNGSHOT｜S.W.I.S.H.",
       "artist": "LNGSHOT",
       "album": "S.W.I.S.H."
@@ -943,11 +1104,6 @@
       "key": "WayV｜Hey, Somebody",
       "artist": "WayV",
       "album": "Hey, Somebody"
-    },
-    {
-      "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM'",
-      "artist": "NCT DREAM",
-      "album": "The 6th Album 'DREAM AFTER DREAM'"
     },
     {
       "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)",
@@ -968,11 +1124,6 @@
       "key": "TOMORROW X TOGETHER｜TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'",
       "artist": "TOMORROW X TOGETHER",
       "album": "TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'"
-    },
-    {
-      "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
-      "artist": "NCT DREAM",
-      "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"
     },
     {
       "key": "ENHYPEN｜THE SIN : PARALLEL WORLD",

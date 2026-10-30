@@ -735,3 +735,12 @@
 {"at":"2026-10-29T16:18:58.694Z","type":"event.gone","label":"SPECIAL OFFLINE EVENT","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":21576}
 {"at":"2026-10-29T16:18:58.694Z","type":"event.gone","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":21349}
 {"at":"2026-10-29T16:18:58.694Z","type":"event.gone","label":"예약 특전 포토카드","artist":"제니","album":"EP [Fallen Angel]","id":20167}
+{"at":"2026-10-30T07:13:02.113Z","type":"event.new","label":"ONLINE PHOTO&CALL","artist":"MEOVV","album":"Single Album [GO HARD]","id":21722,"url":"https://makestar.co/event/21722","endAt":"2026-11-01T23:59:59.999999+09:00"}
+{"at":"2026-10-30T07:13:02.113Z","type":"event.new","label":"대면 팬사인회","artist":"규현","album":"EP [CONTINUE]","id":21706,"url":"https://makestar.co/event/21706","endAt":"2026-11-02T23:59:59.999999+09:00"}
+{"at":"2026-10-30T07:13:02.113Z","type":"event.new","label":"예약 특전 포토카드","artist":"규현","album":"EP [CONTINUE]","id":21705,"url":"https://makestar.co/event/21705","endAt":"2026-11-10T23:59:59.999999+09:00"}
+{"at":"2026-10-30T07:13:02.113Z","type":"event.new","label":"영상통화 팬사인회","artist":"채령","album":"미니 1집 [Lovesick]","id":21648,"url":"https://makestar.co/event/21648","endAt":"2026-11-04T14:00:59.999999+09:00"}
+{"at":"2026-10-30T07:13:02.113Z","type":"event.new","label":"대면 팬사인회","artist":"드래곤포니","album":"Single [Calling back]","id":21580,"url":"https://makestar.co/event/21580","endAt":"2026-11-02T23:59:59.999999+09:00"}
+{"at":"2026-10-30T07:13:02.113Z","type":"event.new","label":"영상통화 팬사인회","artist":"원어스","album":"[FIRST LIGHT : 井]","id":21320,"url":"https://makestar.co/event/21320","endAt":"2026-11-01T23:59:59.999999+09:00"}
+{"at":"2026-10-30T07:13:02.113Z","type":"album.new","artist":"KYUHYUN","album":"CONTINUE"}
+{"at":"2026-10-30T07:13:02.113Z","type":"album.gone","artist":"NCT DREAM","album":"The 6th Album 'DREAM AFTER DREAM'"}
+{"at":"2026-10-30T07:13:02.113Z","type":"album.gone","artist":"NCT DREAM","album":"The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"}
