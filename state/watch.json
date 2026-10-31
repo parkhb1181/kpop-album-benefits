@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-10-31T02:21:40.277Z",
-  "lastDeep": "2026-10-31T02:21:40.277Z",
+  "checkedAt": "2026-10-31T08:39:13.332Z",
+  "lastDeep": "2026-10-31T08:39:13.332Z",
   "events": [
+    {
+      "id": 21728,
+      "url": "https://makestar.co/event/21728",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "JANG HANEUM The 2nd EP [DAYDREAM] FIRST 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "JANG HANEUM The 2nd EP [DAYDREAM] FIRST 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "The 2nd EP Album [DAYDREAM]",
+      "albumEn": "The 2nd EP Album [DAYDREAM]",
+      "artist": "장한음",
+      "artistEn": "JANG HANEUM",
+      "releaseDate": "2026-03-31",
+      "from": "2026.10.31",
+      "to": "2026.11.02",
+      "startAt": "2026-10-31T12:00:00+09:00",
+      "endAt": "2026-11-02T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.03",
+      "productId": 10404,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10404_JANG_HANEUM_24_banner_sub.png_2026-10-30_120522273900.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10404_JANG_HANEUM_24_banner_sub.png_2026-10-30_120522273900_thumb.jpeg"
+      }
+    },
     {
       "id": 21722,
       "url": "https://makestar.co/event/21722",
@@ -133,6 +159,32 @@
       }
     },
     {
+      "id": 21704,
+      "url": "https://makestar.co/event/21704",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.3",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.3",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.10.31",
+      "to": "2026.11.02",
+      "startAt": "2026-10-31T15:00:00+09:00",
+      "endAt": "2026-11-02T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.03",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_10_banner_sub.jpg_2026-10-30_144912329780.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_10_banner_sub.jpg_2026-10-30_144912329780_thumb.jpeg"
+      }
+    },
+    {
       "id": 21648,
       "url": "https://makestar.co/event/21648",
       "type": "MEET&CALL",
@@ -149,7 +201,7 @@
       "to": "2026.11.04",
       "startAt": "2026-10-30T14:00:00+09:00",
       "endAt": "2026-11-04T14:00:59.999999+09:00",
-      "dday": 5,
+      "dday": 4,
       "closing": false,
       "winnerAt": "2026.11.04",
       "productId": 11148,
@@ -442,6 +494,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_2_Banner_Sub.jpg_2026-10-23_120145640359.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_2_Banner_Sub.jpg_2026-10-23_120145640359_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21539,
+      "url": "https://makestar.co/event/21539",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (FOCUS ver.) 1:1 ONLINE PHOTO&CALL EVENT PART.1",
+      "titleEn": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (FOCUS ver.) 1:1 ONLINE PHOTO&CALL EVENT PART.1",
+      "album": "The 2nd EP Album 'CRASH'",
+      "albumEn": "The 2nd EP Album 'CRASH'",
+      "artist": "올데이프로젝트",
+      "artistEn": "ALLDAY PROJECT",
+      "releaseDate": "2026-09-28",
+      "from": "2026.10.31",
+      "to": "2026.11.02",
+      "startAt": "2026-10-31T14:00:00+09:00",
+      "endAt": "2026-11-02T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.03",
+      "productId": 11092,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_5_Banner_Sub.jpg_2026-10-30_121732986011.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_5_Banner_Sub.jpg_2026-10-30_121732986011_thumb.jpeg"
       }
     },
     {
