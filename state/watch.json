@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-02T09:28:37.670Z",
-  "lastDeep": "2026-11-02T09:28:37.670Z",
+  "checkedAt": "2026-11-02T19:42:10.017Z",
+  "lastDeep": "2026-11-02T19:42:10.017Z",
   "events": [
     {
       "id": 21738,
@@ -19,39 +19,13 @@
       "to": "2026.11.04",
       "startAt": "2026-11-02T10:00:00+09:00",
       "endAt": "2026-11-04T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.11.05",
       "productId": 10965,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_17_banner_Sub.jpg_2026-10-30_153205844505.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_17_banner_Sub.jpg_2026-10-30_153205844505_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21728,
-      "url": "https://makestar.co/event/21728",
-      "type": "ONLINE PHOTO&CALL",
-      "label": "ONLINE PHOTO&CALL",
-      "fansign": false,
-      "title": "JANG HANEUM The 2nd EP [DAYDREAM] FIRST 1:1 ONLINE PHOTO&CALL EVENT",
-      "titleEn": "JANG HANEUM The 2nd EP [DAYDREAM] FIRST 1:1 ONLINE PHOTO&CALL EVENT",
-      "album": "The 2nd EP Album [DAYDREAM]",
-      "albumEn": "The 2nd EP Album [DAYDREAM]",
-      "artist": "장한음",
-      "artistEn": "JANG HANEUM",
-      "releaseDate": "2026-03-31",
-      "from": "2026.10.31",
-      "to": "2026.11.02",
-      "startAt": "2026-10-31T12:00:00+09:00",
-      "endAt": "2026-11-02T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.03",
-      "productId": 10404,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10404_JANG_HANEUM_24_banner_sub.png_2026-10-30_120522273900.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10404_JANG_HANEUM_24_banner_sub.png_2026-10-30_120522273900_thumb.jpeg"
       }
     },
     {
@@ -97,39 +71,13 @@
       "to": "2026.11.04",
       "startAt": "2026-11-02T15:00:00+09:00",
       "endAt": "2026-11-04T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.11.05",
       "productId": 10867,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_141301095818.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_141301095818_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21706,
-      "url": "https://makestar.co/event/21706",
-      "type": "FANSIGN",
-      "label": "대면 팬사인회",
-      "fansign": true,
-      "title": "규현 (KYUHYUN) EP [CONTINUE] 대면 팬사인회 이벤트",
-      "titleEn": "KYUHYUN EP [CONTINUE] Face-to-face Fansign Event",
-      "album": "EP [CONTINUE]",
-      "albumEn": "EP [CONTINUE]",
-      "artist": "규현",
-      "artistEn": "KYUHYUN",
-      "releaseDate": "2026-11-11",
-      "from": "2026.10.30",
-      "to": "2026.11.02",
-      "startAt": "2026-10-30T15:00:00+09:00",
-      "endAt": "2026-11-02T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.03",
-      "productId": 11263,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_2_banner_sub.png_2026-10-29_184047972892.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_2_banner_sub.png_2026-10-29_184047972892_thumb.jpeg"
       }
     },
     {
@@ -149,39 +97,13 @@
       "to": "2026.11.10",
       "startAt": "2026-10-30T14:00:00+09:00",
       "endAt": "2026-11-10T23:59:59.999999+09:00",
-      "dday": 9,
+      "dday": 8,
       "closing": false,
       "winnerAt": "2026.11.11",
       "productId": 11263,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_1_banner_sub.png_2026-10-29_154900726798.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_1_banner_sub.png_2026-10-29_154900726798_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21704,
-      "url": "https://makestar.co/event/21704",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.3",
-      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.3",
-      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
-      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
-      "artist": "킥플립",
-      "artistEn": "KickFlip",
-      "releaseDate": "2026-10-06",
-      "from": "2026.10.31",
-      "to": "2026.11.02",
-      "startAt": "2026-10-31T15:00:00+09:00",
-      "endAt": "2026-11-02T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.03",
-      "productId": 11062,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_10_banner_sub.jpg_2026-10-30_144912329780.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_10_banner_sub.jpg_2026-10-30_144912329780_thumb.jpeg"
       }
     },
     {
@@ -227,7 +149,7 @@
       "to": "2026.12.17",
       "startAt": "2026-10-27T14:00:00+09:00",
       "endAt": "2026-12-17T23:59:59.999999+09:00",
-      "dday": 46,
+      "dday": 45,
       "closing": false,
       "winnerAt": null,
       "productId": 11246,
@@ -253,39 +175,13 @@
       "to": "2026.11.04",
       "startAt": "2026-11-02T15:00:00+09:00",
       "endAt": "2026-11-04T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.11.05",
       "productId": 10867,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_143112237184.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_143112237184_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21580,
-      "url": "https://makestar.co/event/21580",
-      "type": "FANSIGN",
-      "label": "대면 팬사인회",
-      "fansign": true,
-      "title": "Dragon Pony (드래곤포니) Single [Calling back] SPECIAL FANSIGNING EVENT",
-      "titleEn": "Dragon Pony (드래곤포니) Single [Calling back] SPECIAL FANSIGNING EVENT",
-      "album": "Single [Calling back]",
-      "albumEn": "Single [Calling back]",
-      "artist": "드래곤포니",
-      "artistEn": "Dragon Pony",
-      "releaseDate": "2026-11-05",
-      "from": "2026.10.30",
-      "to": "2026.11.02",
-      "startAt": "2026-10-30T14:00:00+09:00",
-      "endAt": "2026-11-02T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.03",
-      "productId": 11207,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_3_Banner_Sub.jpg_2026-10-26_154342127307.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11207_DRAGON_PONY_3_Banner_Sub.jpg_2026-10-26_154342127307_thumb.jpeg"
       }
     },
     {
@@ -305,7 +201,7 @@
       "to": "2026.12.17",
       "startAt": "2026-10-23T14:00:00+09:00",
       "endAt": "2026-12-17T23:59:59.999999+09:00",
-      "dday": 46,
+      "dday": 45,
       "closing": false,
       "winnerAt": null,
       "productId": 11245,
@@ -331,7 +227,7 @@
       "to": "2026.12.17",
       "startAt": "2026-10-23T14:00:00+09:00",
       "endAt": "2026-12-17T23:59:59.999999+09:00",
-      "dday": 46,
+      "dday": 45,
       "closing": false,
       "winnerAt": null,
       "productId": 11244,
@@ -357,39 +253,13 @@
       "to": "2026.11.05",
       "startAt": "2026-10-24T15:00:00+09:00",
       "endAt": "2026-11-05T23:59:59.999999+09:00",
-      "dday": 4,
+      "dday": 3,
       "closing": false,
       "winnerAt": "2026.11.09",
       "productId": 11205,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_2_Banner_Sub.jpg_2026-10-23_120145640359.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_2_Banner_Sub.jpg_2026-10-23_120145640359_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21539,
-      "url": "https://makestar.co/event/21539",
-      "type": "ONLINE PHOTO&CALL",
-      "label": "ONLINE PHOTO&CALL",
-      "fansign": false,
-      "title": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (FOCUS ver.) 1:1 ONLINE PHOTO&CALL EVENT PART.1",
-      "titleEn": "ALLDAY PROJECT The 2nd EP Album 'CRASH' (FOCUS ver.) 1:1 ONLINE PHOTO&CALL EVENT PART.1",
-      "album": "The 2nd EP Album 'CRASH'",
-      "albumEn": "The 2nd EP Album 'CRASH'",
-      "artist": "올데이프로젝트",
-      "artistEn": "ALLDAY PROJECT",
-      "releaseDate": "2026-09-28",
-      "from": "2026.10.31",
-      "to": "2026.11.02",
-      "startAt": "2026-10-31T14:00:00+09:00",
-      "endAt": "2026-11-02T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.03",
-      "productId": 11092,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_5_Banner_Sub.jpg_2026-10-30_121732986011.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11092_ALLDAY_PROJECT_5_Banner_Sub.jpg_2026-10-30_121732986011_thumb.jpeg"
       }
     },
     {
@@ -409,7 +279,7 @@
       "to": "2026.11.08",
       "startAt": "2026-10-21T15:00:00+09:00",
       "endAt": "2026-11-08T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": "2026.11.09",
       "productId": 11239,
@@ -435,7 +305,7 @@
       "to": "2026.11.22",
       "startAt": "2026-10-26T11:00:00+09:00",
       "endAt": "2026-11-22T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11238,
@@ -461,7 +331,7 @@
       "to": "2026.11.16",
       "startAt": "2026-10-21T17:00:00+09:00",
       "endAt": "2026-11-16T23:59:59.999999+09:00",
-      "dday": 15,
+      "dday": 14,
       "closing": false,
       "winnerAt": "2026.11.17",
       "productId": 11236,
@@ -487,7 +357,7 @@
       "to": "2026.11.08",
       "startAt": "2026-10-16T16:00:00+09:00",
       "endAt": "2026-11-08T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 11214,
@@ -513,7 +383,7 @@
       "to": "2026.11.15",
       "startAt": "2026-10-20T11:00:00+09:00",
       "endAt": "2026-11-15T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11208,
@@ -539,7 +409,7 @@
       "to": "2026.11.15",
       "startAt": "2026-10-20T11:00:00+09:00",
       "endAt": "2026-11-15T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11208,
@@ -565,7 +435,7 @@
       "to": "2026.11.15",
       "startAt": "2026-10-20T11:00:00+09:00",
       "endAt": "2026-11-15T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11208,
@@ -591,7 +461,7 @@
       "to": "2026.11.15",
       "startAt": "2026-10-20T11:00:00+09:00",
       "endAt": "2026-11-15T23:59:59.999999+09:00",
-      "dday": 14,
+      "dday": 13,
       "closing": false,
       "winnerAt": null,
       "productId": 11208,
@@ -617,8 +487,8 @@
       "to": "2026.11.04",
       "startAt": "2026-10-16T14:00:00+09:00",
       "endAt": "2026-11-04T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": null,
       "productId": 11207,
       "image": {
@@ -643,39 +513,13 @@
       "to": "2026.11.12",
       "startAt": "2026-10-13T11:00:00+09:00",
       "endAt": "2026-11-12T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": "2026.11.13",
       "productId": 11205,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_1_banner_sub.png_2026-10-12_170301097921_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21195,
-      "url": "https://makestar.co/event/21195",
-      "type": "PHOTOCARD",
-      "label": "예약 특전 포토카드",
-      "fansign": false,
-      "title": "RESCENE 4th Mini Album [PULSE] PRE-ORDER PHOTOCARD EVENT",
-      "titleEn": "RESCENE 4th Mini Album [PULSE] PRE-ORDER PHOTOCARD EVENT",
-      "album": "4th Mini Album [PULSE]",
-      "albumEn": "4th Mini Album [PULSE]",
-      "artist": "리센느",
-      "artistEn": "RESCENE",
-      "releaseDate": "2026-11-03",
-      "from": "2026.10.13",
-      "to": "2026.11.02",
-      "startAt": "2026-10-13T12:00:00+09:00",
-      "endAt": "2026-11-02T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.03",
-      "productId": 11203,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_1_banner_sub.png_2026-10-12_103959101485.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11203_RESCENE_1_banner_sub.png_2026-10-12_103959101485_thumb.jpeg"
       }
     },
     {
@@ -695,7 +539,7 @@
       "to": "2026.11.09",
       "startAt": "2026-10-12T12:00:00+09:00",
       "endAt": "2026-11-09T23:59:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.11.10",
       "productId": 11159,
@@ -721,7 +565,7 @@
       "to": "2026.11.08",
       "startAt": "2026-10-19T11:00:00+09:00",
       "endAt": "2026-11-08T23:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 11148,
@@ -817,11 +661,6 @@
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
-    },
-    {
-      "key": "LISA｜PRESS PLAY CD",
-      "artist": "LISA",
-      "album": "PRESS PLAY CD"
     }
   ]
 }
