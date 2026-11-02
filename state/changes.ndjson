@@ -771,3 +771,7 @@
 {"at":"2026-11-01T19:13:14.052Z","type":"event.gone","label":"예약 특전 포토카드","artist":"투어스","album":"2nd Single Album ‘TO US’","id":21133}
 {"at":"2026-11-01T19:13:14.052Z","type":"event.gone","label":"예약 특전 포토카드","artist":"싸이커스","album":"8TH MINI ALBUM [ROUTE ZERO : The CALLING]","id":20851}
 {"at":"2026-11-01T19:13:14.052Z","type":"album.gone","artist":"WayV","album":"Hey, Somebody"}
+{"at":"2026-11-02T09:28:37.670Z","type":"event.new","label":"ONLINE PHOTO&CALL","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":21738,"url":"https://makestar.co/event/21738","endAt":"2026-11-04T23:59:59.999999+09:00"}
+{"at":"2026-11-02T09:28:37.670Z","type":"event.new","label":"영상통화 팬사인회","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":21723,"url":"https://makestar.co/event/21723","endAt":"2026-11-04T17:59:59.999999+09:00"}
+{"at":"2026-11-02T09:28:37.670Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"누에라","album":"4th Mini Album [.exe]","id":21718,"url":"https://makestar.co/event/21718","endAt":"2026-11-04T23:59:59.999999+09:00"}
+{"at":"2026-11-02T09:28:37.670Z","type":"event.new","label":"SPECIAL EVENT","artist":"누에라","album":"4th Mini Album [.exe]","id":21590,"url":"https://makestar.co/event/21590","endAt":"2026-11-04T23:59:59.999999+09:00"}

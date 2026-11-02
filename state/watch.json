@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-11-02T02:05:48.820Z",
-  "lastDeep": "2026-11-02T02:05:48.820Z",
+  "checkedAt": "2026-11-02T09:28:37.670Z",
+  "lastDeep": "2026-11-02T09:28:37.670Z",
   "events": [
+    {
+      "id": 21738,
+      "url": "https://makestar.co/event/21738",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> (PHOTO PACK Ver.) FIRST 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> (PHOTO PACK Ver.) FIRST 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.11.02",
+      "to": "2026.11.04",
+      "startAt": "2026-11-02T10:00:00+09:00",
+      "endAt": "2026-11-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.05",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_17_banner_Sub.jpg_2026-10-30_153205844505.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_17_banner_Sub.jpg_2026-10-30_153205844505_thumb.jpeg"
+      }
+    },
     {
       "id": 21728,
       "url": "https://makestar.co/event/21728",
@@ -26,6 +52,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10404_JANG_HANEUM_24_banner_sub.png_2026-10-30_120522273900.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10404_JANG_HANEUM_24_banner_sub.png_2026-10-30_120522273900_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21723,
+      "url": "https://makestar.co/event/21723",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] 발매 기념 1:1 영상통화 이벤트",
+      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM 'UNBREAKABLE : 少年BEAST' 1:1 VIDEO CALL EVENT",
+      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
+      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
+      "artist": "알파드라이브원",
+      "artistEn": "ALPHA DRIVE ONE",
+      "releaseDate": "2026-08-24",
+      "from": "2026.11.02",
+      "to": "2026.11.04",
+      "startAt": "2026-11-02T18:00:00+09:00",
+      "endAt": "2026-11-04T17:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.11.04",
+      "productId": 10943,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_14_Banner_Sub.jpg_2026-10-30_141815070754.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_14_Banner_Sub.jpg_2026-10-30_141815070754_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21718,
+      "url": "https://makestar.co/event/21718",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL OFFLINE & MEET & CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL OFFLINE & MEET & CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.11.02",
+      "to": "2026.11.04",
+      "startAt": "2026-11-02T15:00:00+09:00",
+      "endAt": "2026-11-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.05",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_141301095818.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_141301095818_thumb.jpeg"
       }
     },
     {
@@ -123,8 +201,8 @@
       "to": "2026.11.04",
       "startAt": "2026-10-30T14:00:00+09:00",
       "endAt": "2026-11-04T14:00:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.11.04",
       "productId": 11148,
       "image": {
@@ -156,6 +234,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21590,
+      "url": "https://makestar.co/event/21590",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL OFFLINE & MEET & CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) SPECIAL OFFLINE & MEET & CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.11.02",
+      "to": "2026.11.04",
+      "startAt": "2026-11-02T15:00:00+09:00",
+      "endAt": "2026-11-04T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.05",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_143112237184.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_143112237184_thumb.jpeg"
       }
     },
     {
@@ -414,8 +518,8 @@
       "winnerAt": null,
       "productId": 11208,
       "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116%20-%20TOMORROW%20X%20TOGETHER%209th%20Mini%20Album%20%27PERFECT%20STORM%20%28Weverse%20Albums%20ver.%29%27%20%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-10-20_101712999100.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116_-_TOMORROW_X_TOGETHER_9th_Mini_Album_PERFECT_STORM_Weverse_Albums_ver._%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-10-20_101712999100_thumb.jpeg"
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116%20-%20TOMORROW%20X%20TOGETHER%209th%20Mini%20Album%20%27PERFECT%20STORM%20%28Weverse%20Albums%20ver.%29%27%20%ED%81%B4%EB%A6%B0%20%EC%8D%B8%EB%84%A4%EC%9D%BC.png_2026-11-02_110822860188.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116_-_TOMORROW_X_TOGETHER_9th_Mini_Album_PERFECT_STORM_Weverse_Albums_ver._%ED%81%B4%EB%A6%B0_%EC%8D%B8%EB%84%A4%EC%9D%BC.png_2026-11-02_110822860188_thumb.jpeg"
       }
     },
     {
@@ -440,8 +544,8 @@
       "winnerAt": null,
       "productId": 11208,
       "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116%20-%20TOMORROW%20X%20TOGETHER%209th%20Mini%20Album%20%27PERFECT%20STORM%20%28Photocard%20Case%20Ver.%29%27%20%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-10-20_101317997661.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116_-_TOMORROW_X_TOGETHER_9th_Mini_Album_PERFECT_STORM_Photocard_Case_Ver._%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-10-20_101317997661_thumb.jpeg"
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116%20-%20TOMORROW%20X%20TOGETHER%209th%20Mini%20Album%20%27PERFECT%20STORM%20%28Photocard%20Case%20Ver.%29%27%20%ED%81%B4%EB%A6%B0%20%EC%8D%B8%EB%84%A4%EC%9D%BC.png_2026-11-02_110749365653.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116_-_TOMORROW_X_TOGETHER_9th_Mini_Album_PERFECT_STORM_Photocard_Case_Ver._%ED%81%B4%EB%A6%B0_%EC%8D%B8%EB%84%A4%EC%9D%BC.png_2026-11-02_110749365653_thumb.jpeg"
       }
     },
     {
@@ -466,8 +570,8 @@
       "winnerAt": null,
       "productId": 11208,
       "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116%20-%20TOMORROW%20X%20TOGETHER%209th%20Mini%20Album%20%27PERFECT%20STORM%20%28STORM%20IS%20COMING%20Ver.%29%27%20%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-10-20_101029655346.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116_-_TOMORROW_X_TOGETHER_9th_Mini_Album_PERFECT_STORM_STORM_IS_COMING_Ver._%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg_2026-10-20_101029655346_thumb.jpeg"
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116%20-%20TOMORROW%20X%20TOGETHER%209th%20Mini%20Album%20%27PERFECT%20STORM%20%28STORM%20IS%20COMING%20Ver.%29%27%20%ED%81%B4%EB%A6%B0%20%EC%8D%B8%EB%84%A4%EC%9D%BC.png_2026-11-02_110651054073.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/20261116_-_TOMORROW_X_TOGETHER_9th_Mini_Album_PERFECT_STORM_STORM_IS_COMING_Ver._%ED%81%B4%EB%A6%B0_%EC%8D%B8%EB%84%A4%EC%9D%BC.png_2026-11-02_110651054073_thumb.jpeg"
       }
     },
     {
