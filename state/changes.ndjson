@@ -782,3 +782,7 @@
 {"at":"2026-11-02T19:42:10.017Z","type":"event.gone","label":"ONLINE PHOTO&CALL","artist":"올데이프로젝트","album":"The 2nd EP Album 'CRASH'","id":21539}
 {"at":"2026-11-02T19:42:10.017Z","type":"event.gone","label":"예약 특전 포토카드","artist":"리센느","album":"4th Mini Album [PULSE]","id":21195}
 {"at":"2026-11-02T19:42:10.017Z","type":"album.gone","artist":"LISA","album":"PRESS PLAY CD"}
+{"at":"2026-11-03T08:59:46.511Z","type":"event.new","label":"영상통화 팬사인회","artist":"싸이커스","album":"8TH MINI ALBUM [ROUTE ZERO : The CALLING]","id":21789,"url":"https://makestar.co/event/21789","endAt":"2026-11-05T11:59:59.999999+09:00"}
+{"at":"2026-11-03T08:59:46.511Z","type":"event.new","label":"영상통화 팬사인회","artist":"키빗업","album":"2ND EP [NA-GARI]","id":21715,"url":"https://makestar.co/event/21715","endAt":"2026-11-08T23:59:59.999999+09:00"}
+{"at":"2026-11-03T08:59:46.511Z","type":"album.gone","artist":"TOMORROW X TOGETHER","album":"TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM' (Weverse US Exclusive)"}
+{"at":"2026-11-03T08:59:46.511Z","type":"album.gone","artist":"TOMORROW X TOGETHER","album":"TOMORROW X TOGETHER 9th Mini Album 'PERFECT STORM'"}
