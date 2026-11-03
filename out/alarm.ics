@@ -9,74 +9,72 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21230@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261104T145959Z
 DTEND:20261104T152959Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 특전 포토
- 카드 응모 마감
+SUMMARY:Dragon Pony Calling back — 예약 특전 포토카드 응모 마
+ 감
 DESCRIPTION:Dragon Pony (드래곤포니) Single [Calling back] PRE-ORDER P
  HOTOCARD EVENT\nhttps://makestar.co/event/21230
 URL:https://makestar.co/event/21230
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
- 토카드 응모 마감 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
+ 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 특전 포
- 토카드 응모 마감 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 특전 포토카드 응모 
+ 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-evt21789@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261105T025959Z
 DTEND:20261105T032959Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 영상통화 팬사
- 인회 응모 마감
+SUMMARY:Dragon Pony Calling back — 영상통화 팬사인회 응모 마
+ 감
 DESCRIPTION:xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) ME
  ET&CALL EVENT\nhttps://makestar.co/event/21789
 URL:https://makestar.co/event/21789
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 영상통화 팬
- 사인회 응모 마감 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 영상통화 팬사인회 응모 
+ 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 영상통화 팬
- 사인회 응모 마감 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 영상통화 팬사인회 응모 
+ 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dragon-pony-calling-back-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261105T090000Z
 DTEND:20261105T093000Z
-SUMMARY:드래곤포니(Dragon Pony) Calling back — 예약 배송 시작
+SUMMARY:Dragon Pony Calling back — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/dragon-pony-calling-back.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
- 작 (하루 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:드래곤포니(Dragon Pony) Calling back — 예약 배송 시
- 작 (1시간 전)
+DESCRIPTION:Dragon Pony Calling back — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:adap-all-dreams-are-possible-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261105T090100Z
 DTEND:20261105T093100Z
 SUMMARY:에이댑(ADAP) ALL DREAMS ARE POSSIBLE — 예약 배송 시작
@@ -97,28 +95,26 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:p1harmony-blow-up-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261106T050000Z
 DTEND:20261106T053000Z
-SUMMARY:피원하모니(P1Harmony ) BLOW UP — 예약 배송 시작
+SUMMARY:P1Harmony  BLOW UP — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/p1harmony-blow-up.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:피원하모니(P1Harmony ) BLOW UP — 예약 배송 시작 (
- 하루 전)
+DESCRIPTION:P1Harmony  BLOW UP — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:피원하모니(P1Harmony ) BLOW UP — 예약 배송 시작 (1
- 시간 전)
+DESCRIPTION:P1Harmony  BLOW UP — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-evt20989@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261109T145959Z
 DTEND:20261109T152959Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 특전 포토카드 응모 마감
@@ -140,7 +136,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261110T090000Z
 DTEND:20261110T093000Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 배송 시작
@@ -159,7 +155,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kyuhyun-continue-evt21705@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261110T145959Z
 DTEND:20261110T152959Z
 SUMMARY:규현(KYUHYUN) CONTINUE — 예약 특전 포토카드 응모 마
@@ -182,7 +178,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kyuhyun-continue-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261111T090000Z
 DTEND:20261111T093000Z
 SUMMARY:규현(KYUHYUN) CONTINUE — 예약 배송 시작
@@ -201,7 +197,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-i-want-you-single-cd-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261120T080400Z
 DTEND:20261120T083400Z
 SUMMARY:ENHYPEN I Want You' Single CD — 예약 배송 시작
@@ -222,7 +218,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-i-want-you-single-cd-evt21530@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261122T145959Z
 DTEND:20261122T152959Z
 SUMMARY:ENHYPEN I Want You' Single CD — 예약 특전 포토카드 응모
@@ -245,71 +241,70 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-the-sin-parallel-world-evt21530@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261122T145959Z
 DTEND:20261122T152959Z
-SUMMARY:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 특전 
- 포토카드 응모 마감
+SUMMARY:ENHYPEN THE SIN : PARALLEL WORLD — 예약 특전 포토카드 응
+ 모 마감
 DESCRIPTION:ENHYPEN 'THE SIN : PARALLEL WORLD' 발매기념 예약판매 
  특전 증정 이벤트\nhttps://makestar.co/event/21530
 URL:https://makestar.co/event/21530
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 특
- 전 포토카드 응모 마감 (하루 전)
+DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 특전 포토카드
+  응모 마감 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 특
- 전 포토카드 응모 마감 (1시간 전)
+DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 특전 포토카드
+  응모 마감 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261130T040000Z
 DTEND:20261130T043000Z
-SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
+SUMMARY:JISOO CLICK — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/jisoo-click.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (하루 전)
+DESCRIPTION:JISOO CLICK — 예약 배송 시작 (하루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:지수(JISOO) CLICK — 예약 배송 시작 (1시간 전)
+DESCRIPTION:JISOO CLICK — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:enhypen-the-sin-parallel-world-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20261204T080400Z
 DTEND:20261204T083400Z
-SUMMARY:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 배송 
- 시작
+SUMMARY:ENHYPEN THE SIN : PARALLEL WORLD — 예약 배송 시작
 DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
 URL:https://kpop-album.vercel.app/album/enhypen-the-sin-parallel-world.html
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
-DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 배
- 송 시작 (하루 전)
+DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 배송 시작 (하
+ 루 전)
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:엔하이픈(ENHYPEN) THE SIN : PARALLEL WORLD — 예약 배
- 송 시작 (1시간 전)
+DESCRIPTION:ENHYPEN THE SIN : PARALLEL WORLD — 예약 배송 시작 (1시
+ 간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jennie-fallen-angel-release@kpop-album-benefits
-DTSTAMP:20261103T090410Z
+DTSTAMP:20261103T173341Z
 DTSTART:20270129T090000Z
 DTEND:20270129T093000Z
 SUMMARY:제니(JENNIE) Fallen Angel — 예약 배송 시작
