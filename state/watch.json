@@ -1,7 +1,85 @@
 {
-  "checkedAt": "2026-11-04T02:22:54.867Z",
-  "lastDeep": "2026-11-04T02:22:54.867Z",
+  "checkedAt": "2026-11-04T09:38:28.573Z",
+  "lastDeep": "2026-11-04T09:38:28.573Z",
   "events": [
+    {
+      "id": 21876,
+      "url": "https://makestar.co/event/21876",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "A2O SOUL DEBUT EP [SUPERSTAR] PRE-ORDER MEET&CALL",
+      "titleEn": "A2O SOUL DEBUT EP [SUPERSTAR] PRE-ORDER MEET&CALL",
+      "album": "EP [SUPERSTAR]",
+      "albumEn": "EP [SUPERSTAR]",
+      "artist": "A2O SOUL",
+      "artistEn": "A2O SOUL",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.04",
+      "to": "2026.11.06",
+      "startAt": "2026-11-04T15:00:00+09:00",
+      "endAt": "2026-11-06T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 11239,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_2_Banner_Thumb.png_2026-11-03_145614480894.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_2_Banner_Thumb.png_2026-11-03_145614480894_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21798,
+      "url": "https://makestar.co/event/21798",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "[기부 공동구매] 장민호 (JANG MIN HO) 4th mini album [에세이 ep.4] (POCAALBUM) 공동구매 이벤트",
+      "titleEn": "[Donation Group Buying] JANG MIN HO 4th mini album [Essay ep.4] (POCAALBUM) GROUP BUYING EVENT",
+      "album": "[Essay ep.4]",
+      "albumEn": "[Essay ep.4]",
+      "artist": "장민호",
+      "artistEn": "JANG MIN HO",
+      "releaseDate": "2026-11-24",
+      "from": "2026.11.04",
+      "to": "2026.11.30",
+      "startAt": "2026-11-04T15:00:00+09:00",
+      "endAt": "2026-11-30T23:00:59.999999+09:00",
+      "dday": 27,
+      "closing": false,
+      "winnerAt": "2026.12.03",
+      "productId": 11268,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_110153676423.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_110153676423_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21797,
+      "url": "https://makestar.co/event/21797",
+      "type": "SPECIAL EVENT",
+      "label": "SPECIAL EVENT",
+      "fansign": false,
+      "title": "[일반 공동구매] 장민호 (JANG MIN HO) 4th mini album [에세이 ep.4] (POCAALBUM) 공동구매 이벤트",
+      "titleEn": "[Regular] JANG MIN HO 4th mini album [Essay ep.4] (POCAALBUM) GROUP BUYING EVENT",
+      "album": "[Essay ep.4]",
+      "albumEn": "[Essay ep.4]",
+      "artist": "장민호",
+      "artistEn": "JANG MIN HO",
+      "releaseDate": "2026-11-24",
+      "from": "2026.11.04",
+      "to": "2026.11.30",
+      "startAt": "2026-11-04T15:00:00+09:00",
+      "endAt": "2026-11-30T23:00:59.999999+09:00",
+      "dday": 27,
+      "closing": false,
+      "winnerAt": "2026.12.03",
+      "productId": 11268,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809_thumb.jpeg"
+      }
+    },
     {
       "id": 21789,
       "url": "https://makestar.co/event/21789",
@@ -19,7 +97,7 @@
       "to": "2026.11.05",
       "startAt": "2026-11-03T15:00:00+09:00",
       "endAt": "2026-11-05T11:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.11.06",
       "productId": 11105,
@@ -52,32 +130,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_17_banner_Sub.jpg_2026-10-30_153205844505.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_17_banner_Sub.jpg_2026-10-30_153205844505_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21723,
-      "url": "https://makestar.co/event/21723",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "ALPHA DRIVE ONE 2ND MINI ALBUM [UNBREAKABLE : 少年BEAST] 발매 기념 1:1 영상통화 이벤트",
-      "titleEn": "ALPHA DRIVE ONE 2ND MINI ALBUM 'UNBREAKABLE : 少年BEAST' 1:1 VIDEO CALL EVENT",
-      "album": "미니 2집 [UNBREAKABLE : 少年BEAST]",
-      "albumEn": "2ND MINI ALBUM [UNBREAKABLE : 少年BEAST]",
-      "artist": "알파드라이브원",
-      "artistEn": "ALPHA DRIVE ONE",
-      "releaseDate": "2026-08-24",
-      "from": "2026.11.02",
-      "to": "2026.11.04",
-      "startAt": "2026-11-02T18:00:00+09:00",
-      "endAt": "2026-11-04T17:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.04",
-      "productId": 10943,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_14_Banner_Sub.jpg_2026-10-30_141815070754.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10943_ALPHA_DRIVE_ONE_14_Banner_Sub.jpg_2026-10-30_141815070754_thumb.jpeg"
       }
     },
     {
@@ -159,32 +211,6 @@
       }
     },
     {
-      "id": 21648,
-      "url": "https://makestar.co/event/21648",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "채령(ITZY)  <Lovesick> PRE-ORDER MEET&CALL EVENT",
-      "titleEn": "CHAERYEONG(ITZY) <Lovesick> PRE-ORDER MEET&CALL EVENT",
-      "album": "미니 1집 [Lovesick]",
-      "albumEn": "1st Mini Album [Lovesick]",
-      "artist": "채령",
-      "artistEn": "CHAERYEONG",
-      "releaseDate": "2026-11-09",
-      "from": "2026.10.30",
-      "to": "2026.11.04",
-      "startAt": "2026-10-30T14:00:00+09:00",
-      "endAt": "2026-11-04T14:00:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.04",
-      "productId": 11148,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_3_Banner_thumb.jpg_2026-10-29_173420031035.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_3_Banner_thumb.jpg_2026-10-29_173420031035_thumb.jpeg"
-      }
-    },
-    {
       "id": 21630,
       "url": "https://makestar.co/event/21630",
       "type": "PHOTOCARD",
@@ -211,6 +237,32 @@
       }
     },
     {
+      "id": 21592,
+      "url": "https://makestar.co/event/21592",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NCT DREAM The 6th Album [DREAM AFTER DREAM] 1:1 VIDEO CALL EVENT IN TAIPEI",
+      "titleEn": "NCT DREAM The 6th Album [DREAM AFTER DREAM] 1:1 VIDEO CALL EVENT IN TAIPEI",
+      "album": "[DREAM AFTER DREAM]",
+      "albumEn": "[DREAM AFTER DREAM]",
+      "artist": "NCT DREAM",
+      "artistEn": "NCT DREAM",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.04",
+      "to": "2026.11.08",
+      "startAt": "2026-11-04T18:00:00+09:00",
+      "endAt": "2026-11-08T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 11214,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_8_Banner_thumb.jpg_2026-11-03_151853311244.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_8_Banner_thumb.jpg_2026-11-03_151853311244_thumb.jpeg"
+      }
+    },
+    {
       "id": 21590,
       "url": "https://makestar.co/event/21590",
       "type": "SPECIAL EVENT",
@@ -234,6 +286,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_143112237184.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_20_Banner_Sub.jpg_2026-10-28_143112237184_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21588,
+      "url": "https://makestar.co/event/21588",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "유어즈 (YUHZ) 1st EP [B] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "유어즈 (YUHZ) 1st EP [B] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "1st EP [B]",
+      "albumEn": "1st EP [B]",
+      "artist": "유어즈",
+      "artistEn": "YUHZ",
+      "releaseDate": "2026-10-21",
+      "from": "2026.11.04",
+      "to": "2026.11.05",
+      "startAt": "2026-11-04T14:00:00+09:00",
+      "endAt": "2026-11-05T23:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.11.06",
+      "productId": 11190,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_3_Banner_Sub.jpg_2026-11-02_121504682068.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/11190_YUHZ_3_Banner_Sub.jpg_2026-11-02_121504682068_thumb.jpeg"
       }
     },
     {
