@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-03T22:14:15.708Z",
-  "lastDeep": "2026-11-03T22:14:15.708Z",
+  "checkedAt": "2026-11-04T02:22:54.867Z",
+  "lastDeep": "2026-11-04T02:22:54.867Z",
   "events": [
     {
       "id": 21789,
@@ -660,6 +660,11 @@
       "album": "BLOW UP"
     },
     {
+      "key": "LNGSHOT｜S.W.I.S.H.",
+      "artist": "LNGSHOT",
+      "album": "S.W.I.S.H."
+    },
+    {
       "key": "Dragon Pony｜Calling back",
       "artist": "Dragon Pony",
       "album": "Calling back"
@@ -668,11 +673,6 @@
       "key": "KYUHYUN｜CONTINUE",
       "artist": "KYUHYUN",
       "album": "CONTINUE"
-    },
-    {
-      "key": "LNGSHOT｜S.W.I.S.H.",
-      "artist": "LNGSHOT",
-      "album": "S.W.I.S.H."
     },
     {
       "key": "ADAP｜ALL DREAMS ARE POSSIBLE",
