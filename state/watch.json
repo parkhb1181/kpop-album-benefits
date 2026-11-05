@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-04T22:53:28.678Z",
-  "lastDeep": "2026-11-04T22:53:28.678Z",
+  "checkedAt": "2026-11-05T03:08:04.630Z",
+  "lastDeep": "2026-11-05T03:08:04.630Z",
   "events": [
     {
       "id": 21876,
@@ -78,32 +78,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21789,
-      "url": "https://makestar.co/event/21789",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) MEET&CALL EVENT",
-      "titleEn": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) MEET&CALL EVENT",
-      "album": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
-      "albumEn": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
-      "artist": "싸이커스",
-      "artistEn": "xikers",
-      "releaseDate": "2026-11-02",
-      "from": "2026.11.03",
-      "to": "2026.11.05",
-      "startAt": "2026-11-03T15:00:00+09:00",
-      "endAt": "2026-11-05T11:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.06",
-      "productId": 11105,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_3_Banner_Sub.jpg_2026-11-02_170425726229.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_3_Banner_Sub.jpg_2026-11-02_170425726229_thumb.jpeg"
       }
     },
     {
