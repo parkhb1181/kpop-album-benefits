@@ -800,3 +800,6 @@
 {"at":"2026-11-04T17:32:17.092Z","type":"album.gone","artist":"Dragon Pony","album":"Calling back"}
 {"at":"2026-11-04T17:32:17.092Z","type":"album.gone","artist":"ADAP","album":"ALL DREAMS ARE POSSIBLE"}
 {"at":"2026-11-05T03:08:04.630Z","type":"event.gone","label":"영상통화 팬사인회","artist":"싸이커스","album":"8TH MINI ALBUM [ROUTE ZERO : The CALLING]","id":21789}
+{"at":"2026-11-05T10:54:11.095Z","type":"event.new","label":"FANSIGN&GAME EVENT","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":21898,"url":"https://makestar.co/event/21898","endAt":"2026-11-08T23:59:59.999999+09:00"}
+{"at":"2026-11-05T10:54:11.095Z","type":"event.new","label":"영상통화 팬사인회","artist":"트렌드지","album":"6th Single Album [On My Knees] ","id":21782,"url":"https://makestar.co/event/21782","endAt":"2026-11-07T23:59:59.999999+09:00"}
+{"at":"2026-11-05T10:54:11.095Z","type":"album.new","artist":"ILLIT","album":"5th Mini Album ‘BREAK EVEN’"}

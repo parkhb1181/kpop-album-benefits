@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-11-05T03:08:04.630Z",
-  "lastDeep": "2026-11-05T03:08:04.630Z",
+  "checkedAt": "2026-11-05T10:54:11.095Z",
+  "lastDeep": "2026-11-05T10:54:11.095Z",
   "events": [
+    {
+      "id": 21898,
+      "url": "https://makestar.co/event/21898",
+      "type": "FANSIGN&GAME EVENT",
+      "label": "FANSIGN&GAME EVENT",
+      "fansign": false,
+      "title": "NEXZ(넥스지) The 4th Mini Album <SAUCIN'> SPECIAL FAN EVENT IN TAIPEI : NEXZ School Festa",
+      "titleEn": "NEXZ(넥스지) The 4th Mini Album <SAUCIN'> SPECIAL FAN EVENT IN TAIPEI : NEXZ School Festa",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.11.05",
+      "to": "2026.11.08",
+      "startAt": "2026-11-05T18:00:00+09:00",
+      "endAt": "2026-11-08T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_18_banner_Sub.png_2026-11-04_161207163350.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_18_banner_Sub.png_2026-11-04_161207163350_thumb.jpeg"
+      }
+    },
     {
       "id": 21876,
       "url": "https://makestar.co/event/21876",
@@ -78,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21782,
+      "url": "https://makestar.co/event/21782",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "TRENDZ 6th Single Album [On My Knees] (POCAALBUM) SPECIAL MEET&CALL EVENT",
+      "titleEn": "TRENDZ 6th Single Album [On My Knees] (POCAALBUM) SPECIAL MEET&CALL EVENT",
+      "album": "6th Single Album [On My Knees] ",
+      "albumEn": "6th Single Album [On My Knees]  ",
+      "artist": "트렌드지",
+      "artistEn": "TRENDZ",
+      "releaseDate": "2026-07-09",
+      "from": "2026.11.05",
+      "to": "2026.11.07",
+      "startAt": "2026-11-05T15:00:00+09:00",
+      "endAt": "2026-11-07T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 10832,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_7_Banner_Sub.jpg_2026-11-04_154452505428.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_7_Banner_Sub.jpg_2026-11-04_154452505428_thumb.jpeg"
       }
     },
     {
@@ -631,6 +683,11 @@
       "key": "ENHYPEN｜THE SIN : PARALLEL WORLD",
       "artist": "ENHYPEN",
       "album": "THE SIN : PARALLEL WORLD"
+    },
+    {
+      "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
+      "artist": "ILLIT",
+      "album": "5th Mini Album ‘BREAK EVEN’"
     },
     {
       "key": "JENNIE｜Fallen Angel",
