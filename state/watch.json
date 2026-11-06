@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-11-05T23:48:51.868Z",
-  "lastDeep": "2026-11-05T23:48:51.868Z",
+  "checkedAt": "2026-11-06T05:05:11.212Z",
+  "lastDeep": "2026-11-06T05:05:11.212Z",
   "events": [
+    {
+      "id": 21966,
+      "url": "https://makestar.co/event/21966",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "Mark Lee Studio Album [WINDMILL] 발매기념 예약 판매 특전 증정 이벤트",
+      "titleEn": "Mark Lee Studio Album [WINDMILL] RELEASE COMMEMORATIVE PRE-ORDER SPECIAL BENEFIT GIVEAWAY EVENT",
+      "album": "Studio Album [WINDMILL]",
+      "albumEn": "Studio Album [WINDMILL]",
+      "artist": "마크",
+      "artistEn": "Mark Lee",
+      "releaseDate": "2026-12-04",
+      "from": "2026.11.06",
+      "to": "2026.12.03",
+      "startAt": "2026-11-06T11:00:00+09:00",
+      "endAt": "2026-12-03T23:59:59.999999+09:00",
+      "dday": 28,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11293,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11293_MARK_LEE_1_banner_sub.png_2026-11-05_165510215538.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11293_MARK_LEE_1_banner_sub.png_2026-11-05_165510215538_thumb.jpeg"
+      }
+    },
     {
       "id": 21898,
       "url": "https://makestar.co/event/21898",
@@ -130,6 +156,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_7_Banner_Sub.jpg_2026-11-04_154452505428.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10832_TRENDZ_7_Banner_Sub.jpg_2026-11-04_154452505428_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21748,
+      "url": "https://makestar.co/event/21748",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NMIXX 6th EP [Strange Muse] MEET&CALL EVENT",
+      "titleEn": "NMIXX 6th EP [Strange Muse] MEET&CALL EVENT",
+      "album": "미니 6집 [Strange Muse]",
+      "albumEn": "6th Mini Album [Strange Muse]",
+      "artist": "엔믹스",
+      "artistEn": "NMIXX",
+      "releaseDate": "2026-10-19",
+      "from": "2026.11.06",
+      "to": "2026.11.08",
+      "startAt": "2026-11-06T12:00:00+09:00",
+      "endAt": "2026-11-08T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.09",
+      "productId": 11113,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_10_banner_sub.png_2026-11-02_103218624639.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11113_NMIXX_10_banner_sub.png_2026-11-02_103218624639_thumb.jpeg"
       }
     },
     {
@@ -602,6 +654,11 @@
     }
   ],
   "albums": [
+    {
+      "key": "AMPERS&ONE｜PATHFINDER",
+      "artist": "AMPERS&ONE",
+      "album": "PATHFINDER"
+    },
     {
       "key": "LNGSHOT｜S.W.I.S.H.",
       "artist": "LNGSHOT",
