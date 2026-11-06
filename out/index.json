@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 6. 03:30:44",
+  "stamp": "2026. 11. 6. 14:05:37",
   "albums": [
     {
       "artistId": 275,
@@ -12,7 +12,7 @@
       "artist": "LNGSHOT",
       "slug": "lngshot-s-w-i-s-h",
       "versions": 5,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 4,
       "soldCount": 1,
       "eventCount": 1,
@@ -20,13 +20,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "3일 20시간"
+        "rough": "3일 9시간"
       },
-      "rowCount": 19,
+      "rowCount": 24,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/933e5e9b6d8d30ef7675c8150b7ab500.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg"
+    },
+    {
+      "artistId": 160,
+      "artistEn": "AMPERS&ONE",
+      "album": "PATHFINDER",
+      "skuCount": 6,
+      "benefit": true,
+      "deliveryDate": "2026-11-17",
+      "weversePriceMin": 14100,
+      "artist": "AMPERS&ONE",
+      "slug": "ampers-one-pathfinder",
+      "versions": 6,
+      "retailers": 5,
+      "benefitCount": 3,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-11-17T18:00:00+09:00",
+        "rough": "11일 3시간"
+      },
+      "rowCount": 25,
+      "artistKo": "앰퍼샌드원",
+      "artistDisplay": "앰퍼샌드원(AMPERS&ONE)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/85462a11251f7ebb70e46ded7f18117f.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/M9bbzG.jpeg"
     },
     {
       "artistId": 10,
@@ -47,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "16일 20시간"
+        "rough": "16일 9시간"
       },
       "rowCount": 41,
       "artistKo": "엔하이픈",
@@ -67,16 +94,16 @@
       "slug": "p1harmony-blow-up",
       "versions": 9,
       "retailers": 7,
-      "benefitCount": 2,
+      "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-11T18:01:00+09:00",
-        "rough": "5일 14시간"
+        "rough": "5일 3시간"
       },
-      "rowCount": 36,
+      "rowCount": 45,
       "artistKo": "피원하모니",
       "artistDisplay": "피원하모니(P1Harmony )",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/267e36ec9955643da6fe9897ec85f809.png",
@@ -101,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-10T23:59:59.999999+09:00",
-        "rough": "4일 20시간"
+        "rough": "4일 9시간"
       },
       "rowCount": 28,
       "artistKo": "규현",
@@ -128,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "24일 9시간"
+        "rough": "23일 22시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -155,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-29T18:00:00+09:00",
-        "rough": "84일 14시간"
+        "rough": "84일 3시간"
       },
       "rowCount": 26,
       "artistKo": "제니",
@@ -182,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "53일 20시간"
+        "rough": "53일 9시간"
       },
       "rowCount": 17,
       "artistKo": "아일릿",
@@ -209,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "14일 13시간"
+        "rough": "14일 2시간"
       },
       "rowCount": 10,
       "artistKo": null,
