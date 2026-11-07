@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-07T05:06:08.546Z",
-  "lastDeep": "2026-11-07T05:06:08.546Z",
+  "checkedAt": "2026-11-07T11:43:15.135Z",
+  "lastDeep": "2026-11-07T11:43:15.135Z",
   "events": [
     {
       "id": 21966,
@@ -104,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_18_banner_Sub.png_2026-11-04_161207163350.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_18_banner_Sub.png_2026-11-04_161207163350_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21818,
+      "url": "https://makestar.co/event/21818",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "규현 (KYUHYUN) EP [CONTINUE] 국내 마지막 대면 팬사인회 이벤트",
+      "titleEn": "KYUHYUN EP [CONTINUE] Final Face-to-face Fansign Event in KOREA",
+      "album": "EP [CONTINUE]",
+      "albumEn": "EP [CONTINUE]",
+      "artist": "규현",
+      "artistEn": "KYUHYUN",
+      "releaseDate": "2026-11-11",
+      "from": "2026.11.07",
+      "to": "2026.11.10",
+      "startAt": "2026-11-07T15:00:00+09:00",
+      "endAt": "2026-11-10T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.11",
+      "productId": 11263,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_3_banner_sub.png_2026-11-04_141114934765.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11263_KYUHYUN_3_banner_sub.png_2026-11-04_141114934765_thumb.jpeg"
       }
     },
     {
