@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-08T06:00:09.883Z",
-  "lastDeep": "2026-11-08T06:00:09.883Z",
+  "checkedAt": "2026-11-08T13:12:52.573Z",
+  "lastDeep": "2026-11-08T13:12:52.573Z",
   "events": [
     {
       "id": 21966,
@@ -52,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_11_banner_sub.jpg_2026-11-05_103607560083.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_11_banner_sub.jpg_2026-11-05_103607560083_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21910,
+      "url": "https://makestar.co/event/21910",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "ODD YOUTH 3rd Single [can't go back] (POCAALBUM SLEEVE Ver.) 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "ODD YOUTH 3rd Single [can't go back] (POCAALBUM SLEEVE Ver.) 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "3rd Single [can't go back]",
+      "albumEn": "3rd Single [can't go back]",
+      "artist": "오드유스",
+      "artistEn": "ODD YOUTH",
+      "releaseDate": "2026-08-24",
+      "from": "2026.11.08",
+      "to": "2026.11.10",
+      "startAt": "2026-11-08T16:00:00+09:00",
+      "endAt": "2026-11-10T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.11",
+      "productId": 10992,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_8_Banner_Sub.jpg_2026-11-05_102616415031.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10992_ODD_YOUTH_8_Banner_Sub.jpg_2026-11-05_102616415031_thumb.jpeg"
       }
     },
     {
