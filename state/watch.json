@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-08T22:20:04.618Z",
-  "lastDeep": "2026-11-08T22:20:04.618Z",
+  "checkedAt": "2026-11-09T01:49:21.791Z",
+  "lastDeep": "2026-11-09T01:49:21.791Z",
   "events": [
     {
       "id": 21966,
@@ -555,6 +555,11 @@
       "album": "THE SIN : PARALLEL WORLD (Weverse Exclusive)"
     },
     {
+      "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM'",
+      "artist": "NCT DREAM",
+      "album": "The 6th Album 'DREAM AFTER DREAM'"
+    },
+    {
       "key": "ENHYPEN｜I Want You' Single CD",
       "artist": "ENHYPEN",
       "album": "I Want You' Single CD"
@@ -568,6 +573,11 @@
       "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
       "artist": "ILLIT",
       "album": "5th Mini Album ‘BREAK EVEN’"
+    },
+    {
+      "key": "NCT DREAM｜The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
+      "artist": "NCT DREAM",
+      "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"
     },
     {
       "key": "JENNIE｜Fallen Angel",
