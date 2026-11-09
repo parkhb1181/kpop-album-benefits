@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 9. 16:36:39",
+  "stamp": "2026. 11. 9. 18:05:45",
   "albums": [
     {
       "artistId": 275,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "7시간 21분"
+        "rough": "5시간 52분"
       },
       "rowCount": 23,
       "artistKo": null,
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "8일 1시간"
+        "rough": "7일 23시간"
       },
       "rowCount": 36,
       "artistKo": "앰퍼샌드원",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "13일 7시간"
+        "rough": "13일 5시간"
       },
       "rowCount": 47,
       "artistKo": "엔하이픈",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-10T18:01:00+09:00",
-        "rough": "1일 1시간"
+        "rough": "23시간 53분"
       },
       "rowCount": 50,
       "artistKo": "피원하모니",
@@ -110,31 +110,31 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/lmTp8A.jpg"
     },
     {
-      "artistId": 164,
-      "artistEn": "KYUHYUN",
-      "album": "CONTINUE",
-      "skuCount": 4,
+      "artistId": 314,
+      "artistEn": "Mark Lee",
+      "album": "WINDMILL",
+      "skuCount": 6,
       "benefit": true,
-      "deliveryDate": "2026-11-11",
-      "weversePriceMin": 18500,
-      "artist": "KYUHYUN",
-      "slug": "kyuhyun-continue",
-      "versions": 7,
+      "deliveryDate": "2026-12-04",
+      "weversePriceMin": 13300,
+      "artist": "Mark Lee",
+      "slug": "mark-lee-windmill",
+      "versions": 8,
       "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
-      "eventCount": 3,
-      "fansignCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
       "nextDeadline": {
-        "label": "FANSIGN&PHOTO EVENT 응모 마감",
-        "at": "2026-11-09T23:59:59.999999+09:00",
-        "rough": "7시간 21분"
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-12-03T23:59:59.999999+09:00",
+        "rough": "24일 5시간"
       },
-      "rowCount": 29,
-      "artistKo": "규현",
-      "artistDisplay": "규현(KYUHYUN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6df41fac1ce9d88c5a5c6b5f5e9cacaf.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/p8Xk5a.jpg"
+      "rowCount": 44,
+      "artistKo": null,
+      "artistDisplay": "Mark Lee",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/22dad2b45b60af0c136fa15814fa1967.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/xtm5Qp.png"
     },
     {
       "artistId": 215,
@@ -155,40 +155,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "20일 20시간"
+        "rough": "20일 18시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
-    },
-    {
-      "artistId": 314,
-      "artistEn": "Mark Lee",
-      "album": "WINDMILL",
-      "skuCount": 6,
-      "benefit": false,
-      "deliveryDate": "2026-12-04",
-      "weversePriceMin": 13300,
-      "artist": "Mark Lee",
-      "slug": "mark-lee-windmill",
-      "versions": 8,
-      "retailers": 7,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "24일 7시간"
-      },
-      "rowCount": 43,
-      "artistKo": null,
-      "artistDisplay": "Mark Lee",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/xtm5Qp.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/xtm5Qp.png"
     },
     {
       "artistId": 209,
@@ -209,40 +182,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-29T18:00:00+09:00",
-        "rough": "81일 1시간"
+        "rough": "80일 23시간"
       },
       "rowCount": 26,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg"
-    },
-    {
-      "artistId": 131,
-      "artistEn": "NCT DREAM",
-      "album": "The 6th Album 'DREAM AFTER DREAM'",
-      "skuCount": 3,
-      "benefit": false,
-      "deliveryDate": "2026-11-09",
-      "weversePriceMin": 14700,
-      "artist": "NCT DREAM",
-      "slug": "nct-dream-the-6th-album-dream-after-dream",
-      "versions": 16,
-      "retailers": 4,
-      "benefitCount": 0,
-      "soldCount": 0,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-09T18:00:00+09:00",
-        "rough": "1시간 19분"
-      },
-      "rowCount": 36,
-      "artistKo": "엔시티 드림",
-      "artistDisplay": "엔시티 드림(NCT DREAM)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg"
     },
     {
       "artistId": 120,
@@ -263,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "50일 7시간"
+        "rough": "50일 5시간"
       },
       "rowCount": 20,
       "artistKo": "아일릿",
@@ -290,36 +236,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "21일 1시간"
+        "rough": "20일 23시간"
       },
       "rowCount": 8,
       "artistKo": "씨야(See Ya)",
       "artistDisplay": "씨야(See Ya)",
       "ogImage": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg",
       "cover": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg"
-    },
-    {
-      "artistId": 131,
-      "artistEn": "NCT DREAM",
-      "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-11-09",
-      "weversePriceMin": 14700,
-      "artist": "NCT DREAM",
-      "slug": "nct-dream-the-6th-album-dream-after-dream-smart-album",
-      "versions": 16,
-      "retailers": 3,
-      "benefitCount": 0,
-      "soldCount": 0,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 32,
-      "artistKo": "엔시티 드림",
-      "artistDisplay": "엔시티 드림(NCT DREAM)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg"
     },
     {
       "artistId": 10,
@@ -340,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "11일 0시간"
+        "rough": "10일 22시간"
       },
       "rowCount": 9,
       "artistKo": null,
@@ -1290,6 +1213,33 @@
       "ogCard": "https://kpop-album.vercel.app/og/tuide-tune-play.png"
     },
     {
+      "artistId": 164,
+      "artistEn": "KYUHYUN",
+      "album": "CONTINUE",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-11-11",
+      "weversePriceMin": 18500,
+      "artist": "KYUHYUN",
+      "slug": "kyuhyun-continue",
+      "versions": 7,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 3,
+      "fansignCount": 1,
+      "nextDeadline": null,
+      "rowCount": 29,
+      "artistKo": "규현",
+      "artistDisplay": "규현(KYUHYUN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6df41fac1ce9d88c5a5c6b5f5e9cacaf.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/p8Xk5a.jpg",
+      "expired": {
+        "lastSeen": "2026-11-09"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/kyuhyun-continue.png"
+    },
+    {
       "artistId": 135,
       "artistEn": "WayV",
       "album": "Hey, Somebody",
@@ -1965,6 +1915,33 @@
       "ogCard": "https://kpop-album.vercel.app/og/lisa-press-play-cd.png"
     },
     {
+      "artistId": 131,
+      "artistEn": "NCT DREAM",
+      "album": "The 6th Album 'DREAM AFTER DREAM'",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-11-09",
+      "weversePriceMin": 14700,
+      "artist": "NCT DREAM",
+      "slug": "nct-dream-the-6th-album-dream-after-dream",
+      "versions": 16,
+      "retailers": 4,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 36,
+      "artistKo": "엔시티 드림",
+      "artistDisplay": "엔시티 드림(NCT DREAM)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg",
+      "expired": {
+        "lastSeen": "2026-11-09"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/nct-dream-the-6th-album-dream-after-dream.png"
+    },
+    {
       "artistId": 50,
       "artistEn": "LE SSERAFIM",
       "album": "2nd Single Album 'Made My Night' Vinyl",
@@ -2152,6 +2129,33 @@
         "lastSeen": "2026-10-27"
       },
       "ogCard": "https://kpop-album.vercel.app/og/justb-pop.png"
+    },
+    {
+      "artistId": 131,
+      "artistEn": "NCT DREAM",
+      "album": "The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-11-09",
+      "weversePriceMin": 14700,
+      "artist": "NCT DREAM",
+      "slug": "nct-dream-the-6th-album-dream-after-dream-smart-album",
+      "versions": 16,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 32,
+      "artistKo": "엔시티 드림",
+      "artistDisplay": "엔시티 드림(NCT DREAM)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/02/B2y8aL.jpg",
+      "expired": {
+        "lastSeen": "2026-11-09"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/nct-dream-the-6th-album-dream-after-dream-smart-album.png"
     },
     {
       "artistId": 120,
