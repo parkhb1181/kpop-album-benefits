@@ -841,3 +841,7 @@
 {"at":"2026-11-09T19:48:02.142Z","type":"event.gone","label":"예약 특전 포토카드","artist":"롱샷","album":"EP [S.W.I.S.H.]","id":20989}
 {"at":"2026-11-10T02:31:56.110Z","type":"event.new","label":"럭키드로우","artist":"채령","album":"미니 1집 [Lovesick]","id":21577,"url":"https://makestar.co/event/21577","endAt":"2026-11-16T23:59:59.999999+09:00"}
 {"at":"2026-11-10T02:31:56.110Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
+{"at":"2026-11-10T10:26:30.119Z","type":"event.new","label":"영상통화 팬사인회","artist":"튜넥스","album":"미니 2집 [BLUE MODE]","id":21911,"url":"https://makestar.co/event/21911","endAt":"2026-11-12T23:59:59.999999+09:00"}
+{"at":"2026-11-10T10:26:30.119Z","type":"album.new","artist":"KYUHYUN","album":"CONTINUE"}
+{"at":"2026-11-10T10:26:30.119Z","type":"album.new","artist":"EXO","album":"Waking Up The City"}
+{"at":"2026-11-10T10:26:30.119Z","type":"album.gone","artist":"LNGSHOT","album":"S.W.I.S.H."}
