@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 10. 11:32:24",
+  "stamp": "2026. 11. 10. 16:59:20",
   "albums": [
     {
       "artistId": 160,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "7일 6시간"
+        "rough": "7일 0시간"
       },
       "rowCount": 36,
       "artistKo": "앰퍼샌드원",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "12일 12시간"
+        "rough": "12일 6시간"
       },
       "rowCount": 47,
       "artistKo": "엔하이픈",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-10T18:01:00+09:00",
-        "rough": "6시간 27분"
+        "rough": "59분"
       },
       "rowCount": 50,
       "artistKo": "피원하모니",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-10T18:01:00+09:00",
-        "rough": "6시간 26분"
+        "rough": "58분"
       },
       "rowCount": 23,
       "artistKo": null,
@@ -128,13 +128,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "23일 12시간"
+        "rough": "23일 6시간"
       },
       "rowCount": 44,
       "artistKo": null,
       "artistDisplay": "Mark Lee",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/22dad2b45b60af0c136fa15814fa1967.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/xtm5Qp.png"
+    },
+    {
+      "artistId": 164,
+      "artistEn": "KYUHYUN",
+      "album": "CONTINUE",
+      "skuCount": 2,
+      "benefit": true,
+      "deliveryDate": "2026-11-11",
+      "weversePriceMin": 18500,
+      "artist": "KYUHYUN",
+      "slug": "kyuhyun-continue",
+      "versions": 7,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 2,
+      "fansignCount": 1,
+      "nextDeadline": {
+        "label": "대면 팬사인회 응모 마감",
+        "at": "2026-11-10T23:59:59.999999+09:00",
+        "rough": "6시간 58분"
+      },
+      "rowCount": 28,
+      "artistKo": "규현",
+      "artistDisplay": "규현(KYUHYUN)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6df41fac1ce9d88c5a5c6b5f5e9cacaf.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/p8Xk5a.jpg"
     },
     {
       "artistId": 215,
@@ -155,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "20일 1시간"
+        "rough": "19일 19시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -176,19 +203,46 @@
       "versions": 12,
       "retailers": 7,
       "benefitCount": 0,
-      "soldCount": 10,
+      "soldCount": 11,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-25T13:00:00+09:00",
-        "rough": "15일 1시간"
+        "rough": "14일 19시간"
       },
-      "rowCount": 47,
+      "rowCount": 48,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/h0vbkX.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/h0vbkX.png"
+    },
+    {
+      "artistId": 124,
+      "artistEn": "EXO",
+      "album": "Waking Up The City",
+      "skuCount": 5,
+      "benefit": false,
+      "deliveryDate": "2026-12-01",
+      "weversePriceMin": 13900,
+      "artist": "EXO",
+      "slug": "exo-waking-up-the-city",
+      "versions": 7,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-12-01T18:00:00+09:00",
+        "rough": "21일 0시간"
+      },
+      "rowCount": 33,
+      "artistKo": "엑소-카이세훈(EXO-KASE)",
+      "artistDisplay": "엑소-카이세훈(EXO-KASE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg"
     },
     {
       "artistId": 209,
@@ -209,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-29T18:00:00+09:00",
-        "rough": "80일 6시간"
+        "rough": "80일 0시간"
       },
       "rowCount": 26,
       "artistKo": "제니",
@@ -236,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "49일 12시간"
+        "rough": "49일 6시간"
       },
       "rowCount": 20,
       "artistKo": "아일릿",
@@ -263,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "20일 6시간"
+        "rough": "20일 0시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -290,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "10일 5시간"
+        "rough": "9일 23시간"
       },
       "rowCount": 9,
       "artistKo": null,
@@ -1238,33 +1292,6 @@
         "lastSeen": "2026-09-27"
       },
       "ogCard": "https://kpop-album.vercel.app/og/tuide-tune-play.png"
-    },
-    {
-      "artistId": 164,
-      "artistEn": "KYUHYUN",
-      "album": "CONTINUE",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-11-11",
-      "weversePriceMin": 18500,
-      "artist": "KYUHYUN",
-      "slug": "kyuhyun-continue",
-      "versions": 7,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 3,
-      "fansignCount": 1,
-      "nextDeadline": null,
-      "rowCount": 29,
-      "artistKo": "규현",
-      "artistDisplay": "규현(KYUHYUN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6df41fac1ce9d88c5a5c6b5f5e9cacaf.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/p8Xk5a.jpg",
-      "expired": {
-        "lastSeen": "2026-11-09"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/kyuhyun-continue.png"
     },
     {
       "artistId": 135,

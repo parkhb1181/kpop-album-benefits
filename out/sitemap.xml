@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/kyuhyun-continue</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
@@ -44,6 +50,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/exo-waking-up-the-city</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -279,12 +291,6 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/tuide-tune-play</loc>
     <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/kyuhyun-continue</loc>
-    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -583,6 +589,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/kyuhyun-continue</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
@@ -590,6 +602,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/exo-waking-up-the-city</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -825,12 +843,6 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/tuide-tune-play</loc>
     <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/kyuhyun-continue</loc>
-    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>

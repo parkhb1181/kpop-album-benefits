@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kpop-album-benefits//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:엑소-카이세훈(EXO-KASE) Waking Up The City 마감
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:exo-waking-up-the-city-release@kpop-album-benefits
+DTSTAMP:20261110T080209Z
+DTSTART:20261201T090000Z
+DTEND:20261201T093000Z
+SUMMARY:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 배송 
+ 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/exo-waking-up-the-city.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 배
+ 송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 배
+ 송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
