@@ -839,3 +839,5 @@
 {"at":"2026-11-09T09:05:17.415Z","type":"album.gone","artist":"NCT DREAM","album":"The 6th Album 'DREAM AFTER DREAM' (SMART ALBUM)"}
 {"at":"2026-11-09T19:48:02.142Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"규현","album":"EP [CONTINUE]","id":21904}
 {"at":"2026-11-09T19:48:02.142Z","type":"event.gone","label":"예약 특전 포토카드","artist":"롱샷","album":"EP [S.W.I.S.H.]","id":20989}
+{"at":"2026-11-10T02:31:56.110Z","type":"event.new","label":"럭키드로우","artist":"채령","album":"미니 1집 [Lovesick]","id":21577,"url":"https://makestar.co/event/21577","endAt":"2026-11-16T23:59:59.999999+09:00"}
+{"at":"2026-11-10T02:31:56.110Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
