@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 11. 16:28:33",
+  "stamp": "2026. 11. 11. 19:19:35",
   "albums": [
     {
       "artistId": 160,
@@ -12,7 +12,7 @@
       "artist": "AMPERS&ONE",
       "slug": "ampers-one-pathfinder",
       "versions": 6,
-      "retailers": 5,
+      "retailers": 6,
       "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 0,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "6일 1시간"
+        "rough": "5일 22시간"
       },
-      "rowCount": 30,
+      "rowCount": 36,
       "artistKo": "앰퍼샌드원",
       "artistDisplay": "앰퍼샌드원(AMPERS&ONE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/85462a11251f7ebb70e46ded7f18117f.png",
@@ -39,7 +39,7 @@
       "artist": "ENHYPEN",
       "slug": "enhypen-the-sin-parallel-world",
       "versions": 11,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "11일 7시간"
+        "rough": "11일 4시간"
       },
-      "rowCount": 40,
+      "rowCount": 47,
       "artistKo": "엔하이픈",
       "artistDisplay": "엔하이픈(ENHYPEN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/09/9iX2jg.jpg",
@@ -66,17 +66,13 @@
       "artist": "P1Harmony ",
       "slug": "p1harmony-blow-up",
       "versions": 9,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-11T18:01:00+09:00",
-        "rough": "1시간 30분"
-      },
-      "rowCount": 42,
+      "nextDeadline": null,
+      "rowCount": 49,
       "artistKo": "피원하모니",
       "artistDisplay": "피원하모니(P1Harmony )",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f681710da5af0f33fc22f9fbe3286296.png",
@@ -93,7 +89,7 @@
       "artist": "Mark Lee",
       "slug": "mark-lee-windmill",
       "versions": 8,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -101,13 +97,40 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "22일 7시간"
+        "rough": "22일 4시간"
       },
-      "rowCount": 39,
+      "rowCount": 44,
       "artistKo": null,
       "artistDisplay": "Mark Lee",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/22dad2b45b60af0c136fa15814fa1967.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/xtm5Qp.png"
+    },
+    {
+      "artistId": 124,
+      "artistEn": "EXO",
+      "album": "Waking Up The City",
+      "skuCount": 5,
+      "benefit": false,
+      "deliveryDate": "2026-12-01",
+      "weversePriceMin": 13900,
+      "artist": "EXO",
+      "slug": "exo-waking-up-the-city",
+      "versions": 7,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 1,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-12-01T17:59:59.999999+09:00",
+        "rough": "19일 22시간"
+      },
+      "rowCount": 33,
+      "artistKo": "엑소-카이세훈(EXO-KASE)",
+      "artistDisplay": "엑소-카이세훈(EXO-KASE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg"
     },
     {
       "artistId": 215,
@@ -120,7 +143,7 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -128,9 +151,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "18일 20시간"
+        "rough": "18일 17시간"
       },
-      "rowCount": 18,
+      "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
@@ -147,48 +170,21 @@
       "artist": "JENNIE",
       "slug": "jennie-fallen-angel",
       "versions": 7,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 0,
-      "soldCount": 1,
+      "soldCount": 9,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-29T18:00:00+09:00",
-        "rough": "79일 1시간"
+        "rough": "78일 22시간"
       },
-      "rowCount": 23,
+      "rowCount": 41,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg"
-    },
-    {
-      "artistId": 124,
-      "artistEn": "EXO",
-      "album": "Waking Up The City",
-      "skuCount": 5,
-      "benefit": false,
-      "deliveryDate": "2026-12-01",
-      "weversePriceMin": 13900,
-      "artist": "EXO",
-      "slug": "exo-waking-up-the-city",
-      "versions": 5,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-12-01T18:00:00+09:00",
-        "rough": "20일 1시간"
-      },
-      "rowCount": 28,
-      "artistKo": "엑소-카이세훈(EXO-KASE)",
-      "artistDisplay": "엑소-카이세훈(EXO-KASE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg"
     },
     {
       "artistId": 120,
@@ -209,7 +205,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "48일 7시간"
+        "rough": "48일 4시간"
       },
       "rowCount": 19,
       "artistKo": "아일릿",
@@ -236,7 +232,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "19일 1시간"
+        "rough": "18일 22시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -263,7 +259,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "9일 0시간"
+        "rough": "8일 21시간"
       },
       "rowCount": 9,
       "artistKo": null,

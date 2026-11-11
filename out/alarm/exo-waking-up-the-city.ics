@@ -8,8 +8,31 @@ X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
+UID:exo-waking-up-the-city-evt22112@kpop-album-benefits
+DTSTAMP:20261111T102158Z
+DTSTART:20261201T085959Z
+DTEND:20261201T092959Z
+SUMMARY:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 특전 
+ 포토카드 응모 마감
+DESCRIPTION:EXO-KASE 미니 1집 ‘Waking Up The City’ 발매기념 특
+ 전 증정 이벤트\nhttps://makestar.co/event/22112
+URL:https://makestar.co/event/22112
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 특
+ 전 포토카드 응모 마감 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 특
+ 전 포토카드 응모 마감 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:exo-waking-up-the-city-release@kpop-album-benefits
-DTSTAMP:20261111T073124Z
+DTSTAMP:20261111T102158Z
 DTSTART:20261201T090000Z
 DTEND:20261201T093000Z
 SUMMARY:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 배송 
