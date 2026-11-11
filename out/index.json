@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 11. 19:19:35",
+  "stamp": "2026. 11. 12. 02:41:07",
   "albums": [
     {
       "artistId": 160,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "5일 22시간"
+        "rough": "5일 15시간"
       },
-      "rowCount": 36,
+      "rowCount": 35,
       "artistKo": "앰퍼샌드원",
       "artistDisplay": "앰퍼샌드원(AMPERS&ONE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/85462a11251f7ebb70e46ded7f18117f.png",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "11일 4시간"
+        "rough": "10일 21시간"
       },
       "rowCount": 47,
       "artistKo": "엔하이픈",
@@ -97,7 +97,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "22일 4시간"
+        "rough": "21일 21시간"
       },
       "rowCount": 44,
       "artistKo": null,
@@ -124,7 +124,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "19일 22시간"
+        "rough": "19일 15시간"
       },
       "rowCount": 33,
       "artistKo": "엑소-카이세훈(EXO-KASE)",
@@ -151,7 +151,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "18일 17시간"
+        "rough": "18일 10시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -172,15 +172,15 @@
       "versions": 7,
       "retailers": 7,
       "benefitCount": 0,
-      "soldCount": 9,
+      "soldCount": 1,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-29T18:00:00+09:00",
-        "rough": "78일 22시간"
+        "rough": "78일 15시간"
       },
-      "rowCount": 41,
+      "rowCount": 27,
       "artistKo": "제니",
       "artistDisplay": "제니(JENNIE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
@@ -205,7 +205,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "48일 4시간"
+        "rough": "47일 21시간"
       },
       "rowCount": 19,
       "artistKo": "아일릿",
@@ -232,7 +232,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "18일 22시간"
+        "rough": "18일 15시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -259,7 +259,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "8일 21시간"
+        "rough": "8일 14시간"
       },
       "rowCount": 9,
       "artistKo": null,
