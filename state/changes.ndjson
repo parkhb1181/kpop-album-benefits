@@ -857,3 +857,7 @@
 {"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"ONLINE PHOTO&CALL","artist":"MEOVV","album":"Single Album [GO HARD]","id":21919,"url":"https://makestar.co/event/21919","endAt":"2026-11-11T23:59:59.999999+09:00"}
 {"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":21918,"url":"https://makestar.co/event/21918","endAt":"2026-11-13T23:59:59.999999+09:00"}
 {"at":"2026-11-11T10:19:09.505Z","type":"event.gone","label":"영상통화 팬사인회","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":21958}
+{"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"ONLINE PHOTO&CALL","artist":"MEOVV","album":"Single Album [GO HARD]","id":21919}
+{"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"나연","album":"SINGLE “NA-sty”","id":21905}
+{"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":21899}
+{"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"영상통화 팬사인회","artist":"효정 (오마이걸)","album":"1st Mini Album [Lost&Found]","id":21308}
