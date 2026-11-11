@@ -850,3 +850,10 @@
 {"at":"2026-11-10T18:05:29.499Z","type":"event.gone","label":"예약 특전 포토카드","artist":"규현","album":"EP [CONTINUE]","id":21705}
 {"at":"2026-11-10T18:05:29.499Z","type":"album.gone","artist":"KYUHYUN","album":"CONTINUE"}
 {"at":"2026-11-11T02:54:35.586Z","type":"album.gone","artist":"CORTIS","album":"GREENGREEN_playextended"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"예약 특전 포토카드","artist":"EXO-KASE","album":"미니 1집 [Waking Up The City]","id":22112,"url":"https://makestar.co/event/22112","endAt":"2026-12-01T17:59:59.999999+09:00"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"ERIC","album":"[Baby Pink Letter Exhibition]","id":22050,"url":"https://makestar.co/event/22050","endAt":"2026-11-16T00:59:59.999999+09:00"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"예약 특전 포토카드","artist":"온유","album":"2027 ONEW Season's Greetings [JJINGGU LAB]","id":21960,"url":"https://makestar.co/event/21960","endAt":"2026-11-18T23:59:59.999999+09:00"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":21936,"url":"https://makestar.co/event/21936","endAt":"2026-11-14T23:59:59.999999+09:00"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"ONLINE PHOTO&CALL","artist":"MEOVV","album":"Single Album [GO HARD]","id":21919,"url":"https://makestar.co/event/21919","endAt":"2026-11-11T23:59:59.999999+09:00"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.new","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":21918,"url":"https://makestar.co/event/21918","endAt":"2026-11-13T23:59:59.999999+09:00"}
+{"at":"2026-11-11T10:19:09.505Z","type":"event.gone","label":"영상통화 팬사인회","artist":"알파드라이브원","album":"미니 2집 [UNBREAKABLE : 少年BEAST]","id":21958}
