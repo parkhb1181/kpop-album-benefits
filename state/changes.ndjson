@@ -861,3 +861,8 @@
 {"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"나연","album":"SINGLE “NA-sty”","id":21905}
 {"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":21899}
 {"at":"2026-11-11T17:58:26.717Z","type":"event.gone","label":"영상통화 팬사인회","artist":"효정 (오마이걸)","album":"1st Mini Album [Lost&Found]","id":21308}
+{"at":"2026-11-12T07:31:09.310Z","type":"event.new","label":"예약 특전 포토카드","artist":"oftheblue","album":"[out of the blue]","id":22138,"url":"https://makestar.co/event/22138","endAt":"2026-11-25T23:59:59.999999+09:00"}
+{"at":"2026-11-12T07:31:09.310Z","type":"event.new","label":"기타 이벤트","artist":"oftheblue","album":"[out of the blue]","id":22034,"url":"https://makestar.co/event/22034","endAt":"2026-11-25T23:59:59.999999+09:00"}
+{"at":"2026-11-12T07:31:09.310Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":21940,"url":"https://makestar.co/event/21940","endAt":"2026-11-16T00:59:59.999999+09:00"}
+{"at":"2026-11-12T07:31:09.310Z","type":"event.gone","label":"영상통화 팬사인회","artist":"채령","album":"미니 1집 [Lovesick]","id":21900}
+{"at":"2026-11-12T07:31:09.310Z","type":"album.gone","artist":"JENNIE","album":"Fallen Angel"}
