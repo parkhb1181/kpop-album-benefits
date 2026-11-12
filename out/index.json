@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 12. 02:58:54",
+  "stamp": "2026. 11. 12. 16:31:39",
   "albums": [
     {
       "artistId": 160,
@@ -12,7 +12,7 @@
       "artist": "AMPERS&ONE",
       "slug": "ampers-one-pathfinder",
       "versions": 6,
-      "retailers": 5,
+      "retailers": 6,
       "benefitCount": 3,
       "soldCount": 1,
       "eventCount": 0,
@@ -20,12 +20,12 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "5일 14시간"
+        "rough": "5일 1시간"
       },
-      "rowCount": 29,
+      "rowCount": 35,
       "artistKo": "앰퍼샌드원",
       "artistDisplay": "앰퍼샌드원(AMPERS&ONE)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/85462a11251f7ebb70e46ded7f18117f.png",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/e69b849daad78bd6ea5b92da81104b9d.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/06/M9bbzG.jpeg"
     },
     {
@@ -39,7 +39,7 @@
       "artist": "ENHYPEN",
       "slug": "enhypen-the-sin-parallel-world",
       "versions": 11,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 2,
       "soldCount": 1,
       "eventCount": 1,
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "10일 20시간"
+        "rough": "10일 7시간"
       },
-      "rowCount": 40,
+      "rowCount": 47,
       "artistKo": "엔하이픈",
       "artistDisplay": "엔하이픈(ENHYPEN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/09/9iX2jg.jpg",
@@ -66,13 +66,13 @@
       "artist": "P1Harmony ",
       "slug": "p1harmony-blow-up",
       "versions": 9,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": null,
-      "rowCount": 42,
+      "rowCount": 48,
       "artistKo": "피원하모니",
       "artistDisplay": "피원하모니(P1Harmony )",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f681710da5af0f33fc22f9fbe3286296.png",
@@ -89,7 +89,7 @@
       "artist": "Mark Lee",
       "slug": "mark-lee-windmill",
       "versions": 8,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -97,9 +97,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "21일 20시간"
+        "rough": "21일 7시간"
       },
-      "rowCount": 39,
+      "rowCount": 44,
       "artistKo": null,
       "artistDisplay": "Mark Lee",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/22dad2b45b60af0c136fa15814fa1967.jpg",
@@ -115,8 +115,8 @@
       "weversePriceMin": 13900,
       "artist": "EXO",
       "slug": "exo-waking-up-the-city",
-      "versions": 5,
-      "retailers": 6,
+      "versions": 7,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 1,
@@ -124,9 +124,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "19일 14시간"
+        "rough": "19일 1시간"
       },
-      "rowCount": 28,
+      "rowCount": 33,
       "artistKo": "엑소-카이세훈(EXO-KASE)",
       "artistDisplay": "엑소-카이세훈(EXO-KASE)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg",
@@ -143,7 +143,7 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 6,
+      "retailers": 7,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -151,40 +151,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "18일 9시간"
+        "rough": "17일 20시간"
       },
-      "rowCount": 18,
+      "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
-    },
-    {
-      "artistId": 209,
-      "artistEn": "JENNIE",
-      "album": "Fallen Angel",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2027-01-29",
-      "weversePriceMin": 55600,
-      "artist": "JENNIE",
-      "slug": "jennie-fallen-angel",
-      "versions": 7,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2027-01-29T18:00:00+09:00",
-        "rough": "78일 14시간"
-      },
-      "rowCount": 23,
-      "artistKo": "제니",
-      "artistDisplay": "제니(JENNIE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg"
     },
     {
       "artistId": 120,
@@ -205,7 +178,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "47일 20시간"
+        "rough": "47일 7시간"
       },
       "rowCount": 19,
       "artistKo": "아일릿",
@@ -232,7 +205,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "18일 14시간"
+        "rough": "18일 1시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -259,13 +232,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "8일 14시간"
+        "rough": "8일 0시간"
       },
       "rowCount": 9,
       "artistKo": null,
       "artistDisplay": "ENHYPEN",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/12/5KziyL.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/12/5KziyL.jpg"
     },
     {
       "artistId": 10,
@@ -287,8 +260,8 @@
       "rowCount": 6,
       "artistKo": null,
       "artistDisplay": "ENHYPEN",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/33wWLE.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/12/5KziyL.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/12/5KziyL.jpg"
     },
     {
       "artistId": 25,
@@ -1882,6 +1855,33 @@
         "lastSeen": "2026-09-01"
       },
       "ogCard": "https://kpop-album.vercel.app/og/82major-heat.png"
+    },
+    {
+      "artistId": 209,
+      "artistEn": "JENNIE",
+      "album": "Fallen Angel",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2027-01-29",
+      "weversePriceMin": 55600,
+      "artist": "JENNIE",
+      "slug": "jennie-fallen-angel",
+      "versions": 7,
+      "retailers": 6,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 23,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
+      "expired": {
+        "lastSeen": "2026-11-12"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/jennie-fallen-angel.png"
     },
     {
       "artistId": 129,
