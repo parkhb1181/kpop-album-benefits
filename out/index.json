@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 12. 16:56:42",
+  "stamp": "2026. 11. 13. 01:16:25",
   "albums": [
     {
       "artistId": 160,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "5일 1시간"
+        "rough": "4일 16시간"
       },
       "rowCount": 35,
       "artistKo": "앰퍼샌드원",
@@ -47,36 +47,13 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "10일 7시간"
+        "rough": "9일 22시간"
       },
       "rowCount": 47,
       "artistKo": "엔하이픈",
       "artistDisplay": "엔하이픈(ENHYPEN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/09/9iX2jg.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/09/9iX2jg.jpg"
-    },
-    {
-      "artistId": 14,
-      "artistEn": "P1Harmony ",
-      "album": "BLOW UP",
-      "skuCount": 4,
-      "benefit": true,
-      "deliveryDate": "2026-11-10",
-      "weversePriceMin": 19300,
-      "artist": "P1Harmony ",
-      "slug": "p1harmony-blow-up",
-      "versions": 9,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 2,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 48,
-      "artistKo": "피원하모니",
-      "artistDisplay": "피원하모니(P1Harmony )",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f681710da5af0f33fc22f9fbe3286296.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/lmTp8A.jpg"
     },
     {
       "artistId": 314,
@@ -97,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "21일 7시간"
+        "rough": "20일 22시간"
       },
       "rowCount": 44,
       "artistKo": null,
@@ -124,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "19일 1시간"
+        "rough": "18일 16시간"
       },
       "rowCount": 33,
       "artistKo": "엑소-카이세훈(EXO-KASE)",
@@ -151,13 +128,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "17일 19시간"
+        "rough": "17일 11시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 209,
+      "artistEn": "JENNIE",
+      "album": "Fallen Angel",
+      "skuCount": 3,
+      "benefit": false,
+      "deliveryDate": "2026-11-13",
+      "weversePriceMin": 16300,
+      "artist": "JENNIE",
+      "slug": "jennie-fallen-angel",
+      "versions": 7,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-11-13T18:01:00+09:00",
+        "rough": "16시간 42분"
+      },
+      "rowCount": 29,
+      "artistKo": "제니",
+      "artistDisplay": "제니(JENNIE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg"
     },
     {
       "artistId": 120,
@@ -178,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "47일 6시간"
+        "rough": "46일 22시간"
       },
       "rowCount": 19,
       "artistKo": "아일릿",
@@ -205,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "18일 1시간"
+        "rough": "17일 16시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -232,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-20T17:04:00+09:00",
-        "rough": "8일 0시간"
+        "rough": "7일 15시간"
       },
       "rowCount": 9,
       "artistKo": null,
@@ -1155,6 +1159,33 @@
       "ogCard": "https://kpop-album.vercel.app/og/nct-127-blingy.png"
     },
     {
+      "artistId": 14,
+      "artistEn": "P1Harmony ",
+      "album": "BLOW UP",
+      "skuCount": 4,
+      "benefit": true,
+      "deliveryDate": "2026-11-10",
+      "weversePriceMin": 19300,
+      "artist": "P1Harmony ",
+      "slug": "p1harmony-blow-up",
+      "versions": 9,
+      "retailers": 7,
+      "benefitCount": 1,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 48,
+      "artistKo": "피원하모니",
+      "artistDisplay": "피원하모니(P1Harmony )",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/f681710da5af0f33fc22f9fbe3286296.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/26/lmTp8A.jpg",
+      "expired": {
+        "lastSeen": "2026-11-12"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/p1harmony-blow-up.png"
+    },
+    {
       "artistId": 155,
       "artistEn": "NCT WISH",
       "album": "I SPY",
@@ -1855,33 +1886,6 @@
         "lastSeen": "2026-09-01"
       },
       "ogCard": "https://kpop-album.vercel.app/og/82major-heat.png"
-    },
-    {
-      "artistId": 209,
-      "artistEn": "JENNIE",
-      "album": "Fallen Angel",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2027-01-29",
-      "weversePriceMin": 55600,
-      "artist": "JENNIE",
-      "slug": "jennie-fallen-angel",
-      "versions": 7,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 23,
-      "artistKo": "제니",
-      "artistDisplay": "제니(JENNIE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/29/SwVt59.jpg",
-      "expired": {
-        "lastSeen": "2026-11-12"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/jennie-fallen-angel.png"
     },
     {
       "artistId": 129,
