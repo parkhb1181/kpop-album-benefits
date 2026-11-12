@@ -866,3 +866,8 @@
 {"at":"2026-11-12T07:31:09.310Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":21940,"url":"https://makestar.co/event/21940","endAt":"2026-11-16T00:59:59.999999+09:00"}
 {"at":"2026-11-12T07:31:09.310Z","type":"event.gone","label":"영상통화 팬사인회","artist":"채령","album":"미니 1집 [Lovesick]","id":21900}
 {"at":"2026-11-12T07:31:09.310Z","type":"album.gone","artist":"JENNIE","album":"Fallen Angel"}
+{"at":"2026-11-12T16:15:52.813Z","type":"event.new","label":"SPECIAL EVENT","artist":"NCT DREAM","album":"[DREAM AFTER DREAM]","id":22111,"url":"https://makestar.co/event/22111","endAt":"2026-11-15T23:59:59.999999+09:00"}
+{"at":"2026-11-12T16:15:52.813Z","type":"event.gone","label":"영상통화 팬사인회","artist":"튜넥스","album":"미니 2집 [BLUE MODE]","id":21911}
+{"at":"2026-11-12T16:15:52.813Z","type":"event.gone","label":"예약 특전 포토카드","artist":"에이티즈","album":"15TH MINI ALBUM [GOLDEN HOUR : Part.6]","id":21216}
+{"at":"2026-11-12T16:15:52.813Z","type":"album.new","artist":"JENNIE","album":"Fallen Angel"}
+{"at":"2026-11-12T16:15:52.813Z","type":"album.gone","artist":"P1Harmony ","album":"BLOW UP"}
