@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T22:22:42.341Z",
-  "lastDeep": "2026-11-12T22:22:42.341Z",
+  "checkedAt": "2026-11-13T02:46:53.612Z",
+  "lastDeep": "2026-11-13T02:46:53.612Z",
   "events": [
     {
       "id": 22138,
@@ -665,14 +665,14 @@
       "album": "WINDMILL"
     },
     {
+      "key": "LISA｜Press Play CD",
+      "artist": "LISA",
+      "album": "Press Play CD"
+    },
+    {
       "key": "EXO｜Waking Up The City",
       "artist": "EXO",
       "album": "Waking Up The City"
-    },
-    {
-      "key": "ENHYPEN｜THE SIN : PARALLEL WORLD (Weverse Exclusive)",
-      "artist": "ENHYPEN",
-      "album": "THE SIN : PARALLEL WORLD (Weverse Exclusive)"
     },
     {
       "key": "JENNIE｜Fallen Angel",
@@ -690,9 +690,9 @@
       "album": "The 4th Album (SMART ALBUM)"
     },
     {
-      "key": "ENHYPEN｜THE SIN : PARALLEL WORLD",
-      "artist": "ENHYPEN",
-      "album": "THE SIN : PARALLEL WORLD"
+      "key": "ILLIT｜1st Mini Album 'SUPER REAL ME'",
+      "artist": "ILLIT",
+      "album": "1st Mini Album 'SUPER REAL ME'"
     },
     {
       "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
