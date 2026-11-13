@@ -880,3 +880,5 @@
 {"at":"2026-11-13T10:30:27.041Z","type":"event.new","label":"영상통화 팬사인회","artist":"채령","album":"미니 1집 [Lovesick]","id":22084,"url":"https://makestar.co/event/22084","endAt":"2026-11-15T23:59:59.999999+09:00"}
 {"at":"2026-11-13T10:30:27.041Z","type":"event.new","label":"럭키드로우","artist":"에이티즈","album":"15TH MINI ALBUM [GOLDEN HOUR : Part.6]","id":21965,"url":"https://makestar.co/event/21965","endAt":"2026-11-16T23:59:59.999999+09:00"}
 {"at":"2026-11-13T10:30:27.041Z","type":"event.new","label":"럭키드로우","artist":"아이들","album":"미니 9집 [We made]","id":21930,"url":"https://makestar.co/event/21930","endAt":"2026-11-16T23:59:59.999999+09:00"}
+{"at":"2026-11-13T18:03:36.620Z","type":"event.gone","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":21918}
+{"at":"2026-11-13T18:03:36.620Z","type":"album.gone","artist":"JENNIE","album":"Fallen Angel"}
