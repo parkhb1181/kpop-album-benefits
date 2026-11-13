@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-13T02:46:53.612Z",
-  "lastDeep": "2026-11-13T02:46:53.612Z",
+  "checkedAt": "2026-11-13T10:30:27.041Z",
+  "lastDeep": "2026-11-13T10:30:27.041Z",
   "events": [
     {
       "id": 22138,
@@ -29,6 +29,32 @@
       }
     },
     {
+      "id": 22113,
+      "url": "https://makestar.co/event/22113",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "XngHan&Xoul The 1st Mini Album [Glow] 1:1 ONLINE PHOTO&CALL EVENT PART.5",
+      "titleEn": "XngHan&Xoul The 1st Mini Album [Glow] 1:1 ONLINE PHOTO&CALL EVENT PART.5",
+      "album": "미니 1집 [Glow] ",
+      "albumEn": "1st Mini Album [Glow]",
+      "artist": "XngHan&Xoul",
+      "artistEn": "XngHan&Xoul",
+      "releaseDate": "2026-04-27",
+      "from": "2026.11.13",
+      "to": "2026.11.14",
+      "startAt": "2026-11-13T15:00:00+09:00",
+      "endAt": "2026-11-14T23:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.11.16",
+      "productId": 10501,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10501_XNGHAN%26XOUL_35_Banner_thumb_v2.jpg_2026-11-12_173004291954.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10501_XNGHANXOUL_35_Banner_thumb_v2.jpg_2026-11-12_173004291954_thumb.jpeg"
+      }
+    },
+    {
       "id": 22112,
       "url": "https://makestar.co/event/22112",
       "type": "PHOTOCARD",
@@ -45,7 +71,7 @@
       "to": "2026.12.01",
       "startAt": "2026-11-11T18:00:00+09:00",
       "endAt": "2026-12-01T17:59:59.999999+09:00",
-      "dday": 19,
+      "dday": 18,
       "closing": false,
       "winnerAt": null,
       "productId": 11320,
@@ -78,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_14_Banner_thumb_v2.jpg_2026-11-12_161438261796.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_14_Banner_thumb_v2.jpg_2026-11-12_161438261796_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22084,
+      "url": "https://makestar.co/event/22084",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "채령(ITZY) <Lovesick> MEET&CALL EVENT",
+      "titleEn": "CHAERYEONG(ITZY) <Lovesick> MEET&CALL EVENT",
+      "album": "미니 1집 [Lovesick]",
+      "albumEn": "1st Mini Album [Lovesick]",
+      "artist": "채령",
+      "artistEn": "CHAERYEONG",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.13",
+      "to": "2026.11.15",
+      "startAt": "2026-11-13T14:00:00+09:00",
+      "endAt": "2026-11-15T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.16",
+      "productId": 11148,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_5_Banner_thumb.jpg_2026-11-11_182538918831.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_5_Banner_thumb.jpg_2026-11-11_182538918831_thumb.jpeg"
       }
     },
     {
@@ -185,6 +237,32 @@
       }
     },
     {
+      "id": 21965,
+      "url": "https://makestar.co/event/21965",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) LUCKY DRAW EVENT",
+      "titleEn": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) LUCKY DRAW EVENT",
+      "album": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "albumEn": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "artist": "에이티즈",
+      "artistEn": "ATEEZ",
+      "releaseDate": "2026-11-13",
+      "from": "2026.11.13",
+      "to": "2026.11.16",
+      "startAt": "2026-11-13T15:00:00+09:00",
+      "endAt": "2026-11-16T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.17",
+      "productId": 11205,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_3_Banner_Sub.jpg_2026-11-11_142817925779.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_3_Banner_Sub.jpg_2026-11-11_142817925779_thumb.jpeg"
+      }
+    },
+    {
       "id": 21960,
       "url": "https://makestar.co/event/21960",
       "type": "PHOTOCARD",
@@ -260,6 +338,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_12_banner_sub.jpg_2026-11-09_105531916341.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_12_banner_sub.jpg_2026-11-09_105531916341_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21930,
+      "url": "https://makestar.co/event/21930",
+      "type": "LUCKYDRAW",
+      "label": "럭키드로우",
+      "fansign": false,
+      "title": "i-dle 9th Mini Album [We made] (POCAALBUM) LUCKY DRAW EVENT",
+      "titleEn": "i-dle 9th Mini Album [We made] (POCAALBUM) LUCKY DRAW EVENT",
+      "album": "미니 9집 [We made]",
+      "albumEn": "9th Mini Album [We made]",
+      "artist": "아이들",
+      "artistEn": "i-dle",
+      "releaseDate": "2026-07-06",
+      "from": "2026.11.13",
+      "to": "2026.11.16",
+      "startAt": "2026-11-13T12:00:00+09:00",
+      "endAt": "2026-11-16T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 10726,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10726_I-DLE_19_Thumb.jpg_2026-11-10_182306049485.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10726_I-DLE_19_Thumb.jpg_2026-11-10_182306049485_thumb.jpeg"
       }
     },
     {
