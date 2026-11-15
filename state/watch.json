@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-14T21:05:29.985Z",
-  "lastDeep": "2026-11-14T21:05:29.985Z",
+  "checkedAt": "2026-11-15T01:01:28.761Z",
+  "lastDeep": "2026-11-15T01:01:28.761Z",
   "events": [
     {
       "id": 22138,
@@ -260,6 +260,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11290_ONEW_1_banner_sub.jpg_2026-11-09_164335368142.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11290_ONEW_1_banner_sub.jpg_2026-11-09_164335368142_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21957,
+      "url": "https://makestar.co/event/21957",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" MEET&CALL EVENT",
+      "titleEn": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" MEET&CALL EVENT",
+      "album": "미니 1집 [Sour Grapes]",
+      "albumEn": "1st Mini Album [Sour Grapes]",
+      "artist": "NiziU",
+      "artistEn": "NiziU",
+      "releaseDate": "2026-09-28",
+      "from": "2026.11.15",
+      "to": "2026.11.17",
+      "startAt": "2026-11-15T10:00:00+09:00",
+      "endAt": "2026-11-17T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.18",
+      "productId": 11063,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_5_banner_sub.png_2026-11-11_172337750514.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_5_banner_sub.png_2026-11-11_172337750514_thumb.jpeg"
       }
     },
     {
