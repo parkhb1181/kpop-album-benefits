@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 16. 01:47:05",
+  "stamp": "2026. 11. 16. 05:28:40",
   "albums": [
     {
       "artistId": 160,
@@ -20,9 +20,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-17T18:00:00+09:00",
-        "rough": "1일 16시간"
+        "rough": "1일 12시간"
       },
-      "rowCount": 29,
+      "rowCount": 30,
       "artistKo": "앰퍼샌드원",
       "artistDisplay": "앰퍼샌드원(AMPERS&ONE)",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/e69b849daad78bd6ea5b92da81104b9d.png",
@@ -47,9 +47,9 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "17일 22시간"
+        "rough": "17일 18시간"
       },
-      "rowCount": 39,
+      "rowCount": 38,
       "artistKo": null,
       "artistDisplay": "Mark Lee",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/22dad2b45b60af0c136fa15814fa1967.jpg",
@@ -65,7 +65,7 @@
       "weversePriceMin": 13900,
       "artist": "EXO",
       "slug": "exo-waking-up-the-city",
-      "versions": 5,
+      "versions": 7,
       "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "15일 16시간"
+        "rough": "15일 12시간"
       },
       "rowCount": 28,
       "artistKo": "엑소-카이세훈(EXO-KASE)",
@@ -101,9 +101,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "14일 11시간"
+        "rough": "14일 7시간"
       },
-      "rowCount": 18,
+      "rowCount": 17,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-19T13:01:00+09:00",
-        "rough": "3일 11시간"
+        "rough": "3일 7시간"
       },
       "rowCount": 9,
       "artistKo": "리사",
@@ -155,7 +155,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "43일 22시간"
+        "rough": "43일 18시간"
       },
       "rowCount": 19,
       "artistKo": "아일릿",
@@ -182,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-16T19:01:00+09:00",
-        "rough": "30일 17시간"
+        "rough": "30일 13시간"
       },
       "rowCount": 4,
       "artistKo": "아일릿",
@@ -200,22 +200,22 @@
       "weversePriceMin": 17800,
       "artist": "Girls' Generation",
       "slug": "girls-generation-the-4th-album",
-      "versions": 5,
-      "retailers": 3,
+      "versions": 4,
+      "retailers": 1,
       "benefitCount": 0,
-      "soldCount": 1,
+      "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "14일 16시간"
+        "rough": "14일 12시간"
       },
-      "rowCount": 7,
+      "rowCount": 4,
       "artistKo": null,
       "artistDisplay": "Girls' Generation",
-      "ogImage": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg",
-      "cover": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg"
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/cae43a8f709736389d9d6146d48883e2.jpg",
+      "cover": "https://cdn-contents.weverseshop.io/public/shop/cae43a8f709736389d9d6146d48883e2.jpg"
     },
     {
       "artistId": 25,
