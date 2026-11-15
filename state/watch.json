@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T15:19:29.251Z",
-  "lastDeep": "2026-11-15T15:19:29.251Z",
+  "checkedAt": "2026-11-15T20:28:14.304Z",
+  "lastDeep": "2026-11-15T20:28:14.304Z",
   "events": [
     {
       "id": 22138,
@@ -78,32 +78,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_5_Banner_Sub.jpg_2026-11-12_100057939339.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_5_Banner_Sub.jpg_2026-11-12_100057939339_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22050,
-      "url": "https://makestar.co/event/22050",
-      "type": "FANSIGN&PHOTO EVENT",
-      "label": "FANSIGN&PHOTO EVENT",
-      "fansign": false,
-      "title": "ERIC ‘Baby Pink Letter Exhibition’ FANSIGN & PHOTO EVENT IN FOSHAN",
-      "titleEn": "ERIC ‘Baby Pink Letter Exhibition’ FANSIGN & PHOTO EVENT IN FOSHAN",
-      "album": "[Baby Pink Letter Exhibition]",
-      "albumEn": "[Baby Pink Letter Exhibition]",
-      "artist": "ERIC",
-      "artistEn": "ERIC",
-      "releaseDate": "2026-11-12",
-      "from": "2026.11.11",
-      "to": "2026.11.16",
-      "startAt": "2026-11-11T15:00:00+09:00",
-      "endAt": "2026-11-16T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.16",
-      "productId": 11155,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_5_Banner_Thumb.jpg_2026-11-10_170819366540.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_5_Banner_Thumb.jpg_2026-11-10_170819366540_thumb.jpeg"
       }
     },
     {
@@ -286,32 +260,6 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_5_banner_sub.png_2026-11-11_172337750514.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_5_banner_sub.png_2026-11-11_172337750514_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21940,
-      "url": "https://makestar.co/event/21940",
-      "type": "FANSIGN&PHOTO EVENT",
-      "label": "FANSIGN&PHOTO EVENT",
-      "fansign": false,
-      "title": "NCT 127 7th Album [BLINGY] FANSIGN & PHOTO EVENT IN HONGKONG",
-      "titleEn": "NCT 127 7th Album [BLINGY] FANSIGN & PHOTO EVENT IN HONGKONG",
-      "album": "정규 7집 [BLINGY]",
-      "albumEn": "7th Full Album [BLINGY]",
-      "artist": "NCT 127",
-      "artistEn": "NCT 127",
-      "releaseDate": "2026-08-24",
-      "from": "2026.11.12",
-      "to": "2026.11.16",
-      "startAt": "2026-11-12T16:00:00+09:00",
-      "endAt": "2026-11-16T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.16",
-      "productId": 10940,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_10_Banner_sub.png_2026-11-10_100450357024.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_10_Banner_sub.png_2026-11-10_100450357024_thumb.jpeg"
       }
     },
     {
