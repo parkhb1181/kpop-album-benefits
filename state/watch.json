@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-16T00:14:21.300Z",
-  "lastDeep": "2026-11-16T00:14:21.300Z",
+  "checkedAt": "2026-11-16T06:39:27.198Z",
+  "lastDeep": "2026-11-16T06:39:27.198Z",
   "events": [
     {
       "id": 22138,
@@ -52,6 +52,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11320_EXO-KASE_1_Banner_thumb.jpg_2026-11-11_115002433232.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11320_EXO-KASE_1_Banner_thumb.jpg_2026-11-11_115002433232_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22074,
+      "url": "https://makestar.co/event/22074",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' (POCAALBUM Ver.) FANSIGN & PHOTO & VIDEO CALL EVENT IN BANGKOK",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' (POCAALBUM Ver.) FANSIGN & PHOTO & VIDEO CALL EVENT IN BANGKOK",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.11.16",
+      "to": "2026.11.19",
+      "startAt": "2026-11-16T15:00:00+09:00",
+      "endAt": "2026-11-19T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.20",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_14_banner_sub.jpg_2026-11-12_192040423120.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_14_banner_sub.jpg_2026-11-12_192040423120_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22071,
+      "url": "https://makestar.co/event/22071",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ENHYPEN ‘THE SIN : PARALLEL WORLD’ Video Call Event Part .1",
+      "titleEn": "ENHYPEN ‘THE SIN : PARALLEL WORLD’ Video Call Event Part .1",
+      "album": "[THE SIN : PARALLEL WORLD]",
+      "albumEn": "[THE SIN : PARALLEL WORLD]",
+      "artist": "엔하이픈",
+      "artistEn": "ENHYPEN",
+      "releaseDate": "2026-11-23",
+      "from": "2026.11.16",
+      "to": "2026.11.23",
+      "startAt": "2026-11-16T12:00:00+09:00",
+      "endAt": "2026-11-23T00:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.11.25",
+      "productId": 11238,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11238_ENHYPEN_3_Banner_Sub.jpg_2026-11-12_143348037654.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11238_ENHYPEN_3_Banner_Sub.jpg_2026-11-12_143348037654_thumb.jpeg"
       }
     },
     {
@@ -211,6 +263,32 @@
       }
     },
     {
+      "id": 21963,
+      "url": "https://makestar.co/event/21963",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "남우현 (NAM WOO HYUN) 2nd Album [2X8] MEET&PHOTO EVENT",
+      "titleEn": "남우현 (NAM WOO HYUN) 2nd Album [2X8] MEET&PHOTO EVENT",
+      "album": "정규 2집 [2X8]",
+      "albumEn": "2nd Full Album [2X8]",
+      "artist": "남우현",
+      "artistEn": "NAM WOO HYUN",
+      "releaseDate": "2026-10-14",
+      "from": "2026.11.16",
+      "to": "2026.11.18",
+      "startAt": "2026-11-16T15:00:00+09:00",
+      "endAt": "2026-11-18T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.19",
+      "productId": 11160,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11160_NAM_WOO_HYUN_1_Banner_Sub.jpg_2026-11-12_155144435617.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11160_NAM_WOO_HYUN_1_Banner_Sub.jpg_2026-11-12_155144435617_thumb.jpeg"
+      }
+    },
+    {
       "id": 21960,
       "url": "https://makestar.co/event/21960",
       "type": "PHOTOCARD",
@@ -260,6 +338,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_5_banner_sub.png_2026-11-11_172337750514.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_5_banner_sub.png_2026-11-11_172337750514_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21956,
+      "url": "https://makestar.co/event/21956",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "장민호 (JANG MIN HO) 4th mini album [에세이 ep.4] (POCAALBUM) 대면 팬사인회 이벤트",
+      "titleEn": "JANG MIN HO 4th mini album [essay ep.4] (POCAALBUM) Face-to-face Fansign Event",
+      "album": "[Essay ep.4]",
+      "albumEn": "[Essay ep.4]",
+      "artist": "장민호",
+      "artistEn": "JANG MIN HO",
+      "releaseDate": "2026-11-24",
+      "from": "2026.11.16",
+      "to": "2026.11.21",
+      "startAt": "2026-11-16T15:00:00+09:00",
+      "endAt": "2026-11-21T23:59:59.999999+09:00",
+      "dday": 6,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11268,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_3_banner_sub.png_2026-11-13_145317209973.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_3_banner_sub.png_2026-11-13_145317209973_thumb.jpeg"
       }
     },
     {
@@ -416,6 +520,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21607,
+      "url": "https://makestar.co/event/21607",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "틴탑 (TEEN TOP) 11TH MINI ALBUM [DON'T STOP] (POCAALBUM) PHOTO&MEET&CALL EVENT",
+      "titleEn": "틴탑 (TEEN TOP) 11TH MINI ALBUM [DON'T STOP] (POCAALBUM) PHOTO&MEET&CALL EVENT",
+      "album": "11th EP [DON’T STOP]",
+      "albumEn": "11th EP [DON’T STOP]",
+      "artist": "Teen Top",
+      "artistEn": "Teen Top",
+      "releaseDate": "2026-10-15",
+      "from": "2026.11.16",
+      "to": "2026.11.19",
+      "startAt": "2026-11-16T15:00:00+09:00",
+      "endAt": "2026-11-19T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.20",
+      "productId": 11171,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11206_TEEN_TOP_2_banner_sub.png_2026-11-12_162929145646.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11206_TEEN_TOP_2_banner_sub.png_2026-11-12_162929145646_thumb.jpeg"
       }
     },
     {
@@ -631,6 +761,11 @@
       "key": "Girls' Generation｜The 4th Album (SMART ALBUM)",
       "artist": "Girls' Generation",
       "album": "The 4th Album (SMART ALBUM)"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "ILLIT｜1st Mini Album 'SUPER REAL ME'",

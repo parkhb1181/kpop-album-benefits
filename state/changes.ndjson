@@ -897,3 +897,9 @@
 {"at":"2026-11-15T15:19:29.251Z","type":"event.gone","label":"예약 특전 포토카드","artist":"투모로우바이투게더","album":"9th Mini Album 'PERFECT STORM'","id":21255}
 {"at":"2026-11-15T20:28:14.304Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"ERIC","album":"[Baby Pink Letter Exhibition]","id":22050}
 {"at":"2026-11-15T20:28:14.304Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":21940}
+{"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":22074,"url":"https://makestar.co/event/22074","endAt":"2026-11-19T23:59:59.999999+09:00"}
+{"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"영상통화 팬사인회","artist":"엔하이픈","album":"[THE SIN : PARALLEL WORLD]","id":22071,"url":"https://makestar.co/event/22071","endAt":"2026-11-23T00:59:59.999999+09:00"}
+{"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"남우현","album":"정규 2집 [2X8]","id":21963,"url":"https://makestar.co/event/21963","endAt":"2026-11-18T23:59:59.999999+09:00"}
+{"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"대면 팬사인회","artist":"장민호","album":"[Essay ep.4]","id":21956,"url":"https://makestar.co/event/21956","endAt":"2026-11-21T23:59:59.999999+09:00"}
+{"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"영상통화 팬사인회","artist":"Teen Top","album":"11th EP [DON’T STOP]","id":21607,"url":"https://makestar.co/event/21607","endAt":"2026-11-19T23:59:59.999999+09:00"}
+{"at":"2026-11-16T06:39:27.198Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
