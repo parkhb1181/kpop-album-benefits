@@ -903,3 +903,9 @@
 {"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"대면 팬사인회","artist":"장민호","album":"[Essay ep.4]","id":21956,"url":"https://makestar.co/event/21956","endAt":"2026-11-21T23:59:59.999999+09:00"}
 {"at":"2026-11-16T06:39:27.198Z","type":"event.new","label":"영상통화 팬사인회","artist":"Teen Top","album":"11th EP [DON’T STOP]","id":21607,"url":"https://makestar.co/event/21607","endAt":"2026-11-19T23:59:59.999999+09:00"}
 {"at":"2026-11-16T06:39:27.198Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
+{"at":"2026-11-16T16:26:27.191Z","type":"event.new","label":"영상통화 팬사인회","artist":"NCT 127","album":"정규 7집 [BLINGY]","id":21942,"url":"https://makestar.co/event/21942","endAt":"2026-11-20T00:59:59.999999+09:00"}
+{"at":"2026-11-16T16:26:27.191Z","type":"event.gone","label":"럭키드로우","artist":"에이티즈","album":"15TH MINI ALBUM [GOLDEN HOUR : Part.6]","id":21965}
+{"at":"2026-11-16T16:26:27.191Z","type":"event.gone","label":"럭키드로우","artist":"아이들","album":"미니 9집 [We made]","id":21930}
+{"at":"2026-11-16T16:26:27.191Z","type":"event.gone","label":"럭키드로우","artist":"채령","album":"미니 1집 [Lovesick]","id":21577}
+{"at":"2026-11-16T16:26:27.191Z","type":"event.gone","label":"예약 특전 포토카드","artist":"위고식스","album":"미니 1집 [SIX HEARTS]","id":21503}
+{"at":"2026-11-16T16:26:27.191Z","type":"album.gone","artist":"CORTIS","album":"GREENGREEN_playextended"}
