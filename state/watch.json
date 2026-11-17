@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-11-17T00:23:16.736Z",
-  "lastDeep": "2026-11-17T00:23:16.736Z",
+  "checkedAt": "2026-11-17T08:16:26.542Z",
+  "lastDeep": "2026-11-17T08:16:26.542Z",
   "events": [
+    {
+      "id": 22190,
+      "url": "https://makestar.co/event/22190",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "OURBIRTHDAY [Our Birthday] 1:1 PHOTO&MEET&CALL EVENT",
+      "titleEn": "OURBIRTHDAY [Our Birthday] 1:1 PHOTO&MEET&CALL EVENT",
+      "album": "[Our Birthday]",
+      "albumEn": "[Our Birthday]",
+      "artist": "아워벌스데이",
+      "artistEn": "OURBIRTHDAY",
+      "releaseDate": "2026-08-19",
+      "from": "2026.11.17",
+      "to": "2026.11.19",
+      "startAt": "2026-11-17T14:00:00+09:00",
+      "endAt": "2026-11-19T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.20",
+      "productId": 10952,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_11_Banner_sub.png_2026-11-16_164844147894.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_11_Banner_sub.png_2026-11-16_164844147894_thumb.jpeg"
+      }
+    },
     {
       "id": 22138,
       "url": "https://makestar.co/event/22138",
@@ -26,6 +52,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_3_banner_sub.png_2026-11-11_205058881733.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_3_banner_sub.png_2026-11-11_205058881733_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22137,
+      "url": "https://makestar.co/event/22137",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "이븐 (EVNNE) 6th Mini Album [on: our noise] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "이븐 (EVNNE) 6th Mini Album [on: our noise] SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "6th Mini Album [on our noise]",
+      "albumEn": "6th Mini Album [on our noise]",
+      "artist": "이븐",
+      "artistEn": "EVNNE",
+      "releaseDate": "2026-10-19",
+      "from": "2026.11.17",
+      "to": "2026.11.19",
+      "startAt": "2026-11-17T15:00:00+09:00",
+      "endAt": "2026-11-19T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.20",
+      "productId": 11169,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11169_EVNNE_2_banner_sub.png_2026-11-16_172818318227.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11169_EVNNE_2_banner_sub.png_2026-11-16_172818318227_thumb.jpeg"
       }
     },
     {
