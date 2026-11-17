@@ -31,12 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/ampers-one-pathfinder</loc>
-    <lastmod>2026-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/illit-5th-mini-album-break-even</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>daily</changefreq>
@@ -421,6 +415,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/ampers-one-pathfinder</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -584,12 +584,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/lisa-press-play-cd</loc>
-    <lastmod>2026-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/ampers-one-pathfinder</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -975,6 +969,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/jennie-fallen-angel</loc>
     <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/ampers-one-pathfinder</loc>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
