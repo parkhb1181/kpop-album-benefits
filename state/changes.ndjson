@@ -925,3 +925,8 @@
 {"at":"2026-11-18T07:07:13.364Z","type":"album.new","artist":"BTS","album":"'ARIRANG' (Deluxe Vinyl)"}
 {"at":"2026-11-18T07:07:13.364Z","type":"album.new","artist":"BTS","album":"'ARIRANG'"}
 {"at":"2026-11-18T07:07:13.364Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN_playextended"}
+{"at":"2026-11-18T16:26:42.930Z","type":"event.new","label":"영상통화 팬사인회","artist":"도경수","album":"미니 4집 [DOPAMINE]","id":22193,"url":"https://makestar.co/event/22193","endAt":"2026-11-22T23:59:59.999999+09:00"}
+{"at":"2026-11-18T16:26:42.930Z","type":"event.gone","label":"FANSIGN&PHOTO EVENT","artist":"남우현","album":"정규 2집 [2X8]","id":21963}
+{"at":"2026-11-18T16:26:42.930Z","type":"event.gone","label":"예약 특전 포토카드","artist":"온유","album":"2027 ONEW Season's Greetings [JJINGGU LAB]","id":21960}
+{"at":"2026-11-18T16:26:42.930Z","type":"album.new","artist":"LNGSHOT","album":"S.W.I.S.H."}
+{"at":"2026-11-18T16:26:42.930Z","type":"album.gone","artist":"LISA","album":"Press Play CD"}
