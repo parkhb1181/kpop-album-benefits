@@ -43,12 +43,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/lisa-press-play-cd</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/bts-arirang-deluxe-vinyl</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
@@ -343,6 +337,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/lisa-press-play-cd</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -614,12 +614,6 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/lisa-press-play-cd</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -915,6 +909,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/seventeen-%EC%A0%95%ED%95%9Cx%EC%A1%B0%EC%8A%88%EC%95%84-1st-mini-album-dreamscape-kit-ver</loc>
     <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/lisa-press-play-cd</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>

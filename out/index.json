@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 18. 17:10:53",
+  "stamp": "2026. 11. 19. 01:27:06",
   "albums": [
     {
       "artistId": 331,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-11-22T23:59:59.999999+09:00",
-        "rough": "4일 6시간"
+        "rough": "3일 22시간"
       },
       "rowCount": 40,
       "artistKo": "웬디",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T19:01:00+09:00",
-        "rough": "42일 1시간"
+        "rough": "41일 17시간"
       },
       "rowCount": 60,
       "artistKo": "방탄소년단",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-03T23:59:59.999999+09:00",
-        "rough": "15일 6시간"
+        "rough": "14일 22시간"
       },
       "rowCount": 44,
       "artistKo": null,
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "13일 0시간"
+        "rough": "12일 16시간"
       },
       "rowCount": 34,
       "artistKo": "엑소-카이세훈(EXO-KASE)",
@@ -128,7 +128,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "21일 6시간"
+        "rough": "20일 22시간"
       },
       "rowCount": 20,
       "artistKo": null,
@@ -155,40 +155,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "11일 19시간"
+        "rough": "11일 11시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
-    },
-    {
-      "artistId": 321,
-      "artistEn": "LISA",
-      "album": "Press Play CD",
-      "skuCount": 1,
-      "benefit": true,
-      "deliveryDate": "2026-11-19",
-      "weversePriceMin": 23600,
-      "artist": "LISA",
-      "slug": "lisa-press-play-cd",
-      "versions": 2,
-      "retailers": 5,
-      "benefitCount": 1,
-      "soldCount": 2,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-19T13:01:00+09:00",
-        "rough": "19시간 47분"
-      },
-      "rowCount": 9,
-      "artistKo": "리사",
-      "artistDisplay": "리사(LISA)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/74a3badf59751d5bcfd8011dbf3a3e70.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png"
     },
     {
       "artistId": 2,
@@ -209,7 +182,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-15T19:01:00+09:00",
-        "rough": "58일 1시간"
+        "rough": "57일 17시간"
       },
       "rowCount": 12,
       "artistKo": "방탄소년단",
@@ -236,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-08T17:20:00+09:00",
-        "rough": "20일 0시간"
+        "rough": "19일 15시간"
       },
       "rowCount": 51,
       "artistKo": "코르티스",
@@ -263,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-30T00:00:00+09:00",
-        "rough": "41일 6시간"
+        "rough": "40일 22시간"
       },
       "rowCount": 19,
       "artistKo": "아일릿",
@@ -290,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-16T19:01:00+09:00",
-        "rough": "28일 1시간"
+        "rough": "27일 17시간"
       },
       "rowCount": 4,
       "artistKo": "아일릿",
@@ -317,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T18:00:00+09:00",
-        "rough": "12일 0시간"
+        "rough": "11일 16시간"
       },
       "rowCount": 7,
       "artistKo": null,
@@ -1512,6 +1485,33 @@
         "lastSeen": "2026-09-30"
       },
       "ogCard": "https://kpop-album.vercel.app/og/seventeen-%EC%A0%95%ED%95%9Cx%EC%A1%B0%EC%8A%88%EC%95%84-1st-mini-album-dreamscape-kit-ver.png"
+    },
+    {
+      "artistId": 321,
+      "artistEn": "LISA",
+      "album": "Press Play CD",
+      "skuCount": 1,
+      "benefit": true,
+      "deliveryDate": "2026-11-19",
+      "weversePriceMin": 23600,
+      "artist": "LISA",
+      "slug": "lisa-press-play-cd",
+      "versions": 2,
+      "retailers": 5,
+      "benefitCount": 1,
+      "soldCount": 2,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 9,
+      "artistKo": "리사",
+      "artistDisplay": "리사(LISA)",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/74a3badf59751d5bcfd8011dbf3a3e70.png",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/ViN2SV.png",
+      "expired": {
+        "lastSeen": "2026-11-18"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/lisa-press-play-cd.png"
     },
     {
       "artistId": 3,
