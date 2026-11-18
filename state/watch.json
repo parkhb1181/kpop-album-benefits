@@ -1,7 +1,85 @@
 {
-  "checkedAt": "2026-11-17T23:59:24.054Z",
-  "lastDeep": "2026-11-17T23:59:24.054Z",
+  "checkedAt": "2026-11-18T07:07:13.364Z",
+  "lastDeep": "2026-11-18T07:07:13.364Z",
   "events": [
+    {
+      "id": 22239,
+      "url": "https://makestar.co/event/22239",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "채령(ITZY) <Lovesick> MEET&CALL EVENT",
+      "titleEn": "CHAERYEONG(ITZY) <Lovesick> MEET&CALL EVENT",
+      "album": "미니 1집 [Lovesick]",
+      "albumEn": "1st Mini Album [Lovesick]",
+      "artist": "채령",
+      "artistEn": "CHAERYEONG",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.18",
+      "to": "2026.11.20",
+      "startAt": "2026-11-18T14:00:00+09:00",
+      "endAt": "2026-11-20T13:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.11.20",
+      "productId": 11148,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_6_Banner_thumb.jpg_2026-11-17_142303105430.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_6_Banner_thumb.jpg_2026-11-17_142303105430_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22234,
+      "url": "https://makestar.co/event/22234",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "WE GO-6 1st EP [SIX HEARTS] VIDEO CALL EVENT",
+      "titleEn": "WE GO-6 1st EP [SIX HEARTS] VIDEO CALL EVENT",
+      "album": "미니 1집 [SIX HEARTS]",
+      "albumEn": "1ST MINI ALBUM [SIX HEARTS]",
+      "artist": "위고식스",
+      "artistEn": "WE GO-6",
+      "releaseDate": "2026-11-17",
+      "from": "2026.11.18",
+      "to": "2026.11.22",
+      "startAt": "2026-11-18T15:00:00+09:00",
+      "endAt": "2026-11-22T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11236,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_2_banner_sub_v3.png_2026-11-17_190841497784.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_2_banner_sub_v3.png_2026-11-17_190841497784_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22214,
+      "url": "https://makestar.co/event/22214",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "82MAJOR(82메이저) 2ND SINGLE ALBUM [HEAT] (POCAALBUM) CHRISTMAS SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "82MAJOR(82메이저) 2ND SINGLE ALBUM [HEAT] (POCAALBUM) CHRISTMAS SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "2ND SINGLE ALBUM [HEAT]",
+      "albumEn": "2ND SINGLE ALBUM [HEAT]",
+      "artist": "82MAJOR",
+      "artistEn": "82MAJOR",
+      "releaseDate": "2026-09-01",
+      "from": "2026.11.18",
+      "to": "2026.11.20",
+      "startAt": "2026-11-18T14:00:00+09:00",
+      "endAt": "2026-11-20T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11015,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_4_Banner_Sub.jpg_2026-11-17_123932262114.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11015_82MAJOR_4_Banner_Sub.jpg_2026-11-17_123932262114_thumb.jpeg"
+      }
+    },
     {
       "id": 22190,
       "url": "https://makestar.co/event/22190",
@@ -26,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_11_Banner_sub.png_2026-11-16_164844147894.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10952_OURBIRTHDAY_11_Banner_sub.png_2026-11-16_164844147894_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22140,
+      "url": "https://makestar.co/event/22140",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "TWS 2nd Single Album ‘TO US’​ 발매 기념 대면 팬사인회 이벤트",
+      "titleEn": "TWS 2nd Single Album ‘TO US’​ OFFLINE FAN SIGNING EVENT",
+      "album": "2nd Single Album ‘TO US’",
+      "albumEn": "2nd Single Album ‘TO US’",
+      "artist": "투어스",
+      "artistEn": "TWS",
+      "releaseDate": "2026-11-02",
+      "from": "2026.11.18",
+      "to": "2026.11.24",
+      "startAt": "2026-11-18T11:00:00+09:00",
+      "endAt": "2026-11-24T23:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.11.27",
+      "productId": 11191,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_5_banner_sub_v2.jpg_2026-11-16_120606052964.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11191_TWS_5_banner_sub_v2.jpg_2026-11-16_120606052964_thumb.jpeg"
       }
     },
     {
@@ -582,6 +686,21 @@
       "album": "WINDMILL"
     },
     {
+      "key": "WENDY｜Gleam Hour",
+      "artist": "WENDY",
+      "album": "Gleam Hour"
+    },
+    {
+      "key": "BTS｜'ARIRANG' (Deluxe Vinyl)",
+      "artist": "BTS",
+      "album": "'ARIRANG' (Deluxe Vinyl)"
+    },
+    {
+      "key": "BTS｜'ARIRANG'",
+      "artist": "BTS",
+      "album": "'ARIRANG'"
+    },
+    {
       "key": "LISA｜Press Play CD",
       "artist": "LISA",
       "album": "Press Play CD"
@@ -600,6 +719,11 @@
       "key": "Girls' Generation｜The 4th Album (SMART ALBUM)",
       "artist": "Girls' Generation",
       "album": "The 4th Album (SMART ALBUM)"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "ILLIT｜1st Mini Album 'SUPER REAL ME'",
