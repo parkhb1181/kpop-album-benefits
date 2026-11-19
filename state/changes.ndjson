@@ -935,3 +935,6 @@
 {"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"BTS","album":"'ARIRANG'"}
 {"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"ILLIT","album":"1st Mini Album 'SUPER REAL ME'"}
 {"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"ILLIT","album":"5th Mini Album ‘BREAK EVEN’"}
+{"at":"2026-11-19T13:08:38.463Z","type":"event.new","label":"SPECIAL OFFLINE EVENT","artist":"넥스지","album":"미니 4집 [SAUCIN']","id":22148,"url":"https://makestar.co/event/22148","endAt":"2026-11-22T23:59:59.999999+09:00"}
+{"at":"2026-11-19T13:08:38.463Z","type":"event.new","label":"FANSIGN&PHOTO EVENT","artist":"NCT DREAM","album":"[DREAM AFTER DREAM]","id":21593,"url":"https://makestar.co/event/21593","endAt":"2026-11-23T23:59:59.999999+09:00"}
+{"at":"2026-11-19T13:08:38.463Z","type":"album.new","artist":"CORTIS","album":"GREENGREEN"}

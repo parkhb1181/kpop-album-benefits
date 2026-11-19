@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-19T04:11:45.775Z",
-  "lastDeep": "2026-11-19T04:11:45.775Z",
+  "checkedAt": "2026-11-19T13:08:38.463Z",
+  "lastDeep": "2026-11-19T13:08:38.463Z",
   "events": [
     {
       "id": 22239,
@@ -19,7 +19,7 @@
       "to": "2026.11.20",
       "startAt": "2026-11-18T14:00:00+09:00",
       "endAt": "2026-11-20T13:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.11.20",
       "productId": 11148,
@@ -133,6 +133,32 @@
       }
     },
     {
+      "id": 22148,
+      "url": "https://makestar.co/event/22148",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "NEXZ The 4th Mini Album <SAUCIN'> SPECIAL FAN EVENT IN KAOHSIUNG : NEXZ Winter Festa",
+      "titleEn": "NEXZ The 4th Mini Album <SAUCIN'> SPECIAL FAN EVENT IN KAOHSIUNG : NEXZ Winter Festa",
+      "album": "미니 4집 [SAUCIN']",
+      "albumEn": "4th Mini Album [SAUCIN']",
+      "artist": "넥스지",
+      "artistEn": "NEXZ",
+      "releaseDate": "2026-08-24",
+      "from": "2026.11.19",
+      "to": "2026.11.22",
+      "startAt": "2026-11-19T15:00:00+09:00",
+      "endAt": "2026-11-22T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 10965,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_19_banner_Sub.png_2026-11-18_112329776893.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10965_NEXZ_19_banner_Sub.png_2026-11-18_112329776893_thumb.jpeg"
+      }
+    },
+    {
       "id": 22140,
       "url": "https://makestar.co/event/22140",
       "type": "FANSIGN",
@@ -227,7 +253,7 @@
       "to": "2026.12.01",
       "startAt": "2026-11-11T18:00:00+09:00",
       "endAt": "2026-12-01T17:59:59.999999+09:00",
-      "dday": 13,
+      "dday": 12,
       "closing": false,
       "winnerAt": null,
       "productId": 11320,
@@ -575,6 +601,32 @@
       }
     },
     {
+      "id": 21593,
+      "url": "https://makestar.co/event/21593",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT DREAM The 6th Album [DREAM AFTER DREAM] 1:1 FANSIGN & PHOTO EVENT IN TAIPEI",
+      "titleEn": "NCT DREAM The 6th Album [DREAM AFTER DREAM] 1:1 FANSIGN & PHOTO EVENT IN TAIPEI",
+      "album": "[DREAM AFTER DREAM]",
+      "albumEn": "[DREAM AFTER DREAM]",
+      "artist": "NCT DREAM",
+      "artistEn": "NCT DREAM",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.19",
+      "to": "2026.11.23",
+      "startAt": "2026-11-19T18:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 5,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 11214,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_9_Banner_thumb.jpg_2026-11-18_165504923769.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_9_Banner_thumb.jpg_2026-11-18_165504923769_thumb.jpeg"
+      }
+    },
+    {
       "id": 21574,
       "url": "https://makestar.co/event/21574",
       "type": "PHOTOCARD",
@@ -696,9 +748,9 @@
       "album": "Waking Up The City"
     },
     {
-      "key": "CORTIS｜GREENGREEN_playextended",
+      "key": "CORTIS｜GREENGREEN",
       "artist": "CORTIS",
-      "album": "GREENGREEN_playextended"
+      "album": "GREENGREEN"
     },
     {
       "key": "Girls' Generation｜The 4th Album",
@@ -709,6 +761,11 @@
       "key": "Girls' Generation｜The 4th Album (SMART ALBUM)",
       "artist": "Girls' Generation",
       "album": "The 4th Album (SMART ALBUM)"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN_playextended",
+      "artist": "CORTIS",
+      "album": "GREENGREEN_playextended"
     },
     {
       "key": "JISOO｜CLICK",
