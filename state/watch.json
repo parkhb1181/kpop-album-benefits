@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-18T23:00:28.210Z",
-  "lastDeep": "2026-11-18T23:00:28.210Z",
+  "checkedAt": "2026-11-19T04:11:45.775Z",
+  "lastDeep": "2026-11-19T04:11:45.775Z",
   "events": [
     {
       "id": 22239,
@@ -312,6 +312,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_1_banner_sub.png_2026-11-10_183721678833.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_1_banner_sub.png_2026-11-10_183721678833_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22032,
+      "url": "https://makestar.co/event/22032",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" MEET&CALL&PHOTO EVENT",
+      "titleEn": "NiziU(니쥬) Korea 1st Mini Album \"Sour Grapes\" MEET&CALL&PHOTO EVENT",
+      "album": "미니 1집 [Sour Grapes]",
+      "albumEn": "1st Mini Album [Sour Grapes]",
+      "artist": "NiziU",
+      "artistEn": "NiziU",
+      "releaseDate": "2026-09-28",
+      "from": "2026.11.19",
+      "to": "2026.11.21",
+      "startAt": "2026-11-19T10:00:00+09:00",
+      "endAt": "2026-11-21T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11063,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_7_banner_sub.png_2026-11-18_115946092317.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11063_NIZIU_7_banner_sub.png_2026-11-18_115946092317_thumb.jpeg"
       }
     },
     {
@@ -665,16 +691,6 @@
       "album": "Gleam Hour"
     },
     {
-      "key": "BTS｜'ARIRANG' (Deluxe Vinyl)",
-      "artist": "BTS",
-      "album": "'ARIRANG' (Deluxe Vinyl)"
-    },
-    {
-      "key": "BTS｜'ARIRANG'",
-      "artist": "BTS",
-      "album": "'ARIRANG'"
-    },
-    {
       "key": "EXO｜Waking Up The City",
       "artist": "EXO",
       "album": "Waking Up The City"
@@ -693,16 +709,6 @@
       "key": "Girls' Generation｜The 4th Album (SMART ALBUM)",
       "artist": "Girls' Generation",
       "album": "The 4th Album (SMART ALBUM)"
-    },
-    {
-      "key": "ILLIT｜1st Mini Album 'SUPER REAL ME'",
-      "artist": "ILLIT",
-      "album": "1st Mini Album 'SUPER REAL ME'"
-    },
-    {
-      "key": "ILLIT｜5th Mini Album ‘BREAK EVEN’",
-      "artist": "ILLIT",
-      "album": "5th Mini Album ‘BREAK EVEN’"
     },
     {
       "key": "JISOO｜CLICK",

@@ -930,3 +930,8 @@
 {"at":"2026-11-18T16:26:42.930Z","type":"event.gone","label":"예약 특전 포토카드","artist":"온유","album":"2027 ONEW Season's Greetings [JJINGGU LAB]","id":21960}
 {"at":"2026-11-18T16:26:42.930Z","type":"album.new","artist":"LNGSHOT","album":"S.W.I.S.H."}
 {"at":"2026-11-18T16:26:42.930Z","type":"album.gone","artist":"LISA","album":"Press Play CD"}
+{"at":"2026-11-19T04:11:45.775Z","type":"event.new","label":"영상통화 팬사인회","artist":"NiziU","album":"미니 1집 [Sour Grapes]","id":22032,"url":"https://makestar.co/event/22032","endAt":"2026-11-21T23:59:59.999999+09:00"}
+{"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"BTS","album":"'ARIRANG' (Deluxe Vinyl)"}
+{"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"BTS","album":"'ARIRANG'"}
+{"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"ILLIT","album":"1st Mini Album 'SUPER REAL ME'"}
+{"at":"2026-11-19T04:11:45.775Z","type":"album.gone","artist":"ILLIT","album":"5th Mini Album ‘BREAK EVEN’"}
