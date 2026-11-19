@@ -2,73 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kpop-album.vercel.app/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/wendy-gleam-hour</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/bts-arirang</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/mark-lee-windmill</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/exo-waking-up-the-city</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/lngshot-s-w-i-s-h</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/bts-arirang-deluxe-vinyl</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/illit-5th-mini-album-break-even</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/album/illit-1st-mini-album-super-real-me</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/girls-generation-the-4th-album</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -195,6 +171,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
     <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/bts-arirang</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -343,6 +325,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/bts-arirang-deluxe-vinyl</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -457,6 +445,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/illit-5th-mini-album-break-even</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/le-sserafim-2nd-single-album-made-my-night-vinyl</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -489,6 +483,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
     <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/illit-1st-mini-album-super-real-me</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -578,73 +578,49 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/wendy-gleam-hour</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/bts-arirang</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/mark-lee-windmill</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/exo-waking-up-the-city</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/lngshot-s-w-i-s-h</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/bts-arirang-deluxe-vinyl</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/illit-5th-mini-album-break-even</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/illit-1st-mini-album-super-real-me</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/girls-generation-the-4th-album</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -771,6 +747,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/youngtak-%EC%98%81%ED%83%81-gogo</loc>
     <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/bts-arirang</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -919,6 +901,12 @@
     <priority>0.2</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/bts-arirang-deluxe-vinyl</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/tomorrow-x-together-no-labels-part-02</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1033,6 +1021,12 @@
     <priority>0.2</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/en/album/illit-5th-mini-album-break-even</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/en/album/le-sserafim-2nd-single-album-made-my-night-vinyl</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -1065,6 +1059,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/le-sserafim-le-sserafim-2nd-single-album-made-my-night-chemi</loc>
     <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/illit-1st-mini-album-super-real-me</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
