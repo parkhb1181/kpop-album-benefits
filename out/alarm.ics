@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:wendy-gleam-hour-evt22030@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20261122T145959Z
 DTEND:20261122T152959Z
 SUMMARY:웬디(WENDY) Gleam Hour — 예약 특전 포토카드 응모 마
@@ -32,7 +32,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wendy-gleam-hour-release@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20261123T090000Z
 DTEND:20261123T093000Z
 SUMMARY:웬디(WENDY) Gleam Hour — 예약 배송 시작
@@ -50,8 +50,190 @@ DESCRIPTION:웬디(WENDY) Gleam Hour — 예약 배송 시작 (1시간 전)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:winner-page-2-release@kpop-album-benefits
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:강승윤(WINNER) PAGE 2 — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/winner-page-2.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:강승윤(WINNER) PAGE 2 — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:강승윤(WINNER) PAGE 2 — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hebi-1st-mini-album-chroma-release@kpop-album-benefits
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:Hebi 1st Mini Album 'Chroma' — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/hebi-1st-mini-album-chroma.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Hebi 1st Mini Album 'Chroma' — 예약 배송 시작 (하루 
+ 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Hebi 1st Mini Album 'Chroma' — 예약 배송 시작 (1시간 
+ 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:akb48-10th-album-akb48-standard-edition-release@kpop-album-benefits
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:AKB48 10th Album 「なんてったってAKB48」 Standard Edition 
+ — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/akb48-10th-album-akb48-standard-edi
+ tion.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:AKB48 10th Album 「なんてったってAKB48」 Standard Edit
+ ion — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:AKB48 10th Album 「なんてったってAKB48」 Standard Edit
+ ion — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:akb48-10th-album-akb48-limited-edition-release@kpop-album-benefits
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:AKB48 10th Album 「なんてったってAKB48」 Limited Edition 
+ — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/akb48-10th-album-akb48-limited-edit
+ ion.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:AKB48 10th Album 「なんてったってAKB48」 Limited Editi
+ on — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:AKB48 10th Album 「なんてったってAKB48」 Limited Editi
+ on — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:akb48-65th-single-confession-standard-edition-release@kpop-album-benefi
+ ts
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:AKB48 65th Single「まさかのConfession」(Standard Edition) —
+  예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/akb48-65th-single-confession-standa
+ rd-edition.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Standard Edition)
+  — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Standard Edition)
+  — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:akb48-65th-single-confession-limited-edition-c-release@kpop-album-benef
+ its
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:AKB48 65th Single「まさかのConfession」(Limited Edition C) 
+ — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/akb48-65th-single-confession-limite
+ d-edition-c.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Limited Edition C
+ ) — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Limited Edition C
+ ) — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:akb48-65th-single-confession-limited-edition-b-release@kpop-album-benef
+ its
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:AKB48 65th Single「まさかのConfession」(Limited Edition B) 
+ — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/akb48-65th-single-confession-limite
+ d-edition-b.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Limited Edition B
+ ) — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Limited Edition B
+ ) — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:akb48-65th-single-confession-limited-edition-a-release@kpop-album-benef
+ its
+DTSTAMP:20261120T080803Z
+DTSTART:20261123T150001Z
+DTEND:20261123T153001Z
+SUMMARY:AKB48 65th Single「まさかのConfession」(Limited Edition A) 
+ — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/akb48-65th-single-confession-limite
+ d-edition-a.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Limited Edition A
+ ) — 예약 배송 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:AKB48 65th Single「まさかのConfession」(Limited Edition A
+ ) — 예약 배송 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20261130T040000Z
 DTEND:20261130T043000Z
 SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
@@ -70,7 +252,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:girls-generation-the-4th-album-release@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20261130T090000Z
 DTEND:20261130T093000Z
 SUMMARY:Girls' Generation The 4th Album — 예약 배송 시작
@@ -91,7 +273,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:exo-waking-up-the-city-evt22112@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20261201T085959Z
 DTEND:20261201T092959Z
 SUMMARY:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 특전 
@@ -114,7 +296,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:exo-waking-up-the-city-release@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20261201T090000Z
 DTEND:20261201T093000Z
 SUMMARY:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 배송 
@@ -135,27 +317,8 @@ DESCRIPTION:엑소-카이세훈(EXO-KASE) Waking Up The City — 예약 배
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:lngshot-s-w-i-s-h-release@kpop-album-benefits
-DTSTAMP:20261120T024434Z
-DTSTART:20261209T150000Z
-DTEND:20261209T153000Z
-SUMMARY:LNGSHOT S.W.I.S.H. — 예약 배송 시작
-DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
-URL:https://kpop-album.vercel.app/album/lngshot-s-w-i-s-h.html
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-DESCRIPTION:LNGSHOT S.W.I.S.H. — 예약 배송 시작 (하루 전)
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:LNGSHOT S.W.I.S.H. — 예약 배송 시작 (1시간 전)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cortis-greengreen-release@kpop-album-benefits
-DTSTAMP:20261120T024434Z
+DTSTAMP:20261120T080803Z
 DTSTART:20270108T040000Z
 DTEND:20270108T043000Z
 SUMMARY:코르티스(CORTIS) GREENGREEN — 예약 배송 시작
