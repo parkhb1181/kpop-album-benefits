@@ -1,31 +1,83 @@
 {
-  "checkedAt": "2026-11-20T02:36:58.500Z",
-  "lastDeep": "2026-11-20T02:36:58.500Z",
+  "checkedAt": "2026-11-20T10:30:54.176Z",
+  "lastDeep": "2026-11-20T10:30:54.176Z",
   "events": [
     {
-      "id": 22239,
-      "url": "https://makestar.co/event/22239",
-      "type": "MEET&CALL",
+      "id": 22464,
+      "url": "https://makestar.co/event/22464",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "XngHan&Xoul The 1st Mini Album [Glow] SPECIAL 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "XngHan&Xoul The 1st Mini Album [Glow] SPECIAL 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "미니 1집 [Glow] ",
+      "albumEn": "1st Mini Album [Glow]",
+      "artist": "XngHan&Xoul",
+      "artistEn": "XngHan&Xoul",
+      "releaseDate": "2026-04-27",
+      "from": "2026.11.20",
+      "to": "2026.11.21",
+      "startAt": "2026-11-20T15:00:00+09:00",
+      "endAt": "2026-11-21T23:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": null,
+      "productId": 10501,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10501_XNGHAN%26XOUL_37_Banner_thumb.jpg_2026-11-19_105340258315.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10501_XNGHANXOUL_37_Banner_thumb.jpg_2026-11-19_105340258315_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22266,
+      "url": "https://makestar.co/event/22266",
+      "type": "VIDEOCALL",
       "label": "영상통화 팬사인회",
       "fansign": true,
-      "title": "채령(ITZY) <Lovesick> MEET&CALL EVENT",
-      "titleEn": "CHAERYEONG(ITZY) <Lovesick> MEET&CALL EVENT",
-      "album": "미니 1집 [Lovesick]",
-      "albumEn": "1st Mini Album [Lovesick]",
-      "artist": "채령",
-      "artistEn": "CHAERYEONG",
-      "releaseDate": "2026-11-09",
-      "from": "2026.11.18",
-      "to": "2026.11.20",
-      "startAt": "2026-11-18T14:00:00+09:00",
-      "endAt": "2026-11-20T13:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.20",
-      "productId": 11148,
+      "title": "ERIC ‘Baby Pink Letter Exhibition’ VIDEO CALL EVENT",
+      "titleEn": "ERIC ‘Baby Pink Letter Exhibition’ VIDEO CALL EVENT",
+      "album": "[Baby Pink Letter Exhibition]",
+      "albumEn": "[Baby Pink Letter Exhibition]",
+      "artist": "ERIC",
+      "artistEn": "ERIC",
+      "releaseDate": "2026-11-12",
+      "from": "2026.11.20",
+      "to": "2026.11.23",
+      "startAt": "2026-11-20T15:00:00+09:00",
+      "endAt": "2026-11-23T00:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11155,
       "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_6_Banner_thumb.jpg_2026-11-17_142303105430.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_6_Banner_thumb.jpg_2026-11-17_142303105430_thumb.jpeg"
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_6_Banner_Thumb.jpg_2026-11-18_174206715384.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11155_ERIC_6_Banner_Thumb.jpg_2026-11-18_174206715384_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22253,
+      "url": "https://makestar.co/event/22253",
+      "type": "SPECIAL OFFLINE EVENT",
+      "label": "SPECIAL OFFLINE EVENT",
+      "fansign": false,
+      "title": "샤오쥔 미니 1집 ‘Hey, Somebody’ 발매기념 SPECIAL DIY EVENT & 대면 사인회 이벤트",
+      "titleEn": "XIAOJUN The 1st Mini Album 'Hey, Somebody' SPECIAL DIY EVENT & FACE-TO-FACE FANSIGN EVENT",
+      "album": "미니 1집 [Hey, Somebody]",
+      "albumEn": "1st Mini Album [Hey, Somebody]",
+      "artist": "샤오쥔",
+      "artistEn": "XIAOJUN",
+      "releaseDate": "2026-10-26",
+      "from": "2026.11.20",
+      "to": "2026.11.22",
+      "startAt": "2026-11-20T18:00:00+09:00",
+      "endAt": "2026-11-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11167,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_7_Banner_sub.png_2026-11-17_172014761968.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11167_XIAOJUN_7_Banner_sub.png_2026-11-17_172014761968_thumb.jpeg"
       }
     },
     {
@@ -52,6 +104,58 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_2_banner_sub_v3.png_2026-11-17_190841497784.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11236_WE_GO-6_2_banner_sub_v3.png_2026-11-17_190841497784_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22231,
+      "url": "https://makestar.co/event/22231",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NCT WISH 미니 4집 ‘I SPY’ 발매기념 VIDEO CALL EVENT",
+      "titleEn": "NCT WISH The 4th Mini Album 'I SPY' VIDEO CALL EVENT",
+      "album": "미니 4집 [I SPY]",
+      "albumEn": "4th Mini Album [I SPY]",
+      "artist": "NCT WISH",
+      "artistEn": "NCT WISH",
+      "releaseDate": "2026-10-12",
+      "from": "2026.11.20",
+      "to": "2026.11.22",
+      "startAt": "2026-11-20T18:00:00+09:00",
+      "endAt": "2026-11-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 11101,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_9_Banner_Sub.jpg_2026-11-17_161520054985.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11101_NCT_WISH_9_Banner_Sub.jpg_2026-11-17_161520054985_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22223,
+      "url": "https://makestar.co/event/22223",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] FANSIGN & PHOTO EVENT IN TOKYO",
+      "titleEn": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] FANSIGN & PHOTO EVENT IN TOKYO",
+      "album": "미니1집 [DEAD:ALIVE]",
+      "albumEn": "1st Mini Album [DEAD:ALIVE]",
+      "artist": "성한빈",
+      "artistEn": "Sung Han Bin",
+      "releaseDate": "2026-10-12",
+      "from": "2026.11.20",
+      "to": "2026.11.23",
+      "startAt": "2026-11-20T15:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 11133,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_6_Banner_Sub.jpg_2026-11-18_145441927861.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_6_Banner_Sub.jpg_2026-11-18_145441927861_thumb.jpeg"
       }
     },
     {
@@ -104,6 +208,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._8_Banner_Sub.jpg_2026-11-17_111302586576.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11017_D.O._8_Banner_Sub.jpg_2026-11-17_111302586576_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22176,
+      "url": "https://makestar.co/event/22176",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "MEOVV Single Album [GO HARD] 1:1 ONLINE PHOTO&CALL EVENT PART.3",
+      "titleEn": "MEOVV Single Album [GO HARD] 1:1 ONLINE PHOTO&CALL EVENT PART.3",
+      "album": "Single Album [GO HARD]",
+      "albumEn": "Single Album [GO HARD]",
+      "artist": "MEOVV",
+      "artistEn": "MEOVV",
+      "releaseDate": "2026-10-12",
+      "from": "2026.11.20",
+      "to": "2026.11.21",
+      "startAt": "2026-11-20T14:00:00+09:00",
+      "endAt": "2026-11-21T23:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.11.23",
+      "productId": 11157,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_6_Banner_THUMB.png_2026-11-19_152112512850.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11157_MEOVV_6_Banner_THUMB.png_2026-11-19_152112512850_thumb.jpeg"
       }
     },
     {
@@ -185,6 +315,32 @@
       }
     },
     {
+      "id": 22115,
+      "url": "https://makestar.co/event/22115",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "AHOF (아홉) 미니 3집 [RUN TO YOU] (PHOTOBOOK Ver.) FIRST 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "AHOF (아홉) 미니 3집 [RUN TO YOU] (PHOTOBOOK Ver.) FIRST 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "미니 3집 [RUN TO YOU]",
+      "albumEn": "3rd Mini Album [RUN TO YOU]",
+      "artist": "아홉",
+      "artistEn": "AHOF",
+      "releaseDate": "2026-07-08",
+      "from": "2026.11.20",
+      "to": "2026.11.22",
+      "startAt": "2026-11-20T12:00:00+09:00",
+      "endAt": "2026-11-22T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.23",
+      "productId": 10797,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10797_AHOF_3_Sub.png_2026-11-18_193753255274.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10797_AHOF_3_Sub.png_2026-11-18_193753255274_thumb.jpeg"
+      }
+    },
+    {
       "id": 22112,
       "url": "https://makestar.co/event/22112",
       "type": "PHOTOCARD",
@@ -201,13 +357,39 @@
       "to": "2026.12.01",
       "startAt": "2026-11-11T18:00:00+09:00",
       "endAt": "2026-12-01T17:59:59.999999+09:00",
-      "dday": 12,
+      "dday": 11,
       "closing": false,
       "winnerAt": null,
       "productId": 11320,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11320_EXO-KASE_1_Banner_thumb.jpg_2026-11-11_115002433232.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11320_EXO-KASE_1_Banner_thumb.jpg_2026-11-11_115002433232_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22103,
+      "url": "https://makestar.co/event/22103",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "NCT 127 7th Album [BLINGY] 1:1 FANSIGN & PHOTO EVENT IN HONGKONG",
+      "titleEn": "NCT 127 7th Album [BLINGY] 1:1 FANSIGN & PHOTO EVENT IN HONGKONG",
+      "album": "정규 7집 [BLINGY]",
+      "albumEn": "7th Full Album [BLINGY]",
+      "artist": "NCT 127",
+      "artistEn": "NCT 127",
+      "releaseDate": "2026-08-24",
+      "from": "2026.11.20",
+      "to": "2026.11.24",
+      "startAt": "2026-11-20T16:00:00+09:00",
+      "endAt": "2026-11-24T00:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 10940,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_12_BANNER_SUB.png_2026-11-17_113126908007.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_12_BANNER_SUB.png_2026-11-17_113126908007_thumb.jpeg"
       }
     },
     {
@@ -587,6 +769,11 @@
       "album": "Waking Up The City"
     },
     {
+      "key": "WINNER｜PAGE 2",
+      "artist": "WINNER",
+      "album": "PAGE 2"
+    },
+    {
       "key": "CORTIS｜GREENGREEN",
       "artist": "CORTIS",
       "album": "GREENGREEN"
@@ -602,14 +789,49 @@
       "album": "The 4th Album (SMART ALBUM)"
     },
     {
+      "key": "Hebi｜1st Mini Album 'Chroma'",
+      "artist": "Hebi",
+      "album": "1st Mini Album 'Chroma'"
+    },
+    {
+      "key": "AKB48｜10th Album 「なんてったってAKB48」 Standard Edition",
+      "artist": "AKB48",
+      "album": "10th Album 「なんてったってAKB48」 Standard Edition"
+    },
+    {
+      "key": "AKB48｜10th Album 「なんてったってAKB48」 Limited Edition",
+      "artist": "AKB48",
+      "album": "10th Album 「なんてったってAKB48」 Limited Edition"
+    },
+    {
+      "key": "AKB48｜65th Single「まさかのConfession」(Standard Edition)",
+      "artist": "AKB48",
+      "album": "65th Single「まさかのConfession」(Standard Edition)"
+    },
+    {
+      "key": "AKB48｜65th Single「まさかのConfession」(Limited Edition C)",
+      "artist": "AKB48",
+      "album": "65th Single「まさかのConfession」(Limited Edition C)"
+    },
+    {
+      "key": "AKB48｜65th Single「まさかのConfession」(Limited Edition B)",
+      "artist": "AKB48",
+      "album": "65th Single「まさかのConfession」(Limited Edition B)"
+    },
+    {
+      "key": "AKB48｜65th Single「まさかのConfession」(Limited Edition A)",
+      "artist": "AKB48",
+      "album": "65th Single「まさかのConfession」(Limited Edition A)"
+    },
+    {
+      "key": "AKB48｜64th Single「恋 詰んじゃった」 Standard",
+      "artist": "AKB48",
+      "album": "64th Single「恋 詰んじゃった」 Standard"
+    },
+    {
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
-    },
-    {
-      "key": "LNGSHOT｜S.W.I.S.H.",
-      "artist": "LNGSHOT",
-      "album": "S.W.I.S.H."
     }
   ]
 }
