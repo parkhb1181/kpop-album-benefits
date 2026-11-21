@@ -966,3 +966,9 @@
 {"at":"2026-11-20T10:30:54.176Z","type":"album.new","artist":"AKB48","album":"64th Single「恋 詰んじゃった」 Standard"}
 {"at":"2026-11-20T10:30:54.176Z","type":"album.gone","artist":"LNGSHOT","album":"S.W.I.S.H."}
 {"at":"2026-11-20T18:50:19.479Z","type":"event.gone","label":"영상통화 팬사인회","artist":"82MAJOR","album":"2ND SINGLE ALBUM [HEAT]","id":22214}
+{"at":"2026-11-21T07:42:48.178Z","type":"event.new","label":"영상통화 팬사인회","artist":"A2O SOUL","album":"EP [SUPERSTAR]","id":22506,"url":"https://makestar.co/event/22506","endAt":"2026-11-23T23:59:59.999999+09:00"}
+{"at":"2026-11-21T07:42:48.178Z","type":"event.new","label":"대면 팬사인회","artist":"A2O SOUL","album":"EP [SUPERSTAR]","id":22505,"url":"https://makestar.co/event/22505","endAt":"2026-11-23T23:59:59.999999+09:00"}
+{"at":"2026-11-21T07:42:48.178Z","type":"event.new","label":"영상통화 팬사인회","artist":"싸이커스","album":"8TH MINI ALBUM [ROUTE ZERO : The CALLING]","id":22493,"url":"https://makestar.co/event/22493","endAt":"2026-11-23T11:59:59.999999+09:00"}
+{"at":"2026-11-21T07:42:48.178Z","type":"event.new","label":"영상통화 팬사인회","artist":"앤더블","album":"미니 2집 [Sequence 02: Attraction]","id":22462,"url":"https://makestar.co/event/22462","endAt":"2026-11-23T23:59:59.999999+09:00"}
+{"at":"2026-11-21T07:42:48.178Z","type":"event.new","label":"영상통화 팬사인회","artist":"누에라","album":"4th Mini Album [.exe]","id":22121,"url":"https://makestar.co/event/22121","endAt":"2026-11-23T23:59:59.999999+09:00"}
+{"at":"2026-11-21T07:42:48.178Z","type":"event.new","label":"영상통화 팬사인회","artist":"킥플립","album":"미니 5집 [KICK OFF THE WALL Pt.1]","id":22033,"url":"https://makestar.co/event/22033","endAt":"2026-11-23T23:59:59.999999+09:00"}

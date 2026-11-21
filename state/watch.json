@@ -1,7 +1,85 @@
 {
-  "checkedAt": "2026-11-21T00:35:55.024Z",
-  "lastDeep": "2026-11-21T00:35:55.024Z",
+  "checkedAt": "2026-11-21T07:42:48.178Z",
+  "lastDeep": "2026-11-21T07:42:48.178Z",
   "events": [
+    {
+      "id": 22506,
+      "url": "https://makestar.co/event/22506",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "A2O SOUL DEBUT ALBUM [SUPERSTAR] VIDEO CALL EVENT",
+      "titleEn": "A2O SOUL DEBUT ALBUM [SUPERSTAR] VIDEO CALL EVENT",
+      "album": "EP [SUPERSTAR]",
+      "albumEn": "EP [SUPERSTAR]",
+      "artist": "A2O SOUL",
+      "artistEn": "A2O SOUL",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.21",
+      "to": "2026.11.23",
+      "startAt": "2026-11-21T15:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 11239,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_4_Banner_PC.png_2026-11-20_223342492849.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_4_Banner_PC.png_2026-11-20_223342492849_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22505,
+      "url": "https://makestar.co/event/22505",
+      "type": "FANSIGN",
+      "label": "대면 팬사인회",
+      "fansign": true,
+      "title": "A2O SOUL DEBUT ALBUM [SUPERSTAR] Face-to-face Fansign Event",
+      "titleEn": "A2O SOUL DEBUT ALBUM [SUPERSTAR] Face-to-face Fansign Event",
+      "album": "EP [SUPERSTAR]",
+      "albumEn": "EP [SUPERSTAR]",
+      "artist": "A2O SOUL",
+      "artistEn": "A2O SOUL",
+      "releaseDate": "2026-11-09",
+      "from": "2026.11.21",
+      "to": "2026.11.23",
+      "startAt": "2026-11-21T15:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 11239,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_3_Banner_SUB.png_2026-11-20_225556655274.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_3_Banner_SUB.png_2026-11-20_225556655274_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22493,
+      "url": "https://makestar.co/event/22493",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) MEET&CALL EVENT PART.2",
+      "titleEn": "xikers 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) MEET&CALL EVENT PART.2",
+      "album": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "albumEn": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-11-02",
+      "from": "2026.11.21",
+      "to": "2026.11.23",
+      "startAt": "2026-11-21T15:00:00+09:00",
+      "endAt": "2026-11-23T11:59:59.999999+09:00",
+      "dday": 2,
+      "closing": true,
+      "winnerAt": "2026.11.24",
+      "productId": 11105,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_5_Banner_Sub.jpg_2026-11-20_153120913665.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_5_Banner_Sub.jpg_2026-11-20_153120913665_thumb.jpeg"
+      }
+    },
     {
       "id": 22464,
       "url": "https://makestar.co/event/22464",
@@ -26,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10501_XNGHAN%26XOUL_37_Banner_thumb.jpg_2026-11-19_105340258315.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10501_XNGHANXOUL_37_Banner_thumb.jpg_2026-11-19_105340258315_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22462,
+      "url": "https://makestar.co/event/22462",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "AND2BLE (앤더블) 미니 2집 'Sequence 02: Attraction' (POCAALBUM) MEET&CALL EVENT PART.2",
+      "titleEn": "AND2BLE (앤더블) 2nd Mini Album 'Sequence 02: Attraction' (POCAALBUM) MEET&CALL EVENT PART.2",
+      "album": "미니 2집 [Sequence 02: Attraction]",
+      "albumEn": "2ND MINI ALBUM [Sequence 02: Attraction]",
+      "artist": "앤더블",
+      "artistEn": "AND2BLE",
+      "releaseDate": "2026-10-27",
+      "from": "2026.11.21",
+      "to": "2026.11.23",
+      "startAt": "2026-11-21T11:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 11158,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_7_Banner_Sub.jpg_2026-11-19_142215864615.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_7_Banner_Sub.jpg_2026-11-19_142215864615_thumb.jpeg"
       }
     },
     {
@@ -289,6 +393,32 @@
       }
     },
     {
+      "id": 22121,
+      "url": "https://makestar.co/event/22121",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] 1:1 SPECIAL OFFLINE & MEET & CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] 1:1 SPECIAL OFFLINE & MEET & CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.11.21",
+      "to": "2026.11.23",
+      "startAt": "2026-11-21T15:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_23_Banner_Sub.jpg_2026-11-19_152249425280.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_23_Banner_Sub.jpg_2026-11-19_152249425280_thumb.jpeg"
+      }
+    },
+    {
       "id": 22115,
       "url": "https://makestar.co/event/22115",
       "type": "ONLINE PHOTO&CALL",
@@ -416,6 +546,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_1_banner_sub.png_2026-11-10_183721678833.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_1_banner_sub.png_2026-11-10_183721678833_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22033,
+      "url": "https://makestar.co/event/22033",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.5",
+      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.5",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.11.21",
+      "to": "2026.11.23",
+      "startAt": "2026-11-21T15:00:00+09:00",
+      "endAt": "2026-11-23T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.24",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_11_banner_sub.jpg_2026-11-05_103607560083.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_11_banner_sub.jpg_2026-11-05_103607560083_thumb.jpeg"
       }
     },
     {
