@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-22T01:18:14.446Z",
-  "lastDeep": "2026-11-22T01:18:14.446Z",
+  "checkedAt": "2026-11-22T08:29:28.875Z",
+  "lastDeep": "2026-11-22T08:29:28.875Z",
   "events": [
     {
       "id": 22506,
@@ -71,13 +71,39 @@
       "to": "2026.11.23",
       "startAt": "2026-11-21T15:00:00+09:00",
       "endAt": "2026-11-23T11:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.11.24",
       "productId": 11105,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_5_Banner_Sub.jpg_2026-11-20_153120913665.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_5_Banner_Sub.jpg_2026-11-20_153120913665_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22473,
+      "url": "https://makestar.co/event/22473",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "NouerA(누에라) 4th Mini Album [.exe] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT PART.2",
+      "titleEn": "NouerA(누에라) 4th Mini Album [.exe] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT PART.2",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.11.22",
+      "to": "2026.11.24",
+      "startAt": "2026-11-22T15:00:00+09:00",
+      "endAt": "2026-11-24T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.26",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_25_Banner_Sub.jpg_2026-11-20_112129320668.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_25_Banner_Sub.jpg_2026-11-20_112129320668_thumb.jpeg"
       }
     },
     {
