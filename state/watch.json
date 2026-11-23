@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-23T11:19:19.993Z",
-  "lastDeep": "2026-11-23T11:19:19.993Z",
+  "checkedAt": "2026-11-23T22:48:54.796Z",
+  "lastDeep": "2026-11-23T22:48:54.796Z",
   "events": [
     {
       "id": 22527,
@@ -19,8 +19,8 @@
       "to": "2026.11.25",
       "startAt": "2026-11-23T15:00:00+09:00",
       "endAt": "2026-11-25T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.11.26",
       "productId": 11254,
       "image": {
@@ -45,65 +45,13 @@
       "to": "2026.12.13",
       "startAt": "2026-11-23T15:00:00+09:00",
       "endAt": "2026-12-13T23:59:59.999999+09:00",
-      "dday": 21,
+      "dday": 20,
       "closing": false,
       "winnerAt": null,
       "productId": 11390,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11390_KIM_JI_WOONG_1_Banner_Sub.jpg_2026-11-20_184318682025.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11390_KIM_JI_WOONG_1_Banner_Sub.jpg_2026-11-20_184318682025_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22506,
-      "url": "https://makestar.co/event/22506",
-      "type": "VIDEOCALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "A2O SOUL DEBUT ALBUM [SUPERSTAR] VIDEO CALL EVENT",
-      "titleEn": "A2O SOUL DEBUT ALBUM [SUPERSTAR] VIDEO CALL EVENT",
-      "album": "EP [SUPERSTAR]",
-      "albumEn": "EP [SUPERSTAR]",
-      "artist": "A2O SOUL",
-      "artistEn": "A2O SOUL",
-      "releaseDate": "2026-11-09",
-      "from": "2026.11.21",
-      "to": "2026.11.23",
-      "startAt": "2026-11-21T15:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 11239,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_4_Banner_PC.png_2026-11-20_223342492849.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_4_Banner_PC.png_2026-11-20_223342492849_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22505,
-      "url": "https://makestar.co/event/22505",
-      "type": "FANSIGN",
-      "label": "대면 팬사인회",
-      "fansign": true,
-      "title": "A2O SOUL DEBUT ALBUM [SUPERSTAR] Face-to-face Fansign Event",
-      "titleEn": "A2O SOUL DEBUT ALBUM [SUPERSTAR] Face-to-face Fansign Event",
-      "album": "EP [SUPERSTAR]",
-      "albumEn": "EP [SUPERSTAR]",
-      "artist": "A2O SOUL",
-      "artistEn": "A2O SOUL",
-      "releaseDate": "2026-11-09",
-      "from": "2026.11.21",
-      "to": "2026.11.23",
-      "startAt": "2026-11-21T15:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 11239,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_3_Banner_SUB.png_2026-11-20_225556655274.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11239_A2O_SOUL_3_Banner_SUB.png_2026-11-20_225556655274_thumb.jpeg"
       }
     },
     {
@@ -123,8 +71,8 @@
       "to": "2026.11.25",
       "startAt": "2026-11-23T14:00:00+09:00",
       "endAt": "2026-11-25T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": "2026.11.26",
       "productId": 10952,
       "image": {
@@ -149,7 +97,7 @@
       "to": "2026.12.23",
       "startAt": "2026-11-23T15:00:00+09:00",
       "endAt": "2026-12-23T23:59:59.999999+09:00",
-      "dday": 31,
+      "dday": 30,
       "closing": false,
       "winnerAt": null,
       "productId": 11193,
@@ -175,7 +123,7 @@
       "to": "2026.11.24",
       "startAt": "2026-11-22T15:00:00+09:00",
       "endAt": "2026-11-24T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.11.26",
       "productId": 10867,
@@ -201,39 +149,13 @@
       "to": "2026.12.10",
       "startAt": "2026-11-23T11:00:00+09:00",
       "endAt": "2026-12-10T23:59:59.999999+09:00",
-      "dday": 18,
+      "dday": 17,
       "closing": false,
       "winnerAt": null,
       "productId": 11373,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11373_MW_MEU_1_banner_sub.png_2026-11-20_190149966903.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11373_MW_MEU_1_banner_sub.png_2026-11-20_190149966903_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22462,
-      "url": "https://makestar.co/event/22462",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "AND2BLE (앤더블) 미니 2집 'Sequence 02: Attraction' (POCAALBUM) MEET&CALL EVENT PART.2",
-      "titleEn": "AND2BLE (앤더블) 2nd Mini Album 'Sequence 02: Attraction' (POCAALBUM) MEET&CALL EVENT PART.2",
-      "album": "미니 2집 [Sequence 02: Attraction]",
-      "albumEn": "2ND MINI ALBUM [Sequence 02: Attraction]",
-      "artist": "앤더블",
-      "artistEn": "AND2BLE",
-      "releaseDate": "2026-10-27",
-      "from": "2026.11.21",
-      "to": "2026.11.23",
-      "startAt": "2026-11-21T11:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 11158,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_7_Banner_Sub.jpg_2026-11-19_142215864615.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11158_AND2BLE_7_Banner_Sub.jpg_2026-11-19_142215864615_thumb.jpeg"
       }
     },
     {
@@ -263,32 +185,6 @@
       }
     },
     {
-      "id": 22223,
-      "url": "https://makestar.co/event/22223",
-      "type": "FANSIGN&PHOTO EVENT",
-      "label": "FANSIGN&PHOTO EVENT",
-      "fansign": false,
-      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] FANSIGN & PHOTO EVENT IN TOKYO",
-      "titleEn": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] FANSIGN & PHOTO EVENT IN TOKYO",
-      "album": "미니1집 [DEAD:ALIVE]",
-      "albumEn": "1st Mini Album [DEAD:ALIVE]",
-      "artist": "성한빈",
-      "artistEn": "Sung Han Bin",
-      "releaseDate": "2026-10-12",
-      "from": "2026.11.20",
-      "to": "2026.11.23",
-      "startAt": "2026-11-20T15:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 11133,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_6_Banner_Sub.jpg_2026-11-18_145441927861.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_6_Banner_Sub.jpg_2026-11-18_145441927861_thumb.jpeg"
-      }
-    },
-    {
       "id": 22140,
       "url": "https://makestar.co/event/22140",
       "type": "FANSIGN",
@@ -305,7 +201,7 @@
       "to": "2026.11.24",
       "startAt": "2026-11-18T11:00:00+09:00",
       "endAt": "2026-11-24T23:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.11.27",
       "productId": 11191,
@@ -331,39 +227,13 @@
       "to": "2026.11.25",
       "startAt": "2026-11-12T12:00:00+09:00",
       "endAt": "2026-11-25T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": null,
       "productId": 11302,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_3_banner_sub.png_2026-11-11_205058881733.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_3_banner_sub.png_2026-11-11_205058881733_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22121,
-      "url": "https://makestar.co/event/22121",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "NouerA 4th Mini Album [.exe] 1:1 SPECIAL OFFLINE & MEET & CALL EVENT",
-      "titleEn": "NouerA 4th Mini Album [.exe] 1:1 SPECIAL OFFLINE & MEET & CALL EVENT",
-      "album": "4th Mini Album [.exe]",
-      "albumEn": "4th Mini Album [.exe] ",
-      "artist": "누에라",
-      "artistEn": "NouerA",
-      "releaseDate": "2026-07-27",
-      "from": "2026.11.21",
-      "to": "2026.11.23",
-      "startAt": "2026-11-21T15:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 10867,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_23_Banner_Sub.jpg_2026-11-19_152249425280.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_23_Banner_Sub.jpg_2026-11-19_152249425280_thumb.jpeg"
       }
     },
     {
@@ -393,32 +263,6 @@
       }
     },
     {
-      "id": 22103,
-      "url": "https://makestar.co/event/22103",
-      "type": "FANSIGN&PHOTO EVENT",
-      "label": "FANSIGN&PHOTO EVENT",
-      "fansign": false,
-      "title": "NCT 127 7th Album [BLINGY] 1:1 FANSIGN & PHOTO EVENT IN HONGKONG",
-      "titleEn": "NCT 127 7th Album [BLINGY] 1:1 FANSIGN & PHOTO EVENT IN HONGKONG",
-      "album": "정규 7집 [BLINGY]",
-      "albumEn": "7th Full Album [BLINGY]",
-      "artist": "NCT 127",
-      "artistEn": "NCT 127",
-      "releaseDate": "2026-08-24",
-      "from": "2026.11.20",
-      "to": "2026.11.24",
-      "startAt": "2026-11-20T16:00:00+09:00",
-      "endAt": "2026-11-24T00:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 10940,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_12_BANNER_SUB.png_2026-11-17_113126908007.png",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10940_NCT_127_12_BANNER_SUB.png_2026-11-17_113126908007_thumb.jpeg"
-      }
-    },
-    {
       "id": 22034,
       "url": "https://makestar.co/event/22034",
       "type": "ETC",
@@ -435,39 +279,13 @@
       "to": "2026.11.25",
       "startAt": "2026-11-12T12:00:00+09:00",
       "endAt": "2026-11-25T23:59:59.999999+09:00",
-      "dday": 3,
-      "closing": false,
+      "dday": 2,
+      "closing": true,
       "winnerAt": null,
       "productId": 11302,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_1_banner_sub.png_2026-11-10_183721678833.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11302_OFTHEBLUE_1_banner_sub.png_2026-11-10_183721678833_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22033,
-      "url": "https://makestar.co/event/22033",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.5",
-      "titleEn": "KickFlip The 5th Mini Album 'KICK OFF THE WALL Pt. 1' Meet&Call Event Part.5",
-      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
-      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
-      "artist": "킥플립",
-      "artistEn": "KickFlip",
-      "releaseDate": "2026-10-06",
-      "from": "2026.11.21",
-      "to": "2026.11.23",
-      "startAt": "2026-11-21T15:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 11062,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_11_banner_sub.jpg_2026-11-05_103607560083.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_11_banner_sub.jpg_2026-11-05_103607560083_thumb.jpeg"
       }
     },
     {
@@ -487,7 +305,7 @@
       "to": "2026.12.03",
       "startAt": "2026-11-06T11:00:00+09:00",
       "endAt": "2026-12-03T23:59:59.999999+09:00",
-      "dday": 11,
+      "dday": 10,
       "closing": false,
       "winnerAt": null,
       "productId": 11293,
@@ -513,7 +331,7 @@
       "to": "2026.11.30",
       "startAt": "2026-11-04T15:00:00+09:00",
       "endAt": "2026-11-30T23:00:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.12.03",
       "productId": 11268,
@@ -539,7 +357,7 @@
       "to": "2026.11.30",
       "startAt": "2026-11-04T15:00:00+09:00",
       "endAt": "2026-11-30T23:00:59.999999+09:00",
-      "dday": 8,
+      "dday": 7,
       "closing": false,
       "winnerAt": "2026.12.03",
       "productId": 11268,
@@ -565,39 +383,13 @@
       "to": "2026.12.17",
       "startAt": "2026-10-27T14:00:00+09:00",
       "endAt": "2026-12-17T23:59:59.999999+09:00",
-      "dday": 25,
+      "dday": 24,
       "closing": false,
       "winnerAt": null,
       "productId": 11246,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11246_ALPHA_DRIVE_ONE_1_Banner_Sub_v4.jpg_2026-10-26_163822361352_thumb.jpeg"
-      }
-    },
-    {
-      "id": 21593,
-      "url": "https://makestar.co/event/21593",
-      "type": "FANSIGN&PHOTO EVENT",
-      "label": "FANSIGN&PHOTO EVENT",
-      "fansign": false,
-      "title": "NCT DREAM The 6th Album [DREAM AFTER DREAM] 1:1 FANSIGN & PHOTO EVENT IN TAIPEI",
-      "titleEn": "NCT DREAM The 6th Album [DREAM AFTER DREAM] 1:1 FANSIGN & PHOTO EVENT IN TAIPEI",
-      "album": "[DREAM AFTER DREAM]",
-      "albumEn": "[DREAM AFTER DREAM]",
-      "artist": "NCT DREAM",
-      "artistEn": "NCT DREAM",
-      "releaseDate": "2026-11-09",
-      "from": "2026.11.19",
-      "to": "2026.11.23",
-      "startAt": "2026-11-19T18:00:00+09:00",
-      "endAt": "2026-11-23T23:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.24",
-      "productId": 11214,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_9_Banner_thumb.jpg_2026-11-18_165504923769.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11214_NCT_DREAM_9_Banner_thumb.jpg_2026-11-18_165504923769_thumb.jpeg"
       }
     },
     {
@@ -617,7 +409,7 @@
       "to": "2026.12.17",
       "startAt": "2026-10-23T14:00:00+09:00",
       "endAt": "2026-12-17T23:59:59.999999+09:00",
-      "dday": 25,
+      "dday": 24,
       "closing": false,
       "winnerAt": null,
       "productId": 11245,
@@ -643,7 +435,7 @@
       "to": "2026.12.17",
       "startAt": "2026-10-23T14:00:00+09:00",
       "endAt": "2026-12-17T23:59:59.999999+09:00",
-      "dday": 25,
+      "dday": 24,
       "closing": false,
       "winnerAt": null,
       "productId": 11244,
@@ -680,11 +472,6 @@
     }
   ],
   "albums": [
-    {
-      "key": "WENDY｜Gleam Hour",
-      "artist": "WENDY",
-      "album": "Gleam Hour"
-    },
     {
       "key": "EXO｜Waking Up The City",
       "artist": "EXO",
@@ -749,6 +536,11 @@
       "key": "JISOO｜CLICK",
       "artist": "JISOO",
       "album": "CLICK"
+    },
+    {
+      "key": "LNGSHOT｜S.W.I.S.H.",
+      "artist": "LNGSHOT",
+      "album": "S.W.I.S.H."
     }
   ]
 }
