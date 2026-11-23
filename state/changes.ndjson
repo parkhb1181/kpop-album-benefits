@@ -988,3 +988,12 @@
 {"at":"2026-11-22T16:34:53.239Z","type":"event.gone","label":"예약 특전 포토카드","artist":"웬디","album":"The 4th Mini Album [Gleam Hour]","id":22030}
 {"at":"2026-11-22T16:34:53.239Z","type":"event.gone","label":"예약 특전 포토카드","artist":"엔하이픈","album":"[THE SIN : PARALLEL WORLD]","id":21530}
 {"at":"2026-11-23T02:44:17.810Z","type":"event.new","label":"예약 특전 포토카드","artist":"뮤","album":"2nd Single 'Smile Smile'","id":22472,"url":"https://makestar.co/event/22472","endAt":"2026-12-10T23:59:59.999999+09:00"}
+{"at":"2026-11-23T11:19:19.993Z","type":"event.new","label":"영상통화 팬사인회","artist":"키빗업","album":"2ND EP [NA-GARI]","id":22527,"url":"https://makestar.co/event/22527","endAt":"2026-11-25T23:59:59.999999+09:00"}
+{"at":"2026-11-23T11:19:19.993Z","type":"event.new","label":"예약 특전 포토카드","artist":"김지웅","album":"1st EP [NOISE IN BLUE]","id":22520,"url":"https://makestar.co/event/22520","endAt":"2026-12-13T23:59:59.999999+09:00"}
+{"at":"2026-11-23T11:19:19.993Z","type":"event.new","label":"영상통화 팬사인회","artist":"아워벌스데이","album":"[Our Birthday]","id":22492,"url":"https://makestar.co/event/22492","endAt":"2026-11-25T23:59:59.999999+09:00"}
+{"at":"2026-11-23T11:19:19.993Z","type":"event.new","label":"예약 특전 포토카드","artist":"ERIC","album":"2026 ERIC Seoul Fanmeeting ‘꽃보다 손영재’ Official MD","id":22475,"url":"https://makestar.co/event/22475","endAt":"2026-12-23T23:59:59.999999+09:00"}
+{"at":"2026-11-23T11:19:19.993Z","type":"event.new","label":"영상통화 팬사인회","artist":"채령","album":"미니 1집 [Lovesick]","id":22460,"url":"https://makestar.co/event/22460","endAt":"2026-11-25T13:59:59.999999+09:00"}
+{"at":"2026-11-23T11:19:19.993Z","type":"event.gone","label":"영상통화 팬사인회","artist":"싸이커스","album":"8TH MINI ALBUM [ROUTE ZERO : The CALLING]","id":22493}
+{"at":"2026-11-23T11:19:19.993Z","type":"album.new","artist":"KYUHYUN","album":"CONTINUE"}
+{"at":"2026-11-23T11:19:19.993Z","type":"album.gone","artist":"Girls' Generation","album":"The 4th Album"}
+{"at":"2026-11-23T11:19:19.993Z","type":"album.gone","artist":"Girls' Generation","album":"The 4th Album (SMART ALBUM)"}
