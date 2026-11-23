@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-22T22:03:19.731Z",
-  "lastDeep": "2026-11-22T22:03:19.731Z",
+  "checkedAt": "2026-11-23T02:44:17.810Z",
+  "lastDeep": "2026-11-23T02:44:17.810Z",
   "events": [
     {
       "id": 22506,
@@ -104,6 +104,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_25_Banner_Sub.jpg_2026-11-20_112129320668.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_25_Banner_Sub.jpg_2026-11-20_112129320668_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22472,
+      "url": "https://makestar.co/event/22472",
+      "type": "PHOTOCARD",
+      "label": "예약 특전 포토카드",
+      "fansign": false,
+      "title": "MW:MEU (뮤) 2nd Single 'Smile Smile' PRE-ORDER PHOTOCARD EVENT",
+      "titleEn": "MW:MEU (뮤) 2nd Single 'Smile Smile' PRE-ORDER PHOTOCARD EVENT",
+      "album": "2nd Single 'Smile Smile'",
+      "albumEn": "2nd Single 'Smile Smile'",
+      "artist": "뮤",
+      "artistEn": "MW:MEU",
+      "releaseDate": "2026-11-18",
+      "from": "2026.11.23",
+      "to": "2026.12.10",
+      "startAt": "2026-11-23T11:00:00+09:00",
+      "endAt": "2026-12-10T23:59:59.999999+09:00",
+      "dday": 18,
+      "closing": false,
+      "winnerAt": null,
+      "productId": 11373,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11373_MW_MEU_1_banner_sub.png_2026-11-20_190149966903.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11373_MW_MEU_1_banner_sub.png_2026-11-20_190149966903_thumb.jpeg"
       }
     },
     {
