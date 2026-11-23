@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 23. 20:19:48",
+  "stamp": "2026. 11. 24. 06:52:30",
   "albums": [
     {
       "artistId": 38,
@@ -17,43 +17,12 @@
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 38분"
-      },
+      "nextDeadline": null,
       "rowCount": 32,
       "artistKo": "강승윤",
       "artistDisplay": "강승윤(WINNER)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/10/27/ASzVif.png",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/10/27/ASzVif.png"
-    },
-    {
-      "artistId": 124,
-      "artistEn": "EXO",
-      "album": "Waking Up The City",
-      "skuCount": 5,
-      "benefit": false,
-      "deliveryDate": "2026-12-01",
-      "weversePriceMin": 13900,
-      "artist": "EXO",
-      "slug": "exo-waking-up-the-city",
-      "versions": 7,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 1,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 특전 포토카드 응모 마감",
-        "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "7일 21시간"
-      },
-      "rowCount": 34,
-      "artistKo": "엑소-카이세훈(EXO-KASE)",
-      "artistDisplay": "엑소-카이세훈(EXO-KASE)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg"
     },
     {
       "artistId": 215,
@@ -74,7 +43,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "6일 16시간"
+        "rough": "6일 6시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -83,27 +52,31 @@
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
     },
     {
-      "artistId": 331,
-      "artistEn": "WENDY",
-      "album": "Gleam Hour",
-      "skuCount": 6,
+      "artistId": 124,
+      "artistEn": "EXO",
+      "album": "Waking Up The City",
+      "skuCount": 5,
       "benefit": false,
-      "deliveryDate": "2026-11-23",
-      "weversePriceMin": 15600,
-      "artist": "WENDY",
-      "slug": "wendy-gleam-hour",
-      "versions": 15,
+      "deliveryDate": "2026-12-01",
+      "weversePriceMin": 13900,
+      "artist": "EXO",
+      "slug": "exo-waking-up-the-city",
+      "versions": 7,
       "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
-      "eventCount": 0,
+      "eventCount": 1,
       "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 34,
-      "artistKo": "웬디",
-      "artistDisplay": "웬디(WENDY)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/19/VTPzZG.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/19/VTPzZG.jpg"
+      "nextDeadline": {
+        "label": "예약 특전 포토카드 응모 마감",
+        "at": "2026-12-01T17:59:59.999999+09:00",
+        "rough": "7일 11시간"
+      },
+      "rowCount": 31,
+      "artistKo": "엑소-카이세훈(EXO-KASE)",
+      "artistDisplay": "엑소-카이세훈(EXO-KASE)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/10/UxDX1X.jpg"
     },
     {
       "artistId": 255,
@@ -124,7 +97,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-08T13:00:00+09:00",
-        "rough": "45일 16시간"
+        "rough": "45일 6시간"
       },
       "rowCount": 79,
       "artistKo": "코르티스",
@@ -151,13 +124,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-23T18:00:00+09:00",
-        "rough": "29일 21시간"
+        "rough": "29일 11시간"
       },
       "rowCount": 32,
       "artistKo": "규현",
       "artistDisplay": "규현(KYUHYUN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg"
+    },
+    {
+      "artistId": 275,
+      "artistEn": "LNGSHOT",
+      "album": "S.W.I.S.H.",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-12-10",
+      "weversePriceMin": 10800,
+      "artist": "LNGSHOT",
+      "slug": "lngshot-s-w-i-s-h",
+      "versions": 5,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 6,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-12-10T00:00:00+09:00",
+        "rough": "15일 17시간"
+      },
+      "rowCount": 20,
+      "artistKo": null,
+      "artistDisplay": "LNGSHOT",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg"
     },
     {
       "artistId": 229,
@@ -175,11 +175,7 @@
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 37분"
-      },
+      "nextDeadline": null,
       "rowCount": 6,
       "artistKo": null,
       "artistDisplay": "Hebi",
@@ -202,11 +198,7 @@
       "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 36분"
-      },
+      "nextDeadline": null,
       "rowCount": 1,
       "artistKo": null,
       "artistDisplay": "AKB48",
@@ -229,11 +221,7 @@
       "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 36분"
-      },
+      "nextDeadline": null,
       "rowCount": 1,
       "artistKo": null,
       "artistDisplay": "AKB48",
@@ -256,11 +244,7 @@
       "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 36분"
-      },
+      "nextDeadline": null,
       "rowCount": 1,
       "artistKo": null,
       "artistDisplay": "AKB48",
@@ -283,11 +267,7 @@
       "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 35분"
-      },
+      "nextDeadline": null,
       "rowCount": 1,
       "artistKo": null,
       "artistDisplay": "AKB48",
@@ -310,11 +290,7 @@
       "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 35분"
-      },
+      "nextDeadline": null,
       "rowCount": 1,
       "artistKo": null,
       "artistDisplay": "AKB48",
@@ -337,11 +313,7 @@
       "soldCount": 0,
       "eventCount": 0,
       "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-24T00:00:01+09:00",
-        "rough": "3시간 35분"
-      },
+      "nextDeadline": null,
       "rowCount": 1,
       "artistKo": null,
       "artistDisplay": "AKB48",
@@ -1348,33 +1320,6 @@
       "ogCard": "https://kpop-album.vercel.app/og/mark-lee-windmill.png"
     },
     {
-      "artistId": 275,
-      "artistEn": "LNGSHOT",
-      "album": "S.W.I.S.H.",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-12-10",
-      "weversePriceMin": 10800,
-      "artist": "LNGSHOT",
-      "slug": "lngshot-s-w-i-s-h",
-      "versions": 5,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 5,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 20,
-      "artistKo": null,
-      "artistDisplay": "LNGSHOT",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
-      "expired": {
-        "lastSeen": "2026-11-20"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/lngshot-s-w-i-s-h.png"
-    },
-    {
       "artistId": 135,
       "artistEn": "WayV",
       "album": "Hey, Somebody",
@@ -1454,6 +1399,33 @@
         "lastSeen": "2026-09-18"
       },
       "ogCard": "https://kpop-album.vercel.app/og/y-sy-goodies.png"
+    },
+    {
+      "artistId": 331,
+      "artistEn": "WENDY",
+      "album": "Gleam Hour",
+      "skuCount": 6,
+      "benefit": false,
+      "deliveryDate": "2026-11-23",
+      "weversePriceMin": 15600,
+      "artist": "WENDY",
+      "slug": "wendy-gleam-hour",
+      "versions": 15,
+      "retailers": 6,
+      "benefitCount": 1,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 34,
+      "artistKo": "웬디",
+      "artistDisplay": "웬디(WENDY)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/19/VTPzZG.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/19/VTPzZG.jpg",
+      "expired": {
+        "lastSeen": "2026-11-23"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/wendy-gleam-hour.png"
     },
     {
       "artistId": 50,

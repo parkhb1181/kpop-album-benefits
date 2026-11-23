@@ -13,19 +13,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/exo-waking-up-the-city</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/jisoo-click</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/wendy-gleam-hour</loc>
+    <loc>https://kpop-album.vercel.app/album/exo-waking-up-the-city</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -38,6 +32,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/album/kyuhyun-continue</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/lngshot-s-w-i-s-h</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -307,12 +307,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/lngshot-s-w-i-s-h</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/wayv-hey-somebody</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -327,6 +321,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/album/y-sy-goodies</loc>
     <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/album/wendy-gleam-hour</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -637,19 +637,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/exo-waking-up-the-city</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/wendy-gleam-hour</loc>
+    <loc>https://kpop-album.vercel.app/en/album/exo-waking-up-the-city</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -662,6 +656,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/kyuhyun-continue</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/lngshot-s-w-i-s-h</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -931,12 +931,6 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/en/album/lngshot-s-w-i-s-h</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/en/album/wayv-hey-somebody</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -951,6 +945,12 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/y-sy-goodies</loc>
     <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/wendy-gleam-hour</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
