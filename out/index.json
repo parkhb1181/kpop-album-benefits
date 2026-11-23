@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 23. 11:44:45",
+  "stamp": "2026. 11. 23. 17:33:06",
   "albums": [
     {
       "artistId": 38,
@@ -20,7 +20,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 14분"
+        "rough": "6시간 25분"
       },
       "rowCount": 32,
       "artistKo": "강승윤",
@@ -47,7 +47,7 @@
       "nextDeadline": {
         "label": "예약 특전 포토카드 응모 마감",
         "at": "2026-12-01T17:59:59.999999+09:00",
-        "rough": "8일 6시간"
+        "rough": "8일 0시간"
       },
       "rowCount": 33,
       "artistKo": "엑소-카이세훈(EXO-KASE)",
@@ -74,7 +74,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "7일 1시간"
+        "rough": "6일 19시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -101,7 +101,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-23T18:00:01+09:00",
-        "rough": "6시간 14분"
+        "rough": "26분"
       },
       "rowCount": 34,
       "artistKo": "웬디",
@@ -128,13 +128,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-08T13:00:00+09:00",
-        "rough": "46일 1시간"
+        "rough": "45일 19시간"
       },
       "rowCount": 79,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg"
+    },
+    {
+      "artistId": 164,
+      "artistEn": "KYUHYUN",
+      "album": "CONTINUE",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-12-23",
+      "weversePriceMin": 36800,
+      "artist": "KYUHYUN",
+      "slug": "kyuhyun-continue",
+      "versions": 8,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-12-23T18:00:00+09:00",
+        "rough": "30일 0시간"
+      },
+      "rowCount": 32,
+      "artistKo": "규현",
+      "artistDisplay": "규현(KYUHYUN)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg"
     },
     {
       "artistId": 229,
@@ -155,40 +182,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 12분"
+        "rough": "6시간 24분"
       },
       "rowCount": 6,
       "artistKo": null,
       "artistDisplay": "Hebi",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/07/1W82nZ.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/07/1W82nZ.jpg"
-    },
-    {
-      "artistId": 134,
-      "artistEn": "Girls' Generation",
-      "album": "The 4th Album",
-      "skuCount": 2,
-      "benefit": false,
-      "deliveryDate": "2026-11-30",
-      "weversePriceMin": 17800,
-      "artist": "Girls' Generation",
-      "slug": "girls-generation-the-4th-album",
-      "versions": 5,
-      "retailers": 3,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2026-11-30T18:00:00+09:00",
-        "rough": "7일 6시간"
-      },
-      "rowCount": 7,
-      "artistKo": null,
-      "artistDisplay": "Girls' Generation",
-      "ogImage": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg",
-      "cover": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg"
     },
     {
       "artistId": 171,
@@ -209,7 +209,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 12분"
+        "rough": "6시간 24분"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -236,7 +236,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 12분"
+        "rough": "6시간 23분"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -263,7 +263,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 11분"
+        "rough": "6시간 23분"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -290,7 +290,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 11분"
+        "rough": "6시간 23분"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -317,7 +317,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 11분"
+        "rough": "6시간 23분"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -344,7 +344,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-24T00:00:01+09:00",
-        "rough": "12시간 11분"
+        "rough": "6시간 22분"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -1350,33 +1350,6 @@
         "lastSeen": "2026-11-20"
       },
       "ogCard": "https://kpop-album.vercel.app/og/mark-lee-windmill.png"
-    },
-    {
-      "artistId": 164,
-      "artistEn": "KYUHYUN",
-      "album": "CONTINUE",
-      "skuCount": 2,
-      "benefit": true,
-      "deliveryDate": "2026-11-11",
-      "weversePriceMin": 18500,
-      "artist": "KYUHYUN",
-      "slug": "kyuhyun-continue",
-      "versions": 7,
-      "retailers": 7,
-      "benefitCount": 1,
-      "soldCount": 1,
-      "eventCount": 2,
-      "fansignCount": 1,
-      "nextDeadline": null,
-      "rowCount": 28,
-      "artistKo": "규현",
-      "artistDisplay": "규현(KYUHYUN)",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/6df41fac1ce9d88c5a5c6b5f5e9cacaf.png",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/p8Xk5a.jpg",
-      "expired": {
-        "lastSeen": "2026-11-10"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/kyuhyun-continue.png"
     },
     {
       "artistId": 275,
@@ -2511,6 +2484,33 @@
         "lastSeen": "2026-09-07"
       },
       "ogCard": "https://kpop-album.vercel.app/og/tomorrow-x-together-no-labels-part-02.png"
+    },
+    {
+      "artistId": 134,
+      "artistEn": "Girls' Generation",
+      "album": "The 4th Album",
+      "skuCount": 2,
+      "benefit": false,
+      "deliveryDate": "2026-11-30",
+      "weversePriceMin": 17800,
+      "artist": "Girls' Generation",
+      "slug": "girls-generation-the-4th-album",
+      "versions": 5,
+      "retailers": 3,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 7,
+      "artistKo": null,
+      "artistDisplay": "Girls' Generation",
+      "ogImage": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg",
+      "cover": "https://image.aladin.co.kr/product/72/61/cover150/7192595128_1.jpg",
+      "expired": {
+        "lastSeen": "2026-11-23"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/girls-generation-the-4th-album.png"
     },
     {
       "artistId": 10,
