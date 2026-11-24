@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-11-23T22:48:54.796Z",
-  "lastDeep": "2026-11-23T22:48:54.796Z",
+  "checkedAt": "2026-11-24T06:44:10.624Z",
+  "lastDeep": "2026-11-24T06:44:10.624Z",
   "events": [
+    {
+      "id": 22585,
+      "url": "https://makestar.co/event/22585",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) MEET&UNIT VIDEO CALL EVENT",
+      "titleEn": "ATEEZ(에이티즈) 15TH MINI ALBUM [GOLDEN HOUR : Part.6] (POCAALBUM) MEET&UNIT VIDEO CALL EVENT",
+      "album": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "albumEn": "15TH MINI ALBUM [GOLDEN HOUR : Part.6]",
+      "artist": "에이티즈",
+      "artistEn": "ATEEZ",
+      "releaseDate": "2026-11-13",
+      "from": "2026.11.24",
+      "to": "2026.11.26",
+      "startAt": "2026-11-24T15:00:00+09:00",
+      "endAt": "2026-11-26T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.27",
+      "productId": 11205,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_4_Banner_Sub.jpg_2026-11-24_102918488748.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11205_ATEEZ_4_Banner_Sub.jpg_2026-11-24_102918488748_thumb.jpeg"
+      }
+    },
     {
       "id": 22527,
       "url": "https://makestar.co/event/22527",
@@ -175,13 +201,117 @@
       "to": "2026.11.25",
       "startAt": "2026-11-23T14:00:00+09:00",
       "endAt": "2026-11-25T13:59:59.999999+09:00",
-      "dday": 2,
+      "dday": 1,
       "closing": true,
       "winnerAt": "2026.11.25",
       "productId": 11148,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_7_Banner_thumb.jpg_2026-11-19_192001805784.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_7_Banner_thumb.jpg_2026-11-19_192001805784_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22447,
+      "url": "https://makestar.co/event/22447",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "xikers(싸이커스) 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "xikers(싸이커스) 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "albumEn": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
+      "artist": "싸이커스",
+      "artistEn": "xikers",
+      "releaseDate": "2026-11-02",
+      "from": "2026.11.24",
+      "to": "2026.11.25",
+      "startAt": "2026-11-24T12:00:00+09:00",
+      "endAt": "2026-11-25T11:59:59.999999+09:00",
+      "dday": 1,
+      "closing": true,
+      "winnerAt": "2026.11.25",
+      "productId": 11105,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_4_Banner_Sub.jpg_2026-11-20_170440093139.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_4_Banner_Sub.jpg_2026-11-20_170440093139_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22257,
+      "url": "https://makestar.co/event/22257",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "8TURN (에잇턴) THE 3RD SINGLE ALBUM [8.X] (POCAALBUM) SPECIAL OFFLINE&MEET&CALL EVENT",
+      "titleEn": "8TURN (에잇턴) THE 3RD SINGLE ALBUM [8.X] (POCAALBUM) SPECIAL OFFLINE&MEET&CALL EVENT",
+      "album": "THE 3RD SINGLE ALBUM [8.X]",
+      "albumEn": "THE 3RD SINGLE ALBUM [8.X]",
+      "artist": "에잇턴",
+      "artistEn": "8TURN",
+      "releaseDate": "2026-07-21",
+      "from": "2026.11.24",
+      "to": "2026.11.26",
+      "startAt": "2026-11-24T15:00:00+09:00",
+      "endAt": "2026-11-26T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.27",
+      "productId": 10833,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10833_8TURN_5_Banner_Sub.jpg_2026-11-20_163744945826.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10833_8TURN_5_Banner_Sub.jpg_2026-11-20_163744945826_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22248,
+      "url": "https://makestar.co/event/22248",
+      "type": "ONLINE PHOTO&CALL",
+      "label": "ONLINE PHOTO&CALL",
+      "fansign": false,
+      "title": "KickFlip The 5th Mini Album ‘KICK OFF THE WALL Pt. 1’ 1:1 ONLINE PHOTO&CALL EVENT",
+      "titleEn": "KickFlip The 5th Mini Album ‘KICK OFF THE WALL Pt. 1’ 1:1 ONLINE PHOTO&CALL EVENT",
+      "album": "미니 5집 [KICK OFF THE WALL Pt.1]",
+      "albumEn": "5th Mini Album [KICK OFF THE WALL Pt.1]",
+      "artist": "킥플립",
+      "artistEn": "KickFlip",
+      "releaseDate": "2026-10-06",
+      "from": "2026.11.24",
+      "to": "2026.11.26",
+      "startAt": "2026-11-24T15:00:00+09:00",
+      "endAt": "2026-11-26T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.27",
+      "productId": 11062,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_15_banner_sub.jpg_2026-11-18_164948831929.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_15_banner_sub.jpg_2026-11-18_164948831929_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22224,
+      "url": "https://makestar.co/event/22224",
+      "type": "FANSIGN&PHOTO EVENT",
+      "label": "FANSIGN&PHOTO EVENT",
+      "fansign": false,
+      "title": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] FANSIGN & PHOTO EVENT IN TOKYO PART.2",
+      "titleEn": "SUNGHANBIN (성한빈) 1st EP [DEAD:ALIVE] FANSIGN & PHOTO EVENT IN TOKYO PART.2",
+      "album": "미니1집 [DEAD:ALIVE]",
+      "albumEn": "1st Mini Album [DEAD:ALIVE]",
+      "artist": "성한빈",
+      "artistEn": "Sung Han Bin",
+      "releaseDate": "2026-10-12",
+      "from": "2026.11.24",
+      "to": "2026.11.27",
+      "startAt": "2026-11-24T15:00:00+09:00",
+      "endAt": "2026-11-27T23:59:59.999999+09:00",
+      "dday": 4,
+      "closing": false,
+      "winnerAt": "2026.11.30",
+      "productId": 11133,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_7_Banner_Sub.jpg_2026-11-19_170427525239.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11133_SUNG_HAN_BIN_7_Banner_Sub.jpg_2026-11-19_170427525239_thumb.jpeg"
       }
     },
     {
@@ -473,29 +603,19 @@
   ],
   "albums": [
     {
-      "key": "EXO｜Waking Up The City",
-      "artist": "EXO",
-      "album": "Waking Up The City"
-    },
-    {
       "key": "WINNER｜PAGE 2",
       "artist": "WINNER",
       "album": "PAGE 2"
     },
     {
-      "key": "CORTIS｜GREENGREEN",
-      "artist": "CORTIS",
-      "album": "GREENGREEN"
+      "key": "&TEAM｜'Mark on Me' Trailer Photobook Edition",
+      "artist": "&TEAM",
+      "album": "'Mark on Me' Trailer Photobook Edition"
     },
     {
       "key": "Hebi｜1st Mini Album 'Chroma'",
       "artist": "Hebi",
       "album": "1st Mini Album 'Chroma'"
-    },
-    {
-      "key": "KYUHYUN｜CONTINUE",
-      "artist": "KYUHYUN",
-      "album": "CONTINUE"
     },
     {
       "key": "AKB48｜10th Album 「なんてったってAKB48」 Standard Edition",
