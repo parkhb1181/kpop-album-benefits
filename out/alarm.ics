@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:jisoo-click-release@kpop-album-benefits
-DTSTAMP:20261124T104331Z
+DTSTAMP:20261124T182739Z
 DTSTART:20261130T040000Z
 DTEND:20261130T043000Z
 SUMMARY:지수(JISOO) CLICK — 예약 배송 시작
@@ -28,7 +28,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lngshot-s-w-i-s-h-release@kpop-album-benefits
-DTSTAMP:20261124T104331Z
+DTSTAMP:20261124T182739Z
 DTSTART:20261209T150000Z
 DTEND:20261209T153000Z
 SUMMARY:LNGSHOT S.W.I.S.H. — 예약 배송 시작
@@ -47,7 +47,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:team-mark-on-me-trailer-photobook-edition-release@kpop-album-benefits
-DTSTAMP:20261124T104331Z
+DTSTAMP:20261124T182739Z
 DTSTART:20270212T080800Z
 DTEND:20270212T083800Z
 SUMMARY:&TEAM 'Mark on Me' Trailer Photobook Edition — 예약 배송 시
@@ -66,6 +66,52 @@ ACTION:DISPLAY
 TRIGGER:-PT1H
 DESCRIPTION:&TEAM 'Mark on Me' Trailer Photobook Edition — 예약 배송 
  시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:santos-bravos-genesis-vinyl-standard-edition-release@kpop-album-benefit
+ s
+DTSTAMP:20261124T182739Z
+DTSTART:20270219T081300Z
+DTEND:20270219T084300Z
+SUMMARY:Santos Bravos GENESIS Vinyl Standard Edition — 예약 배송 시
+ 작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/santos-bravos-genesis-vinyl-standar
+ d-edition.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Santos Bravos GENESIS Vinyl Standard Edition — 예약 배송 
+ 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Santos Bravos GENESIS Vinyl Standard Edition — 예약 배송 
+ 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:santos-bravos-genesis-cd-standard-edition-release@kpop-album-benefits
+DTSTAMP:20261124T182739Z
+DTSTART:20270219T081300Z
+DTEND:20270219T084300Z
+SUMMARY:Santos Bravos GENESIS CD Standard Edition — 예약 배송 시작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/santos-bravos-genesis-cd-standard-e
+ dition.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Santos Bravos GENESIS CD Standard Edition — 예약 배송 시
+ 작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Santos Bravos GENESIS CD Standard Edition — 예약 배송 시
+ 작 (1시간 전)
 END:VALARM
 END:VEVENT
 END:VCALENDAR

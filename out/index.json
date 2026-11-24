@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 24. 19:39:24",
+  "stamp": "2026. 11. 25. 03:22:36",
   "albums": [
     {
       "artistId": 38,
@@ -43,7 +43,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "5일 17시간"
+        "rough": "5일 9시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -70,7 +70,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "15일 4시간"
+        "rough": "14일 20시간"
       },
       "rowCount": 20,
       "artistKo": null,
@@ -120,7 +120,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "79일 21시간"
+        "rough": "79일 13시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -265,6 +265,60 @@
       "artistDisplay": "AKB48",
       "ogImage": "https://cdn-contents.weverseshop.io/public/shop/baec989cdcbcc30388ca124384eab818.png",
       "cover": "https://cdn-contents.weverseshop.io/public/shop/baec989cdcbcc30388ca124384eab818.png"
+    },
+    {
+      "artistId": 267,
+      "artistEn": "Santos Bravos",
+      "album": "GENESIS Vinyl Standard Edition",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2027-02-19",
+      "weversePriceMin": 44323,
+      "artist": "Santos Bravos",
+      "slug": "santos-bravos-genesis-vinyl-standard-edition",
+      "versions": 1,
+      "retailers": 1,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2027-02-19T17:13:00+09:00",
+        "rough": "86일 13시간"
+      },
+      "rowCount": 1,
+      "artistKo": null,
+      "artistDisplay": "Santos Bravos",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/9ad7bb567eeaa170a3819a081e17d12d.jpg",
+      "cover": "https://cdn-contents.weverseshop.io/public/shop/9ad7bb567eeaa170a3819a081e17d12d.jpg"
+    },
+    {
+      "artistId": 267,
+      "artistEn": "Santos Bravos",
+      "album": "GENESIS CD Standard Edition",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2027-02-19",
+      "weversePriceMin": 27813,
+      "artist": "Santos Bravos",
+      "slug": "santos-bravos-genesis-cd-standard-edition",
+      "versions": 1,
+      "retailers": 1,
+      "benefitCount": 0,
+      "soldCount": 0,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2027-02-19T17:13:00+09:00",
+        "rough": "86일 13시간"
+      },
+      "rowCount": 1,
+      "artistKo": null,
+      "artistDisplay": "Santos Bravos",
+      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/a32e637705d2d529d12256fd2ebebefb.jpg",
+      "cover": "https://cdn-contents.weverseshop.io/public/shop/a32e637705d2d529d12256fd2ebebefb.jpg"
     },
     {
       "artistId": 25,
