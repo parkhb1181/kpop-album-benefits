@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kpop-album-benefits//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:&TEAM 'Mark on Me' Trailer Photobook Edition 마감
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:team-mark-on-me-trailer-photobook-edition-release@kpop-album-benefits
+DTSTAMP:20261124T064537Z
+DTSTART:20270212T080800Z
+DTEND:20270212T083800Z
+SUMMARY:&TEAM 'Mark on Me' Trailer Photobook Edition — 예약 배송 시
+ 작
+DESCRIPTION:위버스샵 기준. 판매처마다 다를 수 있습니다
+URL:https://kpop-album.vercel.app/album/team-mark-on-me-trailer-photobook-e
+ dition.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:&TEAM 'Mark on Me' Trailer Photobook Edition — 예약 배송 
+ 시작 (하루 전)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:&TEAM 'Mark on Me' Trailer Photobook Edition — 예약 배송 
+ 시작 (1시간 전)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
