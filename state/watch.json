@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-24T18:22:12.635Z",
-  "lastDeep": "2026-11-24T18:22:12.635Z",
+  "checkedAt": "2026-11-25T02:42:50.428Z",
+  "lastDeep": "2026-11-25T02:42:50.428Z",
   "events": [
     {
       "id": 22585,
@@ -658,6 +658,11 @@
       "key": "WINNER｜PAGE 2",
       "artist": "WINNER",
       "album": "PAGE 2"
+    },
+    {
+      "key": "CORTIS｜GREENGREEN",
+      "artist": "CORTIS",
+      "album": "GREENGREEN"
     },
     {
       "key": "&TEAM｜'Mark on Me' Trailer Photobook Edition",
