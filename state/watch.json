@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-25T02:42:50.428Z",
-  "lastDeep": "2026-11-25T02:42:50.428Z",
+  "checkedAt": "2026-11-25T11:45:24.809Z",
+  "lastDeep": "2026-11-25T11:45:24.809Z",
   "events": [
     {
       "id": 22585,
@@ -159,58 +159,6 @@
       }
     },
     {
-      "id": 22460,
-      "url": "https://makestar.co/event/22460",
-      "type": "MEET&CALL",
-      "label": "영상통화 팬사인회",
-      "fansign": true,
-      "title": "채령(ITZY) <Lovesick> MEET&CALL EVENT",
-      "titleEn": "CHAERYEONG (ITZY) <Lovesick> MEET&CALL EVENT",
-      "album": "미니 1집 [Lovesick]",
-      "albumEn": "1st Mini Album [Lovesick]",
-      "artist": "채령",
-      "artistEn": "CHAERYEONG",
-      "releaseDate": "2026-11-09",
-      "from": "2026.11.23",
-      "to": "2026.11.25",
-      "startAt": "2026-11-23T14:00:00+09:00",
-      "endAt": "2026-11-25T13:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.25",
-      "productId": 11148,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_7_Banner_thumb.jpg_2026-11-19_192001805784.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11148_CHAERYEONG_7_Banner_thumb.jpg_2026-11-19_192001805784_thumb.jpeg"
-      }
-    },
-    {
-      "id": 22447,
-      "url": "https://makestar.co/event/22447",
-      "type": "ONLINE PHOTO&CALL",
-      "label": "ONLINE PHOTO&CALL",
-      "fansign": false,
-      "title": "xikers(싸이커스) 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT",
-      "titleEn": "xikers(싸이커스) 8TH MINI ALBUM [ROUTE ZERO : The CALLING] (POCAALBUM) 1:1 ONLINE PHOTO&CALL EVENT",
-      "album": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
-      "albumEn": "8TH MINI ALBUM [ROUTE ZERO : The CALLING]",
-      "artist": "싸이커스",
-      "artistEn": "xikers",
-      "releaseDate": "2026-11-02",
-      "from": "2026.11.24",
-      "to": "2026.11.25",
-      "startAt": "2026-11-24T12:00:00+09:00",
-      "endAt": "2026-11-25T11:59:59.999999+09:00",
-      "dday": 1,
-      "closing": true,
-      "winnerAt": "2026.11.25",
-      "productId": 11105,
-      "image": {
-        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_4_Banner_Sub.jpg_2026-11-20_170440093139.jpg",
-        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11105_XIKERS_4_Banner_Sub.jpg_2026-11-20_170440093139_thumb.jpeg"
-      }
-    },
-    {
       "id": 22280,
       "url": "https://makestar.co/event/22280",
       "type": "VIDEOCALL",
@@ -286,6 +234,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_15_banner_sub.jpg_2026-11-18_164948831929.jpg",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11062_KICKFLIP_15_banner_sub.jpg_2026-11-18_164948831929_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22232,
+      "url": "https://makestar.co/event/22232",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "ENHYPEN ‘THE SIN : PARALLEL WORLD’ Video Call Event Last Part",
+      "titleEn": "ENHYPEN ‘THE SIN : PARALLEL WORLD’ Video Call Event Last Part",
+      "album": "[THE SIN : PARALLEL WORLD]",
+      "albumEn": "[THE SIN : PARALLEL WORLD]",
+      "artist": "엔하이픈",
+      "artistEn": "ENHYPEN",
+      "releaseDate": "2026-11-23",
+      "from": "2026.11.25",
+      "to": "2026.12.02",
+      "startAt": "2026-11-25T12:00:00+09:00",
+      "endAt": "2026-12-02T00:59:59.999999+09:00",
+      "dday": 7,
+      "closing": false,
+      "winnerAt": "2026.12.04",
+      "productId": 11238,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11238_ENHYPEN_4_Banner_Sub.jpg_2026-11-18_113509866693.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11238_ENHYPEN_4_Banner_Sub.jpg_2026-11-18_113509866693_thumb.jpeg"
       }
     },
     {
@@ -383,7 +357,7 @@
       "to": "2026.12.01",
       "startAt": "2026-11-11T18:00:00+09:00",
       "endAt": "2026-12-01T17:59:59.999999+09:00",
-      "dday": 7,
+      "dday": 6,
       "closing": false,
       "winnerAt": null,
       "productId": 11320,
@@ -520,6 +494,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809_thumb.jpeg"
+      }
+    },
+    {
+      "id": 21791,
+      "url": "https://makestar.co/event/21791",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NAYEON SINGLE “NA-sty” MEET&CALL EVENT",
+      "titleEn": "NAYEON SINGLE “NA-sty” MEET&CALL EVENT",
+      "album": "SINGLE “NA-sty”",
+      "albumEn": "SINGLE “NA-sty”",
+      "artist": "나연",
+      "artistEn": "NAYEON",
+      "releaseDate": "2026-11-20",
+      "from": "2026.11.25",
+      "to": "2026.11.27",
+      "startAt": "2026-11-25T15:00:00+09:00",
+      "endAt": "2026-11-27T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.28",
+      "productId": 11274,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11274_NAYEON_2_Banner_thumb.jpg_2026-11-23_114928121404.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11274_NAYEON_2_Banner_thumb.jpg_2026-11-23_114928121404_thumb.jpeg"
       }
     },
     {
