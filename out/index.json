@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 25. 11:43:18",
+  "stamp": "2026. 11. 25. 18:30:28",
   "albums": [
     {
       "artistId": 38,
@@ -43,7 +43,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "5일 1시간"
+        "rough": "4일 18시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -70,9 +70,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-01-08T13:00:00+09:00",
-        "rough": "44일 1시간"
+        "rough": "43일 18시간"
       },
-      "rowCount": 79,
+      "rowCount": 80,
       "artistKo": "코르티스",
       "artistDisplay": "코르티스(CORTIS)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg",
@@ -91,19 +91,19 @@
       "versions": 5,
       "retailers": 7,
       "benefitCount": 0,
-      "soldCount": 6,
+      "soldCount": 5,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "14일 12시간"
+        "rough": "14일 5시간"
       },
       "rowCount": 20,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/jR19De.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/jR19De.jpg"
     },
     {
       "artistId": 229,
@@ -147,7 +147,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "79일 5시간"
+        "rough": "78일 22시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -312,7 +312,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "86일 5시간"
+        "rough": "85일 22시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -339,7 +339,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "86일 5시간"
+        "rough": "85일 22시간"
       },
       "rowCount": 1,
       "artistKo": null,
