@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 26. 06:02:25",
+  "stamp": "2026. 11. 26. 12:33:35",
   "albums": [
     {
       "artistId": 38,
@@ -43,40 +43,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "4일 6시간"
+        "rough": "4일 0시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
-    },
-    {
-      "artistId": 255,
-      "artistEn": "CORTIS",
-      "album": "GREENGREEN",
-      "skuCount": 2,
-      "benefit": false,
-      "deliveryDate": "2027-01-08",
-      "weversePriceMin": 19700,
-      "artist": "CORTIS",
-      "slug": "cortis-greengreen",
-      "versions": 19,
-      "retailers": 7,
-      "benefitCount": 0,
-      "soldCount": 11,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": {
-        "label": "예약 배송 시작",
-        "at": "2027-01-08T13:00:00+09:00",
-        "rough": "43일 6시간"
-      },
-      "rowCount": 80,
-      "artistKo": "코르티스",
-      "artistDisplay": "코르티스(CORTIS)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg"
     },
     {
       "artistId": 275,
@@ -97,7 +70,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "13일 17시간"
+        "rough": "13일 11시간"
       },
       "rowCount": 20,
       "artistKo": null,
@@ -147,7 +120,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "78일 11시간"
+        "rough": "78일 4시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -312,7 +285,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "85일 11시간"
+        "rough": "85일 4시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -339,7 +312,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "85일 11시간"
+        "rough": "85일 4시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -2020,6 +1993,33 @@
         "lastSeen": "2026-09-21"
       },
       "ogCard": "https://kpop-album.vercel.app/og/i-dle-%EC%95%84%EC%9D%B4%EB%93%A4-what-a-wonderful-life.png"
+    },
+    {
+      "artistId": 255,
+      "artistEn": "CORTIS",
+      "album": "GREENGREEN",
+      "skuCount": 2,
+      "benefit": false,
+      "deliveryDate": "2027-01-08",
+      "weversePriceMin": 19700,
+      "artist": "CORTIS",
+      "slug": "cortis-greengreen",
+      "versions": 19,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 11,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": null,
+      "rowCount": 80,
+      "artistKo": "코르티스",
+      "artistDisplay": "코르티스(CORTIS)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/04/14/3Vvzw8.jpg",
+      "expired": {
+        "lastSeen": "2026-11-26"
+      },
+      "ogCard": "https://kpop-album.vercel.app/og/cortis-greengreen.png"
     },
     {
       "artistId": 248,
