@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 26. 22:11:01",
+  "stamp": "2026. 11. 27. 04:24:19",
   "albums": [
     {
       "artistId": 38,
@@ -43,7 +43,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "3일 14시간"
+        "rough": "3일 8시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -70,7 +70,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-23T18:00:00+09:00",
-        "rough": "26일 19시간"
+        "rough": "26일 13시간"
       },
       "rowCount": 32,
       "artistKo": "규현",
@@ -97,7 +97,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "13일 1시간"
+        "rough": "12일 19시간"
       },
       "rowCount": 20,
       "artistKo": null,
@@ -147,7 +147,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "77일 18시간"
+        "rough": "77일 12시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -312,7 +312,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "84일 18시간"
+        "rough": "84일 12시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -339,7 +339,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "84일 18시간"
+        "rough": "84일 12시간"
       },
       "rowCount": 1,
       "artistKo": null,
