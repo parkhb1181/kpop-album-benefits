@@ -1034,3 +1034,5 @@
 {"at":"2026-11-25T21:01:58.947Z","type":"event.gone","label":"예약 특전 포토카드","artist":"oftheblue","album":"[out of the blue]","id":22138}
 {"at":"2026-11-25T21:01:58.947Z","type":"event.gone","label":"기타 이벤트","artist":"oftheblue","album":"[out of the blue]","id":22034}
 {"at":"2026-11-26T03:33:08.405Z","type":"album.gone","artist":"CORTIS","album":"GREENGREEN"}
+{"at":"2026-11-26T13:10:35.917Z","type":"event.new","label":"PHOTO EVENT","artist":"XngHan&Xoul","album":"미니 1집 [Glow] ","id":22448,"url":"https://makestar.co/event/22448","endAt":"2026-11-29T23:59:59.999999+09:00"}
+{"at":"2026-11-26T13:10:35.917Z","type":"album.new","artist":"KYUHYUN","album":"CONTINUE"}
