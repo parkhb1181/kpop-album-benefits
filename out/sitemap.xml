@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kpop-album.vercel.app/album/kyuhyun-continue</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kpop-album.vercel.app/album/lngshot-s-w-i-s-h</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>daily</changefreq>
@@ -487,12 +493,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kpop-album.vercel.app/album/kyuhyun-continue</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://kpop-album.vercel.app/album/red-velvet-velvet-summer</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -656,6 +656,12 @@
   </url>
   <url>
     <loc>https://kpop-album.vercel.app/en/album/jisoo-click</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kpop-album.vercel.app/en/album/kyuhyun-continue</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -1125,12 +1131,6 @@
   <url>
     <loc>https://kpop-album.vercel.app/en/album/cortis-greengreen-playextended</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://kpop-album.vercel.app/en/album/kyuhyun-continue</loc>
-    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>

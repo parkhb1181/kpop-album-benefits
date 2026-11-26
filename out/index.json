@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 26. 18:12:41",
+  "stamp": "2026. 11. 26. 22:11:01",
   "albums": [
     {
       "artistId": 38,
@@ -43,13 +43,40 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "3일 18시간"
+        "rough": "3일 14시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
       "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg"
+    },
+    {
+      "artistId": 164,
+      "artistEn": "KYUHYUN",
+      "album": "CONTINUE",
+      "skuCount": 1,
+      "benefit": false,
+      "deliveryDate": "2026-12-23",
+      "weversePriceMin": 36800,
+      "artist": "KYUHYUN",
+      "slug": "kyuhyun-continue",
+      "versions": 8,
+      "retailers": 7,
+      "benefitCount": 0,
+      "soldCount": 1,
+      "eventCount": 0,
+      "fansignCount": 0,
+      "nextDeadline": {
+        "label": "예약 배송 시작",
+        "at": "2026-12-23T18:00:00+09:00",
+        "rough": "26일 19시간"
+      },
+      "rowCount": 32,
+      "artistKo": "규현",
+      "artistDisplay": "규현(KYUHYUN)",
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg"
     },
     {
       "artistId": 275,
@@ -64,19 +91,19 @@
       "versions": 5,
       "retailers": 7,
       "benefitCount": 0,
-      "soldCount": 5,
+      "soldCount": 6,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "13일 5시간"
+        "rough": "13일 1시간"
       },
       "rowCount": 20,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/jR19De.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/jR19De.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg"
     },
     {
       "artistId": 229,
@@ -120,7 +147,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "77일 22시간"
+        "rough": "77일 18시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -285,7 +312,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "84일 22시간"
+        "rough": "84일 18시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -312,7 +339,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "84일 22시간"
+        "rough": "84일 18시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -2128,33 +2155,6 @@
         "lastSeen": "2026-11-19"
       },
       "ogCard": "https://kpop-album.vercel.app/og/cortis-greengreen-playextended.png"
-    },
-    {
-      "artistId": 164,
-      "artistEn": "KYUHYUN",
-      "album": "CONTINUE",
-      "skuCount": 1,
-      "benefit": false,
-      "deliveryDate": "2026-12-23",
-      "weversePriceMin": 36800,
-      "artist": "KYUHYUN",
-      "slug": "kyuhyun-continue",
-      "versions": 7,
-      "retailers": 6,
-      "benefitCount": 0,
-      "soldCount": 1,
-      "eventCount": 0,
-      "fansignCount": 0,
-      "nextDeadline": null,
-      "rowCount": 28,
-      "artistKo": "규현",
-      "artistDisplay": "규현(KYUHYUN)",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg",
-      "expired": {
-        "lastSeen": "2026-11-24"
-      },
-      "ogCard": "https://kpop-album.vercel.app/og/kyuhyun-continue.png"
     },
     {
       "artistId": 129,
