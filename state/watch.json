@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-25T21:01:58.947Z",
-  "lastDeep": "2026-11-25T21:01:58.947Z",
+  "checkedAt": "2026-11-26T03:33:08.405Z",
+  "lastDeep": "2026-11-26T03:33:08.405Z",
   "events": [
     {
       "id": 22585,
@@ -354,12 +354,12 @@
       "artistEn": "JANG MIN HO",
       "releaseDate": "2026-11-24",
       "from": "2026.11.04",
-      "to": "2026.11.30",
+      "to": "2026.11.26",
       "startAt": "2026-11-04T15:00:00+09:00",
-      "endAt": "2026-11-30T23:00:59.999999+09:00",
-      "dday": 5,
-      "closing": false,
-      "winnerAt": "2026.12.03",
+      "endAt": "2026-11-26T23:59:59.999999+09:00",
+      "dday": 1,
+      "closing": true,
+      "winnerAt": "2026.12.02",
       "productId": 11268,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_110153676423.png",
@@ -380,12 +380,12 @@
       "artistEn": "JANG MIN HO",
       "releaseDate": "2026-11-24",
       "from": "2026.11.04",
-      "to": "2026.11.30",
+      "to": "2026.11.26",
       "startAt": "2026-11-04T15:00:00+09:00",
-      "endAt": "2026-11-30T23:00:59.999999+09:00",
-      "dday": 5,
-      "closing": false,
-      "winnerAt": "2026.12.03",
+      "endAt": "2026-11-26T23:59:59.999999+09:00",
+      "dday": 1,
+      "closing": true,
+      "winnerAt": "2026.12.02",
       "productId": 11268,
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11268_JANG_MIN_HO_1_banner_sub.png_2026-11-03_105644168809.png",
@@ -554,11 +554,6 @@
       "key": "WINNER｜PAGE 2",
       "artist": "WINNER",
       "album": "PAGE 2"
-    },
-    {
-      "key": "CORTIS｜GREENGREEN",
-      "artist": "CORTIS",
-      "album": "GREENGREEN"
     },
     {
       "key": "&TEAM｜'Mark on Me' Trailer Photobook Edition",
