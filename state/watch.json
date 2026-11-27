@@ -1,7 +1,33 @@
 {
-  "checkedAt": "2026-11-27T04:24:37.481Z",
-  "lastDeep": "2026-11-27T04:24:37.481Z",
+  "checkedAt": "2026-11-27T14:08:26.273Z",
+  "lastDeep": "2026-11-27T14:08:26.273Z",
   "events": [
+    {
+      "id": 22743,
+      "url": "https://makestar.co/event/22743",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "AHOF (아홉) 미니 3집 [RUN TO YOU] MEET&CALL EVENT PART.3",
+      "titleEn": "AHOF (아홉) The 3rd Mini Album [RUN TO YOU] MEET&CALL EVENT PART.3",
+      "album": "미니 3집 [RUN TO YOU]",
+      "albumEn": "3rd Mini Album [RUN TO YOU]",
+      "artist": "아홉",
+      "artistEn": "AHOF",
+      "releaseDate": "2026-07-08",
+      "from": "2026.11.27",
+      "to": "2026.11.29",
+      "startAt": "2026-11-27T15:00:00+09:00",
+      "endAt": "2026-11-29T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.30",
+      "productId": 10797,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10797_AHOF_4_banner_sub.png_2026-11-26_121426125879.png",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10797_AHOF_4_banner_sub.png_2026-11-26_121426125879_thumb.jpeg"
+      }
+    },
     {
       "id": 22520,
       "url": "https://makestar.co/event/22520",
@@ -55,6 +81,32 @@
       }
     },
     {
+      "id": 22474,
+      "url": "https://makestar.co/event/22474",
+      "type": "VIDEOCALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "TRENDZ : VIDEO CALL EVENT",
+      "titleEn": "TRENDZ : VIDEO CALL EVENT",
+      "album": "TRENDZ : VIDEO CALL EVENT",
+      "albumEn": "TRENDZ : VIDEO CALL EVENT",
+      "artist": "트렌드지",
+      "artistEn": "TRENDZ",
+      "releaseDate": "2026-11-18",
+      "from": "2026.11.27",
+      "to": "2026.11.29",
+      "startAt": "2026-11-27T15:00:00+09:00",
+      "endAt": "2026-11-29T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.30",
+      "productId": 11374,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11374_TRENDZ_1_Banner_Sub.jpg_2026-11-24_143132149307.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11374_TRENDZ_1_Banner_Sub.jpg_2026-11-24_143132149307_thumb.jpeg"
+      }
+    },
+    {
       "id": 22472,
       "url": "https://makestar.co/event/22472",
       "type": "PHOTOCARD",
@@ -78,6 +130,32 @@
       "image": {
         "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11373_MW_MEU_1_banner_sub.png_2026-11-20_190149966903.png",
         "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_11373_MW_MEU_1_banner_sub.png_2026-11-20_190149966903_thumb.jpeg"
+      }
+    },
+    {
+      "id": 22461,
+      "url": "https://makestar.co/event/22461",
+      "type": "MEET&CALL",
+      "label": "영상통화 팬사인회",
+      "fansign": true,
+      "title": "NouerA 4th Mini Album [.exe] (POCAALBUM) LAST 1:1 SPECIAL OFFLINE & MEET & CALL EVENT",
+      "titleEn": "NouerA 4th Mini Album [.exe] (POCAALBUM) LAST 1:1 SPECIAL OFFLINE & MEET & CALL EVENT",
+      "album": "4th Mini Album [.exe]",
+      "albumEn": "4th Mini Album [.exe] ",
+      "artist": "누에라",
+      "artistEn": "NouerA",
+      "releaseDate": "2026-07-27",
+      "from": "2026.11.27",
+      "to": "2026.11.29",
+      "startAt": "2026-11-27T15:00:00+09:00",
+      "endAt": "2026-11-29T23:59:59.999999+09:00",
+      "dday": 3,
+      "closing": false,
+      "winnerAt": "2026.11.30",
+      "productId": 10867,
+      "image": {
+        "url": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_19_Banner_Sub.jpg_2026-10-23_174036754543.jpg",
+        "thumb": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10867_NOUERA_19_Banner_Sub.jpg_2026-10-23_174036754543_thumb.jpeg"
       }
     },
     {
@@ -201,7 +279,7 @@
       "to": "2026.12.01",
       "startAt": "2026-11-11T18:00:00+09:00",
       "endAt": "2026-12-01T17:59:59.999999+09:00",
-      "dday": 5,
+      "dday": 4,
       "closing": false,
       "winnerAt": null,
       "productId": 11320,
