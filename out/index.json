@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 28. 04:19:42",
+  "stamp": "2026. 11. 28. 07:42:13",
   "albums": [
     {
       "artistId": 38,
@@ -43,7 +43,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "2일 8시간"
+        "rough": "2일 5시간"
       },
       "rowCount": 20,
       "artistKo": "지수",
@@ -70,7 +70,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-23T18:00:00+09:00",
-        "rough": "25일 13시간"
+        "rough": "25일 10시간"
       },
       "rowCount": 32,
       "artistKo": "규현",
@@ -91,19 +91,19 @@
       "versions": 5,
       "retailers": 7,
       "benefitCount": 0,
-      "soldCount": 5,
+      "soldCount": 6,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "11일 19시간"
+        "rough": "11일 16시간"
       },
       "rowCount": 20,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
-      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/jR19De.jpg",
-      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/jR19De.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg"
     },
     {
       "artistId": 229,
@@ -147,7 +147,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "76일 12시간"
+        "rough": "76일 9시간"
       },
       "rowCount": 2,
       "artistKo": null,
@@ -312,7 +312,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "83일 12시간"
+        "rough": "83일 9시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -339,7 +339,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "83일 12시간"
+        "rough": "83일 9시간"
       },
       "rowCount": 1,
       "artistKo": null,
