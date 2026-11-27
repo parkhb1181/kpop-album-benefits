@@ -1,5 +1,5 @@
 {
-  "stamp": "2026. 11. 27. 07:20:38",
+  "stamp": "2026. 11. 27. 18:24:14",
   "albums": [
     {
       "artistId": 38,
@@ -35,7 +35,7 @@
       "artist": "JISOO",
       "slug": "jisoo-click",
       "versions": 4,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 1,
       "soldCount": 1,
       "eventCount": 0,
@@ -43,9 +43,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-11-30T13:00:00+09:00",
-        "rough": "3일 5시간"
+        "rough": "2일 18시간"
       },
-      "rowCount": 20,
+      "rowCount": 17,
       "artistKo": "지수",
       "artistDisplay": "지수(JISOO)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/09/01/kgfWjd.jpg",
@@ -61,8 +61,8 @@
       "weversePriceMin": 36800,
       "artist": "KYUHYUN",
       "slug": "kyuhyun-continue",
-      "versions": 8,
-      "retailers": 7,
+      "versions": 6,
+      "retailers": 6,
       "benefitCount": 0,
       "soldCount": 1,
       "eventCount": 0,
@@ -70,9 +70,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-23T18:00:00+09:00",
-        "rough": "26일 10시간"
+        "rough": "25일 23시간"
       },
-      "rowCount": 32,
+      "rowCount": 26,
       "artistKo": "규현",
       "artistDisplay": "규현(KYUHYUN)",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/30/yjTijF.jpg",
@@ -89,7 +89,7 @@
       "artist": "LNGSHOT",
       "slug": "lngshot-s-w-i-s-h",
       "versions": 5,
-      "retailers": 7,
+      "retailers": 6,
       "benefitCount": 0,
       "soldCount": 6,
       "eventCount": 0,
@@ -97,9 +97,9 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2026-12-10T00:00:00+09:00",
-        "rough": "12일 16시간"
+        "rough": "12일 5시간"
       },
-      "rowCount": 20,
+      "rowCount": 15,
       "artistKo": null,
       "artistDisplay": "LNGSHOT",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/10/12/1Yunhj.jpg",
@@ -116,13 +116,13 @@
       "artist": "Hebi",
       "slug": "hebi-1st-mini-album-chroma",
       "versions": 2,
-      "retailers": 4,
+      "retailers": 3,
       "benefitCount": 0,
       "soldCount": 2,
       "eventCount": 0,
       "fansignCount": 0,
       "nextDeadline": null,
-      "rowCount": 6,
+      "rowCount": 4,
       "artistKo": null,
       "artistDisplay": "Hebi",
       "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2025/04/07/1W82nZ.jpg",
@@ -139,7 +139,7 @@
       "artist": "&TEAM",
       "slug": "team-mark-on-me-trailer-photobook-edition",
       "versions": 1,
-      "retailers": 1,
+      "retailers": 2,
       "benefitCount": 0,
       "soldCount": 0,
       "eventCount": 0,
@@ -147,13 +147,13 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-12T17:08:00+09:00",
-        "rough": "77일 9시간"
+        "rough": "76일 22시간"
       },
-      "rowCount": 1,
+      "rowCount": 2,
       "artistKo": null,
       "artistDisplay": "&TEAM",
-      "ogImage": "https://cdn-contents.weverseshop.io/public/shop/7b8d23fd9beb26ad9e502d37025bd758.jpg",
-      "cover": "https://cdn-contents.weverseshop.io/public/shop/7b8d23fd9beb26ad9e502d37025bd758.jpg"
+      "ogImage": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/23/izt5wA.jpg",
+      "cover": "https://media.ktown4u.com/products/resize/thumbnail/2026/11/23/izt5wA.jpg"
     },
     {
       "artistId": 171,
@@ -312,7 +312,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "84일 9시간"
+        "rough": "83일 22시간"
       },
       "rowCount": 1,
       "artistKo": null,
@@ -339,7 +339,7 @@
       "nextDeadline": {
         "label": "예약 배송 시작",
         "at": "2027-02-19T17:13:00+09:00",
-        "rough": "84일 9시간"
+        "rough": "83일 22시간"
       },
       "rowCount": 1,
       "artistKo": null,
